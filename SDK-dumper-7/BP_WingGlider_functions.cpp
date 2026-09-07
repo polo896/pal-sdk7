@@ -17,207 +17,67 @@
 namespace SDK
 {
 
-// Function BP_WingGlider.BP_WingGlider_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_WingGlider.BP_WingGlider_C.CustomEvent
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalCharacterMovementComponent*   Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EMovementMode                           prevMode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EMovementMode                           newMode                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalCharacterMovementCustomMode         PrevCustomMode                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalCharacterMovementCustomMode         NewCustomMode                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WingGlider_C::ReceiveTick(float DeltaSeconds)
+void ABP_WingGlider_C::CustomEvent(class UPalCharacterMovementComponent* Component, EMovementMode prevMode, EMovementMode newMode, EPalCharacterMovementCustomMode PrevCustomMode, EPalCharacterMovementCustomMode NewCustomMode)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_WingGlider_C", "CustomEvent");
 
-	Params::BP_WingGlider_C_ReceiveTick Parms{};
+	Params::BP_WingGlider_C_CustomEvent Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.Component = Component;
+	Parms.prevMode = prevMode;
+	Parms.newMode = newMode;
+	Parms.PrevCustomMode = PrevCustomMode;
+	Parms.NewCustomMode = NewCustomMode;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WingGlider.BP_WingGlider_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_WingGlider_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_WingGlider.BP_WingGlider_C.ExecuteUbergraph_BP_WingGlider
+// (Final, UbergraphFunction)
 // Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WingGlider_C::OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
+void ABP_WingGlider_C::ExecuteUbergraph_BP_WingGlider(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA");
+		Func = Class->GetFunction("BP_WingGlider_C", "ExecuteUbergraph_BP_WingGlider");
 
-	Params::BP_WingGlider_C_OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
+	Params::BP_WingGlider_C_ExecuteUbergraph_BP_WingGlider Parms{};
 
-	Parms.NotifyName = NotifyName;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD
+// Function BP_WingGlider.BP_WingGlider_C.OnBlendOut_801568FB493F6CAB9A9531919F9B39AD
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WingGlider_C::OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
+void ABP_WingGlider_C::OnBlendOut_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD");
+		Func = Class->GetFunction("BP_WingGlider_C", "OnBlendOut_801568FB493F6CAB9A9531919F9B39AD");
 
-	Params::BP_WingGlider_C_OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_WingGlider_C::OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA");
-
-	Params::BP_WingGlider_C_OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_WingGlider_C::OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD");
-
-	Params::BP_WingGlider_C_OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_WingGlider_C::OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA");
-
-	Params::BP_WingGlider_C_OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_801568FB493F6CAB9A9531919F9B39AD
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_WingGlider_C::OnInterrupted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnInterrupted_801568FB493F6CAB9A9531919F9B39AD");
-
-	Params::BP_WingGlider_C_OnInterrupted_801568FB493F6CAB9A9531919F9B39AD Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnEquipJetpack
-// (Event, Public, BlueprintEvent)
-
-void ABP_WingGlider_C::OnEquipJetpack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnEquipJetpack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_WingGlider_C::OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA");
-
-	Params::BP_WingGlider_C_OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_801568FB493F6CAB9A9531919F9B39AD
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_WingGlider_C::OnCompleted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnCompleted_801568FB493F6CAB9A9531919F9B39AD");
-
-	Params::BP_WingGlider_C_OnCompleted_801568FB493F6CAB9A9531919F9B39AD Parms{};
+	Params::BP_WingGlider_C_OnBlendOut_801568FB493F6CAB9A9531919F9B39AD Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -245,19 +105,19 @@ void ABP_WingGlider_C::OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA(class FName N
 }
 
 
-// Function BP_WingGlider.BP_WingGlider_C.OnBlendOut_801568FB493F6CAB9A9531919F9B39AD
+// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_801568FB493F6CAB9A9531919F9B39AD
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WingGlider_C::OnBlendOut_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
+void ABP_WingGlider_C::OnCompleted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "OnBlendOut_801568FB493F6CAB9A9531919F9B39AD");
+		Func = Class->GetFunction("BP_WingGlider_C", "OnCompleted_801568FB493F6CAB9A9531919F9B39AD");
 
-	Params::BP_WingGlider_C_OnBlendOut_801568FB493F6CAB9A9531919F9B39AD Parms{};
+	Params::BP_WingGlider_C_OnCompleted_801568FB493F6CAB9A9531919F9B39AD Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -265,49 +125,189 @@ void ABP_WingGlider_C::OnBlendOut_801568FB493F6CAB9A9531919F9B39AD(class FName N
 }
 
 
-// Function BP_WingGlider.BP_WingGlider_C.ExecuteUbergraph_BP_WingGlider
-// (Final, UbergraphFunction)
+// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WingGlider_C::ExecuteUbergraph_BP_WingGlider(int32 EntryPoint)
+void ABP_WingGlider_C::OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "ExecuteUbergraph_BP_WingGlider");
+		Func = Class->GetFunction("BP_WingGlider_C", "OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA");
 
-	Params::BP_WingGlider_C_ExecuteUbergraph_BP_WingGlider Parms{};
+	Params::BP_WingGlider_C_OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WingGlider.BP_WingGlider_C.CustomEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalCharacterMovementComponent*   Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EMovementMode                           prevMode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EMovementMode                           newMode                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalCharacterMovementCustomMode         PrevCustomMode                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalCharacterMovementCustomMode         NewCustomMode                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_WingGlider.BP_WingGlider_C.OnEquipJetpack
+// (Event, Public, BlueprintEvent)
 
-void ABP_WingGlider_C::CustomEvent(class UPalCharacterMovementComponent* Component, EMovementMode prevMode, EMovementMode newMode, EPalCharacterMovementCustomMode PrevCustomMode, EPalCharacterMovementCustomMode NewCustomMode)
+void ABP_WingGlider_C::OnEquipJetpack()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WingGlider_C", "CustomEvent");
+		Func = Class->GetFunction("BP_WingGlider_C", "OnEquipJetpack");
 
-	Params::BP_WingGlider_C_CustomEvent Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Component = Component;
-	Parms.prevMode = prevMode;
-	Parms.newMode = newMode;
-	Parms.PrevCustomMode = PrevCustomMode;
-	Parms.NewCustomMode = NewCustomMode;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_801568FB493F6CAB9A9531919F9B39AD
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WingGlider_C::OnInterrupted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "OnInterrupted_801568FB493F6CAB9A9531919F9B39AD");
+
+	Params::BP_WingGlider_C_OnInterrupted_801568FB493F6CAB9A9531919F9B39AD Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WingGlider_C::OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA");
+
+	Params::BP_WingGlider_C_OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WingGlider_C::OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD");
+
+	Params::BP_WingGlider_C_OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WingGlider_C::OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA");
+
+	Params::BP_WingGlider_C_OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WingGlider_C::OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD");
+
+	Params::BP_WingGlider_C_OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WingGlider_C::OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA");
+
+	Params::BP_WingGlider_C_OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WingGlider.BP_WingGlider_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_WingGlider_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_WingGlider.BP_WingGlider_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WingGlider_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WingGlider_C", "ReceiveTick");
+
+	Params::BP_WingGlider_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

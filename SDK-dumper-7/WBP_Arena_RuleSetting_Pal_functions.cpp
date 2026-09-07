@@ -17,73 +17,63 @@
 namespace SDK
 {
 
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.SetupPalList
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_Pal_C::SetupPalList()
+void UWBP_Arena_RuleSetting_Pal_C::BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "SetupPalList");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.Setup
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FPalDataTableRowName_PalMonsterData>&RestrictPals                                           (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    Changeable                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_Pal_C::Setup(TArray<struct FPalDataTableRowName_PalMonsterData>& RestrictPals, bool Changeable)
+void UWBP_Arena_RuleSetting_Pal_C::BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "Setup");
-
-	Params::WBP_Arena_RuleSetting_Pal_C_Setup Parms{};
-
-	Parms.RestrictPals = std::move(RestrictPals);
-	Parms.Changeable = Changeable;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	RestrictPals = std::move(Parms.RestrictPals);
-}
-
-
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_RuleSetting_Pal_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.OnCharacterButtonClick
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_Pal_C::OnCharacterButtonClick(class FName CharacterID)
+void UWBP_Arena_RuleSetting_Pal_C::BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "OnCharacterButtonClick");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
-	Params::WBP_Arena_RuleSetting_Pal_C_OnCharacterButtonClick Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.CharacterID = CharacterID;
+
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.ExecuteUbergraph_WBP_Arena_RuleSetting_Pal
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleSetting_Pal_C::ExecuteUbergraph_WBP_Arena_RuleSetting_Pal(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "ExecuteUbergraph_WBP_Arena_RuleSetting_Pal");
+
+	Params::WBP_Arena_RuleSetting_Pal_C_ExecuteUbergraph_WBP_Arena_RuleSetting_Pal Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -113,63 +103,73 @@ void UWBP_Arena_RuleSetting_Pal_C::IsCharacterEncounted(class FName CharacterID,
 }
 
 
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.ExecuteUbergraph_WBP_Arena_RuleSetting_Pal
-// (Final, UbergraphFunction)
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.OnCharacterButtonClick
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleSetting_Pal_C::ExecuteUbergraph_WBP_Arena_RuleSetting_Pal(int32 EntryPoint)
+void UWBP_Arena_RuleSetting_Pal_C::OnCharacterButtonClick(class FName CharacterID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "ExecuteUbergraph_WBP_Arena_RuleSetting_Pal");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "OnCharacterButtonClick");
 
-	Params::WBP_Arena_RuleSetting_Pal_C_ExecuteUbergraph_WBP_Arena_RuleSetting_Pal Parms{};
+	Params::WBP_Arena_RuleSetting_Pal_C_OnCharacterButtonClick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.CharacterID = CharacterID;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_Pal_C::BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_Arena_RuleSetting_Pal_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.Setup
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FPalDataTableRowName_PalMonsterData>&RestrictPals                                           (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    Changeable                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleSetting_Pal_C::BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
+void UWBP_Arena_RuleSetting_Pal_C::Setup(TArray<struct FPalDataTableRowName_PalMonsterData>& RestrictPals, bool Changeable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "Setup");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Arena_RuleSetting_Pal_C_Setup Parms{};
+
+	Parms.RestrictPals = std::move(RestrictPals);
+	Parms.Changeable = Changeable;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	RestrictPals = std::move(Parms.RestrictPals);
 }
 
 
-// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Arena_RuleSetting_Pal.WBP_Arena_RuleSetting_Pal_C.SetupPalList
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_Pal_C::BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+void UWBP_Arena_RuleSetting_Pal_C::SetupPalList()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_Pal_C", "SetupPalList");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_CombatHeli.BP_CombatHeli_C.BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const struct FPalDeadInfo&              DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void ABP_CombatHeli_C::BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature(const struct FPalDeadInfo& DeadInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CombatHeli_C", "BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature");
+
+	Params::BP_CombatHeli_C_BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature Parms{};
+
+	Parms.DeadInfo = std::move(DeadInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_CombatHeli.BP_CombatHeli_C.CalcHeightControl
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:

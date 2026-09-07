@@ -12,11 +12,10 @@ class UWBP_Ingame_Message_C : public UUserWidget
     class UBP_PalRichTextBlock_C* BP_PalRichTextBlock_C_89;                           // 0x02A8 (size: 0x8)
     class UCanvasPanel* Canvas_Base;                                                  // 0x02B0 (size: 0x8)
     class UImage* Image_Base;                                                         // 0x02B8 (size: 0x8)
-    class UImage* Image_Base_Flash;                                                   // 0x02C0 (size: 0x8)
-    bool IsShow;                                                                      // 0x02C8 (size: 0x1)
-    TArray<FF_PalIngameMessageQueData> QueMessageDataArray;                           // 0x02D0 (size: 0x10)
-    FTimerHandle TimerHandle_PlayEnd;                                                 // 0x02E0 (size: 0x8)
-    FTimerHandle TimerHandle_HideMessage;                                             // 0x02E8 (size: 0x8)
+    bool IsShow;                                                                      // 0x02C0 (size: 0x1)
+    TArray<FF_PalIngameMessageQueData> QueMessageDataArray;                           // 0x02C8 (size: 0x10)
+    FTimerHandle TimerHandle_PlayEnd;                                                 // 0x02D8 (size: 0x8)
+    FTimerHandle TimerHandle_HideMessage;                                             // 0x02E0 (size: 0x8)
 
     void OnTimerEvent_HideMessage();
     void IsProcessingMessage(bool& bProcessing);
@@ -31,6 +30,6 @@ class UWBP_Ingame_Message_C : public UUserWidget
     void AnmEvent_Blue();
     void AnmEvent_Green();
     void ExecuteUbergraph_WBP_Ingame_Message(int32 EntryPoint);
-}; // Size: 0x2F0
+}; // Size: 0x2E8
 
 #endif

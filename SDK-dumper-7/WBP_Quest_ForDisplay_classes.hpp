@@ -10,45 +10,45 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Quest_ForDisplay.WBP_Quest_ForDisplay_C
-// 0x0048 (0x04C0 - 0x0478)
+// 0x0048 (0x04C8 - 0x0480)
 class UWBP_Quest_ForDisplay_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Quest_C*                           WBP_Quest;                                         // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     InputActionName_QuestTracking;                     // 0x0488(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   InputActionHandle_QuestTracking;                   // 0x0490(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalDataTableRowName_UIInputAction     InputActionName_QuestShowMap;                      // 0x0494(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   InputActionHandle_QuestShowMap;                    // 0x049C(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TMulticastInlineDelegate<void(class FName QuestId)> OnRequestShowMap;                            // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FPalDataTableRowName_UIInputAction     NextTabAction;                                     // 0x04B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     PrevTabAction;                                     // 0x04B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Quest_C*                           WBP_Quest;                                         // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     InputActionName_QuestTracking;                     // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   InputActionHandle_QuestTracking;                   // 0x0498(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPalDataTableRowName_UIInputAction     InputActionName_QuestShowMap;                      // 0x049C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   InputActionHandle_QuestShowMap;                    // 0x04A4(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TMulticastInlineDelegate<void(class FName QuestId)> OnRequestShowMap;                            // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPalDataTableRowName_UIInputAction     NextTabAction;                                     // 0x04B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     PrevTabAction;                                     // 0x04C0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UnregisterShowMapAction();
-	void UnregisterQuestTracingAction();
-	void Setup(class FName DisplayQuestId);
-	void RegisterQuestTrackingAction();
-	void RegisterQuestShowMap();
-	void OnUpdateTrackingQuestId(const class FName& QuestId);
-	void OnInputAction_ShowMap();
-	void OnInputAction_PrevTab();
-	void OnInputAction_NextTab();
-	void On_Input_Action_Quest_Tracking();
-	void GetTopMainQuest(TArray<class UPalQuestData*>& QuestDataArray, class UPalQuestData** DisplayQuest);
-	void ExecuteUbergraph_WBP_Quest_ForDisplay(int32 EntryPoint);
-	void Destruct();
-	void Construct();
 	void BndEvt__WBP_Quest_ForDisplay_WBP_Quest_K2Node_ComponentBoundEvent_0_OnClickedQuestButton__DelegateSignature(class UWBP_Quest_ListButton_C* QuestWidget);
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_Quest_ForDisplay(int32 EntryPoint);
+	void GetTopMainQuest(TArray<class UPalQuestData*>& QuestDataArray, class UPalQuestData** DisplayQuest);
+	void On_Input_Action_Quest_Tracking();
+	void OnInputAction_NextTab();
+	void OnInputAction_PrevTab();
+	void OnInputAction_ShowMap();
+	void OnUpdateTrackingQuestId(const class FName& QuestId);
+	void RegisterQuestShowMap();
+	void RegisterQuestTrackingAction();
+	void Setup(class FName DisplayQuestId);
+	void UnregisterQuestTracingAction();
+	void UnregisterShowMapAction();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

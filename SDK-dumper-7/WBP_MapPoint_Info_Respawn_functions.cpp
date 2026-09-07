@@ -17,41 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.AdjustSide
+// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.ToggleDisplay
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 TargetGeometry                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// bool                                    ShouldDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_Respawn_C::AdjustSide(const struct FGeometry& TargetGeometry)
+void UWBP_MapPoint_Info_Respawn_C::ToggleDisplay(bool ShouldDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_Respawn_C", "AdjustSide");
+		Func = Class->GetFunction("WBP_MapPoint_Info_Respawn_C", "ToggleDisplay");
 
-	Params::WBP_MapPoint_Info_Respawn_C_AdjustSide Parms{};
+	Params::WBP_MapPoint_Info_Respawn_C_ToggleDisplay Parms{};
 
-	Parms.TargetGeometry = std::move(TargetGeometry);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.ExecuteUbergraph_WBP_MapPoint_Info_Respawn
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MapPoint_Info_Respawn_C::ExecuteUbergraph_WBP_MapPoint_Info_Respawn(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_Respawn_C", "ExecuteUbergraph_WBP_MapPoint_Info_Respawn");
-
-	Params::WBP_MapPoint_Info_Respawn_C_ExecuteUbergraph_WBP_MapPoint_Info_Respawn Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.ShouldDisplay = ShouldDisplay;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -79,21 +59,41 @@ void UWBP_MapPoint_Info_Respawn_C::SetPointInfo(class FName PointId, bool IsInit
 }
 
 
-// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.ToggleDisplay
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.ExecuteUbergraph_WBP_MapPoint_Info_Respawn
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    ShouldDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_Respawn_C::ToggleDisplay(bool ShouldDisplay)
+void UWBP_MapPoint_Info_Respawn_C::ExecuteUbergraph_WBP_MapPoint_Info_Respawn(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_Respawn_C", "ToggleDisplay");
+		Func = Class->GetFunction("WBP_MapPoint_Info_Respawn_C", "ExecuteUbergraph_WBP_MapPoint_Info_Respawn");
 
-	Params::WBP_MapPoint_Info_Respawn_C_ToggleDisplay Parms{};
+	Params::WBP_MapPoint_Info_Respawn_C_ExecuteUbergraph_WBP_MapPoint_Info_Respawn Parms{};
 
-	Parms.ShouldDisplay = ShouldDisplay;
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.AdjustSide
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 TargetGeometry                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+
+void UWBP_MapPoint_Info_Respawn_C::AdjustSide(const struct FGeometry& TargetGeometry)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapPoint_Info_Respawn_C", "AdjustSide");
+
+	Params::WBP_MapPoint_Info_Respawn_C_AdjustSide Parms{};
+
+	Parms.TargetGeometry = std::move(TargetGeometry);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

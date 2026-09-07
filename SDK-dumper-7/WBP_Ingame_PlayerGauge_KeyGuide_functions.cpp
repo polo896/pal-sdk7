@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_PlayerGauge_KeyGuide_C::OnInitialized()
+void UWBP_Ingame_PlayerGauge_KeyGuide_C::AnmEvent_In()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "AnmEvent_In");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,49 +51,15 @@ void UWBP_Ingame_PlayerGauge_KeyGuide_C::ExecuteUbergraph_WBP_Ingame_PlayerGauge
 }
 
 
-// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Ingame_PlayerGauge_KeyGuide_C::AnmEvent_In()
+void UWBP_Ingame_PlayerGauge_KeyGuide_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.SetTitleText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      newText                                                (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Ingame_PlayerGauge_KeyGuide_C::SetTitleText(const class FText& newText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "SetTitleText");
-
-	Params::WBP_Ingame_PlayerGauge_KeyGuide_C_SetTitleText Parms{};
-
-	Parms.newText = std::move(newText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.ResetUIText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_PlayerGauge_KeyGuide_C::ResetUIText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "ResetUIText");
+		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -114,6 +80,40 @@ void UWBP_Ingame_PlayerGauge_KeyGuide_C::OverrideUIText(class FName OverrideActi
 	Params::WBP_Ingame_PlayerGauge_KeyGuide_C_OverrideUIText Parms{};
 
 	Parms.OverrideActionName_0 = OverrideActionName_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.ResetUIText
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_PlayerGauge_KeyGuide_C::ResetUIText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "ResetUIText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.SetTitleText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      newText                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Ingame_PlayerGauge_KeyGuide_C::SetTitleText(const class FText& newText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_KeyGuide_C", "SetTitleText");
+
+	Params::WBP_Ingame_PlayerGauge_KeyGuide_C_SetTitleText Parms{};
+
+	Parms.newText = std::move(newText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

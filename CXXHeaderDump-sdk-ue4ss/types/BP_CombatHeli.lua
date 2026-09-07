@@ -35,6 +35,8 @@ function ABP_CombatHeli_C:OnHPGaugeCollisionOverlap(OverlappedComponent, OtherAc
 ---@param OtherComp UPrimitiveComponent
 ---@param OtherBodyIndex int32
 function ABP_CombatHeli_C:OnHPGaugeCollisionOverlapEnd(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex) end
+---@param DeadInfo FPalDeadInfo
+function ABP_CombatHeli_C:BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature(DeadInfo) end
 ---@param EntryPoint int32
 function ABP_CombatHeli_C:ExecuteUbergraph_BP_CombatHeli(EntryPoint) end
 

@@ -7,8 +7,8 @@ class UWBP_MainMenu_Pal_Skill_Active_C : public UUserWidget
     class UWidgetAnimation* Anim_Empty;                                               // 0x0280 (size: 0x8)
     class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0288 (size: 0x8)
     class UWidgetAnimation* Anm_Click;                                                // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x02A0 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0298 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x02A0 (size: 0x8)
     class UImage* Image_Element;                                                      // 0x02A8 (size: 0x8)
     class UImage* Image_Selected;                                                     // 0x02B0 (size: 0x8)
     class UImage* Image_Selected_1;                                                   // 0x02B8 (size: 0x8)
@@ -24,7 +24,7 @@ class UWBP_MainMenu_Pal_Skill_Active_C : public UUserWidget
     EPalWazaID BindedWazaID;                                                          // 0x0308 (size: 0x2)
     FWBP_MainMenu_Pal_Skill_Active_COnClicked OnClicked;                              // 0x0310 (size: 0x10)
     void OnClicked(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-    TMap<EPalElementType, TSoftObjectPtr<class UTexture2D>> ElementTextureMap;        // 0x0320 (size: 0x50)
+    TMap<class EPalElementType, class TSoftObjectPtr<UTexture2D>> ElementTextureMap;  // 0x0320 (size: 0x50)
     FDataTableRowHandle EmptySlotMsgID;                                               // 0x0370 (size: 0x10)
 
     void SetEmptyInfo();

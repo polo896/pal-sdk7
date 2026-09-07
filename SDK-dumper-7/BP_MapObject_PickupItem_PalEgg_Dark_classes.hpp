@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_PickupItem_PalEgg_Dark.BP_MapObject_PickupItem_PalEgg_Dark_C
-// 0x0008 (0x0478 - 0x0470)
+// 0x0008 (0x0490 - 0x0488)
 class ABP_MapObject_PickupItem_PalEgg_Dark_C final : public ABP_MapObject_PickupItem_PalEgg_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_PickupItem_PalEgg_Dark_C; // 0x0470(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_PickupItem_PalEgg_Dark_C; // 0x0488(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_MapObject_PickupItem_PalEgg_Dark(int32 EntryPoint);

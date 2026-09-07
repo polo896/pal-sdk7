@@ -21,8 +21,8 @@ namespace SDK
 class UBP_Action_JumpFromJumpSpot_C final : public UPalAction_JumpFromJumpSpot
 {
 public:
-	bool CanStepCancel();
 	bool CanNextActionCancel();
+	bool CanStepCancel();
 
 public:
 	static class UClass* StaticClass()

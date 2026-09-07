@@ -102,7 +102,7 @@ public:
 DUMPER7_ASSERTS_BP_MonsterAIControllerBase_C_ReceiveTick;
 
 // Function BP_MonsterAIControllerBase.BP_MonsterAIControllerBase_C.ShowBaseCampLog_Internal
-// 0x0108 (0x0108 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct BP_MonsterAIControllerBase_C_ShowBaseCampLog_Internal final
 {
 public:
@@ -113,9 +113,9 @@ public:
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalLogContentToneType                        CallFunc_To_Log_Tone_Type_toneType;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x0080(0x0070)()
-	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_AddLog_ReturnValue;                       // 0x00F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x0080(0x0078)()
+	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_AddLog_ReturnValue;                       // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_MonsterAIControllerBase_C_ShowBaseCampLog_Internal;
 

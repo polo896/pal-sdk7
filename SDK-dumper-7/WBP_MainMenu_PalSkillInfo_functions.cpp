@@ -487,30 +487,6 @@ void UWBP_MainMenu_PalSkillInfo_C::ConvertUIDisplayParameterToPassiveEffectType(
 }
 
 
-// Function WBP_MainMenu_PalSkillInfo.WBP_MainMenu_PalSkillInfo_C.ConvertUIDisplayParameterToFoodEffectType
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// E_PalUIStatusDIsplayParameter           DisplayParameter                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalFoodStatusEffectType*               FoodEffect                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_PalSkillInfo_C::ConvertUIDisplayParameterToFoodEffectType(E_PalUIStatusDIsplayParameter DisplayParameter, EPalFoodStatusEffectType* FoodEffect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_PalSkillInfo_C", "ConvertUIDisplayParameterToFoodEffectType");
-
-	Params::WBP_MainMenu_PalSkillInfo_C_ConvertUIDisplayParameterToFoodEffectType Parms{};
-
-	Parms.DisplayParameter = DisplayParameter;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FoodEffect != nullptr)
-		*FoodEffect = Parms.FoodEffect;
-}
-
-
 // Function WBP_MainMenu_PalSkillInfo.WBP_MainMenu_PalSkillInfo_C.ChooseFriendShipEffectValue
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -612,6 +588,30 @@ void UWBP_MainMenu_PalSkillInfo_C::ChooseAwakeningEffectValue(E_PalUIStatusDIspl
 
 	if (FriendshipValue != nullptr)
 		*FriendshipValue = Parms.FriendshipValue;
+}
+
+
+// Function WBP_MainMenu_PalSkillInfo.WBP_MainMenu_PalSkillInfo_C.ConvertUIDisplayParameterToFoodEffectType
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// E_PalUIStatusDIsplayParameter           DisplayParameter                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalFoodStatusEffectType*               FoodEffect                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_PalSkillInfo_C::ConvertUIDisplayParameterToFoodEffectType(E_PalUIStatusDIsplayParameter DisplayParameter, EPalFoodStatusEffectType* FoodEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_PalSkillInfo_C", "ConvertUIDisplayParameterToFoodEffectType");
+
+	Params::WBP_MainMenu_PalSkillInfo_C_ConvertUIDisplayParameterToFoodEffectType Parms{};
+
+	Parms.DisplayParameter = DisplayParameter;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FoodEffect != nullptr)
+		*FoodEffect = Parms.FoodEffect;
 }
 
 

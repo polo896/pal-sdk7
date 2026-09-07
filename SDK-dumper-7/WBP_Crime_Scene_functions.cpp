@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Crime_Scene.WBP_Crime_Scene_C.SetCrimeSceneEnable
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Crime_Scene.WBP_Crime_Scene_C.ExecuteUbergraph_WBP_Crime_Scene
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Crime_Scene_C::SetCrimeSceneEnable(bool Enable)
+void UWBP_Crime_Scene_C::ExecuteUbergraph_WBP_Crime_Scene(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Scene_C", "SetCrimeSceneEnable");
+		Func = Class->GetFunction("WBP_Crime_Scene_C", "ExecuteUbergraph_WBP_Crime_Scene");
 
-	Params::WBP_Crime_Scene_C_SetCrimeSceneEnable Parms{};
+	Params::WBP_Crime_Scene_C_ExecuteUbergraph_WBP_Crime_Scene Parms{};
 
-	Parms.Enable = Enable;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Crime_Scene.WBP_Crime_Scene_C.Finished_F33B774D46BB4A7E03FF64B35586069D
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Crime_Scene_C::Finished_F33B774D46BB4A7E03FF64B35586069D()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Scene_C", "Finished_F33B774D46BB4A7E03FF64B35586069D");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -65,21 +51,35 @@ void UWBP_Crime_Scene_C::Finished_4B4F0B354CEB0EB1043AE5B3C6D7077A()
 }
 
 
-// Function WBP_Crime_Scene.WBP_Crime_Scene_C.ExecuteUbergraph_WBP_Crime_Scene
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Crime_Scene.WBP_Crime_Scene_C.Finished_F33B774D46BB4A7E03FF64B35586069D
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Crime_Scene_C::ExecuteUbergraph_WBP_Crime_Scene(int32 EntryPoint)
+void UWBP_Crime_Scene_C::Finished_F33B774D46BB4A7E03FF64B35586069D()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Scene_C", "ExecuteUbergraph_WBP_Crime_Scene");
+		Func = Class->GetFunction("WBP_Crime_Scene_C", "Finished_F33B774D46BB4A7E03FF64B35586069D");
 
-	Params::WBP_Crime_Scene_C_ExecuteUbergraph_WBP_Crime_Scene Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_Crime_Scene.WBP_Crime_Scene_C.SetCrimeSceneEnable
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Crime_Scene_C::SetCrimeSceneEnable(bool Enable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Crime_Scene_C", "SetCrimeSceneEnable");
+
+	Params::WBP_Crime_Scene_C_SetCrimeSceneEnable Parms{};
+
+	Parms.Enable = Enable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

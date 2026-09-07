@@ -17,287 +17,187 @@
 namespace SDK
 {
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.SwitchTab
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_OperatingTable_C::SwitchTab(int32 Tab)
+void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "SwitchTab");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
-	Params::WBP_OperatingTable_C_SwitchTab Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Tab = Tab;
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_MainMenu_Pal_Skill_Passive_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature");
+
+	Params::WBP_OperatingTable_C_BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.SwitchPassive
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_OperatingTable_C::SwitchPassive()
+void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "SwitchPassive");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.SwitchGender
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterParameter* CharacterParam                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_C::SwitchGender()
+void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature(class UPalIndividualCharacterParameter* CharacterParam)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "SwitchGender");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_OperatingTable_C_BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature Parms{};
+
+	Parms.CharacterParam = CharacterParam;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.SetupPassiveChangeItem
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             PassiveId                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SlotIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_C::SetupPassiveChangeItem()
+void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature(class FName PassiveId, int32 SlotIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "SetupPassiveChangeItem");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_OperatingTable_C_BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature Parms{};
+
+	Parms.PassiveId = PassiveId;
+	Parms.SlotIndex = SlotIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OperatingTable_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.RefreshItemDisplay
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OperatingTable_C::RefreshItemDisplay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "RefreshItemDisplay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnUnhoverPalList
+// Function WBP_OperatingTable.WBP_OperatingTable_C.CloseAction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_OperatingTable_C::OnUnhoverPalList()
+void UWBP_OperatingTable_C::CloseAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnUnhoverPalList");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "CloseAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnUnhoveredPasssiveItem
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OperatingTable_C::OnUnhoveredPasssiveItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnUnhoveredPasssiveItem");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OperatingTable_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnPassiveUpdate
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<class FName>&              PassiveIds                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_OperatingTable_C::OnPassiveUpdate(const TArray<class FName>& PassiveIds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnPassiveUpdate");
-
-	Params::WBP_OperatingTable_C_OnPassiveUpdate Parms{};
-
-	Parms.PassiveIds = std::move(PassiveIds);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnOperatingPassiveNotifyied
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Success                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::OnOperatingPassiveNotifyied(bool Success)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnOperatingPassiveNotifyied");
-
-	Params::WBP_OperatingTable_C_OnOperatingPassiveNotifyied Parms{};
-
-	Parms.Success = Success;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnOperatingGenderNotifyied
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Success                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::OnOperatingGenderNotifyied(bool Success)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnOperatingGenderNotifyied");
-
-	Params::WBP_OperatingTable_C_OnOperatingGenderNotifyied Parms{};
-
-	Parms.Success = Success;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnInitialized
+// Function WBP_OperatingTable.WBP_OperatingTable_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_OperatingTable_C::OnInitialized()
+void UWBP_OperatingTable_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnHoverPalList
+// Function WBP_OperatingTable.WBP_OperatingTable_C.ExecuteUbergraph_WBP_OperatingTable
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OperatingTable_C::ExecuteUbergraph_WBP_OperatingTable(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "ExecuteUbergraph_WBP_OperatingTable");
+
+	Params::WBP_OperatingTable_C_ExecuteUbergraph_WBP_OperatingTable Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.On Click Pal List
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_C::OnHoverPalList(class UPalIndividualCharacterHandle* Handle)
+void UWBP_OperatingTable_C::On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnHoverPalList");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "On Click Pal List");
 
-	Params::WBP_OperatingTable_C_OnHoverPalList Parms{};
+	Params::WBP_OperatingTable_C_On_Click_Pal_List Parms{};
 
 	Parms.Handle = Handle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnHoveredPassiveItem
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_OperatingTable_ItemList_C*   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::OnHoveredPassiveItem(class UWBP_OperatingTable_ItemList_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnHoveredPassiveItem");
-
-	Params::WBP_OperatingTable_C_OnHoveredPassiveItem Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnHoveredPalPassiveSlot
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_MainMenu_Pal_Skill_Passive_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::OnHoveredPalPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnHoveredPalPassiveSlot");
-
-	Params::WBP_OperatingTable_C_OnHoveredPalPassiveSlot Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.OnGenderUpdate
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalGenderType                          NewGender                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::OnGenderUpdate(EPalGenderType NewGender)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "OnGenderUpdate");
-
-	Params::WBP_OperatingTable_C_OnGenderUpdate Parms{};
-
-	Parms.NewGender = NewGender;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -325,143 +225,39 @@ void UWBP_OperatingTable_C::On_Select_Passive_Change(class FName PassiveId, clas
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.On Click Pal List
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnGenderUpdate
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalGenderType                          NewGender                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_C::On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle)
+void UWBP_OperatingTable_C::OnGenderUpdate(EPalGenderType NewGender)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "On Click Pal List");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnGenderUpdate");
 
-	Params::WBP_OperatingTable_C_On_Click_Pal_List Parms{};
+	Params::WBP_OperatingTable_C_OnGenderUpdate Parms{};
 
-	Parms.Handle = Handle;
+	Parms.NewGender = NewGender;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.ExecuteUbergraph_WBP_OperatingTable
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::ExecuteUbergraph_WBP_OperatingTable(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "ExecuteUbergraph_WBP_OperatingTable");
-
-	Params::WBP_OperatingTable_C_ExecuteUbergraph_WBP_OperatingTable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_OperatingTable_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.CloseAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OperatingTable_C::CloseAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "CloseAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             PassiveId                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   SlotIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature(class FName PassiveId, int32 SlotIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature");
-
-	Params::WBP_OperatingTable_C_BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature Parms{};
-
-	Parms.PassiveId = PassiveId;
-	Parms.SlotIndex = SlotIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterParameter* CharacterParam                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature(class UPalIndividualCharacterParameter* CharacterParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature");
-
-	Params::WBP_OperatingTable_C_BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature Parms{};
-
-	Parms.CharacterParam = CharacterParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnHoveredPalPassiveSlot
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_MainMenu_Pal_Skill_Passive_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget)
+void UWBP_OperatingTable_C::OnHoveredPalPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnHoveredPalPassiveSlot");
 
-	Params::WBP_OperatingTable_C_BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature Parms{};
+	Params::WBP_OperatingTable_C_OnHoveredPalPassiveSlot Parms{};
 
 	Parms.Widget = Widget;
 
@@ -469,45 +265,249 @@ void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPag
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnHoveredPassiveItem
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_OperatingTable_ItemList_C*   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature()
+void UWBP_OperatingTable_C::OnHoveredPassiveItem(class UWBP_OperatingTable_ItemList_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnHoveredPassiveItem");
+
+	Params::WBP_OperatingTable_C_OnHoveredPassiveItem Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnHoverPalList
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OperatingTable_C::OnHoverPalList(class UPalIndividualCharacterHandle* Handle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnHoverPalList");
+
+	Params::WBP_OperatingTable_C_OnHoverPalList Parms{};
+
+	Parms.Handle = Handle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_OperatingTable_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnOperatingGenderNotifyied
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Success                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
+void UWBP_OperatingTable_C::OnOperatingGenderNotifyied(bool Success)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnOperatingGenderNotifyied");
+
+	Params::WBP_OperatingTable_C_OnOperatingGenderNotifyied Parms{};
+
+	Parms.Success = Success;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnOperatingPassiveNotifyied
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Success                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OperatingTable_C::OnOperatingPassiveNotifyied(bool Success)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnOperatingPassiveNotifyied");
+
+	Params::WBP_OperatingTable_C_OnOperatingPassiveNotifyied Parms{};
+
+	Parms.Success = Success;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnPassiveUpdate
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class FName>&              PassiveIds                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_OperatingTable_C::OnPassiveUpdate(const TArray<class FName>& PassiveIds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnPassiveUpdate");
+
+	Params::WBP_OperatingTable_C_OnPassiveUpdate Parms{};
+
+	Parms.PassiveIds = std::move(PassiveIds);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OperatingTable_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OperatingTable.WBP_OperatingTable_C.BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnUnhoveredPasssiveItem
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_OperatingTable_C::BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_OperatingTable_C::OnUnhoveredPasssiveItem()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_C", "BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnUnhoveredPasssiveItem");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.OnUnhoverPalList
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OperatingTable_C::OnUnhoverPalList()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "OnUnhoverPalList");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.RefreshItemDisplay
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OperatingTable_C::RefreshItemDisplay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "RefreshItemDisplay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OperatingTable_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.SetupPassiveChangeItem
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OperatingTable_C::SetupPassiveChangeItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "SetupPassiveChangeItem");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.SwitchGender
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OperatingTable_C::SwitchGender()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "SwitchGender");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.SwitchPassive
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OperatingTable_C::SwitchPassive()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "SwitchPassive");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OperatingTable.WBP_OperatingTable_C.SwitchTab
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OperatingTable_C::SwitchTab(int32 Tab)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_C", "SwitchTab");
+
+	Params::WBP_OperatingTable_C_SwitchTab Parms{};
+
+	Parms.Tab = Tab;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

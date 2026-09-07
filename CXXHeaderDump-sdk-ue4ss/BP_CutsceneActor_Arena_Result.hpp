@@ -3,6 +3,6 @@
 
 class ABP_CutsceneActor_Arena_Result_C : public ABP_CutsceneActorBase_C
 {
-}; // Size: 0x3B0
+}; // Size: 0x408
 
 #endif

@@ -2,10 +2,12 @@
 
 ---@class UWBP_Fishing_PowerGauge_C : UUserWidget
 ---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Anm_Advice_In UWidgetAnimation
 ---@field Anm_Bad_Loop UWidgetAnimation
 ---@field Anm_GoodToBad UWidgetAnimation
 ---@field Anm_In UWidgetAnimation
 ---@field Canvas_KeyGuide UCanvasPanel
+---@field Image_35 UImage
 ---@field Image_Base UImage
 ---@field Image_BaseFrame UImage
 ---@field Image_Center UImage
@@ -17,10 +19,12 @@
 ---@field Image_Eff_Good UImage
 ---@field Image_Fish UImage
 ---@field Image_FishBar UImage
+---@field Image_Flash UImage
 ---@field Image_Frame UImage
 ---@field Image_Frame_Bad UImage
 ---@field Image_KeyGuide_Base UImage
 ---@field Image_White UImage
+---@field Overlay_Advice UOverlay
 ---@field Slider_SuitableArea USlider
 ---@field WBP_Fishing_TutorialGuide UWBP_Fishing_TutorialGuide_C
 ---@field WBP_PlayerInputKeyGuideIcon UWBP_PlayerInputKeyGuideIcon_C
@@ -47,6 +51,8 @@ function UWBP_Fishing_PowerGauge_C:AnmEvent_GoodToBad(IsStart) end
 function UWBP_Fishing_PowerGauge_C:AnmEvent_Bad_Loop(IsStart) end
 function UWBP_Fishing_PowerGauge_C:AnmEvent_AllStop() end
 function UWBP_Fishing_PowerGauge_C:AnmEvent_Out() end
+function UWBP_Fishing_PowerGauge_C:AnmEvent_Advice_In() end
+function UWBP_Fishing_PowerGauge_C:AnmEvent_Advice_Out() end
 function UWBP_Fishing_PowerGauge_C:OnInitialized() end
 function UWBP_Fishing_PowerGauge_C:ShowUI() end
 function UWBP_Fishing_PowerGauge_C:HideUI() end

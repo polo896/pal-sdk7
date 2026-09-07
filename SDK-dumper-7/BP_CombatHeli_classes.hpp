@@ -39,6 +39,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0C58(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature(const struct FPalDeadInfo& DeadInfo);
 	void CalcHeightControl(double TargetHeight, double* Result);
 	void ExecuteUbergraph_BP_CombatHeli(int32 EntryPoint);
 	void OnHPGaugeCollisionOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);

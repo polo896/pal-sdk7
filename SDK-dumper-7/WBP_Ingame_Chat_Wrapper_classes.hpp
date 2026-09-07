@@ -12,13 +12,15 @@
 
 #include "Engine_structs.hpp"
 #include "Pal_classes.hpp"
+#include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C
-// 0x0020 (0x0470 - 0x0450)
+// 0x0028 (0x0478 - 0x0450)
 class UWBP_Ingame_Chat_Wrapper_C final : public UPalUserWidget
 {
 public:
@@ -26,13 +28,18 @@ public:
 	class UImage*                                 Image_91;                                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_ForceClose;                                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Ingame_Chat_C*                     WBP_Ingame_Chat;                                   // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bActiveChat;                                       // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ShowChat();
-	struct FEventReply On_Image_ForceClose_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void ExecuteUbergraph_WBP_Ingame_Chat_Wrapper(int32 EntryPoint);
-	void CanOpenAnyUI(bool* bCanOpenAnyUI);
 	void BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature();
+	void CanOpenAnyUI(bool* bCanOpenAnyUI);
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_Ingame_Chat_Wrapper(int32 EntryPoint);
+	struct FEventReply On_Image_ForceClose_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnChangedInputMethod(ECommonInputType bNewInputType);
+	void OnClosedChatControl(class UPalHUDDispatchParameterBase* Param_0);
+	void ShowChat();
 
 public:
 	static class UClass* StaticClass()

@@ -119,15 +119,6 @@ public:
 };
 DUMPER7_ASSERTS_FBaseFocusPoint;
 
-// ScriptStruct CameraCalibrationCore.FocalLengthInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FFocalLengthInfo final
-{
-public:
-	struct FVector2D                              FxFy;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FFocalLengthInfo;
-
 // ScriptStruct CameraCalibrationCore.BaseLensTable
 // 0x0010 (0x0010 - 0x0000)
 struct alignas(0x08) FBaseLensTable
@@ -195,16 +186,6 @@ public:
 };
 DUMPER7_ASSERTS_FDistortionZoomPoint;
 
-// ScriptStruct CameraCalibrationCore.EncodersTable
-// 0x0100 (0x0100 - 0x0000)
-struct FEncodersTable final
-{
-public:
-	struct FRichCurve                             Focus;                                             // 0x0000(0x0080)(NativeAccessSpecifierPublic)
-	struct FRichCurve                             Iris;                                              // 0x0080(0x0080)(NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FEncodersTable;
-
 // ScriptStruct CameraCalibrationCore.DistortionFocusPoint
 // 0x0098 (0x00A0 - 0x0008)
 struct FDistortionFocusPoint final : public FBaseFocusPoint
@@ -225,6 +206,25 @@ public:
 	TArray<struct FDistortionFocusPoint>          FocusPoints;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FDistortionTable;
+
+// ScriptStruct CameraCalibrationCore.EncodersTable
+// 0x0100 (0x0100 - 0x0000)
+struct FEncodersTable final
+{
+public:
+	struct FRichCurve                             Focus;                                             // 0x0000(0x0080)(NativeAccessSpecifierPublic)
+	struct FRichCurve                             Iris;                                              // 0x0080(0x0080)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FEncodersTable;
+
+// ScriptStruct CameraCalibrationCore.FocalLengthInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FFocalLengthInfo final
+{
+public:
+	struct FVector2D                              FxFy;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFocalLengthInfo;
 
 // ScriptStruct CameraCalibrationCore.FocalLengthZoomPoint
 // 0x0020 (0x0020 - 0x0000)

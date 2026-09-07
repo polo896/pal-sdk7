@@ -17,123 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_BuildProgress.WBP_BuildProgress_C.ShowProgress
+// Function WBP_BuildProgress.WBP_BuildProgress_C.ClosePanel
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalHUDDisplayType                      DisplayType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BuildProgress_C::ShowProgress(EPalHUDDisplayType DisplayType)
+void UWBP_BuildProgress_C::ClosePanel()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "ShowProgress");
-
-	Params::WBP_BuildProgress_C_ShowProgress Parms{};
-
-	Parms.DisplayType = DisplayType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.SetProgress
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgress*                 Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BuildProgress_C::SetProgress(class UPalWorkProgress* Work)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "SetProgress");
-
-	Params::WBP_BuildProgress_C_SetProgress Parms{};
-
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.OnUpdatedAssignCharacter
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkBase*                     TargetWork                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BuildProgress_C::OnUpdatedAssignCharacter(class UPalWorkBase* TargetWork)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "OnUpdatedAssignCharacter");
-
-	Params::WBP_BuildProgress_C_OnUpdatedAssignCharacter Parms{};
-
-	Parms.TargetWork = TargetWork;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildProgress_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "OnSetup");
+		Func = Class->GetFunction("WBP_BuildProgress_C", "ClosePanel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_BuildProgress.WBP_BuildProgress_C.OnRequestClose
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UPalBuildProcess*                 Process                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_BuildProgress.WBP_BuildProgress_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_BuildProgress_C::OnRequestClose(class UPalBuildProcess* Process)
+void UWBP_BuildProgress_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "OnRequestClose");
-
-	Params::WBP_BuildProgress_C_OnRequestClose Parms{};
-
-	Parms.Process = Process;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildProgress_C::Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildProgress_C::Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA");
+		Func = Class->GetFunction("WBP_BuildProgress_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,31 +65,125 @@ void UWBP_BuildProgress_C::ExecuteUbergraph_WBP_BuildProgress(int32 EntryPoint)
 }
 
 
-// Function WBP_BuildProgress.WBP_BuildProgress_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_BuildProgress.WBP_BuildProgress_C.Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_BuildProgress_C::Destruct()
+void UWBP_BuildProgress_C::Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "Destruct");
+		Func = Class->GetFunction("WBP_BuildProgress_C", "Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_BuildProgress.WBP_BuildProgress_C.ClosePanel
+// Function WBP_BuildProgress.WBP_BuildProgress_C.Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_BuildProgress_C::ClosePanel()
+void UWBP_BuildProgress_C::Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildProgress_C", "ClosePanel");
+		Func = Class->GetFunction("WBP_BuildProgress_C", "Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.OnRequestClose
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UPalBuildProcess*                 Process                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BuildProgress_C::OnRequestClose(class UPalBuildProcess* Process)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildProgress_C", "OnRequestClose");
+
+	Params::WBP_BuildProgress_C_OnRequestClose Parms{};
+
+	Parms.Process = Process;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BuildProgress_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildProgress_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.OnUpdatedAssignCharacter
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkBase*                     TargetWork                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BuildProgress_C::OnUpdatedAssignCharacter(class UPalWorkBase* TargetWork)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildProgress_C", "OnUpdatedAssignCharacter");
+
+	Params::WBP_BuildProgress_C_OnUpdatedAssignCharacter Parms{};
+
+	Parms.TargetWork = TargetWork;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.SetProgress
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgress*                 Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BuildProgress_C::SetProgress(class UPalWorkProgress* Work)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildProgress_C", "SetProgress");
+
+	Params::WBP_BuildProgress_C_SetProgress Parms{};
+
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.ShowProgress
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalHUDDisplayType                      DisplayType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BuildProgress_C::ShowProgress(EPalHUDDisplayType DisplayType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildProgress_C", "ShowProgress");
+
+	Params::WBP_BuildProgress_C_ShowProgress Parms{};
+
+	Parms.DisplayType = DisplayType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

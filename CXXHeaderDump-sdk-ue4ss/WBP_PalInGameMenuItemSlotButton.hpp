@@ -8,7 +8,7 @@ class UWBP_PalInGameMenuItemSlotButton_C : public UWBP_PalItemSlotButtonBase_C
     class UWidgetAnimation* Anm_Rarity_0To4;                                          // 0x0620 (size: 0x8)
     class UWidgetAnimation* Anm_UnselectToSelect;                                     // 0x0628 (size: 0x8)
     class UWidgetAnimation* Anm_Bg_Lock;                                              // 0x0630 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0638 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0638 (size: 0x8)
     class UWidgetAnimation* Anm_Rarity_0To4_old;                                      // 0x0640 (size: 0x8)
     class UImage* Base;                                                               // 0x0648 (size: 0x8)
     class UImage* Base_Empty;                                                         // 0x0650 (size: 0x8)

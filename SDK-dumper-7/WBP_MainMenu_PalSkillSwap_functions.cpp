@@ -17,6 +17,85 @@
 namespace SDK
 {
 
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_PalSkillSwap_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.OnClicked_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_MainMenu_Pal_Skill_Active_C* SkillWidget                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_PalSkillSwap_C::OnClicked_Internal(class UWBP_MainMenu_Pal_Skill_Active_C* SkillWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "OnClicked_Internal");
+
+	Params::WBP_MainMenu_PalSkillSwap_C_OnClicked_Internal Parms{};
+
+	Parms.SkillWidget = SkillWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.On_BaseBlack_MouseButtonDown
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_MainMenu_PalSkillSwap_C::On_BaseBlack_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "On_BaseBlack_MouseButtonDown");
+
+	Params::WBP_MainMenu_PalSkillSwap_C_On_BaseBlack_MouseButtonDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.ExecuteUbergraph_WBP_MainMenu_PalSkillSwap
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_PalSkillSwap_C::ExecuteUbergraph_WBP_MainMenu_PalSkillSwap(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "ExecuteUbergraph_WBP_MainMenu_PalSkillSwap");
+
+	Params::WBP_MainMenu_PalSkillSwap_C_ExecuteUbergraph_WBP_MainMenu_PalSkillSwap Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Setup
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -110,71 +189,6 @@ void UWBP_MainMenu_PalSkillSwap_C::OnClosed()
 }
 
 
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.OnClicked_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_MainMenu_Pal_Skill_Active_C* SkillWidget                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_PalSkillSwap_C::OnClicked_Internal(class UWBP_MainMenu_Pal_Skill_Active_C* SkillWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "OnClicked_Internal");
-
-	Params::WBP_MainMenu_PalSkillSwap_C_OnClicked_Internal Parms{};
-
-	Parms.SkillWidget = SkillWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.On_BaseBlack_MouseButtonDown
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_MainMenu_PalSkillSwap_C::On_BaseBlack_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "On_BaseBlack_MouseButtonDown");
-
-	Params::WBP_MainMenu_PalSkillSwap_C_On_BaseBlack_MouseButtonDown Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.ExecuteUbergraph_WBP_MainMenu_PalSkillSwap
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_PalSkillSwap_C::ExecuteUbergraph_WBP_MainMenu_PalSkillSwap(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "ExecuteUbergraph_WBP_MainMenu_PalSkillSwap");
-
-	Params::WBP_MainMenu_PalSkillSwap_C_ExecuteUbergraph_WBP_MainMenu_PalSkillSwap Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -184,20 +198,6 @@ void UWBP_MainMenu_PalSkillSwap_C::Destruct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_PalSkillSwap_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

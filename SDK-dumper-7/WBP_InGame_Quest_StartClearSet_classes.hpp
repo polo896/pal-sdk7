@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "F_PalQuestStartClearNotifyQueData_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
-#include "Engine_structs.hpp"
-#include "F_PalQuestStartClearNotifyQueData_structs.hpp"
 
 
 namespace SDK
@@ -34,14 +34,14 @@ public:
 	class UWBP_InGame_Quest_StartClearBase_C*     CurrentWidget;                                     // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InGame_Quest_StartClearSet(int32 EntryPoint);
 	void CompleteQuest(class FName QuestId);
-	void TryNextNotify();
-	void StartQuest(class FName QuestId);
-	void SetActionBindData(const struct FPalUIActionBindData& BindData);
-	void OnInitialized();
-	void OnEndWidgetSequence();
+	void ExecuteUbergraph_WBP_InGame_Quest_StartClearSet(int32 EntryPoint);
 	void GetCurrentQuestNotifyTime(double* NotifyTime);
+	void OnEndWidgetSequence();
+	void OnInitialized();
+	void SetActionBindData(const struct FPalUIActionBindData& BindData);
+	void StartQuest(class FName QuestId);
+	void TryNextNotify();
 
 public:
 	static class UClass* StaticClass()

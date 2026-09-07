@@ -17,29 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Fishing_Hit.WBP_Fishing_Hit_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Fishing_Hit.WBP_Fishing_Hit_C.AnmEvent_Hide
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_Hit_C::OnInitialized()
+void UWBP_Fishing_Hit_C::AnmEvent_Hide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_Hit_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Fishing_Hit_C", "AnmEvent_Hide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Fishing_Hit.WBP_Fishing_Hit_C.Finished_2E34FB9345682690EC9932908042E186
+// Function WBP_Fishing_Hit.WBP_Fishing_Hit_C.AnmEvent_Hit
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_Hit_C::Finished_2E34FB9345682690EC9932908042E186()
+void UWBP_Fishing_Hit_C::AnmEvent_Hit()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_Hit_C", "Finished_2E34FB9345682690EC9932908042E186");
+		Func = Class->GetFunction("WBP_Fishing_Hit_C", "AnmEvent_Hit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,15 +65,29 @@ void UWBP_Fishing_Hit_C::ExecuteUbergraph_WBP_Fishing_Hit(int32 EntryPoint)
 }
 
 
-// Function WBP_Fishing_Hit.WBP_Fishing_Hit_C.AnmEvent_Hit
+// Function WBP_Fishing_Hit.WBP_Fishing_Hit_C.Finished_2E34FB9345682690EC9932908042E186
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_Hit_C::AnmEvent_Hit()
+void UWBP_Fishing_Hit_C::Finished_2E34FB9345682690EC9932908042E186()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_Hit_C", "AnmEvent_Hit");
+		Func = Class->GetFunction("WBP_Fishing_Hit_C", "Finished_2E34FB9345682690EC9932908042E186");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Fishing_Hit.WBP_Fishing_Hit_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Fishing_Hit_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_Hit_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

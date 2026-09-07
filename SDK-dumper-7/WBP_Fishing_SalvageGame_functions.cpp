@@ -17,29 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.PlaySuccessAnimation
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.ExecuteUbergraph_WBP_Fishing_SalvageGame
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Fishing_SalvageGame_C::PlaySuccessAnimation()
+void UWBP_Fishing_SalvageGame_C::ExecuteUbergraph_WBP_Fishing_SalvageGame(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "PlaySuccessAnimation");
+		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "ExecuteUbergraph_WBP_Fishing_SalvageGame");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Fishing_SalvageGame_C_ExecuteUbergraph_WBP_Fishing_SalvageGame Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.PlayInAnimation
+// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.HideAnimation
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_SalvageGame_C::PlayInAnimation()
+void UWBP_Fishing_SalvageGame_C::HideAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "PlayInAnimation");
+		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "HideAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,37 +65,31 @@ void UWBP_Fishing_SalvageGame_C::PlayFailedAnimation()
 }
 
 
-// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.HideAnimation
+// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.PlayInAnimation
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_SalvageGame_C::HideAnimation()
+void UWBP_Fishing_SalvageGame_C::PlayInAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "HideAnimation");
+		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "PlayInAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.ExecuteUbergraph_WBP_Fishing_SalvageGame
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Fishing_SalvageGame.WBP_Fishing_SalvageGame_C.PlaySuccessAnimation
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_SalvageGame_C::ExecuteUbergraph_WBP_Fishing_SalvageGame(int32 EntryPoint)
+void UWBP_Fishing_SalvageGame_C::PlaySuccessAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "ExecuteUbergraph_WBP_Fishing_SalvageGame");
+		Func = Class->GetFunction("WBP_Fishing_SalvageGame_C", "PlaySuccessAnimation");
 
-	Params::WBP_Fishing_SalvageGame_C_ExecuteUbergraph_WBP_Fishing_SalvageGame Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

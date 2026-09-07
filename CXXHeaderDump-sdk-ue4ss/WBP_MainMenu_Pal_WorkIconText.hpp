@@ -20,15 +20,24 @@ class UWBP_MainMenu_Pal_WorkIconText_C : public UUserWidget
     class UWBP_MainMenu_Pal_WorkGauge_C* WBP_MainMenu_Pal_WorkGauge_8;                // 0x02E8 (size: 0x8)
     class UWBP_MainMenu_Pal_WorkGauge_C* WBP_MainMenu_Pal_WorkGauge_9;                // 0x02F0 (size: 0x8)
     class UWBP_MainMenu_Pal_WorkIcon_C* WBP_MainMenu_Pal_WorkIcon;                    // 0x02F8 (size: 0x8)
-    TArray<UWBP_MainMenu_Pal_WorkGauge_C*> Gauge_Array;                               // 0x0300 (size: 0x10)
-    class UWBP_MainMenu_Pal_FoodAmountIcon_C* NewVar;                                 // 0x0310 (size: 0x8)
-    EPalWorkSuitability Suitability;                                                  // 0x0318 (size: 0x1)
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0300 (size: 0x8)
+    TArray<class UWBP_MainMenu_Pal_WorkGauge_C*> Gauge_Array;                         // 0x0308 (size: 0x10)
+    class UWBP_MainMenu_Pal_FoodAmountIcon_C* NewVar;                                 // 0x0318 (size: 0x8)
+    EPalWorkSuitability Suitability;                                                  // 0x0320 (size: 0x1)
+    FWBP_MainMenu_Pal_WorkIconText_COnHovered OnHovered;                              // 0x0328 (size: 0x10)
+    void OnHovered(class UWBP_MainMenu_Pal_WorkIconText_C* Widget);
+    FWBP_MainMenu_Pal_WorkIconText_COnUnhovered OnUnhovered;                          // 0x0338 (size: 0x10)
+    void OnUnhovered();
 
     void Set Suitability(EPalWorkSuitability Suitability, int32 Rank, int32 RankBonus, int32 PassiveRankBonus);
     void AnmEvent_OffToOn();
     void AnmEvent_ForceOff();
+    void BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+    void BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void OnInitialized();
     void ExecuteUbergraph_WBP_MainMenu_Pal_WorkIconText(int32 EntryPoint);
-}; // Size: 0x319
+    void OnUnhovered__DelegateSignature();
+    void OnHovered__DelegateSignature(class UWBP_MainMenu_Pal_WorkIconText_C* Widget);
+}; // Size: 0x348
 
 #endif

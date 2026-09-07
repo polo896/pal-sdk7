@@ -4,7 +4,6 @@
 ---@field UberGraphFrame FPointerToUberGraphFrame
 ---@field Box7 UBoxComponent
 ---@field Box6 UBoxComponent
----@field Box_PlayerOnly UBoxComponent
 ---@field Niagara UNiagaraComponent
 ---@field DoorBoxCollision UBoxComponent
 ---@field LockMesh UStaticMeshComponent

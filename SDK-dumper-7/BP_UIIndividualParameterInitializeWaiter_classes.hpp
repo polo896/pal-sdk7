@@ -27,9 +27,9 @@ public:
 	struct FTimerHandle                           CheckIndividualParameterTimerHandle;               // 0x0040(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Register(class APalCharacter* TargetCharacter);
-	void OnCompleteInitiaize(class APalCharacter* Character);
 	void CheckIndividual();
+	void OnCompleteInitiaize(class APalCharacter* Character);
+	void Register(class APalCharacter* TargetCharacter);
 
 public:
 	static class UClass* StaticClass()

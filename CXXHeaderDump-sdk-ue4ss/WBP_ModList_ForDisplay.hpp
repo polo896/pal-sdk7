@@ -3,17 +3,17 @@
 
 class UWBP_ModList_ForDisplay_C : public UPalUIModSettings
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04D0 (size: 0x8)
-    class UWBP_Option_ModMenu_C* WBP_Option_ModMenu;                                  // 0x04D8 (size: 0x8)
-    FPalUIModUniqueId CurrentProcessingModId;                                         // 0x04E0 (size: 0x10)
-    FPalDataTableRowName_UIInputAction OpenSteamworkshopInputAction;                  // 0x04F0 (size: 0x8)
-    FDataTableRowHandle CantChangeModSupportIngameMsgId;                              // 0x04F8 (size: 0x10)
-    FDataTableRowHandle SaveMsgId;                                                    // 0x0508 (size: 0x10)
-    FDataTableRowHandle NotCompatibleMsgId;                                           // 0x0518 (size: 0x10)
-    FDataTableRowHandle CancelMSGID;                                                  // 0x0528 (size: 0x10)
-    FPalDataTableRowName_UIInputAction CancelInputAction;                             // 0x0538 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ConfirmInputAction;                            // 0x0540 (size: 0x8)
-    FDataTableRowHandle ModSupportCautionMsgId;                                       // 0x0548 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04D8 (size: 0x8)
+    class UWBP_Option_ModMenu_C* WBP_Option_ModMenu;                                  // 0x04E0 (size: 0x8)
+    FPalUIModUniqueId CurrentProcessingModId;                                         // 0x04E8 (size: 0x10)
+    FPalDataTableRowName_UIInputAction OpenSteamworkshopInputAction;                  // 0x04F8 (size: 0x8)
+    FDataTableRowHandle CantChangeModSupportIngameMsgId;                              // 0x0500 (size: 0x10)
+    FDataTableRowHandle SaveMsgId;                                                    // 0x0510 (size: 0x10)
+    FDataTableRowHandle NotCompatibleMsgId;                                           // 0x0520 (size: 0x10)
+    FDataTableRowHandle CancelMSGID;                                                  // 0x0530 (size: 0x10)
+    FPalDataTableRowName_UIInputAction CancelInputAction;                             // 0x0540 (size: 0x8)
+    FPalDataTableRowName_UIInputAction ConfirmInputAction;                            // 0x0548 (size: 0x8)
+    FDataTableRowHandle ModSupportCautionMsgId;                                       // 0x0550 (size: 0x10)
 
     void OnConfirmAction();
     void OnDialogClosed_Cancel(bool bResult);
@@ -40,6 +40,6 @@ class UWBP_ModList_ForDisplay_C : public UPalUIModSettings
     void Tick(FGeometry MyGeometry, float InDeltaTime);
     void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_4_OnCancel__DelegateSignature();
     void ExecuteUbergraph_WBP_ModList_ForDisplay(int32 EntryPoint);
-}; // Size: 0x558
+}; // Size: 0x560
 
 #endif

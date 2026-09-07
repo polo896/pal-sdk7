@@ -17,6 +17,7 @@
 ---@field AnmEndTimer FTimerHandle
 ---@field CacheRatio float
 ---@field CancelMSGID FDataTableRowHandle
+---@field IsShowBlocked boolean
 local UWBP_PartnerSkillInfo_C = {}
 
 function UWBP_PartnerSkillInfo_C:TriggerSkillCallAnimation() end

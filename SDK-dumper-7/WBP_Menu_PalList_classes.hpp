@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Menu_PalList.WBP_Menu_PalList_C
-// 0x00F0 (0x0748 - 0x0658)
+// 0x0128 (0x0780 - 0x0658)
 class UWBP_Menu_PalList_C final : public UWBP_IndividualParameterBindWidget_C
 {
 public:
@@ -52,6 +52,8 @@ public:
 	bool                                          Interactable;                                      // 0x0738(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_739[0x7];                                      // 0x0739(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAudioEvent*                          ClickEventTmp;                                     // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               dynamicMaterial;                                   // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              LoadingIcon;                                       // 0x0750(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
 	void UpdateWazaLearnable(class UPalIndividualCharacterParameter* Individual_Parameter, EPalWazaID WazaID);
@@ -65,7 +67,9 @@ public:
 	void SetInteractable(bool IsInteractable_0);
 	void SetCurrentWazaId(EPalWazaID WazaID);
 	void OnUpdateSkin(const class FName& NewSkinName);
+	void OnLoaded_E0D87CB94B14FC2B16B581B2C8B64D3F(class UObject* Loaded);
 	void OnInitialized();
+	void LoadIcon(TSoftObjectPtr<class UTexture2D> SoftIcon);
 	void Focus();
 	void ExecuteUbergraph_WBP_Menu_PalList(int32 EntryPoint);
 	void Construct();

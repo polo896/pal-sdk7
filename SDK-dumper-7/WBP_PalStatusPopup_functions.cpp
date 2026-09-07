@@ -17,29 +17,43 @@
 namespace SDK
 {
 
-// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.BndEvt__WBP_PalStatusPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalStatusPopup_C::BndEvt__WBP_PalStatusPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_PalStatusPopup_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatusPopup_C", "BndEvt__WBP_PalStatusPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalStatusPopup_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.Construct
+// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalStatusPopup_C::Construct()
+void UWBP_PalStatusPopup_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatusPopup_C", "Construct");
+		Func = Class->GetFunction("WBP_PalStatusPopup_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalStatusPopup_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatusPopup_C", "OnCancelAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,43 +79,29 @@ void UWBP_PalStatusPopup_C::ExecuteUbergraph_WBP_PalStatusPopup(int32 EntryPoint
 }
 
 
-// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnCancelAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatusPopup_C::OnCancelAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatusPopup_C", "OnCancelAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnInitialized
+// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalStatusPopup_C::OnInitialized()
+void UWBP_PalStatusPopup_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatusPopup_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_PalStatusPopup_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalStatusPopup.WBP_PalStatusPopup_C.BndEvt__WBP_PalStatusPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_PalStatusPopup_C::OnSetup()
+void UWBP_PalStatusPopup_C::BndEvt__WBP_PalStatusPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatusPopup_C", "OnSetup");
+		Func = Class->GetFunction("WBP_PalStatusPopup_C", "BndEvt__WBP_PalStatusPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -30,11 +30,11 @@ public:
 	TMulticastInlineDelegate<void()>              OnSetEmpty;                                        // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Setup(class FName SkinName, bool IsEquip);
-	void SetEmpty();
-	void OnLoaded_F4FCEC97410E591228B5AA8532DA5248(class UObject* Loaded);
-	void LoadIconEvent_Internal(TSoftObjectPtr<class UTexture2D> SoftTexture);
 	void ExecuteUbergraph_WBP_EquipSkin_SkinIcon(int32 EntryPoint);
+	void LoadIconEvent_Internal(TSoftObjectPtr<class UTexture2D> SoftTexture);
+	void OnLoaded_F4FCEC97410E591228B5AA8532DA5248(class UObject* Loaded);
+	void SetEmpty();
+	void Setup(class FName SkinName, bool IsEquip);
 
 public:
 	static class UClass* StaticClass()

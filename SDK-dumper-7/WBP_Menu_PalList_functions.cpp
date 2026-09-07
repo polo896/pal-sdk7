@@ -237,6 +237,26 @@ void UWBP_Menu_PalList_C::OnUpdateSkin(const class FName& NewSkinName)
 }
 
 
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.OnLoaded_E0D87CB94B14FC2B16B581B2C8B64D3F
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Menu_PalList_C::OnLoaded_E0D87CB94B14FC2B16B581B2C8B64D3F(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "OnLoaded_E0D87CB94B14FC2B16B581B2C8B64D3F");
+
+	Params::WBP_Menu_PalList_C_OnLoaded_E0D87CB94B14FC2B16B581B2C8B64D3F Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Menu_PalList.WBP_Menu_PalList_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -248,6 +268,26 @@ void UWBP_Menu_PalList_C::OnInitialized()
 		Func = Class->GetFunction("WBP_Menu_PalList_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.LoadIcon
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        SoftIcon                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void UWBP_Menu_PalList_C::LoadIcon(TSoftObjectPtr<class UTexture2D> SoftIcon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "LoadIcon");
+
+	Params::WBP_Menu_PalList_C_LoadIcon Parms{};
+
+	Parms.SoftIcon = SoftIcon;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -266,7 +306,7 @@ void UWBP_Menu_PalList_C::Focus()
 
 
 // Function WBP_Menu_PalList.WBP_Menu_PalList_C.ExecuteUbergraph_WBP_Menu_PalList
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

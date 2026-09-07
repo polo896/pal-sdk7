@@ -28,6 +28,8 @@
 ---@field OnUnhoveredPanel FWBP_Menu_PalList_COnUnhoveredPanel
 ---@field Interactable boolean
 ---@field ClickEventTmp UAkAudioEvent
+---@field dynamicMaterial UMaterialInstanceDynamic
+---@field LoadingIcon TSoftObjectPtr<UTexture2D>
 local UWBP_Menu_PalList_C = {}
 
 ---@param NewSkinName FName
@@ -57,6 +59,8 @@ function UWBP_Menu_PalList_C:UpdateHunger(Now, Max) end
 function UWBP_Menu_PalList_C:UpdateNickname(NewNickName) end
 ---@param NewLevel int32
 UWBP_Menu_PalList_C['Update Level'] = function(self, NewLevel) end
+---@param Loaded UObject
+function UWBP_Menu_PalList_C:OnLoaded_E0D87CB94B14FC2B16B581B2C8B64D3F(Loaded) end
 function UWBP_Menu_PalList_C:AnmEvent_Push() end
 function UWBP_Menu_PalList_C:AnmEvent_Open() end
 function UWBP_Menu_PalList_C:AnmEvent_Focus() end
@@ -70,6 +74,8 @@ function UWBP_Menu_PalList_C:BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2N
 function UWBP_Menu_PalList_C:BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(Button) end
 ---@param Button UCommonButtonBase
 function UWBP_Menu_PalList_C:BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param SoftIcon TSoftObjectPtr<UTexture2D>
+function UWBP_Menu_PalList_C:LoadIcon(SoftIcon) end
 ---@param EntryPoint int32
 function UWBP_Menu_PalList_C:ExecuteUbergraph_WBP_Menu_PalList(EntryPoint) end
 function UWBP_Menu_PalList_C:OnUnhoveredPanel__DelegateSignature() end

@@ -48,6 +48,7 @@
 ---@field bCompletedMake boolean
 local UWBP_CharacterMake_C = {}
 
+function UWBP_CharacterMake_C:OnCancel_Tab() end
 function UWBP_CharacterMake_C:OnTriggerToggleEquipDisplay() end
 function UWBP_CharacterMake_C:OnTriggerCompleteMake() end
 function UWBP_CharacterMake_C:OnTriggerPlaySampleVoice() end

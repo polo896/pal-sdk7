@@ -27,8 +27,8 @@ public:
 
 public:
 	void SetDistanceText(double Length);
-	void ShouldForceHide(bool* bForceHide);
 	void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
+	void ShouldForceHide(bool* bForceHide);
 
 public:
 	static class UClass* StaticClass()

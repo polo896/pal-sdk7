@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalSpawner_Sheets_81_1_forest_FBOSS_2.BP_PalSpawner_Sheets_81_1_forest_FBOSS_2_C
-// 0x0000 (0x0638 - 0x0638)
+// 0x0000 (0x0648 - 0x0648)
 class ABP_PalSpawner_Sheets_81_1_forest_FBOSS_2_C final : public ABP_PalSpawner_Standard_C
 {
 public:

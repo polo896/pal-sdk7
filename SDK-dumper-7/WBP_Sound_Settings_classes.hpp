@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Sound_Settings.WBP_Sound_Settings_C
-// 0x01A0 (0x0418 - 0x0278)
+// 0x0240 (0x04B8 - 0x0278)
 class UWBP_Sound_Settings_C final : public UUserWidget
 {
 public:
@@ -55,26 +55,28 @@ public:
 	uint8                                         Pad_371[0x3];                                      // 0x0371(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionAudioSettings                OriginalSettingCache;                              // 0x0374(0x0024)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FPalOptionVoiceChatSettings            VoiceChatSettingCache;                             // 0x0398(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UWBP_Option_DiscordFriendList_C*        OptionDiscordFriend;                               // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FDataTableRowHandle>            VoiceChatModeMsgIds;                               // 0x03F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class FString>                         VoiceChatDevices;                                  // 0x0400(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         CurrentVoiceChatDeviceIndex;                       // 0x0410(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DefaultVoiceChatDeviceIndex;                       // 0x0414(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionVoiceChatSettings            OriginalVoiceChatSettingCache;                     // 0x03E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPalOptionVoiceChatSettings            RollbackVoiceChatSettingCache;                     // 0x0438(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_Option_DiscordFriendList_C*        OptionDiscordFriend;                               // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FDataTableRowHandle>            VoiceChatModeMsgIds;                               // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class FString>                         VoiceChatDevices;                                  // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         CurrentVoiceChatDeviceIndex;                       // 0x04B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DefaultVoiceChatDeviceIndex;                       // 0x04B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ApplySettings(bool ApplyOriginal);
-	void Construct();
-	void ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint);
-	void OnAmbientChanged(double Value);
-	void OnBGMChanged(double Value);
-	void OnChangedSelection_VoiceChat_Input_Setting(int32 Selection);
-	void OnChangedSlider_VoiceChat_Input_Volume(double Volume);
-	void OnChangedSlider_VoiceChat_Output_Volume(double Volume);
-	void OnChangedSwitch_GameMachine(bool IsOn);
-	void OnChangedSwitch_PalEffect(bool IsOn);
-	void OnChangedSwitch_PalWorking(bool IsOn);
-	void OnChangedSwitch_RarePalEffect(bool IsOn);
 	void OnChangedSwitch_VoiceChat_Mute_MySelf(bool IsOn);
+	void OnChangedSwitch_RarePalEffect(bool IsOn);
+	void OnChangedSwitch_PalWorking(bool IsOn);
+	void OnChangedSwitch_PalEffect(bool IsOn);
+	void OnChangedSwitch_GameMachine(bool IsOn);
+	void OnChangedSlider_VoiceChat_Output_Volume(double Volume);
+	void OnChangedSlider_VoiceChat_Input_Volume(double Volume);
+	void OnChangedSelection_VoiceChat_Input_Setting(int32 Selection);
+	void OnBGMChanged(double Value);
+	void OnAmbientChanged(double Value);
+	void ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint);
+	void Construct();
+	void ApplySettings(bool ApplyOriginal);
 	void OnChangedSwitch_VoiceChat_Mute_Others(bool IsOn);
 	void OnChangeVoiceChatDevice(int32 Selection);
 	void OnClickCloseDiscordFriiendList();

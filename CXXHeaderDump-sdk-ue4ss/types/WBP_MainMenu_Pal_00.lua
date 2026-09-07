@@ -157,6 +157,12 @@
 ---@field SuitabilityWidgetMap TMap<EPalWorkSuitability, UWBP_MainMenu_Pal_WorkIconText_C>
 local UWBP_MainMenu_Pal_00_C = {}
 
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_MainMenu_Pal_00_C:DoCustomNavigation_ToTopWorkSuitability(Navigation) end
+function UWBP_MainMenu_Pal_00_C:OnUnhoveredSuitabilityIcon() end
+---@param Widget UWBP_MainMenu_Pal_WorkIconText_C
+function UWBP_MainMenu_Pal_00_C:OnHoveredSuitabilityIcon(Widget) end
 ---@param bAwaked boolean
 function UWBP_MainMenu_Pal_00_C:SetAwakening(bAwaked) end
 ---@param bResult boolean

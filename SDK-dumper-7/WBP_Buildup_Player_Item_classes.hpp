@@ -27,9 +27,9 @@ public:
 	EPalRelicType                                 MyRelicType;                                       // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetRelicType(EPalRelicType RelicType);
-	void DisplayFIxedRelicCount(int32 DisplayCount);
 	void DisplayCurrentRelicCount();
+	void DisplayFIxedRelicCount(int32 DisplayCount);
+	void SetRelicType(EPalRelicType RelicType);
 
 public:
 	static class UClass* StaticClass()

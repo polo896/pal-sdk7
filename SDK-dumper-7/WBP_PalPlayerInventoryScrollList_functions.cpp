@@ -17,181 +17,75 @@
 namespace SDK
 {
 
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalUIInventoryModel*             useModel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalPlayerInventoryScrollList_C::Setup(class UPalUIInventoryModel* useModel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Setup");
-
-	Params::WBP_PalPlayerInventoryScrollList_C_Setup Parms{};
-
-	Parms.useModel = useModel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.ScrollToCategoryTop
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalPlayerInventoryType                 TargetType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget**                         TopFocusTarget                                         (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalPlayerInventoryScrollList_C::ScrollToCategoryTop(EPalPlayerInventoryType TargetType, class UWidget** TopFocusTarget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "ScrollToCategoryTop");
-
-	Params::WBP_PalPlayerInventoryScrollList_C_ScrollToCategoryTop Parms{};
-
-	Parms.TargetType = TargetType;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TopFocusTarget != nullptr)
-		*TopFocusTarget = Parms.TopFocusTarget;
-}
-
-
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Open Use Item Panel
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalPlayerInventoryScrollList_C::Open_Use_Item_Panel(class UWBP_PalItemSlotButtonBase_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Open Use Item Panel");
-
-	Params::WBP_PalPlayerInventoryScrollList_C_Open_Use_Item_Panel Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.OnTriedEquipSlot_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalPlayerInventoryScrollList_C::OnTriedEquipSlot_Internal(class UWBP_PalItemSlotButtonBase_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "OnTriedEquipSlot_Internal");
-
-	Params::WBP_PalPlayerInventoryScrollList_C_OnTriedEquipSlot_Internal Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.OnLeftCllicked
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalPlayerInventoryScrollList_C::OnLeftCllicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "OnLeftCllicked");
-
-	Params::WBP_PalPlayerInventoryScrollList_C_OnLeftCllicked Parms{};
-
-	Parms.ButtonBase = ButtonBase;
-	Parms.PressType = PressType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.GetItemSlotButtons
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Add Player Inventory Block
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalPlayerInventoryType                 inventoryType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UWBP_PalItemSlotButtonBase_C*>*OutSlotButtonArray                                     (Parm, OutParm, ContainsInstancedReference)
+// class UWBP_PalItemListBlock_C**         createdBlock                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalPlayerInventoryScrollList_C::GetItemSlotButtons(EPalPlayerInventoryType inventoryType, TArray<class UWBP_PalItemSlotButtonBase_C*>* OutSlotButtonArray)
+void UWBP_PalPlayerInventoryScrollList_C::Add_Player_Inventory_Block(EPalPlayerInventoryType inventoryType, class UWBP_PalItemListBlock_C** createdBlock)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "GetItemSlotButtons");
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Add Player Inventory Block");
 
-	Params::WBP_PalPlayerInventoryScrollList_C_GetItemSlotButtons Parms{};
+	Params::WBP_PalPlayerInventoryScrollList_C_Add_Player_Inventory_Block Parms{};
 
 	Parms.inventoryType = inventoryType;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (OutSlotButtonArray != nullptr)
-		*OutSlotButtonArray = std::move(Parms.OutSlotButtonArray);
+	if (createdBlock != nullptr)
+		*createdBlock = Parms.createdBlock;
 }
 
 
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.FilteringFromItemTypeB
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<EPalItemTypeB>&                  displayTypesB                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    isEmptySlotDIsplay                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.ClearFiltering
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalPlayerInventoryScrollList_C::FilteringFromItemTypeB(TArray<EPalItemTypeB>& displayTypesB, bool isEmptySlotDIsplay)
+void UWBP_PalPlayerInventoryScrollList_C::ClearFiltering()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "FilteringFromItemTypeB");
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "ClearFiltering");
 
-	Params::WBP_PalPlayerInventoryScrollList_C_FilteringFromItemTypeB Parms{};
-
-	Parms.displayTypesB = std::move(displayTypesB);
-	Parms.isEmptySlotDIsplay = isEmptySlotDIsplay;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	displayTypesB = std::move(Parms.displayTypesB);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.FilteringFromItemTypeA
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<EPalItemTypeA>&                  displayTypesA                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    isEmptySlotDIsplay                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalPlayerInventoryScrollList_C::FilteringFromItemTypeA(TArray<EPalItemTypeA>& displayTypesA, bool isEmptySlotDIsplay)
+void UWBP_PalPlayerInventoryScrollList_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "FilteringFromItemTypeA");
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Construct");
 
-	Params::WBP_PalPlayerInventoryScrollList_C_FilteringFromItemTypeA Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.displayTypesA = std::move(displayTypesA);
-	Parms.isEmptySlotDIsplay = isEmptySlotDIsplay;
+
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.ExecuteUbergraph_WBP_PalPlayerInventoryScrollList
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalPlayerInventoryScrollList_C::ExecuteUbergraph_WBP_PalPlayerInventoryScrollList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "ExecuteUbergraph_WBP_PalPlayerInventoryScrollList");
+
+	Params::WBP_PalPlayerInventoryScrollList_C_ExecuteUbergraph_WBP_PalPlayerInventoryScrollList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	displayTypesA = std::move(Parms.displayTypesA);
 }
 
 
@@ -221,75 +115,181 @@ void UWBP_PalPlayerInventoryScrollList_C::FilteringFromInventoryType(TArray<EPal
 }
 
 
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.ExecuteUbergraph_WBP_PalPlayerInventoryScrollList
-// (Final, UbergraphFunction)
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.FilteringFromItemTypeA
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<EPalItemTypeA>&                  displayTypesA                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    isEmptySlotDIsplay                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalPlayerInventoryScrollList_C::ExecuteUbergraph_WBP_PalPlayerInventoryScrollList(int32 EntryPoint)
+void UWBP_PalPlayerInventoryScrollList_C::FilteringFromItemTypeA(TArray<EPalItemTypeA>& displayTypesA, bool isEmptySlotDIsplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "ExecuteUbergraph_WBP_PalPlayerInventoryScrollList");
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "FilteringFromItemTypeA");
 
-	Params::WBP_PalPlayerInventoryScrollList_C_ExecuteUbergraph_WBP_PalPlayerInventoryScrollList Parms{};
+	Params::WBP_PalPlayerInventoryScrollList_C_FilteringFromItemTypeA Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.displayTypesA = std::move(displayTypesA);
+	Parms.isEmptySlotDIsplay = isEmptySlotDIsplay;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	displayTypesA = std::move(Parms.displayTypesA);
 }
 
 
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.FilteringFromItemTypeB
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<EPalItemTypeB>&                  displayTypesB                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    isEmptySlotDIsplay                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalPlayerInventoryScrollList_C::Construct()
+void UWBP_PalPlayerInventoryScrollList_C::FilteringFromItemTypeB(TArray<EPalItemTypeB>& displayTypesB, bool isEmptySlotDIsplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Construct");
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "FilteringFromItemTypeB");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalPlayerInventoryScrollList_C_FilteringFromItemTypeB Parms{};
+
+	Parms.displayTypesB = std::move(displayTypesB);
+	Parms.isEmptySlotDIsplay = isEmptySlotDIsplay;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	displayTypesB = std::move(Parms.displayTypesB);
 }
 
 
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.ClearFiltering
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalPlayerInventoryScrollList_C::ClearFiltering()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "ClearFiltering");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Add Player Inventory Block
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.GetItemSlotButtons
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalPlayerInventoryType                 inventoryType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_PalItemListBlock_C**         createdBlock                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class UWBP_PalItemSlotButtonBase_C*>*OutSlotButtonArray                                     (Parm, OutParm, ContainsInstancedReference)
 
-void UWBP_PalPlayerInventoryScrollList_C::Add_Player_Inventory_Block(EPalPlayerInventoryType inventoryType, class UWBP_PalItemListBlock_C** createdBlock)
+void UWBP_PalPlayerInventoryScrollList_C::GetItemSlotButtons(EPalPlayerInventoryType inventoryType, TArray<class UWBP_PalItemSlotButtonBase_C*>* OutSlotButtonArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Add Player Inventory Block");
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "GetItemSlotButtons");
 
-	Params::WBP_PalPlayerInventoryScrollList_C_Add_Player_Inventory_Block Parms{};
+	Params::WBP_PalPlayerInventoryScrollList_C_GetItemSlotButtons Parms{};
 
 	Parms.inventoryType = inventoryType;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (createdBlock != nullptr)
-		*createdBlock = Parms.createdBlock;
+	if (OutSlotButtonArray != nullptr)
+		*OutSlotButtonArray = std::move(Parms.OutSlotButtonArray);
+}
+
+
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.OnLeftCllicked
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalPlayerInventoryScrollList_C::OnLeftCllicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "OnLeftCllicked");
+
+	Params::WBP_PalPlayerInventoryScrollList_C_OnLeftCllicked Parms{};
+
+	Parms.ButtonBase = ButtonBase;
+	Parms.PressType = PressType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.OnTriedEquipSlot_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotButtonBase_C*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalPlayerInventoryScrollList_C::OnTriedEquipSlot_Internal(class UWBP_PalItemSlotButtonBase_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "OnTriedEquipSlot_Internal");
+
+	Params::WBP_PalPlayerInventoryScrollList_C_OnTriedEquipSlot_Internal Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Open Use Item Panel
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotButtonBase_C*     Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalPlayerInventoryScrollList_C::Open_Use_Item_Panel(class UWBP_PalItemSlotButtonBase_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Open Use Item Panel");
+
+	Params::WBP_PalPlayerInventoryScrollList_C_Open_Use_Item_Panel Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.ScrollToCategoryTop
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalPlayerInventoryType                 TargetType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         TopFocusTarget                                         (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalPlayerInventoryScrollList_C::ScrollToCategoryTop(EPalPlayerInventoryType TargetType, class UWidget** TopFocusTarget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "ScrollToCategoryTop");
+
+	Params::WBP_PalPlayerInventoryScrollList_C_ScrollToCategoryTop Parms{};
+
+	Parms.TargetType = TargetType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TopFocusTarget != nullptr)
+		*TopFocusTarget = Parms.TopFocusTarget;
+}
+
+
+// Function WBP_PalPlayerInventoryScrollList.WBP_PalPlayerInventoryScrollList_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalUIInventoryModel*             useModel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalPlayerInventoryScrollList_C::Setup(class UPalUIInventoryModel* useModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalPlayerInventoryScrollList_C", "Setup");
+
+	Params::WBP_PalPlayerInventoryScrollList_C_Setup Parms{};
+
+	Parms.useModel = useModel;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

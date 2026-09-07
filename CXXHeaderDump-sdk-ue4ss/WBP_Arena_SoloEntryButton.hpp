@@ -4,7 +4,7 @@
 class UWBP_Arena_SoloEntryButton_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0280 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x0280 (size: 0x8)
     class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0288 (size: 0x8)
     class UBP_PalTextBlock_C* BP_PalTextBlock_Reward;                                 // 0x0290 (size: 0x8)
     class UCanvasPanel* Canvas_Lock;                                                  // 0x0298 (size: 0x8)
@@ -21,7 +21,7 @@ class UWBP_Arena_SoloEntryButton_C : public UUserWidget
     EPalArenaRank ArenaRank;                                                          // 0x02F0 (size: 0x1)
     FWBP_Arena_SoloEntryButton_COnArenaSoloButtonClicked OnArenaSoloButtonClicked;    // 0x02F8 (size: 0x10)
     void OnArenaSoloButtonClicked(EPalArenaRank ArenaRank);
-    TArray<UWBP_PalInGameMenuItemSlotButton_C*> RewardItemSlots;                      // 0x0308 (size: 0x10)
+    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> RewardItemSlots;                // 0x0308 (size: 0x10)
     FWBP_Arena_SoloEntryButton_COnArenaSoloButtonHovered OnArenaSoloButtonHovered;    // 0x0318 (size: 0x10)
     void OnArenaSoloButtonHovered(class UWBP_Arena_SoloEntryButton_C* Button);
     FWBP_Arena_SoloEntryButton_COnArenaSoloButtonUnhovered OnArenaSoloButtonUnhovered; // 0x0328 (size: 0x10)

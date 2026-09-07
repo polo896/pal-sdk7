@@ -20,53 +20,53 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Arena_TopMenu.WBP_Arena_TopMenu_C
-// 0x0070 (0x04E8 - 0x0478)
+// 0x0070 (0x04F0 - 0x0480)
 class UWBP_Arena_TopMenu_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anm_ButtonOut;                                     // 0x0480(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_MenuInOut;                                     // 0x0488(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Out;                                           // 0x0490(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_In;                                            // 0x0498(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                           Canvas_MenuGuideText;                              // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           Canvas_Wait;                                       // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_MenuGuide;                                    // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_PlayerRank_C*                WBP_Arena_PlayerRank;                              // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_TopMenuButton_C*             WBP_Arena_TopMenuButton_PvP;                       // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_TopMenuButton_C*             WBP_Arena_TopMenuButton_Solo;                      // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_TopMenuButton_C*             WBP_Arena_TopMenuButton_Spectate;                  // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class APalArenaEntrance*                      Entrance;                                          // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	int32                                         LastFocusIndex;                                    // 0x04E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          MenuOut;                                           // 0x04E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalArenaMenuActionType                       LastAction;                                        // 0x04E5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anm_ButtonOut;                                     // 0x0488(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_MenuInOut;                                     // 0x0490(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_Out;                                           // 0x0498(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_In;                                            // 0x04A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_MenuGuideText;                              // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_Wait;                                       // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_MenuGuide;                                    // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_PlayerRank_C*                WBP_Arena_PlayerRank;                              // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_TopMenuButton_C*             WBP_Arena_TopMenuButton_PvP;                       // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_TopMenuButton_C*             WBP_Arena_TopMenuButton_Solo;                      // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_TopMenuButton_C*             WBP_Arena_TopMenuButton_Spectate;                  // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class APalArenaEntrance*                      Entrance;                                          // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         LastFocusIndex;                                    // 0x04E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          MenuOut;                                           // 0x04EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalArenaMenuActionType                       LastAction;                                        // 0x04ED(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Top_Menu_Action(EPalArenaMenuActionType ActionType);
-	void Setup();
-	void RrequestEnterArena(bool JoinMatch);
-	void OnSetup();
-	void OnInitialized();
-	void OnClosed();
-	void Finished_55E66A6745B17F175A5608B05FCBDDC7();
-	void ExecuteUbergraph_WBP_Arena_TopMenu(int32 EntryPoint);
-	void EmptyEvent(bool bResult);
-	void Construct();
-	void ChangeInfo(int32 Index_0, bool IsEnable);
-	void CancelAction();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature();
-	void AnmEvent_Out();
-	void AnmEvent_MenuOut();
-	void AnmEvent_MenuIn();
 	void AnmEvent_In();
+	void AnmEvent_MenuIn();
+	void AnmEvent_MenuOut();
+	void AnmEvent_Out();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature();
+	void CancelAction();
+	void ChangeInfo(int32 Index_0, bool IsEnable);
+	void Construct();
+	void EmptyEvent(bool bResult);
+	void ExecuteUbergraph_WBP_Arena_TopMenu(int32 EntryPoint);
+	void Finished_55E66A6745B17F175A5608B05FCBDDC7();
+	void OnClosed();
+	void OnInitialized();
+	void OnSetup();
+	void RrequestEnterArena(bool JoinMatch);
+	void Setup();
+	void Top_Menu_Action(EPalArenaMenuActionType ActionType);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

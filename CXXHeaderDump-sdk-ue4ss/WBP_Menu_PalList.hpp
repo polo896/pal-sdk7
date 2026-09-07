@@ -9,9 +9,9 @@ class UWBP_Menu_PalList_C : public UWBP_IndividualParameterBindWidget_C
     class UWidgetAnimation* Anm_EmptyNormalToFocus;                                   // 0x0670 (size: 0x8)
     class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0678 (size: 0x8)
     class UWidgetAnimation* Anm_Open_normal;                                          // 0x0680 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0688 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0690 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0698 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x0688 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0690 (size: 0x8)
+    class UWidgetAnimation* Anm_Push;                                                 // 0x0698 (size: 0x8)
     class UWidgetAnimation* Anm_Open_focus;                                           // 0x06A0 (size: 0x8)
     class UImage* Empty;                                                              // 0x06A8 (size: 0x8)
     class UImage* Image_Icon;                                                         // 0x06B0 (size: 0x8)
@@ -33,6 +33,8 @@ class UWBP_Menu_PalList_C : public UWBP_IndividualParameterBindWidget_C
     void OnUnhoveredPanel();
     bool Interactable;                                                                // 0x0738 (size: 0x1)
     class UAkAudioEvent* ClickEventTmp;                                               // 0x0740 (size: 0x8)
+    class UMaterialInstanceDynamic* dynamicMaterial;                                  // 0x0748 (size: 0x8)
+    TSoftObjectPtr<UTexture2D> LoadingIcon;                                           // 0x0750 (size: 0x30)
 
     void OnUpdateSkin(const FName& NewSkinName);
     void SetMuteClickEvent(bool IsMute);
@@ -47,6 +49,7 @@ class UWBP_Menu_PalList_C : public UWBP_IndividualParameterBindWidget_C
     void UpdateHunger(double Now, double Max);
     void UpdateNickname(FString NewNickName);
     void Update Level(int32 NewLevel);
+    void OnLoaded_E0D87CB94B14FC2B16B581B2C8B64D3F(class UObject* Loaded);
     void AnmEvent_Push();
     void AnmEvent_Open();
     void AnmEvent_Focus();
@@ -57,10 +60,11 @@ class UWBP_Menu_PalList_C : public UWBP_IndividualParameterBindWidget_C
     void BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+    void LoadIcon(TSoftObjectPtr<UTexture2D> SoftIcon);
     void ExecuteUbergraph_WBP_Menu_PalList(int32 EntryPoint);
     void OnUnhoveredPanel__DelegateSignature();
     void OnHoveredPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
     void OnClickedPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
-}; // Size: 0x748
+}; // Size: 0x780
 
 #endif

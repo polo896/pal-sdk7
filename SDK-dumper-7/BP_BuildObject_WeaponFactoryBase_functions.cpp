@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_BuildObject_WeaponFactoryBase.BP_BuildObject_WeaponFactoryBase_C.WeaponLoop
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BuildObject_WeaponFactoryBase.BP_BuildObject_WeaponFactoryBase_C.ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase
+// (Final, UbergraphFunction)
 // Parameters:
-// class USceneComponent*                  Input                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_WeaponFactoryBase_C::WeaponLoop(class USceneComponent* Input)
+void ABP_BuildObject_WeaponFactoryBase_C::ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_WeaponFactoryBase_C", "WeaponLoop");
+		Func = Class->GetFunction("BP_BuildObject_WeaponFactoryBase_C", "ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase");
 
-	Params::BP_BuildObject_WeaponFactoryBase_C_WeaponLoop Parms{};
+	Params::BP_BuildObject_WeaponFactoryBase_C_ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase Parms{};
 
-	Parms.Input = Input;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void ABP_BuildObject_WeaponFactoryBase_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_BuildObject_WeaponFactoryBase.BP_BuildObject_WeaponFactoryBase_C.ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase
-// (Final, UbergraphFunction)
+// Function BP_BuildObject_WeaponFactoryBase.BP_BuildObject_WeaponFactoryBase_C.WeaponLoop
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  Input                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_WeaponFactoryBase_C::ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase(int32 EntryPoint)
+void ABP_BuildObject_WeaponFactoryBase_C::WeaponLoop(class USceneComponent* Input)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_WeaponFactoryBase_C", "ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase");
+		Func = Class->GetFunction("BP_BuildObject_WeaponFactoryBase_C", "WeaponLoop");
 
-	Params::BP_BuildObject_WeaponFactoryBase_C_ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase Parms{};
+	Params::BP_BuildObject_WeaponFactoryBase_C_WeaponLoop Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Input = Input;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

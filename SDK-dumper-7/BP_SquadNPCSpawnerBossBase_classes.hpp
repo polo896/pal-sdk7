@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SquadNPCSpawnerBossBase.BP_SquadNPCSpawnerBossBase_C
-// 0x0000 (0x0680 - 0x0680)
+// 0x0000 (0x0690 - 0x0690)
 class ABP_SquadNPCSpawnerBossBase_C : public ABP_SquadNPCSpawner_ForCampBase_C
 {
 public:

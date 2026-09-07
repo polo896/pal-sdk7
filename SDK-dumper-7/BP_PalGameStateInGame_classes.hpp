@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalGameStateInGame.BP_PalGameStateInGame_C
-// 0x0010 (0x0530 - 0x0520)
+// 0x0010 (0x0550 - 0x0540)
 class ABP_PalGameStateInGame_C final : public APalGameStateInGame
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0520(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0540(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

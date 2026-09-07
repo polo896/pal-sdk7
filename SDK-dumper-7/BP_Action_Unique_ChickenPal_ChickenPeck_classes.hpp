@@ -29,16 +29,16 @@ public:
 	double                                        AfterAttackTime;                                   // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck(int32 EntryPoint);
-	void OnBeginAction();
-	void OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
-	void OnCompleted_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
-	void OnEndAction();
-	void OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
-	void OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
-	void OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
-	void RotateToTarget(double DeltaTime);
 	void TickAction(float DeltaTime);
+	void RotateToTarget(double DeltaTime);
+	void OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
+	void OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
+	void OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
+	void OnEndAction();
+	void OnCompleted_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
+	void OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542(class FName NotifyName);
+	void OnBeginAction();
+	void ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

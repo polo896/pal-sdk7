@@ -17,43 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.SetupUI
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.ExecuteUbergraph_WBP_PalHud_PossessItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalHud_PossessItem_C::SetupUI()
+void UWBP_PalHud_PossessItem_C::ExecuteUbergraph_WBP_PalHud_PossessItem(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "SetupUI");
+		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "ExecuteUbergraph_WBP_PalHud_PossessItem");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalHud_PossessItem_C_ExecuteUbergraph_WBP_PalHud_PossessItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.RemoveSelf_In
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalHud_PossessItem_C::RemoveSelf_In()
+void UWBP_PalHud_PossessItem_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "RemoveSelf_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalHud_PossessItem_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "OnSetup");
+		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,37 +65,45 @@ void UWBP_PalHud_PossessItem_C::OnRequestRemove()
 }
 
 
-// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalHud_PossessItem_C::OnInitialized()
+void UWBP_PalHud_PossessItem_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.ExecuteUbergraph_WBP_PalHud_PossessItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.RemoveSelf_In
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalHud_PossessItem_C::ExecuteUbergraph_WBP_PalHud_PossessItem(int32 EntryPoint)
+void UWBP_PalHud_PossessItem_C::RemoveSelf_In()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "ExecuteUbergraph_WBP_PalHud_PossessItem");
+		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "RemoveSelf_In");
 
-	Params::WBP_PalHud_PossessItem_C_ExecuteUbergraph_WBP_PalHud_PossessItem Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.SetupUI
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalHud_PossessItem_C::SetupUI()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalHud_PossessItem_C", "SetupUI");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

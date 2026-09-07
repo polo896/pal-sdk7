@@ -3,32 +3,32 @@
 
 class UWBP_Guild_ForDisplay_C : public UPalUIGuildMenu
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UCircularThrobber* CircularThrobber_11;                                     // 0x0480 (size: 0x8)
-    class UImage* Image_20;                                                           // 0x0488 (size: 0x8)
-    class UOverlay* Overlay_Waiting;                                                  // 0x0490 (size: 0x8)
-    class UWBP_Guild_C* WBP_Guild;                                                    // 0x0498 (size: 0x8)
-    class UWBP_GuildMemberMenu_C* WBP_GuildMemberMenu;                                // 0x04A0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_CancelMenu;               // 0x04A8 (size: 0x8)
-    TMap<TEnumAsByte<E_PalUIGuildMenuLogCategory::Type>, FDataTableRowHandle> GuildLogCategoryTextMap; // 0x04B0 (size: 0x50)
-    TMap<FString, TEnumAsByte<E_PalUIGuildMenuLogCategory::Type>> GuildLogStringCategoryMap; // 0x0500 (size: 0x50)
-    FDataTableRowHandle GuildExitDialogMsgID_Admin;                                   // 0x0550 (size: 0x10)
-    FDataTableRowHandle GuildExitDialogMsgID_Warning;                                 // 0x0560 (size: 0x10)
-    FTimerHandle WaitingExitGuildTimeoutTimerHandle;                                  // 0x0570 (size: 0x8)
-    FTimerHandle CheckNewGroupTimerHandle;                                            // 0x0578 (size: 0x8)
-    bool IsSelectingMemberMenu;                                                       // 0x0580 (size: 0x1)
-    FDataTableRowHandle BanPlayerDialogMsgID;                                         // 0x0588 (size: 0x10)
-    FDataTableRowHandle ChangeRoleDialogMsgID;                                        // 0x0598 (size: 0x10)
-    TSoftObjectPtr<class UWBP_Guild_MemberList_C> SelectionPlayerWidget;              // 0x05A8 (size: 0x30)
-    FTimerHandle CheckBanPlayerTimerHandle;                                           // 0x05D8 (size: 0x8)
-    FTimerHandle CheckbanPlayerTimeoutTimerHandle;                                    // 0x05E0 (size: 0x8)
-    FGuid BanPlayerUId;                                                               // 0x05E8 (size: 0x10)
-    FTimerHandle ChangeAdminTimeoutTimerHandle;                                       // 0x05F8 (size: 0x8)
-    FTimerHandle CheckChangeAdminTimerHandle;                                         // 0x0600 (size: 0x8)
-    EPalGuildRole ReservedChangePermissionTargetRole;                                 // 0x0608 (size: 0x1)
-    FDataTableRowHandle ChangeAdminDialogMsgID;                                       // 0x0610 (size: 0x10)
-    FGuid ReservedChangePermissionTargetPlayerUId;                                    // 0x0620 (size: 0x10)
-    FGuid LastClickedPlayerUId;                                                       // 0x0630 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UCircularThrobber* CircularThrobber_11;                                     // 0x0488 (size: 0x8)
+    class UImage* Image_20;                                                           // 0x0490 (size: 0x8)
+    class UOverlay* Overlay_Waiting;                                                  // 0x0498 (size: 0x8)
+    class UWBP_Guild_C* WBP_Guild;                                                    // 0x04A0 (size: 0x8)
+    class UWBP_GuildMemberMenu_C* WBP_GuildMemberMenu;                                // 0x04A8 (size: 0x8)
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_CancelMenu;               // 0x04B0 (size: 0x8)
+    TMap<TEnumAsByte<E_PalUIGuildMenuLogCategory::Type>, FDataTableRowHandle> GuildLogCategoryTextMap; // 0x04B8 (size: 0x50)
+    TMap<FString, TEnumAsByte<E_PalUIGuildMenuLogCategory::Type>> GuildLogStringCategoryMap; // 0x0508 (size: 0x50)
+    FDataTableRowHandle GuildExitDialogMsgID_Admin;                                   // 0x0558 (size: 0x10)
+    FDataTableRowHandle GuildExitDialogMsgID_Warning;                                 // 0x0568 (size: 0x10)
+    FTimerHandle WaitingExitGuildTimeoutTimerHandle;                                  // 0x0578 (size: 0x8)
+    FTimerHandle CheckNewGroupTimerHandle;                                            // 0x0580 (size: 0x8)
+    bool IsSelectingMemberMenu;                                                       // 0x0588 (size: 0x1)
+    FDataTableRowHandle BanPlayerDialogMsgID;                                         // 0x0590 (size: 0x10)
+    FDataTableRowHandle ChangeRoleDialogMsgID;                                        // 0x05A0 (size: 0x10)
+    TSoftObjectPtr<UWBP_Guild_MemberList_C> SelectionPlayerWidget;                    // 0x05B0 (size: 0x30)
+    FTimerHandle CheckBanPlayerTimerHandle;                                           // 0x05E0 (size: 0x8)
+    FTimerHandle CheckbanPlayerTimeoutTimerHandle;                                    // 0x05E8 (size: 0x8)
+    FGuid BanPlayerUId;                                                               // 0x05F0 (size: 0x10)
+    FTimerHandle ChangeAdminTimeoutTimerHandle;                                       // 0x0600 (size: 0x8)
+    FTimerHandle CheckChangeAdminTimerHandle;                                         // 0x0608 (size: 0x8)
+    EPalGuildRole ReservedChangePermissionTargetRole;                                 // 0x0610 (size: 0x1)
+    FDataTableRowHandle ChangeAdminDialogMsgID;                                       // 0x0618 (size: 0x10)
+    FGuid ReservedChangePermissionTargetPlayerUId;                                    // 0x0628 (size: 0x10)
+    FGuid LastClickedPlayerUId;                                                       // 0x0638 (size: 0x10)
 
     void CanClose(bool& CanCloseFlag);
     void OnTimer_CheckChangeRole();
@@ -69,6 +69,6 @@ class UWBP_Guild_ForDisplay_C : public UPalUIGuildMenu
     void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature();
     void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature();
     void ExecuteUbergraph_WBP_Guild_ForDisplay(int32 EntryPoint);
-}; // Size: 0x640
+}; // Size: 0x648
 
 #endif

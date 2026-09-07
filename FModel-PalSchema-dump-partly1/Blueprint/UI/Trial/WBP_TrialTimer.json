@@ -1,0 +1,318 @@
+[
+  {
+    "Type": "BP_PalTextBlock_C",
+    "Name": "BP_PalTextBlock_C_68",
+    "Outer": "WidgetTree",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.BP_PalTextBlock_C'",
+    "Template": {
+      "ObjectName": "BP_PalTextBlock_C'Default__BP_PalTextBlock_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "B0686A1B4FF90AE375692E9C6C0870B7",
+        "SourceString": "99:99",
+        "LocalizedString": "99:99"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineBlur": 2
+        },
+        "Size": 18
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_TrialTimer_C:WidgetTree.Overlay_39.OverlaySlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.4"
+      },
+      "bIsVariable": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_TrialTimer",
+    "Outer": "WBP_TrialTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPalGameStateInGame_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalGameStateInGame'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetRemainTrialTimeSecond_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Divide_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Percent_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Conv_TextToString_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "Tick",
+    "Outer": "WBP_TrialTimer_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:Tick'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "MyGeometry",
+        "Flags": "RF_Public",
+        "ElementSize": 64,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'Geometry'",
+          "ObjectPath": "/Script/SlateCore"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "InDeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_39",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_TrialTimer_C:WidgetTree.Overlay_39.OverlaySlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_0",
+    "Outer": "Overlay_39",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Left": 8.0,
+        "Bottom": 8.0
+      },
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_TrialTimer_C:WidgetTree.Overlay_39'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.3"
+      },
+      "Content": {
+        "ObjectName": "BP_PalTextBlock_C'WBP_TrialTimer_C:WidgetTree.BP_PalTextBlock_C_68'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.0"
+      }
+    }
+  },
+  {
+    "Type": "WBP_TrialTimer_C",
+    "Name": "Default__WBP_TrialTimer_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.WBP_TrialTimer_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_TrialTimer_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_TrialTimer_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_TrialTimer_C:ExecuteUbergraph_WBP_TrialTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PalUserWidget'",
+      "ObjectPath": "/Script/Pal"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_TrialTimer_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.2"
+      },
+      {
+        "ObjectName": "Function'WBP_TrialTimer_C:ExecuteUbergraph_WBP_TrialTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_PalTextBlock_C_68",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_PalTextBlock_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/PalTextBlock/BP_PalTextBlock.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_TrialTimer": {
+        "ObjectName": "Function'WBP_TrialTimer_C:ExecuteUbergraph_WBP_TrialTimer'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.1"
+      },
+      "Tick": {
+        "ObjectName": "Function'WBP_TrialTimer_C:Tick'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_TrialTimer_C'Default__WBP_TrialTimer_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_TrialTimer_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Overlay'WBP_TrialTimer_C:WidgetTree.Overlay_39'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/Trial/WBP_TrialTimer.3"
+      }
+    }
+  }
+]

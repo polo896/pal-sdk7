@@ -17,21 +17,61 @@
 namespace SDK
 {
 
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FPalUIMapObjectCharacterTeamMissionIndividual&AssignInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Expedition_PalList_C::Setup(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo)
+void UWBP_Expedition_PalList_C::BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_PalList_C", "Setup");
+		Func = Class->GetFunction("WBP_Expedition_PalList_C", "BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Expedition_PalList_C_Setup Parms{};
+	Params::WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.AssignInfo = std::move(AssignInfo);
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Expedition_PalList_C::BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_PalList_C", "BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.ExecuteUbergraph_WBP_Expedition_PalList
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Expedition_PalList_C::ExecuteUbergraph_WBP_Expedition_PalList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_PalList_C", "ExecuteUbergraph_WBP_Expedition_PalList");
+
+	Params::WBP_Expedition_PalList_C_ExecuteUbergraph_WBP_Expedition_PalList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,61 +98,21 @@ void UWBP_Expedition_PalList_C::GetAssignInfo(struct FPalUIMapObjectCharacterTea
 }
 
 
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.ExecuteUbergraph_WBP_Expedition_PalList
-// (Final, UbergraphFunction)
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalUIMapObjectCharacterTeamMissionIndividual&AssignInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Expedition_PalList_C::ExecuteUbergraph_WBP_Expedition_PalList(int32 EntryPoint)
+void UWBP_Expedition_PalList_C::Setup(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_PalList_C", "ExecuteUbergraph_WBP_Expedition_PalList");
+		Func = Class->GetFunction("WBP_Expedition_PalList_C", "Setup");
 
-	Params::WBP_Expedition_PalList_C_ExecuteUbergraph_WBP_Expedition_PalList Parms{};
+	Params::WBP_Expedition_PalList_C_Setup Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Expedition_PalList_C::BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_PalList_C", "BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Expedition_PalList_C::BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_PalList_C", "BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
+	Parms.AssignInfo = std::move(AssignInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

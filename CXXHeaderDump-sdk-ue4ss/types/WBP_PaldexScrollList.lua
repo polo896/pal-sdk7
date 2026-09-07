@@ -7,6 +7,9 @@
 ---@field CreatedChildren TArray<UWBP_Paldex_List_C>
 local UWBP_PaldexScrollList_C = {}
 
+---@param CharacterID FName
+---@param bCollapsed boolean
+function UWBP_PaldexScrollList_C:IsCollapsedWidgetByCharacterId(CharacterID, bCollapsed) end
 ---@param ChildWidget UWBP_Paldex_List_C
 function UWBP_PaldexScrollList_C:DisplayChild(ChildWidget) end
 function UWBP_PaldexScrollList_C:DisplayAll() end

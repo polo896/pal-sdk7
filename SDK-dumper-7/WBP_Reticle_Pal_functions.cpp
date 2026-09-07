@@ -17,15 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.AnmEvent_Close
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Reticle_Pal_C::OnInitialized()
+void UWBP_Reticle_Pal_C::AnmEvent_Close()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Pal_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Reticle_Pal_C", "AnmEvent_Close");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.AnmEvent_Open
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Reticle_Pal_C::AnmEvent_Open()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_Pal_C", "AnmEvent_Open");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,69 +65,35 @@ void UWBP_Reticle_Pal_C::ExecuteUbergraph_WBP_Reticle_Pal(int32 EntryPoint)
 }
 
 
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.AnmEvent_Open
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Reticle_Pal_C::AnmEvent_Open()
+void UWBP_Reticle_Pal_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Pal_C", "AnmEvent_Open");
+		Func = Class->GetFunction("WBP_Reticle_Pal_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.AnmEvent_Close
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Reticle_Pal_C::AnmEvent_Close()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Pal_C", "AnmEvent_Close");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetVisibilityAssignableDetail
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Reticle_Pal_C::SetVisibilityAssignableDetail(ESlateVisibility NewVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Pal_C", "SetVisibilityAssignableDetail");
-
-	Params::WBP_Reticle_Pal_C_SetVisibilityAssignableDetail Parms{};
-
-	Parms.NewVisibility = NewVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetThrowableableDetail
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetAssignableDetail
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalUIAimReticleMapObjectThrowableData&throwableData                                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPalUIAimReticleMapObjectAssignableData&assignableData                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_Reticle_Pal_C::SetThrowableableDetail(const struct FPalUIAimReticleMapObjectThrowableData& throwableData)
+void UWBP_Reticle_Pal_C::SetAssignableDetail(const struct FPalUIAimReticleMapObjectAssignableData& assignableData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Pal_C", "SetThrowableableDetail");
+		Func = Class->GetFunction("WBP_Reticle_Pal_C", "SetAssignableDetail");
 
-	Params::WBP_Reticle_Pal_C_SetThrowableableDetail Parms{};
+	Params::WBP_Reticle_Pal_C_SetAssignableDetail Parms{};
 
-	Parms.throwableData = std::move(throwableData);
+	Parms.assignableData = std::move(assignableData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -139,21 +119,41 @@ void UWBP_Reticle_Pal_C::SetOtomoDeadDetail(class UPalIndividualCharacterParamet
 }
 
 
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetAssignableDetail
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetThrowableableDetail
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalUIAimReticleMapObjectAssignableData&assignableData                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPalUIAimReticleMapObjectThrowableData&throwableData                                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_Reticle_Pal_C::SetAssignableDetail(const struct FPalUIAimReticleMapObjectAssignableData& assignableData)
+void UWBP_Reticle_Pal_C::SetThrowableableDetail(const struct FPalUIAimReticleMapObjectThrowableData& throwableData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Pal_C", "SetAssignableDetail");
+		Func = Class->GetFunction("WBP_Reticle_Pal_C", "SetThrowableableDetail");
 
-	Params::WBP_Reticle_Pal_C_SetAssignableDetail Parms{};
+	Params::WBP_Reticle_Pal_C_SetThrowableableDetail Parms{};
 
-	Parms.assignableData = std::move(assignableData);
+	Parms.throwableData = std::move(throwableData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetVisibilityAssignableDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Reticle_Pal_C::SetVisibilityAssignableDetail(ESlateVisibility NewVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_Pal_C", "SetVisibilityAssignableDetail");
+
+	Params::WBP_Reticle_Pal_C_SetVisibilityAssignableDetail Parms{};
+
+	Parms.NewVisibility = NewVisibility;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

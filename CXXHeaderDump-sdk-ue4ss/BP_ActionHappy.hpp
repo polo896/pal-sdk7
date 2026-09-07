@@ -7,7 +7,7 @@ class UBP_ActionHappy_C : public UPalActionBase
     class UNiagaraComponent* Niagara;                                                 // 0x0168 (size: 0x8)
     double Timer;                                                                     // 0x0170 (size: 0x8)
 
-    void ChangeFace(bool Smile);
+    void ChangeFace(bool smile);
     void OnLoaded_EC2E853A48D294FC93D7F1A792BBC3C8(class UObject* Loaded);
     void OnBeginAction();
     void OnEndAction();

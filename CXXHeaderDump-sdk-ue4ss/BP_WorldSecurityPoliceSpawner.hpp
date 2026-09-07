@@ -3,15 +3,15 @@
 
 class UBP_WorldSecurityPoliceSpawner_C : public UPalWorldSecurityPoliceSpawner
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0288 (size: 0x8)
-    TSubclassOf<class UPalAIActionBase> PoliceAIAction;                               // 0x0290 (size: 0x8)
-    class APalAIController* AIController;                                             // 0x0298 (size: 0x8)
-    TSubclassOf<class UPalAIActionBase> HeliPoliceAIAction;                           // 0x02A0 (size: 0x8)
-    int32 HeliSpawnCounter;                                                           // 0x02A8 (size: 0x4)
-    TSubclassOf<class UPalAIActionBase> HeliDropOffPoliceAIAction;                    // 0x02B0 (size: 0x8)
-    FBP_WorldSecurityPoliceSpawner_COnHeliRequestPoliceSpawn OnHeliRequestPoliceSpawn; // 0x02B8 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0290 (size: 0x8)
+    TSubclassOf<class UPalAIActionBase> PoliceAIAction;                               // 0x0298 (size: 0x8)
+    class APalAIController* AIController;                                             // 0x02A0 (size: 0x8)
+    TSubclassOf<class UPalAIActionBase> HeliPoliceAIAction;                           // 0x02A8 (size: 0x8)
+    int32 HeliSpawnCounter;                                                           // 0x02B0 (size: 0x4)
+    TSubclassOf<class UPalAIActionBase> HeliDropOffPoliceAIAction;                    // 0x02B8 (size: 0x8)
+    FBP_WorldSecurityPoliceSpawner_COnHeliRequestPoliceSpawn OnHeliRequestPoliceSpawn; // 0x02C0 (size: 0x10)
     void OnHeliRequestPoliceSpawn(FVector Location);
-    FBP_WorldSecurityPoliceSpawner_COnHeliDropOffFallback OnHeliDropOffFallback;      // 0x02C8 (size: 0x10)
+    FBP_WorldSecurityPoliceSpawner_COnHeliDropOffFallback OnHeliDropOffFallback;      // 0x02D0 (size: 0x10)
     void OnHeliDropOffFallback(int32 Count);
 
     void NotifyHeliDropOffFallback(int32 Count);
@@ -33,6 +33,6 @@ class UBP_WorldSecurityPoliceSpawner_C : public UPalWorldSecurityPoliceSpawner
     void ExecuteUbergraph_BP_WorldSecurityPoliceSpawner(int32 EntryPoint);
     void OnHeliDropOffFallback__DelegateSignature(int32 Count);
     void OnHeliRequestPoliceSpawn__DelegateSignature(FVector Location);
-}; // Size: 0x2D8
+}; // Size: 0x2E0
 
 #endif

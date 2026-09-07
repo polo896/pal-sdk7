@@ -18,6 +18,7 @@ class UWBP_MapFilter_Content_C : public UUserWidget
     void BndEvt__WBP_MapFilter_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void BndEvt__WBP_MapFilter_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void SetForceEnable(bool Set);
+    void SetEnable(bool IsEnable);
     void ExecuteUbergraph_WBP_MapFilter_Content(int32 EntryPoint);
     void ChangeFilter__DelegateSignature(EPalLocationType LocationType, bool IsEnable);
 }; // Size: 0x2B9

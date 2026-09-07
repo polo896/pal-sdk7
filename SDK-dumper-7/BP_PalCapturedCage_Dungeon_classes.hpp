@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalCapturedCage_Dungeon.BP_PalCapturedCage_Dungeon_C
-// 0x0000 (0x03B0 - 0x03B0)
+// 0x0000 (0x03A8 - 0x03A8)
 class ABP_PalCapturedCage_Dungeon_C final : public ABP_PalCapturedCage_C
 {
 public:

@@ -3,6 +3,6 @@
 
 class ABP_MonoNPCSpawner_MedalTrader_C : public ABP_MonoNPCSpawner_C
 {
-}; // Size: 0x608
+}; // Size: 0x618
 
 #endif

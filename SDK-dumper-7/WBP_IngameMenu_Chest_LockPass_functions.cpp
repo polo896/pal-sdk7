@@ -17,83 +17,63 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.ResetInput
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_IngameMenu_Chest_LockPass_C::ResetInput()
+void UWBP_IngameMenu_Chest_LockPass_C::BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "ResetInput");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.CloseAction
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_Chest_LockPass_C::OnSetup()
+void UWBP_IngameMenu_Chest_LockPass_C::CloseAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "OnSetup");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "CloseAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.OnNumpadClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ClickedNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Chest_LockPass_C::OnNumpadClicked(int32 ClickedNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "OnNumpadClicked");
-
-	Params::WBP_IngameMenu_Chest_LockPass_C_OnNumpadClicked Parms{};
-
-	Parms.ClickedNum = ClickedNum;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.OnInitialized
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_IngameMenu_Chest_LockPass_C::OnInitialized()
+void UWBP_IngameMenu_Chest_LockPass_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.NotifyAuthenticationResult
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    passed                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Chest_LockPass_C::NotifyAuthenticationResult(bool passed)
+void UWBP_IngameMenu_Chest_LockPass_C::ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "NotifyAuthenticationResult");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass");
 
-	Params::WBP_IngameMenu_Chest_LockPass_C_NotifyAuthenticationResult Parms{};
+	Params::WBP_IngameMenu_Chest_LockPass_C_ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass Parms{};
 
-	Parms.passed = passed;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -119,63 +99,83 @@ class FString UWBP_IngameMenu_Chest_LockPass_C::GetInputNumberStr()
 }
 
 
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.NotifyAuthenticationResult
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    passed                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Chest_LockPass_C::ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass(int32 EntryPoint)
+void UWBP_IngameMenu_Chest_LockPass_C::NotifyAuthenticationResult(bool passed)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "NotifyAuthenticationResult");
 
-	Params::WBP_IngameMenu_Chest_LockPass_C_ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass Parms{};
+	Params::WBP_IngameMenu_Chest_LockPass_C_NotifyAuthenticationResult Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.passed = passed;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.Destruct
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_IngameMenu_Chest_LockPass_C::Destruct()
+void UWBP_IngameMenu_Chest_LockPass_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "Destruct");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.CloseAction
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.OnNumpadClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ClickedNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Chest_LockPass_C::OnNumpadClicked(int32 ClickedNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "OnNumpadClicked");
+
+	Params::WBP_IngameMenu_Chest_LockPass_C_OnNumpadClicked Parms{};
+
+	Parms.ClickedNum = ClickedNum;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Chest_LockPass_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.ResetInput
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_Chest_LockPass_C::CloseAction()
+void UWBP_IngameMenu_Chest_LockPass_C::ResetInput()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "CloseAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Chest_LockPass.WBP_IngameMenu_Chest_LockPass_C.BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameMenu_Chest_LockPass_C::BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockPass_C", "ResetInput");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

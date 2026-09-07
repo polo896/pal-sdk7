@@ -179,7 +179,7 @@ public:
 DUMPER7_ASSERTS_BP_PalSpawner_Standard_C_EnableWorldTreeAura;
 
 // Function BP_PalSpawner_Standard.BP_PalSpawner_Standard_C.ExecuteUbergraph_BP_PalSpawner_Standard
-// 0x0320 (0x0320 - 0x0000)
+// 0x0328 (0x0328 - 0x0000)
 struct BP_PalSpawner_Standard_C_ExecuteUbergraph_BP_PalSpawner_Standard final
 {
 public:
@@ -208,16 +208,16 @@ public:
 	bool                                          K2Node_Event_IsDeleteAliveCharacter;               // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ExistAliveCharacter_Exist;                // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_BB[0x5];                                       // 0x00BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x00C0(0x0208)(ConstParm)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2CD[0x3];                                      // 0x02CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_CustomEvent_Actor;                          // 0x02D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LotterySpawnPalListIndex_Success;         // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalSpawnerGroupInfo                   CallFunc_LotterySpawnPalListIndex_SpawnGroup;      // 0x02E0(0x0030)()
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCheckRadius_DespawnRadius_ImplicitCast; // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x00C0(0x0210)(ConstParm)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D5[0x3];                                      // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_CustomEvent_Actor;                          // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LotterySpawnPalListIndex_Success;         // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalSpawnerGroupInfo                   CallFunc_LotterySpawnPalListIndex_SpawnGroup;      // 0x02E8(0x0030)()
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCheckRadius_DespawnRadius_ImplicitCast; // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalSpawner_Standard_C_ExecuteUbergraph_BP_PalSpawner_Standard;
 

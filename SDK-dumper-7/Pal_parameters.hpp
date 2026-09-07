@@ -6900,6 +6900,15 @@ public:
 };
 DUMPER7_ASSERTS_PalCharacterMovementComponent_IsStepUpUpSweepShrinkEnabled;
 
+// Function Pal.PalCharacterMovementComponent.IsSubmergedBeyondFloatingDepth
+// 0x0001 (0x0001 - 0x0000)
+struct PalCharacterMovementComponent_IsSubmergedBeyondFloatingDepth final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalCharacterMovementComponent_IsSubmergedBeyondFloatingDepth;
+
 // Function Pal.PalCharacterMovementComponent.IsTickOptimizationDisabled
 // 0x0001 (0x0001 - 0x0000)
 struct PalCharacterMovementComponent_IsTickOptimizationDisabled final
@@ -7266,11 +7275,11 @@ public:
 DUMPER7_ASSERTS_PalPrimaryGameLayoutBase_ShowCommonItemInfo;
 
 // Function Pal.PalPrimaryGameLayoutBase.ShowCommonReward
-// 0x0058 (0x0058 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct PalPrimaryGameLayoutBase_ShowCommonReward final
 {
 public:
-	struct FPalUICommonRewardDisplayData          RewardDisplayData;                                 // 0x0000(0x0058)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalUICommonRewardDisplayData          RewardDisplayData;                                 // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalPrimaryGameLayoutBase_ShowCommonReward;
 
@@ -11867,57 +11876,57 @@ public:
 DUMPER7_ASSERTS_PalLogUtility_RemoveRaidAnyBaseCampLog;
 
 // Function Pal.PalLogUtility.SetTextureToAdditionalDataFromCharacterID
-// 0x0080 (0x0080 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct PalLogUtility_SetTextureToAdditionalDataFromCharacterID final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0070)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	class FName                                   CharacterID;                                       // 0x0078(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0078)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FName                                   CharacterID;                                       // 0x0080(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalLogUtility_SetTextureToAdditionalDataFromCharacterID;
 
 // Function Pal.PalLogUtility.SetTextureToAdditionalDataFromHandle
-// 0x0080 (0x0080 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct PalLogUtility_SetTextureToAdditionalDataFromHandle final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0070)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	const class UPalIndividualCharacterHandle*    targetHandle;                                      // 0x0078(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0078)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	const class UPalIndividualCharacterHandle*    targetHandle;                                      // 0x0080(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalLogUtility_SetTextureToAdditionalDataFromHandle;
 
 // Function Pal.PalLogUtility.SetTextureToAdditionalDataFromHandles
-// 0x0088 (0x0088 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct PalLogUtility_SetTextureToAdditionalDataFromHandles final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0070)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<class UPalIndividualCharacterHandle*>  targetHandles;                                     // 0x0078(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0078)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<class UPalIndividualCharacterHandle*>  targetHandles;                                     // 0x0080(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalLogUtility_SetTextureToAdditionalDataFromHandles;
 
 // Function Pal.PalLogUtility.SetTextureToAdditionalDataFromStaticItemID
-// 0x0080 (0x0080 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct PalLogUtility_SetTextureToAdditionalDataFromStaticItemID final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0070)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	class FName                                   StaticItemId;                                      // 0x0078(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0078)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FName                                   StaticItemId;                                      // 0x0080(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalLogUtility_SetTextureToAdditionalDataFromStaticItemID;
 
 // Function Pal.PalLogUtility.SetTextureToAdditionalDataFromStaticItemIDs
-// 0x0088 (0x0088 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct PalLogUtility_SetTextureToAdditionalDataFromStaticItemIDs final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0070)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<class FName>                           StaticItemIds;                                     // 0x0078(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  targetData;                                        // 0x0008(0x0078)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<class FName>                           StaticItemIds;                                     // 0x0080(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalLogUtility_SetTextureToAdditionalDataFromStaticItemIDs;
 
@@ -12558,11 +12567,11 @@ public:
 DUMPER7_ASSERTS_PalAICombatModule_KingWhale_Wild_IsInterruptWaza;
 
 // Function Pal.PalLogWidgetBase.SetAdditionalData
-// 0x0070 (0x0070 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct PalLogWidgetBase_SetAdditionalData final
 {
 public:
-	struct FPalLogAdditionalData                  inAdditionalData;                                  // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  inAdditionalData;                                  // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalLogWidgetBase_SetAdditionalData;
 
@@ -15405,6 +15414,20 @@ public:
 	class UObject*                                FilterOwner;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalIncidentNotifyListener_RegisterToIncidentSystemWithFilterOwner;
+
+// Function Pal.PalMasterDataTablesUtility.ExistLocalizedText
+// 0x0018 (0x0018 - 0x0000)
+struct PalMasterDataTablesUtility_ExistLocalizedText final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPalLocalizeTextCategory                      TextCategory;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   TextId;                                            // 0x000C(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_PalMasterDataTablesUtility_ExistLocalizedText;
 
 // Function Pal.PalMasterDataTablesUtility.GetAchivementRewardDataAsset
 // 0x0010 (0x0010 - 0x0000)
@@ -19873,24 +19896,24 @@ public:
 DUMPER7_ASSERTS_PalOptionSubsystem_ApplyGraphicsPresetByBenchMark;
 
 // Function Pal.PalOptionSubsystem.ApplyWorldModePreset
-// 0x0210 (0x0210 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct PalOptionSubsystem_ApplyWorldModePreset final
 {
 public:
-	struct FPalOptionWorldSettings                OutSettings;                                       // 0x0000(0x0208)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          bIsPvP;                                            // 0x0208(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                OutSettings;                                       // 0x0000(0x0210)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          bIsPvP;                                            // 0x0210(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalOptionSubsystem_ApplyWorldModePreset;
 
 // Function Pal.PalOptionSubsystem.ApplyWorldPreset
-// 0x0210 (0x0210 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct PalOptionSubsystem_ApplyWorldPreset final
 {
 public:
-	struct FPalOptionWorldSettings                OutSettings;                                       // 0x0000(0x0208)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	EPalOptionWorldDifficulty                     Difficulty;                                        // 0x0208(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                OutSettings;                                       // 0x0000(0x0210)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	EPalOptionWorldDifficulty                     Difficulty;                                        // 0x0210(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalOptionSubsystem_ApplyWorldPreset;
 
@@ -20008,11 +20031,11 @@ public:
 DUMPER7_ASSERTS_PalOptionSubsystem_SetOnlineUserSettings;
 
 // Function Pal.PalOptionSubsystem.SetOptionWorldSettings
-// 0x0208 (0x0208 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PalOptionSubsystem_SetOptionWorldSettings final
 {
 public:
-	struct FPalOptionWorldSettings                InOptionWorldSettings;                             // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                InOptionWorldSettings;                             // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalOptionSubsystem_SetOptionWorldSettings;
 
@@ -20116,11 +20139,11 @@ public:
 DUMPER7_ASSERTS_PalOptionSubsystem_GetOptionLocalStaticSettings;
 
 // Function Pal.PalOptionSubsystem.GetOptionWorldSettings
-// 0x0208 (0x0208 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct PalOptionSubsystem_GetOptionWorldSettings final
 {
 public:
-	struct FPalOptionWorldSettings                ReturnValue;                                       // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                ReturnValue;                                       // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalOptionSubsystem_GetOptionWorldSettings;
 
@@ -20179,13 +20202,13 @@ public:
 DUMPER7_ASSERTS_PalOptionSubsystem_IsCrossPlayAllowConnectPlatform;
 
 // Function Pal.PalOptionSubsystem.VerifyWorldSettingThresholds
-// 0x0210 (0x0210 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct PalOptionSubsystem_VerifyWorldSettingThresholds final
 {
 public:
-	struct FPalOptionWorldSettings                CheckWorldSettings;                                // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0208(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                CheckWorldSettings;                                // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0210(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalOptionSubsystem_VerifyWorldSettingThresholds;
 
@@ -20264,6 +20287,15 @@ public:
 	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalArenaSequenceInBattle_IsPlayerLose;
+
+// Function Pal.PalArenaSequenceInBattle.OnRevivedInBattle_ServerInternal
+// 0x0008 (0x0008 - 0x0000)
+struct PalArenaSequenceInBattle_OnRevivedInBattle_ServerInternal final
+{
+public:
+	class UPalIndividualCharacterParameter*       IndividualParameter;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalArenaSequenceInBattle_OnRevivedInBattle_ServerInternal;
 
 // Function Pal.PalArenaSequenceInBattle.SetDisableRide
 // 0x0001 (0x0001 - 0x0000)
@@ -21850,6 +21882,24 @@ public:
 	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalDefine_TextId_UICommon_LOG_ConsumeItem;
+
+// Function Pal.PalDefine.TextId_UICommon_LOG_Decay_WorldTreeOre
+// 0x0008 (0x0008 - 0x0000)
+struct PalDefine_TextId_UICommon_LOG_Decay_WorldTreeOre final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalDefine_TextId_UICommon_LOG_Decay_WorldTreeOre;
+
+// Function Pal.PalDefine.TextId_UICommon_LOG_Decay_WorldTreeWood
+// 0x0008 (0x0008 - 0x0000)
+struct PalDefine_TextId_UICommon_LOG_Decay_WorldTreeWood final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalDefine_TextId_UICommon_LOG_Decay_WorldTreeWood;
 
 // Function Pal.PalDefine.TextId_UICommon_LOG_ElementalTreasureChestFailure_Electricity
 // 0x0008 (0x0008 - 0x0000)
@@ -23971,6 +24021,17 @@ public:
 };
 DUMPER7_ASSERTS_PalAudioWorldSubsystem_PostTriggerByString;
 
+// Function Pal.PalAudioWorldSubsystem.SetDisableBattleBGMFlag
+// 0x000C (0x000C - 0x0000)
+struct PalAudioWorldSubsystem_SetDisableBattleBGMFlag final
+{
+public:
+	class FName                                   flagName;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsDisable;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_PalAudioWorldSubsystem_SetDisableBattleBGMFlag;
+
 // Function Pal.PalAudioWorldSubsystem.SetDsiableBattleBGM
 // 0x0001 (0x0001 - 0x0000)
 struct PalAudioWorldSubsystem_SetDsiableBattleBGM final
@@ -24089,6 +24150,15 @@ public:
 	struct FVector                                OutLocation;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalAudioWorldSubsystem_GetSoundPlayerLocation;
+
+// Function Pal.PalAudioWorldSubsystem.IsBattleBGMDisabled
+// 0x0001 (0x0001 - 0x0000)
+struct PalAudioWorldSubsystem_IsBattleBGMDisabled final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalAudioWorldSubsystem_IsBattleBGMDisabled;
 
 // Function Pal.PalAutoDestroyActorHolder.AddActor
 // 0x0008 (0x0008 - 0x0000)
@@ -25445,6 +25515,15 @@ public:
 	TDelegate<void(class APalCharacter* InCharacter)> Event;                                         // 0x0004(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalCharacter_BindOnCompleteInitializeParameterDelegate;
+
+// Function Pal.PalCharacter.CancelDeathActionOnRevive
+// 0x0001 (0x0001 - 0x0000)
+struct PalCharacter_CancelDeathActionOnRevive final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalCharacter_CancelDeathActionOnRevive;
 
 // Function Pal.PalCharacter.ChangeBattleModeFlag
 // 0x0001 (0x0001 - 0x0000)
@@ -29913,12 +29992,12 @@ public:
 DUMPER7_ASSERTS_PalUtility_GetOptionSubsystem;
 
 // Function Pal.PalUtility.GetOptionWorldSettings
-// 0x0210 (0x0210 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct PalUtility_GetOptionWorldSettings final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldSettings                ReturnValue;                                       // 0x0008(0x0208)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                ReturnValue;                                       // 0x0008(0x0210)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalUtility_GetOptionWorldSettings;
 
@@ -35457,6 +35536,15 @@ public:
 };
 DUMPER7_ASSERTS_PalGameInstance_IsAlreadyShowModDetectionDialog;
 
+// Function Pal.PalGameInstance.IsAlreadyShowSaveWarningDialog
+// 0x0001 (0x0001 - 0x0000)
+struct PalGameInstance_IsAlreadyShowSaveWarningDialog final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalGameInstance_IsAlreadyShowSaveWarningDialog;
+
 // Function Pal.PalGameInstance.IsNewGame
 // 0x0001 (0x0001 - 0x0000)
 struct PalGameInstance_IsNewGame final
@@ -37891,12 +37979,12 @@ public:
 DUMPER7_ASSERTS_PalRandomizerManager_GetRandomizerManagerFromContextObject;
 
 // Function Pal.PalRandomizerManager.OnChangeWorldSettings_ForClient
-// 0x0410 (0x0410 - 0x0000)
+// 0x0420 (0x0420 - 0x0000)
 struct PalRandomizerManager_OnChangeWorldSettings_ForClient final
 {
 public:
-	struct FPalOptionWorldSettings                PrevSettings;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldSettings                NewSettings;                                       // 0x0208(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                PrevSettings;                                      // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                NewSettings;                                       // 0x0210(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalRandomizerManager_OnChangeWorldSettings_ForClient;
 
@@ -39424,6 +39512,15 @@ public:
 	bool                                          bIsBattleMode;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalFlyMeshHeightCtrlComponent_OnChangeBattleMode;
+
+// Function Pal.PalFlyMeshHeightCtrlComponent.OnDamage
+// 0x0048 (0x0048 - 0x0000)
+struct PalFlyMeshHeightCtrlComponent_OnDamage final
+{
+public:
+	struct FPalDamageRactionInfo                  ReactionInfo;                                      // 0x0000(0x0048)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalFlyMeshHeightCtrlComponent_OnDamage;
 
 // Function Pal.PalFlyMeshHeightCtrlComponent.OnDead
 // 0x0050 (0x0050 - 0x0000)
@@ -42971,6 +43068,15 @@ public:
 };
 DUMPER7_ASSERTS_PalCutsceneHideVolume_Initialize;
 
+// Function Pal.PalCutsceneHideVolume.OnGliderSpawned
+// 0x0008 (0x0008 - 0x0000)
+struct PalCutsceneHideVolume_OnGliderSpawned final
+{
+public:
+	class APalGliderObject*                       NewGlider;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalCutsceneHideVolume_OnGliderSpawned;
+
 // Function Pal.PalCutsceneHideVolume.OnSphereBeginOverlap
 // 0x0108 (0x0108 - 0x0000)
 struct PalCutsceneHideVolume_OnSphereBeginOverlap final
@@ -44877,6 +44983,16 @@ public:
 };
 DUMPER7_ASSERTS_PalDiscordClient_Mute;
 
+// Function Pal.PalDiscordClient.OnChangeVoiceChatSettings
+// 0x00A0 (0x00A0 - 0x0000)
+struct PalDiscordClient_OnChangeVoiceChatSettings final
+{
+public:
+	struct FPalOptionVoiceChatSettings            PrevSettings;                                      // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionVoiceChatSettings            NewSettings;                                       // 0x0050(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalDiscordClient_OnChangeVoiceChatSettings;
+
 // Function Pal.PalDiscordClient.OnJoin
 // 0x0010 (0x0010 - 0x0000)
 struct PalDiscordClient_OnJoin final
@@ -45844,13 +45960,13 @@ public:
 DUMPER7_ASSERTS_PalDungeonInstanceModelFixedDungeon_GetRespawnBossTimeAt;
 
 // Function Pal.PalUIWorldSettingBase.CompleteSetting
-// 0x0210 (0x0210 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct PalUIWorldSettingBase_CompleteSetting final
 {
 public:
-	struct FPalOptionWorldSettings                NewSetting;                                        // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0208(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                NewSetting;                                        // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0210(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalUIWorldSettingBase_CompleteSetting;
 
@@ -47994,6 +48110,15 @@ public:
 };
 DUMPER7_ASSERTS_PalFishingComponent_IsFishingButtonPressed;
 
+// Function Pal.PalFishingComponent.IsPalSkillAdviceTarget
+// 0x0001 (0x0001 - 0x0000)
+struct PalFishingComponent_IsPalSkillAdviceTarget final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalFishingComponent_IsPalSkillAdviceTarget;
+
 // Function Pal.PalFishingDefine.GetCutsceneInfo
 // 0x00E8 (0x00E8 - 0x0000)
 struct PalFishingDefine_GetCutsceneInfo final
@@ -49422,6 +49547,26 @@ public:
 };
 DUMPER7_ASSERTS_PalGameSetting_GetCaptureLevelBySphereType;
 
+// Function Pal.PalGameSetting.GetFishingDifficultyRateByStepIndex
+// 0x0008 (0x0008 - 0x0000)
+struct PalGameSetting_GetFishingDifficultyRateByStepIndex final
+{
+public:
+	int32                                         StepIndex;                                         // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalGameSetting_GetFishingDifficultyRateByStepIndex;
+
+// Function Pal.PalGameSetting.GetFishingDifficultyStepIndexByRate
+// 0x0008 (0x0008 - 0x0000)
+struct PalGameSetting_GetFishingDifficultyStepIndexByRate final
+{
+public:
+	float                                         Rate;                                              // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalGameSetting_GetFishingDifficultyStepIndexByRate;
+
 // Function Pal.PalGameSetting.GetOptionSubsystem
 // 0x0010 (0x0010 - 0x0000)
 struct PalGameSetting_GetOptionSubsystem final
@@ -49501,6 +49646,15 @@ public:
 };
 DUMPER7_ASSERTS_PalGameStateInGame_BroadcastServerNotice;
 
+// Function Pal.PalGameStateInGame.GetRemainTrialTimeSecond
+// 0x0004 (0x0004 - 0x0000)
+struct PalGameStateInGame_GetRemainTrialTimeSecond final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalGameStateInGame_GetRemainTrialTimeSecond;
+
 // Function Pal.PalGameStateInGame.OnCompleteSyncAllFromServer_InClient
 // 0x0008 (0x0008 - 0x0000)
 struct PalGameStateInGame_OnCompleteSyncAllFromServer_InClient final
@@ -49554,6 +49708,15 @@ public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalGameStateInGame_GetWorldSaveDirectoryName;
+
+// Function Pal.PalGameStateInGame.HasTrialEnded
+// 0x0001 (0x0001 - 0x0000)
+struct PalGameStateInGame_HasTrialEnded final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalGameStateInGame_HasTrialEnded;
 
 // Function Pal.ThreadSafeFunctionLibrary.GetThreadSafeBoolean
 // 0x0002 (0x0002 - 0x0000)
@@ -52477,11 +52640,11 @@ public:
 DUMPER7_ASSERTS_PalHUDService_ShowCommonItemReward;
 
 // Function Pal.PalHUDService.ShowCommonReward
-// 0x0058 (0x0058 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct PalHUDService_ShowCommonReward final
 {
 public:
-	struct FPalUICommonRewardDisplayData          RewardDisplayData;                                 // 0x0000(0x0058)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalUICommonRewardDisplayData          RewardDisplayData;                                 // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalHUDService_ShowCommonReward;
 
@@ -54899,12 +55062,12 @@ public:
 DUMPER7_ASSERTS_PalSupplyManager_GetIncidentSpawnerByID;
 
 // Function Pal.PalSupplyManager.OnChangeWorldSettings
-// 0x0410 (0x0410 - 0x0000)
+// 0x0420 (0x0420 - 0x0000)
 struct PalSupplyManager_OnChangeWorldSettings final
 {
 public:
-	struct FPalOptionWorldSettings                PrevSettings;                                      // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldSettings                NewSettings;                                       // 0x0208(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                PrevSettings;                                      // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                NewSettings;                                       // 0x0210(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalSupplyManager_OnChangeWorldSettings;
 
@@ -57970,15 +58133,6 @@ public:
 };
 DUMPER7_ASSERTS_PalLevelObject_LockGimmickPalFight_Multicast_NotifyUI;
 
-// Function Pal.PalLevelObject_LockGimmickPalFight.OnCreatedIndividualParameter
-// 0x0008 (0x0008 - 0x0000)
-struct PalLevelObject_LockGimmickPalFight_OnCreatedIndividualParameter final
-{
-public:
-	class UPalIndividualCharacterParameter*       IndividualParameter;                               // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PalLevelObject_LockGimmickPalFight_OnCreatedIndividualParameter;
-
 // Function Pal.PalLevelObject_LockGimmickPalFight.OnGameStateChanged
 // 0x0002 (0x0002 - 0x0000)
 struct PalLevelObject_LockGimmickPalFight_OnGameStateChanged final
@@ -59526,15 +59680,15 @@ public:
 DUMPER7_ASSERTS_PalLogManager_AddKillLog;
 
 // Function Pal.PalLogManager.AddLog
-// 0x00A0 (0x00A0 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct PalLogManager_AddLog final
 {
 public:
 	EPalLogPriority                               logPriority;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   LogText;                                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FPalLogAdditionalData                  logAdditionalData;                                 // 0x0020(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FGuid                                  ReturnValue;                                       // 0x0090(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  logAdditionalData;                                 // 0x0020(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FGuid                                  ReturnValue;                                       // 0x0098(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalLogManager_AddLog;
 
@@ -61259,6 +61413,15 @@ public:
 	class UPalIndividualCharacterSlot*            MoveSlot;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalUIPalBoxBase_TryMoveToBaseCamp;
+
+// Function Pal.PalUIPalBoxBase.TryMoveToBoxForCommonContainer
+// 0x0008 (0x0008 - 0x0000)
+struct PalUIPalBoxBase_TryMoveToBoxForCommonContainer final
+{
+public:
+	class UPalIndividualCharacterSlot*            MoveSlot;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalUIPalBoxBase_TryMoveToBoxForCommonContainer;
 
 // Function Pal.PalUIPalBoxBase.TryMoveToBoxForOtomo
 // 0x0008 (0x0008 - 0x0000)
@@ -63521,12 +63684,12 @@ public:
 DUMPER7_ASSERTS_PalMapObjectPasswordLockModule_GetLockState;
 
 // Function Pal.PalMapObjectPhysicsManager.OnChangeWorldSettings
-// 0x0410 (0x0410 - 0x0000)
+// 0x0420 (0x0420 - 0x0000)
 struct PalMapObjectPhysicsManager_OnChangeWorldSettings final
 {
 public:
-	struct FPalOptionWorldSettings                Prev;                                              // 0x0000(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldSettings                New;                                               // 0x0208(0x0208)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                Prev;                                              // 0x0000(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                New;                                               // 0x0210(0x0210)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalMapObjectPhysicsManager_OnChangeWorldSettings;
 
@@ -68444,15 +68607,6 @@ public:
 };
 DUMPER7_ASSERTS_PalNetworkPlayerComponent_RequestTriggerTutorial_ToClient;
 
-// Function Pal.PalNetworkPlayerComponent.RequestUnlockFastTravelPoint_ToServer
-// 0x0008 (0x0008 - 0x0000)
-struct PalNetworkPlayerComponent_RequestUnlockFastTravelPoint_ToServer final
-{
-public:
-	class FName                                   UnlockFlagKey;                                     // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PalNetworkPlayerComponent_RequestUnlockFastTravelPoint_ToServer;
-
 // Function Pal.PalNetworkPlayerComponent.RequestUnlockTechnology_ToServer
 // 0x0008 (0x0008 - 0x0000)
 struct PalNetworkPlayerComponent_RequestUnlockTechnology_ToServer final
@@ -69117,11 +69271,13 @@ public:
 DUMPER7_ASSERTS_PalRaidBossAreaEntrancePoint_GetWarpPoint;
 
 // Function Pal.PalNPCTalkFlowComponent.LaunchTalkIncident
-// 0x0008 (0x0008 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct PalNPCTalkFlowComponent_LaunchTalkIncident final
 {
 public:
 	class AActor*                                 Other;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalNPCTalkFlowComponent_LaunchTalkIncident;
 
@@ -70989,6 +71145,17 @@ public:
 };
 DUMPER7_ASSERTS_PalPartnerSkillPassiveSkill_OnRemoveWorker;
 
+// Function Pal.PalPartnerSkillPassiveSkill.OnSetPassiveSkillEffectWithOwner
+// 0x0010 (0x0010 - 0x0000)
+struct PalPartnerSkillPassiveSkill_OnSetPassiveSkillEffectWithOwner final
+{
+public:
+	EPalPassiveSkillEffectType                    EffectType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UObject*                          EffectOwner;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalPartnerSkillPassiveSkill_OnSetPassiveSkillEffectWithOwner;
+
 // Function Pal.PalPartnerSkillPassiveSkill.OnStartPassiveSkillEffect
 // 0x0008 (0x0008 - 0x0000)
 struct PalPartnerSkillPassiveSkill_OnStartPassiveSkillEffect final
@@ -71217,7 +71384,7 @@ struct PalPassiveSkillComponent_OnClearSkillEffectWithOwner final
 public:
 	EPalPassiveSkillEffectType                    EffectType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UObject*                          effectOwner;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          EffectOwner;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalPassiveSkillComponent_OnClearSkillEffectWithOwner;
 
@@ -71246,7 +71413,7 @@ struct PalPassiveSkillComponent_OnSetSkillEffectWithOwner final
 public:
 	EPalPassiveSkillEffectType                    EffectType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UObject*                          effectOwner;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          EffectOwner;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalPassiveSkillComponent_OnSetSkillEffectWithOwner;
 
@@ -72518,6 +72685,15 @@ public:
 };
 DUMPER7_ASSERTS_PalPlayerController_LostOtomoByInstacneID_ToServer;
 
+// Function Pal.PalPlayerController.NotifyActivateLifeDrainPowerAttackUp_ToClient
+// 0x0030 (0x0030 - 0x0000)
+struct PalPlayerController_NotifyActivateLifeDrainPowerAttackUp_ToClient final
+{
+public:
+	struct FPalInstanceID                         PalInstanceID;                                     // 0x0000(0x0030)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalPlayerController_NotifyActivateLifeDrainPowerAttackUp_ToClient;
+
 // Function Pal.PalPlayerController.NotifyConfirmRequestGuild_ToServer
 // 0x0014 (0x0014 - 0x0000)
 struct PalPlayerController_NotifyConfirmRequestGuild_ToServer final
@@ -73382,7 +73558,7 @@ public:
 DUMPER7_ASSERTS_PalPlayerController_SendBuldingActiveFlag_ToServer;
 
 // Function Pal.PalPlayerController.SendLog_ToClient
-// 0x0080 (0x0080 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct PalPlayerController_SendLog_ToClient final
 {
 public:
@@ -73391,7 +73567,7 @@ public:
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   TextId;                                            // 0x0004(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalLogAdditionalData                  AdditionalData;                                    // 0x0010(0x0070)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FPalLogAdditionalData                  AdditionalData;                                    // 0x0010(0x0078)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalPlayerController_SendLog_ToClient;
 
@@ -73746,7 +73922,8 @@ public:
 	int32                                         ID;                                                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsShooting;                                        // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanShootOnRelease;                                // 0x000D(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bRequestedThrowObject;                             // 0x000E(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F[0x1];                                        // 0x000F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalPlayerController_ShooterComponent_ChangeIsShooting_ToServer;
 
@@ -77346,7 +77523,8 @@ public:
 	int32                                         ID;                                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsShooting_0;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanShootOnRelease;                                // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bRequestedThrowObject;                             // 0x0006(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalShooterComponent_ChangeIsShooting_ToALL;
 
@@ -77358,7 +77536,8 @@ public:
 	int32                                         ID;                                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsShooting_0;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanShootOnRelease;                                // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bRequestedThrowObject;                             // 0x0006(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalShooterComponent_ChangeIsShooting_ToServer;
 
@@ -80058,15 +80237,15 @@ public:
 DUMPER7_ASSERTS_PalUILocalWorldSelectBase_RestoreFromLatestBackup;
 
 // Function Pal.PalUILocalWorldSelectBase.SelectWorld
-// 0x0230 (0x0230 - 0x0000)
+// 0x0238 (0x0238 - 0x0000)
 struct PalUILocalWorldSelectBase_SelectWorld final
 {
 public:
 	class FString                                 WorldSaveDirectoryName;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 WorldName;                                         // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldSaveData                OptionWorldData;                                   // 0x0020(0x0208)(Parm, OutParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0228(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSaveData                OptionWorldData;                                   // 0x0020(0x0210)(Parm, OutParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0230(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalUILocalWorldSelectBase_SelectWorld;
 
@@ -80587,12 +80766,12 @@ public:
 DUMPER7_ASSERTS_PalUIPalBoxSortWindow_RequestSort;
 
 // Function Pal.PalUIPaldex.GetFilteredDisplayInfoArray
-// 0x0040 (0x0040 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct PalUIPaldex_GetFilteredDisplayInfoArray final
 {
 public:
-	struct FPalUIPaldexFilterInfo                 FilterInfo;                                        // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<struct FPalUIPaldex_DisplayInfo>       ReturnValue;                                       // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	struct FPalUIPaldexFilterInfo                 FilterInfo;                                        // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<struct FPalUIPaldex_DisplayInfo>       ReturnValue;                                       // 0x0040(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalUIPaldex_GetFilteredDisplayInfoArray;
 
@@ -80965,12 +81144,12 @@ public:
 DUMPER7_ASSERTS_PalUIUtility_GetDefaultCharacterContainerSortInfo;
 
 // Function Pal.PalUIUtility.GetDefaultPaldeckFilterInfo
-// 0x0038 (0x0038 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct PalUIUtility_GetDefaultPaldeckFilterInfo final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalUIPaldexFilterInfo                 ReturnValue;                                       // 0x0008(0x0030)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FPalUIPaldexFilterInfo                 ReturnValue;                                       // 0x0008(0x0040)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalUIUtility_GetDefaultPaldeckFilterInfo;
 
@@ -80985,6 +81164,16 @@ public:
 	class FString                                 OutNickName;                                       // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PalUIUtility_GetDisplayNickName;
+
+// Function Pal.PalUIUtility.GetFailedToLoadWorldDataText
+// 0x0020 (0x0020 - 0x0000)
+struct PalUIUtility_GetFailedToLoadWorldDataText final
+{
+public:
+	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PalUIUtility_GetFailedToLoadWorldDataText;
 
 // Function Pal.PalUIUtility.GetFilteredUIDisplayBuildObjectList
 // 0x00A8 (0x00A8 - 0x0000)
@@ -81740,14 +81929,14 @@ public:
 DUMPER7_ASSERTS_PalUIUtility_IsDefaultCharacterContainerSortInfo;
 
 // Function Pal.PalUIUtility.IsDefaultPaldeckFilterInfo
-// 0x0040 (0x0040 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct PalUIUtility_IsDefaultPaldeckFilterInfo final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalUIPaldexFilterInfo                 FilterInfo;                                        // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalUIPaldexFilterInfo                 FilterInfo;                                        // 0x0008(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_PalUIUtility_IsDefaultPaldeckFilterInfo;
 

@@ -3,12 +3,12 @@
 
 class UWBP_Arena_RankingBoard_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UWidgetAnimation* Anm_In;                                                   // 0x0480 (size: 0x8)
-    class UScrollBox* ScrollBox_0;                                                    // 0x0488 (size: 0x8)
-    class UWBP_Arena_RankingBoard_List_C* WBP_Arena_RankingBoard_List_Player;         // 0x0490 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0498 (size: 0x8)
-    int32 LastHoveredIndex;                                                           // 0x04A0 (size: 0x4)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UWidgetAnimation* Anm_In;                                                   // 0x0488 (size: 0x8)
+    class UScrollBox* ScrollBox_0;                                                    // 0x0490 (size: 0x8)
+    class UWBP_Arena_RankingBoard_List_C* WBP_Arena_RankingBoard_List_Player;         // 0x0498 (size: 0x8)
+    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04A0 (size: 0x8)
+    int32 LastHoveredIndex;                                                           // 0x04A8 (size: 0x4)
 
     void OnLocalPlayerInfoReplicated(FPalArenaWorldRankingRecord RankingInfo);
     void OnListHovered(class UWidget* Widget);
@@ -22,6 +22,6 @@ class UWBP_Arena_RankingBoard_C : public UPalUserWidgetOverlayUI
     void Construct();
     void CloseAnm();
     void ExecuteUbergraph_WBP_Arena_RankingBoard(int32 EntryPoint);
-}; // Size: 0x4A4
+}; // Size: 0x4AC
 
 #endif

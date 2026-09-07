@@ -16,7 +16,7 @@ struct FCapturedPixels
 
 struct FCapturedPixelsID
 {
-    TMap<FName, FName> Identifiers;                                                   // 0x0000 (size: 0x50)
+    TMap<class FName, class FName> Identifiers;                                       // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 

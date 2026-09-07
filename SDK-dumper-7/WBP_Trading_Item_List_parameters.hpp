@@ -17,66 +17,32 @@
 namespace SDK::Params
 {
 
-// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.UpdateStock
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_Trading_Item_List_C_UpdateStock final
+// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	int32                                         StockCount;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalItemAndNum                         CallFunc_GetItemAndNum_ItemAndNum;                 // 0x0024(0x002C)(NoDestructor)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0058(0x0018)()
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_List_C_UpdateStock;
+DUMPER7_ASSERTS_WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.ToggleSelect
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Trading_Item_List_C_ToggleSelect final
+// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          Selected;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_List_C_ToggleSelect;
+DUMPER7_ASSERTS_WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.Setup Pal Trade Info
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_Trading_Item_List_C_Setup_Pal_Trade_Info final
+// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	struct FPalPalBoothTradeInfo                  TradeInfo;                                         // 0x0000(0x0070)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          RemoveButtonVisible;                               // 0x0070(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CharacterID;                                       // 0x0074(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByIstanceID_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_List_C_Setup_Pal_Trade_Info;
-
-// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.Setup Item Trade Info
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_Trading_Item_List_C_Setup_Item_Trade_Info final
-{
-public:
-	struct FPalItemBoothTradeInfo                 TradeInfo;                                         // 0x0000(0x0068)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	bool                                          RemoveButtonVisible;                               // 0x0068(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_List_C_Setup_Item_Trade_Info;
+DUMPER7_ASSERTS_WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.ExecuteUbergraph_WBP_Trading_Item_List
 // 0x0048 (0x0048 - 0x0000)
@@ -97,32 +63,66 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Trading_Item_List_C_ExecuteUbergraph_WBP_Trading_Item_List;
 
-// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.Setup Item Trade Info
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_Trading_Item_List_C_Setup_Item_Trade_Info final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemBoothTradeInfo                 TradeInfo;                                         // 0x0000(0x0068)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	bool                                          RemoveButtonVisible;                               // 0x0068(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Trading_Item_List_C_Setup_Item_Trade_Info;
 
-// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.Setup Pal Trade Info
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_Trading_Item_List_C_Setup_Pal_Trade_Info final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalPalBoothTradeInfo                  TradeInfo;                                         // 0x0000(0x0070)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          RemoveButtonVisible;                               // 0x0070(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CharacterID;                                       // 0x0074(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByIstanceID_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Trading_Item_List_C_Setup_Pal_Trade_Info;
 
-// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.ToggleSelect
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Trading_Item_List_C_ToggleSelect final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Selected;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_List_C_BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Trading_Item_List_C_ToggleSelect;
+
+// Function WBP_Trading_Item_List.WBP_Trading_Item_List_C.UpdateStock
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_Trading_Item_List_C_UpdateStock final
+{
+public:
+	int32                                         StockCount;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalItemAndNum                         CallFunc_GetItemAndNum_ItemAndNum;                 // 0x0024(0x002C)(NoDestructor)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0058(0x0018)()
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_List_C_UpdateStock;
 
 }
 

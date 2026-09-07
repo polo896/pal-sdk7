@@ -17,6 +17,8 @@
 ---@field OnFilterChanged FWBP_MapFilter_Win_COnFilterChanged
 local UWBP_MapFilter_Win_C = {}
 
+---@param Filter TSet<EPalLocationType>
+function UWBP_MapFilter_Win_C:Setup(Filter) end
 function UWBP_MapFilter_Win_C:Construct() end
 ---@param LocationType EPalLocationType
 ---@param IsEnable boolean

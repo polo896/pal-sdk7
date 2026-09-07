@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalOptionSubsystem.BP_PalOptionSubsystem_C
-// 0x0000 (0x0CA0 - 0x0CA0)
+// 0x0000 (0x0CD0 - 0x0CD0)
 class UBP_PalOptionSubsystem_C final : public UPalOptionSubsystem
 {
 public:

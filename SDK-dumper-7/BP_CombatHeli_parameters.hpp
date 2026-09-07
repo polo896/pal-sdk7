@@ -12,11 +12,21 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_CombatHeli.BP_CombatHeli_C.BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature
+// 0x0050 (0x0050 - 0x0000)
+struct BP_CombatHeli_C_BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature final
+{
+public:
+	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_CombatHeli_C_BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature;
 
 // Function BP_CombatHeli.BP_CombatHeli_C.CalcHeightControl
 // 0x0098 (0x0098 - 0x0000)
@@ -44,7 +54,7 @@ public:
 DUMPER7_ASSERTS_BP_CombatHeli_C_CalcHeightControl;
 
 // Function BP_CombatHeli.BP_CombatHeli_C.ExecuteUbergraph_BP_CombatHeli
-// 0x0198 (0x0198 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct BP_CombatHeli_C_ExecuteUbergraph_BP_CombatHeli final
 {
 public:
@@ -74,6 +84,8 @@ public:
 	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0180(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDeadInfo                           K2Node_ComponentBoundEvent_DeadInfo;               // 0x0198(0x0050)(NoDestructor)
 };
 DUMPER7_ASSERTS_BP_CombatHeli_C_ExecuteUbergraph_BP_CombatHeli;
 

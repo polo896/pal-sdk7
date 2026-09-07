@@ -32,9 +32,9 @@ public:
 	EPhysicalSurface                              DebugPhysicsMaterial;                              // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, const struct FAnimNotifyEventReference& EventReference) const;
-	void PlaySoundEditor(class UMeshComponent* MeshComp) const;
 	void PlaySound(class UMeshComponent* MeshComp) const;
+	void PlaySoundEditor(class UMeshComponent* MeshComp) const;
+	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, const struct FAnimNotifyEventReference& EventReference) const;
 
 public:
 	static class UClass* StaticClass()

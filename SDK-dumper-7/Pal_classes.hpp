@@ -984,13 +984,14 @@ public:
 DUMPER7_ASSERTS_UPalUserWidgetHierarchical;
 
 // Class Pal.PalUserWidgetStackableUI
-// 0x0018 (0x0468 - 0x0450)
+// 0x0020 (0x0470 - 0x0450)
 class UPalUserWidgetStackableUI : public UPalUserWidgetHierarchical
 {
 public:
 	class UAkAudioEvent*                          OpenAkEvent;                                       // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UAkAudioEvent*                          CloseAkEvent;                                      // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_460[0x8];                                      // 0x0460(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bIgnoreOnPreGarbageCollect;                        // 0x0460(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_461[0xF];                                      // 0x0461(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Close();
@@ -1018,15 +1019,15 @@ public:
 DUMPER7_ASSERTS_UPalUserWidgetStackableUI;
 
 // Class Pal.PalUserWidgetOverlayUI
-// 0x0010 (0x0478 - 0x0468)
+// 0x0010 (0x0480 - 0x0470)
 class UPalUserWidgetOverlayUI : public UPalUserWidgetStackableUI
 {
 public:
-	bool                                          IsEnableCancelAction;                              // 0x0468(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_469[0x3];                                      // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalUIActionBindData                   CancelInputHandle;                                 // 0x046C(0x0004)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPalUIActionBindData                   EscInputHandle;                                    // 0x0470(0x0004)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
-	struct FPalUIActionBindData                   TabInputHandle;                                    // 0x0474(0x0004)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
+	bool                                          IsEnableCancelAction;                              // 0x0470(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_471[0x3];                                      // 0x0471(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalUIActionBindData                   CancelInputHandle;                                 // 0x0474(0x0004)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPalUIActionBindData                   EscInputHandle;                                    // 0x0478(0x0004)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
+	struct FPalUIActionBindData                   TabInputHandle;                                    // 0x047C(0x0004)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
 
 public:
 	void ClearCancelAction();
@@ -1051,15 +1052,15 @@ public:
 DUMPER7_ASSERTS_UPalUserWidgetOverlayUI;
 
 // Class Pal.PalUIBaseCampTaskBase
-// 0x0028 (0x04A0 - 0x0478)
+// 0x0028 (0x04A8 - 0x0480)
 class UPalUIBaseCampTaskBase : public UPalUserWidgetOverlayUI
 {
 public:
-	TSubclassOf<class UPalBaseCampTaskChecker>    baseCampTaskCheckerClass;                          // 0x0478(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FGuid                                  BaseCampId;                                        // 0x0480(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         lastCheckedBaseCampLevel;                          // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_494[0x4];                                      // 0x0494(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalBaseCampTaskChecker*                taskChecker;                                       // 0x0498(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class UPalBaseCampTaskChecker>    baseCampTaskCheckerClass;                          // 0x0480(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FGuid                                  BaseCampId;                                        // 0x0488(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         lastCheckedBaseCampLevel;                          // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_49C[0x4];                                      // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalBaseCampTaskChecker*                taskChecker;                                       // 0x04A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	bool CheckTask(struct FPalBaseCampTaskCheckedData* outChedckedData);
@@ -2822,7 +2823,7 @@ public:
 DUMPER7_ASSERTS_APalStationaryLauncherBase;
 
 // Class Pal.PalMapObject
-// 0x0170 (0x0400 - 0x0290)
+// 0x0188 (0x0418 - 0x0290)
 class APalMapObject : public AActor
 {
 public:
@@ -2874,7 +2875,7 @@ public:
 	bool                                          bShouldPlayBuildCancelDestroyFX;                   // 0x03D7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_3D8[0x10];                                     // 0x03D8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPalMapObjectComponentInfo>     TickableComponentInfos;                            // 0x03E8(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3F8[0x8];                                      // 0x03F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F8[0x20];                                     // 0x03F8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
@@ -2921,61 +2922,61 @@ public:
 DUMPER7_ASSERTS_APalMapObject;
 
 // Class Pal.PalBuildObject
-// 0x0350 (0x0750 - 0x0400)
+// 0x0358 (0x0770 - 0x0418)
 class APalBuildObject : public APalMapObject
 {
 public:
-	uint8                                         Pad_400[0x20];                                     // 0x0400(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(EPalBuildObjectState State)> OnChangeState;                        // 0x0420(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnBuildCompleteAnimationFinished;                  // 0x0430(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_440[0x18];                                     // 0x0440(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	EPalBuildObjectInstallStrategy                InstallStrategy;                                   // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_459[0x7];                                      // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPalBuildObjectInstallStrategyBase> InstallStrategyClass;                      // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         InstallCapacitySlopeAngle;                         // 0x0468(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         InstallCapacitySinkRateByHeight;                   // 0x046C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                InstallLocationOffset;                             // 0x0470(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         InstallNeighborRotationZOffset;                    // 0x0488(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EComponentMobility                            DefaultMobility;                                   // 0x048C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_48D[0x3];                                      // 0x048D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalBuildObjectVisualControlComponent*  VisualCtrl;                                        // 0x0490(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   BuildObjectId;                                     // 0x0498(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UShapeComponent*                        OverlapCheckCollision;                             // 0x04A0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FComponentReference                    OverlapCheckCollisionRef;                          // 0x04A8(0x0028)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
-	class UBoxComponent*                          SnapCheckBoxCollision;                             // 0x04D0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FBox                                   LocalBounds;                                       // 0x04D8(0x0038)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	class UPalBuildObjectOverlapChecker*          OverlapChecker;                                    // 0x0510(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UMeshComponent*>                 AllMeshes;                                         // 0x0518(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TArray<class UPrimitiveComponent*>            VirtualMeshCollisions;                             // 0x0528(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class UMeshComponent*                         MainMesh;                                          // 0x0538(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FComponentReference                    MainMeshRef;                                       // 0x0540(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	struct FVector                                SnapCheckCoolisionCenterOffset;                    // 0x0568(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FBoxSphereBounds                       SnapCheckCollisionBounds;                          // 0x0580(0x0038)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	bool                                          bPlayBuildCompleteFX;                              // 0x05B8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bNotConstructConnectorInGame;                      // 0x05B9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EPalBuildObjectState                          CurrentState;                                      // 0x05BA(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_5BB[0x1];                                      // 0x05BB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  WorldHUDId;                                        // 0x05BC(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPalBuildObjectStatusHUDSlot, struct FGuid> AdditionalWorldHUDIdMap;                        // 0x05D0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	struct FGuid                                  buildProgressWorldHUDId;                           // 0x0620(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                WorldHUDDisplayOffset;                             // 0x0630(0x0018)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         WorldHUDDisplayRange;                              // 0x0648(0x0004)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_64C[0x4];                                      // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                buildProgressHUDDisplayOffset;                     // 0x0650(0x0018)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                buildProgressHUDDisplayOffsetScreen;               // 0x0668(0x0018)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         buildProgressHUDDisplayRange;                      // 0x0680(0x0004)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_684[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          BuildCompleteSEOverride;                           // 0x0688(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BuildProgressVisualRate;                           // 0x0690(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bDismantleTargetInLocal;                           // 0x0694(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_695[0x3];                                      // 0x0695(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class UPrimitiveComponent*, struct FPalBuildObjectMeshDefaultSetting> DefaultMeshSettingMap; // 0x0698(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	bool                                          bReplaceOverlapCheck;                              // 0x06E8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bReceivedBroadcastPaintChanged;                    // 0x06E9(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bExistsArrowInSimulatingTransform;                 // 0x06EA(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_6EB[0x5];                                      // 0x06EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             ArrowInSimulatingRelativeTransform;                // 0x06F0(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_418[0x20];                                     // 0x0418(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(EPalBuildObjectState State)> OnChangeState;                        // 0x0438(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnBuildCompleteAnimationFinished;                  // 0x0448(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_458[0x18];                                     // 0x0458(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	EPalBuildObjectInstallStrategy                InstallStrategy;                                   // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_471[0x7];                                      // 0x0471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalBuildObjectInstallStrategyBase> InstallStrategyClass;                      // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         InstallCapacitySlopeAngle;                         // 0x0480(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         InstallCapacitySinkRateByHeight;                   // 0x0484(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                InstallLocationOffset;                             // 0x0488(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         InstallNeighborRotationZOffset;                    // 0x04A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EComponentMobility                            DefaultMobility;                                   // 0x04A4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4A5[0x3];                                      // 0x04A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalBuildObjectVisualControlComponent*  VisualCtrl;                                        // 0x04A8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   BuildObjectId;                                     // 0x04B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UShapeComponent*                        OverlapCheckCollision;                             // 0x04B8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FComponentReference                    OverlapCheckCollisionRef;                          // 0x04C0(0x0028)(Edit, BlueprintVisible, Protected, NativeAccessSpecifierProtected)
+	class UBoxComponent*                          SnapCheckBoxCollision;                             // 0x04E8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FBox                                   LocalBounds;                                       // 0x04F0(0x0038)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	class UPalBuildObjectOverlapChecker*          OverlapChecker;                                    // 0x0528(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UMeshComponent*>                 AllMeshes;                                         // 0x0530(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TArray<class UPrimitiveComponent*>            VirtualMeshCollisions;                             // 0x0540(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class UMeshComponent*                         MainMesh;                                          // 0x0550(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FComponentReference                    MainMeshRef;                                       // 0x0558(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	struct FVector                                SnapCheckCoolisionCenterOffset;                    // 0x0580(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FBoxSphereBounds                       SnapCheckCollisionBounds;                          // 0x0598(0x0038)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	bool                                          bPlayBuildCompleteFX;                              // 0x05D0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bNotConstructConnectorInGame;                      // 0x05D1(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EPalBuildObjectState                          CurrentState;                                      // 0x05D2(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_5D3[0x1];                                      // 0x05D3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  WorldHUDId;                                        // 0x05D4(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPalBuildObjectStatusHUDSlot, struct FGuid> AdditionalWorldHUDIdMap;                        // 0x05E8(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	struct FGuid                                  buildProgressWorldHUDId;                           // 0x0638(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                WorldHUDDisplayOffset;                             // 0x0648(0x0018)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         WorldHUDDisplayRange;                              // 0x0660(0x0004)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_664[0x4];                                      // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                buildProgressHUDDisplayOffset;                     // 0x0668(0x0018)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                buildProgressHUDDisplayOffsetScreen;               // 0x0680(0x0018)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         buildProgressHUDDisplayRange;                      // 0x0698(0x0004)(Edit, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_69C[0x4];                                      // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          BuildCompleteSEOverride;                           // 0x06A0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BuildProgressVisualRate;                           // 0x06A8(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bDismantleTargetInLocal;                           // 0x06AC(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_6AD[0x3];                                      // 0x06AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class UPrimitiveComponent*, struct FPalBuildObjectMeshDefaultSetting> DefaultMeshSettingMap; // 0x06B0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	bool                                          bReplaceOverlapCheck;                              // 0x0700(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bReceivedBroadcastPaintChanged;                    // 0x0701(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bExistsArrowInSimulatingTransform;                 // 0x0702(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_703[0xD];                                      // 0x0703(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             ArrowInSimulatingRelativeTransform;                // 0x0710(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void OnAvailable_BlueprintImpl();
@@ -3017,15 +3018,15 @@ public:
 DUMPER7_ASSERTS_APalBuildObject;
 
 // Class Pal.PalBuildObjectLampBase
-// 0x0020 (0x0770 - 0x0750)
+// 0x0020 (0x0790 - 0x0770)
 class APalBuildObjectLampBase final : public APalBuildObject
 {
 public:
-	uint8                                         Pad_750[0x10];                                     // 0x0750(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bDisableLampModelFeatures;                         // 0x0760(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bDisableLampSwitchFeatures;                        // 0x0761(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bDisableLampLightColorChangeFeatures;              // 0x0762(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_763[0xD];                                      // 0x0763(0x000D)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_770[0x10];                                     // 0x0770(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bDisableLampModelFeatures;                         // 0x0780(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bDisableLampSwitchFeatures;                        // 0x0781(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bDisableLampLightColorChangeFeatures;              // 0x0782(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_783[0xD];                                      // 0x0783(0x000D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnLightColorChanged(class UPalMapObjectLampModel* LampModel, const struct FLinearColor& Color);
@@ -5554,6 +5555,7 @@ public:
 	bool IsStepDisabled() const;
 	bool IsSteppingShallows() const;
 	bool IsStepUpUpSweepShrinkEnabled() const;
+	bool IsSubmergedBeyondFloatingDepth() const;
 	bool IsTickOptimizationDisabled() const;
 
 public:
@@ -5671,8 +5673,7 @@ DUMPER7_ASSERTS_UPalWorkBase;
 
 // Class Pal.PalWorkProgress
 // 0x0070 (0x0410 - 0x03A0)
-#pragma pack(push, 0x1)
-class alignas(0x10) UPalWorkProgress : public UPalWorkBase
+class UPalWorkProgress : public UPalWorkBase
 {
 public:
 	uint8                                         Pad_398[0x8];                                      // 0x0398(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -5691,11 +5692,14 @@ public:
 	float                                         ProgressTimeSinceLastTick;                         // 0x03FC(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         TickProcessMinInterval;                            // 0x0400(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bInProgress;                                       // 0x0404(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_405[0x3];                                      // 0x0405(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_405[0x3];                                      // 0x0405(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ReplicatedWorkAmountBySec;                         // 0x0408(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_40C[0x4];                                      // 0x040C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRep_CurrentWorkAmount();
 	void OnRep_InProgress();
+	void OnRep_ReplicatedWorkAmountBySec();
 
 	float GetCurrentWorkAmount() const;
 	float GetProgressRate() const;
@@ -5718,7 +5722,6 @@ public:
 		return GetDefaultObjImpl<UPalWorkProgress>();
 	}
 };
-#pragma pack(pop)
 DUMPER7_ASSERTS_UPalWorkProgress;
 
 // Class Pal.PalAIActionBaseCampDodgeWork
@@ -5782,7 +5785,7 @@ public:
 DUMPER7_ASSERTS_UPalCharacterContainerManager;
 
 // Class Pal.PalProjectileMovementComponent
-// 0x0040 (0x0280 - 0x0240)
+// 0x0050 (0x0290 - 0x0240)
 class UPalProjectileMovementComponent final : public UProjectileMovementComponent
 {
 public:
@@ -5793,11 +5796,13 @@ public:
 	bool                                          bEnablePredictHoming;                              // 0x0241(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_242[0x2];                                      // 0x0242(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HomingPredictStrength;                             // 0x0244(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                HomingRandomOffset;                                // 0x0248(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnteringAngleReached;                             // 0x0260(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          HomingLocationSet;                                 // 0x0261(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_262[0x6];                                      // 0x0262(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                HomingLocation;                                    // 0x0268(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveFloat*                            SphereHomingRelicEffectCurve;                      // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                HomingRandomOffset;                                // 0x0250(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnteringAngleReached;                             // 0x0268(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          HomingLocationSet;                                 // 0x0269(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_26A[0x6];                                      // 0x026A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                HomingLocation;                                    // 0x0270(0x0018)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_288[0x8];                                      // 0x0288(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static float GetSphereHomingRelicEffectRate(const class AActor* OwnerPlayer);
@@ -6872,7 +6877,7 @@ DUMPER7_ASSERTS_APalWeaponBase;
 
 // Class Pal.PalUniqueRideWeaponBase
 // 0x0030 (0x06B8 - 0x0688)
-class APalUniqueRideWeaponBase final : public APalWeaponBase
+class APalUniqueRideWeaponBase : public APalWeaponBase
 {
 public:
 	TMulticastInlineDelegate<void(const struct FPalWeaponBulletHijackInfo& HijackInfo)> OnShootHijackBullet; // 0x0688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -8888,7 +8893,7 @@ public:
 DUMPER7_ASSERTS_UPalAIActionWorkerApproachToWorkArea;
 
 // Class Pal.PalUIPalStorageMenu
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIPalStorageMenu : public UPalUserWidgetOverlayUI
 {
 public:
@@ -9622,7 +9627,7 @@ DUMPER7_ASSERTS_UPalCoopSkillModuleBase;
 
 // Class Pal.PalCoopSkillModuleAssignPassiveSkill
 // 0x0018 (0x0050 - 0x0038)
-class UPalCoopSkillModuleAssignPassiveSkill : public UPalCoopSkillModuleBase
+class UPalCoopSkillModuleAssignPassiveSkill final : public UPalCoopSkillModuleBase
 {
 public:
 	TArray<struct FPalCoopSkillModuleAssignPassiveSkillNames> AssignSkillNamesPerRank;               // 0x0038(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
@@ -13125,6 +13130,7 @@ public:
 	void NotifyChestQuickStackResult_ToClient(const TArray<struct FPalStaticItemIdAndNum>& StackItems);
 	void NotifyCommonItemRewardUIData_Delayed_ToClient(const struct FPalUICommonItemRewardData& RewardData, float DelaySeconds);
 	void NotifyCommonItemRewardUIData_ToClient(const struct FPalUICommonItemRewardData& RewardData);
+	void NotifySphereConsumeAndRecoverCompleted_ToClient();
 	void RequestChangeAllFilterCheck_ToServer(const struct FPalContainerId& ContainerId);
 	void RequestChangeAllFilterUncheck_ToServer(const struct FPalContainerId& ContainerId);
 	void RequestChangeFilter_ToServer(const struct FPalContainerId& ContainerId, const class FName FilterName, const bool bIsOn);
@@ -13201,7 +13207,7 @@ public:
 DUMPER7_ASSERTS_UPalAnimNotifyState_AvoidSkill;
 
 // Class Pal.PalHUDInGame
-// 0x0478 (0x07F8 - 0x0380)
+// 0x04C0 (0x0840 - 0x0380)
 class APalHUDInGame : public AHUD
 {
 public:
@@ -13231,7 +13237,13 @@ public:
 	uint8                                         Pad_780[0x8];                                      // 0x0780(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FGameplayTag>                   GameMenuLayerTagOrder;                             // 0x0788(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TMap<struct FGameplayTag, struct FFlagContainer> LayerHideFlagMap;                               // 0x0798(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_7E8[0x10];                                     // 0x07E8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7E8[0x10];                                     // 0x07E8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalUserWidget>             TrialTimerWidgetClass;                             // 0x07F8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class UUserWidget>                TrialEndSplashWidgetClass;                         // 0x0800(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalUserWidget*                         TrialTimerWidget;                                  // 0x0808(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUserWidget*                            TrialEndSplashWidget;                              // 0x0810(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class APalGameStateInGame*                    BoundTrialGameState;                               // 0x0818(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_820[0x20];                                     // 0x0820(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	struct FGuid AddHUD(TSubclassOf<class UPalUserWidget> WidgetClass, const EPalHUDWidgetPriority Priority, class UPalHUDDispatchParameterBase* Parameter);
@@ -13249,6 +13261,7 @@ public:
 	bool IsAnyOverlayUIActive();
 	void OnActiveInputModeChanged(ECommonInputMode InputMode);
 	void OnApplicationActivationStateChanged(bool bIsFocused);
+	void OnEndTrialGame();
 	void OnKeyConfigChanged();
 	struct FGuid PushWidgetStackableUI(TSubclassOf<class UPalUserWidgetStackableUI> WidgetClass, class UPalHUDDispatchParameterBase* Parameter);
 	void RemoveHUD(const struct FGuid& ID);
@@ -13343,11 +13356,11 @@ public:
 DUMPER7_ASSERTS_UPalLocationPoint_QuestBase;
 
 // Class Pal.PalUICharacterMakeBase
-// 0x0008 (0x0480 - 0x0478)
+// 0x0008 (0x0488 - 0x0480)
 class UPalUICharacterMakeBase : public UPalUserWidgetOverlayUI
 {
 public:
-	uint8                                         Pad_478[0x8];                                      // 0x0478(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_480[0x8];                                      // 0x0480(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyMakeInfoToPlayerData(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
@@ -13824,6 +13837,7 @@ DUMPER7_ASSERTS_UPalBaseCampWorkerDirectorBattle;
 class UPalMasterDataTablesUtility final : public UBlueprintFunctionLibrary
 {
 public:
+	static bool ExistLocalizedText(const class UObject* WorldContextObject, EPalLocalizeTextCategory TextCategory, class FName TextId);
 	static const class UPalAchivementRewardDataAsset* GetAchivementRewardDataAsset(const class UObject* WorldContextObject);
 	static class UDataTable* GetBaseCampLevelDataTable(const class UObject* WorldContextObject);
 	static class UPalMasterDataTableAccess_BaseCampLevelData* GetBaseCampLevelDataTableAccess(const class UObject* WorldContextObject);
@@ -14312,7 +14326,7 @@ public:
 DUMPER7_ASSERTS_UPalIncidentDynamicParameterRandom;
 
 // Class Pal.PalHUDDispatchParameter_WorldSetting
-// 0x0230 (0x0268 - 0x0038)
+// 0x0238 (0x0270 - 0x0038)
 class UPalHUDDispatchParameter_WorldSetting final : public UPalHUDDispatchParameterBase
 {
 public:
@@ -14320,7 +14334,7 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 WorldSaveDirectoryName;                            // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 WorldName;                                         // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldSettings                CachedWorldSetting;                                // 0x0060(0x0208)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                CachedWorldSetting;                                // 0x0060(0x0210)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -15732,26 +15746,26 @@ public:
 DUMPER7_ASSERTS_UPalBaseCampWorkerTaskBase;
 
 // Class Pal.PalMapObjectWeakPointOre
-// 0x0098 (0x0498 - 0x0400)
+// 0x0098 (0x04B0 - 0x0418)
 class APalMapObjectWeakPointOre final : public APalMapObject
 {
 public:
-	class UDecalComponent*                        WeakPointDecalComponent;                           // 0x0400(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TWeakObjectPtr<class UPalMapObjectWeakPointModule> CachedWeakPointModule;                        // 0x0408(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         WeakPointHitEffect;                                // 0x0410(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSoftObjectPtr<class UNiagaraSystem>          RejectDamageHitEffect;                             // 0x0418(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAkAudioEvent*                          NonWeakPointHitSound;                              // 0x0448(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableNightGlow;                                  // 0x0450(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_451[0x3];                                      // 0x0451(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         NightEmissiveIntensity;                            // 0x0454(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DayEmissiveIntensity;                              // 0x0458(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_45C[0x4];                                      // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               DecalDynamicMaterial;                              // 0x0460(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         WeakPointDecalRenderStencilMaskValue;              // 0x0468(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_46C[0x4];                                      // 0x046C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         WeakPointDecalShakeFollowRate;                     // 0x0470(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bUseWeakPointDecalShakeFollow;                     // 0x0474(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_475[0x23];                                     // 0x0475(0x0023)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UDecalComponent*                        WeakPointDecalComponent;                           // 0x0418(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TWeakObjectPtr<class UPalMapObjectWeakPointModule> CachedWeakPointModule;                        // 0x0420(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         WeakPointHitEffect;                                // 0x0428(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSoftObjectPtr<class UNiagaraSystem>          RejectDamageHitEffect;                             // 0x0430(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAkAudioEvent*                          NonWeakPointHitSound;                              // 0x0460(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableNightGlow;                                  // 0x0468(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_469[0x3];                                      // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         NightEmissiveIntensity;                            // 0x046C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DayEmissiveIntensity;                              // 0x0470(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_474[0x4];                                      // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               DecalDynamicMaterial;                              // 0x0478(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         WeakPointDecalRenderStencilMaskValue;              // 0x0480(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_484[0x4];                                      // 0x0484(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         WeakPointDecalShakeFollowRate;                     // 0x0488(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bUseWeakPointDecalShakeFollow;                     // 0x048C(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_48D[0x23];                                     // 0x048D(0x0023)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnNightEnd();
@@ -16379,7 +16393,7 @@ public:
 DUMPER7_ASSERTS_UPalArenaUtility;
 
 // Class Pal.PalNPCSpawnerBase
-// 0x0298 (0x0528 - 0x0290)
+// 0x02A8 (0x0538 - 0x0290)
 class APalNPCSpawnerBase : public AActor
 {
 public:
@@ -16388,46 +16402,48 @@ public:
 	bool                                          Ignore_DistanceLocationReset;                      // 0x0292(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          Ignore_FarCheck;                                   // 0x0293(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bDoSpawnedTick;                                    // 0x0294(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EPalSpawnRadiusType                           SpawnRadiusType;                                   // 0x0295(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUseDirectionalSpawnCheck;                         // 0x0296(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_297[0x1];                                      // 0x0297(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinMoveSpeedForDirectionalSpawn;                   // 0x0298(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LastMoveDirectionGraceTime;                        // 0x029C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         NearAlwaysSpawnRadiusScale;                        // 0x02A0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         IdleSpawnRadiusScale;                              // 0x02A4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BaseSideWidthScale;                                // 0x02A8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         HalfAngleDeg;                                      // 0x02AC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxSideWidthScale;                                 // 0x02B0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BackAllowance;                                     // 0x02B4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ForwardSpawnDistanceScale;                         // 0x02B8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CameraForwardSpawnDistanceScale;                   // 0x02BC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         PalSpawnDistanceRate;                              // 0x02C0(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CharacterBPPreloadDistance;                        // 0x02C4(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CharacterBPPreloadReleaseDistance;                 // 0x02C8(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, TSubclassOf<class APalCharacter>> LoadedCharacterBPClassMap;                   // 0x02D0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	bool                                          IsSquadBehaviour;                                  // 0x0320(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DebugOrganizationName;                             // 0x0328(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LocationResetDistance_SpawnerToCharacterTooFar;    // 0x0338(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LocationResetHeight_SpawnerToCharacterTooLow;      // 0x033C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FString                                 GroupName;                                         // 0x0340(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPalNavigationInvokerComponent*         NavInvokerComponent;                               // 0x0350(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          IgnoreBaseCampCheck;                               // 0x0358(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_359[0x3];                                      // 0x0359(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OverwriteRayUpOffset;                              // 0x035C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<struct FVector>                        NPCLocations;                                      // 0x0360(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TMulticastInlineDelegate<void()>              OnCreatedGroupDelegate;                            // 0x0370(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class APalNPCSpawnerBase* Spawner)> OnCreatedGroupWithSelfDelegate; // 0x0380(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TArray<struct FPalSpawnerGroupInfo>           RandomizeSpawnerGroupInfos;                        // 0x0390(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3A0[0x18];                                     // 0x03A0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  WildGroupGuid;                                     // 0x03B8(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalSquad*                              Squad;                                             // 0x03C8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FFlagContainer                         DisableSpawn;                                      // 0x03D0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	EPalSpwnerImportanceType                      ImportanceType;                                    // 0x0420(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_421[0xF7];                                     // 0x0421(0x00F7)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPalSpawnerRuleObjectBase>  SpawnerRuleClass;                                  // 0x0518(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalSpawnerRuleObjectBase*              SpawnerRuleObjectInServer;                         // 0x0520(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_295[0x3];                                      // 0x0295(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RequestedAdditionalCellWaitTimeoutSeconds;         // 0x0298(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_29C[0xD];                                      // 0x029C(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
+	EPalSpawnRadiusType                           SpawnRadiusType;                                   // 0x02A9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUseDirectionalSpawnCheck;                         // 0x02AA(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2AB[0x1];                                      // 0x02AB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinMoveSpeedForDirectionalSpawn;                   // 0x02AC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LastMoveDirectionGraceTime;                        // 0x02B0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         NearAlwaysSpawnRadiusScale;                        // 0x02B4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         IdleSpawnRadiusScale;                              // 0x02B8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BaseSideWidthScale;                                // 0x02BC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         HalfAngleDeg;                                      // 0x02C0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxSideWidthScale;                                 // 0x02C4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BackAllowance;                                     // 0x02C8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ForwardSpawnDistanceScale;                         // 0x02CC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CameraForwardSpawnDistanceScale;                   // 0x02D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         PalSpawnDistanceRate;                              // 0x02D4(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CharacterBPPreloadDistance;                        // 0x02D8(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CharacterBPPreloadReleaseDistance;                 // 0x02DC(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<class FName, TSubclassOf<class APalCharacter>> LoadedCharacterBPClassMap;                   // 0x02E0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	bool                                          IsSquadBehaviour;                                  // 0x0330(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DebugOrganizationName;                             // 0x0338(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LocationResetDistance_SpawnerToCharacterTooFar;    // 0x0348(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LocationResetHeight_SpawnerToCharacterTooLow;      // 0x034C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FString                                 GroupName;                                         // 0x0350(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalNavigationInvokerComponent*         NavInvokerComponent;                               // 0x0360(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          IgnoreBaseCampCheck;                               // 0x0368(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_369[0x3];                                      // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OverwriteRayUpOffset;                              // 0x036C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FVector>                        NPCLocations;                                      // 0x0370(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void()>              OnCreatedGroupDelegate;                            // 0x0380(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class APalNPCSpawnerBase* Spawner)> OnCreatedGroupWithSelfDelegate; // 0x0390(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TArray<struct FPalSpawnerGroupInfo>           RandomizeSpawnerGroupInfos;                        // 0x03A0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3B0[0x18];                                     // 0x03B0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  WildGroupGuid;                                     // 0x03C8(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalSquad*                              Squad;                                             // 0x03D8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FFlagContainer                         DisableSpawn;                                      // 0x03E0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	EPalSpwnerImportanceType                      ImportanceType;                                    // 0x0430(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_431[0xF7];                                     // 0x0431(0x00F7)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalSpawnerRuleObjectBase>  SpawnerRuleClass;                                  // 0x0528(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalSpawnerRuleObjectBase*              SpawnerRuleObjectInServer;                         // 0x0530(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void AddGroupCharacter(class UPalIndividualCharacterHandle* AddIndividualHandle);
@@ -16509,15 +16525,15 @@ public:
 DUMPER7_ASSERTS_APalNPCSpawnerBase;
 
 // Class Pal.PalRandomIncidentNPCSpawner
-// 0x0110 (0x0638 - 0x0528)
+// 0x0110 (0x0648 - 0x0538)
 class APalRandomIncidentNPCSpawner : public APalNPCSpawnerBase
 {
 public:
-	TMulticastInlineDelegate<void(const class FName& RowName)> OnNPCSpawnedDelegate;                 // 0x0528(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FName& RowName)> OnNPCDespawnedDelegate;               // 0x0538(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMap<int32, struct FGuid>                     GroupMap;                                          // 0x0548(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	TMap<EPalOrganizationType, struct FGuid>      OrganizationGroupMap;                              // 0x0598(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	TMap<int32, EPalOrganizationType>             GrouplOrganizationMap;                             // 0x05E8(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void(const class FName& RowName)> OnNPCSpawnedDelegate;                 // 0x0538(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FName& RowName)> OnNPCDespawnedDelegate;               // 0x0548(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMap<int32, struct FGuid>                     GroupMap;                                          // 0x0558(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	TMap<EPalOrganizationType, struct FGuid>      OrganizationGroupMap;                              // 0x05A8(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	TMap<int32, EPalOrganizationType>             GrouplOrganizationMap;                             // 0x05F8(0x0050)(Transient, NativeAccessSpecifierPrivate)
 
 public:
 	void AddGroupCharacterByGroupNo(class UPalIndividualCharacterHandle* AddIndividualHandle, int32 GroupNo);
@@ -17319,7 +17335,7 @@ public:
 DUMPER7_ASSERTS_UPalUserWidgetWorldHUD;
 
 // Class Pal.PalOptionSubsystem
-// 0x0C28 (0x0CA0 - 0x0078)
+// 0x0C58 (0x0CD0 - 0x0078)
 class UPalOptionSubsystem : public UPalWorldSubsystem
 {
 public:
@@ -17332,32 +17348,33 @@ public:
 	TMulticastInlineDelegate<void(const struct FPalOptionOnlineUserSettings& PrevSettings, const struct FPalOptionOnlineUserSettings& NewSettings)> OnChangeOnlineUserSettingsDelegate; // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(float newRatio)> OnChangeScreenRatioDelegate;                      // 0x00E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const struct FPalOptionCommonSettings& PrevSettings, const struct FPalOptionCommonSettings& NewSettings)> OnChangeCommonSettingDelegate; // 0x00F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldStaticSettings          OptionWorldStaticSettings;                         // 0x0108(0x01B0)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionLocalStaticSettings          OptionLocalStaticSettings;                         // 0x02B8(0x00A8)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionWorldSettings                OptionWorldSettings;                               // 0x0360(0x0208)(Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionWorldSettings                OptionWorldSettingsCache;                          // 0x0568(0x0208)(Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionGraphicsSettings             GraphicsSettings;                                  // 0x0770(0x0068)(NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionAudioSettings                AudioSettings;                                     // 0x07D8(0x0024)(NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_7FC[0x4];                                      // 0x07FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionVoiceChatSettings            VoiceChatSettings;                                 // 0x0800(0x0050)(Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionCommonSettings               CommonSettings;                                    // 0x0850(0x0030)(Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionKeyboardSettings             KeyboardSettings;                                  // 0x0880(0x0014)(NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionPadSettings                  PadSettings;                                       // 0x0894(0x001C)(NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FPalKeyConfigSettings                  KeyConfigSettings;                                 // 0x08B0(0x0160)(Protected, NativeAccessSpecifierProtected)
-	struct FPalOptionUISettings                   UISettings;                                        // 0x0A10(0x001C)(NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_A2C[0x4];                                      // 0x0A2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionOnlineUserSettings           OnlineUserSettings;                                // 0x0A30(0x0028)(Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_A58[0x20];                                     // 0x0A58(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BaseFov;                                           // 0x0A78(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A7C[0x4];                                      // 0x0A7C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Namespace;                                         // 0x0A80(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A90[0x68];                                     // 0x0A90(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDataTable*                             OptionWorldPresetTable;                            // 0x0AF8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UDataTable*                             OptionWorldModePresetTable;                        // 0x0B00(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UDataTable*                             OptionGraphicsPresetTable;                         // 0x0B08(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FPalOptionWorldSettinThresholds        WorldSettingThreshold;                             // 0x0B10(0x00F0)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	TSubclassOf<class APalPlayerCharacter>        PalPlayerCharacterClass;                           // 0x0C00(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_C08[0x98];                                     // 0x0C08(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const struct FPalOptionVoiceChatSettings& PrevSettings, const struct FPalOptionVoiceChatSettings& NewSettings)> OnChangeVoiceChatDelegate; // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldStaticSettings          OptionWorldStaticSettings;                         // 0x0118(0x01B0)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionLocalStaticSettings          OptionLocalStaticSettings;                         // 0x02C8(0x00A8)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionWorldSettings                OptionWorldSettings;                               // 0x0370(0x0210)(Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionWorldSettings                OptionWorldSettingsCache;                          // 0x0580(0x0210)(Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionGraphicsSettings             GraphicsSettings;                                  // 0x0790(0x0068)(NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionAudioSettings                AudioSettings;                                     // 0x07F8(0x0024)(NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_81C[0x4];                                      // 0x081C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionVoiceChatSettings            VoiceChatSettings;                                 // 0x0820(0x0050)(Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionCommonSettings               CommonSettings;                                    // 0x0870(0x0030)(Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionKeyboardSettings             KeyboardSettings;                                  // 0x08A0(0x0014)(NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionPadSettings                  PadSettings;                                       // 0x08B4(0x001C)(NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FPalKeyConfigSettings                  KeyConfigSettings;                                 // 0x08D0(0x0160)(Protected, NativeAccessSpecifierProtected)
+	struct FPalOptionUISettings                   UISettings;                                        // 0x0A30(0x001C)(NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A4C[0x4];                                      // 0x0A4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionOnlineUserSettings           OnlineUserSettings;                                // 0x0A50(0x0028)(Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A78[0x20];                                     // 0x0A78(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BaseFov;                                           // 0x0A98(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A9C[0x4];                                      // 0x0A9C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Namespace;                                         // 0x0AA0(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_AB0[0x68];                                     // 0x0AB0(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDataTable*                             OptionWorldPresetTable;                            // 0x0B18(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UDataTable*                             OptionWorldModePresetTable;                        // 0x0B20(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UDataTable*                             OptionGraphicsPresetTable;                         // 0x0B28(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPalOptionWorldSettinThresholds        WorldSettingThreshold;                             // 0x0B30(0x00F0)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	TSubclassOf<class APalPlayerCharacter>        PalPlayerCharacterClass;                           // 0x0C20(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_C28[0xA8];                                     // 0x0C28(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyGraphicsPreset(struct FPalOptionGraphicsSettings& OutSettings, EPalOptionGraphicsLevel GraphicsLevel);
@@ -17523,6 +17540,7 @@ public:
 	bool IsPlayerLose(EPalArenaPlayerIndex PlayerIndex);
 	void OnBeginSequence_Implementation();
 	void OnEndSequence_Implementation();
+	void OnRevivedInBattle_ServerInternal(class UPalIndividualCharacterParameter* IndividualParameter);
 	void ResetPalHate();
 	void SetDisableRide(bool bDisable);
 	void SetupPalHate();
@@ -18106,7 +18124,7 @@ public:
 DUMPER7_ASSERTS_UPalArenaSpectateRoomInfoObject;
 
 // Class Pal.PalUISelectNumWidgetBase
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUISelectNumWidgetBase : public UPalUserWidgetOverlayUI
 {
 public:
@@ -18529,6 +18547,8 @@ public:
 	static class FName TextId_UICommon_InteractIndicator_Salvage_NotAvailable_NotConsume();
 	static class FName TextId_UICommon_InteractIndicator_Salvage_NotSwimPal();
 	static class FName TextId_UICommon_LOG_ConsumeItem();
+	static class FName TextId_UICommon_LOG_Decay_WorldTreeOre();
+	static class FName TextId_UICommon_LOG_Decay_WorldTreeWood();
 	static class FName TextId_UICommon_LOG_ElementalTreasureChestFailure_Electricity();
 	static class FName TextId_UICommon_LOG_ElementalTreasureChestFailure_Fire();
 	static class FName TextId_UICommon_LOG_ElementalTreasureChestFailure_Water();
@@ -19050,7 +19070,7 @@ public:
 DUMPER7_ASSERTS_UPalItemUtility;
 
 // Class Pal.PalMapObjectManager
-// 0x0CF8 (0x0D70 - 0x0078)
+// 0x0D60 (0x0DD8 - 0x0078)
 class UPalMapObjectManager : public UPalWorldSubsystem
 {
 public:
@@ -19058,108 +19078,108 @@ public:
 	TMulticastInlineDelegate<void(class UPalMapObjectModel* MapObjectModel, const struct FVector& Vector)> OnCreateMapObjectModelInServerDelegate; // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(class UPalMapObjectModel* MapObjectModel)> OnRepMapObjectModelDelegate; // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(class UPalMapObjectModel* MapObjectModel, class UPalMapObjectModelInitializeExtraParameterSpawnedBy* SpawnedBy)> OnSpawnedMapObjectModelByInServerDelegate; // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0[0x18];                                      // 0x00F0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TScriptInterface<class IPalBuildObjectSpawnValidationCheckInterface>> BuildSpawnValidationCheckers; // 0x0108(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
-	class UDataTable*                             BuildObjectDataTable;                              // 0x0118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UDataTable*                             BuildObjectNameTable;                              // 0x0120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UDataTable*                             BuildObjectDescTable;                              // 0x0128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UDataTable*                             MapObjectAssignTable;                              // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UDataTable*                             MapObjectDataTableForEnemyCamp;                    // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FBuildingSurfaceMaterialSet            BuildingSurfaceMaterialSet;                        // 0x0140(0x0070)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FPalWorkPositionVisualizerSettings     WorkPositionVisualizerSettings;                    // 0x01B0(0x0078)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	class UPalFoliagePresetDataSet*               FoliagePresetDataSet;                              // 0x0228(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class APalFoliageModelChunk>      FoliageModelChunkClass;                            // 0x0230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         FoliageGridSize;                                   // 0x0238(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, struct FPalWorkAssignDefineIds> MapObjectIdToAssignDefineMap;                  // 0x0240(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	class UPalMapObjectFoliage*                   Foliage;                                           // 0x0290(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPalBuildOperator*                      BuildOperator;                                     // 0x0298(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPalMapObjectWorldDisposer*             WorldDisposerForServer;                            // 0x02A0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPalMapObjectPhysicsManager*            PhysicsManagerForServer;                           // 0x02A8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPalBuildObjectPhysicsBudgetManager*    BuildObjectPhysicsBudgetManager;                   // 0x02B0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<struct FGuid, class UPalMapObjectModel*> MapObjectModelMapForServer;                        // 0x02B8(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_308[0x8];                                      // 0x0308(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGuid, class UPalMapObjectConcreteModelBase*> MapObjectConcreteModelMapForServer;    // 0x0310(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_360[0x170];                                    // 0x0360(0x0170)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, struct FPalMapObjectModelStaticData> MapObjectModelStaticDataCacheMap;         // 0x04D0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	struct FPalMapObjectStaticData                StaticData;                                        // 0x0520(0x00A8)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FPalDataTableRowName_MapObjectData> CannotPlayerSpawnMapObjectIds;                 // 0x05C8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TArray<class FName>                           SkipApplySaveDataMapObjectIds;                     // 0x05D8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class FName                                   BuildObjectId_PalStorage;                          // 0x05E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<EObjectTypeQuery>                      SearchObjectTypes;                                 // 0x05F0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FPalMapObjectSignificanceInfo>  SignificanceInfoList;                              // 0x0600(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_610[0x8];                                      // 0x0610(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPalMapObjectDestroyFXType, class UNiagaraSystem*> DestroyEffectMap;                        // 0x0618(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class FName                                   MapObjectDestroyFXUserParamName_BoxSize;           // 0x0668(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   MapObjectDestroyFXUserParamName_BoxSurfaceArea;    // 0x0670(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         BuildStartEffect;                                  // 0x0678(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         BuildCompleteEffect;                               // 0x0680(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   BuildFXUserParamName_BoxCenter;                    // 0x0688(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   BuildFXUserParamName_BoxSize;                      // 0x0690(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   BuildFXUserParamName_BoxSurfaceArea;               // 0x0698(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         PaintEffect;                                       // 0x06A0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   PaintFXUserParamName_Color;                        // 0x06A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         PaintRemoveEffect;                                 // 0x06B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAkAudioEvent*                          BuildCompleteSE;                                   // 0x06B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         RepairEffect;                                      // 0x06C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         DamageEffect;                                      // 0x06C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   DamageFXUserParamName_Alpha;                       // 0x06D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   DamageFXUserParamName_Rate;                        // 0x06D8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   DamageFXUserParamName_Scale;                       // 0x06E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   DamageFXUserParamName_RadiusScale;                 // 0x06E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   DamageFXUserParamName_AddRate;                     // 0x06F0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   DamageFXUserParamName_EndAlpha;                    // 0x06F8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageParam_MaxRate;                               // 0x0700(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageParam_MaxAddRate;                            // 0x0704(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageParam_MaxScale;                              // 0x0708(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageParam_MaxRadiusScale;                        // 0x070C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageParam_RadiusScaleMultiplier;                 // 0x0710(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageFX_StartHPRate;                              // 0x0714(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageFX_DefaultBoundsSphereRadius;                // 0x0718(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_71C[0x4];                                      // 0x071C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                DamageFX_SpanwLocationOffset;                      // 0x0720(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DamageFX_EndFadeTime;                              // 0x0738(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DropItemSpawnLocationFromActorBounds;              // 0x073C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DropItemSpawnDirectionZ;                           // 0x0740(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_744[0x4];                                      // 0x0744(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FoliageDropItemSpawnOffset;                        // 0x0748(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                DropItemReleaseDirectionRelative;                  // 0x0760(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                FoliageDestroyFXExtentsDefault;                    // 0x0778(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UCurveVector*                           FarmCropStateChangeAnimationScale;                 // 0x0790(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UPalHitEffectSlot>          HitEffectSlotClass;                                // 0x0798(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<EPalMapObjectChangeMeshFXType, class UNiagaraSystem*> ChangeMeshEffectMap;                  // 0x07A0(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FPalMapObjectVisualEffectAssets        VisualEffectAssets;                                // 0x07F0(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TSubclassOf<class UPalBuildObjectSimulatingVisualMeshComponent> BuildObjectSimulatingVisualMeshComponentClass; // 0x0840(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<EPalMapObjectTreasureSpecialType, struct FPalDataTableRowName_ItemData> TreasureBoxOpenRequiredItemMapForSpecialType; // 0x0848(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FPalMapObjectTreasureBoxOpenRequiredItemMapByGrade TreasureBoxOpenRequiredItemMapByGrade; // 0x0898(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TMap<EPalMapObjectTreasureSpecialType, struct FPalMapObjectTreasureBoxOpenRequiredItemMapByGrade> TreasureBoxOpenRequiredItemMapByGradeBySpecialType; // 0x08E8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TSoftObjectPtr<class UStaticMesh>             BuildAccessoryStaticMesh_RaftFloat;                // 0x0938(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSoftObjectPtr<class UStaticMesh>             BuildAccessoryStaticMesh_RaftFloatDiagonal;        // 0x0968(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BuildAccessoryRaftFloatRelativeZOffset;            // 0x0998(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BuildAccessoryRaftFloatMaxZOffsetFromWater;        // 0x099C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class APalSnapModeFX>             SnapModeFXClass;                                   // 0x09A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<struct FGuid, class UPalMapObjectModel*> MapObjectModelSpawningHandlingMap;                 // 0x09A8(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	TMap<struct FGuid, struct FPalBuildObjectSpawningStateInfo> BuildObjectSpawningStateInfos;       // 0x09F8(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_A48[0xD0];                                     // 0x0A48(0x00D0)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class APalMapObject*>                  LevelMapObjectsToRegister;                         // 0x0B18(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	class APalTestMapObjectRegistrationToManager* Registrator;                                       // 0x0B28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_B30[0xA0];                                     // 0x0B30(0x00A0)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InDoorCheckProcessIndex_AnyThread;                 // 0x0BD0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         InDoorCheckMaxNumPerFrame_AnyThread;               // 0x0BD4(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         MapObjectSignificanceUpdateDivideNum;              // 0x0BD8(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_BDC[0x4];                                      // 0x0BDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<TWeakObjectPtr<class APalMapObjectSpawnerBase>> SpawnedSpawners;                            // 0x0BE0(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	int32                                         MaxDelayedSpawnCallbacksPerFrame;                  // 0x0C30(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         MaxDelayedDropItemSpawnCallbacksPerFrame;          // 0x0C34(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_C38[0x70];                                     // 0x0C38(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGuid, struct FPalMapObjectInfoTickInBackground> MapObjectInfoMapTickInBackground;   // 0x0CA8(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	TArray<struct FPalMapObjectDamageInfo>        MapObjectDamageInfoStack;                          // 0x0CF8(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_D08[0x28];                                     // 0x0D08(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalSnapModeFX*                         SnapModeFX;                                        // 0x0D30(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<TWeakObjectPtr<class UObject>>         SkeletalLODComponentArrayExec;                     // 0x0D38(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
-	TArray<TWeakObjectPtr<class UObject>>         SkeletalLODComponentArrayWait;                     // 0x0D48(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D58[0x8];                                      // 0x0D58(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TWeakObjectPtr<class UPointLightComponent>> PointLightComponents;                         // 0x0D60(0x0010)(Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F0[0x30];                                      // 0x00F0(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TScriptInterface<class IPalBuildObjectSpawnValidationCheckInterface>> BuildSpawnValidationCheckers; // 0x0120(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
+	class UDataTable*                             BuildObjectDataTable;                              // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UDataTable*                             BuildObjectNameTable;                              // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UDataTable*                             BuildObjectDescTable;                              // 0x0140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UDataTable*                             MapObjectAssignTable;                              // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UDataTable*                             MapObjectDataTableForEnemyCamp;                    // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FBuildingSurfaceMaterialSet            BuildingSurfaceMaterialSet;                        // 0x0158(0x0070)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FPalWorkPositionVisualizerSettings     WorkPositionVisualizerSettings;                    // 0x01C8(0x0078)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	class UPalFoliagePresetDataSet*               FoliagePresetDataSet;                              // 0x0240(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class APalFoliageModelChunk>      FoliageModelChunkClass;                            // 0x0248(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         FoliageGridSize;                                   // 0x0250(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, struct FPalWorkAssignDefineIds> MapObjectIdToAssignDefineMap;                  // 0x0258(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	class UPalMapObjectFoliage*                   Foliage;                                           // 0x02A8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalBuildOperator*                      BuildOperator;                                     // 0x02B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalMapObjectWorldDisposer*             WorldDisposerForServer;                            // 0x02B8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalMapObjectPhysicsManager*            PhysicsManagerForServer;                           // 0x02C0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalBuildObjectPhysicsBudgetManager*    BuildObjectPhysicsBudgetManager;                   // 0x02C8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<struct FGuid, class UPalMapObjectModel*> MapObjectModelMapForServer;                        // 0x02D0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_320[0x8];                                      // 0x0320(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGuid, class UPalMapObjectConcreteModelBase*> MapObjectConcreteModelMapForServer;    // 0x0328(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_378[0x170];                                    // 0x0378(0x0170)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, struct FPalMapObjectModelStaticData> MapObjectModelStaticDataCacheMap;         // 0x04E8(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	struct FPalMapObjectStaticData                StaticData;                                        // 0x0538(0x00A8)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPalDataTableRowName_MapObjectData> CannotPlayerSpawnMapObjectIds;                 // 0x05E0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TArray<class FName>                           SkipApplySaveDataMapObjectIds;                     // 0x05F0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class FName                                   BuildObjectId_PalStorage;                          // 0x0600(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<EObjectTypeQuery>                      SearchObjectTypes;                                 // 0x0608(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPalMapObjectSignificanceInfo>  SignificanceInfoList;                              // 0x0618(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_628[0x8];                                      // 0x0628(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPalMapObjectDestroyFXType, class UNiagaraSystem*> DestroyEffectMap;                        // 0x0630(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class FName                                   MapObjectDestroyFXUserParamName_BoxSize;           // 0x0680(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   MapObjectDestroyFXUserParamName_BoxSurfaceArea;    // 0x0688(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         BuildStartEffect;                                  // 0x0690(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         BuildCompleteEffect;                               // 0x0698(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   BuildFXUserParamName_BoxCenter;                    // 0x06A0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   BuildFXUserParamName_BoxSize;                      // 0x06A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   BuildFXUserParamName_BoxSurfaceArea;               // 0x06B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         PaintEffect;                                       // 0x06B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   PaintFXUserParamName_Color;                        // 0x06C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         PaintRemoveEffect;                                 // 0x06C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAkAudioEvent*                          BuildCompleteSE;                                   // 0x06D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         RepairEffect;                                      // 0x06D8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         DamageEffect;                                      // 0x06E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   DamageFXUserParamName_Alpha;                       // 0x06E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   DamageFXUserParamName_Rate;                        // 0x06F0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   DamageFXUserParamName_Scale;                       // 0x06F8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   DamageFXUserParamName_RadiusScale;                 // 0x0700(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   DamageFXUserParamName_AddRate;                     // 0x0708(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   DamageFXUserParamName_EndAlpha;                    // 0x0710(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageParam_MaxRate;                               // 0x0718(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageParam_MaxAddRate;                            // 0x071C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageParam_MaxScale;                              // 0x0720(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageParam_MaxRadiusScale;                        // 0x0724(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageParam_RadiusScaleMultiplier;                 // 0x0728(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageFX_StartHPRate;                              // 0x072C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageFX_DefaultBoundsSphereRadius;                // 0x0730(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_734[0x4];                                      // 0x0734(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                DamageFX_SpanwLocationOffset;                      // 0x0738(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DamageFX_EndFadeTime;                              // 0x0750(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DropItemSpawnLocationFromActorBounds;              // 0x0754(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DropItemSpawnDirectionZ;                           // 0x0758(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_75C[0x4];                                      // 0x075C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                FoliageDropItemSpawnOffset;                        // 0x0760(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                DropItemReleaseDirectionRelative;                  // 0x0778(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                FoliageDestroyFXExtentsDefault;                    // 0x0790(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UCurveVector*                           FarmCropStateChangeAnimationScale;                 // 0x07A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UPalHitEffectSlot>          HitEffectSlotClass;                                // 0x07B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<EPalMapObjectChangeMeshFXType, class UNiagaraSystem*> ChangeMeshEffectMap;                  // 0x07B8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FPalMapObjectVisualEffectAssets        VisualEffectAssets;                                // 0x0808(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TSubclassOf<class UPalBuildObjectSimulatingVisualMeshComponent> BuildObjectSimulatingVisualMeshComponentClass; // 0x0858(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<EPalMapObjectTreasureSpecialType, struct FPalDataTableRowName_ItemData> TreasureBoxOpenRequiredItemMapForSpecialType; // 0x0860(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FPalMapObjectTreasureBoxOpenRequiredItemMapByGrade TreasureBoxOpenRequiredItemMapByGrade; // 0x08B0(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TMap<EPalMapObjectTreasureSpecialType, struct FPalMapObjectTreasureBoxOpenRequiredItemMapByGrade> TreasureBoxOpenRequiredItemMapByGradeBySpecialType; // 0x0900(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TSoftObjectPtr<class UStaticMesh>             BuildAccessoryStaticMesh_RaftFloat;                // 0x0950(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSoftObjectPtr<class UStaticMesh>             BuildAccessoryStaticMesh_RaftFloatDiagonal;        // 0x0980(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BuildAccessoryRaftFloatRelativeZOffset;            // 0x09B0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BuildAccessoryRaftFloatMaxZOffsetFromWater;        // 0x09B4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class APalSnapModeFX>             SnapModeFXClass;                                   // 0x09B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<struct FGuid, class UPalMapObjectModel*> MapObjectModelSpawningHandlingMap;                 // 0x09C0(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	TMap<struct FGuid, struct FPalBuildObjectSpawningStateInfo> BuildObjectSpawningStateInfos;       // 0x0A10(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_A60[0xD0];                                     // 0x0A60(0x00D0)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class APalMapObject*>                  LevelMapObjectsToRegister;                         // 0x0B30(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	class APalTestMapObjectRegistrationToManager* Registrator;                                       // 0x0B40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_B48[0xF0];                                     // 0x0B48(0x00F0)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InDoorCheckProcessIndex_AnyThread;                 // 0x0C38(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         InDoorCheckMaxNumPerFrame_AnyThread;               // 0x0C3C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         MapObjectSignificanceUpdateDivideNum;              // 0x0C40(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_C44[0x4];                                      // 0x0C44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<TWeakObjectPtr<class APalMapObjectSpawnerBase>> SpawnedSpawners;                            // 0x0C48(0x0050)(Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	int32                                         MaxDelayedSpawnCallbacksPerFrame;                  // 0x0C98(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         MaxDelayedDropItemSpawnCallbacksPerFrame;          // 0x0C9C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_CA0[0x70];                                     // 0x0CA0(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGuid, struct FPalMapObjectInfoTickInBackground> MapObjectInfoMapTickInBackground;   // 0x0D10(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	TArray<struct FPalMapObjectDamageInfo>        MapObjectDamageInfoStack;                          // 0x0D60(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_D70[0x28];                                     // 0x0D70(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalSnapModeFX*                         SnapModeFX;                                        // 0x0D98(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<TWeakObjectPtr<class UObject>>         SkeletalLODComponentArrayExec;                     // 0x0DA0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<TWeakObjectPtr<class UObject>>         SkeletalLODComponentArrayWait;                     // 0x0DB0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         Pad_DC0[0x8];                                      // 0x0DC0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TWeakObjectPtr<class UPointLightComponent>> PointLightComponents;                         // 0x0DC8(0x0010)(Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
 
 public:
 	void PlayMapObjectDestroyFX(const struct FVector& Location, const struct FBoxSphereBounds& Bounds, const EPalMapObjectDestroyFXType Type);
@@ -19513,12 +19533,12 @@ public:
 DUMPER7_ASSERTS_IPalKingWhaleAudioPhaseInterface;
 
 // Class Pal.PalBuildObjectDefenseBase
-// 0x0010 (0x0760 - 0x0750)
+// 0x0010 (0x0780 - 0x0770)
 #pragma pack(push, 0x1)
 class alignas(0x10) APalBuildObjectDefenseBase : public APalBuildObject
 {
 public:
-	TSubclassOf<class UPalAIActionBaseCampDefenseBase> DefenseAIActionClass;                         // 0x0750(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UPalAIActionBaseCampDefenseBase> DefenseAIActionClass;                         // 0x0770(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void GetCharacterLocationAndRotationWithOffset(class APalCharacter* OwnerCharacter, const struct FVector& PreCharaLocation, struct FVector* OutLocation, struct FRotator* OutRotation);
@@ -19544,11 +19564,11 @@ public:
 DUMPER7_ASSERTS_APalBuildObjectDefenseBase;
 
 // Class Pal.PalBuildObjectDefenseBulletLauncherBase
-// 0x0000 (0x0760 - 0x0760)
+// 0x0000 (0x0780 - 0x0780)
 class APalBuildObjectDefenseBulletLauncherBase final : public APalBuildObjectDefenseBase
 {
 public:
-	class UPalMapObjectBulletLauncherParameterComponent* BulletLauncherParameterComponent;           // 0x0758(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalMapObjectBulletLauncherParameterComponent* BulletLauncherParameterComponent;           // 0x0778(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	void BP_SetEnableTrigger(bool EnableTrigger);
@@ -19763,13 +19783,14 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectModelInitializeExtraParameterDropItem;
 
 // Class Pal.PalAudioWorldSubsystem
-// 0x0010 (0x0088 - 0x0078)
+// 0x0060 (0x00D8 - 0x0078)
 class UPalAudioWorldSubsystem : public UPalWorldSubsystem
 {
 public:
 	int32                                         FadeDuration;                                      // 0x0078(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalSoundPlayer*                        SoundPlayer;                                       // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FFlagContainer                         DisableBattleBGMFlagContainer;                     // 0x0088(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
 
 public:
 	void BeginPlay();
@@ -19788,6 +19809,7 @@ public:
 	int32 PlaySound(class UAkAudioEvent* AudioEvent, const struct FPalSoundOptions& Options);
 	void PostTriggerByEnum(EPalAudioTrigger Trigger);
 	void PostTriggerByString(const class FString& Trigger);
+	void SetDisableBattleBGMFlag(class FName flagName, bool bIsDisable);
 	void SetDsiableBattleBGM(bool bIsDisable);
 	void SetOutputBusVolume(float Volume);
 	void SetRTPCValueByEnum(EPalAudioRTPC rtpc, float Value, float interpolSec);
@@ -19802,6 +19824,7 @@ public:
 	void Tick_BP(float DeltaTime);
 
 	void GetSoundPlayerLocation(struct FVector* OutLocation) const;
+	bool IsBattleBGMDisabled() const;
 
 public:
 	static class UClass* StaticClass()
@@ -19949,14 +19972,14 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectModelEffectGrantParameterBase;
 
 // Class Pal.PalBuildObjectFarmBlockV2
-// 0x0030 (0x0780 - 0x0750)
+// 0x0030 (0x07A0 - 0x0770)
 class APalBuildObjectFarmBlockV2 : public APalBuildObject
 {
 public:
-	struct FPalDataTableRowName_FarmCropData      CropDataId;                                        // 0x0750(0x0008)(Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         GrowupFX;                                          // 0x0758(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class APalMapObjectFarmCrop*                  CropActor;                                         // 0x0760(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_768[0x18];                                     // 0x0768(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_FarmCropData      CropDataId;                                        // 0x0770(0x0008)(Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         GrowupFX;                                          // 0x0778(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class APalMapObjectFarmCrop*                  CropActor;                                         // 0x0780(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_788[0x18];                                     // 0x0788(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnUpdateState_ServerInternal(EPalFarmCropState LastCropState, EPalFarmCropState NextCropState);
@@ -20050,15 +20073,16 @@ public:
 DUMPER7_ASSERTS_APalBackWeaponBase;
 
 // Class Pal.PalBuildObjectDataMap
-// 0x0158 (0x0180 - 0x0028)
+// 0x01A8 (0x01D0 - 0x0028)
 class UPalBuildObjectDataMap final : public UObject
 {
 public:
 	TMap<class FName, struct FPalBuildObjectData> BuildObjectDataIdMap;                              // 0x0028(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	TMap<class FName, class FName>                BlueprintItemIdToBuildObjectIdMap;                 // 0x0078(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	TMap<EPalBuildObjectTypeA, struct FPalBuildObjectIdSet> BuildObjectDataIdMapTypeA;               // 0x00C8(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	TMap<EPalBuildObjectTypeB, struct FPalBuildObjectIdSet> BuildObjectDataIdMapTypeB;               // 0x0118(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_168[0x18];                                     // 0x0168(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TSet<class FName>                             BuildMapObjectIds;                                 // 0x0078(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	TMap<class FName, class FName>                BlueprintItemIdToBuildObjectIdMap;                 // 0x00C8(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	TMap<EPalBuildObjectTypeA, struct FPalBuildObjectIdSet> BuildObjectDataIdMapTypeA;               // 0x0118(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	TMap<EPalBuildObjectTypeB, struct FPalBuildObjectIdSet> BuildObjectDataIdMapTypeB;               // 0x0168(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1B8[0x18];                                     // 0x01B8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetBuildObjectDataArrayForTypeAByTypeB(const EPalBuildObjectTypeA TypeA, TArray<struct FPalBuildObjectDataSetTypeB>* OutArray) const;
@@ -20623,12 +20647,12 @@ public:
 DUMPER7_ASSERTS_UPalBaseCampGroupedWorkFarm;
 
 // Class Pal.PalBuildObjectFishPond
-// 0x0030 (0x0780 - 0x0750)
+// 0x0030 (0x07A0 - 0x0770)
 class APalBuildObjectFishPond final : public APalBuildObject
 {
 public:
-	struct FComponentReference                    ChestInteractRef;                                  // 0x0750(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_778[0x8];                                      // 0x0778(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FComponentReference                    ChestInteractRef;                                  // 0x0770(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_798[0x8];                                      // 0x0798(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -21314,6 +21338,7 @@ public:
 public:
 	void BindOnCompleteInitializeParameterDelegate(EPalCharacterCompleteDelegatePriority Priority, const TDelegate<void(class APalCharacter* InCharacter)>& Event);
 	void BroadcastOnCompleteInitializeParameter();
+	bool CancelDeathActionOnRevive();
 	void ChangeBattleModeFlag(bool IsBattle);
 	void ChangeBattleModeFlag_ToAll(bool IsBattle);
 	void ChangeTalkModeFlag_ToAll(bool IsTalk);
@@ -21352,6 +21377,7 @@ public:
 	void RequestExplosiveSporeNullify(class APalExplosiveSporePawnBase* SporePawn);
 	void RequestJump();
 	void RequestPlayCosmeticMontage_ToServer(class UAnimMontage* Montage, float PlayRate);
+	void ResetFacialOnRevive_ToAll();
 	void ResetTickInterval();
 	void RPCDummy();
 	void SetActiveActor(bool Active);
@@ -24575,7 +24601,7 @@ public:
 DUMPER7_ASSERTS_UPalBuilderComponent;
 
 // Class Pal.PalGameInstance
-// 0x07F8 (0x09B8 - 0x01C0)
+// 0x0800 (0x09C0 - 0x01C0)
 class UPalGameInstance : public UGameInstance
 {
 public:
@@ -24701,7 +24727,7 @@ public:
 	class FString                                 SelectedWorldSaveDirectoryName;                    // 0x0798(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bIsNewGame;                                        // 0x07A8(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_7A9[0x7];                                      // 0x07A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldSettings                NewGameWorldSetting;                               // 0x07B0(0x0208)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	struct FPalOptionWorldSettings                NewGameWorldSetting;                               // 0x07B0(0x0210)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
 
 public:
 	void ApplicationHasEnteredForeground();
@@ -24725,6 +24751,7 @@ public:
 	bool SelectWorld(const class FString& WorldName);
 	bool SelectWorldSaveDirectoryName(const class FString& WorldSaveDirectoryName);
 	void SetAlreadyShowModDetectionDialog();
+	void SetAlreadyShowSaveWarningDialog();
 	void SetIsNewGame();
 	void SetNewWorldName(const class FString& WorldName);
 	void SetupGameInit();
@@ -24739,6 +24766,7 @@ public:
 	class FString GetSelectedWorldName() const;
 	class FString GetSelectedWorldSaveDirectoryName() const;
 	bool IsAlreadyShowModDetectionDialog() const;
+	bool IsAlreadyShowSaveWarningDialog() const;
 	bool IsNewGame() const;
 
 public:
@@ -24912,7 +24940,7 @@ public:
 DUMPER7_ASSERTS_UPalFoliageIdentifiableInfoUtility;
 
 // Class Pal.PalBuildObjectBaseCampPoint
-// 0x0000 (0x0750 - 0x0750)
+// 0x0000 (0x0770 - 0x0770)
 class APalBuildObjectBaseCampPoint : public APalBuildObject
 {
 public:
@@ -25001,14 +25029,14 @@ public:
 DUMPER7_ASSERTS_UPalRandomIncidentBase;
 
 // Class Pal.PalBuildObjectBasicBase
-// 0x0030 (0x0780 - 0x0750)
+// 0x0030 (0x07A0 - 0x0770)
 class APalBuildObjectBasicBase : public APalBuildObject
 {
 public:
-	bool                                          bActivateVisualBuiltOnWater;                       // 0x0750(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_751[0x7];                                      // 0x0751(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UInstancedStaticMeshComponent*>  BuiltOnWaterVisualComponents;                      // 0x0758(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_768[0x18];                                     // 0x0768(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bActivateVisualBuiltOnWater;                       // 0x0770(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_771[0x7];                                      // 0x0771(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UInstancedStaticMeshComponent*>  BuiltOnWaterVisualComponents;                      // 0x0778(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_788[0x18];                                     // 0x0788(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -25058,12 +25086,12 @@ public:
 DUMPER7_ASSERTS_UPalStaticLogCollector;
 
 // Class Pal.PalBuildObjectBreedFarm
-// 0x0050 (0x07A0 - 0x0750)
+// 0x0050 (0x07C0 - 0x0770)
 class APalBuildObjectBreedFarm : public APalBuildObject
 {
 public:
-	struct FComponentReference                    ChestInteractRef;                                  // 0x0750(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0778(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FComponentReference                    ChestInteractRef;                                  // 0x0770(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0798(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -25082,19 +25110,19 @@ public:
 DUMPER7_ASSERTS_APalBuildObjectBreedFarm;
 
 // Class Pal.PalBuildObjectCharacterTeamMission
-// 0x00D0 (0x0820 - 0x0750)
+// 0x00D0 (0x0840 - 0x0770)
 class APalBuildObjectCharacterTeamMission : public APalBuildObject
 {
 public:
-	float                                         CharacterMoveSpeedMax;                             // 0x0750(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FFloatInterval                         HeadRunnerInSplineIntervalRange;                   // 0x0754(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_75C[0x4];                                      // 0x075C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalBuildObjectCharacterTeamMissionPerformanceWaitData> WaitPerformanceDataList;   // 0x0760(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TMap<class USplineComponent*, struct FPalBuildObjectCharacterTeamMissionPerformanceInProgressDataArray> InProgressPerformanceDataArrayBySplineMap; // 0x0770(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	float                                         ProgressTimeInPerformance;                         // 0x07C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_7C4[0x4];                                      // 0x07C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, struct FPalBuildObjectCharacterTeamMissionCharacterLoadProgress> CharacterLoadProgressMap; // 0x07C8(0x0050)(Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_818[0x8];                                      // 0x0818(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         CharacterMoveSpeedMax;                             // 0x0770(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FFloatInterval                         HeadRunnerInSplineIntervalRange;                   // 0x0774(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_77C[0x4];                                      // 0x077C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalBuildObjectCharacterTeamMissionPerformanceWaitData> WaitPerformanceDataList;   // 0x0780(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TMap<class USplineComponent*, struct FPalBuildObjectCharacterTeamMissionPerformanceInProgressDataArray> InProgressPerformanceDataArrayBySplineMap; // 0x0790(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	float                                         ProgressTimeInPerformance;                         // 0x07E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_7E4[0x4];                                      // 0x07E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, struct FPalBuildObjectCharacterTeamMissionCharacterLoadProgress> CharacterLoadProgressMap; // 0x07E8(0x0050)(Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_838[0x8];                                      // 0x0838(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void BroadcastStartMissionPerformance_Multicast(const TArray<struct FPalBuildObjectCharacterTeamMissionPerformanceStartCharacterData>& StartCharacterDataList);
@@ -25189,12 +25217,12 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectPickupItemPalEggParameterComponent;
 
 // Class Pal.PalBuildObjectClinic
-// 0x0030 (0x0780 - 0x0750)
+// 0x0030 (0x07A0 - 0x0770)
 class APalBuildObjectClinic : public APalBuildObject
 {
 public:
-	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0750(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_778[0x8];                                      // 0x0778(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0770(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_798[0x8];                                      // 0x0798(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -25213,13 +25241,13 @@ public:
 DUMPER7_ASSERTS_APalBuildObjectClinic;
 
 // Class Pal.PalBuildObjectConvertCharacterToItem
-// 0x0020 (0x0770 - 0x0750)
+// 0x0020 (0x0790 - 0x0770)
 class APalBuildObjectConvertCharacterToItem final : public APalBuildObject
 {
 public:
-	class UPalMapObjectConvertCharacterToItemParameterComponent* ConvertCharacterToItemParameter;    // 0x0750(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<struct FPalBuildObjectConvertCharacterToItemVisualProcessInfo> VisualProcessInfos;        // 0x0758(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, RepNotify, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_768[0x8];                                      // 0x0768(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectConvertCharacterToItemParameterComponent* ConvertCharacterToItemParameter;    // 0x0770(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FPalBuildObjectConvertCharacterToItemVisualProcessInfo> VisualProcessInfos;        // 0x0778(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, RepNotify, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_788[0x8];                                      // 0x0788(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void BP_UpdateConvertProcessVisual();
@@ -25346,14 +25374,14 @@ public:
 DUMPER7_ASSERTS_UPalBuildObjectDefines;
 
 // Class Pal.PalBuildObjectFarmBlockRecipe
-// 0x0030 (0x0780 - 0x0750)
+// 0x0030 (0x07A0 - 0x0770)
 class APalBuildObjectFarmBlockRecipe final : public APalBuildObject
 {
 public:
-	class USceneComponent*                        CropSpawnPoint;                                    // 0x0750(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraSystem*                         GrowupFX;                                          // 0x0758(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class APalMapObjectFarmCrop*                  CropActor;                                         // 0x0760(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_768[0x18];                                     // 0x0768(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class USceneComponent*                        CropSpawnPoint;                                    // 0x0770(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraSystem*                         GrowupFX;                                          // 0x0778(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class APalMapObjectFarmCrop*                  CropActor;                                         // 0x0780(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_788[0x18];                                     // 0x0788(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnChangeCropDataId(class FName CropDataId);
@@ -25408,14 +25436,14 @@ public:
 DUMPER7_ASSERTS_IPalFishingSpotElectricTriggerInterface;
 
 // Class Pal.PalBuildObjectFarmSkillFruits
-// 0x0020 (0x0770 - 0x0750)
+// 0x0020 (0x0790 - 0x0770)
 class APalBuildObjectFarmSkillFruits final : public APalBuildObject
 {
 public:
-	class UNiagaraSystem*                         GrowupFX;                                          // 0x0750(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAkAudioEvent*                          HarvestSE;                                         // 0x0758(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class APalMapObjectFarmSkillFruitsTree*       SkillFruitsTree;                                   // 0x0760(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_768[0x8];                                      // 0x0768(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UNiagaraSystem*                         GrowupFX;                                          // 0x0770(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAkAudioEvent*                          HarvestSE;                                         // 0x0778(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class APalMapObjectFarmSkillFruitsTree*       SkillFruitsTree;                                   // 0x0780(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_788[0x8];                                      // 0x0788(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRepSkillFruitsTree();
@@ -25441,13 +25469,13 @@ public:
 DUMPER7_ASSERTS_APalBuildObjectFarmSkillFruits;
 
 // Class Pal.PalBuildObjectGenerateEnergy
-// 0x0010 (0x0760 - 0x0750)
+// 0x0010 (0x0780 - 0x0770)
 class APalBuildObjectGenerateEnergy : public APalBuildObject
 {
 public:
-	bool                                          bGenerating;                                       // 0x0750(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bOverHeatCooling;                                  // 0x0751(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_752[0xE];                                      // 0x0752(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bGenerating;                                       // 0x0770(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bOverHeatCooling;                                  // 0x0771(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_772[0xE];                                      // 0x0772(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnEndGenerate();
@@ -26896,7 +26924,8 @@ public:
 	bool                                          bShowMapObjectDebugDistanceInfinity;               // 0x0303(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowMapObjectStatus;                              // 0x0304(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowMapObjectFoliageStatus;                       // 0x0305(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_306[0x2];                                      // 0x0306(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bDrawDebugMapObjectFoliageAutoDecayCapsule;        // 0x0306(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_307[0x1];                                      // 0x0307(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ShowMapObjectStatusRange;                          // 0x0308(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ShowMapObjectStatusByMapObjectId;                  // 0x030C(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisablePalFoliageComponentBeginPlay;              // 0x0314(0x0001)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -28218,7 +28247,7 @@ DUMPER7_ASSERTS_UPalMapObjectDoorParameterComponent;
 
 // Class Pal.PalBuildObjectLabResearchSpace
 // 0x0008 (0x0298 - 0x0290)
-class APalBuildObjectLabResearchSpace final : public AActor
+class APalBuildObjectLabResearchSpace : public AActor
 {
 public:
 	uint8                                         Pad_290[0x8];                                      // 0x0290(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -28312,13 +28341,13 @@ public:
 DUMPER7_ASSERTS_UPalRandomizerManager;
 
 // Class Pal.PalBuildObjectLab
-// 0x0020 (0x0770 - 0x0750)
+// 0x0020 (0x0790 - 0x0770)
 class APalBuildObjectLab : public APalBuildObject
 {
 public:
-	uint8                                         Pad_750[0x10];                                     // 0x0750(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UChildActorComponent*                   ResearchSpaceVisualComponent;                      // 0x0760(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_768[0x8];                                      // 0x0768(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_770[0x10];                                     // 0x0770(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UChildActorComponent*                   ResearchSpaceVisualComponent;                      // 0x0780(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_788[0x8];                                      // 0x0788(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnSetConcreteModelAfterAvailable(class UPalMapObjectConcreteModelBase* ConcreteModel);
@@ -28426,7 +28455,7 @@ public:
 DUMPER7_ASSERTS_UPalDialogParameter_ConfirmStartRaidBoss;
 
 // Class Pal.PalBuildObjectMedicalPalBed
-// 0x0000 (0x0750 - 0x0750)
+// 0x0000 (0x0770 - 0x0770)
 class APalBuildObjectMedicalPalBed final : public APalBuildObject
 {
 public:
@@ -28466,12 +28495,12 @@ public:
 DUMPER7_ASSERTS_UPalDungeonDefines;
 
 // Class Pal.PalBuildObjectMonsterFarm
-// 0x0030 (0x0780 - 0x0750)
+// 0x0030 (0x07A0 - 0x0770)
 class APalBuildObjectMonsterFarm final : public APalBuildObject
 {
 public:
-	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0750(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_778[0x8];                                      // 0x0778(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0770(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_798[0x8];                                      // 0x0798(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -28540,12 +28569,12 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectPlayerSitModel;
 
 // Class Pal.PalBuildObjectMultiProduct
-// 0x0020 (0x0770 - 0x0750)
+// 0x0020 (0x0790 - 0x0770)
 class APalBuildObjectMultiProduct final : public APalBuildObject
 {
 public:
-	class UChildActorComponent*                   VisualChildActorComponent;                         // 0x0750(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_758[0x18];                                     // 0x0758(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UChildActorComponent*                   VisualChildActorComponent;                         // 0x0770(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_778[0x18];                                     // 0x0778(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnSetConcreteModelAfterAvailable(class UPalMapObjectConcreteModelBase* ConcreteModel);
@@ -28630,25 +28659,25 @@ public:
 DUMPER7_ASSERTS_UPalBuildObjectOverlapChecker;
 
 // Class Pal.PalBuildObjectPalStorage
-// 0x0150 (0x08A0 - 0x0750)
+// 0x0150 (0x08C0 - 0x0770)
 class APalBuildObjectPalStorage final : public APalBuildObject
 {
 public:
-	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapBeginCageArea; // 0x0750(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapEndCageArea; // 0x0760(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapBeginCageWalls; // 0x0770(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapEndCageWalls; // 0x0780(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
-	float                                         BaseCampAreaRange;                                 // 0x0790(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_794[0x4];                                      // 0x0794(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FComponentReference                    AccessPointObjectRef;                              // 0x0798(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FComponentReference                    AccessPointMovableRangeRef;                        // 0x07C0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FComponentReference                    AccessPointInteractRef;                            // 0x07E8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FComponentReference                    ChestObjectRef;                                    // 0x0810(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FComponentReference                    ChestMovableRangeRef;                              // 0x0838(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	struct FComponentReference                    ChestInteractRef;                                  // 0x0860(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class FName                                   ChestWorkableBoundsName;                           // 0x0888(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         ChestSlotNum;                                      // 0x0890(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_894[0xC];                                      // 0x0894(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapBeginCageArea; // 0x0770(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapEndCageArea; // 0x0780(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapBeginCageWalls; // 0x0790(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp)> OnOverlapEndCageWalls; // 0x07A0(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, InstancedReference, BlueprintCallable, NativeAccessSpecifierPublic)
+	float                                         BaseCampAreaRange;                                 // 0x07B0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_7B4[0x4];                                      // 0x07B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComponentReference                    AccessPointObjectRef;                              // 0x07B8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FComponentReference                    AccessPointMovableRangeRef;                        // 0x07E0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FComponentReference                    AccessPointInteractRef;                            // 0x0808(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FComponentReference                    ChestObjectRef;                                    // 0x0830(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FComponentReference                    ChestMovableRangeRef;                              // 0x0858(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	struct FComponentReference                    ChestInteractRef;                                  // 0x0880(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class FName                                   ChestWorkableBoundsName;                           // 0x08A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         ChestSlotNum;                                      // 0x08B0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_8B4[0xC];                                      // 0x08B4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UBoxComponent* GetAccessPointMovableRange();
@@ -28737,7 +28766,7 @@ public:
 DUMPER7_ASSERTS_UPalReplaceSetting;
 
 // Class Pal.PalBuildObjectRaidBossSummon
-// 0x0000 (0x0750 - 0x0750)
+// 0x0000 (0x0770 - 0x0770)
 class APalBuildObjectRaidBossSummon final : public APalBuildObject
 {
 public:
@@ -29063,7 +29092,7 @@ public:
 DUMPER7_ASSERTS_UPalBulletModifierComponent;
 
 // Class Pal.PalCutsceneActor
-// 0x00A8 (0x03B0 - 0x0308)
+// 0x0100 (0x0408 - 0x0308)
 class APalCutsceneActor : public ALevelSequenceActor
 {
 public:
@@ -29072,28 +29101,34 @@ public:
 	bool                                          bCanSkip;                                          // 0x0310(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMuteSE;                                           // 0x0311(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMuteAllAudio;                                     // 0x0312(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bFadeOutAndHoldOnFinish;                           // 0x0313(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinishFadeOutTime;                                 // 0x0314(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRestoreSkyCreatorOnFinish;                        // 0x0318(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHoldMuteOnFinish;                                 // 0x0319(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31A[0x6];                                      // 0x031A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPalUserWidgetOverlayUI>    CustomUIClass;                                     // 0x0320(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHideNearbyCharacters;                             // 0x0328(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_329[0x3];                                      // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HideActorRadius;                                   // 0x032C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bHideAllBuildObjects;                              // 0x0330(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CutsceneBaseLocation;                              // 0x0338(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UTexture2D*>                     PrestreamTextureAssets;                            // 0x0350(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
-	TArray<class UMaterialInterface*>             PrestreamMaterials;                                // 0x0360(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
-	float                                         PrestreamTextureDurationSeconds;                   // 0x0370(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PrestreamTextureExtraDurationSeconds;              // 0x0374(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PrestreamTextureWaitSeconds;                       // 0x0378(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bFastPrestreamTextures;                            // 0x037C(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_37D[0x3];                                      // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UTexture2D*>                     ActivePrestreamTextures;                           // 0x0380(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TArray<class UTexture2D*>                     ActivePrestreamIgnoreMipBiasTextures;              // 0x0390(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	TArray<bool>                                  ActivePrestreamIgnoreMipBiasValues;                // 0x03A0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	bool                                          bSuppressGameplayBGM;                              // 0x0313(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSuppressGameplayBGMOnFinish;                      // 0x0314(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<EPalAudioBus>                            IgnoreMuteBusSet;                                  // 0x0318(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          bFadeOutAndHoldOnFinish;                           // 0x0368(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_369[0x3];                                      // 0x0369(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         FinishFadeOutTime;                                 // 0x036C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRestoreSkyCreatorOnFinish;                        // 0x0370(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHoldMuteOnFinish;                                 // 0x0371(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_372[0x6];                                      // 0x0372(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalUserWidgetOverlayUI>    CustomUIClass;                                     // 0x0378(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHideNearbyCharacters;                             // 0x0380(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHideNearbyMapObjects;                             // 0x0381(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_382[0x2];                                      // 0x0382(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HideActorRadius;                                   // 0x0384(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHideAllBuildObjects;                              // 0x0388(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CutsceneBaseLocation;                              // 0x0390(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UTexture2D*>                     PrestreamTextureAssets;                            // 0x03A8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<class UMaterialInterface*>             PrestreamMaterials;                                // 0x03B8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
+	float                                         PrestreamTextureDurationSeconds;                   // 0x03C8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PrestreamTextureExtraDurationSeconds;              // 0x03CC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PrestreamTextureWaitSeconds;                       // 0x03D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bFastPrestreamTextures;                            // 0x03D4(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D5[0x3];                                      // 0x03D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UTexture2D*>                     ActivePrestreamTextures;                           // 0x03D8(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<class UTexture2D*>                     ActivePrestreamIgnoreMipBiasTextures;              // 0x03E8(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TArray<bool>                                  ActivePrestreamIgnoreMipBiasValues;                // 0x03F8(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
 
 public:
 	void OnFinishedCutscene();
@@ -29737,7 +29772,7 @@ public:
 DUMPER7_ASSERTS_UPalDungeonRewardSpawnerPointBehaviour_Cage;
 
 // Class Pal.PalUICharacterStatus
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUICharacterStatus : public UPalUserWidgetOverlayUI
 {
 public:
@@ -29945,6 +29980,7 @@ public:
 	void HighFlingEnd_Server();
 	void HighFlyingStart();
 	void OnChangeBattleMode(bool bIsBattleMode);
+	void OnDamage(const struct FPalDamageRactionInfo& ReactionInfo);
 	void OnDead(const struct FPalDeadInfo& Info);
 	void OnInitializedCharacter(class APalCharacter* OwnerCharacter);
 	void OnMovementModeChanged(class UPalCharacterMovementComponent* Component, EMovementMode prevMode, EMovementMode newMode, EPalCharacterMovementCustomMode PrevCustomMode, EPalCharacterMovementCustomMode NewCustomMode);
@@ -31737,7 +31773,7 @@ public:
 DUMPER7_ASSERTS_UPalCustomPrimitiveWidget;
 
 // Class Pal.PalUITitleBase
-// 0x0000 (0x0468 - 0x0468)
+// 0x0000 (0x0470 - 0x0470)
 class UPalUITitleBase final : public UPalUserWidgetStackableUI
 {
 public:
@@ -31807,16 +31843,17 @@ public:
 DUMPER7_ASSERTS_UPalCutsceneBindParameter_Ending;
 
 // Class Pal.PalCutsceneHideVolume
-// 0x0158 (0x03E8 - 0x0290)
+// 0x0208 (0x0498 - 0x0290)
 class APalCutsceneHideVolume final : public AActor
 {
 public:
 	class USphereComponent*                       SphereComp;                                        // 0x0290(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_298[0x150];                                    // 0x0298(0x0150)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_298[0x200];                                    // 0x0298(0x0200)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddHiddenActors(const TArray<class AActor*>& Actors);
 	void Initialize(float InRadius, bool bEnableOverlapCapture);
+	void OnGliderSpawned(class APalGliderObject* NewGlider);
 	void OnSphereBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void OnSphereEndOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void OnWeaponPlacedOnCharacter(class AActor* PlacedSubActor);
@@ -32374,12 +32411,12 @@ public:
 DUMPER7_ASSERTS_UPalDebugInfoGameInstanceSubsystem;
 
 // Class Pal.PalUIModSettings
-// 0x0058 (0x04D0 - 0x0478)
+// 0x0058 (0x04D8 - 0x0480)
 class UPalUIModSettings : public UPalUserWidgetOverlayUI
 {
 public:
-	TMap<struct FPalUIModUniqueId, struct FPalUIModDisplayData> ModsMap;                             // 0x0478(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_4C8[0x8];                                      // 0x04C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMap<struct FPalUIModUniqueId, struct FPalUIModDisplayData> ModsMap;                             // 0x0480(0x0050)(NativeAccessSpecifierPrivate)
+	uint8                                         Pad_4D0[0x8];                                      // 0x04D0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ChangeModActive(const struct FPalUIModUniqueId& ModUniqueId, const bool bActive);
@@ -32653,7 +32690,7 @@ public:
 DUMPER7_ASSERTS_UPalDimensionalDistortionMovementComponent;
 
 // Class Pal.PalUIGuildSetting
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIGuildSetting : public UPalUserWidgetOverlayUI
 {
 public:
@@ -32944,6 +32981,7 @@ public:
 	void Invite(const class UDiscordRelationshipHandle* Friend);
 	void LinkAccount();
 	void Mute(const class UDiscordRelationshipHandle* Friend);
+	void OnChangeVoiceChatSettings(const struct FPalOptionVoiceChatSettings& PrevSettings, const struct FPalOptionVoiceChatSettings& NewSettings);
 	void OnEndedCall();
 	void OnJoin(const class FString& joinSecret);
 	void OnStatusChanged(EDiscordClientStatus Status, EDiscordClientError Error, int32 errorDetail);
@@ -33189,11 +33227,11 @@ public:
 DUMPER7_ASSERTS_UPalDungeonLevelDataAsset;
 
 // Class Pal.PalUIRepairItemBase
-// 0x0008 (0x0480 - 0x0478)
+// 0x0008 (0x0488 - 0x0480)
 class UPalUIRepairItemBase : public UPalUserWidgetOverlayUI
 {
 public:
-	class UPalMapObjectRepairItemModel*           RepairItemModel;                                   // 0x0478(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalMapObjectRepairItemModel*           RepairItemModel;                                   // 0x0480(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void CollectRepairableSlot(TArray<class UPalItemSlot*>* OutRepairableSlots);
@@ -33484,7 +33522,7 @@ public:
 DUMPER7_ASSERTS_APalDungeonFixedEntrance;
 
 // Class Pal.PalUISelectItemInventoryBase
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUISelectItemInventoryBase : public UPalUserWidgetOverlayUI
 {
 public:
@@ -34185,12 +34223,12 @@ public:
 DUMPER7_ASSERTS_APalDungeonPointMarker;
 
 // Class Pal.PalUIWorldSettingBase
-// 0x0218 (0x0690 - 0x0478)
+// 0x0220 (0x06A0 - 0x0480)
 class UPalUIWorldSettingBase final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPalOptionWorldSettings                OriginalSetting;                                   // 0x0478(0x0208)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	class FString                                 CachedInputWorldName;                              // 0x0680(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FPalOptionWorldSettings                OriginalSetting;                                   // 0x0480(0x0210)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	class FString                                 CachedInputWorldName;                              // 0x0690(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	bool CompleteSetting(const struct FPalOptionWorldSettings& NewSetting);
@@ -35579,7 +35617,7 @@ public:
 DUMPER7_ASSERTS_UPalEventNotify_ItemContainer;
 
 // Class Pal.PalMapTickableObject
-// 0x0000 (0x0400 - 0x0400)
+// 0x0000 (0x0418 - 0x0418)
 class APalMapTickableObject final : public APalMapObject
 {
 public:
@@ -36158,7 +36196,7 @@ public:
 DUMPER7_ASSERTS_UPalFishingCatchBattleBehaviorBase;
 
 // Class Pal.PalFishingComponent
-// 0x02C0 (0x0360 - 0x00A0)
+// 0x0310 (0x03B0 - 0x00A0)
 class UPalFishingComponent : public UActorComponent
 {
 public:
@@ -36174,35 +36212,43 @@ public:
 	TMulticastInlineDelegate<void(const struct FPalFishingCutsceneInfo& CutsceneInfo)> OnStartShowCutsceneDelegate; // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnFinishedShowCutsceneDelegate;                    // 0x0140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const struct FVector& FloatLocation)> OnPickFishDelegate;          // 0x0150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 SelectIndex)> OnChangeBaitDelegate;                          // 0x0160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EPalFishingSpotDifficultyType DifficultyType)> OnChangeTargetSpotDelegate; // 0x0170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnFirstFishingDelegate;                            // 0x0180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnSuccessFightDelegate;                            // 0x0190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnFailedFightDelegate;                             // 0x01A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class UPalFishingRodModule*                   FishingRodModule;                                  // 0x01B0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FPalFishingCatchBattleParameter        CatchBattleParameter;                              // 0x01B8(0x004C)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalFishingCutsceneInfo                LoadedCutsceneInfo;                                // 0x0208(0x00D8)(Transient, NativeAccessSpecifierPrivate)
-	bool                                          IsFishingFlag;                                     // 0x02E0(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          IsCatchBattleFlag;                                 // 0x02E1(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          IsPressedFishingButton;                            // 0x02E2(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          IsAimingFlag;                                      // 0x02E3(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          IsSuccessUseBaitFlag;                              // 0x02E4(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SelectedBaitIndex;                                 // 0x02E8(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2EC[0x4];                                      // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalStaticItemIdAndNum>         CurrentBaitItemInfoList;                           // 0x02F0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	bool                                          IsRequestedUseBaitFlag;                            // 0x0300(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          IsRequestedCatchBattleFlag;                        // 0x0301(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_302[0x2];                                      // 0x0302(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   SelectedBaitItemId;                                // 0x0304(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   UsedBaitItemId;                                    // 0x030C(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FishingFloatLocation;                              // 0x0318(0x0018)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EPalFishingRodState                           FishingRodState;                                   // 0x0330(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalGrantCharacterRequestData          GrantCharacterData;                                // 0x0338(0x0020)(Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_358[0x8];                                      // 0x0358(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool IsAccept)> OnChangeHitInputAcceptDelegate;                    // 0x0160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 SelectIndex)> OnChangeBaitDelegate;                          // 0x0170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EPalFishingSpotDifficultyType DifficultyType)> OnChangeTargetSpotDelegate; // 0x0180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPalFishingRecommendInfo& RecommendInfo)> OnChangeTargetSpotRecommendDelegate; // 0x0190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bIsSpotAiming)> OnChangeSpotAimingDelegate;                   // 0x01A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnFishingPalAdviceDelegate;                        // 0x01B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnFirstFishingDelegate;                            // 0x01C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnSuccessFightDelegate;                            // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnFailedFightDelegate;                             // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class UPalFishingRodModule*                   FishingRodModule;                                  // 0x01F0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPalFishingCatchBattleParameter        CatchBattleParameter;                              // 0x01F8(0x004C)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalFishingCutsceneInfo                LoadedCutsceneInfo;                                // 0x0248(0x00D8)(Transient, NativeAccessSpecifierPrivate)
+	bool                                          IsFishingFlag;                                     // 0x0320(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          IsCatchBattleFlag;                                 // 0x0321(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          IsPressedFishingButton;                            // 0x0322(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          IsAimingFlag;                                      // 0x0323(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          IsSuccessUseBaitFlag;                              // 0x0324(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_325[0x3];                                      // 0x0325(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SelectedBaitIndex;                                 // 0x0328(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_32C[0x4];                                      // 0x032C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalStaticItemIdAndNum>         CurrentBaitItemInfoList;                           // 0x0330(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	bool                                          IsRequestedUseBaitFlag;                            // 0x0340(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          IsRequestedCatchBattleFlag;                        // 0x0341(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_342[0x2];                                      // 0x0342(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   SelectedBaitItemId;                                // 0x0344(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   UsedBaitItemId;                                    // 0x034C(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_354[0x4];                                      // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                FishingFloatLocation;                              // 0x0358(0x0018)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EPalFishingRodState                           FishingRodState;                                   // 0x0370(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalGrantCharacterRequestData          GrantCharacterData;                                // 0x0378(0x0020)(Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_398[0x10];                                     // 0x0398(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsPalSkillAdviceTarget;                           // 0x03A8(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsHitInputAccepting;                              // 0x03A9(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsSpotAiming;                                     // 0x03AA(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_3AB[0x5];                                      // 0x03AB(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void FinishShowCutscene();
@@ -36237,6 +36283,7 @@ public:
 	bool IsFirstFishing() const;
 	bool IsFishing() const;
 	bool IsFishingButtonPressed() const;
+	bool IsPalSkillAdviceTarget() const;
 
 public:
 	static class UClass* StaticClass()
@@ -36335,12 +36382,12 @@ public:
 DUMPER7_ASSERTS_UPalFishingRodModule;
 
 // Class Pal.PalUIJoinGameInputCodeBase
-// 0x0018 (0x0490 - 0x0478)
+// 0x0018 (0x0498 - 0x0480)
 class UPalUIJoinGameInputCodeBase final : public UPalUserWidgetOverlayUI
 {
 public:
-	class FString                                 CahcedInputInviteCode;                             // 0x0478(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   EnableUIInputFlagName;                             // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 CahcedInputInviteCode;                             // 0x0480(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   EnableUIInputFlagName;                             // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void OnCompletedFindSessions(bool IsSuccess, const TArray<struct FBlueprintSessionResult>& Results, const class FString& ErrorStr);
@@ -36443,7 +36490,7 @@ public:
 DUMPER7_ASSERTS_UPalUIMapObjectStatusIndicatorParameter_TeamMission;
 
 // Class Pal.PalFishingSystem
-// 0x02E0 (0x0358 - 0x0078)
+// 0x0328 (0x03A0 - 0x0078)
 class UPalFishingSystem : public UPalWorldSubsystem
 {
 public:
@@ -36466,12 +36513,20 @@ public:
 	float                                         DisableTickAddRadius;                              // 0x01E4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         QueryInterval;                                     // 0x01E8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGuid, class UPalFishingCatchBattle*> CatchBattleMapByPlayerId;                      // 0x01F0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	TArray<class APalFishingSpotArea*>            FishingSpotArray;                                  // 0x0240(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	TMap<struct FGuid, class UPalFishingSpotAreaModel*> SpotModels;                                  // 0x0250(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A0[0x8];                                      // 0x02A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGuid, struct FPalFishingSpotSaveData> FishingSpotSaveDataMapCache;                  // 0x02A8(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2F8[0x60];                                     // 0x02F8(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         RodRequiredDisplayDistance;                        // 0x01F0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         RodRequiredWorldHUDDisplayRange;                   // 0x01F4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UDataTable*                             DifficultyUIDataTable;                             // 0x01F8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         FishingDifficultyRateMin;                          // 0x0200(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         FishingDifficultyRateMax;                          // 0x0204(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CatchBattleDifficultyMinValue;                     // 0x0208(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         PalSkillAdviceTime;                                // 0x020C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<EPalPassiveSkillEffectType>            PalSkillAdviceCheckEffectTypes;                    // 0x0210(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<struct FGuid, class UPalFishingCatchBattle*> CatchBattleMapByPlayerId;                      // 0x0220(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	TArray<class APalFishingSpotArea*>            FishingSpotArray;                                  // 0x0270(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	TMap<struct FGuid, class UPalFishingSpotAreaModel*> SpotModels;                                  // 0x0280(0x0050)(NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2D0[0x8];                                      // 0x02D0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGuid, struct FPalFishingSpotSaveData> FishingSpotSaveDataMapCache;                  // 0x02D8(0x0050)(NativeAccessSpecifierPrivate)
+	uint8                                         Pad_328[0x78];                                     // 0x0328(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static EPalFishingPlayerMotionType GetFishingPlayerMotionType(const EPalSizeType SizeType);
@@ -37881,7 +37936,7 @@ public:
 DUMPER7_ASSERTS_UPalUIItemPossessStatusIndicator;
 
 // Class Pal.PalGameSetting
-// 0x20A0 (0x20C8 - 0x0028)
+// 0x2118 (0x2140 - 0x0028)
 class UPalGameSetting : public UBlueprintFunctionLibrary
 {
 public:
@@ -37910,689 +37965,697 @@ public:
 	float                                         OtomoAutoAssignCooldownSeconds;                    // 0x007C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CommonAttackSkipTimeoutSeconds;                    // 0x0080(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WazaReselectTimeoutSeconds;                        // 0x0084(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerHPRateFromRespawn;                           // 0x0088(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerStomachRateFromRespawn;                      // 0x008C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RarePal_AppearanceProbability;                     // 0x0090(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PredatorPal_AppearanceProbability;                 // 0x0094(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RarePal_LevelAdd;                                  // 0x0098(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RarePal_CaptureLevelDecrease;                      // 0x009C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RarePalCaptureBonusExpRate;                        // 0x00A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RarePalDefeatBonusExpRate;                         // 0x00A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalDataTableRowName_ItemData>  RarePalBonusDropItems;                             // 0x00A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         RelicObtainBonusExpTableAdvance;                   // 0x00B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NoteObtainBonusExpTableAdvance;                    // 0x00BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RuinClearBonusExpTableAdvance;                     // 0x00C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FastTravelUnlockBonusExpTableAdvance;              // 0x00C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalRarePalSetting>             RarePalSettings;                                   // 0x00C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         BossOrRarePal_TalentMin;                           // 0x00D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CharacterRankUpRequiredNumDefault;                 // 0x00DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, int32>                            CharacterRankUpRequiredNumMap;                     // 0x00E0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         NaturalUpdateSaveParameterInterval;                // 0x0130(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CharacterHUDDisplayRange;                          // 0x0134(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CharacterFedEatingTime;                            // 0x0138(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CharacterStayingSecondsInSpa;                      // 0x013C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PalBoxPageNum;                                     // 0x0140(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PalBoxSlotNumInPage;                               // 0x0144(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PalBoxTimePeriodRecoverySick;                      // 0x0148(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerBattleJudge_EnemyDistance;                   // 0x014C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            BodyTemperature_SlipDamage_Percent;                // 0x0150(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            BodyTemperature_StomachDecreaceRate;               // 0x01A0(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         TemperatureDamageLogIntervalSec;                   // 0x01F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UNiagaraSystem>          SleepFXDefault;                                    // 0x01F8(0x0030)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<TSoftObjectPtr<class UNiagaraSystem>>  RemoveFXOnDead;                                    // 0x0228(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
-	float                                         LiftupCharacterThrownVelocityScalar;               // 0x0238(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LiftupCharacterClearCollisionDelayTime;            // 0x023C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LiftupCharacterThrowFloorClearanceMargin;          // 0x0240(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LiftupCharacterThrowFloorClearanceMax;             // 0x0244(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NickNameMaxLength;                                 // 0x0248(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MapObjectCustomNameMaxLength;                      // 0x024C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalPalSpeciesCount;                              // 0x0250(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RollingBurnDurationRate;                           // 0x0254(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RollingMuddyDurationRate;                          // 0x0258(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         IntervalForPalAttackFromBall;                      // 0x025C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          CanShootRiderByFullRide;                           // 0x0260(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          HitWazaAttackForMapObject;                         // 0x0261(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_262[0x2];                                      // 0x0262(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         KnockBack_MaxHpPercent;                            // 0x0264(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         KnockBack_Power;                                   // 0x0268(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StunTime;                                          // 0x026C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StepCooldownTime;                                  // 0x0270(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AirDashCooldownTime;                               // 0x0274(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Stun_GunDamageRate;                                // 0x0278(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnableAutoReload;                                // 0x027C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_27D[0x3];                                      // 0x027D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DeadShootImpulseRate;                              // 0x0280(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DeadShootImpulseMax;                               // 0x0284(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OtomoDamageRate_Defense;                           // 0x0288(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DamageValueMin_MapObject;                          // 0x028C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageRate_WealPoint;                              // 0x0290(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageRate_StrongPoint;                            // 0x0294(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageRate_SleepHit;                               // 0x0298(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinalDamageRate_Waza;                              // 0x029C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinalDamageRate_Weapon;                            // 0x02A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinalDamageRate_Mine;                              // 0x02A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinalDamageRate_MapObject_Waza;                    // 0x02A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinalDamageRate_MapObject_Weapon;                  // 0x02AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinalDamageRate_MapObject_Mine;                    // 0x02B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FinalDamageRate_MapObject_WorkActionAttack;        // 0x02B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FoliageDefault_Defense;                            // 0x02B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WazaAttackerLevelDamage_Power;                     // 0x02BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageRandomRate_Min;                              // 0x02C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageRandomRate_Max;                              // 0x02C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LevelDamageCorrect;                                // 0x02C8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LevelStatusAccumulateCorrect;                      // 0x02CC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageElementMatchRate;                            // 0x02D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MineAttack_DefensePower;                           // 0x02D4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerVsPlayer_WeaponPower;                        // 0x02D8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerVsPlayer_DefensePower;                       // 0x02DC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerVsPlayer_DamageRate;                         // 0x02E0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerVsPlayer_NoWeapon_BuildingDamageRate;        // 0x02E4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerVsPlayer_NoWeapon_PlayerToGuildPalDamageRate; // 0x02E8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CoolTimeIgnoreLeanBackWildBoss_ByStunAndBlow;      // 0x02EC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VsFlyingDamageRateForPvP;                          // 0x02F0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerToGuildPalDamageRateForPvP;                  // 0x02F4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalToPlayerDamageRate;                             // 0x02F8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalToPalDamageRate;                                // 0x02FC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StatusCalculate_LevelMultiply_HP;                  // 0x0300(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StatusCalculate_TribePlus_HP;                      // 0x0304(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StatusCalculate_ConstPlus_HP;                      // 0x0308(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StatusCalculate_LevelMultiply_Attack;              // 0x030C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StatusCalculate_ConstPlus_Attack;                  // 0x0310(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StatusCalculate_LevelMultiply_Defense;             // 0x0314(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StatusCalculate_ConstPlus_Defense;                 // 0x0318(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StatusCalculate_TribeMultiply_CraftSpeed;          // 0x031C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StatusCalculate_GenkaiToppa_PerAdd;                // 0x0320(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StatusCalculate_Talent_PerAdd;                     // 0x0324(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BreakedWeaponDamageRate;                           // 0x0328(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BreakedArmorDefenseRate;                           // 0x032C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EquipmentDurabilityBaseDecreaseValue;              // 0x0330(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalEnhancement_AttackRate;                         // 0x0334(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalEnhancement_AttackRate2;                        // 0x0338(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalEnhancement_AttackRate3;                        // 0x033C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalEnhancement_DefenseRate;                        // 0x0340(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalEnhancement_DefenseRate2;                       // 0x0344(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalEnhancement_DefenseRate3;                       // 0x0348(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AwakeningStatusMultiply;                           // 0x034C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClimbingStamina_Move;                              // 0x0350(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ClimbingStamina_Jump;                              // 0x0354(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RideWazaStaminaRate;                               // 0x0358(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35C[0x4];                                      // 0x035C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          RideStartAkEvent;                                  // 0x0360(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAudioEvent*                          RideEndAkEvent;                                    // 0x0368(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsEnableJumpPreliminary;                          // 0x0370(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_371[0x3];                                      // 0x0371(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         JumpInterval;                                      // 0x0374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FlyMaxHeight;                                      // 0x0378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FlyHover_SP;                                       // 0x037C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FlyHorizon_SP;                                     // 0x0380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FlyHorizon_Dash_SP;                                // 0x0384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FlyVertical_SP;                                    // 0x0388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AimingSpeedRateInRide;                             // 0x038C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SlidingEndSpeed;                                   // 0x0390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         JumpSP;                                            // 0x0394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StepSP;                                            // 0x0398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MeleeAttackSP;                                     // 0x039C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SprintSP;                                          // 0x03A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GliderSP;                                          // 0x03A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SwimmingFallWaitTimeSec;                           // 0x03A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Swimming_SP_Idle;                                  // 0x03AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Swimming_SP_Swim;                                  // 0x03B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Swimming_SP_DashSwim;                              // 0x03B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Swimming_PlayerGrapplingInWaterRate;               // 0x03B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FluidFriction;                                     // 0x03BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OverWeightSpeedZero_AddPercent;                    // 0x03C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OverWeightMinSpeed;                                // 0x03C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OverWeightHardThresholdRate;                       // 0x03C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OverWeightSoftMaxJumpReductionRate;                // 0x03CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WalkableFloorAngleForDefault;                      // 0x03D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WalkableFloorAngleForRide;                         // 0x03D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnableSpeedCollision;                            // 0x03D8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D9[0x3];                                      // 0x03D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CollisionDamageMinSpeed;                           // 0x03DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpeedCollisionDamagePower;                         // 0x03E0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CollisionDamageSpeedMultiplay;                     // 0x03E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CollisionDamageWeightThreshold;                    // 0x03E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoHPRegene_Percent_perSecond;                    // 0x03EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoHPRegene_Percent_perSecond_Sleeping;           // 0x03F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PosionHPDecrease_Percent_perSecond;                // 0x03F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Starvation_DecreaseHP_Percent_perSecond;           // 0x03F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoSANRegene_Percent_perSecond_PalStorage;        // 0x03FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreace_perSecond_Monster;                 // 0x0400(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreace_perSecond_Player;                  // 0x0404(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreace_AutoHealing;                       // 0x0408(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreace_WorkingRate;                       // 0x040C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HungerStart_StomachValue;                          // 0x0410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FullStomachPalStartEatFood;                        // 0x0414(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HungerParameterRate_Hunger;                        // 0x0418(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         HungerParameterRate_Starvation;                    // 0x041C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FullStomachCost_ByWazaUse_Base;                    // 0x0420(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_424[0x4];                                      // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, float>                            FullStomachCost_ByWazaUse_RateMap;                 // 0x0428(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         StomachDecreaceRate_GroundRide_Sprint;             // 0x0478(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreaceRate_WaterRide;                     // 0x047C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreaceRate_WaterRide_Sprint;              // 0x0480(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreaceRate_FlyRide;                       // 0x0484(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StomachDecreaceRate_FlyRide_Sprint;                // 0x0488(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RemainderOfLife_Second;                            // 0x048C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HpDecreaseRate_Drowning;                           // 0x0490(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerShield_RecoverStartTime;                     // 0x0494(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerShield_RecoverPercentPerSecond;              // 0x0498(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         StaminaRecover_PercentPerSecond;                   // 0x049C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ResuscitationTime;                                 // 0x04A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerDeath_DropOtomoNum;                          // 0x04A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerDeath_DropOtomoRange;                        // 0x04A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerDeath_DropOtomo_HoursCanOpen;                // 0x04AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerDeath_DropOtomo_HoursAutoDestroy;            // 0x04B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerDeath_DropItemStorage_HoursCanOpen;          // 0x04B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerDeath_DropItemStorage_HoursAutoDestroy;      // 0x04B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerDyingDamagePerTime;                          // 0x04BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ElementStatus_ResistanceInitialValue;              // 0x04C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ElementStatus_AutoDecreasePerSecond;               // 0x04C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ElementStatus_ResetResistanceSecond;               // 0x04C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CraftEXP;                                          // 0x04CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PickupItemOnLevelExp;                              // 0x04D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MapObjectDestroyProceedExp;                        // 0x04D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectDistributeExpRange;                       // 0x04D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4DC[0x4];                                      // 0x04DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, int32>                            OtomoExp_LevelDifferenceMap;                       // 0x04E0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         OtomoExp_HigherPlayerLevel;                        // 0x0530(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CaptureExpBonusMaxCount;                           // 0x0534(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, struct FPalCaptureBonusExpTableSetting> CaptureExpBonusTableSettingMap;              // 0x0538(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         CaptureBonusExpTableAdvanceCountPerTowerBossFirstDefeat; // 0x0588(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CaptureBonusExpTableAdvanceCountPerNormalBossFirstDefeat; // 0x058C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalDebugOtomoPalInfo>          NewGameOtomoPalSet;                                // 0x0590(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<class FName, int32>                      NewGameInventoryItemSet;                           // 0x05A0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<class FName, int32>                      NewGameLoadoutItemSet;                             // 0x05F0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FVector                                WorldHUDDisplayOffsetDefault;                      // 0x0640(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorldHUDDisplayRangeDefault;                       // 0x0658(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorldHUDDetailDisplayRange;                        // 0x065C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalDataTableRowName_ItemData>  FarmCropWaterItemIds;                              // 0x0660(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         FarmCropGrowupSpeedBySec;                          // 0x0670(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         FarmCropIncreaseRateByWaterFillRate;               // 0x0674(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalDataTableRowName_ItemData>  FarmSkillFruitsLotteryExcludeItemIds;              // 0x0678(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FString                                 MaxMoney;                                          // 0x0688(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DefaultMoney;                                      // 0x0698(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SneakAttackBackJudgeAngle_Degree;                  // 0x069C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SneakAttack_PalMeleeWaza_AttackRate;               // 0x06A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoAimCameraMoveRate;                             // 0x06A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoAimCharacterMoveRate;                          // 0x06A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoAimCameraAdsorptionSpeed;                      // 0x06AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoAimLockOnScreenSpaceRate;                      // 0x06B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ForceAutoAimTime;                                  // 0x06B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SellItemRate;                                      // 0x06B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalPriceConstantValueA;                            // 0x06BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalPriceConstantValueB;                            // 0x06C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ImportedPalSellPrice;                              // 0x06C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SearchRangeOnThrowedCharacterLanded;               // 0x06C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkCompleteReactionRangeFromPlayer;               // 0x06CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WorkerCollectResourceStackMaxNum;                  // 0x06D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPalFacialEyeType                             FacialTypeHardWork;                                // 0x06D4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6D5[0x3];                                      // 0x06D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Timeout_WorkerApproachToTarget;                    // 0x06D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WaitTime_WorkRepairFailedFindPath;                 // 0x06DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkerWaitingNotifyInterval;                       // 0x06E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WarpCheckInterval;                                 // 0x06E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WarpCheckMoveDistanceThreshold;                    // 0x06E8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WarpThreshold;                                     // 0x06EC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AutoDecreaseHateValue_PercentMaxHP_PerSecond;      // 0x06F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HateDecreaseDamageRate;                            // 0x06F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Hate_ForceUp_HPRate_OtomoActive;                   // 0x06F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Hate_ForceUp_HPRate_IncidentBattle;                // 0x06FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CombatEndDistance_BattleStartSelfPos_To_SelfPos;   // 0x0700(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CombatEndDistance_BattleStartSelfPos_To_TargetPos; // 0x0704(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CombatEndDistance_BattleStartSelfPos_To_TargetPos_AddFirstTargetDistance; // 0x0708(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NavigationAreaDivideExtents;                       // 0x070C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalNavigationUpdateFrequencySetting> NavigationUpdateFrequencySettingsFromPlayer; // 0x0710(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FName                                   SaveDataName_WorldBaseInfo;                        // 0x0720(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SaveDataName_World;                                // 0x0728(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SaveDataName_PlayerDirectory;                      // 0x0730(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SaveDataName_LocalData;                            // 0x0738(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SaveDataName_WorldOption;                          // 0x0740(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SaveDataName_GlobalPalStorage;                     // 0x0748(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   SaveDataName_DimensionPalStorageSuffix;            // 0x0750(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EPalSupportedPlatformType, int32>        MaxWorldDataNumMap;                                // 0x0758(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         SaveData_BackupIntrerval;                          // 0x07A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PalWorldTime_GameStartHour;                        // 0x07AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PalWorldMinutes_RealOneMinute;                     // 0x07B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NightStartHour;                                    // 0x07B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NightEndHour;                                      // 0x07B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DarkPalSleepStartHour;                             // 0x07BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DarkPalSleepEndHour;                               // 0x07C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerMorningHour;                                 // 0x07C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerSleepStartHour;                              // 0x07C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         NightSkipWaitSecond;                               // 0x07CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LocalPlayerAndOtomo_LightRangeScale;               // 0x07D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7D4[0x4];                                      // 0x07D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                BuildBaseUnitGridDefinition;                       // 0x07D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildSimulationVerticalAdjustRate;                 // 0x07F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildSimulationVerticalMinLength;                  // 0x07F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildSimulationFoundationFloatingAllowance;        // 0x07F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalDataTableRowName_ItemData          WaterBuildingAllowItemId;                          // 0x07FC(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WaterBuildingFoundationMinHeightAboveWaterSurface; // 0x0804(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EPalBuildObjectInstallStrategy, struct FVector> BuildSimulationFoundationCheckCollisionScale; // 0x0808(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         BuildSimulationRoofHeightOffset;                   // 0x0858(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildSimulationStairHeightOffset;                  // 0x085C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildSimulationFoundationHeightOffset;             // 0x0860(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildSimulationLeanAngleMax;                       // 0x0864(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildingProgressInterpolationSpeed;                // 0x0868(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayerRecord_BuildingObjectMaxNum;                 // 0x086C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildingMaxZ;                                      // 0x0870(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SnapBuildObjectTraceDistance;                      // 0x0874(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SnapBuildObjectInstallReticleDistance;             // 0x0878(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SnapBuildObjectAttachDistance;                     // 0x087C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SnapBuildObjectHeightDistance;                     // 0x0880(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SnapBuildObjectMinBoxExtentZ;                      // 0x0884(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InBuildProcessObjectExpireRealHours;               // 0x0888(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_88C[0x4];                                      // 0x088C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FShooterSpringCameraParameter          BuilderModeCameraOffset;                           // 0x0890(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         BuilderModeInstallableRange;                       // 0x08B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PaintBuildModeInstallableRange;                    // 0x08BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BuildObj_HatchedPalCharacterLevel;                 // 0x08C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuildObj_DamageScarecrowStartRecoveryTime;         // 0x08C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampAreaRange;                                 // 0x08C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalArriveToWorkLocationRange;                      // 0x08CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalArriveToWorkLocationRangeZ;                     // 0x08D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampNeighborMinimumDistance;                   // 0x08D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampNeighborMinimumDistance_PVP;               // 0x08D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampTreasureMapPointAddRange;                  // 0x08DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalRotateSpeedToWork;                              // 0x08E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampFoliageBoundsRadius;                       // 0x08E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampFoliageWorkableRange;                      // 0x08E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampHungerApproachToPlayer;                    // 0x08EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampHungerUnreachableObjectTimeoutRealSeconds; // 0x08F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HungerHUDDisplayRange;                             // 0x08F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkAmountBySecForPlayer;                          // 0x08F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerEventTriggerInterval;                // 0x08FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerEventTriggerProbability;             // 0x0900(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerSanityWarningThreshold;              // 0x0904(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerFinishEatingFullStomach;             // 0x0908(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerFinishEatingSanity;                  // 0x090C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         BaseCampWorkerFinishEatCount;                      // 0x0910(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerRecoverHungryTurnToTargetTimeout;    // 0x0914(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerStartSleepHpPercentage;              // 0x0918(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerSleepInPlaceRecoverSanityRate;       // 0x091C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerDistancePickableItem;                // 0x0920(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_924[0x4];                                      // 0x0924(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalBaseCampItemContainerType>         BaseCampBuildingItemContainerTypes;                // 0x0928(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         FoliageRespawnFailedExtraRangeOfBaseCamp;          // 0x0938(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampPalCombatRange_AddCampRange;               // 0x093C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampPalCombatRange_AddCampRange_PVP;           // 0x0940(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampExtraWorkAreaRange;                        // 0x0944(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFloatInterval                         BaseCampPalWalkTime_BeforeSleep;                   // 0x0948(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampPalSleepMinMinutesThrown;                  // 0x0950(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampTimeFinishBattleModeAfterEmptyEnemy;       // 0x0954(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPalCharacterImportanceType                   BaseCampWorkerSimpleMoveThreshold;                 // 0x0958(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPalCharacterImportanceType                   BaseCampWorkerMoveModeChangeThreshold;             // 0x0959(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_95A[0x2];                                      // 0x095A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BaseCampWorkerDirectorTickForAssignWorkByCount;    // 0x095C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerTimeDetectContinuousStuck;           // 0x0960(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerMaxTimeReturnBack;                   // 0x0964(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerWanderingSpeedMax;                   // 0x0968(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampDetectRaidInvasionVolumeHeight;            // 0x096C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampPVPUnderRaidTime;                          // 0x0970(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerLookToTargetWork;                    // 0x0974(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReviveWorkAdditionalRange;                         // 0x0978(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkAroundRangeDefault;                            // 0x097C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<EPalWorkType>                          IssueNotifyWorkTypes;                              // 0x0980(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         WorkAmountByManMonth;                              // 0x0990(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkNotifyDelayTime;                               // 0x0994(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkFinishDelayCallAddWorkNotifyDelayTime;         // 0x0998(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkIgnitionTorchWaitTime;                         // 0x099C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EPalWorkAssignableCheckResult, EPalMonsterControllerBaseCampLogType> WorkAssignFailedLogTypeMap; // 0x09A0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         WorkTransportingSpeedRate;                         // 0x09F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9F4[0x4];                                      // 0x09F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalDataTableRowName_ItemData>  BaseCampNotTransportItemBlackList;                 // 0x09F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         WorkTransportingDelayTimeDropItem;                 // 0x0A08(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampStopProvideEnergyInterval;                 // 0x0A0C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EPalBaseCampPassiveEffectWorkHardType, struct FPalBaseCampPassiveEffectWorkHardInfo> BaseCampPassiveEffectWorkHardInfoMap; // 0x0A10(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkCollectionRestoreStashSeconds;         // 0x0A60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BaseCampWorkerDirectorBattleRestoreStashSeconds;   // 0x0A64(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkTransportingItemNumRateInShouldTeleportWorker; // 0x0A68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A6C[0x4];                                      // 0x0A6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, struct FPalClinicHygieneStarLevelRange> ClinicHygieneStarLevelRanges;                // 0x0A70(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            ClinicAdditionalSuppressRateByMedicineLv;          // 0x0AC0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            ClinicAdditionalSanitySuppressRateByMedicineLv;    // 0x0B10(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EPalBaseCampWorkerSickType, int32>       ClinicRequiredMedicineLvForSickness;               // 0x0B60(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FPalWorkTypeSet>                WorkTypeAssignPriorityOrder;                       // 0x0BB0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_Build;                        // 0x0BC0(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_FoliageWork;                  // 0x0C30(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_ReviveCharacterWork;          // 0x0CA0(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_TransportItemInBaseCamp;      // 0x0D10(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_RepairBuildObjectInBaseCamp;  // 0x0D80(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_BreedFarm;                    // 0x0DF0(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_ExtinguishBurn;               // 0x0E60(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_CoolOverHeat;                 // 0x0ED0(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FPalWorkAssignDefineDataStaticSetting> WorkAssignDefineData_TreasureBoxUnlock;     // 0x0F40(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         WorkActionAttackDamageRate;                        // 0x0F50(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WorkSuitabilityMaxRank;                            // 0x0F54(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                 TransportItemAbsorbRangeByWorkSuitabilityRank;     // 0x0F58(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EPalWorkSuitability, struct FPalWorkSuitabilityDefineData> WorkSuitabilityDefineDataMap;    // 0x0F68(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkSuitabilityCollectionDefineData WorkSuitabilityDefineData_Collection;             // 0x0FB8(0x0028)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkSuitabilityDeforestDefineData  WorkSuitabilityDefineData_Deforest;                // 0x0FE0(0x0028)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalWorkSuitabilityMiningDefineData    WorkSuitabilityDefineData_Mining;                  // 0x1008(0x0028)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         DropItemWaitInsertMaxNumPerTick;                   // 0x1030(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MergeDropItemRange;                                // 0x1034(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalItemFilterPreference               ItemFilterPreference;                              // 0x1038(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<struct FPalDataTableRowName_ItemData, struct FPalPickingItemSetting> PickingItemSetting;    // 0x1088(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<struct FPalDataTableRowName_ItemData, struct FPalLanternItemSetting> LanternItemSetting;    // 0x10D8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalDungeonMarkerPointSpawnParameter   DungeonSpawnParameterDefault;                      // 0x1128(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         GamePad_NotAimCameraRotateSpeed_DegreePerSecond;   // 0x1138(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GamePad_AimCameraRotateSpeed_DegreePerSecond;      // 0x113C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Mouse_NotAimCameraRotateSpeed;                     // 0x1140(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Mouse_AimCameraRotateSpeed;                        // 0x1144(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         YawCameraMaxSpeedRate;                             // 0x1148(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeForCameraMaxSpeed;                             // 0x114C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AimInterpInterval;                                 // 0x1150(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFloatRange                            RideFOVRange;                                      // 0x1154(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinFOV;                                            // 0x1164(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxFOV;                                            // 0x1168(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFloatRange                            SprintWalkFOVRange;                                // 0x116C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFloatRange                            SprintRideFOVRange;                                // 0x117C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SprintFOVInterpSpeed;                              // 0x118C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseNewCameraOnRolling;                            // 0x1190(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1191[0x3];                                     // 0x1191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         InvaderSelfDeleteAddTime;                          // 0x1194(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         VisitorSelfDeleteTime;                             // 0x1198(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InvadeProbability;                                 // 0x119C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeOccurablePlayerLevel;                        // 0x11A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeOccurableBaseCampLevel;                      // 0x11A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeJudgmentInterval_Minutes;                    // 0x11A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeCollTime_Max_Minutes;                        // 0x11AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeCollTime_Min_Minutes;                        // 0x11B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeReturnTime_Minutes;                          // 0x11B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeStartPoint_BaseCampRadius_Min_cm;            // 0x11B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeStartPoint_BaseCampRadius_Max_cm;            // 0x11BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InvaderPathWaterContinuousDistanceThreshold;       // 0x11C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InvaderPathWaterTotalDistanceThreshold;            // 0x11C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisitorNPCProbability;                             // 0x11C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         VisitorNPCReturnTime_Minutes;                      // 0x11CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InvaderDeclarationIntarvalMinutes;                 // 0x11D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InvadeGradeOffset;                                 // 0x11D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecruitBadPalProbability;                          // 0x11D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RecruitCarreerTextNum;                             // 0x11DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         RecruitAppealDefaultTextNum;                       // 0x11E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecruitContractFeeMultiplier;                      // 0x11E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RidingAimOpacity;                                  // 0x11E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RidingAimLowAngleOpacity;                          // 0x11EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         hideUITimeWhenNotConflict;                         // 0x11F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         firstCapturedUIDisplayTime;                        // 0x11F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         capturedUIDisplayTime;                             // 0x11F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         firstActivatedOtomoInfoDisplayTime;                // 0x11FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         playerLevelUpUIDIsplayTime;                        // 0x1200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         playerExpGaugeUIDisplayTime;                       // 0x1204(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         otomoExpGaugeUIDisplayTime;                        // 0x1208(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         npcGaugeDisplayDistance;                           // 0x120C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         npcGaugeDisplayDistance_PVP;                       // 0x1210(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OtherOtomoGaugeDisplayDistance_PVP;                // 0x1214(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         npcGaugeDisplayRange_CameraSight;                  // 0x1218(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         npcGaugeDisplayRange_CameraSight_PVP;              // 0x121C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OtherOtomoGaugeDisplayRange_CameraSight_PVP;       // 0x1220(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GuildMemberGaugeDisplayDistance;                   // 0x1224(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GuildMemberGaugeDisplayDistance_PVP;               // 0x1228(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         downPlayerLoupeDisplayDistance;                    // 0x122C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         downPlayerGaugeDisplayRange_CameraSight;           // 0x1230(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1234[0x4];                                     // 0x1234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              ReticleOffsetRate;                                 // 0x1238(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         lowHealthEffectParcent;                            // 0x1248(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124C[0x4];                                     // 0x124C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPalDamageTextType, int32>               damageTextMargineMap;                              // 0x1250(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         DamageTextDisplayLength;                           // 0x12A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DamageTextDisplayLength_PVP;                       // 0x12A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              damageTextMaxOffset;                               // 0x12A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         damageTextOffsetInterpolationLength;               // 0x12B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12BC[0x4];                                     // 0x12BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPalDamageTextType, float>               damageTextScaleMap;                                // 0x12C0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FVector2D                              damageTextRandomOffset;                            // 0x1310(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         strongEnemyMarkLevel;                              // 0x1320(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         otomoInteractUIDisplayDistance;                    // 0x1324(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         enemyMarkUIMinScale;                               // 0x1328(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         enemyMarkScaleInterpolationLength;                 // 0x132C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              npcHPGaugeGlobalOffset;                            // 0x1330(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         delayGaugeStartTime;                               // 0x1340(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         delayGaugeProgressPerSecond;                       // 0x1344(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         inventoryWeaponRangeMaxBorder;                     // 0x1348(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         inventoryWeaponStabilityMinBorder;                 // 0x134C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         inventoryWeaponAccuracyMinBorder;                  // 0x1350(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         worldmapUIMaskClearSize;                           // 0x1354(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         worldmapUIFTMergeDistance;                         // 0x1358(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         worldmapUIMaxMarker;                               // 0x135C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         worldmapUIMaxGuildMarker;                          // 0x1360(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         worldmapUIMaxGuildPin;                             // 0x1364(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NPCHPGaugeUpdateSpan;                              // 0x1368(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CaptureFailedUIDisplayTime;                        // 0x136C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalDataTableRowName_ItemData>  CaptureSphereSortArray;                            // 0x1370(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         OpenGameOverUITime;                                // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InventoryWeightAlertRate;                          // 0x1384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InventoryWeightGaugeDIsplayTime;                   // 0x1388(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OtomoLevelUpNoticeUIDisplayTime;                   // 0x138C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OtomoMasteredWazaNoticeUIDisplayTime;              // 0x1390(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProgressGaugeInterpolationSpeed;                   // 0x1394(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeleportFadeInTime;                                // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeleportFadeOutTime;                               // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayerTeleportTimeoutTime;                         // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A4[0x4];                                     // 0x13A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 PassiveSkillAppendNumWeights;                      // 0x13A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EPalPassiveSkillEffectTargetItemType, struct FPalPassiveSkillEffectItemTypeInfo> PassiveSkillEffectItemTypeMap; // 0x13B8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	bool                                          bIsStackablePartnerSkillBySameTribe;               // 0x1408(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsEggLauncherExplosion;                           // 0x1409(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_140A[0x2];                                     // 0x140A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ThrowPalBattleRadius;                              // 0x140C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DirectOrderTargetSearchRadius;                     // 0x1410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ThrowPalWorkRadius;                                // 0x1414(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RopeHitPowe;                                       // 0x1418(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RopePullPower;                                     // 0x141C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DefaultMaxInventoryWeight;                         // 0x1420(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RaycastLengthForDetectIndoor;                      // 0x1424(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectConnectAnyPlaceRaycastLength;             // 0x1428(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShootingTargetRayCastDistance;                     // 0x142C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ShootingTargetRayCastMaxDegree;                    // 0x1430(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1434[0x4];                                     // 0x1434(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 CaptureJudgeRateArray;                             // 0x1438(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         CaptureBallBoundCountMax;                          // 0x1448(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_144C[0x4];                                     // 0x144C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           ExceptCapturedItemList;                            // 0x1450(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FPalDataTableRowName_ItemData>  ExceptMeatCutItemList;                             // 0x1460(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EPalCaptureSphereLevelType, int32>       CaptureSphereLevelMap;                             // 0x1470(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EPalStatusID, float>                     CaptureRateAddByStatusMap;                         // 0x14C0(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         IgnoreFirstCaptureFailedHPRate;                    // 0x1510(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         IgnoreFirstCaptureFailedCaptureRate;               // 0x1514(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CaptureRateAdd_ByLegHold;                          // 0x1518(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CriticalCaptureBonus;                              // 0x151C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LongPressInterval;                                 // 0x1520(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LongPressInterval_EnemyCampCage;                   // 0x1524(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LongPressInterval_StartRaidBoss;                   // 0x1528(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LongPressInterval_ChangeBullet;                    // 0x152C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RaidBossArea_PhaseTimeLimit_Ready;                 // 0x1530(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RaidBossArea_PhaseTimeLimit_Result;                // 0x1534(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LongPressInterval_GetHatchedPal;                   // 0x1538(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LongPressInterval_TreasureMapPoint;                // 0x153C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CrouchLockAttenuation;                             // 0x1540(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsEnableCharacterWazaScale;                        // 0x1544(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOverrideDamageAdditiveAnimation;                 // 0x1545(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1546[0x2];                                     // 0x1546(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BlinkInterval;                                     // 0x1548(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WorkAnimSpeedPower;                                // 0x154C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CrimeStateMaintainDurationBaseDefault;             // 0x1550(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CrimeMisfireSafeTimeDuration;                      // 0x1554(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CrimeMisfireSafeCooldownDuration;                  // 0x1558(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         technologyPointPerLevel;                           // 0x155C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         bossTechnologyPointPerTowerBoss;                   // 0x1560(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         bossTechnologyPointPerNormalBoss;                  // 0x1564(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FPalDataTableRowName_RecipeTechnologyData> DefaultUnlockTechnology;                // 0x1568(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         DefaultTechnologyPoint;                            // 0x1578(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TechnologyPoint_UnlockFastTravel;                  // 0x157C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DecreaseSanity_DamagedMultiply;                    // 0x1580(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FullStomachPercent_RecoverySanity;                 // 0x1584(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RecoverySanity_FullStomach;                        // 0x1588(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DecreaseSanity_Hunger;                             // 0x158C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DecreaseSanity_Starvation;                         // 0x1590(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Spawner_IsCheckLoadedWorldPartition;               // 0x1594(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1595[0x3];                                     // 0x1595(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         SpawnerDisableDistanceCM_FromBaseCamp;             // 0x1598(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnemyCampSpawnerDisableDistanceCM_FromBaseCamp;    // 0x159C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultSpawnRadius_S;                      // 0x15A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultSpawnRadius_M;                      // 0x15A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultSpawnRadius_L;                      // 0x15A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultSpawnRadius_NPC;                    // 0x15AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultDespawnDistance_S;                  // 0x15B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultDespawnDistance_M;                  // 0x15B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultDespawnDistance_L;                  // 0x15B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Spawner_DefaultDespawnDistance_NPC;                // 0x15BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CharacterHeadMeshDataTable;                        // 0x15C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CharacterBodyMeshDataTable;                        // 0x15C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CharacterHairMeshDataTable;                        // 0x15D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CharacterEquipmentArmorMeshDataTable;              // 0x15D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             CharacterEyeMaterialDataTable;                     // 0x15E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UDataTable*                             GliderMeshDataTable;                               // 0x15E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CharacterMakeColorLimit_SV;                        // 0x15F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsAutoEquipMasteredWaza;                           // 0x15F4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ActiveUNKO;                                        // 0x15F5(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15F6[0x2];                                     // 0x15F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxSpawnableDeathPenaltyChest;                     // 0x15F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxSpawnableDeathDroppedCharacter;                 // 0x15FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   BuildObjectInstallStrategy_SinkAllowCollisionPresetName; // 0x1600(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectShakeTimeOnDamaged;                       // 0x1608(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_160C[0x4];                                     // 0x160C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                MapObjectShakeOffsetOnDamaged;                     // 0x1610(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MapObjectOutlineByPaintTarget;                     // 0x1628(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MapObjectOutlineByReticleTargetting;               // 0x162C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MapObjectOutlineByInteractable;                    // 0x1630(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalMapObjectRepairInfo                MapObjectRepairInfo;                               // 0x1634(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         FoliageExtentsXY;                                  // 0x1648(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FoliageChunkSeparateScale;                         // 0x164C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectHPDisplayDistance;                        // 0x1650(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OilrigCannonHPDisplayDistance;                     // 0x1654(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectHPDisplayTime;                            // 0x1658(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectMultiplayModifierDisplayDistance;         // 0x165C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectMultiplayModifierDisplayTime;             // 0x1660(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectGateLockTime;                             // 0x1664(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDirectObtainFromTreasureBox;                      // 0x1668(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1669[0x3];                                     // 0x1669(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         NoDropItemDamageRateFromFoliageMaxHp;              // 0x166C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<EPalWeaponType>                        WeaponTypesForceDropItemFromFoliage;               // 0x1670(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         MapObjectEffectTriggerAccumulate_Burn;             // 0x1680(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectEffect_Burn_DamageHpRate;                 // 0x1684(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                MapObjectEffect_Burn_DamageAroundRange;            // 0x1688(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectEffect_Burn_DamageAroundInterval;         // 0x16A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectEffect_Burn_DamageAroundDamageValue;      // 0x16A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectEffect_Burn_DamageAroundAccumulateValue;  // 0x16A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectEffect_Burn_DamageAroundAccumulateValue_ForCharacter; // 0x16AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PasswordLockFailedMaxNum;                          // 0x16B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectItemChestCorruptionRateFromWorkSpeed;     // 0x16B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MapObjectItemChestUnlockAutoPrivateTime;           // 0x16B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16BC[0x4];                                     // 0x16BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                MapObjectDropItemLocationOffset;                   // 0x16C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DetectorMaxRange;                                  // 0x16D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TreasureMapPointActivateMaxNum;                    // 0x16DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalOptimizeParameter                  RuntimeOptimizeParameter;                          // 0x16E0(0x0588)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<int32>                                 WorldSecurityBountyByWantedLevelMap;               // 0x1C68(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FPalWorldSecurityWantedPoliceSettingData> WorldSecurityWantedPoliceSettingDataMap; // 0x1C78(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FPalWorldSecurityWantedPoliceSettingData> WorldSecurityWantedPoliceSettingDataMapForDS; // 0x1C88(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         WorldSecurityGlobalPoliceSpawnCap;                 // 0x1C98(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WorldSecurityGlobalPoliceSpawnCapForDS;            // 0x1C9C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StatusPointPerLevel;                               // 0x1CA0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddMaxHPPerStatusPoint;                            // 0x1CA4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddMaxSPPerStatusPoint;                            // 0x1CA8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddPowerPerStatusPoint;                            // 0x1CAC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddMaxInventoryWeightPerStatusPoint;               // 0x1CB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddCaptureLevelPerStatusPoint;                     // 0x1CB4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddWorkSpeedPerStatusPoint;                        // 0x1CB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddMaxHPPerHPRank;                                 // 0x1CBC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddAttackPerAttackRank;                            // 0x1CC0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddDefencePerDefenceRank;                          // 0x1CC4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AddWorkSpeedPerWorkSpeedRank;                      // 0x1CC8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxUseablePoint_SumStatusPointAndExStatusPoint_PerParameter; // 0x1CCC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                 Combi_TalentInheritNum;                            // 0x1CD0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<float>                                 Combi_PassiveInheritNum;                           // 0x1CE0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<float>                                 Combi_PassiveRandomAddNum;                         // 0x1CF0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         Combi_BossPalRate;                                 // 0x1D00(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D04[0x4];                                     // 0x1D04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalEggRankInfo>                PalEggRankInfoArray;                               // 0x1D08(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<EPalElementType, struct FPalDataTableRowName_MapObjectData> PalEggMapObjectIdMap;           // 0x1D18(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FPalDataTableRowName_MapObjectData     PalEggMapObjectId_WorldTree;                       // 0x1D68(0x0008)(Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Combi_MutationRate;                                // 0x1D70(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Combi_MutationRankCoefficient;                     // 0x1D74(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Combi_MutationRankDiffPenalty;                     // 0x1D78(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Combi_MutationRandomCoefficient;                   // 0x1D7C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalDataTableRowName_MapObjectData     PalEggMapObjectId_Mutation;                        // 0x1D80(0x0008)(Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Combi_MutationMinTalent;                           // 0x1D88(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Combi_MutationInitialRank;                         // 0x1D89(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D8A[0x6];                                     // 0x1D8A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalBreedingItemEffectDataAsset*        BreedingItemEffectDataAsset;                       // 0x1D90(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            PalEggHatchingSpeedRateByTemperature;              // 0x1D98(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UFont*                                  DebugInfoFont;                                     // 0x1DE8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxGuildNameLength;                                // 0x1DF0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         JoinGuildRequestInteractLongPushTime;              // 0x1DF4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GuildChestSlotNum;                                 // 0x1DF8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TutorialMinDisplayTime;                            // 0x1DFC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TutorialDisplayTime;                               // 0x1E00(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1E04[0x4];                                     // 0x1E04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPalUIRewardDisplayType, float>          CommonRewardDisplayTime;                           // 0x1E08(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         DeadBodyDestroySecond;                             // 0x1E58(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DeadBodyOutOfSightDestroySecond;                   // 0x1E5C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnemyCampRespawnCoolTime;                          // 0x1E60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         EnemyCampDespawnDelayTime;                         // 0x1E64(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalBoxReviveTime;                                  // 0x1E68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AfterNPCTalkDelayTime_Interact;                    // 0x1E6C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinSprintThreshold;                                // 0x1E70(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxSprintThreshold;                                // 0x1E74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinHPGaugeDisplayTime;                             // 0x1E78(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CombatHeliHPGaugeDisplayDistance;                  // 0x1E7C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         KingWhaleHPGaugeDisplayDistance;                   // 0x1E80(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxOtomoLoadoutCount;                              // 0x1E84(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ToggleInteractMoveDelay;                           // 0x1E88(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PlayerToPlayerDamageRate;                    // 0x1E8C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PlayerToPalDamageRate;                       // 0x1E90(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PlayerToPlayerStatusRate;                    // 0x1E94(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PlayerToPalStatusRate;                       // 0x1E98(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PalToPlayerDamageRate;                       // 0x1E9C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PalToPalDamageRate;                          // 0x1EA0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PalToPlayerStatusRate;                       // 0x1EA4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Arena_PalToPalStatusRate;                          // 0x1EA8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Arena_RankPoint_WinToPlayer;                       // 0x1EAC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Arena_RankPoint_WinToNPC;                          // 0x1EB0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Arena_RankPoint_Lose;                              // 0x1EB4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<EPalArenaRank, int32>                    Arena_RankRequirePoints;                           // 0x1EB8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TMap<int32, float>                            Arena_RankPointDiffRate;                           // 0x1F08(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         HardcoreLostPalDespawnTime;                        // 0x1F58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PalEatMotionSpeedWhenStarvation;                   // 0x1F5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalDataTableRowName_ItemData          PalReverseGenderItemID;                            // 0x1F60(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TeleportInvincibleTime;                            // 0x1F68(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DoctorMaxSurgiCountInDay;                          // 0x1F6C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         IceTypeOtomoCorruptionDecreace;                    // 0x1F70(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MapIconSize;                                       // 0x1F74(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FColor>                         DefaultMapObjectPaintColors;                       // 0x1F78(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FColor>                         DefaultMapObjectLampColors;                        // 0x1F88(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	float                                         DimensionLockerTimeoutSec;                         // 0x1F98(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_Min;                               // 0x1F9C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_Max;                               // 0x1FA0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_AutoIncrementRequireSanity;        // 0x1FA4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_AutoIncrementInteravalMinutes;     // 0x1FA8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_AutoIncrementOtomo;                // 0x1FAC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_AutoIncrementActiveOtomo;          // 0x1FB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_AutoIncrementWorker;               // 0x1FB4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_StomachRate;                       // 0x1FB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_SanityRate;                        // 0x1FBC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_Petting;                           // 0x1FC0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_Starvation;                        // 0x1FC4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_Sick;                              // 0x1FC8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_Dead;                              // 0x1FCC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FriendshipPoint_SleepOnSide;                       // 0x1FD0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FD4[0x4];                                     // 0x1FD4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPalBaseCampPassiveEffectWorkHardType, float> FriendshipPoint_WorkHardRate;                 // 0x1FD8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	int32                                         FriendshipRank_AutoFavorite;                       // 0x2028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TrialPlayMinute;                                   // 0x202C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialParameterCollection*           GlobalMaterialParameterCollection;                 // 0x2030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WildlifeSanctuaryFlyingDetectSeconds;              // 0x2038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         WildWarlikePalMaxBattleLevelDiff;                  // 0x203C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CutsceneSkipForceStopDelay;                        // 0x2040(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2044[0x4];                                     // 0x2044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalDataTableRowName_PalMonsterData> EndingExcludeCharacterIDs;                    // 0x2048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<class FString>                         SkippedAchievementIdsOnPS5;                        // 0x2058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class UDataTable*                             SoundSourceDataTable;                              // 0x2068(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<EPalOptimizeType, TSubclassOf<class UPalOptimizeParameterSetting>> OptimizeParameterSettingClass; // 0x2070(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TSubclassOf<class UPalMapObjectCharacterTeamMissionFunctionsBase> ExpeditionStrengthSortFunctionsClass; // 0x20C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EPalWazaID, int32>                       WazaSelectPowerOverrideMap;                        // 0x0088(0x0050)(Edit, NativeAccessSpecifierPublic)
+	float                                         PlayerHPRateFromRespawn;                           // 0x00D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerStomachRateFromRespawn;                      // 0x00DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RarePal_AppearanceProbability;                     // 0x00E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PredatorPal_AppearanceProbability;                 // 0x00E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RarePal_LevelAdd;                                  // 0x00E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RarePal_CaptureLevelDecrease;                      // 0x00EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RarePalCaptureBonusExpRate;                        // 0x00F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RarePalDefeatBonusExpRate;                         // 0x00F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalDataTableRowName_ItemData>  RarePalBonusDropItems;                             // 0x00F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         RelicObtainBonusExpTableAdvance;                   // 0x0108(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NoteObtainBonusExpTableAdvance;                    // 0x010C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RuinClearBonusExpTableAdvance;                     // 0x0110(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FastTravelUnlockBonusExpTableAdvance;              // 0x0114(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalRarePalSetting>             RarePalSettings;                                   // 0x0118(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         BossOrRarePal_TalentMin;                           // 0x0128(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CharacterRankUpRequiredNumDefault;                 // 0x012C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, int32>                            CharacterRankUpRequiredNumMap;                     // 0x0130(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         NaturalUpdateSaveParameterInterval;                // 0x0180(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CharacterHUDDisplayRange;                          // 0x0184(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CharacterFedEatingTime;                            // 0x0188(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CharacterStayingSecondsInSpa;                      // 0x018C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PalBoxPageNum;                                     // 0x0190(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PalBoxSlotNumInPage;                               // 0x0194(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PalBoxTimePeriodRecoverySick;                      // 0x0198(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerBattleJudge_EnemyDistance;                   // 0x019C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            BodyTemperature_SlipDamage_Percent;                // 0x01A0(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            BodyTemperature_StomachDecreaceRate;               // 0x01F0(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         TemperatureDamageLogIntervalSec;                   // 0x0240(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UNiagaraSystem>          SleepFXDefault;                                    // 0x0248(0x0030)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<TSoftObjectPtr<class UNiagaraSystem>>  RemoveFXOnDead;                                    // 0x0278(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPublic)
+	float                                         LiftupCharacterThrownVelocityScalar;               // 0x0288(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LiftupCharacterClearCollisionDelayTime;            // 0x028C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LiftupCharacterThrowFloorClearanceMargin;          // 0x0290(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LiftupCharacterThrowFloorClearanceMax;             // 0x0294(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NickNameMaxLength;                                 // 0x0298(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MapObjectCustomNameMaxLength;                      // 0x029C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalPalSpeciesCount;                              // 0x02A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RollingBurnDurationRate;                           // 0x02A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RollingMuddyDurationRate;                          // 0x02A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         IntervalForPalAttackFromBall;                      // 0x02AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CanShootRiderByFullRide;                           // 0x02B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          HitWazaAttackForMapObject;                         // 0x02B1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2B2[0x2];                                      // 0x02B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         KnockBack_MaxHpPercent;                            // 0x02B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         KnockBack_Power;                                   // 0x02B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StunTime;                                          // 0x02BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StepCooldownTime;                                  // 0x02C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AirDashCooldownTime;                               // 0x02C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Stun_GunDamageRate;                                // 0x02C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnableAutoReload;                                // 0x02CC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2CD[0x3];                                      // 0x02CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DeadShootImpulseRate;                              // 0x02D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeadShootImpulseMax;                               // 0x02D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OtomoDamageRate_Defense;                           // 0x02D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DamageValueMin_MapObject;                          // 0x02DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageRate_WealPoint;                              // 0x02E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageRate_StrongPoint;                            // 0x02E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageRate_SleepHit;                               // 0x02E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinalDamageRate_Waza;                              // 0x02EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinalDamageRate_Weapon;                            // 0x02F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinalDamageRate_Mine;                              // 0x02F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinalDamageRate_MapObject_Waza;                    // 0x02F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinalDamageRate_MapObject_Weapon;                  // 0x02FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinalDamageRate_MapObject_Mine;                    // 0x0300(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FinalDamageRate_MapObject_WorkActionAttack;        // 0x0304(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FoliageDefault_Defense;                            // 0x0308(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WazaAttackerLevelDamage_Power;                     // 0x030C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageRandomRate_Min;                              // 0x0310(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageRandomRate_Max;                              // 0x0314(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LevelDamageCorrect;                                // 0x0318(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LevelStatusAccumulateCorrect;                      // 0x031C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageElementMatchRate;                            // 0x0320(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MineAttack_DefensePower;                           // 0x0324(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerVsPlayer_WeaponPower;                        // 0x0328(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerVsPlayer_DefensePower;                       // 0x032C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerVsPlayer_DamageRate;                         // 0x0330(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerVsPlayer_NoWeapon_BuildingDamageRate;        // 0x0334(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerVsPlayer_NoWeapon_PlayerToGuildPalDamageRate; // 0x0338(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CoolTimeIgnoreLeanBackWildBoss_ByStunAndBlow;      // 0x033C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VsFlyingDamageRateForPvP;                          // 0x0340(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerToGuildPalDamageRateForPvP;                  // 0x0344(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalToPlayerDamageRate;                             // 0x0348(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalToPalDamageRate;                                // 0x034C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StatusCalculate_LevelMultiply_HP;                  // 0x0350(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StatusCalculate_TribePlus_HP;                      // 0x0354(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StatusCalculate_ConstPlus_HP;                      // 0x0358(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StatusCalculate_LevelMultiply_Attack;              // 0x035C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StatusCalculate_ConstPlus_Attack;                  // 0x0360(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StatusCalculate_LevelMultiply_Defense;             // 0x0364(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StatusCalculate_ConstPlus_Defense;                 // 0x0368(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StatusCalculate_TribeMultiply_CraftSpeed;          // 0x036C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StatusCalculate_GenkaiToppa_PerAdd;                // 0x0370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StatusCalculate_Talent_PerAdd;                     // 0x0374(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BreakedWeaponDamageRate;                           // 0x0378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BreakedArmorDefenseRate;                           // 0x037C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EquipmentDurabilityBaseDecreaseValue;              // 0x0380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalEnhancement_AttackRate;                         // 0x0384(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalEnhancement_AttackRate2;                        // 0x0388(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalEnhancement_AttackRate3;                        // 0x038C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalEnhancement_DefenseRate;                        // 0x0390(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalEnhancement_DefenseRate2;                       // 0x0394(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalEnhancement_DefenseRate3;                       // 0x0398(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AwakeningStatusMultiply;                           // 0x039C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClimbingStamina_Move;                              // 0x03A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ClimbingStamina_Jump;                              // 0x03A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RideWazaStaminaRate;                               // 0x03A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3AC[0x4];                                      // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          RideStartAkEvent;                                  // 0x03B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAkAudioEvent*                          RideEndAkEvent;                                    // 0x03B8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsEnableJumpPreliminary;                          // 0x03C0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C1[0x3];                                      // 0x03C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         JumpInterval;                                      // 0x03C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FlyMaxHeight;                                      // 0x03C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FlyHover_SP;                                       // 0x03CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FlyHorizon_SP;                                     // 0x03D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FlyHorizon_Dash_SP;                                // 0x03D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FlyVertical_SP;                                    // 0x03D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AimingSpeedRateInRide;                             // 0x03DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SlidingEndSpeed;                                   // 0x03E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         JumpSP;                                            // 0x03E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StepSP;                                            // 0x03E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MeleeAttackSP;                                     // 0x03EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SprintSP;                                          // 0x03F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GliderSP;                                          // 0x03F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SwimmingFallWaitTimeSec;                           // 0x03F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Swimming_SP_Idle;                                  // 0x03FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Swimming_SP_Swim;                                  // 0x0400(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Swimming_SP_DashSwim;                              // 0x0404(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Swimming_PlayerGrapplingInWaterRate;               // 0x0408(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FluidFriction;                                     // 0x040C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OverWeightSpeedZero_AddPercent;                    // 0x0410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OverWeightMinSpeed;                                // 0x0414(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OverWeightHardThresholdRate;                       // 0x0418(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OverWeightSoftMaxJumpReductionRate;                // 0x041C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WalkableFloorAngleForDefault;                      // 0x0420(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WalkableFloorAngleForRide;                         // 0x0424(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnableSpeedCollision;                            // 0x0428(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_429[0x3];                                      // 0x0429(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CollisionDamageMinSpeed;                           // 0x042C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpeedCollisionDamagePower;                         // 0x0430(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CollisionDamageSpeedMultiplay;                     // 0x0434(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CollisionDamageWeightThreshold;                    // 0x0438(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoHPRegene_Percent_perSecond;                    // 0x043C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoHPRegene_Percent_perSecond_Sleeping;           // 0x0440(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PosionHPDecrease_Percent_perSecond;                // 0x0444(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Starvation_DecreaseHP_Percent_perSecond;           // 0x0448(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoSANRegene_Percent_perSecond_PalStorage;        // 0x044C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreace_perSecond_Monster;                 // 0x0450(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreace_perSecond_Player;                  // 0x0454(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreace_AutoHealing;                       // 0x0458(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreace_WorkingRate;                       // 0x045C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HungerStart_StomachValue;                          // 0x0460(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FullStomachPalStartEatFood;                        // 0x0464(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HungerParameterRate_Hunger;                        // 0x0468(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         HungerParameterRate_Starvation;                    // 0x046C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FullStomachCost_ByWazaUse_Base;                    // 0x0470(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_474[0x4];                                      // 0x0474(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, float>                            FullStomachCost_ByWazaUse_RateMap;                 // 0x0478(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         StomachDecreaceRate_GroundRide_Sprint;             // 0x04C8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreaceRate_WaterRide;                     // 0x04CC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreaceRate_WaterRide_Sprint;              // 0x04D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreaceRate_FlyRide;                       // 0x04D4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StomachDecreaceRate_FlyRide_Sprint;                // 0x04D8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RemainderOfLife_Second;                            // 0x04DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HpDecreaseRate_Drowning;                           // 0x04E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerShield_RecoverStartTime;                     // 0x04E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerShield_RecoverPercentPerSecond;              // 0x04E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         StaminaRecover_PercentPerSecond;                   // 0x04EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ResuscitationTime;                                 // 0x04F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerDeath_DropOtomoNum;                          // 0x04F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerDeath_DropOtomoRange;                        // 0x04F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerDeath_DropOtomo_HoursCanOpen;                // 0x04FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerDeath_DropOtomo_HoursAutoDestroy;            // 0x0500(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerDeath_DropItemStorage_HoursCanOpen;          // 0x0504(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerDeath_DropItemStorage_HoursAutoDestroy;      // 0x0508(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerDyingDamagePerTime;                          // 0x050C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ElementStatus_ResistanceInitialValue;              // 0x0510(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ElementStatus_AutoDecreasePerSecond;               // 0x0514(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ElementStatus_ResetResistanceSecond;               // 0x0518(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CraftEXP;                                          // 0x051C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PickupItemOnLevelExp;                              // 0x0520(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MapObjectDestroyProceedExp;                        // 0x0524(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectDistributeExpRange;                       // 0x0528(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_52C[0x4];                                      // 0x052C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, int32>                            OtomoExp_LevelDifferenceMap;                       // 0x0530(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         OtomoExp_HigherPlayerLevel;                        // 0x0580(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CaptureExpBonusMaxCount;                           // 0x0584(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, struct FPalCaptureBonusExpTableSetting> CaptureExpBonusTableSettingMap;              // 0x0588(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         CaptureBonusExpTableAdvanceCountPerTowerBossFirstDefeat; // 0x05D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CaptureBonusExpTableAdvanceCountPerNormalBossFirstDefeat; // 0x05DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalDebugOtomoPalInfo>          NewGameOtomoPalSet;                                // 0x05E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<class FName, int32>                      NewGameInventoryItemSet;                           // 0x05F0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<class FName, int32>                      NewGameLoadoutItemSet;                             // 0x0640(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FVector                                WorldHUDDisplayOffsetDefault;                      // 0x0690(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorldHUDDisplayRangeDefault;                       // 0x06A8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorldHUDDetailDisplayRange;                        // 0x06AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalDataTableRowName_ItemData>  FarmCropWaterItemIds;                              // 0x06B0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         FarmCropGrowupSpeedBySec;                          // 0x06C0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         FarmCropIncreaseRateByWaterFillRate;               // 0x06C4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalDataTableRowName_ItemData>  FarmSkillFruitsLotteryExcludeItemIds;              // 0x06C8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FString                                 MaxMoney;                                          // 0x06D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DefaultMoney;                                      // 0x06E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SneakAttackBackJudgeAngle_Degree;                  // 0x06EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SneakAttack_PalMeleeWaza_AttackRate;               // 0x06F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoAimCameraMoveRate;                             // 0x06F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoAimCharacterMoveRate;                          // 0x06F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoAimCameraAdsorptionSpeed;                      // 0x06FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoAimLockOnScreenSpaceRate;                      // 0x0700(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForceAutoAimTime;                                  // 0x0704(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SellItemRate;                                      // 0x0708(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalPriceConstantValueA;                            // 0x070C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalPriceConstantValueB;                            // 0x0710(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ImportedPalSellPrice;                              // 0x0714(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SearchRangeOnThrowedCharacterLanded;               // 0x0718(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkCompleteReactionRangeFromPlayer;               // 0x071C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WorkerCollectResourceStackMaxNum;                  // 0x0720(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPalFacialEyeType                             FacialTypeHardWork;                                // 0x0724(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_725[0x3];                                      // 0x0725(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Timeout_WorkerApproachToTarget;                    // 0x0728(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WaitTime_WorkRepairFailedFindPath;                 // 0x072C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkerWaitingNotifyInterval;                       // 0x0730(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WarpCheckInterval;                                 // 0x0734(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WarpCheckMoveDistanceThreshold;                    // 0x0738(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WarpThreshold;                                     // 0x073C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoDecreaseHateValue_PercentMaxHP_PerSecond;      // 0x0740(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HateDecreaseDamageRate;                            // 0x0744(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Hate_ForceUp_HPRate_OtomoActive;                   // 0x0748(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Hate_ForceUp_HPRate_IncidentBattle;                // 0x074C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CombatEndDistance_BattleStartSelfPos_To_SelfPos;   // 0x0750(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CombatEndDistance_BattleStartSelfPos_To_TargetPos; // 0x0754(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CombatEndDistance_BattleStartSelfPos_To_TargetPos_AddFirstTargetDistance; // 0x0758(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NavigationAreaDivideExtents;                       // 0x075C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalNavigationUpdateFrequencySetting> NavigationUpdateFrequencySettingsFromPlayer; // 0x0760(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FName                                   SaveDataName_WorldBaseInfo;                        // 0x0770(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SaveDataName_World;                                // 0x0778(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SaveDataName_PlayerDirectory;                      // 0x0780(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SaveDataName_LocalData;                            // 0x0788(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SaveDataName_WorldOption;                          // 0x0790(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SaveDataName_GlobalPalStorage;                     // 0x0798(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SaveDataName_DimensionPalStorageSuffix;            // 0x07A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EPalSupportedPlatformType, int32>        MaxWorldDataNumMap;                                // 0x07A8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         SaveData_BackupIntrerval;                          // 0x07F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PalWorldTime_GameStartHour;                        // 0x07FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PalWorldMinutes_RealOneMinute;                     // 0x0800(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NightStartHour;                                    // 0x0804(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NightEndHour;                                      // 0x0808(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DarkPalSleepStartHour;                             // 0x080C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DarkPalSleepEndHour;                               // 0x0810(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerMorningHour;                                 // 0x0814(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerSleepStartHour;                              // 0x0818(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NightSkipWaitSecond;                               // 0x081C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LocalPlayerAndOtomo_LightRangeScale;               // 0x0820(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_824[0x4];                                      // 0x0824(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                BuildBaseUnitGridDefinition;                       // 0x0828(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildSimulationVerticalAdjustRate;                 // 0x0840(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildSimulationVerticalMinLength;                  // 0x0844(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildSimulationFoundationFloatingAllowance;        // 0x0848(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalDataTableRowName_ItemData          WaterBuildingAllowItemId;                          // 0x084C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WaterBuildingFoundationMinHeightAboveWaterSurface; // 0x0854(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EPalBuildObjectInstallStrategy, struct FVector> BuildSimulationFoundationCheckCollisionScale; // 0x0858(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         BuildSimulationRoofHeightOffset;                   // 0x08A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildSimulationStairHeightOffset;                  // 0x08AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildSimulationFoundationHeightOffset;             // 0x08B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildSimulationLeanAngleMax;                       // 0x08B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildingProgressInterpolationSpeed;                // 0x08B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayerRecord_BuildingObjectMaxNum;                 // 0x08BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildingMaxZ;                                      // 0x08C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SnapBuildObjectTraceDistance;                      // 0x08C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SnapBuildObjectInstallReticleDistance;             // 0x08C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SnapBuildObjectAttachDistance;                     // 0x08CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SnapBuildObjectHeightDistance;                     // 0x08D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SnapBuildObjectMinBoxExtentZ;                      // 0x08D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InBuildProcessObjectExpireRealHours;               // 0x08D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8DC[0x4];                                      // 0x08DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FShooterSpringCameraParameter          BuilderModeCameraOffset;                           // 0x08E0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         BuilderModeInstallableRange;                       // 0x0908(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PaintBuildModeInstallableRange;                    // 0x090C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BuildObj_HatchedPalCharacterLevel;                 // 0x0910(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuildObj_DamageScarecrowStartRecoveryTime;         // 0x0914(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampAreaRange;                                 // 0x0918(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalArriveToWorkLocationRange;                      // 0x091C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalArriveToWorkLocationRangeZ;                     // 0x0920(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampNeighborMinimumDistance;                   // 0x0924(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampNeighborMinimumDistance_PVP;               // 0x0928(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampTreasureMapPointAddRange;                  // 0x092C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalRotateSpeedToWork;                              // 0x0930(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampFoliageBoundsRadius;                       // 0x0934(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampFoliageWorkableRange;                      // 0x0938(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampHungerApproachToPlayer;                    // 0x093C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampHungerUnreachableObjectTimeoutRealSeconds; // 0x0940(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HungerHUDDisplayRange;                             // 0x0944(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkAmountBySecForPlayer;                          // 0x0948(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerEventTriggerInterval;                // 0x094C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerEventTriggerProbability;             // 0x0950(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerSanityWarningThreshold;              // 0x0954(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerFinishEatingFullStomach;             // 0x0958(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerFinishEatingSanity;                  // 0x095C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         BaseCampWorkerFinishEatCount;                      // 0x0960(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerRecoverHungryTurnToTargetTimeout;    // 0x0964(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerStartSleepHpPercentage;              // 0x0968(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerSleepInPlaceRecoverSanityRate;       // 0x096C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerDistancePickableItem;                // 0x0970(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_974[0x4];                                      // 0x0974(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalBaseCampItemContainerType>         BaseCampBuildingItemContainerTypes;                // 0x0978(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         FoliageRespawnFailedExtraRangeOfBaseCamp;          // 0x0988(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampPalCombatRange_AddCampRange;               // 0x098C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampPalCombatRange_AddCampRange_PVP;           // 0x0990(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampExtraWorkAreaRange;                        // 0x0994(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatInterval                         BaseCampPalWalkTime_BeforeSleep;                   // 0x0998(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampPalSleepMinMinutesThrown;                  // 0x09A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampTimeFinishBattleModeAfterEmptyEnemy;       // 0x09A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPalCharacterImportanceType                   BaseCampWorkerSimpleMoveThreshold;                 // 0x09A8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPalCharacterImportanceType                   BaseCampWorkerMoveModeChangeThreshold;             // 0x09A9(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9AA[0x2];                                      // 0x09AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BaseCampWorkerDirectorTickForAssignWorkByCount;    // 0x09AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerTimeDetectContinuousStuck;           // 0x09B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerMaxTimeReturnBack;                   // 0x09B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerWanderingSpeedMax;                   // 0x09B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampDetectRaidInvasionVolumeHeight;            // 0x09BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampPVPUnderRaidTime;                          // 0x09C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerLookToTargetWork;                    // 0x09C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReviveWorkAdditionalRange;                         // 0x09C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkAroundRangeDefault;                            // 0x09CC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<EPalWorkType>                          IssueNotifyWorkTypes;                              // 0x09D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         WorkAmountByManMonth;                              // 0x09E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkNotifyDelayTime;                               // 0x09E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkFinishDelayCallAddWorkNotifyDelayTime;         // 0x09E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkIgnitionTorchWaitTime;                         // 0x09EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EPalWorkAssignableCheckResult, EPalMonsterControllerBaseCampLogType> WorkAssignFailedLogTypeMap; // 0x09F0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         WorkTransportingSpeedRate;                         // 0x0A40(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A44[0x4];                                      // 0x0A44(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalDataTableRowName_ItemData>  BaseCampNotTransportItemBlackList;                 // 0x0A48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         WorkTransportingDelayTimeDropItem;                 // 0x0A58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampStopProvideEnergyInterval;                 // 0x0A5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EPalBaseCampPassiveEffectWorkHardType, struct FPalBaseCampPassiveEffectWorkHardInfo> BaseCampPassiveEffectWorkHardInfoMap; // 0x0A60(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkCollectionRestoreStashSeconds;         // 0x0AB0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BaseCampWorkerDirectorBattleRestoreStashSeconds;   // 0x0AB4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkTransportingItemNumRateInShouldTeleportWorker; // 0x0AB8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_ABC[0x4];                                      // 0x0ABC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<int32, struct FPalClinicHygieneStarLevelRange> ClinicHygieneStarLevelRanges;                // 0x0AC0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            ClinicAdditionalSuppressRateByMedicineLv;          // 0x0B10(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            ClinicAdditionalSanitySuppressRateByMedicineLv;    // 0x0B60(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EPalBaseCampWorkerSickType, int32>       ClinicRequiredMedicineLvForSickness;               // 0x0BB0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FPalWorkTypeSet>                WorkTypeAssignPriorityOrder;                       // 0x0C00(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_Build;                        // 0x0C10(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_FoliageWork;                  // 0x0C80(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_ReviveCharacterWork;          // 0x0CF0(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_TransportItemInBaseCamp;      // 0x0D60(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_RepairBuildObjectInBaseCamp;  // 0x0DD0(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_BreedFarm;                    // 0x0E40(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_ExtinguishBurn;               // 0x0EB0(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkAssignDefineDataStaticSetting  WorkAssignDefineData_CoolOverHeat;                 // 0x0F20(0x0070)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FPalWorkAssignDefineDataStaticSetting> WorkAssignDefineData_TreasureBoxUnlock;     // 0x0F90(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         WorkActionAttackDamageRate;                        // 0x0FA0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WorkSuitabilityMaxRank;                            // 0x0FA4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                 TransportItemAbsorbRangeByWorkSuitabilityRank;     // 0x0FA8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EPalWorkSuitability, struct FPalWorkSuitabilityDefineData> WorkSuitabilityDefineDataMap;    // 0x0FB8(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkSuitabilityCollectionDefineData WorkSuitabilityDefineData_Collection;             // 0x1008(0x0028)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkSuitabilityDeforestDefineData  WorkSuitabilityDefineData_Deforest;                // 0x1030(0x0028)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalWorkSuitabilityMiningDefineData    WorkSuitabilityDefineData_Mining;                  // 0x1058(0x0028)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         DropItemWaitInsertMaxNumPerTick;                   // 0x1080(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MergeDropItemRange;                                // 0x1084(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalItemFilterPreference               ItemFilterPreference;                              // 0x1088(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<struct FPalDataTableRowName_ItemData, struct FPalPickingItemSetting> PickingItemSetting;    // 0x10D8(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<struct FPalDataTableRowName_ItemData, struct FPalLanternItemSetting> LanternItemSetting;    // 0x1128(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalDungeonMarkerPointSpawnParameter   DungeonSpawnParameterDefault;                      // 0x1178(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         GamePad_NotAimCameraRotateSpeed_DegreePerSecond;   // 0x1188(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GamePad_AimCameraRotateSpeed_DegreePerSecond;      // 0x118C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Mouse_NotAimCameraRotateSpeed;                     // 0x1190(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Mouse_AimCameraRotateSpeed;                        // 0x1194(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         YawCameraMaxSpeedRate;                             // 0x1198(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeForCameraMaxSpeed;                             // 0x119C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AimInterpInterval;                                 // 0x11A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatRange                            RideFOVRange;                                      // 0x11A4(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinFOV;                                            // 0x11B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxFOV;                                            // 0x11B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatRange                            SprintWalkFOVRange;                                // 0x11BC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFloatRange                            SprintRideFOVRange;                                // 0x11CC(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SprintFOVInterpSpeed;                              // 0x11DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseNewCameraOnRolling;                            // 0x11E0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11E1[0x3];                                     // 0x11E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         InvaderSelfDeleteAddTime;                          // 0x11E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         VisitorSelfDeleteTime;                             // 0x11E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InvadeProbability;                                 // 0x11EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeOccurablePlayerLevel;                        // 0x11F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeOccurableBaseCampLevel;                      // 0x11F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeJudgmentInterval_Minutes;                    // 0x11F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeCollTime_Max_Minutes;                        // 0x11FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeCollTime_Min_Minutes;                        // 0x1200(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeReturnTime_Minutes;                          // 0x1204(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeStartPoint_BaseCampRadius_Min_cm;            // 0x1208(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeStartPoint_BaseCampRadius_Max_cm;            // 0x120C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InvaderTargetBaseCampRangeMargin;                  // 0x1210(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InvaderOutOfRangePlayerHateKeepThreshold;          // 0x1214(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InvaderPathWaterContinuousDistanceThreshold;       // 0x1218(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InvaderPathWaterTotalDistanceThreshold;            // 0x121C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisitorNPCProbability;                             // 0x1220(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         VisitorNPCReturnTime_Minutes;                      // 0x1224(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InvaderDeclarationIntarvalMinutes;                 // 0x1228(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InvadeGradeOffset;                                 // 0x122C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecruitBadPalProbability;                          // 0x1230(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RecruitCarreerTextNum;                             // 0x1234(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         RecruitAppealDefaultTextNum;                       // 0x1238(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecruitContractFeeMultiplier;                      // 0x123C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RidingAimOpacity;                                  // 0x1240(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RidingAimLowAngleOpacity;                          // 0x1244(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         hideUITimeWhenNotConflict;                         // 0x1248(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         firstCapturedUIDisplayTime;                        // 0x124C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         capturedUIDisplayTime;                             // 0x1250(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         firstActivatedOtomoInfoDisplayTime;                // 0x1254(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         playerLevelUpUIDIsplayTime;                        // 0x1258(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         playerExpGaugeUIDisplayTime;                       // 0x125C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         otomoExpGaugeUIDisplayTime;                        // 0x1260(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         npcGaugeDisplayDistance;                           // 0x1264(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         npcGaugeDisplayDistance_PVP;                       // 0x1268(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OtherOtomoGaugeDisplayDistance_PVP;                // 0x126C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         npcGaugeDisplayRange_CameraSight;                  // 0x1270(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         npcGaugeDisplayRange_CameraSight_PVP;              // 0x1274(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OtherOtomoGaugeDisplayRange_CameraSight_PVP;       // 0x1278(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GuildMemberGaugeDisplayDistance;                   // 0x127C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GuildMemberGaugeDisplayDistance_PVP;               // 0x1280(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         downPlayerLoupeDisplayDistance;                    // 0x1284(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         downPlayerGaugeDisplayRange_CameraSight;           // 0x1288(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_128C[0x4];                                     // 0x128C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              ReticleOffsetRate;                                 // 0x1290(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         lowHealthEffectParcent;                            // 0x12A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12A4[0x4];                                     // 0x12A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPalDamageTextType, int32>               damageTextMargineMap;                              // 0x12A8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         DamageTextDisplayLength;                           // 0x12F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DamageTextDisplayLength_PVP;                       // 0x12FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              damageTextMaxOffset;                               // 0x1300(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         damageTextOffsetInterpolationLength;               // 0x1310(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1314[0x4];                                     // 0x1314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPalDamageTextType, float>               damageTextScaleMap;                                // 0x1318(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FVector2D                              damageTextRandomOffset;                            // 0x1368(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         strongEnemyMarkLevel;                              // 0x1378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         otomoInteractUIDisplayDistance;                    // 0x137C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         enemyMarkUIMinScale;                               // 0x1380(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         enemyMarkScaleInterpolationLength;                 // 0x1384(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              npcHPGaugeGlobalOffset;                            // 0x1388(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         delayGaugeStartTime;                               // 0x1398(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         delayGaugeProgressPerSecond;                       // 0x139C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         inventoryWeaponRangeMaxBorder;                     // 0x13A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         inventoryWeaponStabilityMinBorder;                 // 0x13A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         inventoryWeaponAccuracyMinBorder;                  // 0x13A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         worldmapUIMaskClearSize;                           // 0x13AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         worldmapUIFTMergeDistance;                         // 0x13B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         worldmapUIMaxMarker;                               // 0x13B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         worldmapUIMaxGuildMarker;                          // 0x13B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         worldmapUIMaxGuildPin;                             // 0x13BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NPCHPGaugeUpdateSpan;                              // 0x13C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CaptureFailedUIDisplayTime;                        // 0x13C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalDataTableRowName_ItemData>  CaptureSphereSortArray;                            // 0x13C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         OpenGameOverUITime;                                // 0x13D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InventoryWeightAlertRate;                          // 0x13DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InventoryWeightGaugeDIsplayTime;                   // 0x13E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OtomoLevelUpNoticeUIDisplayTime;                   // 0x13E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OtomoMasteredWazaNoticeUIDisplayTime;              // 0x13E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProgressGaugeInterpolationSpeed;                   // 0x13EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeleportFadeInTime;                                // 0x13F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeleportFadeOutTime;                               // 0x13F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayerTeleportTimeoutTime;                         // 0x13F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_13FC[0x4];                                     // 0x13FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 PassiveSkillAppendNumWeights;                      // 0x1400(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EPalPassiveSkillEffectTargetItemType, struct FPalPassiveSkillEffectItemTypeInfo> PassiveSkillEffectItemTypeMap; // 0x1410(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	bool                                          bIsStackablePartnerSkillBySameTribe;               // 0x1460(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsEggLauncherExplosion;                           // 0x1461(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1462[0x2];                                     // 0x1462(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ThrowPalBattleRadius;                              // 0x1464(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DirectOrderTargetSearchRadius;                     // 0x1468(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ThrowPalWorkRadius;                                // 0x146C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RopeHitPowe;                                       // 0x1470(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RopePullPower;                                     // 0x1474(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DefaultMaxInventoryWeight;                         // 0x1478(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RaycastLengthForDetectIndoor;                      // 0x147C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectConnectAnyPlaceRaycastLength;             // 0x1480(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShootingTargetRayCastDistance;                     // 0x1484(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ShootingTargetRayCastMaxDegree;                    // 0x1488(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_148C[0x4];                                     // 0x148C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 CaptureJudgeRateArray;                             // 0x1490(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         CaptureBallBoundCountMax;                          // 0x14A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14A4[0x4];                                     // 0x14A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           ExceptCapturedItemList;                            // 0x14A8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FPalDataTableRowName_ItemData>  ExceptMeatCutItemList;                             // 0x14B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EPalCaptureSphereLevelType, int32>       CaptureSphereLevelMap;                             // 0x14C8(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EPalStatusID, float>                     CaptureRateAddByStatusMap;                         // 0x1518(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         IgnoreFirstCaptureFailedHPRate;                    // 0x1568(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         IgnoreFirstCaptureFailedCaptureRate;               // 0x156C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CaptureRateAdd_ByLegHold;                          // 0x1570(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CriticalCaptureBonus;                              // 0x1574(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LongPressInterval;                                 // 0x1578(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LongPressInterval_EnemyCampCage;                   // 0x157C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LongPressInterval_StartRaidBoss;                   // 0x1580(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LongPressInterval_ChangeBullet;                    // 0x1584(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RaidBossArea_PhaseTimeLimit_Ready;                 // 0x1588(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RaidBossArea_PhaseTimeLimit_Result;                // 0x158C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LongPressInterval_GetHatchedPal;                   // 0x1590(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LongPressInterval_TreasureMapPoint;                // 0x1594(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CrouchLockAttenuation;                             // 0x1598(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsEnableCharacterWazaScale;                        // 0x159C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOverrideDamageAdditiveAnimation;                 // 0x159D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_159E[0x2];                                     // 0x159E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BlinkInterval;                                     // 0x15A0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorkAnimSpeedPower;                                // 0x15A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CrimeStateMaintainDurationBaseDefault;             // 0x15A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CrimeMisfireSafeTimeDuration;                      // 0x15AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CrimeMisfireSafeCooldownDuration;                  // 0x15B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         technologyPointPerLevel;                           // 0x15B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         bossTechnologyPointPerTowerBoss;                   // 0x15B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         bossTechnologyPointPerNormalBoss;                  // 0x15BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FPalDataTableRowName_RecipeTechnologyData> DefaultUnlockTechnology;                // 0x15C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         DefaultTechnologyPoint;                            // 0x15D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TechnologyPoint_UnlockFastTravel;                  // 0x15D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DecreaseSanity_DamagedMultiply;                    // 0x15D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FullStomachPercent_RecoverySanity;                 // 0x15DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RecoverySanity_FullStomach;                        // 0x15E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DecreaseSanity_Hunger;                             // 0x15E4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DecreaseSanity_Starvation;                         // 0x15E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Spawner_IsCheckLoadedWorldPartition;               // 0x15EC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15ED[0x3];                                     // 0x15ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         SpawnerDisableDistanceCM_FromBaseCamp;             // 0x15F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnemyCampSpawnerDisableDistanceCM_FromBaseCamp;    // 0x15F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultSpawnRadius_S;                      // 0x15F8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultSpawnRadius_M;                      // 0x15FC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultSpawnRadius_L;                      // 0x1600(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultSpawnRadius_NPC;                    // 0x1604(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultDespawnDistance_S;                  // 0x1608(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultDespawnDistance_M;                  // 0x160C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultDespawnDistance_L;                  // 0x1610(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Spawner_DefaultDespawnDistance_NPC;                // 0x1614(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             CharacterHeadMeshDataTable;                        // 0x1618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             CharacterBodyMeshDataTable;                        // 0x1620(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             CharacterHairMeshDataTable;                        // 0x1628(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             CharacterEquipmentArmorMeshDataTable;              // 0x1630(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             CharacterEyeMaterialDataTable;                     // 0x1638(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                             GliderMeshDataTable;                               // 0x1640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CharacterMakeColorLimit_SV;                        // 0x1648(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsAutoEquipMasteredWaza;                           // 0x164C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ActiveUNKO;                                        // 0x164D(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_164E[0x2];                                     // 0x164E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxSpawnableDeathPenaltyChest;                     // 0x1650(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxSpawnableDeathDroppedCharacter;                 // 0x1654(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   BuildObjectInstallStrategy_SinkAllowCollisionPresetName; // 0x1658(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectShakeTimeOnDamaged;                       // 0x1660(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1664[0x4];                                     // 0x1664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                MapObjectShakeOffsetOnDamaged;                     // 0x1668(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MapObjectOutlineByPaintTarget;                     // 0x1680(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MapObjectOutlineByReticleTargetting;               // 0x1684(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MapObjectOutlineByInteractable;                    // 0x1688(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalMapObjectRepairInfo                MapObjectRepairInfo;                               // 0x168C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         FoliageExtentsXY;                                  // 0x16A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorldTreeWoodDecayLogNotifyDistance;               // 0x16A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorldTreeOreDecayLogNotifyDistance;                // 0x16A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WorldTreeDecayLogNotifyDelaySeconds;               // 0x16AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FoliageChunkSeparateScale;                         // 0x16B0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectHPDisplayDistance;                        // 0x16B4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OilrigCannonHPDisplayDistance;                     // 0x16B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectHPDisplayTime;                            // 0x16BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectMultiplayModifierDisplayDistance;         // 0x16C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectMultiplayModifierDisplayTime;             // 0x16C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectGateLockTime;                             // 0x16C8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDirectObtainFromTreasureBox;                      // 0x16CC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16CD[0x3];                                     // 0x16CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         NoDropItemDamageRateFromFoliageMaxHp;              // 0x16D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_16D4[0x4];                                     // 0x16D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalWeaponType>                        WeaponTypesForceDropItemFromFoliage;               // 0x16D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         MapObjectEffectTriggerAccumulate_Burn;             // 0x16E8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectEffect_Burn_DamageHpRate;                 // 0x16EC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                MapObjectEffect_Burn_DamageAroundRange;            // 0x16F0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectEffect_Burn_DamageAroundInterval;         // 0x1708(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectEffect_Burn_DamageAroundDamageValue;      // 0x170C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectEffect_Burn_DamageAroundAccumulateValue;  // 0x1710(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectEffect_Burn_DamageAroundAccumulateValue_ForCharacter; // 0x1714(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PasswordLockFailedMaxNum;                          // 0x1718(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectItemChestCorruptionRateFromWorkSpeed;     // 0x171C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MapObjectItemChestUnlockAutoPrivateTime;           // 0x1720(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1724[0x4];                                     // 0x1724(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                MapObjectDropItemLocationOffset;                   // 0x1728(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DetectorMaxRange;                                  // 0x1740(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TreasureMapPointActivateMaxNum;                    // 0x1744(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalOptimizeParameter                  RuntimeOptimizeParameter;                          // 0x1748(0x0588)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<int32>                                 WorldSecurityBountyByWantedLevelMap;               // 0x1CD0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FPalWorldSecurityWantedPoliceSettingData> WorldSecurityWantedPoliceSettingDataMap; // 0x1CE0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FPalWorldSecurityWantedPoliceSettingData> WorldSecurityWantedPoliceSettingDataMapForDS; // 0x1CF0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         WorldSecurityGlobalPoliceSpawnCap;                 // 0x1D00(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WorldSecurityGlobalPoliceSpawnCapForDS;            // 0x1D04(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StatusPointPerLevel;                               // 0x1D08(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddMaxHPPerStatusPoint;                            // 0x1D0C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddMaxSPPerStatusPoint;                            // 0x1D10(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddPowerPerStatusPoint;                            // 0x1D14(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddMaxInventoryWeightPerStatusPoint;               // 0x1D18(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddCaptureLevelPerStatusPoint;                     // 0x1D1C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddWorkSpeedPerStatusPoint;                        // 0x1D20(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddMaxHPPerHPRank;                                 // 0x1D24(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddAttackPerAttackRank;                            // 0x1D28(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddDefencePerDefenceRank;                          // 0x1D2C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AddWorkSpeedPerWorkSpeedRank;                      // 0x1D30(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxUseablePoint_SumStatusPointAndExStatusPoint_PerParameter; // 0x1D34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                 Combi_TalentInheritNum;                            // 0x1D38(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<float>                                 Combi_PassiveInheritNum;                           // 0x1D48(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<float>                                 Combi_PassiveRandomAddNum;                         // 0x1D58(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         Combi_BossPalRate;                                 // 0x1D68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D6C[0x4];                                     // 0x1D6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalEggRankInfo>                PalEggRankInfoArray;                               // 0x1D70(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<EPalElementType, struct FPalDataTableRowName_MapObjectData> PalEggMapObjectIdMap;           // 0x1D80(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalDataTableRowName_MapObjectData     PalEggMapObjectId_WorldTree;                       // 0x1DD0(0x0008)(Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Combi_MutationRate;                                // 0x1DD8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Combi_MutationRankCoefficient;                     // 0x1DDC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Combi_MutationRankDiffPenalty;                     // 0x1DE0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Combi_MutationRandomCoefficient;                   // 0x1DE4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalDataTableRowName_MapObjectData     PalEggMapObjectId_Mutation;                        // 0x1DE8(0x0008)(Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Combi_MutationMinTalent;                           // 0x1DF0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Combi_MutationInitialRank;                         // 0x1DF1(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1DF2[0x6];                                     // 0x1DF2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalBreedingItemEffectDataAsset*        BreedingItemEffectDataAsset;                       // 0x1DF8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            PalEggHatchingSpeedRateByTemperature;              // 0x1E00(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UFont*                                  DebugInfoFont;                                     // 0x1E50(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxGuildNameLength;                                // 0x1E58(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         JoinGuildRequestInteractLongPushTime;              // 0x1E5C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GuildChestSlotNum;                                 // 0x1E60(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TutorialMinDisplayTime;                            // 0x1E64(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TutorialDisplayTime;                               // 0x1E68(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1E6C[0x4];                                     // 0x1E6C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPalUIRewardDisplayType, float>          CommonRewardDisplayTime;                           // 0x1E70(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         DeadBodyDestroySecond;                             // 0x1EC0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DeadBodyOutOfSightDestroySecond;                   // 0x1EC4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnemyCampRespawnCoolTime;                          // 0x1EC8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         EnemyCampDespawnDelayTime;                         // 0x1ECC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalBoxReviveTime;                                  // 0x1ED0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AfterNPCTalkDelayTime_Interact;                    // 0x1ED4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinSprintThreshold;                                // 0x1ED8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxSprintThreshold;                                // 0x1EDC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinHPGaugeDisplayTime;                             // 0x1EE0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CombatHeliHPGaugeDisplayDistance;                  // 0x1EE4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         KingWhaleHPGaugeDisplayDistance;                   // 0x1EE8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxOtomoLoadoutCount;                              // 0x1EEC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ToggleInteractMoveDelay;                           // 0x1EF0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PlayerToPlayerDamageRate;                    // 0x1EF4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PlayerToPalDamageRate;                       // 0x1EF8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PlayerToPlayerStatusRate;                    // 0x1EFC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PlayerToPalStatusRate;                       // 0x1F00(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PalToPlayerDamageRate;                       // 0x1F04(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PalToPalDamageRate;                          // 0x1F08(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PalToPlayerStatusRate;                       // 0x1F0C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Arena_PalToPalStatusRate;                          // 0x1F10(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Arena_RankPoint_WinToPlayer;                       // 0x1F14(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Arena_RankPoint_WinToNPC;                          // 0x1F18(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Arena_RankPoint_Lose;                              // 0x1F1C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<EPalArenaRank, int32>                    Arena_RankRequirePoints;                           // 0x1F20(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TMap<int32, float>                            Arena_RankPointDiffRate;                           // 0x1F70(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         HardcoreLostPalDespawnTime;                        // 0x1FC0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PalEatMotionSpeedWhenStarvation;                   // 0x1FC4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPalDataTableRowName_ItemData          PalReverseGenderItemID;                            // 0x1FC8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TeleportInvincibleTime;                            // 0x1FD0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DoctorMaxSurgiCountInDay;                          // 0x1FD4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         IceTypeOtomoCorruptionDecreace;                    // 0x1FD8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MapIconSize;                                       // 0x1FDC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FColor>                         DefaultMapObjectPaintColors;                       // 0x1FE0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FColor>                         DefaultMapObjectLampColors;                        // 0x1FF0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	float                                         DimensionLockerTimeoutSec;                         // 0x2000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_Min;                               // 0x2004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_Max;                               // 0x2008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_AutoIncrementRequireSanity;        // 0x200C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_AutoIncrementInteravalMinutes;     // 0x2010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_AutoIncrementOtomo;                // 0x2014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_AutoIncrementActiveOtomo;          // 0x2018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_AutoIncrementWorker;               // 0x201C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_StomachRate;                       // 0x2020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_SanityRate;                        // 0x2024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_Petting;                           // 0x2028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_Starvation;                        // 0x202C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_Sick;                              // 0x2030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_Dead;                              // 0x2034(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         FriendshipPoint_SleepOnSide;                       // 0x2038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_203C[0x4];                                     // 0x203C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPalBaseCampPassiveEffectWorkHardType, float> FriendshipPoint_WorkHardRate;                 // 0x2040(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	int32                                         FriendshipRank_AutoFavorite;                       // 0x2090(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TrialPlayMinute;                                   // 0x2094(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialParameterCollection*           GlobalMaterialParameterCollection;                 // 0x2098(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WildlifeSanctuaryFlyingDetectSeconds;              // 0x20A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         WildWarlikePalMaxBattleLevelDiff;                  // 0x20A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CutsceneSkipForceStopDelay;                        // 0x20A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_20AC[0x4];                                     // 0x20AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalDataTableRowName_PalMonsterData> EndingExcludeCharacterIDs;                    // 0x20B0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<class FString>                         SkippedAchievementIdsOnPS5;                        // 0x20C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<float>                                 FishingDifficultyRateSteps;                        // 0x20D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class UDataTable*                             SoundSourceDataTable;                              // 0x20E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<EPalOptimizeType, TSubclassOf<class UPalOptimizeParameterSetting>> OptimizeParameterSettingClass; // 0x20E8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TSubclassOf<class UPalMapObjectCharacterTeamMissionFunctionsBase> ExpeditionStrengthSortFunctionsClass; // 0x2138(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	float CalcCaptureRate(float captureItemLevel, const class UPalIndividualCharacterHandle* targetHandle, const class UPalIndividualCharacterHandle* throwCharacterHandle, bool bIsSneakBonus);
@@ -38612,6 +38675,8 @@ public:
 	float GetBaseCampNeighborMinimumDistance() const;
 	float GetBaseCampPalCombatRange_AddCampRange() const;
 	int32 GetCaptureLevelBySphereType(EPalCaptureSphereLevelType SphereType) const;
+	float GetFishingDifficultyRateByStepIndex(const int32 StepIndex) const;
+	int32 GetFishingDifficultyStepIndexByRate(const float Rate) const;
 	const class UPalOptionSubsystem* GetOptionSubsystem(const class UObject* WorldContextObject) const;
 	float GetTransportItemAbsorbRange(int32 WorkSuitabilityRank) const;
 
@@ -38689,7 +38754,7 @@ public:
 DUMPER7_ASSERTS_APalGameState;
 
 // Class Pal.PalGameStateInGame
-// 0x0240 (0x0520 - 0x02E0)
+// 0x0260 (0x0540 - 0x02E0)
 class alignas(0x10) APalGameStateInGame : public APalGameState
 {
 public:
@@ -38739,13 +38804,18 @@ public:
 	TMulticastInlineDelegate<void(const struct FPalChatMessage& Message)> OnRecievedChatMessageDelegate; // 0x0478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const class FString& NoticeMessage)> OnRecievedServerNoticeDelegate; // 0x0488(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class FString                                 SaveConfigCategoryName;                            // 0x0498(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_4A8[0x78];                                     // 0x04A8(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A8[0x78];                                     // 0x04A8(0x0078)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              FEndTrialDelegate;                                 // 0x0520(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FTimerHandle                           TrialTimerHandle;                                  // 0x0530(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_538[0x8];                                      // 0x0538(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyGrid0LoadingRangeFromGraphicsOption(const struct FPalOptionGraphicsSettings& PrevSettings, const struct FPalOptionGraphicsSettings& NewSettings);
 	void BroadcastChatMessage(const struct FPalChatMessage& ChatMessage);
 	void BroadcastServerNotice(const class FString& NoticeMessage);
+	int32 GetRemainTrialTimeSecond();
 	void OnCompleteSyncAllFromServer_InClient(class APalPlayerState* PlayerState);
+	void OnOverTrialTime();
 	void OnRep_BaseCampReplicator();
 	void OnRep_CharacterManagerReplicator();
 	void OnRep_ClientOnlyPlayerInfo();
@@ -38760,6 +38830,7 @@ public:
 	float GetServerFrameTime() const;
 	class FString GetWorldName() const;
 	class FString GetWorldSaveDirectoryName() const;
+	bool HasTrialEnded() const;
 
 public:
 	static class UClass* StaticClass()
@@ -38852,7 +38923,7 @@ public:
 DUMPER7_ASSERTS_UPalGameSystemInitSequence_WaitForWorldSystemInit;
 
 // Class Pal.PalUIInventoryUseItemWindow
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIInventoryUseItemWindow final : public UPalUserWidgetOverlayUI
 {
 public:
@@ -39301,11 +39372,11 @@ public:
 DUMPER7_ASSERTS_UPalGameViewportClient;
 
 // Class Pal.PalGameWorldSettings
-// 0x0208 (0x0230 - 0x0028)
+// 0x0210 (0x0238 - 0x0028)
 class UPalGameWorldSettings final : public UObject
 {
 public:
-	struct FPalOptionWorldSettings                OptionSettings;                                    // 0x0028(0x0208)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSettings                OptionSettings;                                    // 0x0028(0x0210)(Edit, Config, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -39399,21 +39470,22 @@ public:
 DUMPER7_ASSERTS_UPalGimmickDamageReactionComponent;
 
 // Class Pal.PalGliderComponent
-// 0x0098 (0x0138 - 0x00A0)
+// 0x00A8 (0x0148 - 0x00A0)
 class UPalGliderComponent : public UActorComponent
 {
 public:
 	TMulticastInlineDelegate<void()>              OnStartGlidingDelegate;                            // 0x00A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnEndGlidingDelegate;                              // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TArray<struct FPalGliderPalInfo>              GliderPalInfos;                                    // 0x00C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FPalDataTableRowName_ItemData>  DisablePalGliderItemIds;                           // 0x00D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class APalGliderObject*                       CurrentGlider;                                     // 0x00E0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   CurrentGliderPalID;                                // 0x00E8(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSoftClassPtr<class UClass>                   CurrentGliderSoftClass;                            // 0x00F0(0x0030)(Net, Transient, RepNotify, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSubclassOf<class APalGliderObject>           CurrentGliderClass;                                // 0x0120(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalIndividualCharacterParameter*       CurrentGliderIndividualParameter;                  // 0x0128(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsGliding;                                        // 0x0130(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C0[0x10];                                      // 0x00C0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalGliderPalInfo>              GliderPalInfos;                                    // 0x00D0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FPalDataTableRowName_ItemData>  DisablePalGliderItemIds;                           // 0x00E0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class APalGliderObject*                       CurrentGlider;                                     // 0x00F0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   CurrentGliderPalID;                                // 0x00F8(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSoftClassPtr<class UClass>                   CurrentGliderSoftClass;                            // 0x0100(0x0030)(Net, Transient, RepNotify, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class APalGliderObject>           CurrentGliderClass;                                // 0x0130(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalIndividualCharacterParameter*       CurrentGliderIndividualParameter;                  // 0x0138(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsGliding;                                        // 0x0140(0x0001)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void CancelGliding();
@@ -41637,14 +41709,14 @@ public:
 DUMPER7_ASSERTS_UPalHUDDispatchParameter_PalBox;
 
 // Class Pal.PalWorldOptionSaveGame
-// 0x0218 (0x0240 - 0x0028)
+// 0x0220 (0x0248 - 0x0028)
 class UPalWorldOptionSaveGame final : public USaveGame
 {
 public:
 	int32                                         Version;                                           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              Timestamp;                                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalOptionWorldSaveData                OptionWorldData;                                   // 0x0038(0x0208)(NativeAccessSpecifierPublic)
+	struct FPalOptionWorldSaveData                OptionWorldData;                                   // 0x0038(0x0210)(NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -41964,33 +42036,35 @@ public:
 DUMPER7_ASSERTS_IPalGamePlayerDataSaveInterface;
 
 // Class Pal.PalPlayerAccount
-// 0x0128 (0x0150 - 0x0028)
+// 0x01C8 (0x01F0 - 0x0028)
 class UPalPlayerAccount final : public UObject
 {
 public:
-	struct FGuid                                  PlayerUId;                                         // 0x0028(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FPalInstanceID                         InstanceId;                                        // 0x0038(0x0030)(Edit, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EPalPlayerAccountState                        State;                                             // 0x0068(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          IndividualHandle;                                  // 0x0070(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_78[0x8];                                       // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             LastSavedTransform;                                // 0x0080(0x0060)(Edit, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalPlayerOtomoData*                    OtomoData;                                         // 0x00E0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalPlayerDataCharacterMake*            CharacterMakeData;                                 // 0x00E8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalPlayerInventoryData*                InventoryData;                                     // 0x00F0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalPlayerDataPalStorage*               PalStorage;                                        // 0x00F8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalTechnologyData*                     TechnologyData;                                    // 0x0100(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalPlayerRecordData*                   RecordData;                                        // 0x0108(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalPlayerSkinData*                     PlayerSkinData;                                    // 0x0110(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPalQuestManager*                       QuestManager;                                      // 0x0118(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsSelectedInitMapPoint;                           // 0x0120(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bShouldSaveOnNextTime;                             // 0x0121(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_122[0x6];                                      // 0x0122(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	uint64                                        PsnAccountId;                                      // 0x0128(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FDateTime                              GuildLastExitTime;                                 // 0x0130(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FDateTime                              LastOnlineDateTime;                                // 0x0138(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EPalPlayerPlatform                            PlayerPlatform;                                    // 0x0140(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_141[0xF];                                      // 0x0141(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMap<struct FGuid, struct FGuid>              PlayerBuildingGroupIdByInstanceId;                 // 0x0028(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	TMap<struct FGuid, int32>                     PlayerBuildingCountByGroupId;                      // 0x0078(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	struct FGuid                                  PlayerUId;                                         // 0x00C8(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPalInstanceID                         InstanceId;                                        // 0x00D8(0x0030)(Edit, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EPalPlayerAccountState                        State;                                             // 0x0108(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          IndividualHandle;                                  // 0x0110(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             LastSavedTransform;                                // 0x0120(0x0060)(Edit, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalPlayerOtomoData*                    OtomoData;                                         // 0x0180(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalPlayerDataCharacterMake*            CharacterMakeData;                                 // 0x0188(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalPlayerInventoryData*                InventoryData;                                     // 0x0190(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalPlayerDataPalStorage*               PalStorage;                                        // 0x0198(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalTechnologyData*                     TechnologyData;                                    // 0x01A0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalPlayerRecordData*                   RecordData;                                        // 0x01A8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalPlayerSkinData*                     PlayerSkinData;                                    // 0x01B0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalQuestManager*                       QuestManager;                                      // 0x01B8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsSelectedInitMapPoint;                           // 0x01C0(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bShouldSaveOnNextTime;                             // 0x01C1(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1C2[0x6];                                      // 0x01C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint64                                        PsnAccountId;                                      // 0x01C8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FDateTime                              GuildLastExitTime;                                 // 0x01D0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FDateTime                              LastOnlineDateTime;                                // 0x01D8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EPalPlayerPlatform                            PlayerPlatform;                                    // 0x01E0(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1E1[0xF];                                      // 0x01E1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -42134,7 +42208,7 @@ public:
 DUMPER7_ASSERTS_UPalStageEnterParameterBase;
 
 // Class Pal.PalHUDService
-// 0x02D0 (0x02F8 - 0x0028)
+// 0x0338 (0x0360 - 0x0028)
 class UPalHUDService : public UObject
 {
 public:
@@ -42154,10 +42228,10 @@ public:
 	TMulticastInlineDelegate<void(const struct FPalUICommonItemRewardData& RewardData)> OnNotifyCommonItemRewardDelegate; // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const struct FPalUICommonExpRewardData& RewardData)> OnNotifyCommonExpRewardDelegate; // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const TArray<struct FPalStaticItemIdAndNum>& StackItems)> OnChestQuickStackDelegate; // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	struct FUITransientData                       TransientData;                                     // 0x0120(0x01B0)(BlueprintVisible, Transient, NativeAccessSpecifierPublic)
-	TScriptInterface<class IPalHUDServiceProviderInterface> ServiceProvider;                         // 0x02D0(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2E0[0x10];                                     // 0x02E0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameter_FadeWidget*    FadeWidget;                                        // 0x02F0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FUITransientData                       TransientData;                                     // 0x0120(0x0218)(BlueprintVisible, Transient, NativeAccessSpecifierPublic)
+	TScriptInterface<class IPalHUDServiceProviderInterface> ServiceProvider;                         // 0x0338(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_348[0x10];                                     // 0x0348(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameter_FadeWidget*    FadeWidget;                                        // 0x0358(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UPalHUDDispatchParameterBase* CreateDispatchParameterForK2Node(const class UObject* WorldContextObject, TSubclassOf<class UPalHUDDispatchParameterBase> ParameterClass);
@@ -42738,6 +42812,7 @@ public:
 	void AddFriendShip(int32 Value, bool bApplyPassiveSkill);
 	void AddHP(const struct FFixedPoint64& PlusHP);
 	void AddPassiveSkill(class FName AddSkill, class FName OverrideSkill);
+	void CleanupOnRevive();
 	void ClearEquipWaza();
 	void DecreaseShieldHPByDamage(int32 Damage);
 	void DecrementUnusedStatusPoint();
@@ -43059,7 +43134,7 @@ public:
 DUMPER7_ASSERTS_UPalIndividualCharacterSaveParameterObject;
 
 // Class Pal.PalSyncTeleportComponent
-// 0x0100 (0x01A0 - 0x00A0)
+// 0x0120 (0x01C0 - 0x00A0)
 class alignas(0x10) UPalSyncTeleportComponent final : public UActorComponent
 {
 public:
@@ -43073,9 +43148,9 @@ public:
 	EPalSyncTeleportState                         SyncTeleportState;                                 // 0x0108(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_109[0x47];                                     // 0x0109(0x0047)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           TeleportMutekiTimerHandle;                         // 0x0150(0x0008)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_158[0x28];                                     // 0x0158(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalAutoSaveDisabler*                   AutoSaveDisabler;                                  // 0x0180(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_188[0x18];                                     // 0x0188(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_158[0x48];                                     // 0x0158(0x0048)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalAutoSaveDisabler*                   AutoSaveDisabler;                                  // 0x01A0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1A8[0x18];                                     // 0x01A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ForceReset_ServerInternal();
@@ -45867,21 +45942,22 @@ public:
 DUMPER7_ASSERTS_UPalShopProductCostTakerBase;
 
 // Class Pal.PalLevelObjectUnlockableFastTravelPoint
-// 0x00C8 (0x0378 - 0x02B0)
+// 0x00E0 (0x0390 - 0x02B0)
 class APalLevelObjectUnlockableFastTravelPoint : public APalLevelObjectActor
 {
 public:
-	uint8                                         Pad_2B0[0x8];                                      // 0x02B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class APalLevelObjectUnlockableFastTravelPoint* Self)> OnUpdateUnlockStateDelegate; // 0x02B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TScriptInterface<class IPalInteractiveObjectComponentInterface> InteractComp;                    // 0x02C8(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUnlocked;                                         // 0x02D8(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          EnableRequestUnlock;                               // 0x02D9(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2DA[0x2];                                      // 0x02DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   FastTravelPointID;                                 // 0x02DC(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2E4[0x4];                                      // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              SoftUnlockMapMaskTexture;                          // 0x02E8(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSoftClassPtr<class UClass>                   SoftCutsceneActor;                                 // 0x0318(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSoftClassPtr<class UClass>                   SoftTriggerEventObject;                            // 0x0348(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2B0[0x10];                                     // 0x02B0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class APalLevelObjectUnlockableFastTravelPoint* Self)> OnUpdateUnlockStateDelegate; // 0x02C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TScriptInterface<class IPalInteractiveObjectComponentInterface> InteractComp;                    // 0x02D0(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUnlocked;                                         // 0x02E0(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          EnableRequestUnlock;                               // 0x02E1(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2E2[0x2];                                      // 0x02E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   FastTravelPointID;                                 // 0x02E4(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2EC[0x4];                                      // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              SoftUnlockMapMaskTexture;                          // 0x02F0(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSoftClassPtr<class UClass>                   SoftCutsceneActor;                                 // 0x0320(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSoftClassPtr<class UClass>                   SoftTriggerEventObject;                            // 0x0350(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_380[0x10];                                     // 0x0380(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UAkAudioEvent* GetUnlockAkAudioEvent();
@@ -46307,7 +46383,7 @@ public:
 DUMPER7_ASSERTS_UPalStatusCollectItem;
 
 // Class Pal.PalLevelObject_LockGimmickPalFight
-// 0x0130 (0x03F0 - 0x02C0)
+// 0x0140 (0x0400 - 0x02C0)
 class APalLevelObject_LockGimmickPalFight final : public APalLevelObject_LockGimmickBase
 {
 public:
@@ -46317,31 +46393,32 @@ public:
 	float                                         GameStartServerTime;                               // 0x02CC(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeLimitSeconds;                                  // 0x02D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeoutTeleportDelaySeconds;                       // 0x02D4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EPalFightGameState NewState, EPalFightGameState OldState)> OnGameStateChangedDelegate; // 0x02D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(int32 Remaining, int32 Total)> OnEnemyCountChangedDelegate;        // 0x02E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	int32                                         RemainingEnemyCount;                               // 0x02F8(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalEnemyCount;                                   // 0x02FC(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USplineComponent*                       SplineComponent;                                   // 0x0300(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<struct FPalFightSpawnEntry>            SpawnEntries;                                      // 0x0308(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	float                                         LeaveGraceSeconds;                                 // 0x0318(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class APalAIController>           AIControllerClass;                                 // 0x0320(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USceneComponent*                        ReturnPointComponent;                              // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UPalLockGimmickPalFightWidget> WidgetClass;                                    // 0x0330(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUseLightOrb;                                      // 0x0338(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftClassPtr<class UClass>                   LightOrbClass;                                     // 0x0340(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LightOrbMoveSpeed;                                 // 0x0370(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LightOrbInterpSpeed;                               // 0x0374(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bLightOrbArrived;                                  // 0x0378(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPalIndividualCharacterHandle*>  SpawnedHandles;                                    // 0x0380(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_390[0x60];                                     // 0x0390(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         CaptureWaitRecheckSeconds;                         // 0x02D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxCaptureHoldSeconds;                             // 0x02DC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EPalFightGameState NewState, EPalFightGameState OldState)> OnGameStateChangedDelegate; // 0x02E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 Remaining, int32 Total)> OnEnemyCountChangedDelegate;        // 0x02F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	int32                                         RemainingEnemyCount;                               // 0x0300(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalEnemyCount;                                   // 0x0304(0x0004)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USplineComponent*                       SplineComponent;                                   // 0x0308(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FPalFightSpawnEntry>            SpawnEntries;                                      // 0x0310(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	float                                         LeaveGraceSeconds;                                 // 0x0320(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class APalAIController>           AIControllerClass;                                 // 0x0328(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USceneComponent*                        ReturnPointComponent;                              // 0x0330(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UPalLockGimmickPalFightWidget> WidgetClass;                                    // 0x0338(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUseLightOrb;                                      // 0x0340(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_341[0x7];                                      // 0x0341(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftClassPtr<class UClass>                   LightOrbClass;                                     // 0x0348(0x0030)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LightOrbMoveSpeed;                                 // 0x0378(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LightOrbInterpSpeed;                               // 0x037C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bLightOrbArrived;                                  // 0x0380(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPalIndividualCharacterHandle*>  SpawnedHandles;                                    // 0x0388(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_398[0x68];                                     // 0x0398(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Multicast_ActivateAndPlaySpawnEffect(class APalCharacter* Character);
 	void Multicast_NotifyUI(class APalPlayerCharacter* Player, EPalFightUINotify Notify);
-	void OnCreatedIndividualParameter(class UPalIndividualCharacterParameter* IndividualParameter);
 	void OnGameStateChanged(EPalFightGameState NewState, EPalFightGameState OldState);
 	void OnLightOrbArrived();
 	void OnLightOrbArrivedBP();
@@ -46680,7 +46757,7 @@ public:
 DUMPER7_ASSERTS_APalReplicatedLevelObjectActor;
 
 // Class Pal.PalLoadoutSelectorComponent
-// 0x0170 (0x0270 - 0x0100)
+// 0x01C0 (0x02C0 - 0x0100)
 class UPalLoadoutSelectorComponent final : public UPalItemSelectorComponent
 {
 public:
@@ -46692,17 +46769,18 @@ public:
 	EPalPlayerInventoryType                       primaryTargetInventoryType;                        // 0x0168(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         currentItemSlotIndex;                              // 0x016C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   NowEquipBallItemID;                                // 0x0170(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   NowEquipBallItemID;                                // 0x0170(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class APalWeaponBase*                         ThrowOtomoPalWeapon;                               // 0x0178(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class APalWeaponBase*>                 spawnedWeaponsArray;                               // 0x0180(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
 	TMap<class FName, class APalWeaponBase*>      spawnedBallMap;                                    // 0x0190(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	class APalWeaponBase*                         DummyBall;                                         // 0x01E0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EPalPlayerInventoryType                       replicatedPrimaryTargetInventoryType;              // 0x01E8(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         replicatedCurrentItemSlotIndex;                    // 0x01EC(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<struct FPalLoadoutSummonData>          replicatedSummonData;                              // 0x01F0(0x0010)(Net, ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	TArray<struct FPalLoadoutSummonData>          localonlySummonData;                               // 0x0200(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_210[0x60];                                     // 0x0210(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0[0x50];                                     // 0x01E0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalWeaponBase*                         DummyBall;                                         // 0x0230(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EPalPlayerInventoryType                       replicatedPrimaryTargetInventoryType;              // 0x0238(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_239[0x3];                                      // 0x0239(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         replicatedCurrentItemSlotIndex;                    // 0x023C(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<struct FPalLoadoutSummonData>          replicatedSummonData;                              // 0x0240(0x0010)(Net, ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	TArray<struct FPalLoadoutSummonData>          localonlySummonData;                               // 0x0250(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_260[0x60];                                     // 0x0260(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AttachSpawnOtomoPalThrowWeapon_ToAll(int32 issuerID, bool IsAttach, bool ShouldEquipDummyWeapon);
@@ -46726,6 +46804,7 @@ public:
 	void OnEquipItem(EPalPlayerInventoryType inventoryType, int32 Index_0);
 	void OnRemoveEquipItem(EPalPlayerInventoryType inventoryType, int32 Index_0);
 	void OnRep_CurrentItemSlotIndex();
+	void OnRep_NowEquipBallItemID();
 	void OnRep_PrimaryTargetInventoryType();
 	void OnUpdateInventorySlot(class UPalItemSlot* itemSlot);
 	void OnUpdateWeaponLoadoutSlot(class UPalItemSlot* itemSlot);
@@ -46865,20 +46944,21 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectBreedFarmParameterComponent;
 
 // Class Pal.PalLocationManager
-// 0x0198 (0x0210 - 0x0078)
+// 0x01F0 (0x0268 - 0x0078)
 class UPalLocationManager : public UPalWorldSubsystem
 {
 public:
-	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnAddedLocation; // 0x0078(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnRemoveLocation; // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnAddedLocationForCompass; // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnRemoveLocationForCompass; // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGuid& MarkerID)> OnCustomMarkerChanged;              // 0x00B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMap<struct FGuid, class UPalLocationBase*>   LocationMapInServer;                               // 0x00C8(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	TMap<struct FGuid, class UPalLocationBase*>   LocationMapInLocal;                                // 0x0118(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	TMap<struct FGuid, class UPalLocationBase*>   LocationMapCombined;                               // 0x0168(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	TMap<struct FGuid, struct FPalCustomMarkerSaveData> CustomMarkers;                               // 0x01B8(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_208[0x8];                                      // 0x0208(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x58];                                      // 0x0078(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnAddedLocation; // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnRemoveLocation; // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnAddedLocationForCompass; // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGuid& LocationId, class UPalLocationBase* Location)> OnRemoveLocationForCompass; // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGuid& MarkerID)> OnCustomMarkerChanged;              // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMap<struct FGuid, class UPalLocationBase*>   LocationMapInServer;                               // 0x0120(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	TMap<struct FGuid, class UPalLocationBase*>   LocationMapInLocal;                                // 0x0170(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	TMap<struct FGuid, class UPalLocationBase*>   LocationMapCombined;                               // 0x01C0(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	TMap<struct FGuid, struct FPalCustomMarkerSaveData> CustomMarkers;                               // 0x0210(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_260[0x8];                                      // 0x0260(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	struct FGuid AddLocalCustomMarker(const struct FVector& IconLocation, int32 IconType);
@@ -48620,7 +48700,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectHeatSourceModel;
 
 // Class Pal.PalLogManager
-// 0x0148 (0x01C0 - 0x0078)
+// 0x0198 (0x0210 - 0x0078)
 class UPalLogManager : public UPalWorldSubsystem
 {
 public:
@@ -48631,17 +48711,18 @@ public:
 	float                                         DeathLogLongDisplayTime;                           // 0x0088(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<struct FGuid, struct FPalLogDataSet>     veryImportantLogMap;                               // 0x0090(0x0050)(Protected, NativeAccessSpecifierProtected)
-	TSubclassOf<class UPalStaticLogCollector>     staticLogCollectorClass;                           // 0x00E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPalStaticLogCollector*                 staticLogCollector;                                // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<EPalLogWidgetOverrideClassType, TSubclassOf<class UPalLogWidgetBase>> OverrideClassMap;     // 0x00F0(0x0050)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TMulticastInlineDelegate<void(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData)> OnAddedNormalLogDelegate; // 0x0140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData)> OnAddedImportantLogDelegate; // 0x0150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGuid& logId, const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData)> OnAddedVeryImportantLogDelegate; // 0x0160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FGuid& logId)> OnRemovedVeryImportantLogDelegate;     // 0x0170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& DeathLogDisplayData)> OnAddedDeathLogDelegate; // 0x0180(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& KillLogData)> OnAddedKillLogDelegate; // 0x0190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& DeathLogDisplayData)> OnAddedHardcorePlayerDeathLogDelegate; // 0x01A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& DeathLogDisplayData)> OnAddedHardcorePalDeathLogDelegate; // 0x01B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E0[0x50];                                      // 0x00E0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalStaticLogCollector>     staticLogCollectorClass;                           // 0x0130(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalStaticLogCollector*                 staticLogCollector;                                // 0x0138(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<EPalLogWidgetOverrideClassType, TSubclassOf<class UPalLogWidgetBase>> OverrideClassMap;     // 0x0140(0x0050)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData)> OnAddedNormalLogDelegate; // 0x0190(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData)> OnAddedImportantLogDelegate; // 0x01A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGuid& logId, const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData)> OnAddedVeryImportantLogDelegate; // 0x01B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FGuid& logId)> OnRemovedVeryImportantLogDelegate;     // 0x01C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& DeathLogDisplayData)> OnAddedDeathLogDelegate; // 0x01D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& KillLogData)> OnAddedKillLogDelegate; // 0x01E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& DeathLogDisplayData)> OnAddedHardcorePlayerDeathLogDelegate; // 0x01F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const struct FPalKillLogDisplayData& DeathLogDisplayData)> OnAddedHardcorePalDeathLogDelegate; // 0x0200(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
 public:
 	void AddDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData);
@@ -48718,13 +48799,13 @@ public:
 DUMPER7_ASSERTS_UPalLogWidget;
 
 // Class Pal.PalMapObjectDropItem
-// 0x0060 (0x0460 - 0x0400)
+// 0x0060 (0x0478 - 0x0418)
 class APalMapObjectDropItem : public APalMapObject
 {
 public:
-	uint8                                         Pad_400[0x8];                                      // 0x0400(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bMovementActive;                                   // 0x0408(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_409[0x57];                                     // 0x0409(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_418[0x8];                                      // 0x0418(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bMovementActive;                                   // 0x0420(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_421[0x57];                                     // 0x0421(0x0057)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnProceedTimerMovementActive();
@@ -48940,12 +49021,12 @@ public:
 DUMPER7_ASSERTS_UPalLookAtComponent;
 
 // Class Pal.PalMapLevelObject
-// 0x0018 (0x0418 - 0x0400)
+// 0x0018 (0x0430 - 0x0418)
 class APalMapLevelObject : public APalMapObject
 {
 public:
-	uint8                                         Pad_400[0x8];                                      // 0x0400(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  LevelObjectInstanceId;                             // 0x0408(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, NonPIEDuplicateTransient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_418[0x8];                                      // 0x0418(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  LevelObjectInstanceId;                             // 0x0420(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, NonPIEDuplicateTransient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	const struct FGuid GetLevelObjectInstanceId() const;
@@ -49002,7 +49083,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectAmusementModel;
 
 // Class Pal.PalMapObjectConvertItemModel
-// 0x00F0 (0x0310 - 0x0220)
+// 0x0100 (0x0320 - 0x0220)
 class UPalMapObjectConvertItemModel final : public UPalMapObjectConcreteModelBase
 {
 public:
@@ -49019,16 +49100,17 @@ public:
 	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           RecipeIds;                                         // 0x02A8(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
 	float                                         WorkSpeedAdditionalRate;                           // 0x02B8(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         CurrentRecipeRequestPlayerId;                      // 0x02BC(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<EPalItemTypeA>                         TargetTypesA;                                      // 0x02C0(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	TArray<EPalItemTypeB>                         TargetTypesB;                                      // 0x02D0(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	int32                                         TargetRankMax;                                     // 0x02E0(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2E4[0x4];                                      // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalItemTypeA>                         MaterialTypesA;                                    // 0x02E8(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	TArray<EPalItemTypeB>                         MaterialTypesB;                                    // 0x02F8(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	bool                                          IsPickUpInteractable;                              // 0x0308(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCanTransportOutProduct;                           // 0x0309(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_30A[0x6];                                      // 0x030A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CurrentRecipeRequestPlayerUId;                     // 0x02BC(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalItemTypeA>                         TargetTypesA;                                      // 0x02D0(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	TArray<EPalItemTypeB>                         TargetTypesB;                                      // 0x02E0(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	int32                                         TargetRankMax;                                     // 0x02F0(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2F4[0x4];                                      // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalItemTypeA>                         MaterialTypesA;                                    // 0x02F8(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	TArray<EPalItemTypeB>                         MaterialTypesB;                                    // 0x0308(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	bool                                          IsPickUpInteractable;                              // 0x0318(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCanTransportOutProduct;                           // 0x0319(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_31A[0x6];                                      // 0x031A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static bool IsProductNumInfinite(const int32 ProductNum);
@@ -49104,13 +49186,13 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectAmusementParameterComponent;
 
 // Class Pal.PalMapObjectAutoDecayOnDamag
-// 0x0018 (0x0418 - 0x0400)
+// 0x0018 (0x0430 - 0x0418)
 class APalMapObjectAutoDecayOnDamag final : public APalMapObject
 {
 public:
-	class UPalMapObjectDetectCharacterSphereComponent* DetectSphere;                                 // 0x0400(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class APalDecayEffectActor>       DecayEffectActorClass;                             // 0x0408(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_410[0x8];                                      // 0x0410(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectDetectCharacterSphereComponent* DetectSphere;                                 // 0x0418(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class APalDecayEffectActor>       DecayEffectActorClass;                             // 0x0420(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_428[0x8];                                      // 0x0428(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Multicast_StartDecayEffect();
@@ -49521,7 +49603,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectBlueprintDataAssetUtility;
 
 // Class Pal.PalUITreasureBoxSalvageGame
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUITreasureBoxSalvageGame final : public UPalUserWidgetOverlayUI
 {
 public:
@@ -49541,11 +49623,11 @@ public:
 DUMPER7_ASSERTS_UPalUITreasureBoxSalvageGame;
 
 // Class Pal.PalUIWorkSuitabilitySelect
-// 0x0008 (0x0480 - 0x0478)
+// 0x0008 (0x0488 - 0x0480)
 class UPalUIWorkSuitabilitySelect : public UPalUserWidgetOverlayUI
 {
 public:
-	TWeakObjectPtr<class UPalHUDDispatchParameter_WorkSuitabilityPreference> MyHUDDispatchParameter; // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TWeakObjectPtr<class UPalHUDDispatchParameter_WorkSuitabilityPreference> MyHUDDispatchParameter; // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void RequestChangeBattleSetting(const class UPalIndividualCharacterSlot* TargetCharacterSlot, bool CanBattle);
@@ -49648,15 +49730,15 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectCollectResourceParameterComponent;
 
 // Class Pal.PalMapObjectCommonDropItem3D
-// 0x0020 (0x0480 - 0x0460)
+// 0x0020 (0x0498 - 0x0478)
 class APalMapObjectCommonDropItem3D : public APalMapObjectDropItem
 {
 public:
-	bool                                          registerdDistributeTick;                           // 0x0460(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_461[0x3];                                      // 0x0461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CurrentLinearDamping;                              // 0x0464(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LinearDownSpeed;                                   // 0x0468(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_46C[0x14];                                     // 0x046C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          registerdDistributeTick;                           // 0x0478(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_479[0x3];                                      // 0x0479(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CurrentLinearDamping;                              // 0x047C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LinearDownSpeed;                                   // 0x0480(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_484[0x14];                                     // 0x0484(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -49824,7 +49906,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectDamageReactionComponent;
 
 // Class Pal.PalUIObtainCharactersPerformance
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIObtainCharactersPerformance : public UPalUserWidgetOverlayUI
 {
 public:
@@ -49879,7 +49961,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectDeathPenaltyStorageModel;
 
 // Class Pal.PalUIGuildMenu
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIGuildMenu : public UPalUserWidgetOverlayUI
 {
 public:
@@ -50787,11 +50869,11 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectFishPondParameterComponent;
 
 // Class Pal.PalUIPalBoxBase
-// 0x0028 (0x04A0 - 0x0478)
+// 0x0028 (0x04A8 - 0x0480)
 class UPalUIPalBoxBase : public UPalUserWidgetOverlayUI
 {
 public:
-	uint8                                         Pad_478[0x28];                                     // 0x0478(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_480[0x28];                                     // 0x0480(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void CancelLift();
@@ -50811,6 +50893,7 @@ public:
 	void ToggleFavorite(class UPalIndividualCharacterSlot* TargetSlot);
 	void TryLoosePal(class UPalIndividualCharacterSlot* TargetSlot);
 	void TryMoveToBaseCamp(class UPalIndividualCharacterSlot* MoveSlot);
+	void TryMoveToBoxForCommonContainer(class UPalIndividualCharacterSlot* MoveSlot);
 	void TryMoveToBoxForOtomo(class UPalIndividualCharacterSlot* MoveSlot);
 	void TryMoveToBoxForWorker(class UPalIndividualCharacterSlot* MoveSlot);
 	void TryMoveToOtomo(class UPalIndividualCharacterSlot* MoveSlot);
@@ -50832,7 +50915,7 @@ public:
 DUMPER7_ASSERTS_UPalUIPalBoxBase;
 
 // Class Pal.PalMapObjectFoliage
-// 0x0188 (0x01B0 - 0x0028)
+// 0x01A0 (0x01C8 - 0x0028)
 class UPalMapObjectFoliage final : public UObject
 {
 public:
@@ -50842,8 +50925,10 @@ public:
 	TSet<EPalFoliagePresetType>                   LoadedPresetTypeSet;                               // 0x00A0(0x0050)(Transient, NativeAccessSpecifierPrivate)
 	int32                                         GridSize;                                          // 0x00F0(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FPalCellCoord, class UPalFoliageGridModel*> GridModelMap;                            // 0x00F8(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_148[0x68];                                     // 0x0148(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMap<struct FPalCellCoord, class UPalFoliageGridModel*> GridModelMap;                            // 0x00F8(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, UObjectWrapper, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_148[0x68];                                     // 0x0148(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPalFoliageGridModel*>           PreallocatedGridModels;                            // 0x01B0(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1C0[0x8];                                      // 0x01C0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -50862,7 +50947,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectFoliage;
 
 // Class Pal.PalMapObjectFoliageModel
-// 0x0180 (0x01A8 - 0x0028)
+// 0x0188 (0x01B0 - 0x0028)
 class UPalMapObjectFoliageModel final : public UObject
 {
 public:
@@ -50876,7 +50961,7 @@ public:
 	uint8                                         Pad_D0[0x50];                                      // 0x00D0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalCellCoord                          CellCoord;                                         // 0x0120(0x0018)(Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EPalFoliagePresetType                         FoliagePresetType;                                 // 0x0138(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_139[0x6F];                                     // 0x0139(0x006F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_139[0x77];                                     // 0x0139(0x0077)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnDestroyInstance(class UPalFoliageInstance* Instance);
@@ -51033,11 +51118,11 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectGenerateEnergyModel;
 
 // Class Pal.PalUIPalShopBase
-// 0x0030 (0x04A8 - 0x0478)
+// 0x0030 (0x04B0 - 0x0480)
 class UPalUIPalShopBase final : public UPalUserWidgetOverlayUI
 {
 public:
-	TSoftObjectPtr<class UPalShopBase>            SoftMyShop;                                        // 0x0478(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSoftObjectPtr<class UPalShopBase>            SoftMyShop;                                        // 0x0480(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	bool GetPalStorageSlots(class UPalIndividualCharacterContainer** OutContainer);
@@ -51985,11 +52070,11 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectMedicineBoxParameterComponent;
 
 // Class Pal.PalUIItemShopBase
-// 0x0030 (0x04A8 - 0x0478)
+// 0x0030 (0x04B0 - 0x0480)
 class UPalUIItemShopBase final : public UPalUserWidgetOverlayUI
 {
 public:
-	TSoftObjectPtr<class UPalShopBase>            SoftMyShop;                                        // 0x0478(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSoftObjectPtr<class UPalShopBase>            SoftMyShop;                                        // 0x0480(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	bool TryBuy(const struct FGuid& BuyProductID, const int32 BuyNum);
@@ -52365,11 +52450,11 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectModelInitializeExtraParameterTreasureBox;
 
 // Class Pal.PalUICharacterDressing
-// 0x0008 (0x0480 - 0x0478)
+// 0x0008 (0x0488 - 0x0480)
 class UPalUICharacterDressing : public UPalUserWidgetOverlayUI
 {
 public:
-	uint8                                         Pad_478[0x8];                                      // 0x0478(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_480[0x8];                                      // 0x0480(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyDressingInfoToPlayerData(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
@@ -52414,12 +52499,12 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectModelInitializeExtraParameterItemDropObject;
 
 // Class Pal.PalUICharacterSkinChanger
-// 0x0060 (0x04D8 - 0x0478)
+// 0x0060 (0x04E0 - 0x0480)
 class UPalUICharacterSkinChanger final : public UPalUserWidgetOverlayUI
 {
 public:
-	TMulticastInlineDelegate<void()>              OnUpdateSkinInfoDelegate;                          // 0x0478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMap<class FName, struct FPalUICharacterSkinDisplayInfo> CachedSkinInfoMap;                      // 0x0488(0x0050)(NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void()>              OnUpdateSkinInfoDelegate;                          // 0x0480(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMap<class FName, struct FPalUICharacterSkinDisplayInfo> CachedSkinInfoMap;                      // 0x0490(0x0050)(NativeAccessSpecifierPrivate)
 
 public:
 	const TMap<class FName, struct FPalUICharacterSkinDisplayInfo> GetCachedSkinInfo();
@@ -53032,11 +53117,11 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectPalBoothParameterComponent;
 
 // Class Pal.PalMapObjectPalEgg
-// 0x0008 (0x0408 - 0x0400)
+// 0x0008 (0x0420 - 0x0418)
 class APalMapObjectPalEgg : public APalMapObject
 {
 public:
-	class UPalMapObjectPickupItemPalEggParameterComponent* ParameterComponent;                       // 0x0400(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPalMapObjectPickupItemPalEggParameterComponent* ParameterComponent;                       // 0x0418(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	class FName GetCharacterID();
@@ -53106,7 +53191,7 @@ public:
 DUMPER7_ASSERTS_UPalHUDDispatchParameter_Authentication;
 
 // Class Pal.PalUIInGameInputListener
-// 0x0000 (0x0468 - 0x0468)
+// 0x0000 (0x0470 - 0x0470)
 class UPalUIInGameInputListener : public UPalUserWidgetStackableUI
 {
 public:
@@ -53417,7 +53502,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectRaidBossAreaSummon;
 
 // Class Pal.PalUIRelicMenu
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIRelicMenu : public UPalUserWidgetOverlayUI
 {
 public:
@@ -53516,7 +53601,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectRecoverOtomoModel;
 
 // Class Pal.PalUISkillFruitFarm
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUISkillFruitFarm final : public UPalUserWidgetOverlayUI
 {
 public:
@@ -54001,7 +54086,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectSpawnerDamageReactionComponent;
 
 // Class Pal.PalUIDialogBase
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIDialogBase : public UPalUserWidgetOverlayUI
 {
 public:
@@ -54080,7 +54165,7 @@ public:
 DUMPER7_ASSERTS_APalMapObjectSpawnerSimple;
 
 // Class Pal.PalUIDismantling
-// 0x0000 (0x0468 - 0x0468)
+// 0x0000 (0x0470 - 0x0470)
 class UPalUIDismantling : public UPalUserWidgetStackableUI
 {
 public:
@@ -54158,7 +54243,7 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectSpawnerWeakPointDecalComponent;
 
 // Class Pal.PalUIGameOver
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIGameOver : public UPalUserWidgetOverlayUI
 {
 public:
@@ -54424,20 +54509,20 @@ public:
 DUMPER7_ASSERTS_UPalMapObjectTorchParameterComponent;
 
 // Class Pal.PalMapObjectTreasureBox
-// 0x0050 (0x0450 - 0x0400)
+// 0x0050 (0x0468 - 0x0418)
 class APalMapObjectTreasureBox : public APalMapObject
 {
 public:
-	struct FVector                                DropItemLocalLocation;                             // 0x0400(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bPlayOpenAnimation;                                // 0x0418(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_419[0x3];                                      // 0x0419(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         LongHoldInteractDuration;                          // 0x041C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EPalActionType                                InteractPlayerActionType;                          // 0x0420(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          IsLockRiding;                                      // 0x0421(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EPalMapObjectTreasureSpecialType              TreasureSpecialType;                               // 0x0422(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EPalActionType                                OpeningPlayerActionType;                           // 0x0423(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_424[0x1C];                                     // 0x0424(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnOpenDelegate;                                    // 0x0440(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	struct FVector                                DropItemLocalLocation;                             // 0x0418(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bPlayOpenAnimation;                                // 0x0430(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_431[0x3];                                      // 0x0431(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         LongHoldInteractDuration;                          // 0x0434(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EPalActionType                                InteractPlayerActionType;                          // 0x0438(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          IsLockRiding;                                      // 0x0439(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EPalMapObjectTreasureSpecialType              TreasureSpecialType;                               // 0x043A(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EPalActionType                                OpeningPlayerActionType;                           // 0x043B(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_43C[0x1C];                                     // 0x043C(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnOpenDelegate;                                    // 0x0458(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
 	void BroadcastTriggerOpen();
@@ -56831,7 +56916,6 @@ public:
 	void RequestSetReplicationEntity_ToServer(const EPalPlayerReplicationEntityType EntityType, const bool bReplicate);
 	void RequestSortInventory_ToServer();
 	void RequestTriggerTutorial_ToClient(EPalTutorialTriggerConditionType TriggerConditionType);
-	void RequestUnlockFastTravelPoint_ToServer(const class FName UnlockFlagKey);
 	void RequestUnlockTechnology_ToServer(const class FName& UnlockTechnologyName);
 	void RequestUpdatePlayerSettingsForServer_ToServer(const struct FPalPlayerSettingsForServer& NewSettings);
 	void SetCurrentSelectPalSphereIndex_ToServer(int32 NextIndex, class UPalLoadoutSelectorComponent* LoadoutSelector);
@@ -57521,7 +57605,7 @@ public:
 
 public:
 	void CancelTalkFlow();
-	void LaunchTalkIncident(class AActor* Other);
+	bool LaunchTalkIncident(class AActor* Other);
 	void OnFinishTalkFlow();
 	void OnPreStartTalk_BP();
 	void RequestEndTalkFlow(bool bIsCancel);
@@ -58552,12 +58636,12 @@ public:
 DUMPER7_ASSERTS_APalStationaryWeaponBulletLauncherBase;
 
 // Class Pal.PalOptionReplicator
-// 0x0210 (0x0238 - 0x0028)
+// 0x0218 (0x0240 - 0x0028)
 class UPalOptionReplicator final : public UPalGameStateReplicatorBase
 {
 public:
-	struct FPalOptionWorldSettings                OptionWorldSettings;                               // 0x0028(0x0208)(Edit, Net, DisableEditOnTemplate, Transient, EditConst, RepNotify, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_230[0x8];                                      // 0x0230(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                OptionWorldSettings;                               // 0x0028(0x0210)(Edit, Net, DisableEditOnTemplate, Transient, EditConst, RepNotify, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRep_OptionWorldSettings();
@@ -59026,24 +59110,26 @@ public:
 DUMPER7_ASSERTS_UPalPartnerSkillParameterComponent;
 
 // Class Pal.PalPartnerSkillPassiveSkill
-// 0x00D0 (0x00F8 - 0x0028)
+// 0x0108 (0x0130 - 0x0028)
 class UPalPartnerSkillPassiveSkill final : public UObject
 {
 public:
 	TDelegate<void(class AActor* Trainer)>        IsRestrictedDelegate;                              // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          isReserving;                                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsRestricted;                                     // 0x0039(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bRequireWorkerWorkingPassiveSkill;                 // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsWorking;                                        // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsBoundToTimeChange;                              // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalPassivePartnerSkillIdAndParameters> PassiveSkills;                             // 0x0040(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate)
-	TMap<struct FPalDataTableRowName_PassiveSkillData, struct FPalPassivePartnerSkillStatus> SkillStatus; // 0x0050(0x0050)(Edit, EditConst, NativeAccessSpecifierPrivate)
-	int32                                         CurrentRank;                                       // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_A4[0x54];                                      // 0x00A4(0x0054)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A[0x37];                                      // 0x003A(0x0037)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bRequireWorkerWorkingPassiveSkill;                 // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsWorking;                                        // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsBoundToTimeChange;                              // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalPassivePartnerSkillIdAndParameters> PassiveSkills;                             // 0x0078(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate)
+	TMap<struct FPalDataTableRowName_PassiveSkillData, struct FPalPassivePartnerSkillStatus> SkillStatus; // 0x0088(0x0050)(Edit, EditConst, NativeAccessSpecifierPrivate)
+	int32                                         CurrentRank;                                       // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_DC[0x54];                                      // 0x00DC(0x0054)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AllResetPassiveSkill();
+	void ApplyPendingLifeDrainGranterReset();
 	void InactivateWorkingSkill();
 	void Initialize(const TArray<struct FPalPassivePartnerSkillIdAndParameters>& _PassiveSkills);
 	void ObserveWorking();
@@ -59067,6 +59153,7 @@ public:
 	void OnReserveInactivated();
 	void OnRideActivated();
 	void OnRideInactivated();
+	void OnSetPassiveSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner);
 	void OnStartPassiveSkillEffect(EPalPassiveSkillEffectType EffectType, float Value);
 	void OnUpdateBaseCampId(const struct FGuid& BaseCampId);
 	void OnUpdateCurrentGround(EPhysicalSurface GroundType);
@@ -59132,8 +59219,8 @@ public:
 	TMulticastInlineDelegate<void(EPalPassiveSkillEffectType EffectType, float Value)> OnStartSkillEffectDelegate; // 0x00A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(EPalPassiveSkillEffectType EffectType, float Value)> OnChangeSkillEffectValueDelegate; // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(EPalPassiveSkillEffectType EffectType)> OnEndSkillEffectDelegate;  // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EPalPassiveSkillEffectType EffectType, const class UObject* effectOwner)> OnSetSkillEffectDelegate; // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(EPalPassiveSkillEffectType EffectType, const class UObject* effectOwner)> OnClearSkillEffectDelegate; // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner)> OnSetSkillEffectDelegate; // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner)> OnClearSkillEffectDelegate; // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_F0[0x50];                                      // 0x00F0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPalPassiveSkillEffectInfos>    SkillInfos;                                        // 0x0140(0x0010)(Net, ZeroConstructor, RepNotify, NativeAccessSpecifierPrivate)
 	TArray<struct FPalPassiveSkillEffectInfos>    SkillInfosMirror;                                  // 0x0150(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
@@ -59163,12 +59250,12 @@ public:
 	float GetParameterWithPassiveSkillEffectByWeaponCondition(float originalValue, EPalPassiveSkillEffectType EffectType, const struct FPalPassivePartnerSkillItemParameter& ItemParam);
 	bool HasSkill(EPalPassiveSkillEffectType Type, bool containEquip);
 	void OnChangeSkillEffectValue(EPalPassiveSkillEffectType EffectType, float Value);
-	void OnClearSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* effectOwner);
+	void OnClearSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner);
 	void OnEndSkillEffect(EPalPassiveSkillEffectType EffectType);
 	void OnInitializedCharacter(class APalCharacter* OwnerCharacter);
 	void OnRep_DebugSkillInfos();
 	void OnRep_SkillInfos();
-	void OnSetSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* effectOwner);
+	void OnSetSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner);
 	void OnStartSkillEffect(EPalPassiveSkillEffectType EffectType, float Value);
 	void OnUpdateCharacterRank(int32 NowRank, int32 OldRank);
 	void OverrideDamageInfoBySkill(struct FPalDamageInfo* inoutDamageInfo);
@@ -59945,6 +60032,7 @@ public:
 	void IncrementFavoriteIndexPal_ToServer(const struct FPalInstanceID& InstanceId);
 	void JumpCancelPalThrow(class UPalCharacterMovementComponent* MovementComponent);
 	void LostOtomoByInstacneID_ToServer(const struct FPalInstanceID& InstanceId);
+	void NotifyActivateLifeDrainPowerAttackUp_ToClient(const struct FPalInstanceID& PalInstanceID);
 	void NotifyConfirmRequestGuild_ToServer(const struct FGuid& FlowUniqueId, const bool bResponse);
 	void NotifyFailedStartRaidByOverConcurrentStageLimitation_ToClient();
 	void NotifyGetUserInfoByPlayerUId_ToClient(bool bSuccess, const struct FGuid& PlayerUId, const class FString& PlayerName, const struct FGuid& GroupId, const class FString& GuildName);
@@ -60099,7 +60187,7 @@ public:
 	void ShooterComponent_ChangeIsAiming_ToServer(class UPalShooterComponent* Shooter, int32 ID, EPalShooterFlagContainerPriority Priority, bool IsAiming);
 	void ShooterComponent_ChangeIsAltShooting_ToServer(class UPalShooterComponent* Shooter, int32 ID, bool IsShooting, bool bCanShootOnRelease);
 	void ShooterComponent_ChangeIsJetpackShooting_ToServer(class UPalShooterComponent* Shooter, int32 ID, bool IsShooting);
-	void ShooterComponent_ChangeIsShooting_ToServer(class UPalShooterComponent* Shooter, int32 ID, bool IsShooting, bool bCanShootOnRelease);
+	void ShooterComponent_ChangeIsShooting_ToServer(class UPalShooterComponent* Shooter, int32 ID, bool IsShooting, bool bCanShootOnRelease, bool bRequestedThrowObject);
 	void ShooterComponent_NotifyBulletItemId_ToServer(class UPalShooterComponent* Shooter, const class APalWeaponBase* TargetWeapon, const class FName& BulletItemId);
 	void ShooterComponent_PullCancel_ToServer(class UPalShooterComponent* Shooter, int32 ID);
 	void ShooterComponent_ReloadWeapon_ToServer(class UPalShooterComponent* Shooter, int32 ID);
@@ -60257,11 +60345,11 @@ public:
 DUMPER7_ASSERTS_UPalPlayerDataStorage;
 
 // Class Pal.PalPlayerEquipPassiveSkill
-// 0x0050 (0x0158 - 0x0108)
+// 0x0058 (0x0160 - 0x0108)
 class UPalPlayerEquipPassiveSkill final : public UPalPassiveSkillBase
 {
 public:
-	uint8                                         Pad_108[0x50];                                     // 0x0108(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_108[0x58];                                     // 0x0108(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnUpdateEquipmentSlot(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
@@ -61480,7 +61568,7 @@ public:
 DUMPER7_ASSERTS_UPalQuestBlock_CountBaseCamp;
 
 // Class Pal.PalQuestBlock_CountKillEnemy
-// 0x0048 (0x0168 - 0x0120)
+// 0x0050 (0x0170 - 0x0120)
 class UPalQuestBlock_CountKillEnemy : public UPalQuestBlock
 {
 public:
@@ -61492,7 +61580,8 @@ public:
 	TArray<struct FPalDataTableRowName_PalMonsterData> CountPalId;                                   // 0x0130(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FPalDataTableRowName_PalHumanData> CountHumanId;                                   // 0x0140(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FPalDataTableRowName_NPCUniqueData> CountUniqueNPCId;                              // 0x0150(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_160[0x8];                                      // 0x0160(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         RequiredRange;                                     // 0x0160(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_164[0xC];                                      // 0x0164(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddKillCount(int32 Count);
@@ -62693,8 +62782,8 @@ public:
 	void ChangeIsJetpackShooting_ToALL(int32 ID, bool IsShooting_0);
 	void ChangeIsJetpackShooting_ToServer(int32 ID, bool IsShooting_0);
 	void ChangeIsShooting(bool IsShooting_0, bool bCanShootOnRelease);
-	void ChangeIsShooting_ToALL(int32 ID, bool IsShooting_0, bool bCanShootOnRelease);
-	void ChangeIsShooting_ToServer(int32 ID, bool IsShooting_0, bool bCanShootOnRelease);
+	void ChangeIsShooting_ToALL(int32 ID, bool IsShooting_0, bool bCanShootOnRelease, bool bRequestedThrowObject);
+	void ChangeIsShooting_ToServer(int32 ID, bool IsShooting_0, bool bCanShootOnRelease, bool bRequestedThrowObject);
 	void ChangeWeapon(class APalWeaponBase* Weapon, bool bSkipLocalControlCheck);
 	void EndAim(bool bAllEndAim);
 	class UPalShooterAnimeAssetBase* GetBowAnimAsset();
@@ -64070,13 +64159,13 @@ public:
 DUMPER7_ASSERTS_IPalGameSystemNeedSync;
 
 // Class Pal.PalTalkWindowWidgetBase
-// 0x0028 (0x04A0 - 0x0478)
-class UPalTalkWindowWidgetBase : public UPalUserWidgetOverlayUI
+// 0x0028 (0x04A8 - 0x0480)
+class UPalTalkWindowWidgetBase final : public UPalUserWidgetOverlayUI
 {
 public:
-	TMulticastInlineDelegate<void(class UPalTalkWindowWidgetBase* SelfWidget)> OnEndTextDelegate;    // 0x0478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UPalTalkWindowWidgetBase* SelfWidget, const class FName& ChoiceMsgID, const int32 ChoiceIndex)> OnConfirmChoiceDelegate; // 0x0488(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	TWeakObjectPtr<class UPalNPCTalkSystem>       WeakTalkSystem;                                    // 0x0498(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TMulticastInlineDelegate<void(class UPalTalkWindowWidgetBase* SelfWidget)> OnEndTextDelegate;    // 0x0480(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UPalTalkWindowWidgetBase* SelfWidget, const class FName& ChoiceMsgID, const int32 ChoiceIndex)> OnConfirmChoiceDelegate; // 0x0490(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
+	TWeakObjectPtr<class UPalNPCTalkSystem>       WeakTalkSystem;                                    // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	class FText FormatByCustomTagArgument(const class FText& OriginalText);
@@ -64529,7 +64618,7 @@ public:
 DUMPER7_ASSERTS_UPalWorkProgressTransformStatic;
 
 // Class Pal.PalUIBuilding
-// 0x0000 (0x0468 - 0x0468)
+// 0x0000 (0x0470 - 0x0470)
 class UPalUIBuilding : public UPalUserWidgetStackableUI
 {
 public:
@@ -64874,12 +64963,12 @@ public:
 DUMPER7_ASSERTS_UPalDialogParameter_RaidBossBattleTypeSelection;
 
 // Class Pal.PalUIDimensionPalStorage
-// 0x0018 (0x0490 - 0x0478)
+// 0x0018 (0x0498 - 0x0480)
 class UPalUIDimensionPalStorage final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPalContainerId                        LocalDPSContainerId;                               // 0x0478(0x0010)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_488[0x8];                                      // 0x0488(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FPalContainerId                        LocalDPSContainerId;                               // 0x0480(0x0010)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_490[0x8];                                      // 0x0490(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void HandleExportFailed(EPalGlobalStorageExportResult Result, class UPalIndividualCharacterSlot* TargetSlot, int32 ExportDataIndex, const struct FPalGlobalPalStorageExportOption& ExportOption);
@@ -64945,7 +65034,7 @@ public:
 DUMPER7_ASSERTS_APalUIDisplayCharacter;
 
 // Class Pal.PalUIFixedWorkAssignManage
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIFixedWorkAssignManage final : public UPalUserWidgetOverlayUI
 {
 public:
@@ -64965,11 +65054,11 @@ public:
 DUMPER7_ASSERTS_UPalUIFixedWorkAssignManage;
 
 // Class Pal.PalUIGlobalPalStorage
-// 0x0010 (0x0488 - 0x0478)
+// 0x0010 (0x0490 - 0x0480)
 class UPalUIGlobalPalStorage final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPalContainerId                        LocalGPSContainerId;                               // 0x0478(0x0010)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPalContainerId                        LocalGPSContainerId;                               // 0x0480(0x0010)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void DeleteGPSData(const TArray<struct FPalInstanceID>& RemoveInstanceIDArray);
@@ -65078,26 +65167,26 @@ public:
 DUMPER7_ASSERTS_UPalHUDDispatchParameter_ItemShop;
 
 // Class Pal.PalUIJoinGameBase
-// 0x0088 (0x0500 - 0x0478)
+// 0x0088 (0x0508 - 0x0480)
 class UPalUIJoinGameBase final : public UPalUserWidgetOverlayUI
 {
 public:
-	bool                                          bIsShowIgnoreVersionServer;                        // 0x0478(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPalUIServerListFilterType                    ServerFilterType;                                  // 0x0479(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_47A[0x6];                                      // 0x047A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         OfficialServerIPRangeList;                         // 0x0480(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         CurrentPage;                                       // 0x0490(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PageSize;                                          // 0x0494(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsNextPage;                                        // 0x0498(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_499[0x7];                                      // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalUIServerDisplayData>        CachedServerDisplayInfo;                           // 0x04A0(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_4B0[0x8];                                      // 0x04B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 InputIPAddress;                                    // 0x04B8(0x0010)(BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          IsCheckedInputPassword;                            // 0x04C8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 RestoredPassword;                                  // 0x04D0(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FString                                 LastSelectedRegionName;                            // 0x04E0(0x0010)(BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FString                                 SaveConfigCategoryName;                            // 0x04F0(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsShowIgnoreVersionServer;                        // 0x0480(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPalUIServerListFilterType                    ServerFilterType;                                  // 0x0481(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_482[0x6];                                      // 0x0482(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         OfficialServerIPRangeList;                         // 0x0488(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         CurrentPage;                                       // 0x0498(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PageSize;                                          // 0x049C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsNextPage;                                        // 0x04A0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalUIServerDisplayData>        CachedServerDisplayInfo;                           // 0x04A8(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 InputIPAddress;                                    // 0x04C0(0x0010)(BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          IsCheckedInputPassword;                            // 0x04D0(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 RestoredPassword;                                  // 0x04D8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FString                                 LastSelectedRegionName;                            // 0x04E8(0x0010)(BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FString                                 SaveConfigCategoryName;                            // 0x04F8(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void CollectServerDisplayInfo(const struct FPalUIServerDataCollectInfo& CollectInfo, TArray<struct FPalUIServerDisplayData>* OutServerInfo);
@@ -65151,11 +65240,11 @@ public:
 DUMPER7_ASSERTS_UPalUILiftSlotModelBehaviourDefault;
 
 // Class Pal.PalUILocalWorldSelectBase
-// 0x0050 (0x04C8 - 0x0478)
+// 0x0050 (0x04D0 - 0x0480)
 class UPalUILocalWorldSelectBase final : public UPalUserWidgetOverlayUI
 {
 public:
-	TMap<class FString, struct FPalWorldBaseInfoData> LoadedBaseInfoMap;                             // 0x0478(0x0050)(NativeAccessSpecifierPrivate)
+	TMap<class FString, struct FPalWorldBaseInfoData> LoadedBaseInfoMap;                             // 0x0480(0x0050)(NativeAccessSpecifierPrivate)
 
 public:
 	bool DeleteWorld(const class FString& WorldSaveDirectoryName);
@@ -65606,11 +65695,11 @@ public:
 DUMPER7_ASSERTS_UPalWorldSecurityLawTrigger_ItemMove;
 
 // Class Pal.PalUIOtomoLoadoutBase
-// 0x0010 (0x0488 - 0x0478)
+// 0x0010 (0x0490 - 0x0480)
 class UPalUIOtomoLoadoutBase : public UPalUserWidgetOverlayUI
 {
 public:
-	TArray<struct FPalOtomoLoadoutData>           CurrentLoadoutData;                                // 0x0478(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPalOtomoLoadoutData>           CurrentLoadoutData;                                // 0x0480(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 
 public:
 	bool AddCurrentOtomoLoadoutData();
@@ -65637,7 +65726,7 @@ public:
 DUMPER7_ASSERTS_UPalUIOtomoLoadoutBase;
 
 // Class Pal.PalUIPalBoxSortWindow
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIPalBoxSortWindow : public UPalUserWidgetOverlayUI
 {
 public:
@@ -65683,13 +65772,13 @@ public:
 DUMPER7_ASSERTS_UPalHUDDispatchParameter_CharacterRankUp;
 
 // Class Pal.PalUIPaldex
-// 0x0070 (0x04E8 - 0x0478)
+// 0x0070 (0x04F0 - 0x0480)
 class UPalUIPaldex : public UPalUserWidgetOverlayUI
 {
 public:
-	TMap<class FName, struct FPalUIPaldex_DisplayInfo> DisplayInfoMap;                               // 0x0478(0x0050)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FPalUIPaldex_DisplayInfo>       displayInfoArray;                                  // 0x04C8(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class FName>                           HideFilteringCharacterIdArray;                     // 0x04D8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TMap<class FName, struct FPalUIPaldex_DisplayInfo> DisplayInfoMap;                               // 0x0480(0x0050)(BlueprintVisible, BlueprintReadOnly, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPalUIPaldex_DisplayInfo>       displayInfoArray;                                  // 0x04D0(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class FName>                           HideFilteringCharacterIdArray;                     // 0x04E0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 
 public:
 	void CreateDisplayInfo();
@@ -65751,11 +65840,11 @@ public:
 DUMPER7_ASSERTS_UPalUIPalStorageModel;
 
 // Class Pal.PalUIPickingGame
-// 0x0008 (0x0480 - 0x0478)
+// 0x0008 (0x0488 - 0x0480)
 class UPalUIPickingGame : public UPalUserWidgetOverlayUI
 {
 public:
-	class UPalPickingGameProcessor*               MyPickingGameProcessor;                            // 0x0478(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPalPickingGameProcessor*               MyPickingGameProcessor;                            // 0x0480(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	class UPalPickingGameProcessor* RegisterPickinGameProcessor();
@@ -65944,6 +66033,7 @@ public:
 	static struct FPalCharacterContainerSortInfo GetDefaultCharacterContainerSortInfo(const class UObject* WorldContextObject);
 	static struct FPalUIPaldexFilterInfo GetDefaultPaldeckFilterInfo(const class UObject* WorldContextObject);
 	static void GetDisplayNickName(const class UObject* WorldContextObject, const class FName CharacterID, const class FName UniqueNPCID, class FString* OutNickName);
+	static class FText GetFailedToLoadWorldDataText(const class UObject* WorldContextObject);
 	static void GetFilteredUIDisplayBuildObjectList(const class UObject* WorldContextObject, const TMap<EPalBuildObjectTypeForUIDisplay, struct FPalBuildObjectDataSetTypeUIDisplay>& InMap, TMap<EPalBuildObjectTypeForUIDisplay, struct FPalBuildObjectDataSetTypeUIDisplay>* OutMap);
 	static void GetFormatedFirstActivatedInfoText(const class UObject* WorldContextObject, const struct FPalInstanceID& InstanceId, class FText* outFormatedText);
 	static void GetFormatedFirstActivatedInfoTextFixedRank(const class UObject* WorldContextObject, const class FName& CharacterID, int32 Rank, class FText* outFormatedText);
@@ -66071,7 +66161,7 @@ public:
 DUMPER7_ASSERTS_UPalHUDDispatchParameter_SaveDataBackupSelect;
 
 // Class Pal.PalUIWorldBackupSelect
-// 0x0000 (0x0478 - 0x0478)
+// 0x0000 (0x0480 - 0x0480)
 class UPalUIWorldBackupSelect final : public UPalUserWidgetOverlayUI
 {
 public:
@@ -66123,11 +66213,11 @@ public:
 DUMPER7_ASSERTS_UPalHUDDispatchParameter_WorldMap;
 
 // Class Pal.PalUIWorldMap
-// 0x0008 (0x0480 - 0x0478)
+// 0x0008 (0x0488 - 0x0480)
 class UPalUIWorldMap : public UPalUserWidgetOverlayUI
 {
 public:
-	uint8                                         Pad_478[0x8];                                      // 0x0478(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_480[0x8];                                      // 0x0480(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddWorldMapIcon(class UPalUIWorldMapIcon* IconWidget);
@@ -66679,8 +66769,7 @@ DUMPER7_ASSERTS_IPalAIActionWorkerInterruptInterface;
 class UPalWorkFishPond final : public UPalWorkProgress
 {
 public:
-	TArray<int32>                                 CraftSpeeds;                                       // 0x0408(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_418[0x8];                                      // 0x0418(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 CraftSpeeds;                                       // 0x0410(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -66858,12 +66947,12 @@ DUMPER7_ASSERTS_UPalWorkProgressManager;
 class UPalWorkProgressMultiType final : public UPalWorkProgress
 {
 public:
-	TMulticastInlineDelegate<void(class UPalWorkProgressMultiType* WorkProgress, EPalWorkSuitability WorkSuitability)> OnWorkTypeProgressUpdateDelegate; // 0x0408(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UPalWorkProgressMultiType* WorkProgress)> OnProductionCompleteDelegate; // 0x0418(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TArray<struct FPalWorkProgressEntry>          ProgressEntries;                                   // 0x0428(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, RepNotify, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FPalWorkProgressSuitabilityInfoEntry> SuitabilityInfoEntries;                      // 0x0438(0x0010)(Net, ZeroConstructor, RepNotify, Protected, NativeAccessSpecifierProtected)
-	TMap<EPalWorkSuitability, struct FPalWorkProgressSuitabilityInfo> SuitabilityInfoMap;            // 0x0448(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_498[0x58];                                     // 0x0498(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UPalWorkProgressMultiType* WorkProgress, EPalWorkSuitability WorkSuitability)> OnWorkTypeProgressUpdateDelegate; // 0x0410(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UPalWorkProgressMultiType* WorkProgress)> OnProductionCompleteDelegate; // 0x0420(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TArray<struct FPalWorkProgressEntry>          ProgressEntries;                                   // 0x0430(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, RepNotify, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FPalWorkProgressSuitabilityInfoEntry> SuitabilityInfoEntries;                      // 0x0440(0x0010)(Net, ZeroConstructor, RepNotify, Protected, NativeAccessSpecifierProtected)
+	TMap<EPalWorkSuitability, struct FPalWorkProgressSuitabilityInfo> SuitabilityInfoMap;            // 0x0450(0x0050)(Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4A0[0x50];                                     // 0x04A0(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddProgressForWorkType(EPalWorkSuitability WorkSuitability, float Amount);
@@ -67262,7 +67351,7 @@ public:
 DUMPER7_ASSERTS_UPalLawUtility;
 
 // Class Pal.PalWorldSecurityPoliceSpawner
-// 0x0260 (0x0288 - 0x0028)
+// 0x0268 (0x0290 - 0x0028)
 class UPalWorldSecurityPoliceSpawner : public UObject
 {
 public:
@@ -67277,34 +67366,34 @@ public:
 	TSet<class UPalIndividualCharacterHandle*>    SpawnedCombatHelis;                                // 0x0128(0x0050)(NativeAccessSpecifierPrivate)
 	class APalCharacter*                          OwnerCharacter;                                    // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class APalPlayerState*                        CachedOwnerPlayerState;                            // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_188[0x94];                                     // 0x0188(0x0094)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SpawnPointNum;                                     // 0x021C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SpawnPointRadius;                                  // 0x0220(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SpawnMinRadius;                                    // 0x0224(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SpawnHeightOffset;                                 // 0x0228(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RespawnCheckDistance;                              // 0x022C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RespawnCheckTime;                                  // 0x0230(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RespawnRadius;                                     // 0x0234(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SpawnSearchStepRadius;                             // 0x0238(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RespawnSearchStepRadius;                           // 0x023C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SpawnFailedCheckTime;                              // 0x0240(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         LostSearchTime;                                    // 0x0244(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         PoliceInSightDistance;                             // 0x0248(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DiscoveryNearDistance;                             // 0x024C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DiscoveryFarDistance;                              // 0x0250(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DiscoveryTimeToMaxNear;                            // 0x0254(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DiscoveryTimeToMaxFar;                             // 0x0258(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DiscoveryDecayPerSec;                              // 0x025C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DiscoveryCrouchMultiplier;                         // 0x0260(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliSpawnHeight;                             // 0x0264(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliSpawnRadius;                             // 0x0268(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliSpawnMinRadius;                          // 0x026C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliInSightDistance;                         // 0x0270(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliRespawnCheckDistance;                    // 0x0274(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliRespawnRadius;                           // 0x0278(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliDiscoveryNearDistance;                   // 0x027C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CombatHeliDiscoveryFarDistance;                    // 0x0280(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_284[0x4];                                      // 0x0284(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188[0x9C];                                     // 0x0188(0x009C)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SpawnPointNum;                                     // 0x0224(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SpawnPointRadius;                                  // 0x0228(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SpawnMinRadius;                                    // 0x022C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SpawnHeightOffset;                                 // 0x0230(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RespawnCheckDistance;                              // 0x0234(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RespawnCheckTime;                                  // 0x0238(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RespawnRadius;                                     // 0x023C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SpawnSearchStepRadius;                             // 0x0240(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RespawnSearchStepRadius;                           // 0x0244(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SpawnFailedCheckTime;                              // 0x0248(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         LostSearchTime;                                    // 0x024C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         PoliceInSightDistance;                             // 0x0250(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DiscoveryNearDistance;                             // 0x0254(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DiscoveryFarDistance;                              // 0x0258(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DiscoveryTimeToMaxNear;                            // 0x025C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DiscoveryTimeToMaxFar;                             // 0x0260(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DiscoveryDecayPerSec;                              // 0x0264(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DiscoveryCrouchMultiplier;                         // 0x0268(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         PoliceSightLostGraceTime;                          // 0x026C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliSpawnHeight;                             // 0x0270(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliSpawnRadius;                             // 0x0274(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliSpawnMinRadius;                          // 0x0278(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliInSightDistance;                         // 0x027C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliRespawnCheckDistance;                    // 0x0280(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliRespawnRadius;                           // 0x0284(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliDiscoveryNearDistance;                   // 0x0288(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CombatHeliDiscoveryFarDistance;                    // 0x028C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void AddPolice(class UPalIndividualCharacterHandle* PoliceHandle, class APalAIController* AIController, bool bIsCombatHeli);
@@ -67461,8 +67550,9 @@ public:
 	bool                                          bIsReadOnly;                                       // 0x1040(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AllowContextMenu;                                  // 0x1041(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVirtualKeyboardOptions                VirtualKeyboardOptions;                            // 0x1042(0x0001)(Edit, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	EVirtualKeyboardDismissAction                 VirtualKeyboardDismissAction;                      // 0x1043(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1044[0x4];                                     // 0x1044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	EVirtualKeyboardTrigger                       VirtualKeyboardTrigger;                            // 0x1043(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EVirtualKeyboardDismissAction                 VirtualKeyboardDismissAction;                      // 0x1044(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1045[0x3];                                     // 0x1045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void(const class FText& Text)> OnTextChanged;                           // 0x1048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const class FText& Text, ETextCommit CommitMethod)> OnTextCommitted; // 0x1058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1068[0x18];                                    // 0x1068(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])

@@ -4,7 +4,7 @@
 class UWBP_Map_Cursor_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0280 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0280 (size: 0x8)
     class UWidgetAnimation* Anm_Loop;                                                 // 0x0288 (size: 0x8)
 
     void AnmEvent_Reset();

@@ -17,63 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.TryPopRewardData
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CommonExpReward_ForDisplay_C::TryPopRewardData()
+void UWBP_CommonExpReward_ForDisplay_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "TryPopRewardData");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.QueExpReward
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUICommonExpRewardData& RewardData                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_CommonExpReward_ForDisplay_C::QueExpReward(const struct FPalUICommonExpRewardData& RewardData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "QueExpReward");
-
-	Params::WBP_CommonExpReward_ForDisplay_C_QueExpReward Parms{};
-
-	Parms.RewardData = std::move(RewardData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.OnTimerEvent_EndOut
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonExpReward_ForDisplay_C::OnTimerEvent_EndOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "OnTimerEvent_EndOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.OnTimerEvent_EndIn
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonExpReward_ForDisplay_C::OnTimerEvent_EndIn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "OnTimerEvent_EndIn");
+		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,15 +51,63 @@ void UWBP_CommonExpReward_ForDisplay_C::ExecuteUbergraph_WBP_CommonExpReward_For
 }
 
 
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.OnTimerEvent_EndIn
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CommonExpReward_ForDisplay_C::Destruct()
+void UWBP_CommonExpReward_ForDisplay_C::OnTimerEvent_EndIn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "Destruct");
+		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "OnTimerEvent_EndIn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.OnTimerEvent_EndOut
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonExpReward_ForDisplay_C::OnTimerEvent_EndOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "OnTimerEvent_EndOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.QueExpReward
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalUICommonExpRewardData& RewardData                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_CommonExpReward_ForDisplay_C::QueExpReward(const struct FPalUICommonExpRewardData& RewardData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "QueExpReward");
+
+	Params::WBP_CommonExpReward_ForDisplay_C_QueExpReward Parms{};
+
+	Parms.RewardData = std::move(RewardData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.TryPopRewardData
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonExpReward_ForDisplay_C::TryPopRewardData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonExpReward_ForDisplay_C", "TryPopRewardData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

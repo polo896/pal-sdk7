@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonoNPCSpawnerBossBase_BOSS_Believer_Fat_GatlingGun.BP_MonoNPCSpawnerBossBase_BOSS_Believer_Fat_GatlingGun_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class ABP_MonoNPCSpawnerBossBase_BOSS_Believer_Fat_GatlingGun_C final : public ABP_MonoNPCSpawnerBossBase_C
 {
 public:

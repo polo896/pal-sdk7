@@ -17,183 +17,99 @@
 namespace SDK
 {
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.BeamControl
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ShootingExit
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::BeamControl()
+void ABP_UniqueRideWeapon_GeroBeam_C::ShootingExit()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "BeamControl");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ShootingExit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.CharacterHitEffectPos
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         EffectPos                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ShootingEnter
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::CharacterHitEffectPos(class AActor* TargetActor, struct FVector* EffectPos)
+void ABP_UniqueRideWeapon_GeroBeam_C::ShootingEnter()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "CharacterHitEffectPos");
-
-	Params::BP_UniqueRideWeapon_GeroBeam_C_CharacterHitEffectPos Parms{};
-
-	Parms.TargetActor = TargetActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (EffectPos != nullptr)
-		*EffectPos = std::move(Parms.EffectPos);
-}
-
-
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.DeleteAllEffect
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_UniqueRideWeapon_GeroBeam_C::DeleteAllEffect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "DeleteAllEffect");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ShootingEnter");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam(int32 EntryPoint)
+void ABP_UniqueRideWeapon_GeroBeam_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ReceiveTick");
 
-	Params::BP_UniqueRideWeapon_GeroBeam_C_ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam Parms{};
+	Params::BP_UniqueRideWeapon_GeroBeam_C_ReceiveTick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.GetMuzzleLocation
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FVector ABP_UniqueRideWeapon_GeroBeam_C::GetMuzzleLocation()
+void ABP_UniqueRideWeapon_GeroBeam_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "GetMuzzleLocation");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ReceiveEndPlay");
 
-	Params::BP_UniqueRideWeapon_GeroBeam_C_GetMuzzleLocation Parms{};
+	Params::BP_UniqueRideWeapon_GeroBeam_C_ReceiveEndPlay Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.GetMuzzleRotation
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-struct FRotator ABP_UniqueRideWeapon_GeroBeam_C::GetMuzzleRotation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "GetMuzzleRotation");
-
-	Params::BP_UniqueRideWeapon_GeroBeam_C_GetMuzzleRotation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.Hit
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              MyHitComponent                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherHitActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherHitComponent                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const TArray<int32>&                    FoliageIndex                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   HitCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_UniqueRideWeapon_GeroBeam_C::Hit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, const struct FVector& HitLocation, int32 HitCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "Hit");
-
-	Params::BP_UniqueRideWeapon_GeroBeam_C_Hit Parms{};
-
-	Parms.MyHitComponent = MyHitComponent;
-	Parms.OtherHitActor = OtherHitActor;
-	Parms.OtherHitComponent = OtherHitComponent;
-	Parms.FoliageIndex = std::move(FoliageIndex);
-	Parms.HitLocation = std::move(HitLocation);
-	Parms.HitCount = HitCount;
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.OnCancellShooting
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::OnCancellShooting()
+void ABP_UniqueRideWeapon_GeroBeam_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "OnCancellShooting");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.OnEndHit
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              MyHitComponent                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherHitActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherHitComponent                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::OnEndHit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent)
+void ABP_UniqueRideWeapon_GeroBeam_C::OnPullTrigger()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "OnEndHit");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "OnPullTrigger");
 
-	Params::BP_UniqueRideWeapon_GeroBeam_C_OnEndHit Parms{};
-
-	Parms.MyHitComponent = MyHitComponent;
-	Parms.OtherHitActor = OtherHitActor;
-	Parms.OtherHitComponent = OtherHitComponent;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -227,97 +143,181 @@ void ABP_UniqueRideWeapon_GeroBeam_C::OnHit_Damage(class UPrimitiveComponent* My
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.OnPullTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_UniqueRideWeapon_GeroBeam_C::OnPullTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "OnPullTrigger");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_UniqueRideWeapon_GeroBeam_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.OnEndHit
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              MyHitComponent                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherHitActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherHitComponent                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_UniqueRideWeapon_GeroBeam_C::OnEndHit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ReceiveEndPlay");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "OnEndHit");
 
-	Params::BP_UniqueRideWeapon_GeroBeam_C_ReceiveEndPlay Parms{};
+	Params::BP_UniqueRideWeapon_GeroBeam_C_OnEndHit Parms{};
 
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.MyHitComponent = MyHitComponent;
+	Parms.OtherHitActor = OtherHitActor;
+	Parms.OtherHitComponent = OtherHitComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.OnCancellShooting
+// (Event, Protected, BlueprintEvent)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::ReceiveTick(float DeltaSeconds)
+void ABP_UniqueRideWeapon_GeroBeam_C::OnCancellShooting()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ReceiveTick");
-
-	Params::BP_UniqueRideWeapon_GeroBeam_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ShootingEnter
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_UniqueRideWeapon_GeroBeam_C::ShootingEnter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ShootingEnter");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "OnCancellShooting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ShootingExit
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.Hit
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              MyHitComponent                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherHitActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherHitComponent                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const TArray<int32>&                    FoliageIndex                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   HitCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_UniqueRideWeapon_GeroBeam_C::ShootingExit()
+void ABP_UniqueRideWeapon_GeroBeam_C::Hit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, const struct FVector& HitLocation, int32 HitCount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ShootingExit");
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "Hit");
+
+	Params::BP_UniqueRideWeapon_GeroBeam_C_Hit Parms{};
+
+	Parms.MyHitComponent = MyHitComponent;
+	Parms.OtherHitActor = OtherHitActor;
+	Parms.OtherHitComponent = OtherHitComponent;
+	Parms.FoliageIndex = std::move(FoliageIndex);
+	Parms.HitLocation = std::move(HitLocation);
+	Parms.HitCount = HitCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.GetMuzzleRotation
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+struct FRotator ABP_UniqueRideWeapon_GeroBeam_C::GetMuzzleRotation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "GetMuzzleRotation");
+
+	Params::BP_UniqueRideWeapon_GeroBeam_C_GetMuzzleRotation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.GetMuzzleLocation
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+struct FVector ABP_UniqueRideWeapon_GeroBeam_C::GetMuzzleLocation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "GetMuzzleLocation");
+
+	Params::BP_UniqueRideWeapon_GeroBeam_C_GetMuzzleLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UniqueRideWeapon_GeroBeam_C::ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam");
+
+	Params::BP_UniqueRideWeapon_GeroBeam_C_ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.DeleteAllEffect
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_UniqueRideWeapon_GeroBeam_C::DeleteAllEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "DeleteAllEffect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.CharacterHitEffectPos
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         EffectPos                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UniqueRideWeapon_GeroBeam_C::CharacterHitEffectPos(class AActor* TargetActor, struct FVector* EffectPos)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "CharacterHitEffectPos");
+
+	Params::BP_UniqueRideWeapon_GeroBeam_C_CharacterHitEffectPos Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (EffectPos != nullptr)
+		*EffectPos = std::move(Parms.EffectPos);
+}
+
+
+// Function BP_UniqueRideWeapon_GeroBeam.BP_UniqueRideWeapon_GeroBeam_C.BeamControl
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_UniqueRideWeapon_GeroBeam_C::BeamControl()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UniqueRideWeapon_GeroBeam_C", "BeamControl");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

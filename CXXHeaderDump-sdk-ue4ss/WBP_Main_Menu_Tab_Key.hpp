@@ -4,9 +4,9 @@
 class UWBP_Main_Menu_Tab_Key_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0290 (size: 0x8)
+    class UWidgetAnimation* Anm_Push;                                                 // 0x0280 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x0288 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0290 (size: 0x8)
     class UImage* Image;                                                              // 0x0298 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02A0 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x02A8 (size: 0x8)

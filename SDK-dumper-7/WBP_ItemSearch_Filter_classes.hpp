@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ItemSearch_Filter.WBP_ItemSearch_Filter_C
-// 0x0020 (0x0498 - 0x0478)
+// 0x0020 (0x04A0 - 0x0480)
 class UWBP_ItemSearch_Filter_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_IngameMenu_Chest_Filter_C*         WBP_IngameMenu_Chest_Filter;                       // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class FName>                           CurrentFilterTypes;                                // 0x0488(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_IngameMenu_Chest_Filter_C*         WBP_IngameMenu_Chest_Filter;                       // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class FName>                           CurrentFilterTypes;                                // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void Setup();

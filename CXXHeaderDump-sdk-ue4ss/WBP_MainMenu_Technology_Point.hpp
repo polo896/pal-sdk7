@@ -5,7 +5,7 @@ class UWBP_MainMenu_Technology_Point_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
     class UWidgetAnimation* Anm_Boss;                                                 // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0288 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x0288 (size: 0x8)
     class UWidgetAnimation* Anm_Blink;                                                // 0x0290 (size: 0x8)
     class UWidgetAnimation* Anm_EnableToDisable;                                      // 0x0298 (size: 0x8)
     class UImage* BlinkEff_2;                                                         // 0x02A0 (size: 0x8)

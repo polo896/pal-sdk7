@@ -3,6 +3,6 @@
 
 class UBP_PalLocationManager_C : public UPalLocationManager
 {
-}; // Size: 0x210
+}; // Size: 0x268
 
 #endif

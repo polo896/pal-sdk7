@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalSpawner_Sheets_orange_B.BP_PalSpawner_Sheets_orange_B_C
-// 0x0000 (0x0638 - 0x0638)
+// 0x0000 (0x0648 - 0x0648)
 class ABP_PalSpawner_Sheets_orange_B_C final : public ABP_PalSpawner_Standard_C
 {
 public:

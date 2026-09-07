@@ -31,9 +31,9 @@ public:
 	bool                                          ShouldShow;                                        // 0x0299(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetState(bool IsLow, bool Show);
-	void ExecuteUbergraph_WBP_PalWorkPowerPlant_Gauge(int32 EntryPoint);
 	void AnmEvent_Changing(bool IsChanging);
+	void ExecuteUbergraph_WBP_PalWorkPowerPlant_Gauge(int32 EntryPoint);
+	void SetState(bool IsLow, bool Show);
 
 public:
 	static class UClass* StaticClass()

@@ -22,7 +22,7 @@ class ABP_LevelGimmick_AreaBarrier_C : public APalLevelGimmick_AreaBarrier
     void UpdateNiagaraFadeOut(double DeltaSeconds);
     void ResetNiagara();
     void StartNiagaraFadeOut();
-    TArray<USceneComponent*> GetTeleportPoints();
+    TArray<class USceneComponent*> GetTeleportPoints();
     void ReceiveBeginPlay();
     void ReceiveTick(float DeltaSeconds);
     void OnDataChanged(const FPalLevelGimmick_AreaBarrier_ViewModel& InViewModel);

@@ -51,16 +51,16 @@ public:
 	struct FVector                                LookAtWorldLocation;                               // 0x11B0(0x0018)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void WalkLeaningOverride(const struct FPoseLink& InPose_2, const struct FVector2D& LeaningVelocity, struct FPoseLink* WalkLeaningOverride_0);
-	void UpperOverride(const struct FPoseLink& NativePose, const struct FPoseLink& ActionPose, struct FPoseLink* UpperOverride_0);
-	void SwimLeaningOverride(const struct FPoseLink& InPose_3, const struct FVector2D& LeaningVelocity, struct FPoseLink* SwimLeaningOverride_0);
-	void LookAtOverride(const struct FPoseLink& InPose, const struct FVector& LookAtWorldLocation_0, struct FPoseLink* LookAtOverride_0);
-	void FootIKOverride(const struct FPoseLink& InPose_0, struct FPoseLink* FootIKOverride_0);
-	void FlyLeaningOverride(const struct FPoseLink& InPose_1, const struct FVector2D& LeaningVelocity, struct FPoseLink* FlyLeaningOverride_0);
-	void ExecuteUbergraph_ABP_LanternButler_Implementation(int32 EntryPoint);
-	void CustomOverride(const struct FPoseLink& PrePose, const struct FPalCustomAnimOverrideData& CustomData, struct FPoseLink* CustomOverride_0);
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
 	void AimingOverride(const struct FPoseLink& DefaultPose, const struct FRotator& AimRotator, struct FPoseLink* AimingOverride_0);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void CustomOverride(const struct FPoseLink& PrePose, const struct FPalCustomAnimOverrideData& CustomData, struct FPoseLink* CustomOverride_0);
+	void ExecuteUbergraph_ABP_LanternButler_Implementation(int32 EntryPoint);
+	void FlyLeaningOverride(const struct FPoseLink& InPose_1, const struct FVector2D& LeaningVelocity, struct FPoseLink* FlyLeaningOverride_0);
+	void FootIKOverride(const struct FPoseLink& InPose_0, struct FPoseLink* FootIKOverride_0);
+	void LookAtOverride(const struct FPoseLink& InPose, const struct FVector& LookAtWorldLocation_0, struct FPoseLink* LookAtOverride_0);
+	void SwimLeaningOverride(const struct FPoseLink& InPose_3, const struct FVector2D& LeaningVelocity, struct FPoseLink* SwimLeaningOverride_0);
+	void UpperOverride(const struct FPoseLink& NativePose, const struct FPoseLink& ActionPose, struct FPoseLink* UpperOverride_0);
+	void WalkLeaningOverride(const struct FPoseLink& InPose_2, const struct FVector2D& LeaningVelocity, struct FPoseLink* WalkLeaningOverride_0);
 
 public:
 	static class UClass* StaticClass()

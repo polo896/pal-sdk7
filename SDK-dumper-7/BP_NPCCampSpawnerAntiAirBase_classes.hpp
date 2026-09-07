@@ -43,22 +43,22 @@ public:
 	class UClass*                                 OverridePresetClass;                               // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void TryCampSpawn();
-	void Start_Reset_Timer(double RespawnTime);
-	void SetupCampStatus();
-	void SetSpawnAble();
-	void ResetCamp();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveBeginPlay();
-	void OnReceivedReward();
-	void OnEnemySpawned(class UPalIndividualCharacterHandle*& SpawnHandle);
-	void OnEnemyDead(const struct FPalDeadInfo& DeadInfo);
-	class FName GetRewardName();
-	void GetPresetClass(class UClass** PresetClass_0);
-	void ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase(int32 EntryPoint);
-	void CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam);
 	void CheckWorldLoadComplete(bool* Loaded);
+	void CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam);
+	void ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase(int32 EntryPoint);
+	void GetPresetClass(class UClass** PresetClass_0);
+	class FName GetRewardName();
+	void OnEnemyDead(const struct FPalDeadInfo& DeadInfo);
+	void OnEnemySpawned(class UPalIndividualCharacterHandle*& SpawnHandle);
+	void OnReceivedReward();
+	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveTick(float DeltaSeconds);
+	void ResetCamp();
+	void SetSpawnAble();
+	void SetupCampStatus();
+	void Start_Reset_Timer(double RespawnTime);
+	void TryCampSpawn();
 
 public:
 	static class UClass* StaticClass()

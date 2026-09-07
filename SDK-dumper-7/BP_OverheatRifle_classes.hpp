@@ -35,28 +35,28 @@ public:
 	double                                        Heat_Value;                                        // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void TickCoolDown(double DeltaTime);
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveBeginPlay();
-	void OnWeaponNotify(EWeaponNotifyType Type);
-	void OnChangedHeatValue_Event(bool bOverHeated, double HeatValue_0);
-	void IsOverHeated(bool* bOverHeated);
-	void GetMuzzleEffectAttached(class UNiagaraSystem** Effect);
-	void GetMuzzleEffect(class UNiagaraSystem** NewParam);
-	void GetHeatValue(double* CurrentHeatValue);
-	void GetAmmoClass(class UClass** AmmoClass);
-	void ExecuteUbergraph_BP_OverheatRifle(int32 EntryPoint);
-	void DecreaseLightIntensify();
 	void CanShoot(bool* can);
-	void ShootBullet();
-	void OnShoot(class APalBullet* BulletActor);
-	void OnReloadStart(float InReloadSpeedPlayRate);
-	void OnReleaseTrigger(bool bCanShootOnRelease);
-	void OnPullTrigger();
-	void OnDetachWeapon(class AActor* detachActor);
-	void OnAttachWeapon(class AActor* attachActor);
+	void DecreaseLightIntensify();
+	void ExecuteUbergraph_BP_OverheatRifle(int32 EntryPoint);
+	void GetAmmoClass(class UClass** AmmoClass);
+	void GetHeatValue(double* CurrentHeatValue);
+	void GetMuzzleEffect(class UNiagaraSystem** NewParam);
+	void GetMuzzleEffectAttached(class UNiagaraSystem** Effect);
 	void GetMuzzleLocation(struct FVector* MuzzleLocation);
+	void IsOverHeated(bool* bOverHeated);
+	void OnAttachWeapon(class AActor* attachActor);
+	void OnChangedHeatValue_Event(bool bOverHeated, double HeatValue_0);
+	void OnDetachWeapon(class AActor* detachActor);
+	void OnPullTrigger();
+	void OnReleaseTrigger(bool bCanShootOnRelease);
+	void OnReloadStart(float InReloadSpeedPlayRate);
+	void OnShoot(class APalBullet* BulletActor);
+	void OnWeaponNotify(EWeaponNotifyType Type);
+	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveTick(float DeltaSeconds);
+	void ShootBullet();
+	void TickCoolDown(double DeltaTime);
 
 	int32 GetRemainBulletCount() const;
 

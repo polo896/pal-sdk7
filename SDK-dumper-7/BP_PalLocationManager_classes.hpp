@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalLocationManager.BP_PalLocationManager_C
-// 0x0000 (0x0210 - 0x0210)
+// 0x0000 (0x0268 - 0x0268)
 class UBP_PalLocationManager_C final : public UPalLocationManager
 {
 public:

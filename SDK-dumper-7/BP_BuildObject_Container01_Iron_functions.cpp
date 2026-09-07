@@ -37,20 +37,6 @@ void ABP_BuildObject_Container01_Iron_C::ExecuteUbergraph_BP_BuildObject_Contain
 }
 
 
-// Function BP_BuildObject_Container01_Iron.BP_BuildObject_Container01_Iron_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BuildObject_Container01_Iron_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_Container01_Iron_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_BuildObject_Container01_Iron.BP_BuildObject_Container01_Iron_C.OnAvailable_BlueprintImpl
 // (Event, Protected, BlueprintEvent)
 
@@ -60,6 +46,20 @@ void ABP_BuildObject_Container01_Iron_C::OnAvailable_BlueprintImpl()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_BuildObject_Container01_Iron_C", "OnAvailable_BlueprintImpl");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BuildObject_Container01_Iron.BP_BuildObject_Container01_Iron_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BuildObject_Container01_Iron_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BuildObject_Container01_Iron_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

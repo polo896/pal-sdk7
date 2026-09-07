@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function BP_DungeonAreaVolume.BP_DungeonAreaVolume_C.ExecuteUbergraph_BP_DungeonAreaVolume
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DungeonAreaVolume_C::ExecuteUbergraph_BP_DungeonAreaVolume(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DungeonAreaVolume_C", "ExecuteUbergraph_BP_DungeonAreaVolume");
-
-	Params::BP_DungeonAreaVolume_C_ExecuteUbergraph_BP_DungeonAreaVolume Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DungeonAreaVolume.BP_DungeonAreaVolume_C.Develop_SetupSize
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Extent                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DungeonAreaVolume_C::Develop_SetupSize(const struct FVector& Extent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DungeonAreaVolume_C", "Develop_SetupSize");
-
-	Params::BP_DungeonAreaVolume_C_Develop_SetupSize Parms{};
-
-	Parms.Extent = std::move(Extent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_DungeonAreaVolume.BP_DungeonAreaVolume_C.BndEvt__BP_DungeonAreaVolume_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -82,6 +42,46 @@ void ABP_DungeonAreaVolume_C::BndEvt__BP_DungeonAreaVolume_Box_K2Node_ComponentB
 	Parms.OtherBodyIndex = OtherBodyIndex;
 	Parms.bFromSweep = bFromSweep;
 	Parms.SweepResult = std::move(SweepResult);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DungeonAreaVolume.BP_DungeonAreaVolume_C.Develop_SetupSize
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   Extent                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DungeonAreaVolume_C::Develop_SetupSize(const struct FVector& Extent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_DungeonAreaVolume_C", "Develop_SetupSize");
+
+	Params::BP_DungeonAreaVolume_C_Develop_SetupSize Parms{};
+
+	Parms.Extent = std::move(Extent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DungeonAreaVolume.BP_DungeonAreaVolume_C.ExecuteUbergraph_BP_DungeonAreaVolume
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DungeonAreaVolume_C::ExecuteUbergraph_BP_DungeonAreaVolume(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_DungeonAreaVolume_C", "ExecuteUbergraph_BP_DungeonAreaVolume");
+
+	Params::BP_DungeonAreaVolume_C_ExecuteUbergraph_BP_DungeonAreaVolume Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,55 +17,21 @@
 namespace SDK
 {
 
-// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorEndOverlap
-// (Event, Public, BlueprintEvent)
+// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary
+// (Final, UbergraphFunction)
 // Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ReceiveActorEndOverlap");
+		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary");
 
-	Params::BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorEndOverlap Parms{};
+	Params::BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary Parms{};
 
-	Parms.OtherActor = OtherActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorBeginOverlap
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ReceiveActorBeginOverlap");
-
-	Params::BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorBeginOverlap Parms{};
-
-	Parms.OtherActor = OtherActor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -93,23 +59,57 @@ void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::OnAlertStateChanged(EPalWildlif
 }
 
 
-// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary
-// (Final, UbergraphFunction)
+// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorBeginOverlap
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary(int32 EntryPoint)
+void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary");
+		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ReceiveActorBeginOverlap");
 
-	Params::BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary Parms{};
+	Params::BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorBeginOverlap Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorEndOverlap
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ReceiveActorEndOverlap");
+
+	Params::BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorEndOverlap Parms{};
+
+	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PalBiomeTriggerBox_WildlifeSanctuary_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBiomeTriggerBox_WildlifeSanctuary_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

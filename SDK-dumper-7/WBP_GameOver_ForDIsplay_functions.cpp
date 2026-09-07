@@ -17,209 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_GameOver_ForDIsplay_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_GameOver_ForDIsplay_C::BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "Tick");
-
-	Params::WBP_GameOver_ForDIsplay_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.ShowWaiting
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::ShowWaiting()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "ShowWaiting");
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnReceivedConfirmSurrenderRaidBossArea
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.ConfirmRespawn
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GameOver_ForDIsplay_C::OnReceivedConfirmSurrenderRaidBossArea(bool bResult)
+void UWBP_GameOver_ForDIsplay_C::ConfirmRespawn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnReceivedConfirmSurrenderRaidBossArea");
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "ConfirmRespawn");
 
-	Params::WBP_GameOver_ForDIsplay_C_OnReceivedConfirmSurrenderRaidBossArea Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnInitialized
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.ConfirmSurrenderRaidBossArea
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::ConfirmSurrenderRaidBossArea()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "ConfirmSurrenderRaidBossArea");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_GameOver_ForDIsplay_C::OnInitialized()
+void UWBP_GameOver_ForDIsplay_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnFinishedOpen
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::OnFinishedOpen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnFinishedOpen");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnFinishedClose
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::OnFinishedClose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnFinishedClose");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnEndedRespawnBlockTime
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::OnEndedRespawnBlockTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnEndedRespawnBlockTime");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnClosedCheckResetChaarcetrDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GameOver_ForDIsplay_C::OnClosedCheckResetChaarcetrDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnClosedCheckResetChaarcetrDialog");
-
-	Params::WBP_GameOver_ForDIsplay_C_OnClosedCheckResetChaarcetrDialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnClickedRespawnButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::OnClickedRespawnButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnClickedRespawnButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnCancelAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::OnCancelAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnCancelAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.IsHardcoreView
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_GameOver_ForDIsplay_C::IsHardcoreView()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "IsHardcoreView");
-
-	Params::WBP_GameOver_ForDIsplay_C_IsHardcoreView Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.HideWaiting
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GameOver_ForDIsplay_C::HideWaiting()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "HideWaiting");
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,59 +93,211 @@ void UWBP_GameOver_ForDIsplay_C::ExecuteUbergraph_WBP_GameOver_ForDIsplay(int32 
 }
 
 
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.Destruct
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.HideWaiting
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::HideWaiting()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "HideWaiting");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.IsHardcoreView
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_GameOver_ForDIsplay_C::IsHardcoreView()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "IsHardcoreView");
+
+	Params::WBP_GameOver_ForDIsplay_C_IsHardcoreView Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnCancelAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnClickedRespawnButton
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::OnClickedRespawnButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnClickedRespawnButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnClosedCheckResetChaarcetrDialog
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GameOver_ForDIsplay_C::OnClosedCheckResetChaarcetrDialog(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnClosedCheckResetChaarcetrDialog");
+
+	Params::WBP_GameOver_ForDIsplay_C_OnClosedCheckResetChaarcetrDialog Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnEndedRespawnBlockTime
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::OnEndedRespawnBlockTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnEndedRespawnBlockTime");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnFinishedClose
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::OnFinishedClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnFinishedClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnFinishedOpen
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::OnFinishedOpen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnFinishedOpen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_GameOver_ForDIsplay_C::Destruct()
+void UWBP_GameOver_ForDIsplay_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "Destruct");
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.ConfirmSurrenderRaidBossArea
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnReceivedConfirmSurrenderRaidBossArea
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GameOver_ForDIsplay_C::ConfirmSurrenderRaidBossArea()
+void UWBP_GameOver_ForDIsplay_C::OnReceivedConfirmSurrenderRaidBossArea(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "ConfirmSurrenderRaidBossArea");
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnReceivedConfirmSurrenderRaidBossArea");
+
+	Params::WBP_GameOver_ForDIsplay_C_OnReceivedConfirmSurrenderRaidBossArea Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GameOver_ForDIsplay_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.ConfirmRespawn
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.ShowWaiting
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_GameOver_ForDIsplay_C::ConfirmRespawn()
+void UWBP_GameOver_ForDIsplay_C::ShowWaiting()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "ConfirmRespawn");
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "ShowWaiting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GameOver_ForDIsplay_C::BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature()
+void UWBP_GameOver_ForDIsplay_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature");
+		Func = Class->GetFunction("WBP_GameOver_ForDIsplay_C", "Tick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_GameOver_ForDIsplay_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

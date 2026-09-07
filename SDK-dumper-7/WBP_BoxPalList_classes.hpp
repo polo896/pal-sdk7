@@ -10,39 +10,39 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_BoxPalList.WBP_BoxPalList_C
-// 0x0100 (0x05A0 - 0x04A0)
+// 0x0100 (0x05A8 - 0x04A8)
 class UWBP_BoxPalList_C final : public UPalUIPalBoxBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_BoxPalListBase_C*                  WBP_BoxPalListBase;                                // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)> OnLeftClickedSlot; // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget)> OnRightClickedSlot; // 0x04C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget)> OnHoveredSlot;   // 0x04D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget)> OnUnhoveredSlot; // 0x04E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(int32 NowPage)> OnUpdatedPage;                                     // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          CanDragDrop;                                       // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_501[0x3];                                      // 0x0501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDataTableRowName_UIInputAction     NextPageInputAction;                               // 0x0504(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     PrevPageInputAction;                               // 0x050C(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_514[0x4];                                      // 0x0514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* NewSlot)> OnCreatedNewSlot; // 0x0518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(int32 Page)>    OnSelectPalBoxPage;                                // 0x0528(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnSorted;                                          // 0x0538(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)> OnUpdateSlot; // 0x0548(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TSoftObjectPtr<class UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;                         // 0x0558(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
-	bool                                          bDisplayBanMarkInExpedition;                       // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)> OnSyncedSlot; // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_BoxPalListBase_C*                  WBP_BoxPalListBase;                                // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)> OnLeftClickedSlot; // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget)> OnRightClickedSlot; // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget)> OnHoveredSlot;   // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* Widget)> OnUnhoveredSlot; // 0x04E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 NowPage)> OnUpdatedPage;                                     // 0x04F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          CanDragDrop;                                       // 0x0508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_509[0x3];                                      // 0x0509(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_UIInputAction     NextPageInputAction;                               // 0x050C(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     PrevPageInputAction;                               // 0x0514(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51C[0x4];                                      // 0x051C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* NewSlot)> OnCreatedNewSlot; // 0x0520(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 Page)>    OnSelectPalBoxPage;                                // 0x0530(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnSorted;                                          // 0x0540(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)> OnUpdateSlot; // 0x0550(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TSoftObjectPtr<class UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;                         // 0x0560(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
+	bool                                          bDisplayBanMarkInExpedition;                       // 0x0590(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_591[0x7];                                      // 0x0591(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)> OnSyncedSlot; // 0x0598(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void BndEvt__WBP_BoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_0_OnUpdateSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);

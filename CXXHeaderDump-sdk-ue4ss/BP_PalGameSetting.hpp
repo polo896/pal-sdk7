@@ -8,6 +8,6 @@ class UBP_PalGameSetting_C : public UPalGameSetting
     float GetWeakScale(int32 weakCount);
     float CalcCaptureRate(float captureItemLevel, const class UPalIndividualCharacterHandle* targetHandle, const class UPalIndividualCharacterHandle* throwCharacterHandle, bool bIsSneakBonus);
     float GetEnemyMarkScale(const FVector& targetPosition, const FVector& selfPosition);
-}; // Size: 0x20C8
+}; // Size: 0x2140
 
 #endif

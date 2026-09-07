@@ -3,26 +3,26 @@
 
 class UWBP_PalStorageMenu_C : public UPalUIPalStorageMenu
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0480 (size: 0x8)
-    class UWBP_IngameMenu_PalBox_C* WBP_IngameMenu_PalBox;                            // 0x0488 (size: 0x8)
-    FDataTableRowHandle titleMsgId;                                                   // 0x0490 (size: 0x10)
-    FDataTableRowHandle loosePalCheckMsgId;                                           // 0x04A0 (size: 0x10)
-    TSoftObjectPtr<class UPalIndividualCharacterSlot> CachedLooseSlot;                // 0x04B0 (size: 0x30)
-    TEnumAsByte<EPalBoxHoveredSlotType::Type> hoverdSlotType;                         // 0x04E0 (size: 0x1)
-    FPalDataTableRowName_UIInputAction prevCursorShortcutInput;                       // 0x04E4 (size: 0x8)
-    FPalDataTableRowName_UIInputAction nextCursorShortcutInput;                       // 0x04EC (size: 0x8)
-    FPalDataTableRowName_UIInputAction SendSlotInput;                                 // 0x04F4 (size: 0x8)
-    FPalUIActionBindData SendSlotInputHandle;                                         // 0x04FC (size: 0x4)
-    FPalUIActionBindData ViewDetailInputHandle;                                       // 0x0500 (size: 0x4)
-    FPalUIActionBindData FavoriteInputHandle;                                         // 0x0504 (size: 0x4)
-    FPalUIActionBindData ToggleSkillInfoActionHandle;                                 // 0x0508 (size: 0x4)
-    class UPalIndividualCharacterSlot* CachedLastHoveredSlot;                         // 0x0510 (size: 0x8)
-    FPalDataTableRowName_UIInputAction ViewDetailInput;                               // 0x0518 (size: 0x8)
-    TArray<UPalIndividualCharacterSlot*> LockSlotList;                                // 0x0520 (size: 0x10)
-    FPalDataTableRowName_UIInputAction FavoriteShortcutInput;                         // 0x0530 (size: 0x8)
-    bool bIsBaseCamp;                                                                 // 0x0538 (size: 0x1)
-    FPalDataTableRowName_UIInputAction ToggleSkillInfoInput;                          // 0x053C (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UWidgetAnimation* Default_In;                                               // 0x0488 (size: 0x8)
+    class UWBP_IngameMenu_PalBox_C* WBP_IngameMenu_PalBox;                            // 0x0490 (size: 0x8)
+    FDataTableRowHandle titleMsgId;                                                   // 0x0498 (size: 0x10)
+    FDataTableRowHandle loosePalCheckMsgId;                                           // 0x04A8 (size: 0x10)
+    TSoftObjectPtr<UPalIndividualCharacterSlot> CachedLooseSlot;                      // 0x04B8 (size: 0x30)
+    TEnumAsByte<EPalBoxHoveredSlotType::Type> hoverdSlotType;                         // 0x04E8 (size: 0x1)
+    FPalDataTableRowName_UIInputAction prevCursorShortcutInput;                       // 0x04EC (size: 0x8)
+    FPalDataTableRowName_UIInputAction nextCursorShortcutInput;                       // 0x04F4 (size: 0x8)
+    FPalDataTableRowName_UIInputAction SendSlotInput;                                 // 0x04FC (size: 0x8)
+    FPalUIActionBindData SendSlotInputHandle;                                         // 0x0504 (size: 0x4)
+    FPalUIActionBindData ViewDetailInputHandle;                                       // 0x0508 (size: 0x4)
+    FPalUIActionBindData FavoriteInputHandle;                                         // 0x050C (size: 0x4)
+    FPalUIActionBindData ToggleSkillInfoActionHandle;                                 // 0x0510 (size: 0x4)
+    class UPalIndividualCharacterSlot* CachedLastHoveredSlot;                         // 0x0518 (size: 0x8)
+    FPalDataTableRowName_UIInputAction ViewDetailInput;                               // 0x0520 (size: 0x8)
+    TArray<class UPalIndividualCharacterSlot*> LockSlotList;                          // 0x0528 (size: 0x10)
+    FPalDataTableRowName_UIInputAction FavoriteShortcutInput;                         // 0x0538 (size: 0x8)
+    bool bIsBaseCamp;                                                                 // 0x0540 (size: 0x1)
+    FPalDataTableRowName_UIInputAction ToggleSkillInfoInput;                          // 0x0544 (size: 0x8)
 
     void OnCampSlotEmpty(class UWBP_PalCharacterSlotButtonBase_C* Slot);
     void OnInputAction_ToggleSkillInfo();
@@ -59,6 +59,6 @@ class UWBP_PalStorageMenu_C : public UPalUIPalStorageMenu
     void Return To Box(bool bResult);
     void BndEvt__WBP_PalStorageMenu_WBP_IngameMenu_PalBox_K2Node_ComponentBoundEvent_11_OnCampEmptySlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
     void ExecuteUbergraph_WBP_PalStorageMenu(int32 EntryPoint);
-}; // Size: 0x544
+}; // Size: 0x54C
 
 #endif

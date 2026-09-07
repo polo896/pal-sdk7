@@ -349,6 +349,15 @@ enum class EGeometryCollectionCacheType : uint8
 	EGeometryCollectionCacheType_MAX         = 4,
 };
 
+// ScriptStruct Chaos.ManagedArrayCollection
+// 0x00B0 (0x00B0 - 0x0000)
+struct alignas(0x08) FManagedArrayCollection final
+{
+public:
+	uint8                                         Pad_0[0xB0];                                       // 0x0000(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FManagedArrayCollection;
+
 // ScriptStruct Chaos.SolverCollisionFilterSettings
 // 0x0010 (0x0010 - 0x0000)
 struct FSolverCollisionFilterSettings final
@@ -417,15 +426,6 @@ public:
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FChaosSolverConfiguration;
-
-// ScriptStruct Chaos.ManagedArrayCollection
-// 0x00B0 (0x00B0 - 0x0000)
-struct alignas(0x08) FManagedArrayCollection final
-{
-public:
-	uint8                                         Pad_0[0xB0];                                       // 0x0000(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FManagedArrayCollection;
 
 // ScriptStruct Chaos.SolverCollisionData
 // 0x00C0 (0x00C0 - 0x0000)

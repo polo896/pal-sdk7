@@ -24,7 +24,7 @@ class UWebBrowser : public UWidget
 
 class UWebBrowserAssetManager : public UObject
 {
-    TSoftObjectPtr<class UMaterial> DefaultMaterial;                                  // 0x0028 (size: 0x30)
+    TSoftObjectPtr<UMaterial> DefaultMaterial;                                        // 0x0028 (size: 0x30)
 
 }; // Size: 0x88
 

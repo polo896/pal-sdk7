@@ -18,26 +18,26 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C
-// 0x0050 (0x07A0 - 0x0750)
+// 0x0050 (0x07C0 - 0x0770)
 class ABP_BuildObject_BuildableGoddessStatue_C final : public APalBuildObject
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0750(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_BuildObjectSimulateArrowComponent_C* BP_BuildObjectSimulateArrowComponent;             // 0x0758(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_GoddessStatue_Glow;                             // 0x0760(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          CheckOverlapCollision;                             // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          BuildWorkableBounds;                               // 0x0770(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        IndicatorOrigin;                                   // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_InteractableCapsule_C*              BP_InteractableCapsule;                            // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh;                                              // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Root;                                              // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0770(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_BuildObjectSimulateArrowComponent_C* BP_BuildObjectSimulateArrowComponent;             // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_GoddessStatue_Glow;                             // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          CheckOverlapCollision;                             // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          BuildWorkableBounds;                               // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        IndicatorOrigin;                                   // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_InteractableCapsule_C*              BP_InteractableCapsule;                            // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh;                                              // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Root;                                              // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetActive_Internal(bool bOn);
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue(int32 EntryPoint);
-	void CustomEvent(class UPalMapObjectConcreteModelBase* Model);
 	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void CustomEvent(class UPalMapObjectConcreteModelBase* Model);
+	void ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void SetActive_Internal(bool bOn);
 
 public:
 	static class UClass* StaticClass()

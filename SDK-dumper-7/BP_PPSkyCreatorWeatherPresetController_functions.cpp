@@ -17,51 +17,47 @@
 namespace SDK
 {
 
-// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.SetBrightness
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_PPSkyCreatorWeatherPresetController_C::SetBrightness()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "SetBrightness");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PPSkyCreatorWeatherPresetController_C::ReceiveTick(float DeltaSeconds)
+void ABP_PPSkyCreatorWeatherPresetController_C::ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController");
 
-	Params::BP_PPSkyCreatorWeatherPresetController_C_ReceiveTick Parms{};
+	Params::BP_PPSkyCreatorWeatherPresetController_C_ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.GetPrePreset
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPPSkyCreatorWeatherPreset**      Pre                                                    (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PPSkyCreatorWeatherPresetController_C::ReceiveBeginPlay()
+void ABP_PPSkyCreatorWeatherPresetController_C::GetPrePreset(int32 Index_0, class UPPSkyCreatorWeatherPreset** Pre)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "GetPrePreset");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_PPSkyCreatorWeatherPresetController_C_GetPrePreset Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Pre != nullptr)
+		*Pre = Parms.Pre;
 }
 
 
@@ -101,47 +97,51 @@ void ABP_PPSkyCreatorWeatherPresetController_C::GetPresets(double Time_0, class 
 }
 
 
-// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.GetPrePreset
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPPSkyCreatorWeatherPreset**      Pre                                                    (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PPSkyCreatorWeatherPresetController_C::GetPrePreset(int32 Index_0, class UPPSkyCreatorWeatherPreset** Pre)
+void ABP_PPSkyCreatorWeatherPresetController_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "GetPrePreset");
+		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "ReceiveBeginPlay");
 
-	Params::BP_PPSkyCreatorWeatherPresetController_C_GetPrePreset Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Pre != nullptr)
-		*Pre = Parms.Pre;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PPSkyCreatorWeatherPresetController_C::ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController(int32 EntryPoint)
+void ABP_PPSkyCreatorWeatherPresetController_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController");
+		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "ReceiveTick");
 
-	Params::BP_PPSkyCreatorWeatherPresetController_C_ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController Parms{};
+	Params::BP_PPSkyCreatorWeatherPresetController_C_ReceiveTick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PPSkyCreatorWeatherPresetController.BP_PPSkyCreatorWeatherPresetController_C.SetBrightness
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_PPSkyCreatorWeatherPresetController_C::SetBrightness()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PPSkyCreatorWeatherPresetController_C", "SetBrightness");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

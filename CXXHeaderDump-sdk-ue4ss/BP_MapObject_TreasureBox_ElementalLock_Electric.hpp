@@ -3,9 +3,9 @@
 
 class ABP_MapObject_TreasureBox_ElementalLock_Electric_C : public ABP_MapObject_TreasureBox_ElementalLockBase_C
 {
-    class UPalWorkFacingComponent* PalWorkFacing;                                     // 0x0488 (size: 0x8)
-    class UNiagaraComponent* NS_NoteGlow;                                             // 0x0490 (size: 0x8)
+    class UPalWorkFacingComponent* PalWorkFacing;                                     // 0x04A0 (size: 0x8)
+    class UNiagaraComponent* NS_NoteGlow;                                             // 0x04A8 (size: 0x8)
 
-}; // Size: 0x498
+}; // Size: 0x4B0
 
 #endif

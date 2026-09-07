@@ -17,228 +17,180 @@
 namespace SDK
 {
 
-// Function WBP_Quest_List.WBP_Quest_List_C.SetTrackingQuestId
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Quest_List.WBP_Quest_List_C.AddCompletedQuestId
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FName>&                    QuestIdArray                                           (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_Quest_List_C::SetTrackingQuestId(class FName QuestId)
+void UWBP_Quest_List_C::AddCompletedQuestId(TArray<class FName>& QuestIdArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "SetTrackingQuestId");
+		Func = Class->GetFunction("WBP_Quest_List_C", "AddCompletedQuestId");
 
-	Params::WBP_Quest_List_C_SetTrackingQuestId Parms{};
+	Params::WBP_Quest_List_C_AddCompletedQuestId Parms{};
 
-	Parms.QuestId = QuestId;
+	Parms.QuestIdArray = std::move(QuestIdArray);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	QuestIdArray = std::move(Parms.QuestIdArray);
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.AddOrderedQuest
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UPalQuestData*>&           QuestDataArray                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Quest_List_C::AddOrderedQuest(TArray<class UPalQuestData*>& QuestDataArray)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "AddOrderedQuest");
+
+	Params::WBP_Quest_List_C_AddOrderedQuest Parms{};
+
+	Parms.QuestDataArray = std::move(QuestDataArray);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	QuestDataArray = std::move(Parms.QuestDataArray);
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Quest_List_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Quest_List_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.ExecuteUbergraph_WBP_Quest_List
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_List_C::ExecuteUbergraph_WBP_Quest_List(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "ExecuteUbergraph_WBP_Quest_List");
+
+	Params::WBP_Quest_List_C_ExecuteUbergraph_WBP_Quest_List Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Quest_List.WBP_Quest_List_C.OnUnhoveredQuestButton_Binded
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Quest_ListButton_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::OnUnhoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "OnUnhoveredQuestButton_Binded");
-
-	Params::WBP_Quest_List_C_OnUnhoveredQuestButton_Binded Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.OnHoveredQuestButton_Binded
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Quest_ListButton_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::OnHoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "OnHoveredQuestButton_Binded");
-
-	Params::WBP_Quest_List_C_OnHoveredQuestButton_Binded Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.OnClickedQuestButton_Binded
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Quest_ListButton_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::OnClickedQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "OnClickedQuestButton_Binded");
-
-	Params::WBP_Quest_List_C_OnClickedQuestButton_Binded Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.GetTopQuestWidget
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWBP_Quest_ListButton_C**         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::GetTopQuestWidget(class UWBP_Quest_ListButton_C** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopQuestWidget");
-
-	Params::WBP_Quest_List_C_GetTopQuestWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.GetTopQuestData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPalQuestData**                   QuestData                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::GetTopQuestData(class UPalQuestData** QuestData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopQuestData");
-
-	Params::WBP_Quest_List_C_GetTopQuestData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (QuestData != nullptr)
-		*QuestData = Parms.QuestData;
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.GetTopFocusTarget_OrderedQuest
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::GetTopFocusTarget_OrderedQuest(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopFocusTarget_OrderedQuest");
-
-	Params::WBP_Quest_List_C_GetTopFocusTarget_OrderedQuest Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.GetTopFocusTarget_CompletedQuest
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::GetTopFocusTarget_CompletedQuest(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopFocusTarget_CompletedQuest");
-
-	Params::WBP_Quest_List_C_GetTopFocusTarget_CompletedQuest Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_List_C::GetTopFocusTarget(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopFocusTarget");
-
-	Params::WBP_Quest_List_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.GetOrderedQuestWidgetByType
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_Quest_List.WBP_Quest_List_C.FilteringInternal
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalQuestType                           QuestType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UWBP_Quest_ListButton_C*>* widgets                                                (Parm, OutParm, ContainsInstancedReference)
 
-void UWBP_Quest_List_C::GetOrderedQuestWidgetByType(EPalQuestType QuestType, TArray<class UWBP_Quest_ListButton_C*>* widgets)
+void UWBP_Quest_List_C::FilteringInternal(EPalQuestType QuestType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetOrderedQuestWidgetByType");
+		Func = Class->GetFunction("WBP_Quest_List_C", "FilteringInternal");
 
-	Params::WBP_Quest_List_C_GetOrderedQuestWidgetByType Parms{};
+	Params::WBP_Quest_List_C_FilteringInternal Parms{};
 
 	Parms.QuestType = QuestType;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (widgets != nullptr)
-		*widgets = std::move(Parms.widgets);
 }
 
 
-// Function WBP_Quest_List.WBP_Quest_List_C.GetOrderedQuestWidget
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<class UWBP_Quest_ListButton_C*>* widgets                                                (Parm, OutParm, ContainsInstancedReference)
+// Function WBP_Quest_List.WBP_Quest_List_C.FilteringMainQuest
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Quest_List_C::GetOrderedQuestWidget(TArray<class UWBP_Quest_ListButton_C*>* widgets)
+void UWBP_Quest_List_C::FilteringMainQuest()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetOrderedQuestWidget");
+		Func = Class->GetFunction("WBP_Quest_List_C", "FilteringMainQuest");
 
-	Params::WBP_Quest_List_C_GetOrderedQuestWidget Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.FIlteringSubQuest
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Quest_List_C::FIlteringSubQuest()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "FIlteringSubQuest");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.GetAllQuestWidget
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<class UWBP_Quest_ListButton_C*>* NewParam                                               (Parm, OutParm, ContainsInstancedReference)
+
+void UWBP_Quest_List_C::GetAllQuestWidget(TArray<class UWBP_Quest_ListButton_C*>* NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetAllQuestWidget");
+
+	Params::WBP_Quest_List_C_GetAllQuestWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = std::move(Parms.NewParam);
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.GetCompletedQuestWidget
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<class UWBP_Quest_ListButton_C*>* widgets                                                (Parm, OutParm, ContainsInstancedReference)
+
+void UWBP_Quest_List_C::GetCompletedQuestWidget(TArray<class UWBP_Quest_ListButton_C*>* widgets)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetCompletedQuestWidget");
+
+	Params::WBP_Quest_List_C_GetCompletedQuestWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -271,19 +223,19 @@ void UWBP_Quest_List_C::GetCompletedQuestWidgetByType(EPalQuestType QuestType, T
 }
 
 
-// Function WBP_Quest_List.WBP_Quest_List_C.GetCompletedQuestWidget
+// Function WBP_Quest_List.WBP_Quest_List_C.GetOrderedQuestWidget
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<class UWBP_Quest_ListButton_C*>* widgets                                                (Parm, OutParm, ContainsInstancedReference)
 
-void UWBP_Quest_List_C::GetCompletedQuestWidget(TArray<class UWBP_Quest_ListButton_C*>* widgets)
+void UWBP_Quest_List_C::GetOrderedQuestWidget(TArray<class UWBP_Quest_ListButton_C*>* widgets)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetCompletedQuestWidget");
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetOrderedQuestWidget");
 
-	Params::WBP_Quest_List_C_GetCompletedQuestWidget Parms{};
+	Params::WBP_Quest_List_C_GetOrderedQuestWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -292,164 +244,212 @@ void UWBP_Quest_List_C::GetCompletedQuestWidget(TArray<class UWBP_Quest_ListButt
 }
 
 
-// Function WBP_Quest_List.WBP_Quest_List_C.GetAllQuestWidget
+// Function WBP_Quest_List.WBP_Quest_List_C.GetOrderedQuestWidgetByType
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<class UWBP_Quest_ListButton_C*>* NewParam                                               (Parm, OutParm, ContainsInstancedReference)
-
-void UWBP_Quest_List_C::GetAllQuestWidget(TArray<class UWBP_Quest_ListButton_C*>* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "GetAllQuestWidget");
-
-	Params::WBP_Quest_List_C_GetAllQuestWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = std::move(Parms.NewParam);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.FIlteringSubQuest
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Quest_List_C::FIlteringSubQuest()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "FIlteringSubQuest");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.FilteringMainQuest
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Quest_List_C::FilteringMainQuest()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "FilteringMainQuest");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.FilteringInternal
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
 // EPalQuestType                           QuestType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UWBP_Quest_ListButton_C*>* widgets                                                (Parm, OutParm, ContainsInstancedReference)
 
-void UWBP_Quest_List_C::FilteringInternal(EPalQuestType QuestType)
+void UWBP_Quest_List_C::GetOrderedQuestWidgetByType(EPalQuestType QuestType, TArray<class UWBP_Quest_ListButton_C*>* widgets)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "FilteringInternal");
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetOrderedQuestWidgetByType");
 
-	Params::WBP_Quest_List_C_FilteringInternal Parms{};
+	Params::WBP_Quest_List_C_GetOrderedQuestWidgetByType Parms{};
 
 	Parms.QuestType = QuestType;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (widgets != nullptr)
+		*widgets = std::move(Parms.widgets);
 }
 
 
-// Function WBP_Quest_List.WBP_Quest_List_C.ExecuteUbergraph_WBP_Quest_List
-// (Final, UbergraphFunction)
+// Function WBP_Quest_List.WBP_Quest_List_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Quest_List_C::ExecuteUbergraph_WBP_Quest_List(int32 EntryPoint)
+void UWBP_Quest_List_C::GetTopFocusTarget(class UWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "ExecuteUbergraph_WBP_Quest_List");
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopFocusTarget");
 
-	Params::WBP_Quest_List_C_ExecuteUbergraph_WBP_Quest_List Parms{};
+	Params::WBP_Quest_List_C_GetTopFocusTarget Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.GetTopFocusTarget_CompletedQuest
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_List_C::GetTopFocusTarget_CompletedQuest(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopFocusTarget_CompletedQuest");
+
+	Params::WBP_Quest_List_C_GetTopFocusTarget_CompletedQuest Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.GetTopFocusTarget_OrderedQuest
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_List_C::GetTopFocusTarget_OrderedQuest(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopFocusTarget_OrderedQuest");
+
+	Params::WBP_Quest_List_C_GetTopFocusTarget_OrderedQuest Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.GetTopQuestData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalQuestData**                   QuestData                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_List_C::GetTopQuestData(class UPalQuestData** QuestData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopQuestData");
+
+	Params::WBP_Quest_List_C_GetTopQuestData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (QuestData != nullptr)
+		*QuestData = Parms.QuestData;
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.GetTopQuestWidget
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWBP_Quest_ListButton_C**         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_List_C::GetTopQuestWidget(class UWBP_Quest_ListButton_C** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "GetTopQuestWidget");
+
+	Params::WBP_Quest_List_C_GetTopQuestWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_Quest_List.WBP_Quest_List_C.OnClickedQuestButton_Binded
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Quest_ListButton_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_List_C::OnClickedQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "OnClickedQuestButton_Binded");
+
+	Params::WBP_Quest_List_C_OnClickedQuestButton_Binded Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Quest_List.WBP_Quest_List_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Quest_List_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Quest_List_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Quest_List.WBP_Quest_List_C.AddOrderedQuest
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Quest_List.WBP_Quest_List_C.OnHoveredQuestButton_Binded
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UPalQuestData*>&           QuestDataArray                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class UWBP_Quest_ListButton_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Quest_List_C::AddOrderedQuest(TArray<class UPalQuestData*>& QuestDataArray)
+void UWBP_Quest_List_C::OnHoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "AddOrderedQuest");
+		Func = Class->GetFunction("WBP_Quest_List_C", "OnHoveredQuestButton_Binded");
 
-	Params::WBP_Quest_List_C_AddOrderedQuest Parms{};
+	Params::WBP_Quest_List_C_OnHoveredQuestButton_Binded Parms{};
 
-	Parms.QuestDataArray = std::move(QuestDataArray);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	QuestDataArray = std::move(Parms.QuestDataArray);
 }
 
 
-// Function WBP_Quest_List.WBP_Quest_List_C.AddCompletedQuestId
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Quest_List.WBP_Quest_List_C.OnUnhoveredQuestButton_Binded
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class FName>&                    QuestIdArray                                           (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class UWBP_Quest_ListButton_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Quest_List_C::AddCompletedQuestId(TArray<class FName>& QuestIdArray)
+void UWBP_Quest_List_C::OnUnhoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_List_C", "AddCompletedQuestId");
+		Func = Class->GetFunction("WBP_Quest_List_C", "OnUnhoveredQuestButton_Binded");
 
-	Params::WBP_Quest_List_C_AddCompletedQuestId Parms{};
+	Params::WBP_Quest_List_C_OnUnhoveredQuestButton_Binded Parms{};
 
-	Parms.QuestIdArray = std::move(QuestIdArray);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	QuestIdArray = std::move(Parms.QuestIdArray);
+
+// Function WBP_Quest_List.WBP_Quest_List_C.SetTrackingQuestId
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_List_C::SetTrackingQuestId(class FName QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_List_C", "SetTrackingQuestId");
+
+	Params::WBP_Quest_List_C_SetTrackingQuestId Parms{};
+
+	Parms.QuestId = QuestId;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

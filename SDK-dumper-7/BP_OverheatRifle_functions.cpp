@@ -17,95 +17,202 @@
 namespace SDK
 {
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.TickCoolDown
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.CanShoot
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   can                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::TickCoolDown(double DeltaTime)
+void ABP_OverheatRifle_C::CanShoot(bool* can)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "TickCoolDown");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "CanShoot");
 
-	Params::BP_OverheatRifle_C_TickCoolDown Parms{};
-
-	Parms.DeltaTime = DeltaTime;
+	Params::BP_OverheatRifle_C_CanShoot Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (can != nullptr)
+		*can = Parms.can;
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.DecreaseLightIntensify
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_OverheatRifle_C::ReceiveTick(float DeltaSeconds)
+void ABP_OverheatRifle_C::DecreaseLightIntensify()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "ReceiveTick");
-
-	Params::BP_OverheatRifle_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "ReceiveEndPlay");
-
-	Params::BP_OverheatRifle_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_OverheatRifle_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "DecreaseLightIntensify");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnWeaponNotify
-// (Event, Public, BlueprintEvent)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.ExecuteUbergraph_BP_OverheatRifle
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::OnWeaponNotify(EWeaponNotifyType Type)
+void ABP_OverheatRifle_C::ExecuteUbergraph_BP_OverheatRifle(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "OnWeaponNotify");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "ExecuteUbergraph_BP_OverheatRifle");
 
-	Params::BP_OverheatRifle_C_OnWeaponNotify Parms{};
+	Params::BP_OverheatRifle_C_ExecuteUbergraph_BP_OverheatRifle Parms{};
 
-	Parms.Type = Type;
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetAmmoClass
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UClass**                          AmmoClass                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::GetAmmoClass(class UClass** AmmoClass)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "GetAmmoClass");
+
+	Params::BP_OverheatRifle_C_GetAmmoClass Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AmmoClass != nullptr)
+		*AmmoClass = Parms.AmmoClass;
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetHeatValue
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 CurrentHeatValue                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::GetHeatValue(double* CurrentHeatValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "GetHeatValue");
+
+	Params::BP_OverheatRifle_C_GetHeatValue Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CurrentHeatValue != nullptr)
+		*CurrentHeatValue = Parms.CurrentHeatValue;
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffect
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UNiagaraSystem**                  NewParam                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::GetMuzzleEffect(class UNiagaraSystem** NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleEffect");
+
+	Params::BP_OverheatRifle_C_GetMuzzleEffect Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffectAttached
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UNiagaraSystem**                  Effect                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::GetMuzzleEffectAttached(class UNiagaraSystem** Effect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleEffectAttached");
+
+	Params::BP_OverheatRifle_C_GetMuzzleEffectAttached Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Effect != nullptr)
+		*Effect = Parms.Effect;
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleLocation");
+
+	Params::BP_OverheatRifle_C_GetMuzzleLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MuzzleLocation != nullptr)
+		*MuzzleLocation = std::move(Parms.MuzzleLocation);
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.IsOverHeated
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bOverHeated                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::IsOverHeated(bool* bOverHeated)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "IsOverHeated");
+
+	Params::BP_OverheatRifle_C_IsOverHeated Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bOverHeated != nullptr)
+		*bOverHeated = Parms.bOverHeated;
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnAttachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::OnAttachWeapon(class AActor* attachActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "OnAttachWeapon");
+
+	Params::BP_OverheatRifle_C_OnAttachWeapon Parms{};
+
+	Parms.attachActor = attachActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -133,195 +240,55 @@ void ABP_OverheatRifle_C::OnChangedHeatValue_Event(bool bOverHeated, double Heat
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.IsOverHeated
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnDetachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   bOverHeated                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::IsOverHeated(bool* bOverHeated)
+void ABP_OverheatRifle_C::OnDetachWeapon(class AActor* detachActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "IsOverHeated");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "OnDetachWeapon");
 
-	Params::BP_OverheatRifle_C_IsOverHeated Parms{};
+	Params::BP_OverheatRifle_C_OnDetachWeapon Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bOverHeated != nullptr)
-		*bOverHeated = Parms.bOverHeated;
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffectAttached
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UNiagaraSystem**                  Effect                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::GetMuzzleEffectAttached(class UNiagaraSystem** Effect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleEffectAttached");
-
-	Params::BP_OverheatRifle_C_GetMuzzleEffectAttached Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Effect != nullptr)
-		*Effect = Parms.Effect;
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffect
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UNiagaraSystem**                  NewParam                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::GetMuzzleEffect(class UNiagaraSystem** NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleEffect");
-
-	Params::BP_OverheatRifle_C_GetMuzzleEffect Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetHeatValue
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 CurrentHeatValue                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::GetHeatValue(double* CurrentHeatValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "GetHeatValue");
-
-	Params::BP_OverheatRifle_C_GetHeatValue Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CurrentHeatValue != nullptr)
-		*CurrentHeatValue = Parms.CurrentHeatValue;
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetAmmoClass
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UClass**                          AmmoClass                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::GetAmmoClass(class UClass** AmmoClass)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "GetAmmoClass");
-
-	Params::BP_OverheatRifle_C_GetAmmoClass Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AmmoClass != nullptr)
-		*AmmoClass = Parms.AmmoClass;
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.ExecuteUbergraph_BP_OverheatRifle
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::ExecuteUbergraph_BP_OverheatRifle(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "ExecuteUbergraph_BP_OverheatRifle");
-
-	Params::BP_OverheatRifle_C_ExecuteUbergraph_BP_OverheatRifle Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.detachActor = detachActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.DecreaseLightIntensify
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_OverheatRifle_C::DecreaseLightIntensify()
+void ABP_OverheatRifle_C::OnPullTrigger()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "DecreaseLightIntensify");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "OnPullTrigger");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.CanShoot
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnReleaseTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   can                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::CanShoot(bool* can)
+void ABP_OverheatRifle_C::OnReleaseTrigger(bool bCanShootOnRelease)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "CanShoot");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "OnReleaseTrigger");
 
-	Params::BP_OverheatRifle_C_CanShoot Parms{};
+	Params::BP_OverheatRifle_C_OnReleaseTrigger Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (can != nullptr)
-		*can = Parms.can;
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.ShootBullet
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_OverheatRifle_C::ShootBullet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "ShootBullet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnShoot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalBullet*                       BulletActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_OverheatRifle_C::OnShoot(class APalBullet* BulletActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "OnShoot");
-
-	Params::BP_OverheatRifle_C_OnShoot Parms{};
-
-	Parms.BulletActor = BulletActor;
+	Parms.bCanShootOnRelease = bCanShootOnRelease;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -347,98 +314,131 @@ void ABP_OverheatRifle_C::OnReloadStart(float InReloadSpeedPlayRate)
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnReleaseTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnShoot
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalBullet*                       BulletActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::OnReleaseTrigger(bool bCanShootOnRelease)
+void ABP_OverheatRifle_C::OnShoot(class APalBullet* BulletActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "OnReleaseTrigger");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "OnShoot");
 
-	Params::BP_OverheatRifle_C_OnReleaseTrigger Parms{};
+	Params::BP_OverheatRifle_C_OnShoot Parms{};
 
-	Parms.bCanShootOnRelease = bCanShootOnRelease;
+	Parms.BulletActor = BulletActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnPullTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnWeaponNotify
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::OnPullTrigger()
+void ABP_OverheatRifle_C::OnWeaponNotify(EWeaponNotifyType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "OnPullTrigger");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "OnWeaponNotify");
+
+	Params::BP_OverheatRifle_C_OnWeaponNotify Parms{};
+
+	Parms.Type = Type;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_OverheatRifle_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnDetachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::OnDetachWeapon(class AActor* detachActor)
+void ABP_OverheatRifle_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "OnDetachWeapon");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "ReceiveEndPlay");
 
-	Params::BP_OverheatRifle_C_OnDetachWeapon Parms{};
+	Params::BP_OverheatRifle_C_ReceiveEndPlay Parms{};
 
-	Parms.detachActor = detachActor;
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnAttachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverheatRifle_C::OnAttachWeapon(class AActor* attachActor)
+void ABP_OverheatRifle_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "OnAttachWeapon");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "ReceiveTick");
 
-	Params::BP_OverheatRifle_C_OnAttachWeapon Parms{};
+	Params::BP_OverheatRifle_C_ReceiveTick Parms{};
 
-	Parms.attachActor = attachActor;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_OverheatRifle.BP_OverheatRifle_C.ShootBullet
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_OverheatRifle_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
+void ABP_OverheatRifle_C::ShootBullet()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverheatRifle_C", "GetMuzzleLocation");
+		Func = Class->GetFunction("BP_OverheatRifle_C", "ShootBullet");
 
-	Params::BP_OverheatRifle_C_GetMuzzleLocation Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.TickCoolDown
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_OverheatRifle_C::TickCoolDown(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OverheatRifle_C", "TickCoolDown");
+
+	Params::BP_OverheatRifle_C_TickCoolDown Parms{};
+
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (MuzzleLocation != nullptr)
-		*MuzzleLocation = std::move(Parms.MuzzleLocation);
 }
 
 

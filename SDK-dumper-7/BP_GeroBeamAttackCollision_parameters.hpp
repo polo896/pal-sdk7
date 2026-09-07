@@ -17,33 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_GeroBeamAttackCollision.BP_GeroBeamAttackCollision_C.ActivateCollision
-// 0x0001 (0x0001 - 0x0000)
-struct BP_GeroBeamAttackCollision_C_ActivateCollision final
-{
-public:
-	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GeroBeamAttackCollision_C_ActivateCollision;
-
-// Function BP_GeroBeamAttackCollision.BP_GeroBeamAttackCollision_C.ExecuteUbergraph_BP_GeroBeamAttackCollision
-// 0x0004 (0x0004 - 0x0000)
-struct BP_GeroBeamAttackCollision_C_ExecuteUbergraph_BP_GeroBeamAttackCollision final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GeroBeamAttackCollision_C_ExecuteUbergraph_BP_GeroBeamAttackCollision;
-
-// Function BP_GeroBeamAttackCollision.BP_GeroBeamAttackCollision_C.GetCollision
-// 0x0008 (0x0008 - 0x0000)
-struct BP_GeroBeamAttackCollision_C_GetCollision final
-{
-public:
-	class UCapsuleComponent*                      Capsule_0;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GeroBeamAttackCollision_C_GetCollision;
-
 // Function BP_GeroBeamAttackCollision.BP_GeroBeamAttackCollision_C.SetLength
 // 0x01B8 (0x01B8 - 0x0000)
 struct BP_GeroBeamAttackCollision_C_SetLength final
@@ -64,6 +37,33 @@ public:
 	float                                         CallFunc_SetCapsuleHalfHeight_HalfHeight_ImplicitCast; // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_GeroBeamAttackCollision_C_SetLength;
+
+// Function BP_GeroBeamAttackCollision.BP_GeroBeamAttackCollision_C.GetCollision
+// 0x0008 (0x0008 - 0x0000)
+struct BP_GeroBeamAttackCollision_C_GetCollision final
+{
+public:
+	class UCapsuleComponent*                      Capsule_0;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GeroBeamAttackCollision_C_GetCollision;
+
+// Function BP_GeroBeamAttackCollision.BP_GeroBeamAttackCollision_C.ExecuteUbergraph_BP_GeroBeamAttackCollision
+// 0x0004 (0x0004 - 0x0000)
+struct BP_GeroBeamAttackCollision_C_ExecuteUbergraph_BP_GeroBeamAttackCollision final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GeroBeamAttackCollision_C_ExecuteUbergraph_BP_GeroBeamAttackCollision;
+
+// Function BP_GeroBeamAttackCollision.BP_GeroBeamAttackCollision_C.ActivateCollision
+// 0x0001 (0x0001 - 0x0000)
+struct BP_GeroBeamAttackCollision_C_ActivateCollision final
+{
+public:
+	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GeroBeamAttackCollision_C_ActivateCollision;
 
 }
 

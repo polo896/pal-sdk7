@@ -17,406 +17,61 @@
 namespace SDK
 {
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.UpdateSimulationButton
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Player_StatusContent_C::UpdateSimulationButton()
+void UWBP_Buildup_Player_StatusContent_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "UpdateSimulationButton");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.UpdateSimulate
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.AnmEvent_Normal
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Player_StatusContent_C::UpdateSimulate()
+void UWBP_Buildup_Player_StatusContent_C::AnmEvent_Normal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "UpdateSimulate");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "AnmEvent_Normal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SimulationMinus
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.AnmEvent_Rankup
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Player_StatusContent_C::SimulationMinus()
+void UWBP_Buildup_Player_StatusContent_C::AnmEvent_Rankup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SimulationMinus");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "AnmEvent_Rankup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SimlationPlus
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Player_StatusContent_C::SimlationPlus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SimlationPlus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SetupRankGauge
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Player_StatusContent_C::SetupRankGauge()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SetupRankGauge");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SetRelicType
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalRelicType                           RelicType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::SetRelicType(EPalRelicType RelicType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SetRelicType");
-
-	Params::WBP_Buildup_Player_StatusContent_C_SetRelicType Parms{};
-
-	Parms.RelicType = RelicType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SetAcceptInput
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewAcceptInput                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::SetAcceptInput(bool NewAcceptInput)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SetAcceptInput");
-
-	Params::WBP_Buildup_Player_StatusContent_C_SetAcceptInput Parms{};
-
-	Parms.NewAcceptInput = NewAcceptInput;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.ResetSimulation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Player_StatusContent_C::ResetSimulation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "ResetSimulation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.IsSimulating
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   bIsSimulating                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::IsSimulating(bool* bIsSimulating)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "IsSimulating");
-
-	Params::WBP_Buildup_Player_StatusContent_C_IsSimulating Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bIsSimulating != nullptr)
-		*bIsSimulating = Parms.bIsSimulating;
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.IsMaxRank
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   bIsMaxRank                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::IsMaxRank(bool* bIsMaxRank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "IsMaxRank");
-
-	Params::WBP_Buildup_Player_StatusContent_C_IsMaxRank Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bIsMaxRank != nullptr)
-		*bIsMaxRank = Parms.bIsMaxRank;
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.GetSImulatedRank
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32*                                  ToRank                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::GetSImulatedRank(int32* ToRank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "GetSImulatedRank");
-
-	Params::WBP_Buildup_Player_StatusContent_C_GetSImulatedRank Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ToRank != nullptr)
-		*ToRank = Parms.ToRank;
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.GetBindedRelicType
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// EPalRelicType*                          RelicType                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::GetBindedRelicType(EPalRelicType* RelicType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "GetBindedRelicType");
-
-	Params::WBP_Buildup_Player_StatusContent_C_GetBindedRelicType Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (RelicType != nullptr)
-		*RelicType = Parms.RelicType;
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.ExecuteUbergraph_WBP_Buildup_Player_StatusContent
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::ExecuteUbergraph_WBP_Buildup_Player_StatusContent(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "ExecuteUbergraph_WBP_Buildup_Player_StatusContent");
-
-	Params::WBP_Buildup_Player_StatusContent_C_ExecuteUbergraph_WBP_Buildup_Player_StatusContent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.DisplayCurrentRank
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Player_StatusContent_C::DisplayCurrentRank()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "DisplayCurrentRank");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.CanSimulateRankupToNext
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   bCanRankup                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::CanSimulateRankupToNext(bool* bCanRankup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "CanSimulateRankupToNext");
-
-	Params::WBP_Buildup_Player_StatusContent_C_CanSimulateRankupToNext Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bCanRankup != nullptr)
-		*bCanRankup = Parms.bCanRankup;
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BuildEffectValueText
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   Rank                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            Text                                                   (Parm, OutParm)
-
-void UWBP_Buildup_Player_StatusContent_C::BuildEffectValueText(int32 Rank, class FText* Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BuildEffectValueText");
-
-	Params::WBP_Buildup_Player_StatusContent_C_BuildEffectValueText Parms{};
-
-	Parms.Rank = Rank;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Text != nullptr)
-		*Text = std::move(Parms.Text);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -444,19 +99,19 @@ void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusConte
 }
 
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -464,43 +119,388 @@ void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusConte
 }
 
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.AnmEvent_Rankup
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Player_StatusContent_C::AnmEvent_Rankup()
+void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "AnmEvent_Rankup");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Buildup_Player_StatusContent_C_BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.BuildEffectValueText
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Rank                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            Text                                                   (Parm, OutParm)
+
+void UWBP_Buildup_Player_StatusContent_C::BuildEffectValueText(int32 Rank, class FText* Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "BuildEffectValueText");
+
+	Params::WBP_Buildup_Player_StatusContent_C_BuildEffectValueText Parms{};
+
+	Parms.Rank = Rank;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.CanSimulateRankupToNext
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bCanRankup                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::CanSimulateRankupToNext(bool* bCanRankup)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "CanSimulateRankupToNext");
+
+	Params::WBP_Buildup_Player_StatusContent_C_CanSimulateRankupToNext Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bCanRankup != nullptr)
+		*bCanRankup = Parms.bCanRankup;
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.DisplayCurrentRank
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Player_StatusContent_C::DisplayCurrentRank()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "DisplayCurrentRank");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.AnmEvent_Normal
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.ExecuteUbergraph_WBP_Buildup_Player_StatusContent
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Player_StatusContent_C::AnmEvent_Normal()
+void UWBP_Buildup_Player_StatusContent_C::ExecuteUbergraph_WBP_Buildup_Player_StatusContent(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "AnmEvent_Normal");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "ExecuteUbergraph_WBP_Buildup_Player_StatusContent");
+
+	Params::WBP_Buildup_Player_StatusContent_C_ExecuteUbergraph_WBP_Buildup_Player_StatusContent Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.GetBindedRelicType
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EPalRelicType*                          RelicType                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::GetBindedRelicType(EPalRelicType* RelicType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "GetBindedRelicType");
+
+	Params::WBP_Buildup_Player_StatusContent_C_GetBindedRelicType Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (RelicType != nullptr)
+		*RelicType = Parms.RelicType;
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.GetSImulatedRank
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32*                                  ToRank                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::GetSImulatedRank(int32* ToRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "GetSImulatedRank");
+
+	Params::WBP_Buildup_Player_StatusContent_C_GetSImulatedRank Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ToRank != nullptr)
+		*ToRank = Parms.ToRank;
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.IsMaxRank
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bIsMaxRank                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::IsMaxRank(bool* bIsMaxRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "IsMaxRank");
+
+	Params::WBP_Buildup_Player_StatusContent_C_IsMaxRank Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsMaxRank != nullptr)
+		*bIsMaxRank = Parms.bIsMaxRank;
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.IsSimulating
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bIsSimulating                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::IsSimulating(bool* bIsSimulating)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "IsSimulating");
+
+	Params::WBP_Buildup_Player_StatusContent_C_IsSimulating Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsSimulating != nullptr)
+		*bIsSimulating = Parms.bIsSimulating;
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.ResetSimulation
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Player_StatusContent_C::ResetSimulation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "ResetSimulation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SetAcceptInput
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewAcceptInput                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Player_StatusContent_C::AnmEvent_Focus()
+void UWBP_Buildup_Player_StatusContent_C::SetAcceptInput(bool NewAcceptInput)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "AnmEvent_Focus");
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SetAcceptInput");
+
+	Params::WBP_Buildup_Player_StatusContent_C_SetAcceptInput Parms{};
+
+	Parms.NewAcceptInput = NewAcceptInput;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SetRelicType
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalRelicType                           RelicType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Player_StatusContent_C::SetRelicType(EPalRelicType RelicType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SetRelicType");
+
+	Params::WBP_Buildup_Player_StatusContent_C_SetRelicType Parms{};
+
+	Parms.RelicType = RelicType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SetupRankGauge
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Player_StatusContent_C::SetupRankGauge()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SetupRankGauge");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SimlationPlus
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Player_StatusContent_C::SimlationPlus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SimlationPlus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.SimulationMinus
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Player_StatusContent_C::SimulationMinus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "SimulationMinus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.UpdateSimulate
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Player_StatusContent_C::UpdateSimulate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "UpdateSimulate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Player_StatusContent.WBP_Buildup_Player_StatusContent_C.UpdateSimulationButton
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Player_StatusContent_C::UpdateSimulationButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Player_StatusContent_C", "UpdateSimulationButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

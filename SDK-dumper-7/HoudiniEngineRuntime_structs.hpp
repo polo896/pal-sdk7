@@ -992,6 +992,15 @@ public:
 };
 DUMPER7_ASSERTS_FHoudiniBakedOutput;
 
+// ScriptStruct HoudiniEngineRuntime.HoudiniPDGWorkResultObjectBakedOutput
+// 0x0010 (0x0010 - 0x0000)
+struct FHoudiniPDGWorkResultObjectBakedOutput final
+{
+public:
+	TArray<struct FHoudiniBakedOutput>            BakedOutputs;                                      // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FHoudiniPDGWorkResultObjectBakedOutput;
+
 // ScriptStruct HoudiniEngineRuntime.OutputActorOwner
 // 0x0010 (0x0010 - 0x0000)
 struct FOutputActorOwner final
@@ -1030,6 +1039,16 @@ public:
 	TArray<struct FTOPWorkResultObject>           ResultObjects;                                     // 0x0008(0x0010)(ZeroConstructor, NonTransactional, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FTOPWorkResult;
+
+// ScriptStruct HoudiniEngineRuntime.CategoryRules
+// 0x0020 (0x0020 - 0x0000)
+struct FCategoryRules final
+{
+public:
+	TArray<class FString>                         Include;                                           // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Exclude;                                           // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCategoryRules;
 
 // ScriptStruct HoudiniEngineRuntime.WorkItemTallyBase
 // 0x0008 (0x0008 - 0x0000)
@@ -1070,15 +1089,6 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAggregatedWorkItemTally;
-
-// ScriptStruct HoudiniEngineRuntime.HoudiniPDGWorkResultObjectBakedOutput
-// 0x0010 (0x0010 - 0x0000)
-struct FHoudiniPDGWorkResultObjectBakedOutput final
-{
-public:
-	TArray<struct FHoudiniBakedOutput>            BakedOutputs;                                      // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FHoudiniPDGWorkResultObjectBakedOutput;
 
 // ScriptStruct HoudiniEngineRuntime.HoudiniStaticMeshGenerationProperties
 // 0x01E0 (0x01E0 - 0x0000)
@@ -1129,16 +1139,6 @@ public:
 	class FString                                 RawDataMD5;                                        // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FHImageData;
-
-// ScriptStruct HoudiniEngineRuntime.CategoryRules
-// 0x0020 (0x0020 - 0x0000)
-struct FCategoryRules final
-{
-public:
-	TArray<class FString>                         Include;                                           // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Exclude;                                           // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCategoryRules;
 
 }
 

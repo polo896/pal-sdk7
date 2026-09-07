@@ -62,7 +62,7 @@ public:
 DUMPER7_ASSERTS_BP_NPC_Base_C_DestoryWeapon;
 
 // Function BP_NPC_Base.BP_NPC_Base_C.ExecuteUbergraph_BP_NPC_Base
-// 0x0698 (0x0698 - 0x0000)
+// 0x06A0 (0x06A0 - 0x0000)
 struct BP_NPC_Base_C_ExecuteUbergraph_BP_NPC_Base final
 {
 public:
@@ -118,19 +118,19 @@ public:
 	class UPalCharacterMovementComponent*         K2Node_DynamicCast_AsPal_Character_Movement_Component_1; // 0x04C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalCharacterParameterDatabaseRow      CallFunc_GetDataTableRowFromName_OutRow;           // 0x04D0(0x0190)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0660(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0661(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_662[0x6];                                      // 0x0662(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0668(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0670(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsWildNPC_ReturnValue;                    // 0x0679(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67A[0x2];                                      // 0x067A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x067C(0x0008)(NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_684[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0688(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalCharacterParameterDatabaseRow      CallFunc_GetDataTableRowFromName_OutRow;           // 0x04D0(0x0198)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0669(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_66A[0x6];                                      // 0x066A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0670(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0678(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsWildNPC_ReturnValue;                    // 0x0681(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_682[0x2];                                      // 0x0682(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0684(0x0008)(NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_68C[0x4];                                      // 0x068C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0698(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPC_Base_C_ExecuteUbergraph_BP_NPC_Base;
 

@@ -12,6 +12,7 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -24,27 +25,21 @@ class ModActor_3::AModActor_C final : public AActor
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<class UObject*>                        LoadedAssetsTemp;                                  // 0x02A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class ABP_Fetcher_C*>                  FetcherList;                                       // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	int32                                         LastClickedDropdownIndex;                          // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 LastClickedDropdownValue;                          // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class UScrollBox*                             PendingScrollBox;                                  // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FString                                 PendingOptions;                                    // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	int32                                         CurrentPopulateIndex;                              // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           GetMapTimerHandle;                                 // 0x02A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Map_Base_C*                        WBP_Map_Base;                                      // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Strings;                                           // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          FastTravelToNotDiscoveredPoints;                   // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuid>                          PointsGuids;                                       // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 strings2;                                          // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FString                                 ModAuthor;                                         // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void RequestBatchAsyncLoad(const TArray<class FString>& AssetPaths, class UObject* Requester);
-	void ReEnableClicks();
 	void ReceiveBeginPlay();
-	void PrintToModLoader(const class FString& Message);
-	void OnCompleted_Event(class UObject* Requester, const TArray<class UObject*>& LoadedAssets);
-	void OnClicked_Event();
-	void GetAndRemoveLoadedAssets(const class UObject*& Requester, TArray<class UObject*>* OutAssets);
-	void GetAllLoadedAssets(TArray<class UObject*>* OutAssets);
+	void MakePointsGUIDs();
+	void GetMap2();
 	void ExecuteUbergraph_ModActor(int32 EntryPoint);
-	void BP_PopulateDropdownList_F(class UScrollBox* TargetScrollBox, TArray<class FString>& OptionsList);
-	void BP_PopulateDropdownList(class UScrollBox* TargetScrollBox, TArray<class FString>& OptionsList);
+	void DoUnlockFlag();
 
 public:
 	static class UClass* StaticClass()

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -20,55 +20,55 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Arena_RuleSetting.WBP_Arena_RuleSetting_C
-// 0x00F0 (0x0568 - 0x0478)
+// 0x00F0 (0x0570 - 0x0480)
 class UWBP_Arena_RuleSetting_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_PalTextBlock_C*                     BP_PalTextBlock_RestrictOtomo;                     // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     BP_PalTextBlock_Title;                             // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           CanvasPanel_Matching;                              // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_RankIcon;                                    // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ScrollBox;                                         // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_PlayerName_Lv;                                // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_PlayerName_P1;                                // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon;                                 // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_1;                               // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_2;                               // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_3;                               // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_4;                               // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_Rule_ListGroup_C*            WBP_Arena_Rule_ListGroup;                          // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Arena_RuleSetting_Pal_C*           WBP_Arena_RuleSetting_Pal;                         // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CommonButton_C*                    WBP_CommonButton;                                  // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_PalBox_PalDetail_C*     WBP_IngameMenu_PalBox_PalDetail;                   // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MainMenu_PalSkillInfo_C*           WBP_MainMenu_PalSkillInfo;                         // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_ArenaRule*     ArenaRuleParamter;                                 // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalArenaRule                          CurrentRule;                                       // 0x0518(0x0038)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UWBP_Arena_PalIcon_C*>           OtomoPalIcons;                                     // 0x0550(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FPalUIActionBindData                   SaveRuleAction;                                    // 0x0560(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalUIActionBindData                   DefaultRuleAction;                                 // 0x0564(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_PalTextBlock_C*                     BP_PalTextBlock_RestrictOtomo;                     // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     BP_PalTextBlock_Title;                             // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_Matching;                              // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_RankIcon;                                    // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBox;                                         // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_PlayerName_Lv;                                // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_PlayerName_P1;                                // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon;                                 // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_1;                               // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_2;                               // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_3;                               // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_PalIcon_C*                   WBP_Arena_PalIcon_4;                               // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_Rule_ListGroup_C*            WBP_Arena_Rule_ListGroup;                          // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Arena_RuleSetting_Pal_C*           WBP_Arena_RuleSetting_Pal;                         // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CommonButton_C*                    WBP_CommonButton;                                  // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_PalBox_PalDetail_C*     WBP_IngameMenu_PalBox_PalDetail;                   // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MainMenu_PalSkillInfo_C*           WBP_MainMenu_PalSkillInfo;                         // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_ArenaRule*     ArenaRuleParamter;                                 // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaRule                          CurrentRule;                                       // 0x0520(0x0038)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UWBP_Arena_PalIcon_C*>           OtomoPalIcons;                                     // 0x0558(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPalUIActionBindData                   SaveRuleAction;                                    // 0x0568(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPalUIActionBindData                   DefaultRuleAction;                                 // 0x056C(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ShowRestrictPalDetail();
-	void Setup();
-	void SetDefaultRule();
-	void SaveRule();
-	void RefreshOtomoRestriction();
-	void OnSetup();
-	void OnRuleChanged(const struct FPalArenaRule& NewRule);
-	void OnotomoIconUnhovered();
-	void OnOtomoIconHovered(class UWBP_Arena_PalIcon_C* Icon);
-	void OnInitialized();
-	void ExecuteUbergraph_WBP_Arena_RuleSetting(int32 EntryPoint);
-	void Construct();
-	void CancelAction();
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_RuleSetting_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_4_OnChangeAll__DelegateSignature(bool IsBan);
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_3_OnToggleCharacterRestrict__DelegateSignature(class FName CharacterID, class UWBP_Arena_RuleSetting_PalListButton_C* Widget);
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_2_OnCloseButtonClicked__DelegateSignature();
 	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_Rule_ListGroup_K2Node_ComponentBoundEvent_5_ToggleLevelSyncInfo__DelegateSignature(bool Show);
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_2_OnCloseButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_3_OnToggleCharacterRestrict__DelegateSignature(class FName CharacterID, class UWBP_Arena_RuleSetting_PalListButton_C* Widget);
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_4_OnChangeAll__DelegateSignature(bool IsBan);
+	void BndEvt__WBP_Arena_RuleSetting_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void CancelAction();
+	void Construct();
+	void ExecuteUbergraph_WBP_Arena_RuleSetting(int32 EntryPoint);
+	void OnInitialized();
+	void OnOtomoIconHovered(class UWBP_Arena_PalIcon_C* Icon);
+	void OnotomoIconUnhovered();
+	void OnRuleChanged(const struct FPalArenaRule& NewRule);
+	void OnSetup();
+	void RefreshOtomoRestriction();
+	void SaveRule();
+	void SetDefaultRule();
+	void Setup();
+	void ShowRestrictPalDetail();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

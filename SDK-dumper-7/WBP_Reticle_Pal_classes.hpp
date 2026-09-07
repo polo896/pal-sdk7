@@ -41,14 +41,14 @@ public:
 	struct FDataTableRowHandle                    DeadPalThrowMsgID;                                 // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void OnInitialized();
-	void ExecuteUbergraph_WBP_Reticle_Pal(int32 EntryPoint);
-	void AnmEvent_Open();
 	void AnmEvent_Close();
-	void SetVisibilityAssignableDetail(ESlateVisibility NewVisibility);
-	void SetThrowableableDetail(const struct FPalUIAimReticleMapObjectThrowableData& throwableData);
-	void SetOtomoDeadDetail(class UPalIndividualCharacterParameter* TargetIndividualParameter);
+	void AnmEvent_Open();
+	void ExecuteUbergraph_WBP_Reticle_Pal(int32 EntryPoint);
+	void OnInitialized();
 	void SetAssignableDetail(const struct FPalUIAimReticleMapObjectAssignableData& assignableData);
+	void SetOtomoDeadDetail(class UPalIndividualCharacterParameter* TargetIndividualParameter);
+	void SetThrowableableDetail(const struct FPalUIAimReticleMapObjectThrowableData& throwableData);
+	void SetVisibilityAssignableDetail(ESlateVisibility NewVisibility);
 
 public:
 	static class UClass* StaticClass()

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -47,17 +47,17 @@ public:
 	EPalBodyTemperatureState                      PreviousBodyState;                                 // 0x02FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void SetTemperantureBodyState(EPalBodyTemperatureState NewBodyState);
-	void SetTemperanture(int32 Temperanture);
-	void PlayTemperatureSound();
-	void OnInitialized();
-	void ExecuteUbergraph_WBP_IngameThermometerEff(int32 EntryPoint);
-	void Construct();
-	void Calc_Thermomater_Anime_Target_Time(int32 TargetTenperature, double* TargetTime);
-	void AnmEvent_On();
-	void AnmEvent_Off();
 	void AnmEvent_Effect(int32 Temperanture);
+	void AnmEvent_Off();
+	void AnmEvent_On();
+	void Calc_Thermomater_Anime_Target_Time(int32 TargetTenperature, double* TargetTime);
+	void Construct();
+	void ExecuteUbergraph_WBP_IngameThermometerEff(int32 EntryPoint);
+	void OnInitialized();
+	void PlayTemperatureSound();
+	void SetTemperanture(int32 Temperanture);
+	void SetTemperantureBodyState(EPalBodyTemperatureState NewBodyState);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 public:
 	static class UClass* StaticClass()

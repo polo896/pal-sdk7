@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonoNPCSpawner_StrongOldMan05.BP_MonoNPCSpawner_StrongOldMan05_C
-// 0x0000 (0x0658 - 0x0658)
+// 0x0000 (0x0668 - 0x0668)
 class ABP_MonoNPCSpawner_StrongOldMan05_C final : public ABP_MonoNPCSpawner_Quest_C
 {
 public:

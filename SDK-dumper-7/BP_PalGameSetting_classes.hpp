@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalGameSetting.BP_PalGameSetting_C
-// 0x0000 (0x20C8 - 0x20C8)
+// 0x0000 (0x2140 - 0x2140)
 class UBP_PalGameSetting_C final : public UPalGameSetting
 {
 public:

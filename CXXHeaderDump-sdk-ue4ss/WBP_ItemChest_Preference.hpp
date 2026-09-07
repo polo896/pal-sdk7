@@ -3,12 +3,12 @@
 
 class UWBP_ItemChest_Preference_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0480 (size: 0x8)
-    class UWBP_IngameMenu_Chest_Filter_C* WBP_IngameMenu_Chest_Filter;                // 0x0488 (size: 0x8)
-    class UPalUIItemChestFilterModel* PreferenceModel;                                // 0x0490 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UWidgetAnimation* Default_In;                                               // 0x0488 (size: 0x8)
+    class UWBP_IngameMenu_Chest_Filter_C* WBP_IngameMenu_Chest_Filter;                // 0x0490 (size: 0x8)
+    class UPalUIItemChestFilterModel* PreferenceModel;                                // 0x0498 (size: 0x8)
 
-    void WBP_ItemChest_Preference_AutoGenFunc();
+    void OnCancelAction_Override();
     void OnClickedCheck(FName FilterId, bool bChecked);
     class UWidget* BP_GetDesiredFocusTarget();
     void Setup();
@@ -20,6 +20,6 @@ class UWBP_ItemChest_Preference_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedCustomNameEditButton__DelegateSignature();
     void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature(FString NewCustomName);
     void ExecuteUbergraph_WBP_ItemChest_Preference(int32 EntryPoint);
-}; // Size: 0x498
+}; // Size: 0x4A0
 
 #endif

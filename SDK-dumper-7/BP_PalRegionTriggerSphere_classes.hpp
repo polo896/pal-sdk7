@@ -27,8 +27,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 	void ExecuteUbergraph_BP_PalRegionTriggerSphere(int32 EntryPoint);
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 
 public:
 	static class UClass* StaticClass()

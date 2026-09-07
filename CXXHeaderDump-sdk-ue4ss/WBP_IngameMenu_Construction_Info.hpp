@@ -15,24 +15,25 @@ class UWBP_IngameMenu_Construction_Info_C : public UUserWidget
     class UOverlay* Overlay_Caution;                                                  // 0x02C0 (size: 0x8)
     class UBP_PalRichTextBlock_C* RichText_Desc;                                      // 0x02C8 (size: 0x8)
     class UBP_PalRichTextBlock_C* RichText_Name;                                      // 0x02D0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Caution;                                           // 0x02D8 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_Favo;                                              // 0x02E0 (size: 0x8)
-    class UBP_PalTextBlock_C* Text_ManMonth_Value;                                    // 0x02E8 (size: 0x8)
-    class UVerticalBox* VerticalBox_AdditionalInfo;                                   // 0x02F0 (size: 0x8)
-    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem; // 0x02F8 (size: 0x8)
-    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem_1; // 0x0300 (size: 0x8)
-    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem_2; // 0x0308 (size: 0x8)
-    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem_3; // 0x0310 (size: 0x8)
-    class UWBP_MainMenu_Pal_WorkIcon_C* WBP_MainMenu_Pal_WorkIcon;                    // 0x0318 (size: 0x8)
-    class UWBP_MainMenu_Pal_WorkIcon_C* WBP_MainMenu_Pal_WorkIcon_1;                  // 0x0320 (size: 0x8)
-    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0328 (size: 0x8)
-    FTimerHandle TimerHandle_DelayDisplay;                                            // 0x0330 (size: 0x8)
-    FDataTableRowHandle NotEnoughMaterialMsgID;                                       // 0x0338 (size: 0x10)
-    FPalBuildObjectData Build Object Data;                                            // 0x0348 (size: 0x98)
-    FDataTableRowHandle NotHaveBlueprintMsgID;                                        // 0x03E0 (size: 0x10)
-    FDataTableRowHandle AddFavoriteMsgID;                                             // 0x03F0 (size: 0x10)
-    FDataTableRowHandle RemoveFavoriteMsgID;                                          // 0x0400 (size: 0x10)
-    TArray<FName> IgnoreAssignDetailMapObjectId;                                      // 0x0410 (size: 0x10)
+    class USizeBox* SizeBox;                                                          // 0x02D8 (size: 0x8)
+    class UBP_PalTextBlock_C* Text_Caution;                                           // 0x02E0 (size: 0x8)
+    class UBP_PalTextBlock_C* Text_Favo;                                              // 0x02E8 (size: 0x8)
+    class UBP_PalTextBlock_C* Text_ManMonth_Value;                                    // 0x02F0 (size: 0x8)
+    class UVerticalBox* VerticalBox_AdditionalInfo;                                   // 0x02F8 (size: 0x8)
+    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem; // 0x0300 (size: 0x8)
+    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem_1; // 0x0308 (size: 0x8)
+    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem_2; // 0x0310 (size: 0x8)
+    class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem_3; // 0x0318 (size: 0x8)
+    class UWBP_MainMenu_Pal_WorkIcon_C* WBP_MainMenu_Pal_WorkIcon;                    // 0x0320 (size: 0x8)
+    class UWBP_MainMenu_Pal_WorkIcon_C* WBP_MainMenu_Pal_WorkIcon_1;                  // 0x0328 (size: 0x8)
+    class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0330 (size: 0x8)
+    FTimerHandle TimerHandle_DelayDisplay;                                            // 0x0338 (size: 0x8)
+    FDataTableRowHandle NotEnoughMaterialMsgID;                                       // 0x0340 (size: 0x10)
+    FPalBuildObjectData Build Object Data;                                            // 0x0350 (size: 0x98)
+    FDataTableRowHandle NotHaveBlueprintMsgID;                                        // 0x03E8 (size: 0x10)
+    FDataTableRowHandle AddFavoriteMsgID;                                             // 0x03F8 (size: 0x10)
+    FDataTableRowHandle RemoveFavoriteMsgID;                                          // 0x0408 (size: 0x10)
+    TArray<FName> IgnoreAssignDetailMapObjectId;                                      // 0x0418 (size: 0x10)
 
     void HideAdditionalText();
     void Set Simple Additional Text(FText Text);
@@ -47,6 +48,6 @@ class UWBP_IngameMenu_Construction_Info_C : public UUserWidget
     void SetBuildObjectData(FPalBuildObjectData BuildObjectData);
     void Destruct();
     void ExecuteUbergraph_WBP_IngameMenu_Construction_Info(int32 EntryPoint);
-}; // Size: 0x420
+}; // Size: 0x428
 
 #endif

@@ -3,22 +3,24 @@
 
 class UBP_PalAudioWorldSubsystem_C : public UPalAudioWorldSubsystem
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0088 (size: 0x8)
-    bool IsDead;                                                                      // 0x0090 (size: 0x1)
-    class AActor* DeubugModel;                                                        // 0x0098 (size: 0x8)
-    class AActor* LastOneEnemy;                                                       // 0x00A0 (size: 0x8)
-    TArray<FGuid> ExecRaid;                                                           // 0x00A8 (size: 0x10)
-    TArray<FGuid> ArrivedRaid;                                                        // 0x00B8 (size: 0x10)
-    bool IsLocalPlayerInsideBaseCamp;                                                 // 0x00C8 (size: 0x1)
-    TArray<APalSpotAreaBase*> SpotList;                                               // 0x00D0 (size: 0x10)
-    TArray<APalAmbientSoundAreaBase*> AmbientSoundList;                               // 0x00E0 (size: 0x10)
-    TArray<APalAmbientSoundAreaBase*> AmbientSoundListPrev;                           // 0x00F0 (size: 0x10)
-    TArray<int32> AmbinetSoundPlayingIdList;                                          // 0x0100 (size: 0x10)
-    FPalAmbientSoundAreaData CurrentAmbientData;                                      // 0x0110 (size: 0x28)
-    TMap<EPalBattleBGMType, EPalAudioState> BattleBGMMap2;                            // 0x0138 (size: 0x50)
-    bool IsDisableBattleBGM;                                                          // 0x0188 (size: 0x1)
-    EPalBattleBGMType BattleBGMRankCache;                                             // 0x0189 (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00D8 (size: 0x8)
+    bool IsDead;                                                                      // 0x00E0 (size: 0x1)
+    class AActor* DeubugModel;                                                        // 0x00E8 (size: 0x8)
+    class AActor* LastOneEnemy;                                                       // 0x00F0 (size: 0x8)
+    TArray<FGuid> ExecRaid;                                                           // 0x00F8 (size: 0x10)
+    TArray<FGuid> ArrivedRaid;                                                        // 0x0108 (size: 0x10)
+    bool IsLocalPlayerInsideBaseCamp;                                                 // 0x0118 (size: 0x1)
+    TArray<class APalSpotAreaBase*> SpotList;                                         // 0x0120 (size: 0x10)
+    TArray<class APalAmbientSoundAreaBase*> AmbientSoundList;                         // 0x0130 (size: 0x10)
+    TArray<class APalAmbientSoundAreaBase*> AmbientSoundListPrev;                     // 0x0140 (size: 0x10)
+    TArray<int32> AmbinetSoundPlayingIdList;                                          // 0x0150 (size: 0x10)
+    FPalAmbientSoundAreaData CurrentAmbientData;                                      // 0x0160 (size: 0x28)
+    TMap<class EPalBattleBGMType, class EPalAudioState> BattleBGMMap2;                // 0x0188 (size: 0x50)
+    bool IsDisableBattleBGM;                                                          // 0x01D8 (size: 0x1)
+    EPalBattleBGMType BattleBGMRankCache;                                             // 0x01D9 (size: 0x1)
+    bool IsRaidStateApplied;                                                          // 0x01DA (size: 0x1)
 
+    bool IsRaidBGMSuppressed();
     void ResetBossBGMState(EPalBattleBGMType Selection);
     void OnArenaSequenceChanged(class UPalArenaSequencer* Sequencer, EPalArenaSequenceType PrevType, EPalArenaSequenceType AfterType);
     void SetDsiableBattleBGM(bool bIsDisable);
@@ -40,10 +42,10 @@ class UBP_PalAudioWorldSubsystem_C : public UPalAudioWorldSubsystem
     void UpdateSpot();
     void OnPlayerExitBaseCamp(class APalPlayerCharacter* Player, class UPalBaseCampModel* BaseCampModel);
     void OnPlayerEnterBaseCamp(class APalPlayerCharacter* Player, class UPalBaseCampModel* BaseCampModel);
-    void UpdateRaid();
+    void Update Raid();
     void OnArrivedRaid(const FPalIncidentBroadcastParameter& Param);
     void OnEndRaid(const FPalIncidentBroadcastParameter& Parameter);
-    void OnStartRaid(const FPalIncidentBroadcastParameter& Parameter);
+    void On Start Raid(const FPalIncidentBroadcastParameter& Parameter);
     void CreateDebugModel(class AActor*& NewParam);
     void OnBattleModeChanged(bool IsBattleMode);
     void UpdateDebugDisplay();
@@ -56,7 +58,11 @@ class UBP_PalAudioWorldSubsystem_C : public UPalAudioWorldSubsystem
     void DeathPlayer();
     void RespawnPlayer(class APalPlayerCharacter* Player);
     void OnSpawnedLocalPlayerCharacter(class APawn* Pawn, class AController* Controller);
+    void カスタムイベント();
+    void カスタムイベント_0(bool bIsSkipped);
+    void カスタムイベント_1(class APalPlayerState* PlayerState);
+    void カスタムイベント_2();
     void ExecuteUbergraph_BP_PalAudioWorldSubsystem(int32 EntryPoint);
-}; // Size: 0x18A
+}; // Size: 0x1DB
 
 #endif

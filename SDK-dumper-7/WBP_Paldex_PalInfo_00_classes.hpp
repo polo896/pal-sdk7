@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C
-// 0x00A8 (0x0320 - 0x0278)
+// 0x00C8 (0x0340 - 0x0278)
 class UWBP_Paldex_PalInfo_00_C final : public UUserWidget
 {
 public:
@@ -43,21 +43,25 @@ public:
 	class UWBP_Paldex_Task_C*                     WBP_Paldex_Task;                                   // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class UWBP_Paldex_DropItem_C*>         DropItemWidgetArray;                               // 0x0308(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	double                                        New_Offset;                                        // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(class UWBP_MainMenu_Pal_WorkIconText_C* Widget)> OnHoveredSuitabilityPanel; // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnUnhoveredSuitabilityPanel;                       // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void ShouldDisplay(class FName CharacterID, bool* bDisplay);
-	void SetupCaptureBonusInfo(class FName CharacterID);
-	void Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void OnInitialized();
-	void HideDropItems();
-	void ExecuteUbergraph_WBP_Paldex_PalInfo_00(int32 EntryPoint);
-	void Destruct();
-	void Construct();
 	void ChangePalInfoScrollOffset(double Offset);
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_Paldex_PalInfo_00(int32 EntryPoint);
+	void HideDropItems();
+	void OnHoveredSuitability_Internal(class UWBP_MainMenu_Pal_WorkIconText_C* Widget);
+	void OnInitialized();
+	void OnUnhoveredSuitability_Internal();
+	void Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void SetupCaptureBonusInfo(class FName CharacterID);
+	void ShouldDisplay(class FName CharacterID, bool* bDisplay);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 public:
 	static class UClass* StaticClass()

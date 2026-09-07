@@ -30,6 +30,8 @@
 ---@field SomethingChanged boolean
 ---@field OriginalSettingCache FPalOptionAudioSettings
 ---@field VoiceChatSettingCache FPalOptionVoiceChatSettings
+---@field OriginalVoiceChatSettingCache FPalOptionVoiceChatSettings
+---@field RollbackVoiceChatSettingCache FPalOptionVoiceChatSettings
 ---@field OptionDiscordFriend UWBP_Option_DiscordFriendList_C
 ---@field VoiceChatModeMsgIds TArray<FDataTableRowHandle>
 ---@field VoiceChatDevices TArray<FString>

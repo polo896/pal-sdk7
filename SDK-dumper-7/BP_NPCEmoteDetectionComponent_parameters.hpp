@@ -127,7 +127,7 @@ public:
 DUMPER7_ASSERTS_BP_NPCEmoteDetectionComponent_C_ExecuteUbergraph_BP_NPCEmoteDetectionComponent;
 
 // Function BP_NPCEmoteDetectionComponent.BP_NPCEmoteDetectionComponent_C.OnActionBegin
-// 0x0148 (0x0148 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct BP_NPCEmoteDetectionComponent_C_OnActionBegin final
 {
 public:
@@ -145,12 +145,12 @@ public:
 	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0088(0x0018)()
 	bool                                          CallFunc_EqualEqual_SoftClassReference_ReturnValue; // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x00A8(0x0070)()
-	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_AddLog_ReturnValue;                       // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0138(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x00A8(0x0078)()
+	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_AddLog_ReturnValue;                       // 0x0128(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0140(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPCEmoteDetectionComponent_C_OnActionBegin;
 

@@ -21,61 +21,61 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C
-// 0x00C8 (0x0540 - 0x0478)
+// 0x00C8 (0x0548 - 0x0480)
 class UWBP_IngameMenu_Incubator_Multiple_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCanvasPanel*                           Canvas_Buff;                                       // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           Canvas_PowerShortage;                              // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_Buff_Value;                                   // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_Head;                                         // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_Status;                                       // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Inventory_C*                WBP_Common_Inventory;                              // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CommonButton_C*                    WBP_CommonButton_OpenAll;                          // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CommonButton_1_C*                  WBP_CommonButton_SetAll;                           // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot;               // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_1;             // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_2;             // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_3;             // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_4;             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_5;             // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_6;             // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_7;             // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_8;             // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_9;             // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalInventoryModel_C*                InventoryModel;                                    // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class UPalMapObjectMultiHatchingEggModel*     Hatching_Egg_Model;                                // 0x0520(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWBP_IngameMenu_Incubator_MultipleSlot_C*> HatchSlots;                              // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	bool                                          BlockGetAll;                                       // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EnableWaitWorkSync;                                // 0x0539(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCanvasPanel*                           Canvas_Buff;                                       // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Canvas_PowerShortage;                              // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_Buff_Value;                                   // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_Head;                                         // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_Status;                                       // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Inventory_C*                WBP_Common_Inventory;                              // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CommonButton_C*                    WBP_CommonButton_OpenAll;                          // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CommonButton_1_C*                  WBP_CommonButton_SetAll;                           // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot;               // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_1;             // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_2;             // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_3;             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_4;             // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_5;             // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_6;             // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_7;             // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_8;             // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_Incubator_MultipleSlot_C* WBP_Ingame_Incubator_MultipleSlot_9;             // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalInventoryModel_C*                InventoryModel;                                    // 0x0520(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	class UPalMapObjectMultiHatchingEggModel*     Hatching_Egg_Model;                                // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWBP_IngameMenu_Incubator_MultipleSlot_C*> HatchSlots;                              // 0x0530(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	bool                                          BlockGetAll;                                       // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnableWaitWorkSync;                                // 0x0541(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateSlots(class UPalItemContainer* ItemContainer);
-	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
-	void SetupHatch();
-	void RatioToPersentOffsetText(double Ratio, class FText* Persent);
-	void OnWorkSynced(class UPalMapObjectWorkeeModule* WorkeeModule, class UPalWorkBase* WorkProgress);
-	void OnSetup();
-	void OnRightClickEggSlot(class UPalItemSlot* TargetSlot);
-	void OnMultiHatchComplete(TArray<struct FPalInstanceID>& HatchedIDs);
-	void OnLeftClickEggSlot(class UPalItemSlot* TargetSlot);
-	void OnInitialized();
-	void OnHatchFailed();
-	void OnEggArrayUpdated();
-	void FocusRight();
-	void FocusLeft();
-	void ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple(int32 EntryPoint);
-	void Empty(bool bResult);
-	class UWidget* DoCustomNavigation_ToSlot8(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_ToSetAll(EUINavigation Navigation_0);
-	void Destruct();
-	void Check_Get_All_Enable(class UPalMapObjectHatchingEggModelBase* Model);
-	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void Check_Get_All_Enable(class UPalMapObjectHatchingEggModelBase* Model);
+	void Destruct();
+	class UWidget* DoCustomNavigation_ToSetAll(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_ToSlot8(EUINavigation Navigation_0);
+	void Empty(bool bResult);
+	void ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple(int32 EntryPoint);
+	void FocusLeft();
+	void FocusRight();
+	void OnEggArrayUpdated();
+	void OnHatchFailed();
+	void OnInitialized();
+	void OnLeftClickEggSlot(class UPalItemSlot* TargetSlot);
+	void OnMultiHatchComplete(TArray<struct FPalInstanceID>& HatchedIDs);
+	void OnRightClickEggSlot(class UPalItemSlot* TargetSlot);
+	void OnSetup();
+	void OnWorkSynced(class UPalMapObjectWorkeeModule* WorkeeModule, class UPalWorkBase* WorkProgress);
+	void RatioToPersentOffsetText(double Ratio, class FText* Persent);
+	void SetupHatch();
+	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
+	void UpdateSlots(class UPalItemContainer* ItemContainer);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -3,6 +3,6 @@
 
 class ABP_MonoNPCSpawner_StrongOldMan02_C : public ABP_MonoNPCSpawner_Quest_C
 {
-}; // Size: 0x658
+}; // Size: 0x668
 
 #endif

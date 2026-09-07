@@ -31,6 +31,7 @@ public:
 	TMulticastInlineDelegate<void(class UCommonButtonBase* Button)> OnButtonPressed;                 // 0x1518(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void(class UCommonButtonBase* Button)> OnButtonReleased;                // 0x1528(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bHasFocus;                                         // 0x1538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShouldSkipSpaceKey;                               // 0x1539(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BP_OnClicked();
@@ -41,6 +42,7 @@ public:
 	void Destruct();
 	void ExecuteUbergraph_WBP_PalCommonButtonBase(int32 EntryPoint);
 	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
+	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
 	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
 	void PlayAkSound(class UAkAudioEvent* AudioEvent);
 

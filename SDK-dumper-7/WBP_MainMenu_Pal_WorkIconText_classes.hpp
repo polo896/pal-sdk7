@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_MainMenu_Pal_WorkIconText.WBP_MainMenu_Pal_WorkIconText_C
-// 0x00A8 (0x0320 - 0x0278)
+// 0x00D0 (0x0348 - 0x0278)
 class UWBP_MainMenu_Pal_WorkIconText_C final : public UUserWidget
 {
 public:
@@ -41,13 +41,19 @@ public:
 	class UWBP_MainMenu_Pal_WorkGauge_C*          WBP_MainMenu_Pal_WorkGauge_8;                      // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_MainMenu_Pal_WorkGauge_C*          WBP_MainMenu_Pal_WorkGauge_9;                      // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_MainMenu_Pal_WorkIcon_C*           WBP_MainMenu_Pal_WorkIcon;                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UWBP_MainMenu_Pal_WorkGauge_C*>  Gauge_Array;                                       // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class UWBP_MainMenu_Pal_FoodAmountIcon_C*     NewVar;                                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalWorkSuitability                           Suitability;                                       // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UWBP_MainMenu_Pal_WorkGauge_C*>  Gauge_Array;                                       // 0x0308(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UWBP_MainMenu_Pal_FoodAmountIcon_C*     NewVar;                                            // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalWorkSuitability                           Suitability;                                       // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UWBP_MainMenu_Pal_WorkIconText_C* Widget)> OnHovered;        // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void AnmEvent_ForceOff();
 	void AnmEvent_OffToOn();
+	void BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void ExecuteUbergraph_WBP_MainMenu_Pal_WorkIconText(int32 EntryPoint);
 	void OnInitialized();
 	void Set_Suitability(EPalWorkSuitability Suitability_0, int32 Rank, int32 RankBonus, int32 PassiveRankBonus);

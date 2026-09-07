@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalMapObjectManager.BP_PalMapObjectManager_C
-// 0x0000 (0x0D70 - 0x0D70)
+// 0x0000 (0x0DD8 - 0x0DD8)
 class UBP_PalMapObjectManager_C final : public UPalMapObjectManager
 {
 public:

@@ -24,6 +24,7 @@ class ABP_CombatHeli_C : public APalNPC
     void ReceiveBeginPlay();
     void OnHPGaugeCollisionOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
     void OnHPGaugeCollisionOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+    void BndEvt__BP_CombatHeli_DamageReactionComponent_K2Node_ComponentBoundEvent_0_OnDeadDelegate__DelegateSignature(FPalDeadInfo DeadInfo);
     void ExecuteUbergraph_BP_CombatHeli(int32 EntryPoint);
 }; // Size: 0xC60
 

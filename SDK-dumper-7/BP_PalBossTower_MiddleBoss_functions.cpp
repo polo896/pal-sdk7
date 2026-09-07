@@ -17,45 +17,24 @@
 namespace SDK
 {
 
-// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetInteractableTrigger
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetEntryCancelTrigger
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UShapeComponent**                 InteractableTrigger_0                                  (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UShapeComponent**                 EntryCancelTrigger_0                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTower_MiddleBoss_C::GetInteractableTrigger(class UShapeComponent** InteractableTrigger_0)
+void ABP_PalBossTower_MiddleBoss_C::GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_MiddleBoss_C", "GetInteractableTrigger");
+		Func = Class->GetFunction("BP_PalBossTower_MiddleBoss_C", "GetEntryCancelTrigger");
 
-	Params::BP_PalBossTower_MiddleBoss_C_GetInteractableTrigger Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (InteractableTrigger_0 != nullptr)
-		*InteractableTrigger_0 = Parms.InteractableTrigger_0;
-}
-
-
-// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetInteractableInterface
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TScriptInterface<class IPalInteractiveObjectComponentInterface>*Interface                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTower_MiddleBoss_C::GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_MiddleBoss_C", "GetInteractableInterface");
-
-	Params::BP_PalBossTower_MiddleBoss_C_GetInteractableInterface Parms{};
+	Params::BP_PalBossTower_MiddleBoss_C_GetEntryCancelTrigger Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Interface != nullptr)
-		*Interface = Parms.Interface;
+	if (EntryCancelTrigger_0 != nullptr)
+		*EntryCancelTrigger_0 = Parms.EntryCancelTrigger_0;
 }
 
 
@@ -80,24 +59,45 @@ void ABP_PalBossTower_MiddleBoss_C::GetEntryWaitInfoTrigger(class UShapeComponen
 }
 
 
-// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetEntryCancelTrigger
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetInteractableInterface
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UShapeComponent**                 EntryCancelTrigger_0                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class IPalInteractiveObjectComponentInterface>*Interface                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTower_MiddleBoss_C::GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger_0)
+void ABP_PalBossTower_MiddleBoss_C::GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_MiddleBoss_C", "GetEntryCancelTrigger");
+		Func = Class->GetFunction("BP_PalBossTower_MiddleBoss_C", "GetInteractableInterface");
 
-	Params::BP_PalBossTower_MiddleBoss_C_GetEntryCancelTrigger Parms{};
+	Params::BP_PalBossTower_MiddleBoss_C_GetInteractableInterface Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (EntryCancelTrigger_0 != nullptr)
-		*EntryCancelTrigger_0 = Parms.EntryCancelTrigger_0;
+	if (Interface != nullptr)
+		*Interface = Parms.Interface;
+}
+
+
+// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetInteractableTrigger
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UShapeComponent**                 InteractableTrigger_0                                  (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTower_MiddleBoss_C::GetInteractableTrigger(class UShapeComponent** InteractableTrigger_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTower_MiddleBoss_C", "GetInteractableTrigger");
+
+	Params::BP_PalBossTower_MiddleBoss_C_GetInteractableTrigger Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (InteractableTrigger_0 != nullptr)
+		*InteractableTrigger_0 = Parms.InteractableTrigger_0;
 }
 
 }

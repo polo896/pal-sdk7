@@ -30,11 +30,11 @@ public:
 	class UImage*                                 Image_On;                                          // 0x02A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_WarningEvent_WaveClear_Mark(int32 EntryPoint);
-	void Construct();
-	void AnmEvent_UncheckInstant();
-	void AnmEvent_CheckInstant();
 	void AnmEvent_Check();
+	void AnmEvent_CheckInstant();
+	void AnmEvent_UncheckInstant();
+	void Construct();
+	void ExecuteUbergraph_WBP_WarningEvent_WaveClear_Mark(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

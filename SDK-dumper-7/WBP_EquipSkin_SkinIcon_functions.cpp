@@ -17,57 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.ExecuteUbergraph_WBP_EquipSkin_SkinIcon
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class FName                             SkinName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsEquip                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipSkin_SkinIcon_C::Setup(class FName SkinName, bool IsEquip)
+void UWBP_EquipSkin_SkinIcon_C::ExecuteUbergraph_WBP_EquipSkin_SkinIcon(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "Setup");
+		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "ExecuteUbergraph_WBP_EquipSkin_SkinIcon");
 
-	Params::WBP_EquipSkin_SkinIcon_C_Setup Parms{};
+	Params::WBP_EquipSkin_SkinIcon_C_ExecuteUbergraph_WBP_EquipSkin_SkinIcon Parms{};
 
-	Parms.SkinName = SkinName;
-	Parms.IsEquip = IsEquip;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.SetEmpty
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_EquipSkin_SkinIcon_C::SetEmpty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "SetEmpty");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.OnLoaded_F4FCEC97410E591228B5AA8532DA5248
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EquipSkin_SkinIcon_C::OnLoaded_F4FCEC97410E591228B5AA8532DA5248(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "OnLoaded_F4FCEC97410E591228B5AA8532DA5248");
-
-	Params::WBP_EquipSkin_SkinIcon_C_OnLoaded_F4FCEC97410E591228B5AA8532DA5248 Parms{};
-
-	Parms.Loaded = Loaded;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -93,21 +57,57 @@ void UWBP_EquipSkin_SkinIcon_C::LoadIconEvent_Internal(TSoftObjectPtr<class UTex
 }
 
 
-// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.ExecuteUbergraph_WBP_EquipSkin_SkinIcon
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.OnLoaded_F4FCEC97410E591228B5AA8532DA5248
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipSkin_SkinIcon_C::ExecuteUbergraph_WBP_EquipSkin_SkinIcon(int32 EntryPoint)
+void UWBP_EquipSkin_SkinIcon_C::OnLoaded_F4FCEC97410E591228B5AA8532DA5248(class UObject* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "ExecuteUbergraph_WBP_EquipSkin_SkinIcon");
+		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "OnLoaded_F4FCEC97410E591228B5AA8532DA5248");
 
-	Params::WBP_EquipSkin_SkinIcon_C_ExecuteUbergraph_WBP_EquipSkin_SkinIcon Parms{};
+	Params::WBP_EquipSkin_SkinIcon_C_OnLoaded_F4FCEC97410E591228B5AA8532DA5248 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.SetEmpty
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_EquipSkin_SkinIcon_C::SetEmpty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "SetEmpty");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             SkinName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsEquip                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EquipSkin_SkinIcon_C::Setup(class FName SkinName, bool IsEquip)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_SkinIcon_C", "Setup");
+
+	Params::WBP_EquipSkin_SkinIcon_C_Setup Parms{};
+
+	Parms.SkinName = SkinName;
+	Parms.IsEquip = IsEquip;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

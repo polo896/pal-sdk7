@@ -19,25 +19,25 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C
-// 0x00F8 (0x0570 - 0x0478)
+// 0x00F8 (0x0578 - 0x0480)
 class UWBP_OptionSettingsOverLayWindow_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anm_Open;                                          // 0x0480(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     BP_PalTextBlock_Command;                           // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     BP_PalTextBlock_Title;                             // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    titleMsgId;                                        // 0x0498(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    TitleMsgIdPS5;                                     // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CommandMsgId;                                      // 0x04B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CommandMsgIdPS5;                                   // 0x04C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    ErrorMsgId;                                        // 0x04D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    ErrorMsgIdPS5;                                     // 0x04E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FTimerHandle                           ResetTextTimer;                                    // 0x04F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UBP_HUDDispatchParameter_KeyConfig_C*   KeyConfigParam;                                    // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           FilterActionKeys;                                  // 0x0508(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<struct FPalKeyAction, class FName>       ReverseAxisMap;                                    // 0x0518(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FName                                   BackActionName;                                    // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anm_Open;                                          // 0x0488(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     BP_PalTextBlock_Command;                           // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     BP_PalTextBlock_Title;                             // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    titleMsgId;                                        // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    TitleMsgIdPS5;                                     // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CommandMsgId;                                      // 0x04C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CommandMsgIdPS5;                                   // 0x04D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ErrorMsgId;                                        // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    ErrorMsgIdPS5;                                     // 0x04F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FTimerHandle                           ResetTextTimer;                                    // 0x0500(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UBP_HUDDispatchParameter_KeyConfig_C*   KeyConfigParam;                                    // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           FilterActionKeys;                                  // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<struct FPalKeyAction, class FName>       ReverseAxisMap;                                    // 0x0520(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FName                                   BackActionName;                                    // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void SetPadKeyA();

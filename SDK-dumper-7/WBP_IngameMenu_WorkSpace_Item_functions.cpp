@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_IngameMenu_WorkSpace_Item.WBP_IngameMenu_WorkSpace_Item_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_WorkSpace_Item_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Item_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item");
+
+	Params::WBP_IngameMenu_WorkSpace_Item_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_IngameMenu_WorkSpace_Item.WBP_IngameMenu_WorkSpace_Item_C.Setup
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -34,26 +54,6 @@ void UWBP_IngameMenu_WorkSpace_Item_C::Setup(class FName ItemStaticId, int32 req
 
 	Parms.ItemStaticId = ItemStaticId;
 	Parms.requireNum = requireNum;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Item.WBP_IngameMenu_WorkSpace_Item_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_Item_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Item_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item");
-
-	Params::WBP_IngameMenu_WorkSpace_Item_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

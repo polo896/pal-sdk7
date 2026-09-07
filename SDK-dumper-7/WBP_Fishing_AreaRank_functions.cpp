@@ -17,21 +17,49 @@
 namespace SDK
 {
 
-// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.SetDifficulty
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalFishingSpotDifficultyType           DifficultyType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_AreaRank_C::SetDifficulty(EPalFishingSpotDifficultyType DifficultyType)
+void UWBP_Fishing_AreaRank_C::AnmEvent_In()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "SetDifficulty");
+		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "AnmEvent_In");
 
-	Params::WBP_Fishing_AreaRank_C_SetDifficulty Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DifficultyType = DifficultyType;
+
+// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Fishing_AreaRank_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_Rank
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalFishingSpotDifficultyType           Difficulty                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Fishing_AreaRank_C::AnmEvent_Rank(EPalFishingSpotDifficultyType Difficulty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "AnmEvent_Rank");
+
+	Params::WBP_Fishing_AreaRank_C_AnmEvent_Rank Parms{};
+
+	Parms.Difficulty = Difficulty;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,51 +85,23 @@ void UWBP_Fishing_AreaRank_C::ExecuteUbergraph_WBP_Fishing_AreaRank(int32 EntryP
 }
 
 
-// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_Rank
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.SetDifficulty
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalFishingSpotDifficultyType           Difficulty                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalFishingSpotDifficultyType           DifficultyType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Fishing_AreaRank_C::AnmEvent_Rank(EPalFishingSpotDifficultyType Difficulty)
+void UWBP_Fishing_AreaRank_C::SetDifficulty(EPalFishingSpotDifficultyType DifficultyType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "AnmEvent_Rank");
+		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "SetDifficulty");
 
-	Params::WBP_Fishing_AreaRank_C_AnmEvent_Rank Parms{};
+	Params::WBP_Fishing_AreaRank_C_SetDifficulty Parms{};
 
-	Parms.Difficulty = Difficulty;
+	Parms.DifficultyType = DifficultyType;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Fishing_AreaRank_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Fishing_AreaRank_C::AnmEvent_In()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_AreaRank_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

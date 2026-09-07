@@ -14,14 +14,14 @@
 namespace SDK::Params
 {
 
-// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.ExecuteUbergraph_BP_Item_Anim_PalEgg_Base
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Item_Anim_PalEgg_Base_C_ExecuteUbergraph_BP_Item_Anim_PalEgg_Base final
+// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.SetAnimPlayState
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Item_Anim_PalEgg_Base_C_SetAnimPlayState final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPlay;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Item_Anim_PalEgg_Base_C_ExecuteUbergraph_BP_Item_Anim_PalEgg_Base;
+DUMPER7_ASSERTS_BP_Item_Anim_PalEgg_Base_C_SetAnimPlayState;
 
 // Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.GetHatchingTemperature
 // 0x0004 (0x0004 - 0x0000)
@@ -32,14 +32,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_Item_Anim_PalEgg_Base_C_GetHatchingTemperature;
 
-// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.SetAnimPlayState
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Item_Anim_PalEgg_Base_C_SetAnimPlayState final
+// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.ExecuteUbergraph_BP_Item_Anim_PalEgg_Base
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Item_Anim_PalEgg_Base_C_ExecuteUbergraph_BP_Item_Anim_PalEgg_Base final
 {
 public:
-	bool                                          IsPlay;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Item_Anim_PalEgg_Base_C_SetAnimPlayState;
+DUMPER7_ASSERTS_BP_Item_Anim_PalEgg_Base_C_ExecuteUbergraph_BP_Item_Anim_PalEgg_Base;
 
 }
 

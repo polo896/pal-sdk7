@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.ExecuteUbergraph_WBP_CrimeList_RankGauge
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.AnmEvent_Off
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CrimeList_RankGauge_C::ExecuteUbergraph_WBP_CrimeList_RankGauge(int32 EntryPoint)
+void UWBP_CrimeList_RankGauge_C::AnmEvent_Off()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "ExecuteUbergraph_WBP_CrimeList_RankGauge");
+		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "AnmEvent_Off");
 
-	Params::WBP_CrimeList_RankGauge_C_ExecuteUbergraph_WBP_CrimeList_RankGauge Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UWBP_CrimeList_RankGauge_C::AnmEvent_Rankup()
 }
 
 
-// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.AnmEvent_Off
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.ExecuteUbergraph_WBP_CrimeList_RankGauge
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeList_RankGauge_C::AnmEvent_Off()
+void UWBP_CrimeList_RankGauge_C::ExecuteUbergraph_WBP_CrimeList_RankGauge(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "AnmEvent_Off");
+		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "ExecuteUbergraph_WBP_CrimeList_RankGauge");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CrimeList_RankGauge_C_ExecuteUbergraph_WBP_CrimeList_RankGauge Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

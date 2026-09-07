@@ -17,59 +17,53 @@
 namespace SDK
 {
 
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo
+// (Final, UbergraphFunction)
 // Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
+void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D");
+		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo");
 
-	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
+	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo Parms{};
 
-	Parms.NotifyName = NotifyName;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnBeginAction
+// (Event, Public, BlueprintEvent)
 
-void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
+void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnBeginAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D");
+		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnBeginAction");
 
-	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
+void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D");
+		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D");
 
-	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
+	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -97,19 +91,19 @@ void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnCompleted_9FDC0D23432EA95FAA
 }
 
 
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
+void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D");
+		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D");
 
-	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
+	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -117,35 +111,41 @@ void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnBlendOut_9FDC0D23432EA95FAA7
 }
 
 
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnBeginAction
-// (Event, Public, BlueprintEvent)
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnBeginAction()
+void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnBeginAction");
+		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo
-// (Final, UbergraphFunction)
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo(int32 EntryPoint)
+void UBP_Action_NPC_MeleeAttack_BeamSwordCombo_C::OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo");
+		Func = Class->GetFunction("BP_Action_NPC_MeleeAttack_BeamSwordCombo_C", "OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D");
 
-	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo Parms{};
+	Params::BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C
-// 0x0010 (0x04D8 - 0x04C8)
+// 0x0010 (0x04F0 - 0x04E0)
 class ABP_MapObject_TreasureBox_OilrigGoal_C final : public ABP_MapObject_TreasureBox_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_TreasureBox_OilrigGoal_C; // 0x04C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          IsOpened;                                          // 0x04D0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_TreasureBox_OilrigGoal_C; // 0x04E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          IsOpened;                                          // 0x04E8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 
 public:
-	void TriggerOpen();
-	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void TriggerOpen();
 
 public:
 	static class UClass* StaticClass()

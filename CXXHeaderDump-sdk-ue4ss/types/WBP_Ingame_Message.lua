@@ -10,7 +10,6 @@
 ---@field BP_PalRichTextBlock_C_89 UBP_PalRichTextBlock_C
 ---@field Canvas_Base UCanvasPanel
 ---@field Image_Base UImage
----@field Image_Base_Flash UImage
 ---@field IsShow boolean
 ---@field QueMessageDataArray TArray<FF_PalIngameMessageQueData>
 ---@field TimerHandle_PlayEnd FTimerHandle

@@ -4,7 +4,7 @@
 class UWBP_IngameMenu_Chest_LockNum_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0280 (size: 0x8)
+    class UWidgetAnimation* Anm_Push;                                                 // 0x0280 (size: 0x8)
     class UImage* FocusFrame;                                                         // 0x0288 (size: 0x8)
     class UBP_PalTextBlock_C* Text_Num;                                               // 0x0290 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0298 (size: 0x8)

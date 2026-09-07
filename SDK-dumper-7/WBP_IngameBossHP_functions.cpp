@@ -17,85 +17,137 @@
 namespace SDK
 {
 
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.ExecuteUbergraph_WBP_IngameBossHP
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameBossHP_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_IngameBossHP_C::ExecuteUbergraph_WBP_IngameBossHP(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "Tick");
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "ExecuteUbergraph_WBP_IngameBossHP");
 
-	Params::WBP_IngameBossHP_C_Tick Parms{};
+	Params::WBP_IngameBossHP_C_ExecuteUbergraph_WBP_IngameBossHP Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetLevelVisibility
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameBossHP_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.Set Enable Talent Detail
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterParameter* Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameBossHP_C::Set_Enable_Talent_Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "Set Enable Talent Detail");
+
+	Params::WBP_IngameBossHP_C_Set_Enable_Talent_Detail Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.Parameter = Parameter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.Set Status Effect
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalStatusID                            statusID                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameBossHP_C::SetLevelVisibility(bool Visible)
+void UWBP_IngameBossHP_C::Set_Status_Effect(EPalStatusID statusID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetLevelVisibility");
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "Set Status Effect");
 
-	Params::WBP_IngameBossHP_C_SetLevelVisibility Parms{};
+	Params::WBP_IngameBossHP_C_Set_Status_Effect Parms{};
 
-	Parms.Visible = Visible;
+	Parms.statusID = statusID;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetLevel
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetBossGaugeDisplayMode
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ENum_BossGaugeDisplayMode               IsShortMode                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameBossHP_C::SetLevel(int32 Level)
+void UWBP_IngameBossHP_C::SetBossGaugeDisplayMode(ENum_BossGaugeDisplayMode IsShortMode)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetLevel");
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetBossGaugeDisplayMode");
 
-	Params::WBP_IngameBossHP_C_SetLevel Parms{};
+	Params::WBP_IngameBossHP_C_SetBossGaugeDisplayMode Parms{};
 
-	Parms.Level = Level;
+	Parms.IsShortMode = IsShortMode;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetHP
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetBossName
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   MaxHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_IngameBossHP_C::SetHP(int32 nowHP, int32 MaxHP)
+void UWBP_IngameBossHP_C::SetBossName(const class FText& InText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetHP");
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetBossName");
 
-	Params::WBP_IngameBossHP_C_SetHP Parms{};
+	Params::WBP_IngameBossHP_C_SetBossName Parms{};
 
-	Parms.nowHP = nowHP;
-	Parms.MaxHP = MaxHP;
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetBossPrefix
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_IngameBossHP_C::SetBossPrefix(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetBossPrefix");
+
+	Params::WBP_IngameBossHP_C_SetBossPrefix Parms{};
+
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -123,137 +175,85 @@ void UWBP_IngameBossHP_C::SetElement(EPalElementType type1, EPalElementType type
 }
 
 
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetBossPrefix
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_IngameBossHP_C::SetBossPrefix(const class FText& Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetBossPrefix");
-
-	Params::WBP_IngameBossHP_C_SetBossPrefix Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetBossName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_IngameBossHP_C::SetBossName(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetBossName");
-
-	Params::WBP_IngameBossHP_C_SetBossName Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetBossGaugeDisplayMode
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ENum_BossGaugeDisplayMode               IsShortMode                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameBossHP_C::SetBossGaugeDisplayMode(ENum_BossGaugeDisplayMode IsShortMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetBossGaugeDisplayMode");
-
-	Params::WBP_IngameBossHP_C_SetBossGaugeDisplayMode Parms{};
-
-	Parms.IsShortMode = IsShortMode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.Set Status Effect
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalStatusID                            statusID                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameBossHP_C::Set_Status_Effect(EPalStatusID statusID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "Set Status Effect");
-
-	Params::WBP_IngameBossHP_C_Set_Status_Effect Parms{};
-
-	Parms.statusID = statusID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.Set Enable Talent Detail
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetHP
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterParameter* Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MaxHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameBossHP_C::Set_Enable_Talent_Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter)
+void UWBP_IngameBossHP_C::SetHP(int32 nowHP, int32 MaxHP)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "Set Enable Talent Detail");
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetHP");
 
-	Params::WBP_IngameBossHP_C_Set_Enable_Talent_Detail Parms{};
+	Params::WBP_IngameBossHP_C_SetHP Parms{};
 
-	Parms.IsEnable = IsEnable;
-	Parms.Parameter = Parameter;
+	Parms.nowHP = nowHP;
+	Parms.MaxHP = MaxHP;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetLevel
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameBossHP_C::OnInitialized()
+void UWBP_IngameBossHP_C::SetLevel(int32 Level)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetLevel");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_IngameBossHP_C_SetLevel Parms{};
+
+	Parms.Level = Level;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameBossHP.WBP_IngameBossHP_C.ExecuteUbergraph_WBP_IngameBossHP
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.SetLevelVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameBossHP_C::ExecuteUbergraph_WBP_IngameBossHP(int32 EntryPoint)
+void UWBP_IngameBossHP_C::SetLevelVisibility(bool Visible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameBossHP_C", "ExecuteUbergraph_WBP_IngameBossHP");
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "SetLevelVisibility");
 
-	Params::WBP_IngameBossHP_C_ExecuteUbergraph_WBP_IngameBossHP Parms{};
+	Params::WBP_IngameBossHP_C_SetLevelVisibility Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Visible = Visible;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameBossHP.WBP_IngameBossHP_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameBossHP_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameBossHP_C", "Tick");
+
+	Params::WBP_IngameBossHP_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

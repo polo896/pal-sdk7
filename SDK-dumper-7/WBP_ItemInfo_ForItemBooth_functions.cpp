@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_ItemInfo_ForItemBooth.WBP_ItemInfo_ForItemBooth_C.ExecuteUbergraph_WBP_ItemInfo_ForItemBooth
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemInfo_ForItemBooth_C::ExecuteUbergraph_WBP_ItemInfo_ForItemBooth(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemInfo_ForItemBooth_C", "ExecuteUbergraph_WBP_ItemInfo_ForItemBooth");
+
+	Params::WBP_ItemInfo_ForItemBooth_C_ExecuteUbergraph_WBP_ItemInfo_ForItemBooth Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ItemInfo_ForItemBooth.WBP_ItemInfo_ForItemBooth_C.SetItemPairInfo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -34,26 +54,6 @@ void UWBP_ItemInfo_ForItemBooth_C::SetItemPairInfo(const struct FPalItemAndNum& 
 
 	Parms.Product = std::move(Product);
 	Parms.Cost = std::move(Cost);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemInfo_ForItemBooth.WBP_ItemInfo_ForItemBooth_C.ExecuteUbergraph_WBP_ItemInfo_ForItemBooth
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemInfo_ForItemBooth_C::ExecuteUbergraph_WBP_ItemInfo_ForItemBooth(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemInfo_ForItemBooth_C", "ExecuteUbergraph_WBP_ItemInfo_ForItemBooth");
-
-	Params::WBP_ItemInfo_ForItemBooth_C_ExecuteUbergraph_WBP_ItemInfo_ForItemBooth Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

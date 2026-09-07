@@ -10,43 +10,43 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "EPalBoxHoveredSlotType_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
+#include "EPalBoxHoveredSlotType_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PalStorageMenu.WBP_PalStorageMenu_C
-// 0x00D0 (0x0548 - 0x0478)
+// 0x00D0 (0x0550 - 0x0480)
 class UWBP_PalStorageMenu_C final : public UPalUIPalStorageMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Default_In;                                        // 0x0480(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenu_PalBox_C*               WBP_IngameMenu_PalBox;                             // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    titleMsgId;                                        // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    loosePalCheckMsgId;                                // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TSoftObjectPtr<class UPalIndividualCharacterSlot> CachedLooseSlot;                               // 0x04B0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	EPalBoxHoveredSlotType                        hoverdSlotType;                                    // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4E1[0x3];                                      // 0x04E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDataTableRowName_UIInputAction     prevCursorShortcutInput;                           // 0x04E4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     nextCursorShortcutInput;                           // 0x04EC(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     SendSlotInput;                                     // 0x04F4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   SendSlotInputHandle;                               // 0x04FC(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalUIActionBindData                   ViewDetailInputHandle;                             // 0x0500(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalUIActionBindData                   FavoriteInputHandle;                               // 0x0504(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalUIActionBindData                   ToggleSkillInfoActionHandle;                       // 0x0508(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_50C[0x4];                                      // 0x050C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterSlot*            CachedLastHoveredSlot;                             // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     ViewDetailInput;                                   // 0x0518(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalIndividualCharacterSlot*>    LockSlotList;                                      // 0x0520(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FPalDataTableRowName_UIInputAction     FavoriteShortcutInput;                             // 0x0530(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsBaseCamp;                                       // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_539[0x3];                                      // 0x0539(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDataTableRowName_UIInputAction     ToggleSkillInfoInput;                              // 0x053C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Default_In;                                        // 0x0488(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenu_PalBox_C*               WBP_IngameMenu_PalBox;                             // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    titleMsgId;                                        // 0x0498(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    loosePalCheckMsgId;                                // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TSoftObjectPtr<class UPalIndividualCharacterSlot> CachedLooseSlot;                               // 0x04B8(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	EPalBoxHoveredSlotType                        hoverdSlotType;                                    // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E9[0x3];                                      // 0x04E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_UIInputAction     prevCursorShortcutInput;                           // 0x04EC(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     nextCursorShortcutInput;                           // 0x04F4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     SendSlotInput;                                     // 0x04FC(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   SendSlotInputHandle;                               // 0x0504(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPalUIActionBindData                   ViewDetailInputHandle;                             // 0x0508(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPalUIActionBindData                   FavoriteInputHandle;                               // 0x050C(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPalUIActionBindData                   ToggleSkillInfoActionHandle;                       // 0x0510(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	uint8                                         Pad_514[0x4];                                      // 0x0514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterSlot*            CachedLastHoveredSlot;                             // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     ViewDetailInput;                                   // 0x0520(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalIndividualCharacterSlot*>    LockSlotList;                                      // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPalDataTableRowName_UIInputAction     FavoriteShortcutInput;                             // 0x0538(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsBaseCamp;                                       // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_541[0x3];                                      // 0x0541(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_UIInputAction     ToggleSkillInfoInput;                              // 0x0544(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BndEvt__WBP_PalStorageMenu_WBP_IngameMenu_PalBox_K2Node_ComponentBoundEvent_0_OnHoveredPartySlot__DelegateSignature(class UPalIndividualCharacterSlot* Slot_0);

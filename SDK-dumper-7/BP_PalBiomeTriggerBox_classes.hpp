@@ -28,10 +28,10 @@ public:
 	class UBoxComponent*                          Box;                                               // 0x02A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void ReceiveActorEndOverlap(class AActor* OtherActor);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 	void ExecuteUbergraph_BP_PalBiomeTriggerBox(int32 EntryPoint);
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

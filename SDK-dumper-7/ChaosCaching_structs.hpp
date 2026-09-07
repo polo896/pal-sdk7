@@ -38,14 +38,17 @@ enum class EStartMode : uint8
 	EStartMode_MAX                           = 2,
 };
 
-// ScriptStruct ChaosCaching.RichCurves
-// 0x0010 (0x0010 - 0x0000)
-struct FRichCurves final
+// ScriptStruct ChaosCaching.CacheSpawnableTemplate
+// 0x00D0 (0x00D0 - 0x0000)
+struct FCacheSpawnableTemplate final
 {
 public:
-	TArray<struct FRichCurve>                     RichCurves;                                        // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	class UObject*                                DuplicatedTemplate;                                // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             InitialTransform;                                  // 0x0010(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTransform                             ComponentTransform;                                // 0x0070(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FRichCurves;
+DUMPER7_ASSERTS_FCacheSpawnableTemplate;
 
 // ScriptStruct ChaosCaching.CacheEventBase
 // 0x0008 (0x0008 - 0x0000)
@@ -56,16 +59,28 @@ public:
 };
 DUMPER7_ASSERTS_FCacheEventBase;
 
-// ScriptStruct ChaosCaching.EnableStateEvent
-// 0x0008 (0x0010 - 0x0008)
-struct FEnableStateEvent final : public FCacheEventBase
+// ScriptStruct ChaosCaching.ParticleTransformTrack
+// 0x0048 (0x0048 - 0x0000)
+struct FParticleTransformTrack final
 {
 public:
-	int32                                         Index;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnable;                                           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FRawAnimSequenceTrack                  RawTransformTrack;                                 // 0x0000(0x0030)(NativeAccessSpecifierPublic)
+	float                                         BeginOffset;                                       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDeactivateOnEnd;                                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 KeyTimestamps;                                     // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FEnableStateEvent;
+DUMPER7_ASSERTS_FParticleTransformTrack;
+
+// ScriptStruct ChaosCaching.PerParticleCacheData
+// 0x0098 (0x0098 - 0x0000)
+struct FPerParticleCacheData final
+{
+public:
+	struct FParticleTransformTrack                TransformData;                                     // 0x0000(0x0048)(NativeAccessSpecifierPublic)
+	TMap<class FName, struct FRichCurve>          CurveData;                                         // 0x0048(0x0050)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FPerParticleCacheData;
 
 // ScriptStruct ChaosCaching.CacheEventTrack
 // 0x0038 (0x0038 - 0x0000)
@@ -92,40 +107,25 @@ public:
 };
 DUMPER7_ASSERTS_FObservedComponent;
 
-// ScriptStruct ChaosCaching.ParticleTransformTrack
-// 0x0048 (0x0048 - 0x0000)
-struct FParticleTransformTrack final
+// ScriptStruct ChaosCaching.RichCurves
+// 0x0010 (0x0010 - 0x0000)
+struct FRichCurves final
 {
 public:
-	struct FRawAnimSequenceTrack                  RawTransformTrack;                                 // 0x0000(0x0030)(NativeAccessSpecifierPublic)
-	float                                         BeginOffset;                                       // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDeactivateOnEnd;                                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 KeyTimestamps;                                     // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FRichCurve>                     RichCurves;                                        // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FParticleTransformTrack;
+DUMPER7_ASSERTS_FRichCurves;
 
-// ScriptStruct ChaosCaching.PerParticleCacheData
-// 0x0098 (0x0098 - 0x0000)
-struct FPerParticleCacheData final
+// ScriptStruct ChaosCaching.EnableStateEvent
+// 0x0008 (0x0010 - 0x0008)
+struct FEnableStateEvent final : public FCacheEventBase
 {
 public:
-	struct FParticleTransformTrack                TransformData;                                     // 0x0000(0x0048)(NativeAccessSpecifierPublic)
-	TMap<class FName, struct FRichCurve>          CurveData;                                         // 0x0048(0x0050)(NativeAccessSpecifierPublic)
+	int32                                         Index;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnable;                                           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FPerParticleCacheData;
-
-// ScriptStruct ChaosCaching.CacheSpawnableTemplate
-// 0x00D0 (0x00D0 - 0x0000)
-struct FCacheSpawnableTemplate final
-{
-public:
-	class UObject*                                DuplicatedTemplate;                                // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             InitialTransform;                                  // 0x0010(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTransform                             ComponentTransform;                                // 0x0070(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCacheSpawnableTemplate;
+DUMPER7_ASSERTS_FEnableStateEvent;
 
 // ScriptStruct ChaosCaching.BreakingEvent
 // 0x0088 (0x0090 - 0x0008)

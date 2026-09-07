@@ -7,8 +7,10 @@
 ---@field TargetActors TArray<AActor>
 ---@field OverlapActorCount int32
 ---@field DelayTimerHandle FTimerHandle
+---@field DelayRecaptureHandle FTimerHandle
 local ABP_PalEnvironmentVisbleSwitcher_C = {}
 
+function ABP_PalEnvironmentVisbleSwitcher_C:DelayedRecaptureSkyLights() end
 ---@param IsVisibility boolean
 function ABP_PalEnvironmentVisbleSwitcher_C:SetVisibilityAll(IsVisibility) end
 function ABP_PalEnvironmentVisbleSwitcher_C:ReceiveBeginPlay() end

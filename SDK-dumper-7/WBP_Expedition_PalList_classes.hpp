@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -40,11 +40,11 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_Expedition_PalList_C* Widget)> OnHovered;               // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Setup(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo);
-	void GetAssignInfo(struct FPalUIMapObjectCharacterTeamMissionIndividual* AssignInfo);
-	void ExecuteUbergraph_WBP_Expedition_PalList(int32 EntryPoint);
-	void BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_Expedition_PalList(int32 EntryPoint);
+	void GetAssignInfo(struct FPalUIMapObjectCharacterTeamMissionIndividual* AssignInfo);
+	void Setup(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo);
 
 public:
 	static class UClass* StaticClass()

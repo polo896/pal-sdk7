@@ -25,7 +25,7 @@ class UWBP_MainMenu_C : public UWBP_PanelWidgetChildrenSelectorBase_C
     void OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
     void OnPrevEvent(int32 OldIndex, int32 NewIndex);
     void OnNextEvent(int32 OldIndex, int32 NewIndex);
-    void Anm_focus(TEnumAsByte<EPalUIInGameMainMenuTabType::Type> Type);
+    void Anm_Focus(TEnumAsByte<EPalUIInGameMainMenuTabType::Type> Type);
     void Anm_FocusToNormal(TEnumAsByte<EPalUIInGameMainMenuTabType::Type> Type);
     void Anm_Open();
     void OnInitialized();

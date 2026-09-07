@@ -17,41 +17,49 @@
 namespace SDK
 {
 
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetupElement
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.AnmEvent_Enable
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleButton_Element_C::SetupElement(EPalElementType ElementType)
+void UWBP_Arena_RuleButton_Element_C::AnmEvent_Enable()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "SetupElement");
+		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "AnmEvent_Enable");
 
-	Params::WBP_Arena_RuleButton_Element_C_SetupElement Parms{};
-
-	Parms.ElementType = ElementType;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetRestrict
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.AnmEvent_Restrict
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsRestrict                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleButton_Element_C::SetRestrict(bool IsRestrict)
+void UWBP_Arena_RuleButton_Element_C::AnmEvent_Restrict()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "SetRestrict");
+		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "AnmEvent_Restrict");
 
-	Params::WBP_Arena_RuleButton_Element_C_SetRestrict Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsRestrict = IsRestrict;
+
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleButton_Element_C::BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Arena_RuleButton_Element_C_BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,51 +85,43 @@ void UWBP_Arena_RuleButton_Element_C::ExecuteUbergraph_WBP_Arena_RuleButton_Elem
 }
 
 
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetRestrict
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsRestrict                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleButton_Element_C::BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_RuleButton_Element_C::SetRestrict(bool IsRestrict)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "SetRestrict");
 
-	Params::WBP_Arena_RuleButton_Element_C_BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_RuleButton_Element_C_SetRestrict Parms{};
 
-	Parms.Button = Button;
+	Parms.IsRestrict = IsRestrict;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.AnmEvent_Restrict
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetupElement
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleButton_Element_C::AnmEvent_Restrict()
+void UWBP_Arena_RuleButton_Element_C::SetupElement(EPalElementType ElementType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "AnmEvent_Restrict");
+		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "SetupElement");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_Arena_RuleButton_Element_C_SetupElement Parms{};
 
+	Parms.ElementType = ElementType;
 
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.AnmEvent_Enable
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RuleButton_Element_C::AnmEvent_Enable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleButton_Element_C", "AnmEvent_Enable");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

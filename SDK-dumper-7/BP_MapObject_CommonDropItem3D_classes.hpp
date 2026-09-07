@@ -18,32 +18,32 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C
-// 0x0040 (0x04C0 - 0x0480)
+// 0x0040 (0x04D8 - 0x0498)
 class ABP_MapObject_CommonDropItem3D_C final : public APalMapObjectCommonDropItem3D
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        IndicatorOrigin;                                   // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0498(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	double                                        ReleasePower;                                      // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        ObtainDelayTime;                                   // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bObtainableByProgress;                             // 0x04B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B1[0x7];                                      // 0x04B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 VisualActorClass;                                  // 0x04B8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0498(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        IndicatorOrigin;                                   // 0x04A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x04A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x04B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	double                                        ReleasePower;                                      // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        ObtainDelayTime;                                   // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bObtainableByProgress;                             // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 VisualActorClass;                                  // 0x04D0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetupVisualInServer(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void SetupStaticMesh(class UStaticMesh* InStaticMesh, const struct FVector& CenterOfMass, TArray<class UMaterialInterface*>& Material);
-	void SetItemModelInServer(TSoftClassPtr<class UClass> VisualModel);
-	void ReleaseObject(const struct FVector& Direction);
-	void ReceiveBeginPlay();
-	void OnSetConcreteModel(class UPalMapObjectConcreteModelBase* Model);
-	void OnRep_VisualActorClass();
-	void OnLoaded_857256B349A5E9E377896489F9AD883E(TSubclassOf<class UObject> Loaded);
-	void ExecuteUbergraph_BP_MapObject_CommonDropItem3D(int32 EntryPoint);
-	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
 	void BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void ExecuteUbergraph_BP_MapObject_CommonDropItem3D(int32 EntryPoint);
+	void OnLoaded_857256B349A5E9E377896489F9AD883E(TSubclassOf<class UObject> Loaded);
+	void OnRep_VisualActorClass();
+	void OnSetConcreteModel(class UPalMapObjectConcreteModelBase* Model);
+	void ReceiveBeginPlay();
+	void ReleaseObject(const struct FVector& Direction);
+	void SetItemModelInServer(TSoftClassPtr<class UClass> VisualModel);
+	void SetupStaticMesh(class UStaticMesh* InStaticMesh, const struct FVector& CenterOfMass, TArray<class UMaterialInterface*>& Material);
+	void SetupVisualInServer(class UPalMapObjectConcreteModelBase* ConcreteModel);
 
 public:
 	static class UClass* StaticClass()

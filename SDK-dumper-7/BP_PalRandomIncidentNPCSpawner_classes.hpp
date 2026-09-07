@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -21,23 +21,23 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C
-// 0x0270 (0x08A8 - 0x0638)
+// 0x0270 (0x08B8 - 0x0648)
 class ABP_PalRandomIncidentNPCSpawner_C final : public APalRandomIncidentNPCSpawner
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0638(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0640(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	double                                        ReturnRadius;                                      // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        WalkRadius;                                        // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class FName, struct FF_NPC_PathWalkArray> WalkPathLists;                                    // 0x0658(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UPalIndividualCharacterHandle*>  IndividualHandleList;                              // 0x06A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnMonsterData> MonsterSpawnData; // 0x06B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnNPCData> NPCSpawnData;  // 0x0708(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, class FName> PathNames;                               // 0x0758(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, class FName> RowNames;                                // 0x07A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(class FName NewParam)> GetWalkPathDelegate;                        // 0x07F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMap<class UPalIndividualCharacterHandle*, struct FVector> SpawnedLocation;                      // 0x0808(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNames;                              // 0x0858(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0648(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0650(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	double                                        ReturnRadius;                                      // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        WalkRadius;                                        // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, struct FF_NPC_PathWalkArray> WalkPathLists;                                    // 0x0668(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UPalIndividualCharacterHandle*>  IndividualHandleList;                              // 0x06B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnMonsterData> MonsterSpawnData; // 0x06C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnNPCData> NPCSpawnData;  // 0x0718(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, class FName> PathNames;                               // 0x0768(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, class FName> RowNames;                                // 0x07B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMulticastInlineDelegate<void(class FName NewParam)> GetWalkPathDelegate;                        // 0x0808(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMap<class UPalIndividualCharacterHandle*, struct FVector> SpawnedLocation;                      // 0x0818(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNames;                              // 0x0868(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void Despawn_Characters();

@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_TreasureBox_ElementalLock_Electric.BP_MapObject_TreasureBox_ElementalLock_Electric_C
-// 0x0010 (0x0498 - 0x0488)
+// 0x0010 (0x04B0 - 0x04A0)
 class ABP_MapObject_TreasureBox_ElementalLock_Electric_C final : public ABP_MapObject_TreasureBox_ElementalLockBase_C
 {
 public:
-	class UPalWorkFacingComponent*                PalWorkFacing;                                     // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_NoteGlow;                                       // 0x0490(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalWorkFacingComponent*                PalWorkFacing;                                     // 0x04A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_NoteGlow;                                       // 0x04A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

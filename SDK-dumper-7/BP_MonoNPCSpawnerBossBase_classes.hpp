@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonoNPCSpawnerBossBase.BP_MonoNPCSpawnerBossBase_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class ABP_MonoNPCSpawnerBossBase_C : public ABP_MonoNPCSpawner_C
 {
 public:

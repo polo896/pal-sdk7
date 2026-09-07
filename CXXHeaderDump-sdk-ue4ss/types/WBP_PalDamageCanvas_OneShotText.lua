@@ -27,10 +27,10 @@ function UWBP_PalDamageCanvas_OneShotText_C:IsMuteki(Defender, bMuteki) end
 ---@param itemSlot UPalItemSlot
 ---@param slotType EPalPlayerEquipItemSlotType
 function UWBP_PalDamageCanvas_OneShotText_C:OnUpdatePlayerEquipment(itemSlot, slotType) end
----@param Defender AActor
----@param DisplayDamage int32
+---@param DIsplayDamage int32
+---@param OldHP FFixedPoint64
 ---@param bKill boolean
-function UWBP_PalDamageCanvas_OneShotText_C:IsKillShot(Defender, DisplayDamage, bKill) end
+function UWBP_PalDamageCanvas_OneShotText_C:IsKillShot(DIsplayDamage, OldHP, bKill) end
 ---@param CheckCharacter AActor
 ---@param bHasMercyHit boolean
 function UWBP_PalDamageCanvas_OneShotText_C:HasMercyHit(CheckCharacter, bHasMercyHit) end
@@ -53,25 +53,23 @@ function UWBP_PalDamageCanvas_OneShotText_C:CalcLengthToPlayer(HitLocation, Leng
 ---@param Defender AActor
 ---@param Location FVector
 function UWBP_PalDamageCanvas_OneShotText_C:CalcTargetLocation(DamageInfo, Defender, Location) end
----@param DamageInfo FPalDamageInfo
----@param Defender AActor
-UWBP_PalDamageCanvas_OneShotText_C['Add New Damage Text'] = function(self, DamageInfo, Defender) end
+---@param EntryData FPalDamageDisplayEntry
+UWBP_PalDamageCanvas_OneShotText_C['Add New Damage Text'] = function(self, EntryData) end
 ---@param createdWdiget UPalUIDamageTextBase
 function UWBP_PalDamageCanvas_OneShotText_C:CreateOrPopDamageWidget(createdWdiget) end
 ---@param DamageInfo FPalDamageInfo
 ---@param Defender AActor
 ---@param DamageRate double
 ---@param weakCount int32
----@param DisplayDamage int32
+---@param DIsplayDamage int32
 ---@param CalculatedDamageInfo FPalCalculatedDamageInfo
 ---@param textType EPalDamageTextType
 ---@param bMercyHit boolean
-function UWBP_PalDamageCanvas_OneShotText_C:CalcDamageTextType(DamageInfo, Defender, DamageRate, weakCount, DisplayDamage, CalculatedDamageInfo, textType, bMercyHit) end
+function UWBP_PalDamageCanvas_OneShotText_C:CalcDamageTextType(DamageInfo, Defender, DamageRate, weakCount, DIsplayDamage, CalculatedDamageInfo, textType, bMercyHit) end
 function UWBP_PalDamageCanvas_OneShotText_C:OnSetup() end
 function UWBP_PalDamageCanvas_OneShotText_C:Destruct() end
----@param DamageInfo FPalDamageInfo
----@param Defender AActor
-function UWBP_PalDamageCanvas_OneShotText_C:AddDamageTextEvent(DamageInfo, Defender) end
+---@param EntryData FPalDamageDisplayEntry
+function UWBP_PalDamageCanvas_OneShotText_C:AddDamageTextEvent(EntryData) end
 function UWBP_PalDamageCanvas_OneShotText_C:OnInitialized() end
 function UWBP_PalDamageCanvas_OneShotText_C:OnSetup_AfterCreatedPlayer() end
 ---@param Entries TArray<FPalDamageDisplayEntry>

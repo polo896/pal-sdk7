@@ -13,7 +13,9 @@ class UWBP_PalCommonButtonBase_C : public UCommonButtonBase
     FWBP_PalCommonButtonBase_COnButtonReleased OnButtonReleased;                      // 0x1528 (size: 0x10)
     void OnButtonReleased(class UCommonButtonBase* Button);
     bool bHasFocus;                                                                   // 0x1538 (size: 0x1)
+    bool bShouldSkipSpaceKey;                                                         // 0x1539 (size: 0x1)
 
+    FEventReply OnPreviewKeyDown(FGeometry MyGeometry, FKeyEvent InKeyEvent);
     void PlayAkSound(class UAkAudioEvent* AudioEvent);
     void BP_OnHovered();
     void BP_OnUnhovered();
@@ -26,6 +28,6 @@ class UWBP_PalCommonButtonBase_C : public UCommonButtonBase
     void ExecuteUbergraph_WBP_PalCommonButtonBase(int32 EntryPoint);
     void OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
     void OnButtonPressed__DelegateSignature(class UCommonButtonBase* Button);
-}; // Size: 0x1539
+}; // Size: 0x153A
 
 #endif

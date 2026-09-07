@@ -13,6 +13,7 @@
 ---@field Overlay_Caution UOverlay
 ---@field RichText_Desc UBP_PalRichTextBlock_C
 ---@field RichText_Name UBP_PalRichTextBlock_C
+---@field SizeBox USizeBox
 ---@field Text_Caution UBP_PalTextBlock_C
 ---@field Text_Favo UBP_PalTextBlock_C
 ---@field Text_ManMonth_Value UBP_PalTextBlock_C

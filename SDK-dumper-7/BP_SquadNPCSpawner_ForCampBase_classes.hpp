@@ -18,19 +18,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C
-// 0x0010 (0x0680 - 0x0670)
+// 0x0010 (0x0690 - 0x0680)
 class ABP_SquadNPCSpawner_ForCampBase_C : public ABP_SquadNPCSpawner_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SquadNPCSpawner_ForCampBase_C;   // 0x0670(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          IgnoreRayAdjustFloor;                              // 0x0678(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SquadNPCSpawner_ForCampBase_C;   // 0x0680(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          IgnoreRayAdjustFloor;                              // 0x0688(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void RayAdjustFloor();
-	void ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase(int32 EntryPoint);
-	void DeleteOnePoint(class AActor* Point);
 	void AdjustFloor(class AActor* SpaenedChara);
+	void DeleteOnePoint(class AActor* Point);
+	void ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase(int32 EntryPoint);
+	void RayAdjustFloor();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

@@ -16,14 +16,32 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_NumArrow_C_PreConstruct final
+// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_NumArrow
 // 0x0088 (0x0088 - 0x0000)
@@ -58,32 +76,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_NumArrow;
 
-// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_NumArrow_C_PreConstruct final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_IngameMenu_WorkSpace_NumArrow.WBP_IngameMenu_WorkSpace_NumArrow_C.BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_BndEvt__WBP_IngameMenu_WorkSpace_NumArrow_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_NumArrow_C_PreConstruct;
 
 }
 

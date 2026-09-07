@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_PlayerInputGuard.WBP_PlayerInputGuard_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerInputGuard_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInputGuard_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_PlayerInputGuard.WBP_PlayerInputGuard_C.ExecuteUbergraph_WBP_PlayerInputGuard
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_PlayerInputGuard_C::ExecuteUbergraph_WBP_PlayerInputGuard(int32 EntryP
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerInputGuard.WBP_PlayerInputGuard_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerInputGuard_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerInputGuard_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

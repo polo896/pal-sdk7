@@ -4,6 +4,8 @@
 ---@field UberGraphFrame FPointerToUberGraphFrame
 ---@field Anm_Close UWidgetAnimation
 ---@field Anm_Open UWidgetAnimation
+---@field BackgroundBlur_192 UBackgroundBlur
+---@field BackgroundBlur_WildPalBox UBackgroundBlur
 ---@field Canvas_PalBox UCanvasPanel
 ---@field Canvas_PalCamp UCanvasPanel
 ---@field CloseButton UButton
@@ -28,6 +30,8 @@
 ---@field Image_21 UImage
 ---@field Image_104 UImage
 ---@field Image_Frame UImage
+---@field PalBoxBase UImage
+---@field PalBoxBase_WildPalBox UImage
 ---@field SizeBox_PresetButton USizeBox
 ---@field Text_BaseCampName UBP_PalTextBlock_C
 ---@field WBP_BaseCampPalList UWBP_PalCharacterScrollList_C
@@ -63,6 +67,8 @@
 ---@field OnCampEmptySlot FWBP_IngameMenu_PalBox_COnCampEmptySlot
 local UWBP_IngameMenu_PalBox_C = {}
 
+---@param bIsWildPalBox boolean
+UWBP_IngameMenu_PalBox_C['Setup Pal Box Background'] = function(self, bIsWildPalBox) end
 ---@param Navigation EUINavigation
 ---@return UWidget
 UWBP_IngameMenu_PalBox_C['Custom Navigation to Party First'] = function(self, Navigation) end

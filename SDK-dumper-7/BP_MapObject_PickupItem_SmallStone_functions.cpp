@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.ReturnToPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_PickupItem_SmallStone_C::ReturnToPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "ReturnToPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.InitializeFromPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_PickupItem_SmallStone_C::InitializeFromPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "InitializeFromPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void ABP_MapObject_PickupItem_SmallStone_C::ExecuteUbergraph_BP_MapObject_Pickup
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.InitializeFromPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_PickupItem_SmallStone_C::InitializeFromPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "InitializeFromPool");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.ReturnToPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_PickupItem_SmallStone_C::ReturnToPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "ReturnToPool");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

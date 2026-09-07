@@ -3,10 +3,10 @@
 
 class ABP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C : public ABP_SquadNPCSpawnerBossBase_C
 {
-    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent2;                   // 0x0680 (size: 0x8)
-    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent;                    // 0x0688 (size: 0x8)
-    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent1;                   // 0x0690 (size: 0x8)
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent2;                   // 0x0690 (size: 0x8)
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent;                    // 0x0698 (size: 0x8)
+    class UBP_NPCSpawnPointComponent_C* BP_NPCSpawnPointComponent1;                   // 0x06A0 (size: 0x8)
 
-}; // Size: 0x698
+}; // Size: 0x6A8
 
 #endif

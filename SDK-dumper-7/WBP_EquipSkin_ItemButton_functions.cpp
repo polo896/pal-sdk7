@@ -17,95 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             SkinId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsEquip                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EquipSkin_ItemButton_C::Setup(class FName SkinId, bool IsEquip)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "Setup");
-
-	Params::WBP_EquipSkin_ItemButton_C_Setup Parms{};
-
-	Parms.SkinId = SkinId;
-	Parms.IsEquip = IsEquip;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.SetSelect
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EquipSkin_ItemButton_C::SetSelect(bool IsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "SetSelect");
-
-	Params::WBP_EquipSkin_ItemButton_C_SetSelect Parms{};
-
-	Parms.IsSelected = IsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.ExecuteUbergraph_WBP_EquipSkin_ItemButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EquipSkin_ItemButton_C::ExecuteUbergraph_WBP_EquipSkin_ItemButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "ExecuteUbergraph_WBP_EquipSkin_ItemButton");
-
-	Params::WBP_EquipSkin_ItemButton_C_ExecuteUbergraph_WBP_EquipSkin_ItemButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_EquipSkin_ItemButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipSkin_ItemButton_C::BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_EquipSkin_ItemButton_C::BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -133,21 +57,97 @@ void UWBP_EquipSkin_ItemButton_C::BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisi
 }
 
 
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipSkin_ItemButton_C::BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_EquipSkin_ItemButton_C::BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_EquipSkin_ItemButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.ExecuteUbergraph_WBP_EquipSkin_ItemButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EquipSkin_ItemButton_C::ExecuteUbergraph_WBP_EquipSkin_ItemButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "ExecuteUbergraph_WBP_EquipSkin_ItemButton");
+
+	Params::WBP_EquipSkin_ItemButton_C_ExecuteUbergraph_WBP_EquipSkin_ItemButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.SetSelect
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EquipSkin_ItemButton_C::SetSelect(bool IsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "SetSelect");
+
+	Params::WBP_EquipSkin_ItemButton_C_SetSelect Parms{};
+
+	Parms.IsSelected = IsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             SkinId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsEquip                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EquipSkin_ItemButton_C::Setup(class FName SkinId, bool IsEquip)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_ItemButton_C", "Setup");
+
+	Params::WBP_EquipSkin_ItemButton_C_Setup Parms{};
+
+	Parms.SkinId = SkinId;
+	Parms.IsEquip = IsEquip;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

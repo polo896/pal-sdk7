@@ -16,50 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordBlock
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.UpdateUI
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_DiscordFriendListMenu_C_DiscordBlock final
+struct WBP_Option_DiscordFriendListMenu_C_UpdateUI final
 {
 public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UDiscordRelationshipHandle*             Relationship_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordBlock;
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordIgnore
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_DiscordFriendListMenu_C_DiscordIgnore final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordIgnore;
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordInvite
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_DiscordFriendListMenu_C_DiscordInvite final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordInvite;
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordMute
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_DiscordFriendListMenu_C_DiscordMute final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordMute;
-
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DIscordSendMessage
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_DiscordFriendListMenu_C_DIscordSendMessage final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DIscordSendMessage;
+DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_UpdateUI;
 
 // Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.ExecuteUbergraph_WBP_Option_DiscordFriendListMenu
 // 0x01C8 (0x01C8 - 0x0000)
@@ -122,14 +86,50 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_ExecuteUbergraph_WBP_Option_DiscordFriendListMenu;
 
-// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.UpdateUI
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DIscordSendMessage
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_DiscordFriendListMenu_C_UpdateUI final
+struct WBP_Option_DiscordFriendListMenu_C_DIscordSendMessage final
 {
 public:
-	class UDiscordRelationshipHandle*             Relationship_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_UpdateUI;
+DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DIscordSendMessage;
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordMute
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_DiscordFriendListMenu_C_DiscordMute final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordMute;
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordInvite
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_DiscordFriendListMenu_C_DiscordInvite final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordInvite;
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordIgnore
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_DiscordFriendListMenu_C_DiscordIgnore final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordIgnore;
+
+// Function WBP_Option_DiscordFriendListMenu.WBP_Option_DiscordFriendListMenu_C.DiscordBlock
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_DiscordFriendListMenu_C_DiscordBlock final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_DiscordFriendListMenu_C_DiscordBlock;
 
 }
 

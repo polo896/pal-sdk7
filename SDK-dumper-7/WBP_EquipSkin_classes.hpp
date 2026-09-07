@@ -20,92 +20,92 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_EquipSkin.WBP_EquipSkin_C
-// 0x0330 (0x07B0 - 0x0480)
+// 0x0330 (0x07B8 - 0x0488)
 class UWBP_EquipSkin_C final : public UPalUICharacterDressing
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCanvasPanel*                           CanvasPanel_Dressing;                              // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_BG_C*                     WBP_CharaCre_BG;                                   // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Cancel_InGame;             // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Finish_InGame;             // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_EquipSkin_ItemButton_C*            WBP_EquipSkin_ItemButton;                          // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_EquipSkin_ItemSlot_C*              WBP_EquipSkin_Slot_Body;                           // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_EquipSkin_ItemSlot_C*              WBP_EquipSkin_Slot_Glider;                         // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_EquipSkin_ItemSlot_C*              WBP_EquipSkin_Slot_Head;                           // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MainMenu_PalSkillInfo_C*           WBP_MainMenu_PalSkillInfo;                         // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon;                               // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_1;                             // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_2;                             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_3;                             // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalPlayerInframeRender_C*          WBP_PalPlayerInframeRender;                        // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               WrapBox_Equip;                                     // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	double                                        CachedAnalogValueX;                                // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CachedAnalogValueY;                                // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        RotationSpeed_Pad;                                 // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        RotationSpeed_MouseDrag;                           // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsRTriggerDown;                                    // 0x0520(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsLTriggerDown;                                    // 0x0521(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_522[0x6];                                      // 0x0522(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CameraUpDownSpeed_ForPad;                          // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        ZoomSpeed_Pad;                                     // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        ZoomRate_WheelTrigger;                             // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CameraRelativeLocation;                            // 0x0540(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsMLBDown;                                         // 0x0558(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_559[0x3];                                      // 0x0559(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDataTableRowName_UIInputAction     MouseZoomInInputAction;                            // 0x055C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     MouseZoomOutInputAction;                           // 0x0564(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_56C[0x4];                                      // 0x056C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0570(0x0208)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UBP_PalPlayerDataCharacterMake_C*       CharacterMakeData;                                 // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWBP_EquipSkin_ItemSlot_C*>      DressingSlots;                                     // 0x0780(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	EPalSkinType                                  LastSelectSkinType;                                // 0x0790(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_791[0x7];                                      // 0x0791(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_EquipSkin_ItemButton_C*            LastSelectSkinSlot;                                // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalSkinType                                  CurrentPreviewType;                                // 0x07A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7A1[0x3];                                      // 0x07A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Static_Id;                                         // 0x07A4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NowDisplayGlider;                                  // 0x07AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0488(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCanvasPanel*                           CanvasPanel_Dressing;                              // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_BG_C*                     WBP_CharaCre_BG;                                   // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Cancel_InGame;             // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Finish_InGame;             // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_EquipSkin_ItemButton_C*            WBP_EquipSkin_ItemButton;                          // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_EquipSkin_ItemSlot_C*              WBP_EquipSkin_Slot_Body;                           // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_EquipSkin_ItemSlot_C*              WBP_EquipSkin_Slot_Glider;                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_EquipSkin_ItemSlot_C*              WBP_EquipSkin_Slot_Head;                           // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MainMenu_PalSkillInfo_C*           WBP_MainMenu_PalSkillInfo;                         // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon;                               // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_1;                             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_2;                             // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_3;                             // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalPlayerInframeRender_C*          WBP_PalPlayerInframeRender;                        // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               WrapBox_Equip;                                     // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	double                                        CachedAnalogValueX;                                // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CachedAnalogValueY;                                // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        RotationSpeed_Pad;                                 // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        RotationSpeed_MouseDrag;                           // 0x0520(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsRTriggerDown;                                    // 0x0528(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsLTriggerDown;                                    // 0x0529(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52A[0x6];                                      // 0x052A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CameraUpDownSpeed_ForPad;                          // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        ZoomSpeed_Pad;                                     // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        ZoomRate_WheelTrigger;                             // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CameraRelativeLocation;                            // 0x0548(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsMLBDown;                                         // 0x0560(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_561[0x3];                                      // 0x0561(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_UIInputAction     MouseZoomInInputAction;                            // 0x0564(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     MouseZoomOutInputAction;                           // 0x056C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_574[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0578(0x0208)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UBP_PalPlayerDataCharacterMake_C*       CharacterMakeData;                                 // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWBP_EquipSkin_ItemSlot_C*>      DressingSlots;                                     // 0x0788(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	EPalSkinType                                  LastSelectSkinType;                                // 0x0798(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_799[0x7];                                      // 0x0799(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_EquipSkin_ItemButton_C*            LastSelectSkinSlot;                                // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalSkinType                                  CurrentPreviewType;                                // 0x07A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A9[0x3];                                      // 0x07A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Static_Id;                                         // 0x07AC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NowDisplayGlider;                                  // 0x07B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateCharacterRotation(double DeltaTime);
-	void UpdateCameraLocationByWheel(bool IsZoomIn);
-	void Update_Camera_Location(double DeltaTime);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void ShowSkinInfo(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, class FName SkinName, bool IsEquip);
-	void Setup();
-	void SetPreview(EPalSkinType Type, class FName PreviewSkin);
-	void Request_Display();
-	void OnTriggerZoomOut_Mouse();
-	void OnSkinSlotUnhovered();
-	void OnSkinSlotHovered(class UWBP_EquipSkin_ItemButton_C* Button);
-	void OnSkinSlotClicked(class UWBP_EquipSkin_ItemButton_C* Button);
-	void OnSetup();
-	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnLoaded_4251E5CF44968BCFF3126FBB8CFC7169(TSubclassOf<class UObject> Loaded);
-	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	void OnInitialized();
-	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
-	void OnDressingSlotUnhovered();
-	void OnDressingSlotHovered(class UWBP_EquipSkin_ItemSlot_C* Button);
-	void OnDressingSlotClicked(class UWBP_EquipSkin_ItemSlot_C* Button);
-	void OnCancelAction();
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void On_Trigger_Zoom_in_Mouse();
-	void HideSkinInfo();
-	void GetUseableSkins(EPalSkinType SkinType, TArray<class FName>* EquipIds);
-	void GetSkinInfo(bool IsEquip, class FName SkinName, bool* ShouldDisplay, class FText* Title, class FText* Desc);
-	void GetAddCameraOffsetUpDown_ForPad(double* Offset);
-	void ExecuteUbergraph_WBP_EquipSkin(int32 EntryPoint);
-	void Destruct();
-	void Construct();
-	void CheckSkinEqual(bool IsEquip, class FName SkinName1, class FName SkinName2, bool* IsEqual);
-	void BndEvt__WBP_EquipSkin_WBP_CharaCre_MenuButton_Finish_InGame_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
 	void BndEvt__WBP_EquipSkin_WBP_CharaCre_MenuButton_Cancel_InGame_1_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
+	void BndEvt__WBP_EquipSkin_WBP_CharaCre_MenuButton_Finish_InGame_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
+	void CheckSkinEqual(bool IsEquip, class FName SkinName1, class FName SkinName2, bool* IsEqual);
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_EquipSkin(int32 EntryPoint);
+	void GetAddCameraOffsetUpDown_ForPad(double* Offset);
+	void GetSkinInfo(bool IsEquip, class FName SkinName, bool* ShouldDisplay, class FText* Title, class FText* Desc);
+	void GetUseableSkins(EPalSkinType SkinType, TArray<class FName>* EquipIds);
+	void HideSkinInfo();
+	void On_Trigger_Zoom_in_Mouse();
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void OnCancelAction();
+	void OnDressingSlotClicked(class UWBP_EquipSkin_ItemSlot_C* Button);
+	void OnDressingSlotHovered(class UWBP_EquipSkin_ItemSlot_C* Button);
+	void OnDressingSlotUnhovered();
+	void OnFocusLost(const struct FFocusEvent& InFocusEvent);
+	void OnInitialized();
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnLoaded_4251E5CF44968BCFF3126FBB8CFC7169(TSubclassOf<class UObject> Loaded);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnSetup();
+	void OnSkinSlotClicked(class UWBP_EquipSkin_ItemButton_C* Button);
+	void OnSkinSlotHovered(class UWBP_EquipSkin_ItemButton_C* Button);
+	void OnSkinSlotUnhovered();
+	void OnTriggerZoomOut_Mouse();
+	void Request_Display();
+	void SetPreview(EPalSkinType Type, class FName PreviewSkin);
+	void Setup();
+	void ShowSkinInfo(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, class FName SkinName, bool IsEquip);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Update_Camera_Location(double DeltaTime);
+	void UpdateCameraLocationByWheel(bool IsZoomIn);
+	void UpdateCharacterRotation(double DeltaTime);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

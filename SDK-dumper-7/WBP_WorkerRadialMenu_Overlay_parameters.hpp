@@ -17,24 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnSelectedEvent
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent final
-{
-public:
-	EPalWorkerRadialMenuResult                    Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent;
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnAnyUIPushed
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed final
-{
-public:
-	struct FGuid                                  pushedWidgetID;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed;
-
 // Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_WorkerRadialMenu_Overlay_C_ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay final
@@ -80,6 +62,24 @@ public:
 	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay;
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnAnyUIPushed
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed final
+{
+public:
+	struct FGuid                                  pushedWidgetID;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed;
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnSelectedEvent
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent final
+{
+public:
+	EPalWorkerRadialMenuResult                    Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent;
 
 }
 

@@ -17,6 +17,92 @@
 namespace SDK
 {
 
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.ListToStatus
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Pal_00_C::ListToStatus(class UPalIndividualCharacterHandle* Handle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "ListToStatus");
+
+	Params::WBP_MainMenu_Pal_00_C_ListToStatus Parms{};
+
+	Parms.Handle = Handle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.IsShowingStatusWithList
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   isShowing                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Pal_00_C::IsShowingStatusWithList(bool* isShowing)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "IsShowingStatusWithList");
+
+	Params::WBP_MainMenu_Pal_00_C_IsShowingStatusWithList Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (isShowing != nullptr)
+		*isShowing = Parms.isShowing;
+}
+
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.GetRestoreFocusSkillPanelTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Pal_00_C::GetRestoreFocusSkillPanelTarget(class UWidget** TargetWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "GetRestoreFocusSkillPanelTarget");
+
+	Params::WBP_MainMenu_Pal_00_C_GetRestoreFocusSkillPanelTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetWidget != nullptr)
+		*TargetWidget = Parms.TargetWidget;
+}
+
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.Get Partner Skill Lock Item Name
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            ReturnText                                             (Parm, OutParm)
+
+void UWBP_MainMenu_Pal_00_C::Get_Partner_Skill_Lock_Item_Name(class FName ItemId, class FText* ReturnText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "Get Partner Skill Lock Item Name");
+
+	Params::WBP_MainMenu_Pal_00_C_Get_Partner_Skill_Lock_Item_Name Parms{};
+
+	Parms.ItemId = ItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ReturnText != nullptr)
+		*ReturnText = std::move(Parms.ReturnText);
+}
+
+
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.FocusToSkillPanel
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -110,6 +196,29 @@ void UWBP_MainMenu_Pal_00_C::ExecuteUbergraph_WBP_MainMenu_Pal_00(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.DoCustomNavigation_ToTopWorkSuitability
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_MainMenu_Pal_00_C::DoCustomNavigation_ToTopWorkSuitability(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "DoCustomNavigation_ToTopWorkSuitability");
+
+	Params::WBP_MainMenu_Pal_00_C_DoCustomNavigation_ToTopWorkSuitability Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -948,92 +1057,6 @@ void UWBP_MainMenu_Pal_00_C::AnmEvent_HideSideInfo()
 }
 
 
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.Get Partner Skill Lock Item Name
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            ReturnText                                             (Parm, OutParm)
-
-void UWBP_MainMenu_Pal_00_C::Get_Partner_Skill_Lock_Item_Name(class FName ItemId, class FText* ReturnText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "Get Partner Skill Lock Item Name");
-
-	Params::WBP_MainMenu_Pal_00_C_Get_Partner_Skill_Lock_Item_Name Parms{};
-
-	Parms.ItemId = ItemId;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ReturnText != nullptr)
-		*ReturnText = std::move(Parms.ReturnText);
-}
-
-
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.GetRestoreFocusSkillPanelTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Pal_00_C::GetRestoreFocusSkillPanelTarget(class UWidget** TargetWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "GetRestoreFocusSkillPanelTarget");
-
-	Params::WBP_MainMenu_Pal_00_C_GetRestoreFocusSkillPanelTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TargetWidget != nullptr)
-		*TargetWidget = Parms.TargetWidget;
-}
-
-
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.IsShowingStatusWithList
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   isShowing                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Pal_00_C::IsShowingStatusWithList(bool* isShowing)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "IsShowingStatusWithList");
-
-	Params::WBP_MainMenu_Pal_00_C_IsShowingStatusWithList Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (isShowing != nullptr)
-		*isShowing = Parms.isShowing;
-}
-
-
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.ListToStatus
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Pal_00_C::ListToStatus(class UPalIndividualCharacterHandle* Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "ListToStatus");
-
-	Params::WBP_MainMenu_Pal_00_C_ListToStatus Parms{};
-
-	Parms.Handle = Handle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.OnClickedPalButtonEvent
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1174,6 +1197,26 @@ void UWBP_MainMenu_Pal_00_C::OnHoveredPassiveSkillButtonEvent(class UWBP_MainMen
 }
 
 
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.OnHoveredSuitabilityIcon
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_MainMenu_Pal_WorkIconText_C* Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Pal_00_C::OnHoveredSuitabilityIcon(class UWBP_MainMenu_Pal_WorkIconText_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "OnHoveredSuitabilityIcon");
+
+	Params::WBP_MainMenu_Pal_00_C_OnHoveredSuitabilityIcon Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -1293,6 +1336,20 @@ void UWBP_MainMenu_Pal_00_C::OnUnhoveredPassiveSkillButtonEvent(class UWBP_MainM
 	Parms.SelfWidget = SelfWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.OnUnhoveredSuitabilityIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Pal_00_C::OnUnhoveredSuitabilityIcon()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Pal_00_C", "OnUnhoveredSuitabilityIcon");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -18,30 +18,30 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C
-// 0x0050 (0x0658 - 0x0608)
+// 0x0050 (0x0668 - 0x0618)
 class ABP_MonoNPCSpawner_Quest_C : public ABP_MonoNPCSpawner_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonoNPCSpawner_Quest_C;          // 0x0608(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FDataTableRowHandle                    QuestId;                                           // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TMulticastInlineDelegate<void()>              OnSpawned;                                         // 0x0620(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          DefaultAI_Active;                                  // 0x0630(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_631[0x7];                                      // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 QuestBlockClass;                                   // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           BattleTargetCharacterId;                           // 0x0640(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class USphereComponent*                       Sphere_ForceProgressQuest;                         // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonoNPCSpawner_Quest_C;          // 0x0618(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FDataTableRowHandle                    QuestId;                                           // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TMulticastInlineDelegate<void()>              OnSpawned;                                         // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          DefaultAI_Active;                                  // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_641[0x7];                                      // 0x0641(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 QuestBlockClass;                                   // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           BattleTargetCharacterId;                           // 0x0650(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USphereComponent*                       Sphere_ForceProgressQuest;                         // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void WaitQuestEnemyOverlap();
-	void WaitQuestBlockInProgress();
-	void SpawnDelegate(const struct FPalInstanceID& ID);
-	void ReceiveBeginPlay();
-	void OnSpawned_Event();
-	void On_Dead(const struct FPalDeadInfo& DeadInfo);
-	bool IsBlockInProgress(class UClass* QuestBlock, const class FName& QuestId_0, class UPalQuestManager* QuestManager);
-	void ExecuteUbergraph_BP_MonoNPCSpawner_Quest(int32 EntryPoint);
-	void Despawn();
 	void BlueprintTick_Spawned(float DeltaTime);
+	void Despawn();
+	void ExecuteUbergraph_BP_MonoNPCSpawner_Quest(int32 EntryPoint);
+	bool IsBlockInProgress(class UClass* QuestBlock, const class FName& QuestId_0, class UPalQuestManager* QuestManager);
+	void On_Dead(const struct FPalDeadInfo& DeadInfo);
+	void OnSpawned_Event();
+	void ReceiveBeginPlay();
+	void SpawnDelegate(const struct FPalInstanceID& ID);
+	void WaitQuestBlockInProgress();
+	void WaitQuestEnemyOverlap();
 
 public:
 	static class UClass* StaticClass()

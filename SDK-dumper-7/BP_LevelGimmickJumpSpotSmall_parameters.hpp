@@ -14,6 +14,16 @@
 namespace SDK::Params
 {
 
+// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.EventOnGetAkOwnerComponent
+// 0x0010 (0x0010 - 0x0000)
+struct BP_LevelGimmickJumpSpotSmall_C_EventOnGetAkOwnerComponent final
+{
+public:
+	class USceneComponent*                        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmickJumpSpotSmall_C_EventOnGetAkOwnerComponent;
+
 // Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.ExecuteUbergraph_BP_LevelGimmickJumpSpotSmall
 // 0x0018 (0x0018 - 0x0000)
 struct BP_LevelGimmickJumpSpotSmall_C_ExecuteUbergraph_BP_LevelGimmickJumpSpotSmall final
@@ -25,16 +35,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_LevelGimmickJumpSpotSmall_C_ExecuteUbergraph_BP_LevelGimmickJumpSpotSmall;
-
-// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.EventOnGetAkOwnerComponent
-// 0x0010 (0x0010 - 0x0000)
-struct BP_LevelGimmickJumpSpotSmall_C_EventOnGetAkOwnerComponent final
-{
-public:
-	class USceneComponent*                        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmickJumpSpotSmall_C_EventOnGetAkOwnerComponent;
 
 }
 

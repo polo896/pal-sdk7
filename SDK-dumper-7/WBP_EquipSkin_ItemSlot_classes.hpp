@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -37,12 +37,12 @@ public:
 	bool                                          IsEquip;                                           // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Setup(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
-	void GetDressingSlotInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo, class FName* SkinName_0, bool* IsEuip);
-	void ExecuteUbergraph_WBP_EquipSkin_ItemSlot(int32 EntryPoint);
-	void BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_EquipSkin_ItemSlot(int32 EntryPoint);
+	void GetDressingSlotInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo, class FName* SkinName_0, bool* IsEuip);
+	void Setup(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
 
 public:
 	static class UClass* StaticClass()

@@ -7,8 +7,8 @@ class UWBP_Paldex_List_C : public UUserWidget
     class UWidgetAnimation* Anm_EmptyNormalToFocus;                                   // 0x0280 (size: 0x8)
     class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0288 (size: 0x8)
     class UWidgetAnimation* Anm_NotCapture;                                           // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0298 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x02A0 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x0298 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x02A0 (size: 0x8)
     class UHorizontalBox* HorizontalBox_DexNo;                                        // 0x02A8 (size: 0x8)
     class UImage* Image_Complete;                                                     // 0x02B0 (size: 0x8)
     class UInvalidationBox* InvalidationBox_0;                                        // 0x02B8 (size: 0x8)
@@ -37,7 +37,7 @@ class UWBP_Paldex_List_C : public UUserWidget
     void GetCharacterID(FName& CharacterID);
     void SetupForWorldTreeDragon2(FPalUIPaldex_DisplayInfo DisplayInfo);
     void SetupBySimpleText(FText InText);
-    void SetupForSkinData(FName SkinName, TSoftObjectPtr<class UTexture2D> Texture, FText LocalizedSkinNameText);
+    void SetupForSkinData(FName SkinName, TSoftObjectPtr<UTexture2D> Texture, FText LocalizedSkinNameText);
     void SetupByCharacterID(FName CharacterID);
     void SetVisibilityNewMark(ESlateVisibility NewVisibility);
     void OnClickEvent();

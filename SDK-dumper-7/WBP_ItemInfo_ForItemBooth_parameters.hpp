@@ -16,16 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_ItemInfo_ForItemBooth.WBP_ItemInfo_ForItemBooth_C.SetItemPairInfo
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_ItemInfo_ForItemBooth_C_SetItemPairInfo final
-{
-public:
-	struct FPalItemAndNum                         Product;                                           // 0x0000(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPalItemAndNum                         Cost;                                              // 0x002C(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_ItemInfo_ForItemBooth_C_SetItemPairInfo;
-
 // Function WBP_ItemInfo_ForItemBooth.WBP_ItemInfo_ForItemBooth_C.ExecuteUbergraph_WBP_ItemInfo_ForItemBooth
 // 0x0090 (0x0090 - 0x0000)
 struct WBP_ItemInfo_ForItemBooth_C_ExecuteUbergraph_WBP_ItemInfo_ForItemBooth final
@@ -39,6 +29,16 @@ public:
 	class FText                                   CallFunc_GetLocalizedText_ReturnValue_1;           // 0x0078(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_ItemInfo_ForItemBooth_C_ExecuteUbergraph_WBP_ItemInfo_ForItemBooth;
+
+// Function WBP_ItemInfo_ForItemBooth.WBP_ItemInfo_ForItemBooth_C.SetItemPairInfo
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_ItemInfo_ForItemBooth_C_SetItemPairInfo final
+{
+public:
+	struct FPalItemAndNum                         Product;                                           // 0x0000(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPalItemAndNum                         Cost;                                              // 0x002C(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_ItemInfo_ForItemBooth_C_SetItemPairInfo;
 
 }
 

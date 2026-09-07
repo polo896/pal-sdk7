@@ -26,9 +26,9 @@ public:
 	TMap<struct FGuid, class UWBP_PalQuestTrackingIcon_C*> IconMap;                                  // 0x0458(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Setup();
-	void OnRemoveLocation(const struct FGuid& LocationId, class UPalLocationBase* Location);
 	void OnAddLocation(const struct FGuid& LocationId, class UPalLocationBase* Location);
+	void OnRemoveLocation(const struct FGuid& LocationId, class UPalLocationBase* Location);
+	void Setup();
 
 public:
 	static class UClass* StaticClass()

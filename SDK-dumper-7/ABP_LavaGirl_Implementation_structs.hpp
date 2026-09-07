@@ -40,12 +40,5 @@ public:
 };
 DUMPER7_ASSERTS_ABP_LavaGirl_Implementation__FAnimBlueprintGeneratedConstantData;
 
-// ScriptStruct ABP_LavaGirl_Implementation.ABP_LavaGirl_Implementation_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_LavaGirl_Implementation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
-DUMPER7_ASSERTS_ABP_LavaGirl_Implementation__FAnimBlueprintGeneratedMutableData;
-
 }
 

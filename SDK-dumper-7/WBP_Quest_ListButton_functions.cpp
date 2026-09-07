@@ -17,94 +17,75 @@
 namespace SDK
 {
 
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalQuestData*                    QuestData                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Completed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Quest_ListButton_C::Setup(class UPalQuestData* QuestData)
+void UWBP_Quest_ListButton_C::AnmEvent_Completed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "Setup");
-
-	Params::WBP_Quest_ListButton_C_Setup Parms{};
-
-	Parms.QuestData = QuestData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.GetQuestData
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPalQuestData**                   QuestData                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_ListButton_C::GetQuestData(class UPalQuestData** QuestData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "GetQuestData");
-
-	Params::WBP_Quest_ListButton_C_GetQuestData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (QuestData != nullptr)
-		*QuestData = Parms.QuestData;
-}
-
-
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.ExecuteUbergraph_WBP_Quest_ListButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Quest_ListButton_C::ExecuteUbergraph_WBP_Quest_ListButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "ExecuteUbergraph_WBP_Quest_ListButton");
-
-	Params::WBP_Quest_ListButton_C_ExecuteUbergraph_WBP_Quest_ListButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Quest_ListButton_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "Destruct");
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Completed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Hover
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Quest_ListButton_C::BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Quest_ListButton_C::AnmEvent_Hover()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Hover");
 
-	Params::WBP_Quest_ListButton_C_BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Ordered
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Quest_ListButton_C::AnmEvent_Ordered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Ordered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Unhover
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Quest_ListButton_C::AnmEvent_Unhover()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Unhover");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Quest_ListButton_C::BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Quest_ListButton_C_BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -132,19 +113,19 @@ void UWBP_Quest_ListButton_C::BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButto
 }
 
 
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Quest_ListButton_C::BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Quest_ListButton_C::BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Quest_ListButton_C_BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Quest_ListButton_C_BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -152,59 +133,78 @@ void UWBP_Quest_ListButton_C::BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButto
 }
 
 
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Unhover
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Quest_ListButton_C::AnmEvent_Unhover()
+void UWBP_Quest_ListButton_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Unhover");
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Ordered
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.ExecuteUbergraph_WBP_Quest_ListButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Quest_ListButton_C::AnmEvent_Ordered()
+void UWBP_Quest_ListButton_C::ExecuteUbergraph_WBP_Quest_ListButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Ordered");
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "ExecuteUbergraph_WBP_Quest_ListButton");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Quest_ListButton_C_ExecuteUbergraph_WBP_Quest_ListButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Hover
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.GetQuestData
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalQuestData**                   QuestData                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Quest_ListButton_C::AnmEvent_Hover()
+void UWBP_Quest_ListButton_C::GetQuestData(class UPalQuestData** QuestData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Hover");
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "GetQuestData");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Quest_ListButton_C_GetQuestData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (QuestData != nullptr)
+		*QuestData = Parms.QuestData;
 }
 
 
-// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.AnmEvent_Completed
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Quest_ListButton.WBP_Quest_ListButton_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalQuestData*                    QuestData                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Quest_ListButton_C::AnmEvent_Completed()
+void UWBP_Quest_ListButton_C::Setup(class UPalQuestData* QuestData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Quest_ListButton_C", "AnmEvent_Completed");
+		Func = Class->GetFunction("WBP_Quest_ListButton_C", "Setup");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Quest_ListButton_C_Setup Parms{};
+
+	Parms.QuestData = QuestData;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

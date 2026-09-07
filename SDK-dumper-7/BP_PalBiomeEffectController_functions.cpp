@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.ExecuteUbergraph_BP_PalBiomeEffectController
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalBiomeEffectController_C::ReceiveTick(float DeltaSeconds)
+void UBP_PalBiomeEffectController_C::ExecuteUbergraph_BP_PalBiomeEffectController(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeEffectController_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_PalBiomeEffectController_C", "ExecuteUbergraph_BP_PalBiomeEffectController");
 
-	Params::BP_PalBiomeEffectController_C_ReceiveTick Parms{};
+	Params::BP_PalBiomeEffectController_C_ExecuteUbergraph_BP_PalBiomeEffectController Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.On Biome Exit
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_PalBiomeEffectController_C::On_Biome_Exit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeEffectController_C", "On Biome Exit");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,21 +57,35 @@ void UBP_PalBiomeEffectController_C::On_Biome_Enter(EPalBiomeType Biome_Type)
 }
 
 
-// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.ExecuteUbergraph_BP_PalBiomeEffectController
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.On Biome Exit
+// (BlueprintCallable, BlueprintEvent)
 
-void UBP_PalBiomeEffectController_C::ExecuteUbergraph_BP_PalBiomeEffectController(int32 EntryPoint)
+void UBP_PalBiomeEffectController_C::On_Biome_Exit()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeEffectController_C", "ExecuteUbergraph_BP_PalBiomeEffectController");
+		Func = Class->GetFunction("BP_PalBiomeEffectController_C", "On Biome Exit");
 
-	Params::BP_PalBiomeEffectController_C_ExecuteUbergraph_BP_PalBiomeEffectController Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalBiomeEffectController_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBiomeEffectController_C", "ReceiveTick");
+
+	Params::BP_PalBiomeEffectController_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

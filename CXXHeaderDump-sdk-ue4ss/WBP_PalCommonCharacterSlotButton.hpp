@@ -5,7 +5,7 @@ class UWBP_PalCommonCharacterSlotButton_C : public UWBP_PalCharacterSlotButtonBa
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0520 (size: 0x8)
     class UWidgetAnimation* Anm_UnselectToSelect;                                     // 0x0528 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0530 (size: 0x8)
+    class UWidgetAnimation* Anm_Push;                                                 // 0x0530 (size: 0x8)
     class UCanvasPanel* CanvasPanel_36;                                               // 0x0538 (size: 0x8)
     class UImage* Check_0;                                                            // 0x0540 (size: 0x8)
     class UImage* Check_1;                                                            // 0x0548 (size: 0x8)

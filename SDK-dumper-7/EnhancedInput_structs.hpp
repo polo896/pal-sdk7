@@ -140,15 +140,6 @@ enum class ETriggerEventsSupported : uint8
 	ETriggerEventsSupported_MAX              = 8,
 };
 
-// ScriptStruct EnhancedInput.InputActionValue
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x08) FInputActionValue final
-{
-public:
-	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FInputActionValue;
-
 // ScriptStruct EnhancedInput.PlayerMappableKeyOptions
 // 0x0040 (0x0040 - 0x0000)
 struct FPlayerMappableKeyOptions final
@@ -160,6 +151,15 @@ public:
 	class FText                                   DisplayCategory;                                   // 0x0028(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FPlayerMappableKeyOptions;
+
+// ScriptStruct EnhancedInput.InputActionValue
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) FInputActionValue final
+{
+public:
+	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FInputActionValue;
 
 // ScriptStruct EnhancedInput.EnhancedActionKeyMapping
 // 0x0088 (0x0088 - 0x0000)

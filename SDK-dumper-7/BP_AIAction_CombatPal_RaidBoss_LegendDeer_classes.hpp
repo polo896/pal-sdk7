@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "ENum_Raid_LegendDeer_CombatPhase_structs.hpp"
 #include "BP_AIAction_CombatPal_RaidBoss_classes.hpp"
+#include "ENum_Raid_LegendDeer_CombatPhase_structs.hpp"
 #include "AIModule_structs.hpp"
 
 

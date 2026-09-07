@@ -632,6 +632,26 @@ void UWBP_IngameMenu_PalBox_C::Setup(class UPalHUDDispatchParameter_PalBox* Para
 }
 
 
+// Function WBP_IngameMenu_PalBox.WBP_IngameMenu_PalBox_C.Setup Pal Box Background
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsWildPalBox                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_PalBox_C::Setup_Pal_Box_Background(bool bIsWildPalBox)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_PalBox_C", "Setup Pal Box Background");
+
+	Params::WBP_IngameMenu_PalBox_C_Setup_Pal_Box_Background Parms{};
+
+	Parms.bIsWildPalBox = bIsWildPalBox;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_IngameMenu_PalBox.WBP_IngameMenu_PalBox_C.Setup Party Pal
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 

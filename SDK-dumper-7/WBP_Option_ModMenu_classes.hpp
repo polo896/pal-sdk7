@@ -73,11 +73,11 @@ public:
 	void DisplayLoading();
 	void Destruct();
 	void Construct();
-	void BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
 	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 	void BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

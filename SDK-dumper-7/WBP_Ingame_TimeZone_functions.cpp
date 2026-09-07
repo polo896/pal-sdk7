@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.UpdateTime
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_TimeZone_C::UpdateTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "UpdateTime");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Ingame_TimeZone_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.ExecuteUbergraph_WBP_Ingame_TimeZone
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void UWBP_Ingame_TimeZone_C::ExecuteUbergraph_WBP_Ingame_TimeZone(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Ingame_TimeZone_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.UpdateTime
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_TimeZone_C::UpdateTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "UpdateTime");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

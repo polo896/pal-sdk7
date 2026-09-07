@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_IngameDamageVinette.WBP_IngameDamageVinette_C.ExecuteUbergraph_WBP_IngameDamageVinette
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameDamageVinette.WBP_IngameDamageVinette_C.AnmEvent_End
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameDamageVinette_C::ExecuteUbergraph_WBP_IngameDamageVinette(int32 EntryPoint)
+void UWBP_IngameDamageVinette_C::AnmEvent_End()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameDamageVinette_C", "ExecuteUbergraph_WBP_IngameDamageVinette");
+		Func = Class->GetFunction("WBP_IngameDamageVinette_C", "AnmEvent_End");
 
-	Params::WBP_IngameDamageVinette_C_ExecuteUbergraph_WBP_IngameDamageVinette Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UWBP_IngameDamageVinette_C::AnmEvent_Start()
 }
 
 
-// Function WBP_IngameDamageVinette.WBP_IngameDamageVinette_C.AnmEvent_End
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameDamageVinette.WBP_IngameDamageVinette_C.ExecuteUbergraph_WBP_IngameDamageVinette
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameDamageVinette_C::AnmEvent_End()
+void UWBP_IngameDamageVinette_C::ExecuteUbergraph_WBP_IngameDamageVinette(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameDamageVinette_C", "AnmEvent_End");
+		Func = Class->GetFunction("WBP_IngameDamageVinette_C", "ExecuteUbergraph_WBP_IngameDamageVinette");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_IngameDamageVinette_C_ExecuteUbergraph_WBP_IngameDamageVinette Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

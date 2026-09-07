@@ -20,14 +20,24 @@
 namespace SDK::Params
 {
 
-// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.AdjustSide
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_MapPoint_Info_Respawn_C_AdjustSide final
+// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.ToggleDisplay
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MapPoint_Info_Respawn_C_ToggleDisplay final
 {
 public:
-	struct FGeometry                              TargetGeometry;                                    // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	bool                                          ShouldDisplay;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MapPoint_Info_Respawn_C_AdjustSide;
+DUMPER7_ASSERTS_WBP_MapPoint_Info_Respawn_C_ToggleDisplay;
+
+// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.SetPointInfo
+// 0x000C (0x000C - 0x0000)
+struct WBP_MapPoint_Info_Respawn_C_SetPointInfo final
+{
+public:
+	class FName                                   PointId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsInitSelect;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MapPoint_Info_Respawn_C_SetPointInfo;
 
 // Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.ExecuteUbergraph_WBP_MapPoint_Info_Respawn
 // 0x01D8 (0x01D8 - 0x0000)
@@ -81,24 +91,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MapPoint_Info_Respawn_C_ExecuteUbergraph_WBP_MapPoint_Info_Respawn;
 
-// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.SetPointInfo
-// 0x000C (0x000C - 0x0000)
-struct WBP_MapPoint_Info_Respawn_C_SetPointInfo final
+// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.AdjustSide
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_MapPoint_Info_Respawn_C_AdjustSide final
 {
 public:
-	class FName                                   PointId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsInitSelect;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              TargetGeometry;                                    // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_MapPoint_Info_Respawn_C_SetPointInfo;
-
-// Function WBP_MapPoint_Info_Respawn.WBP_MapPoint_Info_Respawn_C.ToggleDisplay
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MapPoint_Info_Respawn_C_ToggleDisplay final
-{
-public:
-	bool                                          ShouldDisplay;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MapPoint_Info_Respawn_C_ToggleDisplay;
+DUMPER7_ASSERTS_WBP_MapPoint_Info_Respawn_C_AdjustSide;
 
 }
 

@@ -1,0 +1,88 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_PalFishingDifficultyUIDataTable",
+    "Class": "UScriptClass'DataTable'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'PalFishingDifficultyUIDataRow'",
+        "ObjectPath": "/Script/Pal"
+      }
+    },
+    "Rows": {
+      "Easy": {
+        "RecommendRodItemId": {
+          "Key": "None"
+        },
+        "bShowRodOrAboveText": false,
+        "RecommendBaitItemId": {
+          "Key": "None"
+        },
+        "bShowBaitOrAboveText": false,
+        "SatisfyBaitItemIds": [],
+        "bShowPalSkillAdvice": false
+      },
+      "Normal": {
+        "RecommendRodItemId": {
+          "Key": "FishingRod_02_1"
+        },
+        "bShowRodOrAboveText": true,
+        "RecommendBaitItemId": {
+          "Key": "None"
+        },
+        "bShowBaitOrAboveText": false,
+        "SatisfyBaitItemIds": [],
+        "bShowPalSkillAdvice": false
+      },
+      "Difficult": {
+        "RecommendRodItemId": {
+          "Key": "FishingRod_03_1"
+        },
+        "bShowRodOrAboveText": true,
+        "RecommendBaitItemId": {
+          "Key": "FishingBait_3"
+        },
+        "bShowBaitOrAboveText": true,
+        "SatisfyBaitItemIds": [],
+        "bShowPalSkillAdvice": false
+      },
+      "VeryDifficult": {
+        "RecommendRodItemId": {
+          "Key": "FishingRod_03_1"
+        },
+        "bShowRodOrAboveText": true,
+        "RecommendBaitItemId": {
+          "Key": "FishingBait_3"
+        },
+        "bShowBaitOrAboveText": true,
+        "SatisfyBaitItemIds": [],
+        "bShowPalSkillAdvice": true
+      },
+      "ExtremelyDifficult": {
+        "RecommendRodItemId": {
+          "Key": "FishingRod_03_1"
+        },
+        "bShowRodOrAboveText": true,
+        "RecommendBaitItemId": {
+          "Key": "FishingBait_3_A"
+        },
+        "bShowBaitOrAboveText": false,
+        "SatisfyBaitItemIds": [],
+        "bShowPalSkillAdvice": true
+      },
+      "IMPOSSIBLE": {
+        "RecommendRodItemId": {
+          "Key": "FishingRod_03_1"
+        },
+        "bShowRodOrAboveText": true,
+        "RecommendBaitItemId": {
+          "Key": "FishingBait_3_A"
+        },
+        "bShowBaitOrAboveText": false,
+        "SatisfyBaitItemIds": [],
+        "bShowPalSkillAdvice": true
+      }
+    }
+  }
+]

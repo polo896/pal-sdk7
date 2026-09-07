@@ -13,12 +13,17 @@
 ---@field CanvasPanel_NoListItemHide_01 UCanvasPanel
 ---@field CanvasPanel_NoListItemHide_02 UCanvasPanel
 ---@field CircularThrobber_49 UCircularThrobber
+---@field FrameFlare UImage
+---@field HorizontalBox_SearchName UCanvasPanel
 ---@field Image_92 UImage
+---@field Image_106 UImage
 ---@field Image_PalReflection UImage
+---@field PalEditableTextBox_Search UPalEditableTextBox
 ---@field RichText_LongDesc UBP_PalRichTextBlock_C
 ---@field Text_EncountPalNumValue UBP_PalTextBlock_C
 ---@field Text_RegisterPalNumValue UBP_PalTextBlock_C
----@field WBP_CommonButton_Activation UWBP_CommonButton_Activation_C
+---@field WBP_CommonButton_Activation_Icon UWBP_CommonButton_Activation_Icon_C
+---@field WBP_MainMenu_PalSkillInfo UWBP_MainMenu_PalSkillInfo_C
 ---@field WBP_NoData UWBP_NoData_C
 ---@field WBP_NoData_74 UWBP_NoData_C
 ---@field WBP_Paldex_Map UWBP_Paldex_Map_C
@@ -26,7 +31,7 @@
 ---@field WBP_Paldex_tabset UWBP_Paldex_tabset_C
 ---@field WBP_PaldexScrollList UWBP_PaldexScrollList_C
 ---@field WBP_PalInframeRender UWBP_PalMonsterInframeRender_C
----@field WBP_PalKeyGuideIcon UWBP_PalKeyGuideIcon_C
+---@field WBP_PalInvisibleButton_SerchName UWBP_PalInvisibleButton_C
 ---@field nowRenderCharacterID FName
 ---@field OnHoveredAnyPalPanel FWBP_Paldex_COnHoveredAnyPalPanel
 ---@field NoDataNoticeMsgID FDataTableRowHandle
@@ -42,13 +47,18 @@
 ---@field ChacedDisplayInfo FPalUIPaldex_DisplayInfo
 ---@field CachedTimeType E_PaldexDistributionTimeType::Type
 ---@field OnClickedFilteringButton FWBP_Paldex_COnClickedFilteringButton
+---@field OnCommittedSearchWord FWBP_Paldex_COnCommittedSearchWord
 local UWBP_Paldex_C = {}
 
+---@param CharacterID FName
+---@param bHide boolean
+function UWBP_Paldex_C:IsHideCharacterInList(CharacterID, bHide) end
 ---@param Target UWidget
 function UWBP_Paldex_C:GetFilteringButtonFocusTarget(Target) end
 function UWBP_Paldex_C:ResetFiltering() end
 ---@param displayInfoArray TArray<FPalUIPaldex_DisplayInfo>
-function UWBP_Paldex_C:Filtering(displayInfoArray) end
+---@param bDisplayActiveFiltering boolean
+function UWBP_Paldex_C:Filtering(displayInfoArray, bDisplayActiveFiltering) end
 ---@param MapName FName
 function UWBP_Paldex_C:ChangeMap(MapName) end
 function UWBP_Paldex_C:DisplayDistribution() end
@@ -75,8 +85,8 @@ function UWBP_Paldex_C:ResetMapOffset() end
 function UWBP_Paldex_C:SetZoomDisrtibutionMap(Rate) end
 ---@param IsMax boolean
 function UWBP_Paldex_C:IsZoomMax(IsMax) end
----@param addZoomRate double
-function UWBP_Paldex_C:AddZoomDistributionMap(addZoomRate) end
+---@param AddZoomRate double
+function UWBP_Paldex_C:AddZoomDistributionMap(AddZoomRate) end
 ---@param Rotator FRotator
 UWBP_Paldex_C['Add Captured Actor Rotation'] = function(self, Rotator) end
 ---@param Offset FVector2D
@@ -121,9 +131,19 @@ function UWBP_Paldex_C:BndEvt__WBP_Paldex_WBP_Paldex_tabset_K2Node_ComponentBoun
 ---@param CharacterID FName
 ---@param Widget UWBP_Paldex_List_C
 function UWBP_Paldex_C:BndEvt__WBP_Paldex_WBP_PaldexScrollList_K2Node_ComponentBoundEvent_3_OnClickedAnyPanel__DelegateSignature(CharacterID, Widget) end
-function UWBP_Paldex_C:BndEvt__WBP_Paldex_WBP_CommonButton_Activation_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature() end
+---@param Widget UWBP_MainMenu_Pal_WorkIconText_C
+function UWBP_Paldex_C:BndEvt__WBP_Paldex_WBP_Paldex_PalInfo_00_K2Node_ComponentBoundEvent_4_OnHoveredSuitabilityPanel__DelegateSignature(Widget) end
+function UWBP_Paldex_C:BndEvt__WBP_Paldex_WBP_Paldex_PalInfo_00_K2Node_ComponentBoundEvent_6_OnUnhoveredSuitabilityPanel__DelegateSignature() end
+function UWBP_Paldex_C:BndEvt__WBP_Paldex_WBP_CommonButton_Activation_Icon_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature() end
+---@param Text FText
+---@param CommitMethod ETextCommit::Type
+function UWBP_Paldex_C:BndEvt__WBP_Paldex_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature(Text, CommitMethod) end
+---@param Button UCommonButtonBase
+function UWBP_Paldex_C:BndEvt__WBP_Paldex_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(Button) end
 ---@param EntryPoint int32
 function UWBP_Paldex_C:ExecuteUbergraph_WBP_Paldex(EntryPoint) end
+---@param SearchWord FText
+function UWBP_Paldex_C:OnCommittedSearchWord__DelegateSignature(SearchWord) end
 function UWBP_Paldex_C:OnClickedFilteringButton__DelegateSignature() end
 ---@param CharacterID FName
 function UWBP_Paldex_C:OnClickedAnyPalPanel__DelegateSignature(CharacterID) end

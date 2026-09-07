@@ -17,15 +17,29 @@
 namespace SDK
 {
 
-// Function BP_SkillEffect_DarkLaser.BP_SkillEffect_DarkLaser_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SkillEffect_DarkLaser.BP_SkillEffect_DarkLaser_C.EnableCollision
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SkillEffect_DarkLaser_C::ReceiveBeginPlay()
+void ABP_SkillEffect_DarkLaser_C::EnableCollision()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_C", "EnableCollision");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SkillEffect_DarkLaser.BP_SkillEffect_DarkLaser_C.EndCollision
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_SkillEffect_DarkLaser_C::EndCollision()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_C", "EndCollision");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,29 +65,15 @@ void ABP_SkillEffect_DarkLaser_C::ExecuteUbergraph_BP_SkillEffect_DarkLaser(int3
 }
 
 
-// Function BP_SkillEffect_DarkLaser.BP_SkillEffect_DarkLaser_C.EndCollision
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_SkillEffect_DarkLaser.BP_SkillEffect_DarkLaser_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SkillEffect_DarkLaser_C::EndCollision()
+void ABP_SkillEffect_DarkLaser_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_C", "EndCollision");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SkillEffect_DarkLaser.BP_SkillEffect_DarkLaser_C.EnableCollision
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SkillEffect_DarkLaser_C::EnableCollision()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_C", "EnableCollision");
+		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

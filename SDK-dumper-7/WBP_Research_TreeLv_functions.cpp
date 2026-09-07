@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_Research_TreeLv.WBP_Research_TreeLv_C.ExecuteUbergraph_WBP_Research_TreeLv
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Research_TreeLv_C::ExecuteUbergraph_WBP_Research_TreeLv(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_TreeLv_C", "ExecuteUbergraph_WBP_Research_TreeLv");
+
+	Params::WBP_Research_TreeLv_C_ExecuteUbergraph_WBP_Research_TreeLv Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Research_TreeLv.WBP_Research_TreeLv_C.SetLevelHeight
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -36,26 +56,6 @@ void UWBP_Research_TreeLv_C::SetLevelHeight(int32 Level, int32 BlockHeight, EPal
 	Parms.Level = Level;
 	Parms.BlockHeight = BlockHeight;
 	Parms.Type = Type;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Research_TreeLv.WBP_Research_TreeLv_C.ExecuteUbergraph_WBP_Research_TreeLv
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Research_TreeLv_C::ExecuteUbergraph_WBP_Research_TreeLv(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_TreeLv_C", "ExecuteUbergraph_WBP_Research_TreeLv");
-
-	Params::WBP_Research_TreeLv_C_ExecuteUbergraph_WBP_Research_TreeLv Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

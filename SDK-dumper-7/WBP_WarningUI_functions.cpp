@@ -17,57 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_WarningUI.WBP_WarningUI_C.RegisterEvents
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningUI_C::RegisterEvents()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "RegisterEvents");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningUI.WBP_WarningUI_C.Play
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      TitleText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      infoText                                               (BlueprintVisible, BlueprintReadOnly, Parm)
-// double                                  DisplayTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WarningUI_C::Play(const class FText& TitleText, const class FText& infoText, double DisplayTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "Play");
-
-	Params::WBP_WarningUI_C_Play Parms{};
-
-	Parms.TitleText = std::move(TitleText);
-	Parms.infoText = std::move(infoText);
-	Parms.DisplayTime = DisplayTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WarningUI.WBP_WarningUI_C.OnSupplyStart
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningUI.WBP_WarningUI_C.Display Supply
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FPalSupplyInfo&            SupplyInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_WarningUI_C::OnSupplyStart(const struct FPalSupplyInfo& SupplyInfo)
+void UWBP_WarningUI_C::Display_Supply(const struct FPalSupplyInfo& SupplyInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "OnSupplyStart");
+		Func = Class->GetFunction("WBP_WarningUI_C", "Display Supply");
 
-	Params::WBP_WarningUI_C_OnSupplyStart Parms{};
+	Params::WBP_WarningUI_C_Display_Supply Parms{};
 
 	Parms.SupplyInfo = std::move(SupplyInfo);
 
@@ -75,75 +37,21 @@ void UWBP_WarningUI_C::OnSupplyStart(const struct FPalSupplyInfo& SupplyInfo)
 }
 
 
-// Function WBP_WarningUI.WBP_WarningUI_C.OnReceivedServerNotice
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningUI.WBP_WarningUI_C.DisplayServerNotice
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FString&                    NoticeMessage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_WarningUI_C::OnReceivedServerNotice(const class FString& NoticeMessage)
+void UWBP_WarningUI_C::DisplayServerNotice(const class FString& NoticeMessage)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "OnReceivedServerNotice");
+		Func = Class->GetFunction("WBP_WarningUI_C", "DisplayServerNotice");
 
-	Params::WBP_WarningUI_C_OnReceivedServerNotice Parms{};
+	Params::WBP_WarningUI_C_DisplayServerNotice Parms{};
 
 	Parms.NoticeMessage = std::move(NoticeMessage);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WarningUI.WBP_WarningUI_C.OnInvaderStart
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalIncidentBroadcastParameter&Parameter                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_WarningUI_C::OnInvaderStart(const struct FPalIncidentBroadcastParameter& Parameter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "OnInvaderStart");
-
-	Params::WBP_WarningUI_C_OnInvaderStart Parms{};
-
-	Parms.Parameter = std::move(Parameter);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WarningUI.WBP_WarningUI_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_WarningUI_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningUI.WBP_WarningUI_C.ExecuteUbergraph_WBP_WarningUI
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WarningUI_C::ExecuteUbergraph_WBP_WarningUI(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "ExecuteUbergraph_WBP_WarningUI");
-
-	Params::WBP_WarningUI_C_ExecuteUbergraph_WBP_WarningUI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -171,19 +79,73 @@ void UWBP_WarningUI_C::DisplayStartInvaderWarning(class UPalBaseCampModel* Targe
 }
 
 
-// Function WBP_WarningUI.WBP_WarningUI_C.DisplayServerNotice
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningUI.WBP_WarningUI_C.ExecuteUbergraph_WBP_WarningUI
+// (Final, UbergraphFunction)
 // Parameters:
-// const class FString&                    NoticeMessage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WarningUI_C::DisplayServerNotice(const class FString& NoticeMessage)
+void UWBP_WarningUI_C::ExecuteUbergraph_WBP_WarningUI(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "DisplayServerNotice");
+		Func = Class->GetFunction("WBP_WarningUI_C", "ExecuteUbergraph_WBP_WarningUI");
 
-	Params::WBP_WarningUI_C_DisplayServerNotice Parms{};
+	Params::WBP_WarningUI_C_ExecuteUbergraph_WBP_WarningUI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WarningUI.WBP_WarningUI_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_WarningUI_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningUI_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningUI.WBP_WarningUI_C.OnInvaderStart
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalIncidentBroadcastParameter&Parameter                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_WarningUI_C::OnInvaderStart(const struct FPalIncidentBroadcastParameter& Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningUI_C", "OnInvaderStart");
+
+	Params::WBP_WarningUI_C_OnInvaderStart Parms{};
+
+	Parms.Parameter = std::move(Parameter);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WarningUI.WBP_WarningUI_C.OnReceivedServerNotice
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    NoticeMessage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_WarningUI_C::OnReceivedServerNotice(const class FString& NoticeMessage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningUI_C", "OnReceivedServerNotice");
+
+	Params::WBP_WarningUI_C_OnReceivedServerNotice Parms{};
 
 	Parms.NoticeMessage = std::move(NoticeMessage);
 
@@ -191,23 +153,61 @@ void UWBP_WarningUI_C::DisplayServerNotice(const class FString& NoticeMessage)
 }
 
 
-// Function WBP_WarningUI.WBP_WarningUI_C.Display Supply
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningUI.WBP_WarningUI_C.OnSupplyStart
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FPalSupplyInfo&            SupplyInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_WarningUI_C::Display_Supply(const struct FPalSupplyInfo& SupplyInfo)
+void UWBP_WarningUI_C::OnSupplyStart(const struct FPalSupplyInfo& SupplyInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningUI_C", "Display Supply");
+		Func = Class->GetFunction("WBP_WarningUI_C", "OnSupplyStart");
 
-	Params::WBP_WarningUI_C_Display_Supply Parms{};
+	Params::WBP_WarningUI_C_OnSupplyStart Parms{};
 
 	Parms.SupplyInfo = std::move(SupplyInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WarningUI.WBP_WarningUI_C.Play
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      TitleText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      infoText                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// double                                  DisplayTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WarningUI_C::Play(const class FText& TitleText, const class FText& infoText, double DisplayTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningUI_C", "Play");
+
+	Params::WBP_WarningUI_C_Play Parms{};
+
+	Parms.TitleText = std::move(TitleText);
+	Parms.infoText = std::move(infoText);
+	Parms.DisplayTime = DisplayTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WarningUI.WBP_WarningUI_C.RegisterEvents
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningUI_C::RegisterEvents()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningUI_C", "RegisterEvents");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

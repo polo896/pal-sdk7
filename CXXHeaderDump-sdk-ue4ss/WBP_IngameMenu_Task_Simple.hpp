@@ -44,15 +44,15 @@ class UWBP_IngameMenu_Task_Simple_C : public UUserWidget
     class UWBP_IngameMenu_Task_SimpleList_C* WBP_IngameMenu_Task_SimpleList_4;        // 0x03A8 (size: 0x8)
     class UWBP_IngameMenu_TaskMaterial_C* WBP_IngameMenu_TaskMaterial;                // 0x03B0 (size: 0x8)
     class UWrapBox* WrapBox_ItemInfo;                                                 // 0x03B8 (size: 0x8)
-    TArray<UWBP_IngameMenu_Task_SimpleList_C*> palDetailWidgetArray;                  // 0x03C0 (size: 0x10)
+    TArray<class UWBP_IngameMenu_Task_SimpleList_C*> palDetailWidgetArray;            // 0x03C0 (size: 0x10)
     FSlateFontInfo TaskDetailBaseFont;                                                // 0x03D0 (size: 0x60)
     class UMaterial* completedTaskFontMaterial;                                       // 0x0430 (size: 0x8)
     FDataTableRowHandle buildTaskMsgID;                                               // 0x0438 (size: 0x10)
     FDataTableRowHandle workerTaskMsgID;                                              // 0x0448 (size: 0x10)
-    TMap<EPalBaseCampWorkerDirectionBattleType, FDataTableRowHandle> BattleTypeMsgMap; // 0x0458 (size: 0x50)
-    TMap<EPalBaseCampWorkerDirectionBattleType, TSoftObjectPtr<class UTexture2D>> BattleTypeIconMap; // 0x04A8 (size: 0x50)
-    TMap<EPalBaseCampPassiveEffectWorkHardType, FDataTableRowHandle> WorkHardTypeMsgMap; // 0x04F8 (size: 0x50)
-    TMap<EPalBaseCampPassiveEffectWorkHardType, TSoftObjectPtr<class UTexture2D>> WorkHardTypeIconMap; // 0x0548 (size: 0x50)
+    TMap<class EPalBaseCampWorkerDirectionBattleType, class FDataTableRowHandle> BattleTypeMsgMap; // 0x0458 (size: 0x50)
+    TMap<class EPalBaseCampWorkerDirectionBattleType, class TSoftObjectPtr<UTexture2D>> BattleTypeIconMap; // 0x04A8 (size: 0x50)
+    TMap<class EPalBaseCampPassiveEffectWorkHardType, class FDataTableRowHandle> WorkHardTypeMsgMap; // 0x04F8 (size: 0x50)
+    TMap<class EPalBaseCampPassiveEffectWorkHardType, class TSoftObjectPtr<UTexture2D>> WorkHardTypeIconMap; // 0x0548 (size: 0x50)
     bool CollapseLastPal;                                                             // 0x0598 (size: 0x1)
 
     void SetActiveSimpleInfoMode(bool bActiveSimpleInfo);
@@ -64,7 +64,7 @@ class UWBP_IngameMenu_Task_Simple_C : public UUserWidget
     void RemoveAllItemDetail();
     void AddItemInfo(bool isHideWhenZero, FName ItemId, int64 itemNum, int64 gaugeMaxNumBorder);
     void SetVisibilityTaskDetail(ESlateVisibility NewVisibility);
-    void Set Pal Slots(TArray<UPalIndividualCharacterSlot*>& Slots, int32 maxPalNum, int32 Palbed);
+    void Set Pal Slots(TArray<class UPalIndividualCharacterSlot*>& Slots, int32 maxPalNum, int32 Palbed);
     void SetRemainTimer(double remainTime);
     void RemoveTaskDetailText();
     void AddTaskDetailText(FText Text, int32 nowNum, int32 requireNum, int32 TaskIndex);

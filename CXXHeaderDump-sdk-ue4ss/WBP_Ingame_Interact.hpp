@@ -6,7 +6,7 @@ class UWBP_Ingame_Interact_C : public UUserWidget
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
     class UWidgetAnimation* Anm_Press;                                                // 0x0280 (size: 0x8)
     class UWidgetAnimation* Anm_Push_long_nogauge;                                    // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0290 (size: 0x8)
+    class UWidgetAnimation* Anm_Push;                                                 // 0x0290 (size: 0x8)
     class UWidgetAnimation* Anm_Push_long_Arrow;                                      // 0x0298 (size: 0x8)
     class UWidgetAnimation* Anm_Push_long;                                            // 0x02A0 (size: 0x8)
     class UWidgetAnimation* Anm_Close;                                                // 0x02A8 (size: 0x8)
@@ -21,9 +21,9 @@ class UWBP_Ingame_Interact_C : public UUserWidget
     class UImage* InteractBase;                                                       // 0x02F0 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* KeyGuide;                                           // 0x02F8 (size: 0x8)
     class URetainerBox* RetainerBox_111;                                              // 0x0300 (size: 0x8)
-    TMap<EPalInteractiveObjectActionType, TSoftObjectPtr<class UTexture2D>> IconMap;  // 0x0308 (size: 0x50)
+    TMap<class EPalInteractiveObjectActionType, class TSoftObjectPtr<UTexture2D>> IconMap; // 0x0308 (size: 0x50)
     double rightPadding;                                                              // 0x0358 (size: 0x8)
-    TMap<EPalInteractiveObjectActionType, FDataTableRowHandle> actionInputMap;        // 0x0360 (size: 0x50)
+    TMap<class EPalInteractiveObjectActionType, class FDataTableRowHandle> actionInputMap; // 0x0360 (size: 0x50)
 
     void SetIsValidInteract(bool IsValidFlag);
     void SetVisibilityLongPushParts(ESlateVisibility NewVisibility);

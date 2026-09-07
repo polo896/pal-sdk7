@@ -17,141 +17,47 @@
 namespace SDK
 {
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.Update Move
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Fishing_FishShadowBase_C::Update_Move(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "Update Move");
-
-	Params::BP_Fishing_FishShadowBase_C_Update_Move Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.StartPick
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   PickLocation_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Fishing_FishShadowBase_C::StartPick(const struct FVector& PickLocation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "StartPick");
-
-	Params::BP_Fishing_FishShadowBase_C_StartPick Parms{};
-
-	Parms.PickLocation_0 = std::move(PickLocation_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.SetupMesh
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Fishing_FishShadowBase_C::SetupMesh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "SetupMesh");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.RestDelayTimer
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.CalcNextPoint
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_Fishing_FishShadowBase_C::RestDelayTimer()
+void ABP_Fishing_FishShadowBase_C::CalcNextPoint()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "RestDelayTimer");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "CalcNextPoint");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.EndPick
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Fishing_FishShadowBase_C::ReceiveTick(float DeltaSeconds)
+void ABP_Fishing_FishShadowBase_C::EndPick()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ReceiveTick");
-
-	Params::BP_Fishing_FishShadowBase_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Fishing_FishShadowBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ReceiveEndPlay");
-
-	Params::BP_Fishing_FishShadowBase_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Fishing_FishShadowBase_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "EndPick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.PickMove
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.EscapeMove
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Fishing_FishShadowBase_C::PickMove(double DeltaTime)
+void ABP_Fishing_FishShadowBase_C::EscapeMove(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "PickMove");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "EscapeMove");
 
-	Params::BP_Fishing_FishShadowBase_C_PickMove Parms{};
+	Params::BP_Fishing_FishShadowBase_C_EscapeMove Parms{};
 
 	Parms.DeltaTime = DeltaTime;
 
@@ -159,83 +65,35 @@ void ABP_Fishing_FishShadowBase_C::PickMove(double DeltaTime)
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnSpawnedRareEffect
-// (Event, Public, BlueprintEvent)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ExecuteUbergraph_BP_Fishing_FishShadowBase
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UNiagaraSystem*                   Effect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Fishing_FishShadowBase_C::OnSpawnedRareEffect(class UNiagaraSystem* Effect)
+void ABP_Fishing_FishShadowBase_C::ExecuteUbergraph_BP_Fishing_FishShadowBase(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnSpawnedRareEffect");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ExecuteUbergraph_BP_Fishing_FishShadowBase");
 
-	Params::BP_Fishing_FishShadowBase_C_OnSpawnedRareEffect Parms{};
+	Params::BP_Fishing_FishShadowBase_C_ExecuteUbergraph_BP_Fishing_FishShadowBase Parms{};
 
-	Parms.Effect = Effect;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnSearchHit
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   PickLocation_0                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.FishingHit
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Fishing_FishShadowBase_C::OnSearchHit(const struct FVector& PickLocation_0)
+void ABP_Fishing_FishShadowBase_C::FishingHit()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnSearchHit");
-
-	Params::BP_Fishing_FishShadowBase_C_OnSearchHit Parms{};
-
-	Parms.PickLocation_0 = std::move(PickLocation_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnInitialized
-// (Event, Public, BlueprintEvent)
-
-void ABP_Fishing_FishShadowBase_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnFishingStart
-// (Event, Public, BlueprintEvent)
-
-void ABP_Fishing_FishShadowBase_C::OnFishingStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnFishingStart");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnEscape
-// (Event, Public, BlueprintEvent)
-
-void ABP_Fishing_FishShadowBase_C::OnEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnEscape");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "FishingHit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -262,53 +120,101 @@ void ABP_Fishing_FishShadowBase_C::GetSocketMouthLocation(struct FVector* MouthL
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.FishingHit
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnEscape
+// (Event, Public, BlueprintEvent)
 
-void ABP_Fishing_FishShadowBase_C::FishingHit()
+void ABP_Fishing_FishShadowBase_C::OnEscape()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "FishingHit");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnEscape");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ExecuteUbergraph_BP_Fishing_FishShadowBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnFishingStart
+// (Event, Public, BlueprintEvent)
 
-void ABP_Fishing_FishShadowBase_C::ExecuteUbergraph_BP_Fishing_FishShadowBase(int32 EntryPoint)
+void ABP_Fishing_FishShadowBase_C::OnFishingStart()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ExecuteUbergraph_BP_Fishing_FishShadowBase");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnFishingStart");
 
-	Params::BP_Fishing_FishShadowBase_C_ExecuteUbergraph_BP_Fishing_FishShadowBase Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnInitialized
+// (Event, Public, BlueprintEvent)
+
+void ABP_Fishing_FishShadowBase_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnSearchHit
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   PickLocation_0                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Fishing_FishShadowBase_C::OnSearchHit(const struct FVector& PickLocation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnSearchHit");
+
+	Params::BP_Fishing_FishShadowBase_C_OnSearchHit Parms{};
+
+	Parms.PickLocation_0 = std::move(PickLocation_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.EscapeMove
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.OnSpawnedRareEffect
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraSystem*                   Effect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Fishing_FishShadowBase_C::EscapeMove(double DeltaTime)
+void ABP_Fishing_FishShadowBase_C::OnSpawnedRareEffect(class UNiagaraSystem* Effect)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "EscapeMove");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "OnSpawnedRareEffect");
 
-	Params::BP_Fishing_FishShadowBase_C_EscapeMove Parms{};
+	Params::BP_Fishing_FishShadowBase_C_OnSpawnedRareEffect Parms{};
+
+	Parms.Effect = Effect;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.PickMove
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Fishing_FishShadowBase_C::PickMove(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "PickMove");
+
+	Params::BP_Fishing_FishShadowBase_C_PickMove Parms{};
 
 	Parms.DeltaTime = DeltaTime;
 
@@ -316,31 +222,125 @@ void ABP_Fishing_FishShadowBase_C::EscapeMove(double DeltaTime)
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.EndPick
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Fishing_FishShadowBase_C::EndPick()
+void ABP_Fishing_FishShadowBase_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "EndPick");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.CalcNextPoint
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Fishing_FishShadowBase_C::CalcNextPoint()
+void ABP_Fishing_FishShadowBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "CalcNextPoint");
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ReceiveEndPlay");
+
+	Params::BP_Fishing_FishShadowBase_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Fishing_FishShadowBase_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "ReceiveTick");
+
+	Params::BP_Fishing_FishShadowBase_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.RestDelayTimer
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_Fishing_FishShadowBase_C::RestDelayTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "RestDelayTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.SetupMesh
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_Fishing_FishShadowBase_C::SetupMesh()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "SetupMesh");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.StartPick
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   PickLocation_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Fishing_FishShadowBase_C::StartPick(const struct FVector& PickLocation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "StartPick");
+
+	Params::BP_Fishing_FishShadowBase_C_StartPick Parms{};
+
+	Parms.PickLocation_0 = std::move(PickLocation_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Fishing_FishShadowBase.BP_Fishing_FishShadowBase_C.Update Move
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Fishing_FishShadowBase_C::Update_Move(float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fishing_FishShadowBase_C", "Update Move");
+
+	Params::BP_Fishing_FishShadowBase_C_Update_Move Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

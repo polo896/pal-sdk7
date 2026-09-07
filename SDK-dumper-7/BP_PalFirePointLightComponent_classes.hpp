@@ -31,11 +31,11 @@ public:
 	double                                        MaxIntensityCache;                                 // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ResetBlinkDuration();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_PalFirePointLightComponent(int32 EntryPoint);
 	void CacheAndClearIntensity();
+	void ExecuteUbergraph_BP_PalFirePointLightComponent(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void ResetBlinkDuration();
 
 	double GetCurrentProgressCurveValue() const;
 

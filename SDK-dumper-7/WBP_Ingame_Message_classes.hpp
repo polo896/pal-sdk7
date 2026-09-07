@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ingame_Message.WBP_Ingame_Message_C
-// 0x0078 (0x02F0 - 0x0278)
+// 0x0070 (0x02E8 - 0x0278)
 class UWBP_Ingame_Message_C final : public UUserWidget
 {
 public:
@@ -32,27 +32,26 @@ public:
 	class UBP_PalRichTextBlock_C*                 BP_PalRichTextBlock_C_89;                          // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCanvasPanel*                           Canvas_Base;                                       // 0x02B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_Base;                                        // 0x02B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Base_Flash;                                  // 0x02C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IsShow;                                            // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FF_PalIngameMessageQueData>     QueMessageDataArray;                               // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           TimerHandle_PlayEnd;                               // 0x02E0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           TimerHandle_HideMessage;                           // 0x02E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsShow;                                            // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FF_PalIngameMessageQueData>     QueMessageDataArray;                               // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FTimerHandle                           TimerHandle_PlayEnd;                               // 0x02D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           TimerHandle_HideMessage;                           // 0x02E0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ShowMessage(const struct FF_PalIngameMessageQueData& DisplayQueData);
-	void SetMessageText(class FName TextId);
-	void QueMessage(const struct FF_PalIngameMessageQueData& QueData);
-	void PopMessage();
-	void OnTimerEvent_PlayEnd();
-	void OnTimerEvent_HideMessage();
-	void IsProcessingMessage(bool* bProcessing);
-	void ExecuteUbergraph_WBP_Ingame_Message(int32 EntryPoint);
-	void AnmEvent_Red();
-	void AnmEvent_Out();
-	void AnmEvent_In();
-	void AnmEvent_Green();
 	void AnmEvent_Blue();
+	void AnmEvent_Green();
+	void AnmEvent_In();
+	void AnmEvent_Out();
+	void AnmEvent_Red();
+	void ExecuteUbergraph_WBP_Ingame_Message(int32 EntryPoint);
+	void IsProcessingMessage(bool* bProcessing);
+	void OnTimerEvent_HideMessage();
+	void OnTimerEvent_PlayEnd();
+	void PopMessage();
+	void QueMessage(const struct FF_PalIngameMessageQueData& QueData);
+	void SetMessageText(class FName TextId);
+	void ShowMessage(const struct FF_PalIngameMessageQueData& DisplayQueData);
 
 public:
 	static class UClass* StaticClass()

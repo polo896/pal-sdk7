@@ -9,8 +9,13 @@
 ---@field OnButtonPressed FWBP_PalCommonButtonBase_COnButtonPressed
 ---@field OnButtonReleased FWBP_PalCommonButtonBase_COnButtonReleased
 ---@field bHasFocus boolean
+---@field bShouldSkipSpaceKey boolean
 local UWBP_PalCommonButtonBase_C = {}
 
+---@param MyGeometry FGeometry
+---@param InKeyEvent FKeyEvent
+---@return FEventReply
+function UWBP_PalCommonButtonBase_C:OnPreviewKeyDown(MyGeometry, InKeyEvent) end
 ---@param AudioEvent UAkAudioEvent
 function UWBP_PalCommonButtonBase_C:PlayAkSound(AudioEvent) end
 function UWBP_PalCommonButtonBase_C:BP_OnHovered() end

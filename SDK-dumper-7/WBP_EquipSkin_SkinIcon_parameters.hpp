@@ -14,40 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.Setup
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_EquipSkin_SkinIcon_C_Setup final
-{
-public:
-	class FName                                   SkinName;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEquip;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_EquipSkin_SkinIcon_C_Setup;
-
-// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.OnLoaded_F4FCEC97410E591228B5AA8532DA5248
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_EquipSkin_SkinIcon_C_OnLoaded_F4FCEC97410E591228B5AA8532DA5248 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_EquipSkin_SkinIcon_C_OnLoaded_F4FCEC97410E591228B5AA8532DA5248;
-
-// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.LoadIconEvent_Internal
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_EquipSkin_SkinIcon_C_LoadIconEvent_Internal final
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              SoftTexture;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_EquipSkin_SkinIcon_C_LoadIconEvent_Internal;
-
 // Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.ExecuteUbergraph_WBP_EquipSkin_SkinIcon
 // 0x0068 (0x0068 - 0x0000)
 struct WBP_EquipSkin_SkinIcon_C_ExecuteUbergraph_WBP_EquipSkin_SkinIcon final
@@ -64,6 +30,40 @@ public:
 	TSoftObjectPtr<class UTexture2D>              K2Node_CustomEvent_softTexture;                    // 0x0038(0x0030)(HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_EquipSkin_SkinIcon_C_ExecuteUbergraph_WBP_EquipSkin_SkinIcon;
+
+// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.LoadIconEvent_Internal
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_EquipSkin_SkinIcon_C_LoadIconEvent_Internal final
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              SoftTexture;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_EquipSkin_SkinIcon_C_LoadIconEvent_Internal;
+
+// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.OnLoaded_F4FCEC97410E591228B5AA8532DA5248
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_EquipSkin_SkinIcon_C_OnLoaded_F4FCEC97410E591228B5AA8532DA5248 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_EquipSkin_SkinIcon_C_OnLoaded_F4FCEC97410E591228B5AA8532DA5248;
+
+// Function WBP_EquipSkin_SkinIcon.WBP_EquipSkin_SkinIcon_C.Setup
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_EquipSkin_SkinIcon_C_Setup final
+{
+public:
+	class FName                                   SkinName;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEquip;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_EquipSkin_SkinIcon_C_Setup;
 
 }
 

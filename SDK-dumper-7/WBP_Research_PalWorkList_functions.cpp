@@ -17,79 +17,75 @@
 namespace SDK
 {
 
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.Setup
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Focus
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Total                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Progressing                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_PalWorkList_C::Setup(EPalWorkSuitability WorkType, int32 Level, int32 Total, bool Progressing)
+void UWBP_Research_PalWorkList_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "Setup");
-
-	Params::WBP_Research_PalWorkList_C_Setup Parms{};
-
-	Parms.WorkType = WorkType;
-	Parms.Level = Level;
-	Parms.Total = Total;
-	Parms.Progressing = Progressing;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.ExecuteUbergraph_WBP_Research_PalWorkList
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Research_PalWorkList_C::ExecuteUbergraph_WBP_Research_PalWorkList(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "ExecuteUbergraph_WBP_Research_PalWorkList");
-
-	Params::WBP_Research_PalWorkList_C_ExecuteUbergraph_WBP_Research_PalWorkList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Research_PalWorkList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "Construct");
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Normal
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Research_PalWorkList_C::BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Research_PalWorkList_C::AnmEvent_Normal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Normal");
 
-	Params::WBP_Research_PalWorkList_C_BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Selected
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Research_PalWorkList_C::AnmEvent_Selected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Selected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Unselected
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Research_PalWorkList_C::AnmEvent_Unselected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Unselected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Research_PalWorkList_C::BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Research_PalWorkList_C_BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -117,19 +113,19 @@ void UWBP_Research_PalWorkList_C::BndEvt__WBP_Research_PalWorkList_WBP_PalInvisi
 }
 
 
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_PalWorkList_C::BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Research_PalWorkList_C::BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Research_PalWorkList_C_BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Research_PalWorkList_C_BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -137,59 +133,63 @@ void UWBP_Research_PalWorkList_C::BndEvt__WBP_Research_PalWorkList_WBP_PalInvisi
 }
 
 
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Unselected
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Research_PalWorkList_C::AnmEvent_Unselected()
+void UWBP_Research_PalWorkList_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Unselected");
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Selected
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.ExecuteUbergraph_WBP_Research_PalWorkList
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_PalWorkList_C::AnmEvent_Selected()
+void UWBP_Research_PalWorkList_C::ExecuteUbergraph_WBP_Research_PalWorkList(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Selected");
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "ExecuteUbergraph_WBP_Research_PalWorkList");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Research_PalWorkList_C_ExecuteUbergraph_WBP_Research_PalWorkList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Normal
+// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.Setup
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Total                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Progressing                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_PalWorkList_C::AnmEvent_Normal()
+void UWBP_Research_PalWorkList_C::Setup(EPalWorkSuitability WorkType, int32 Level, int32 Total, bool Progressing)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Normal");
+		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "Setup");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_Research_PalWorkList_C_Setup Parms{};
 
+	Parms.WorkType = WorkType;
+	Parms.Level = Level;
+	Parms.Total = Total;
+	Parms.Progressing = Progressing;
 
-// Function WBP_Research_PalWorkList.WBP_Research_PalWorkList_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Research_PalWorkList_C::AnmEvent_Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_PalWorkList_C", "AnmEvent_Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

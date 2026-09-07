@@ -17,6 +17,62 @@
 namespace SDK
 {
 
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_DIsable
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkListBase_C::AnmEvent_DIsable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_DIsable");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_Enable
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkListBase_C::AnmEvent_Enable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_Enable");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_Select
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkListBase_C::AnmEvent_Select()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_Select");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_Unselect
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkListBase_C::AnmEvent_Unselect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_Unselect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.ExecuteUbergraph_WBP_AssignBoard_WorkListBase
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,85 +93,57 @@ void UWBP_AssignBoard_WorkListBase_C::ExecuteUbergraph_WBP_AssignBoard_WorkListB
 }
 
 
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_Unselect
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.GetAssignInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalUIBaseCampWorkFixedAssignInfo*AssignInfo                                             (Parm, OutParm, NoDestructor)
 
-void UWBP_AssignBoard_WorkListBase_C::AnmEvent_Unselect()
+void UWBP_AssignBoard_WorkListBase_C::GetAssignInfo(struct FPalUIBaseCampWorkFixedAssignInfo* AssignInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_Unselect");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "GetAssignInfo");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_AssignBoard_WorkListBase_C_GetAssignInfo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AssignInfo != nullptr)
+		*AssignInfo = std::move(Parms.AssignInfo);
 }
 
 
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_Select
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.GetFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_WorkListBase_C::AnmEvent_Select()
+void UWBP_AssignBoard_WorkListBase_C::GetFocusTarget(class UWidget** TargetWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_Select");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "GetFocusTarget");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_AssignBoard_WorkListBase_C_GetFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetWidget != nullptr)
+		*TargetWidget = Parms.TargetWidget;
 }
 
 
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_Enable
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkListBase_C::AnmEvent_Enable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_Enable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.AnmEvent_DIsable
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkListBase_C::AnmEvent_DIsable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "AnmEvent_DIsable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.Unbind
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.NotifySelect
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkListBase_C::Unbind()
+void UWBP_AssignBoard_WorkListBase_C::NotifySelect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "Unbind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkListBase_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "Setup");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "NotifySelect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,59 +169,31 @@ void UWBP_AssignBoard_WorkListBase_C::SetAssignInfo(const struct FPalUIBaseCampW
 }
 
 
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.NotifySelect
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkListBase_C::NotifySelect()
+void UWBP_AssignBoard_WorkListBase_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "NotifySelect");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.GetFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.Unbind
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkListBase_C::GetFocusTarget(class UWidget** TargetWidget)
+void UWBP_AssignBoard_WorkListBase_C::Unbind()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "GetFocusTarget");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "Unbind");
 
-	Params::WBP_AssignBoard_WorkListBase_C_GetFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TargetWidget != nullptr)
-		*TargetWidget = Parms.TargetWidget;
-}
-
-
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.GetAssignInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalUIBaseCampWorkFixedAssignInfo*AssignInfo                                             (Parm, OutParm, NoDestructor)
-
-void UWBP_AssignBoard_WorkListBase_C::GetAssignInfo(struct FPalUIBaseCampWorkFixedAssignInfo* AssignInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkListBase_C", "GetAssignInfo");
-
-	Params::WBP_AssignBoard_WorkListBase_C_GetAssignInfo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AssignInfo != nullptr)
-		*AssignInfo = std::move(Parms.AssignInfo);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

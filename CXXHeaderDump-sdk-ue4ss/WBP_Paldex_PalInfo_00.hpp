@@ -21,9 +21,15 @@ class UWBP_Paldex_PalInfo_00_C : public UUserWidget
     class UWBP_Paldex_DropItem_C* WBP_Paldex_DropItem_3;                              // 0x02F0 (size: 0x8)
     class UWBP_Paldex_DropItem_C* WBP_Paldex_DropItem_4;                              // 0x02F8 (size: 0x8)
     class UWBP_Paldex_Task_C* WBP_Paldex_Task;                                        // 0x0300 (size: 0x8)
-    TArray<UWBP_Paldex_DropItem_C*> DropItemWidgetArray;                              // 0x0308 (size: 0x10)
+    TArray<class UWBP_Paldex_DropItem_C*> DropItemWidgetArray;                        // 0x0308 (size: 0x10)
     double New Offset;                                                                // 0x0318 (size: 0x8)
+    FWBP_Paldex_PalInfo_00_COnHoveredSuitabilityPanel OnHoveredSuitabilityPanel;      // 0x0320 (size: 0x10)
+    void OnHoveredSuitabilityPanel(class UWBP_MainMenu_Pal_WorkIconText_C* Widget);
+    FWBP_Paldex_PalInfo_00_COnUnhoveredSuitabilityPanel OnUnhoveredSuitabilityPanel;  // 0x0330 (size: 0x10)
+    void OnUnhoveredSuitabilityPanel();
 
+    void OnUnhoveredSuitability_Internal();
+    void OnHoveredSuitability_Internal(class UWBP_MainMenu_Pal_WorkIconText_C* Widget);
     void ChangePalInfoScrollOffset(double Offset);
     void ShouldDisplay(FName CharacterID, bool& bDisplay);
     void SetupCaptureBonusInfo(FName CharacterID);
@@ -37,6 +43,8 @@ class UWBP_Paldex_PalInfo_00_C : public UUserWidget
     void OnInitialized();
     void Destruct();
     void ExecuteUbergraph_WBP_Paldex_PalInfo_00(int32 EntryPoint);
-}; // Size: 0x320
+    void OnUnhoveredSuitabilityPanel__DelegateSignature();
+    void OnHoveredSuitabilityPanel__DelegateSignature(class UWBP_MainMenu_Pal_WorkIconText_C* Widget);
+}; // Size: 0x340
 
 #endif

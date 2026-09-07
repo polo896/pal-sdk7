@@ -17,21 +17,81 @@
 namespace SDK
 {
 
-// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FPalPlayerDataCharacterMakeInfo&MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipSkin_ItemSlot_C::Setup(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
+void UWBP_EquipSkin_ItemSlot_C::BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "Setup");
+		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_EquipSkin_ItemSlot_C_Setup Parms{};
+	Params::WBP_EquipSkin_ItemSlot_C_BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.MakeInfo = std::move(MakeInfo);
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EquipSkin_ItemSlot_C::BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_EquipSkin_ItemSlot_C_BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EquipSkin_ItemSlot_C::BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_EquipSkin_ItemSlot_C_BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.ExecuteUbergraph_WBP_EquipSkin_ItemSlot
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EquipSkin_ItemSlot_C::ExecuteUbergraph_WBP_EquipSkin_ItemSlot(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "ExecuteUbergraph_WBP_EquipSkin_ItemSlot");
+
+	Params::WBP_EquipSkin_ItemSlot_C_ExecuteUbergraph_WBP_EquipSkin_ItemSlot Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -65,81 +125,21 @@ void UWBP_EquipSkin_ItemSlot_C::GetDressingSlotInfo(const struct FPalPlayerDataC
 }
 
 
-// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.ExecuteUbergraph_WBP_EquipSkin_ItemSlot
-// (Final, UbergraphFunction)
+// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalPlayerDataCharacterMakeInfo&MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_EquipSkin_ItemSlot_C::ExecuteUbergraph_WBP_EquipSkin_ItemSlot(int32 EntryPoint)
+void UWBP_EquipSkin_ItemSlot_C::Setup(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "ExecuteUbergraph_WBP_EquipSkin_ItemSlot");
+		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "Setup");
 
-	Params::WBP_EquipSkin_ItemSlot_C_ExecuteUbergraph_WBP_EquipSkin_ItemSlot Parms{};
+	Params::WBP_EquipSkin_ItemSlot_C_Setup Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EquipSkin_ItemSlot_C::BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_EquipSkin_ItemSlot_C_BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EquipSkin_ItemSlot_C::BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_EquipSkin_ItemSlot_C_BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EquipSkin_ItemSlot.WBP_EquipSkin_ItemSlot_C.BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EquipSkin_ItemSlot_C::BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipSkin_ItemSlot_C", "BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_EquipSkin_ItemSlot_C_BndEvt__WBP_EquipSkin_ItemSlot_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
+	Parms.MakeInfo = std::move(MakeInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

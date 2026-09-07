@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_RepairAllWindow.WBP_RepairAllWindow_C
-// 0x0018 (0x0490 - 0x0478)
+// 0x0018 (0x0498 - 0x0480)
 class UWBP_RepairAllWindow_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_35;                                          // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_RepairAll_C*            WBP_IngameMenu_RepairAll;                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_35;                                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_RepairAll_C*            WBP_IngameMenu_RepairAll;                          // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void OnSetup();
-	void ExecuteUbergraph_WBP_RepairAllWindow(int32 EntryPoint);
 	void BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature(bool IsYes);
+	void ExecuteUbergraph_WBP_RepairAllWindow(int32 EntryPoint);
+	void OnSetup();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

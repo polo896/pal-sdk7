@@ -5,7 +5,7 @@
 ---@field Effect UNiagaraComponent
 ---@field Scale double
 ---@field FixedScale double
----@field IsInit boolean
+---@field isInit boolean
 local UBP_VisualEffect_AwakeningAura_C = {}
 
 function UBP_VisualEffect_AwakeningAura_C:TryInitializeEffect() end

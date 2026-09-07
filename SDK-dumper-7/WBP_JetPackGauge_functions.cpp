@@ -17,81 +17,105 @@
 namespace SDK
 {
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetVisibilityFuelThresholdGauge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bVisible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_Default
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_JetPackGauge_C::SetVisibilityFuelThresholdGauge(bool bVisible)
+void UWBP_JetPackGauge_C::AnmEvent_Default()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetVisibilityFuelThresholdGauge");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_Default");
 
-	Params::WBP_JetPackGauge_C_SetVisibilityFuelThresholdGauge Parms{};
-
-	Parms.bVisible = bVisible;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetRemainFuelCount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   FuelCount                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_JetPackGauge_C::SetRemainFuelCount(int32 FuelCount)
+void UWBP_JetPackGauge_C::AnmEvent_In()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetRemainFuelCount");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_In");
 
-	Params::WBP_JetPackGauge_C_SetRemainFuelCount Parms{};
-
-	Parms.FuelCount = FuelCount;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetFuelRate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  FuelRate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_Low
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_JetPackGauge_C::SetFuelRate(double FuelRate)
+void UWBP_JetPackGauge_C::AnmEvent_Low()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetFuelRate");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_Low");
 
-	Params::WBP_JetPackGauge_C_SetFuelRate Parms{};
-
-	Parms.FuelRate = FuelRate;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetFuelItemName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_JetPackGauge_C::SetFuelItemName(class FName ItemName)
+void UWBP_JetPackGauge_C::AnmEvent_Out()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetFuelItemName");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_Out");
 
-	Params::WBP_JetPackGauge_C_SetFuelItemName Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ItemName = ItemName;
+
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_JetPackGauge_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_JetPackGauge_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.ExecuteUbergraph_WBP_JetPackGauge
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JetPackGauge_C::ExecuteUbergraph_WBP_JetPackGauge(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "ExecuteUbergraph_WBP_JetPackGauge");
+
+	Params::WBP_JetPackGauge_C_ExecuteUbergraph_WBP_JetPackGauge Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -117,107 +141,83 @@ void UWBP_JetPackGauge_C::SetCurrentJetpackFuelThreshold(double Threshold)
 }
 
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.ExecuteUbergraph_WBP_JetPackGauge
-// (Final, UbergraphFunction)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetFuelItemName
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ItemName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_JetPackGauge_C::ExecuteUbergraph_WBP_JetPackGauge(int32 EntryPoint)
+void UWBP_JetPackGauge_C::SetFuelItemName(class FName ItemName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "ExecuteUbergraph_WBP_JetPackGauge");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetFuelItemName");
 
-	Params::WBP_JetPackGauge_C_ExecuteUbergraph_WBP_JetPackGauge Parms{};
+	Params::WBP_JetPackGauge_C_SetFuelItemName Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ItemName = ItemName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetFuelRate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  FuelRate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_JetPackGauge_C::Destruct()
+void UWBP_JetPackGauge_C::SetFuelRate(double FuelRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "Destruct");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetFuelRate");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_JetPackGauge_C_SetFuelRate Parms{};
+
+	Parms.FuelRate = FuelRate;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetRemainFuelCount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   FuelCount                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_JetPackGauge_C::Construct()
+void UWBP_JetPackGauge_C::SetRemainFuelCount(int32 FuelCount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "Construct");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetRemainFuelCount");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_JetPackGauge_C_SetRemainFuelCount Parms{};
+
+	Parms.FuelCount = FuelCount;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_JetPackGauge.WBP_JetPackGauge_C.SetVisibilityFuelThresholdGauge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bVisible                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_JetPackGauge_C::AnmEvent_Out()
+void UWBP_JetPackGauge_C::SetVisibilityFuelThresholdGauge(bool bVisible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_Out");
+		Func = Class->GetFunction("WBP_JetPackGauge_C", "SetVisibilityFuelThresholdGauge");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_JetPackGauge_C_SetVisibilityFuelThresholdGauge Parms{};
 
+	Parms.bVisible = bVisible;
 
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_Low
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_JetPackGauge_C::AnmEvent_Low()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_Low");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_JetPackGauge_C::AnmEvent_In()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JetPackGauge.WBP_JetPackGauge_C.AnmEvent_Default
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_JetPackGauge_C::AnmEvent_Default()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JetPackGauge_C", "AnmEvent_Default");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

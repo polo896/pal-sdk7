@@ -7,7 +7,7 @@ class UBP_ActionFriendlyLookat_C : public UPalActionBase
     class UNiagaraComponent* Niagra;                                                  // 0x0168 (size: 0x8)
     double Offset;                                                                    // 0x0170 (size: 0x8)
 
-    void ChangeFace(bool Smile);
+    void ChangeFace(bool smile);
     void OnBeginAction();
     void OnEndAction();
     void TickAction(float DeltaTime);

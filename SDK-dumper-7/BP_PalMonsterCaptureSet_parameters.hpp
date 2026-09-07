@@ -18,6 +18,15 @@
 namespace SDK::Params
 {
 
+// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.OnLoaded_47E3700548CBE24684940690F7B5FBD1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalMonsterCaptureSet_C_OnLoaded_47E3700548CBE24684940690F7B5FBD1 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalMonsterCaptureSet_C_OnLoaded_47E3700548CBE24684940690F7B5FBD1;
+
 // Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.SetupSkeletalMesh
 // 0x0088 (0x0088 - 0x0000)
 struct BP_PalMonsterCaptureSet_C_SetupSkeletalMesh final
@@ -91,15 +100,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalMonsterCaptureSet_C_Request_Capture_from_PalSkin;
 
-// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalMonsterCaptureSet_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalMonsterCaptureSet_C_ReceiveTick;
-
 // Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
 struct BP_PalMonsterCaptureSet_C_ReceiveEndPlay final
@@ -152,14 +152,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalMonsterCaptureSet_C_OnRequestLoadPalClass;
 
-// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.OnLoaded_47E3700548CBE24684940690F7B5FBD1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalMonsterCaptureSet_C_OnLoaded_47E3700548CBE24684940690F7B5FBD1 final
+// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalMonsterCaptureSet_C_ReceiveTick final
 {
 public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalMonsterCaptureSet_C_OnLoaded_47E3700548CBE24684940690F7B5FBD1;
+DUMPER7_ASSERTS_BP_PalMonsterCaptureSet_C_ReceiveTick;
 
 // Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.On Loaded Pal Class
 // 0x07A0 (0x07A0 - 0x0000)

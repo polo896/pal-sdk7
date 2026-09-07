@@ -17,13 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle.BP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C
-// 0x0018 (0x0698 - 0x0680)
+// 0x0018 (0x06A8 - 0x0690)
 class ABP_SquadNPCSpawnerBossBase_BOSS_Scientist_LaserRifle_C final : public ABP_SquadNPCSpawnerBossBase_C
 {
 public:
-	class UBP_NPCSpawnPointComponent_C*           BP_NPCSpawnPointComponent2;                        // 0x0680(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_NPCSpawnPointComponent_C*           BP_NPCSpawnPointComponent;                         // 0x0688(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_NPCSpawnPointComponent_C*           BP_NPCSpawnPointComponent1;                        // 0x0690(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_NPCSpawnPointComponent_C*           BP_NPCSpawnPointComponent2;                        // 0x0690(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_NPCSpawnPointComponent_C*           BP_NPCSpawnPointComponent;                         // 0x0698(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_NPCSpawnPointComponent_C*           BP_NPCSpawnPointComponent1;                        // 0x06A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

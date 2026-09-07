@@ -17,57 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDestroyEvent
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ExecuteUbergraph_WBP_PalHudInvader
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalHudInvader_C::ParentDestroyEvent(class AActor* DestroyedActor)
+void UWBP_PalHudInvader_C::ExecuteUbergraph_WBP_PalHudInvader(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHudInvader_C", "ParentDestroyEvent");
+		Func = Class->GetFunction("WBP_PalHudInvader_C", "ExecuteUbergraph_WBP_PalHudInvader");
 
-	Params::WBP_PalHudInvader_C_ParentDestroyEvent Parms{};
+	Params::WBP_PalHudInvader_C_ExecuteUbergraph_WBP_PalHudInvader Parms{};
 
-	Parms.DestroyedActor = DestroyedActor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDeadEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalDeadInfo&              DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_PalHudInvader_C::ParentDeadEvent(const struct FPalDeadInfo& DeadInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHudInvader_C", "ParentDeadEvent");
-
-	Params::WBP_PalHudInvader_C_ParentDeadEvent Parms{};
-
-	Parms.DeadInfo = std::move(DeadInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalHudInvader.WBP_PalHudInvader_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalHudInvader_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHudInvader_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -91,21 +57,55 @@ void UWBP_PalHudInvader_C::OnInvadeEnd(const struct FPalIncidentBroadcastParamet
 }
 
 
-// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ExecuteUbergraph_WBP_PalHudInvader
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalHudInvader.WBP_PalHudInvader_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalHudInvader_C::ExecuteUbergraph_WBP_PalHudInvader(int32 EntryPoint)
+void UWBP_PalHudInvader_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalHudInvader_C", "ExecuteUbergraph_WBP_PalHudInvader");
+		Func = Class->GetFunction("WBP_PalHudInvader_C", "OnSetup");
 
-	Params::WBP_PalHudInvader_C_ExecuteUbergraph_WBP_PalHudInvader Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDeadEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalDeadInfo&              DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_PalHudInvader_C::ParentDeadEvent(const struct FPalDeadInfo& DeadInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalHudInvader_C", "ParentDeadEvent");
+
+	Params::WBP_PalHudInvader_C_ParentDeadEvent Parms{};
+
+	Parms.DeadInfo = std::move(DeadInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDestroyEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalHudInvader_C::ParentDestroyEvent(class AActor* DestroyedActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalHudInvader_C", "ParentDestroyEvent");
+
+	Params::WBP_PalHudInvader_C_ParentDestroyEvent Parms{};
+
+	Parms.DestroyedActor = DestroyedActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

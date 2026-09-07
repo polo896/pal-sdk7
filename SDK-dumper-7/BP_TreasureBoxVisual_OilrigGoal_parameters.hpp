@@ -10,16 +10,22 @@
 
 #include "Basic.hpp"
 
+#include "AkAudio_structs.hpp"
+
 
 namespace SDK::Params
 {
 
 // Function BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C.ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal
-// 0x0004 (0x0004 - 0x0000)
+// 0x002C (0x002C - 0x0000)
 struct BP_TreasureBoxVisual_OilrigGoal_C_ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0014(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_TreasureBoxVisual_OilrigGoal_C_ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal;
 

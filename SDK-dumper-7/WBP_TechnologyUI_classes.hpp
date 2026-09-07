@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Pal_structs.hpp"
+#include "Pal_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EPalUIInGameMainMenuTabType_structs.hpp"
-#include "Pal_structs.hpp"
-#include "Pal_classes.hpp"
 #include "Slate_structs.hpp"
 
 
@@ -22,50 +22,50 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_TechnologyUI.WBP_TechnologyUI_C
-// 0x0130 (0x05A8 - 0x0478)
+// 0x0130 (0x05B0 - 0x0480)
 class UWBP_TechnologyUI_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_InventoryEquipment_ItemInfo_C*     WBP_InventoryEquipment_ItemInfo;                   // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MainMenu_Technology_00_C*          WBP_MainMenu_Technology_00;                        // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    UnlockCheckMsgId;                                  // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UWBP_MainMenu_Technology_Content_C*     lastSelectedButton;                                // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              MouseDragScrollMultiply;                           // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MainMenu_Technology_Content_C*     LastHoveredTechnologyPanel;                        // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(EPalUIInGameMainMenuTabType Tab)> OnAllClearedNewFlag;             // 0x04C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class FText                                   CurrentFilterName;                                 // 0x04D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TSet<EPalItemTypeA>                           CurrentItemTypeFilter;                             // 0x04E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TSet<EPalBuildObjectTypeA>                    CurrentBuildTypeFilter;                            // 0x0538(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          CurrentShowUnlocked;                               // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           DelayDisplayTimer;                                 // 0x0590(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     OpenTechnologyMenuActionName;                      // 0x0598(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   ShortcutCloseActionHandle;                         // 0x05A0(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_InventoryEquipment_ItemInfo_C*     WBP_InventoryEquipment_ItemInfo;                   // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MainMenu_Technology_00_C*          WBP_MainMenu_Technology_00;                        // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    UnlockCheckMsgId;                                  // 0x0498(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UWBP_MainMenu_Technology_Content_C*     lastSelectedButton;                                // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              MouseDragScrollMultiply;                           // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MainMenu_Technology_Content_C*     LastHoveredTechnologyPanel;                        // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(EPalUIInGameMainMenuTabType Tab)> OnAllClearedNewFlag;             // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class FText                                   CurrentFilterName;                                 // 0x04D8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TSet<EPalItemTypeA>                           CurrentItemTypeFilter;                             // 0x04F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TSet<EPalBuildObjectTypeA>                    CurrentBuildTypeFilter;                            // 0x0540(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          CurrentShowUnlocked;                               // 0x0590(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_591[0x7];                                      // 0x0591(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           DelayDisplayTimer;                                 // 0x0598(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     OpenTechnologyMenuActionName;                      // 0x05A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   ShortcutCloseActionHandle;                         // 0x05A8(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Setup();
-	void SetTechnologyFilter();
-	void RegisterShortcutCloseInputAction();
-	void OnUnhoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnInputAction_ShortcutClose();
-	void OnHoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void OnClickedTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void On_Unlocked_Any_Technology();
-	void On_Close_Dialog(bool bResult);
-	void On_Category_Filter_Applied(const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool ShowUnlocked);
-	void ExecuteUbergraph_WBP_TechnologyUI(int32 EntryPoint);
-	void Destruct();
-	void DelayDisplay();
-	void Construct();
-	void CanClose(bool* CanCloseFlag);
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_2_OnFilterButtonClicked__DelegateSignature();
 	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature(const class FText& newText);
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_2_OnFilterButtonClicked__DelegateSignature();
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void CanClose(bool* CanCloseFlag);
+	void Construct();
+	void DelayDisplay();
+	void Destruct();
+	void ExecuteUbergraph_WBP_TechnologyUI(int32 EntryPoint);
+	void On_Category_Filter_Applied(const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool ShowUnlocked);
+	void On_Close_Dialog(bool bResult);
+	void On_Unlocked_Any_Technology();
+	void OnClickedTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void OnHoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void OnInputAction_ShortcutClose();
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnUnhoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void RegisterShortcutCloseInputAction();
+	void SetTechnologyFilter();
+	void Setup();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

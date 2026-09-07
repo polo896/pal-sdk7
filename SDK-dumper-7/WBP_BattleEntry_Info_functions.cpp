@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_BattleEntry_Info.WBP_BattleEntry_Info_C.Finished_DCF333D941FA61FD2550718E81C65E72
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_BattleEntry_Info_C::Finished_DCF333D941FA61FD2550718E81C65E72()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Info_C", "Finished_DCF333D941FA61FD2550718E81C65E72");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_BattleEntry_Info.WBP_BattleEntry_Info_C.ExecuteUbergraph_WBP_BattleEntry_Info
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_BattleEntry_Info_C::ExecuteUbergraph_WBP_BattleEntry_Info(int32 EntryP
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BattleEntry_Info.WBP_BattleEntry_Info_C.Finished_DCF333D941FA61FD2550718E81C65E72
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_BattleEntry_Info_C::Finished_DCF333D941FA61FD2550718E81C65E72()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BattleEntry_Info_C", "Finished_DCF333D941FA61FD2550718E81C65E72");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

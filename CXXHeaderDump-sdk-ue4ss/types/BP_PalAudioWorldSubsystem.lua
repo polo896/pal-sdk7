@@ -16,8 +16,11 @@
 ---@field BattleBGMMap2 TMap<EPalBattleBGMType, EPalAudioState>
 ---@field IsDisableBattleBGM boolean
 ---@field BattleBGMRankCache EPalBattleBGMType
+---@field IsRaidStateApplied boolean
 local UBP_PalAudioWorldSubsystem_C = {}
 
+---@return boolean
+function UBP_PalAudioWorldSubsystem_C:IsRaidBGMSuppressed() end
 ---@param Selection EPalBattleBGMType
 function UBP_PalAudioWorldSubsystem_C:ResetBossBGMState(Selection) end
 ---@param Sequencer UPalArenaSequencer
@@ -64,13 +67,13 @@ function UBP_PalAudioWorldSubsystem_C:OnPlayerExitBaseCamp(Player, BaseCampModel
 ---@param Player APalPlayerCharacter
 ---@param BaseCampModel UPalBaseCampModel
 function UBP_PalAudioWorldSubsystem_C:OnPlayerEnterBaseCamp(Player, BaseCampModel) end
-function UBP_PalAudioWorldSubsystem_C:UpdateRaid() end
+UBP_PalAudioWorldSubsystem_C['Update Raid'] = function(self, ) end
 ---@param Param FPalIncidentBroadcastParameter
 function UBP_PalAudioWorldSubsystem_C:OnArrivedRaid(Param) end
 ---@param Parameter FPalIncidentBroadcastParameter
 function UBP_PalAudioWorldSubsystem_C:OnEndRaid(Parameter) end
 ---@param Parameter FPalIncidentBroadcastParameter
-function UBP_PalAudioWorldSubsystem_C:OnStartRaid(Parameter) end
+UBP_PalAudioWorldSubsystem_C['On Start Raid'] = function(self, Parameter) end
 ---@param NewParam AActor
 function UBP_PalAudioWorldSubsystem_C:CreateDebugModel(NewParam) end
 ---@param IsBattleMode boolean
@@ -89,6 +92,12 @@ function UBP_PalAudioWorldSubsystem_C:RespawnPlayer(Player) end
 ---@param Pawn APawn
 ---@param Controller AController
 function UBP_PalAudioWorldSubsystem_C:OnSpawnedLocalPlayerCharacter(Pawn, Controller) end
+UBP_PalAudioWorldSubsystem_C['カスタムイベント'] = function(self, ) end
+---@param bIsSkipped boolean
+UBP_PalAudioWorldSubsystem_C['カスタムイベント_0'] = function(self, bIsSkipped) end
+---@param PlayerState APalPlayerState
+UBP_PalAudioWorldSubsystem_C['カスタムイベント_1'] = function(self, PlayerState) end
+UBP_PalAudioWorldSubsystem_C['カスタムイベント_2'] = function(self, ) end
 ---@param EntryPoint int32
 function UBP_PalAudioWorldSubsystem_C:ExecuteUbergraph_BP_PalAudioWorldSubsystem(EntryPoint) end
 

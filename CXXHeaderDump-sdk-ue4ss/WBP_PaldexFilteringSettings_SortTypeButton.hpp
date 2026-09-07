@@ -6,14 +6,14 @@ class UWBP_PaldexFilteringSettings_SortTypeButton_C : public UPalUserWidget
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0450 (size: 0x8)
     class UWidgetAnimation* Anm_Select;                                               // 0x0458 (size: 0x8)
     class UWidgetAnimation* Anm_Unselect;                                             // 0x0460 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0468 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0468 (size: 0x8)
     class UImage* Base;                                                               // 0x0470 (size: 0x8)
     class UImage* Base_Select;                                                        // 0x0478 (size: 0x8)
     class UImage* Frame;                                                              // 0x0480 (size: 0x8)
     class UBP_PalTextBlock_C* Text_SortType;                                          // 0x0488 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0490 (size: 0x8)
     EPalUIPaldexSortType BindSortType;                                                // 0x0498 (size: 0x1)
-    TMap<EPalUIPaldexSortType, FDataTableRowHandle> SortTypeMsgIDMap;                 // 0x04A0 (size: 0x50)
+    TMap<class EPalUIPaldexSortType, class FDataTableRowHandle> SortTypeMsgIDMap;     // 0x04A0 (size: 0x50)
     FWBP_PaldexFilteringSettings_SortTypeButton_COnClicked OnClicked;                 // 0x04F0 (size: 0x10)
     void OnClicked(class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget);
 

@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_IngameMenuConstruction_info_OLD.WBP_IngameMenuConstruction_info_OLD_C.Set Build Object Data
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalBuildObjectData&       BuildObjectData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_IngameMenuConstruction_info_OLD_C::Set_Build_Object_Data(const struct FPalBuildObjectData& BuildObjectData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_info_OLD_C", "Set Build Object Data");
+
+	Params::WBP_IngameMenuConstruction_info_OLD_C_Set_Build_Object_Data Parms{};
+
+	Parms.BuildObjectData = std::move(BuildObjectData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_IngameMenuConstruction_info_OLD.WBP_IngameMenuConstruction_info_OLD_C.SetMaterialInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -36,26 +56,6 @@ void UWBP_IngameMenuConstruction_info_OLD_C::SetMaterialInfo(class UWBP_IngameMe
 	Parms.Widget = Widget;
 	Parms.ID = ID;
 	Parms.NeedNum = NeedNum;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenuConstruction_info_OLD.WBP_IngameMenuConstruction_info_OLD_C.Set Build Object Data
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalBuildObjectData&       BuildObjectData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_IngameMenuConstruction_info_OLD_C::Set_Build_Object_Data(const struct FPalBuildObjectData& BuildObjectData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_info_OLD_C", "Set Build Object Data");
-
-	Params::WBP_IngameMenuConstruction_info_OLD_C_Set_Build_Object_Data Parms{};
-
-	Parms.BuildObjectData = std::move(BuildObjectData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

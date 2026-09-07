@@ -45,9 +45,9 @@ public:
 	class UCurveLinearColor*                      Cloud_color_curve;                                 // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void UpdateSunDirection();
 	void RefreshMaterial();
+	void UpdateSunDirection();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

@@ -17,52 +17,79 @@
 namespace SDK
 {
 
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_QuickStackCheckPopup_C::Setup()
+void UWBP_QuickStackCheckPopup_C::BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "Setup");
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_QuickStackCheckPopup_C::OnSetup()
+void UWBP_QuickStackCheckPopup_C::BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "OnSetup");
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.GetRightButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_QuickStackCheckPopup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_QuickStackCheckPopup_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.ExecuteUbergraph_WBP_QuickStackCheckPopup
+// (Final, UbergraphFunction)
 // Parameters:
-// class UCommonButtonBase**               Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuickStackCheckPopup_C::GetRightButton(class UCommonButtonBase** Button)
+void UWBP_QuickStackCheckPopup_C::ExecuteUbergraph_WBP_QuickStackCheckPopup(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "GetRightButton");
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "ExecuteUbergraph_WBP_QuickStackCheckPopup");
 
-	Params::WBP_QuickStackCheckPopup_C_GetRightButton Parms{};
+	Params::WBP_QuickStackCheckPopup_C_ExecuteUbergraph_WBP_QuickStackCheckPopup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
 }
 
 
@@ -87,77 +114,50 @@ void UWBP_QuickStackCheckPopup_C::GetLeftButton(class UCommonButtonBase** rightB
 }
 
 
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.ExecuteUbergraph_WBP_QuickStackCheckPopup
-// (Final, UbergraphFunction)
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.GetRightButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase**               Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuickStackCheckPopup_C::ExecuteUbergraph_WBP_QuickStackCheckPopup(int32 EntryPoint)
+void UWBP_QuickStackCheckPopup_C::GetRightButton(class UCommonButtonBase** Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "ExecuteUbergraph_WBP_QuickStackCheckPopup");
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "GetRightButton");
 
-	Params::WBP_QuickStackCheckPopup_C_ExecuteUbergraph_WBP_QuickStackCheckPopup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_QuickStackCheckPopup_C_GetRightButton Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
 }
 
 
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_QuickStackCheckPopup_C::Destruct()
+void UWBP_QuickStackCheckPopup_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "Destruct");
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_QuickStackCheckPopup_C::Construct()
+void UWBP_QuickStackCheckPopup_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_QuickStackCheckPopup_C::BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_QuickStackCheckPopup_C::BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_QuickStackCheckPopup_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

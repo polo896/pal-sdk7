@@ -129,7 +129,7 @@ class UBlueprintGameplayTagLibrary : public UBlueprintFunctionLibrary
     int32 GetNumGameplayTagsInContainer(const FGameplayTagContainer& TagContainer);
     FString GetDebugStringFromGameplayTagContainer(const FGameplayTagContainer& TagContainer);
     FString GetDebugStringFromGameplayTag(FGameplayTag GameplayTag);
-    void GetAllActorsOfClassMatchingTagQuery(class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass, const FGameplayTagQuery& GameplayTagQuery, TArray<AActor*>& OutActors);
+    void GetAllActorsOfClassMatchingTagQuery(class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass, const FGameplayTagQuery& GameplayTagQuery, TArray<class AActor*>& OutActors);
     bool EqualEqual_GameplayTagContainer(const FGameplayTagContainer& A, const FGameplayTagContainer& B);
     bool EqualEqual_GameplayTag(FGameplayTag A, FGameplayTag B);
     bool DoesTagAssetInterfaceHaveTag(TScriptInterface<class IGameplayTagAssetInterface> TagContainerInterface, FGameplayTag Tag);
@@ -153,7 +153,7 @@ class UEditableGameplayTagQueryExpression : public UObject
 
 class UEditableGameplayTagQueryExpression_AllExprMatch : public UEditableGameplayTagQueryExpression
 {
-    TArray<UEditableGameplayTagQueryExpression*> Expressions;                         // 0x0028 (size: 0x10)
+    TArray<class UEditableGameplayTagQueryExpression*> Expressions;                   // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -165,7 +165,7 @@ class UEditableGameplayTagQueryExpression_AllTagsMatch : public UEditableGamepla
 
 class UEditableGameplayTagQueryExpression_AnyExprMatch : public UEditableGameplayTagQueryExpression
 {
-    TArray<UEditableGameplayTagQueryExpression*> Expressions;                         // 0x0028 (size: 0x10)
+    TArray<class UEditableGameplayTagQueryExpression*> Expressions;                   // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -177,7 +177,7 @@ class UEditableGameplayTagQueryExpression_AnyTagsMatch : public UEditableGamepla
 
 class UEditableGameplayTagQueryExpression_NoExprMatch : public UEditableGameplayTagQueryExpression
 {
-    TArray<UEditableGameplayTagQueryExpression*> Expressions;                         // 0x0028 (size: 0x10)
+    TArray<class UEditableGameplayTagQueryExpression*> Expressions;                   // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -203,8 +203,8 @@ class UGameplayTagsList : public UObject
 
 class UGameplayTagsManager : public UObject
 {
-    TMap<FName, FGameplayTagSource> TagSources;                                       // 0x0160 (size: 0x50)
-    TArray<UDataTable*> GameplayTagTables;                                            // 0x0238 (size: 0x10)
+    TMap<class FName, class FGameplayTagSource> TagSources;                           // 0x0160 (size: 0x50)
+    TArray<class UDataTable*> GameplayTagTables;                                      // 0x0238 (size: 0x10)
 
 }; // Size: 0x248
 

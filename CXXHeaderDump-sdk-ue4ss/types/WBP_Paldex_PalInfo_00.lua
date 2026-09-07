@@ -21,8 +21,13 @@
 ---@field WBP_Paldex_Task UWBP_Paldex_Task_C
 ---@field DropItemWidgetArray TArray<UWBP_Paldex_DropItem_C>
 ---@field ['New Offset'] double
+---@field OnHoveredSuitabilityPanel FWBP_Paldex_PalInfo_00_COnHoveredSuitabilityPanel
+---@field OnUnhoveredSuitabilityPanel FWBP_Paldex_PalInfo_00_COnUnhoveredSuitabilityPanel
 local UWBP_Paldex_PalInfo_00_C = {}
 
+function UWBP_Paldex_PalInfo_00_C:OnUnhoveredSuitability_Internal() end
+---@param Widget UWBP_MainMenu_Pal_WorkIconText_C
+function UWBP_Paldex_PalInfo_00_C:OnHoveredSuitability_Internal(Widget) end
 ---@param Offset double
 function UWBP_Paldex_PalInfo_00_C:ChangePalInfoScrollOffset(Offset) end
 ---@param CharacterID FName
@@ -47,5 +52,8 @@ function UWBP_Paldex_PalInfo_00_C:OnInitialized() end
 function UWBP_Paldex_PalInfo_00_C:Destruct() end
 ---@param EntryPoint int32
 function UWBP_Paldex_PalInfo_00_C:ExecuteUbergraph_WBP_Paldex_PalInfo_00(EntryPoint) end
+function UWBP_Paldex_PalInfo_00_C:OnUnhoveredSuitabilityPanel__DelegateSignature() end
+---@param Widget UWBP_MainMenu_Pal_WorkIconText_C
+function UWBP_Paldex_PalInfo_00_C:OnHoveredSuitabilityPanel__DelegateSignature(Widget) end
 
 

@@ -39,10 +39,11 @@ public:
 	TMulticastInlineDelegate<void(EPalLocationType FilterMap, bool IsEnable)> OnFilterChanged;       // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ChangeFilter(EPalLocationType LocationType, bool IsEnable);
-	void Construct();
-	void ExecuteUbergraph_WBP_MapFilter_Win(int32 EntryPoint);
+	void Setup(const TSet<EPalLocationType>& Filter);
 	void ForceFTEnable(bool IsEnable);
+	void ExecuteUbergraph_WBP_MapFilter_Win(int32 EntryPoint);
+	void Construct();
+	void ChangeFilter(EPalLocationType LocationType, bool IsEnable);
 
 public:
 	static class UClass* StaticClass()

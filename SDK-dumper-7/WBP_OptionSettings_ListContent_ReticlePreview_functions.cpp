@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetReticleColor
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ColorIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_ReticlePreview_C::SetReticleColor(int32 ColorIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "SetReticleColor");
+
+	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor Parms{};
+
+	Parms.ColorIndex = ColorIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetOutline
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,26 +72,6 @@ void UWBP_OptionSettings_ListContent_ReticlePreview_C::ExecuteUbergraph_WBP_Opti
 	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetReticleColor
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ColorIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_ReticlePreview_C::SetReticleColor(int32 ColorIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "SetReticleColor");
-
-	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_SetReticleColor Parms{};
-
-	Parms.ColorIndex = ColorIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

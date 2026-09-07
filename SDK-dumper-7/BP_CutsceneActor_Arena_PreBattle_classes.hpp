@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CutsceneActor_Arena_PreBattle.BP_CutsceneActor_Arena_PreBattle_C
-// 0x0010 (0x03C0 - 0x03B0)
+// 0x0010 (0x0418 - 0x0408)
 class ABP_CutsceneActor_Arena_PreBattle_C final : public ABP_CutsceneActorBase_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalCutsceneArenaPreBattleBindParameter* PreBattleBindParameter;                           // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0408(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalCutsceneArenaPreBattleBindParameter* PreBattleBindParameter;                           // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_CutsceneActor_Arena_PreBattle(int32 EntryPoint);

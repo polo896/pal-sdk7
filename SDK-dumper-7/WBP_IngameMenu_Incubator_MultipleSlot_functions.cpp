@@ -17,145 +17,25 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.Unbind
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::Unbind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "Unbind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetupEgg
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::SetupEgg(class UPalWorkProgress* WorkProgress)
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "SetupEgg");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature");
 
-	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_SetupEgg Parms{};
+	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature Parms{};
 
-	Parms.WorkProgress = WorkProgress;
+	Parms.ButtonBase = ButtonBase;
+	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetSlot
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalItemSlot*                     TargetSlot_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::SetSlot(class UPalItemSlot* TargetSlot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "SetSlot");
-
-	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_SetSlot Parms{};
-
-	Parms.TargetSlot_0 = TargetSlot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetEmpty
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::SetEmpty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "SetEmpty");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.OnSlotContentUpdate
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalItemSlot*                     Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::OnSlotContentUpdate(class UPalItemSlot* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "OnSlotContentUpdate");
-
-	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_OnSlotContentUpdate Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.On Update Work Amount
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::On_Update_Work_Amount(class UPalWorkProgress* WorkProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "On Update Work Amount");
-
-	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_On_Update_Work_Amount Parms{};
-
-	Parms.WorkProgress = WorkProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot");
-
-	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -181,25 +61,145 @@ void UWBP_IngameMenu_Incubator_MultipleSlot_C::BndEvt__WBP_IngameMenu_Incubator_
 }
 
 
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_IngameMenu_Incubator_MultipleSlot_C::BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "Construct");
 
-	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ButtonBase = ButtonBase;
-	Parms.PressType = PressType;
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot");
+
+	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.On Update Work Amount
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::On_Update_Work_Amount(class UPalWorkProgress* WorkProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "On Update Work Amount");
+
+	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_On_Update_Work_Amount Parms{};
+
+	Parms.WorkProgress = WorkProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.OnSlotContentUpdate
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalItemSlot*                     Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::OnSlotContentUpdate(class UPalItemSlot* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "OnSlotContentUpdate");
+
+	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_OnSlotContentUpdate Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetEmpty
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::SetEmpty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "SetEmpty");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetSlot
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalItemSlot*                     TargetSlot_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::SetSlot(class UPalItemSlot* TargetSlot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "SetSlot");
+
+	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_SetSlot Parms{};
+
+	Parms.TargetSlot_0 = TargetSlot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetupEgg
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::SetupEgg(class UPalWorkProgress* WorkProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "SetupEgg");
+
+	Params::WBP_IngameMenu_Incubator_MultipleSlot_C_SetupEgg Parms{};
+
+	Parms.WorkProgress = WorkProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.Unbind
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_MultipleSlot_C::Unbind()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_MultipleSlot_C", "Unbind");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

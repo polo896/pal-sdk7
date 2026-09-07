@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C.OnFinishOpenAnimation
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_TreasureBoxVisual_OilrigGoal_C::OnFinishOpenAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_OilrigGoal_C", "OnFinishOpenAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C.ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal
 // (Final, UbergraphFunction)
 // Parameters:
@@ -51,6 +37,20 @@ void ABP_TreasureBoxVisual_OilrigGoal_C::ExecuteUbergraph_BP_TreasureBoxVisual_O
 }
 
 
+// Function BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C.OnFinishOpenAnimation
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_TreasureBoxVisual_OilrigGoal_C::OnFinishOpenAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TreasureBoxVisual_OilrigGoal_C", "OnFinishOpenAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -60,6 +60,20 @@ void ABP_TreasureBoxVisual_OilrigGoal_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_TreasureBoxVisual_OilrigGoal_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TreasureBoxVisual_OilrigGoal.BP_TreasureBoxVisual_OilrigGoal_C.StartOpenAnimation
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_TreasureBoxVisual_OilrigGoal_C::StartOpenAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TreasureBoxVisual_OilrigGoal_C", "StartOpenAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

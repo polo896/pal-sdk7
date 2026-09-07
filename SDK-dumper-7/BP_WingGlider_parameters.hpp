@@ -10,112 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function BP_WingGlider.BP_WingGlider_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_WingGlider_C_ReceiveTick final
+// Function BP_WingGlider.BP_WingGlider_C.CustomEvent
+// 0x0010 (0x0010 - 0x0000)
+struct BP_WingGlider_C_CustomEvent final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EMovementMode                                 prevMode;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EMovementMode                                 newMode;                                           // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalCharacterMovementCustomMode               PrevCustomMode;                                    // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalCharacterMovementCustomMode               NewCustomMode;                                     // 0x000B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_WingGlider_C_ReceiveTick;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_801568FB493F6CAB9A9531919F9B39AD
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnInterrupted_801568FB493F6CAB9A9531919F9B39AD final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnInterrupted_801568FB493F6CAB9A9531919F9B39AD;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_801568FB493F6CAB9A9531919F9B39AD
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnCompleted_801568FB493F6CAB9A9531919F9B39AD final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnCompleted_801568FB493F6CAB9A9531919F9B39AD;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA;
-
-// Function BP_WingGlider.BP_WingGlider_C.OnBlendOut_801568FB493F6CAB9A9531919F9B39AD
-// 0x0008 (0x0008 - 0x0000)
-struct BP_WingGlider_C_OnBlendOut_801568FB493F6CAB9A9531919F9B39AD final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_WingGlider_C_OnBlendOut_801568FB493F6CAB9A9531919F9B39AD;
+DUMPER7_ASSERTS_BP_WingGlider_C_CustomEvent;
 
 // Function BP_WingGlider.BP_WingGlider_C.ExecuteUbergraph_BP_WingGlider
 // 0x01D0 (0x01D0 - 0x0000)
@@ -184,18 +98,104 @@ public:
 };
 DUMPER7_ASSERTS_BP_WingGlider_C_ExecuteUbergraph_BP_WingGlider;
 
-// Function BP_WingGlider.BP_WingGlider_C.CustomEvent
-// 0x0010 (0x0010 - 0x0000)
-struct BP_WingGlider_C_CustomEvent final
+// Function BP_WingGlider.BP_WingGlider_C.OnBlendOut_801568FB493F6CAB9A9531919F9B39AD
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnBlendOut_801568FB493F6CAB9A9531919F9B39AD final
 {
 public:
-	class UPalCharacterMovementComponent*         Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EMovementMode                                 prevMode;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EMovementMode                                 newMode;                                           // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalCharacterMovementCustomMode               PrevCustomMode;                                    // 0x000A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalCharacterMovementCustomMode               NewCustomMode;                                     // 0x000B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_WingGlider_C_CustomEvent;
+DUMPER7_ASSERTS_BP_WingGlider_C_OnBlendOut_801568FB493F6CAB9A9531919F9B39AD;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_801568FB493F6CAB9A9531919F9B39AD
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnCompleted_801568FB493F6CAB9A9531919F9B39AD final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnCompleted_801568FB493F6CAB9A9531919F9B39AD;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_801568FB493F6CAB9A9531919F9B39AD
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnInterrupted_801568FB493F6CAB9A9531919F9B39AD final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnInterrupted_801568FB493F6CAB9A9531919F9B39AD;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD;
+
+// Function BP_WingGlider.BP_WingGlider_C.OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA
+// 0x0008 (0x0008 - 0x0000)
+struct BP_WingGlider_C_OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA;
+
+// Function BP_WingGlider.BP_WingGlider_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_WingGlider_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WingGlider_C_ReceiveTick;
 
 }
 

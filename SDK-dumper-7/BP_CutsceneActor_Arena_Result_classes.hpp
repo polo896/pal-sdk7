@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CutsceneActor_Arena_Result.BP_CutsceneActor_Arena_Result_C
-// 0x0000 (0x03B0 - 0x03B0)
+// 0x0000 (0x0408 - 0x0408)
 class ABP_CutsceneActor_Arena_Result_C final : public ABP_CutsceneActorBase_C
 {
 public:

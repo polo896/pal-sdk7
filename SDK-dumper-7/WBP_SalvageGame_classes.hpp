@@ -19,33 +19,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SalvageGame.WBP_SalvageGame_C
-// 0x0038 (0x04B0 - 0x0478)
+// 0x0038 (0x04B8 - 0x0480)
 class UWBP_SalvageGame_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_216;                                         // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Fishing_SalvageGame_C*             WBP_Fishing_SalvageGame;                           // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	double                                        NeedleRotateAngularSpeed;                          // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        NeedleAngle;                                       // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bStoppedNeedle;                                    // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A1[0x3];                                      // 0x04A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFloatInterval                         SuccessAngleRange;                                 // 0x04A4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFinishedGame;                                     // 0x04AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_216;                                         // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Fishing_SalvageGame_C*             WBP_Fishing_SalvageGame;                           // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	double                                        NeedleRotateAngularSpeed;                          // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        NeedleAngle;                                       // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStoppedNeedle;                                    // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A9[0x3];                                      // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFloatInterval                         SuccessAngleRange;                                 // 0x04AC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFinishedGame;                                     // 0x04B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateRouletteNeedle(double Angle);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void SetupUI();
-	void SetupRouletteSetting(double SuccessStartAngle, double SuccessEndAngle);
-	void RequestFinishSalvageGame();
-	void ProceedNeedle(double DeltaTime);
-	void PlayResultAnimation(bool bSuccess);
-	void OnSetup();
-	void OnClose();
-	void OnActionInteract();
-	void GetUIModel(class UPalUIMapObjectTreasureBoxSalvageGameModel** Model);
 	void ExecuteUbergraph_WBP_SalvageGame(int32 EntryPoint);
+	void GetUIModel(class UPalUIMapObjectTreasureBoxSalvageGameModel** Model);
+	void OnActionInteract();
+	void OnClose();
+	void OnSetup();
+	void PlayResultAnimation(bool bSuccess);
+	void ProceedNeedle(double DeltaTime);
+	void RequestFinishSalvageGame();
+	void SetupRouletteSetting(double SuccessStartAngle, double SuccessEndAngle);
+	void SetupUI();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void UpdateRouletteNeedle(double Angle);
 
 public:
 	static class UClass* StaticClass()

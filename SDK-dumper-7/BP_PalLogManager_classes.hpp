@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalLogManager.BP_PalLogManager_C
-// 0x0000 (0x01C0 - 0x01C0)
+// 0x0000 (0x0210 - 0x0210)
 class UBP_PalLogManager_C final : public UPalLogManager
 {
 public:

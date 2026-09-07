@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MainQuestBlock_CraftTools_HasAxe_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_HasWeapon_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasWeapon_Base.0"
+    },
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_PalQuestBlock_HasWeapon_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasWeapon_Base.0"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MainQuestBlock_CraftTools_HasAxe_C'Default__BP_MainQuestBlock_CraftTools_HasAxe_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_CraftTools_HasAxe.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_MainQuestBlock_CraftTools_HasAxe_C",
+    "Name": "Default__BP_MainQuestBlock_CraftTools_HasAxe_C",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_MainQuestBlock_CraftTools_HasAxe.BP_MainQuestBlock_CraftTools_HasAxe_C'",
+    "Template": {
+      "ObjectName": "BP_PalQuestBlock_HasWeapon_Base_C'Default__BP_PalQuestBlock_HasWeapon_Base_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/MainQuest/Block/BP_PalQuestBlock_HasWeapon_Base.1"
+    },
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RequiredItem": {
+        "Key": "Axe_Tier_00"
+      },
+      "DescriptionText": {
+        "RowName": "Quest_Main_QuestObject_CraftTools_CraftAxe"
+      }
+    }
+  }
+]

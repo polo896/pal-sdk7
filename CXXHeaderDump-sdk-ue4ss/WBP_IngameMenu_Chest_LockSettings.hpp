@@ -3,22 +3,22 @@
 
 class UWBP_IngameMenu_Chest_LockSettings_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* ButtonPrivateLockToggle;                         // 0x0480 (size: 0x8)
-    class UCheckBox* CheckBox_80;                                                     // 0x0488 (size: 0x8)
-    class UCheckBox* CheckBox_Guest;                                                  // 0x0490 (size: 0x8)
-    class UCheckBox* CheckBox_Member;                                                 // 0x0498 (size: 0x8)
-    class UCheckBox* CheckBox_SubMaster;                                              // 0x04A0 (size: 0x8)
-    class UCheckBox* CheckBoxPrivateLock;                                             // 0x04A8 (size: 0x8)
-    class UHorizontalBox* HorizontalBox_PrivateLock;                                  // 0x04B0 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_Confirm;                              // 0x04B8 (size: 0x8)
-    class UWBP_CommonButton_C* WBP_CommonButton_Password;                             // 0x04C0 (size: 0x8)
-    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04C8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Guest;                    // 0x04D0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock;                     // 0x04D8 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Member;                   // 0x04E0 (size: 0x8)
-    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_SubMaster;                // 0x04E8 (size: 0x8)
-    class UPalMapObjectPasswordLockModule* PasswordLockModule;                        // 0x04F0 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UWBP_PalInvisibleButton_C* ButtonPrivateLockToggle;                         // 0x0488 (size: 0x8)
+    class UCheckBox* CheckBox_80;                                                     // 0x0490 (size: 0x8)
+    class UCheckBox* CheckBox_Guest;                                                  // 0x0498 (size: 0x8)
+    class UCheckBox* CheckBox_Member;                                                 // 0x04A0 (size: 0x8)
+    class UCheckBox* CheckBox_SubMaster;                                              // 0x04A8 (size: 0x8)
+    class UCheckBox* CheckBoxPrivateLock;                                             // 0x04B0 (size: 0x8)
+    class UHorizontalBox* HorizontalBox_PrivateLock;                                  // 0x04B8 (size: 0x8)
+    class UWBP_CommonButton_C* WBP_CommonButton_Confirm;                              // 0x04C0 (size: 0x8)
+    class UWBP_CommonButton_C* WBP_CommonButton_Password;                             // 0x04C8 (size: 0x8)
+    class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04D0 (size: 0x8)
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Guest;                    // 0x04D8 (size: 0x8)
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Lock;                     // 0x04E0 (size: 0x8)
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Member;                   // 0x04E8 (size: 0x8)
+    class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_SubMaster;                // 0x04F0 (size: 0x8)
+    class UPalMapObjectPasswordLockModule* PasswordLockModule;                        // 0x04F8 (size: 0x8)
 
     class UWidget* DoCustomNavi_ToLockButton(EUINavigation Navigation);
     class UWidget* DoCustomNavi_ToPrivateLockOrSubMaster(EUINavigation Navigation);
@@ -44,6 +44,6 @@ class UWBP_IngameMenu_Chest_LockSettings_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void ExecuteUbergraph_WBP_IngameMenu_Chest_LockSettings(int32 EntryPoint);
-}; // Size: 0x4F8
+}; // Size: 0x500
 
 #endif

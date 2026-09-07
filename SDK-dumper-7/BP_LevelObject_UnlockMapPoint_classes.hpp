@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_LevelObject_UnlockMapPoint.BP_LevelObject_UnlockMapPoint_C
-// 0x0008 (0x0400 - 0x03F8)
+// 0x0008 (0x0418 - 0x0410)
 class ABP_LevelObject_UnlockMapPoint_C final : public ABP_LevelObject_TowerFastTravelPoint_C
 {
 public:
-	class UChildActorComponent*                   BP_pal_map_small_tower;                            // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   BP_pal_map_small_tower;                            // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

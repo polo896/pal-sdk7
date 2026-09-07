@@ -20,50 +20,50 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C
-// 0x00C8 (0x0540 - 0x0478)
+// 0x00C8 (0x0548 - 0x0480)
 class UWBP_Ingame_Incubator_AllOpen_C final : public UPalUIObtainCharactersPerformance
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anm_Close;                                         // 0x0480(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Open;                                          // 0x0488(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_RewardInfo;                                   // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_Title;                                        // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CommonButton_C*                    WBP_CommonButton_Close;                            // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List;                 // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_1;               // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_2;               // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_3;               // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_4;               // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_5;               // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_6;               // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_7;               // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_8;               // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_9;               // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Incubator_PalInfo_C*        WBP_Ingame_Incubator_PalInfo;                      // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<struct FPalInstanceID>                 Hatched_IDs;                                       // 0x0500(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UWBP_Ingame_Incubator_AllOpen_List_C*> HatchedList;                                 // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	struct FPalUIActionBindData                   ViewDetailAction;                                  // 0x0520(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_524[0x4];                                      // 0x0524(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          LastHoveredHandle;                                 // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          Closing;                                           // 0x0530(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_531[0x3];                                      // 0x0531(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   PalStorageReplicateKey;                            // 0x0534(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anm_Close;                                         // 0x0488(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_Open;                                          // 0x0490(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_RewardInfo;                                   // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_Title;                                        // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CommonButton_C*                    WBP_CommonButton_Close;                            // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List;                 // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_1;               // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_2;               // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_3;               // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_4;               // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_5;               // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_6;               // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_7;               // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_8;               // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_AllOpen_List_C*   WBP_Ingame_Incubator_AllOpen_List_9;               // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Incubator_PalInfo_C*        WBP_Ingame_Incubator_PalInfo;                      // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<struct FPalInstanceID>                 Hatched_IDs;                                       // 0x0508(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UWBP_Ingame_Incubator_AllOpen_List_C*> HatchedList;                                 // 0x0518(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPalUIActionBindData                   ViewDetailAction;                                  // 0x0528(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	uint8                                         Pad_52C[0x4];                                      // 0x052C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          LastHoveredHandle;                                 // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          Closing;                                           // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_539[0x3];                                      // 0x0539(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   PalStorageReplicateKey;                            // 0x053C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ViewHatchedDetail();
-	void Setup();
-	void OnSyncIndividualParameter(class UPalIndividualCharacterHandle* Handle, class UPalIndividualCharacterParameter* Parameter);
-	void OnSetup();
-	void OnInitialized();
-	void OnHatchedInfoUnhovered();
-	void OnHatchedInfoHovered(int32 Index_0);
-	void OnClose();
-	void Finished_87D9091741F1283AF653F79A16402783();
-	void ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen(int32 EntryPoint);
-	void BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void AnmEvent_Open();
 	void AnmEvent_Close();
+	void AnmEvent_Open();
+	void BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen(int32 EntryPoint);
+	void Finished_87D9091741F1283AF653F79A16402783();
+	void OnClose();
+	void OnHatchedInfoHovered(int32 Index_0);
+	void OnHatchedInfoUnhovered();
+	void OnInitialized();
+	void OnSetup();
+	void OnSyncIndividualParameter(class UPalIndividualCharacterHandle* Handle, class UPalIndividualCharacterParameter* Parameter);
+	void Setup();
+	void ViewHatchedDetail();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

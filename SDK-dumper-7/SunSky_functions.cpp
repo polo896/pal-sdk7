@@ -17,51 +17,55 @@
 namespace SDK
 {
 
-// Function SunSky.SunSky_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ASunSky_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SunSky_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SunSky.SunSky_C.UpdateSun
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ASunSky_C::UpdateSun()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SunSky_C", "UpdateSun");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SunSky.SunSky_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function SunSky.SunSky_C.ExecuteUbergraph_SunSky
+// (Final, UbergraphFunction)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASunSky_C::ReceiveTick(float DeltaSeconds)
+void ASunSky_C::ExecuteUbergraph_SunSky(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SunSky_C", "ReceiveTick");
+		Func = Class->GetFunction("SunSky_C", "ExecuteUbergraph_SunSky");
 
-	Params::SunSky_C_ReceiveTick Parms{};
+	Params::SunSky_C_ExecuteUbergraph_SunSky Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SunSky.SunSky_C.GetHMSFromSolarTime
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  SolarTime_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Hour                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Minute                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Second                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASunSky_C::GetHMSFromSolarTime(double SolarTime_0, int32* Hour, int32* Minute, int32* Second)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SunSky_C", "GetHMSFromSolarTime");
+
+	Params::SunSky_C_GetHMSFromSolarTime Parms{};
+
+	Parms.SolarTime_0 = SolarTime_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Hour != nullptr)
+		*Hour = Parms.Hour;
+
+	if (Minute != nullptr)
+		*Minute = Parms.Minute;
+
+	if (Second != nullptr)
+		*Second = Parms.Second;
 }
 
 
@@ -99,55 +103,51 @@ void ASunSky_C::IsDST(bool DSTEnable, int32 DSTStartMonth_0, int32 DSTStartDay_0
 }
 
 
-// Function SunSky.SunSky_C.GetHMSFromSolarTime
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function SunSky.SunSky_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// double                                  SolarTime_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Hour                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Minute                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Second                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASunSky_C::GetHMSFromSolarTime(double SolarTime_0, int32* Hour, int32* Minute, int32* Second)
+void ASunSky_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SunSky_C", "GetHMSFromSolarTime");
+		Func = Class->GetFunction("SunSky_C", "ReceiveTick");
 
-	Params::SunSky_C_GetHMSFromSolarTime Parms{};
+	Params::SunSky_C_ReceiveTick Parms{};
 
-	Parms.SolarTime_0 = SolarTime_0;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Hour != nullptr)
-		*Hour = Parms.Hour;
-
-	if (Minute != nullptr)
-		*Minute = Parms.Minute;
-
-	if (Second != nullptr)
-		*Second = Parms.Second;
 }
 
 
-// Function SunSky.SunSky_C.ExecuteUbergraph_SunSky
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function SunSky.SunSky_C.UpdateSun
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ASunSky_C::ExecuteUbergraph_SunSky(int32 EntryPoint)
+void ASunSky_C::UpdateSun()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SunSky_C", "ExecuteUbergraph_SunSky");
+		Func = Class->GetFunction("SunSky_C", "UpdateSun");
 
-	Params::SunSky_C_ExecuteUbergraph_SunSky Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function SunSky.SunSky_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ASunSky_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SunSky_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

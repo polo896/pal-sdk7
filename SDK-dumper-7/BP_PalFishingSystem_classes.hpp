@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalFishingSystem.BP_PalFishingSystem_C
-// 0x0000 (0x0358 - 0x0358)
+// 0x0000 (0x03A0 - 0x03A0)
 class UBP_PalFishingSystem_C final : public UPalFishingSystem
 {
 public:

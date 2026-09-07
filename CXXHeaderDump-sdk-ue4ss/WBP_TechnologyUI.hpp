@@ -3,22 +3,22 @@
 
 class UWBP_TechnologyUI_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UWBP_InventoryEquipment_ItemInfo_C* WBP_InventoryEquipment_ItemInfo;        // 0x0480 (size: 0x8)
-    class UWBP_MainMenu_Technology_00_C* WBP_MainMenu_Technology_00;                  // 0x0488 (size: 0x8)
-    FDataTableRowHandle UnlockCheckMsgId;                                             // 0x0490 (size: 0x10)
-    class UWBP_MainMenu_Technology_Content_C* lastSelectedButton;                     // 0x04A0 (size: 0x8)
-    FVector2D MouseDragScrollMultiply;                                                // 0x04A8 (size: 0x10)
-    class UWBP_MainMenu_Technology_Content_C* LastHoveredTechnologyPanel;             // 0x04B8 (size: 0x8)
-    FWBP_TechnologyUI_COnAllClearedNewFlag OnAllClearedNewFlag;                       // 0x04C0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UWBP_InventoryEquipment_ItemInfo_C* WBP_InventoryEquipment_ItemInfo;        // 0x0488 (size: 0x8)
+    class UWBP_MainMenu_Technology_00_C* WBP_MainMenu_Technology_00;                  // 0x0490 (size: 0x8)
+    FDataTableRowHandle UnlockCheckMsgId;                                             // 0x0498 (size: 0x10)
+    class UWBP_MainMenu_Technology_Content_C* lastSelectedButton;                     // 0x04A8 (size: 0x8)
+    FVector2D MouseDragScrollMultiply;                                                // 0x04B0 (size: 0x10)
+    class UWBP_MainMenu_Technology_Content_C* LastHoveredTechnologyPanel;             // 0x04C0 (size: 0x8)
+    FWBP_TechnologyUI_COnAllClearedNewFlag OnAllClearedNewFlag;                       // 0x04C8 (size: 0x10)
     void OnAllClearedNewFlag(TEnumAsByte<EPalUIInGameMainMenuTabType::Type> Tab);
-    FText CurrentFilterName;                                                          // 0x04D0 (size: 0x18)
-    TSet<EPalItemTypeA> CurrentItemTypeFilter;                                        // 0x04E8 (size: 0x50)
-    TSet<EPalBuildObjectTypeA> CurrentBuildTypeFilter;                                // 0x0538 (size: 0x50)
-    bool CurrentShowUnlocked;                                                         // 0x0588 (size: 0x1)
-    FTimerHandle DelayDisplayTimer;                                                   // 0x0590 (size: 0x8)
-    FPalDataTableRowName_UIInputAction OpenTechnologyMenuActionName;                  // 0x0598 (size: 0x8)
-    FPalUIActionBindData ShortcutCloseActionHandle;                                   // 0x05A0 (size: 0x4)
+    FText CurrentFilterName;                                                          // 0x04D8 (size: 0x18)
+    TSet<EPalItemTypeA> CurrentItemTypeFilter;                                        // 0x04F0 (size: 0x50)
+    TSet<EPalBuildObjectTypeA> CurrentBuildTypeFilter;                                // 0x0540 (size: 0x50)
+    bool CurrentShowUnlocked;                                                         // 0x0590 (size: 0x1)
+    FTimerHandle DelayDisplayTimer;                                                   // 0x0598 (size: 0x8)
+    FPalDataTableRowName_UIInputAction OpenTechnologyMenuActionName;                  // 0x05A0 (size: 0x8)
+    FPalUIActionBindData ShortcutCloseActionHandle;                                   // 0x05A8 (size: 0x4)
 
     void OnInputAction_ShortcutClose();
     void RegisterShortcutCloseInputAction();
@@ -44,6 +44,6 @@ class UWBP_TechnologyUI_C : public UPalUserWidgetOverlayUI
     void DelayDisplay();
     void ExecuteUbergraph_WBP_TechnologyUI(int32 EntryPoint);
     void OnAllClearedNewFlag__DelegateSignature(TEnumAsByte<EPalUIInGameMainMenuTabType::Type> Tab);
-}; // Size: 0x5A4
+}; // Size: 0x5AC
 
 #endif

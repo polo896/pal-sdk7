@@ -26,21 +26,21 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_WingGlider_C;                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
-	void OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
-	void OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
-	void OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
-	void OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
-	void OnInterrupted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
-	void OnEquipJetpack();
-	void OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
-	void OnCompleted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
-	void OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
-	void OnBlendOut_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
-	void ExecuteUbergraph_BP_WingGlider(int32 EntryPoint);
 	void CustomEvent(class UPalCharacterMovementComponent* Component, EMovementMode prevMode, EMovementMode newMode, EPalCharacterMovementCustomMode PrevCustomMode, EPalCharacterMovementCustomMode NewCustomMode);
+	void ExecuteUbergraph_BP_WingGlider(int32 EntryPoint);
+	void OnBlendOut_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
+	void OnBlendOut_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
+	void OnCompleted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
+	void OnCompleted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
+	void OnEquipJetpack();
+	void OnInterrupted_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
+	void OnInterrupted_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
+	void OnNotifyBegin_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
+	void OnNotifyBegin_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
+	void OnNotifyEnd_801568FB493F6CAB9A9531919F9B39AD(class FName NotifyName);
+	void OnNotifyEnd_BF4C4F184A64D6E26C7312AB7EA510EA(class FName NotifyName);
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

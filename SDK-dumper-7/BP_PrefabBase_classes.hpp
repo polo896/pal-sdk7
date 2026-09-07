@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "SplinesInEditor_structs.hpp"
-#include "RiverSplineElement_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "SplinesInEditor_structs.hpp"
+#include "RiverSplineElement_structs.hpp"
 
 
 namespace SDK

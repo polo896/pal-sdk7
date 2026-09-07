@@ -17,71 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveFinish_C::SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveFinish_C::SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.PlaySuccessSequence
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveFinish_C::PlaySuccessSequence()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "PlaySuccessSequence");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.PlayFailedSequence
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveFinish_C::PlayFailedSequence()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "PlayFailedSequence");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.Failure
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.AnmEvent_Failed
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveFinish_C::Failure()
+void UWBP_WarningEvent_WaveFinish_C::AnmEvent_Failed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "Failure");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "AnmEvent_Failed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveFinish_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.AnmEvent_Success
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveFinish_C::AnmEvent_Success()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "AnmEvent_Success");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.Clear
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveFinish_C::Clear()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "Clear");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,57 +93,71 @@ void UWBP_WarningEvent_WaveFinish_C::ExecuteUbergraph_WBP_WarningEvent_WaveFinis
 }
 
 
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.Clear
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.Failure
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveFinish_C::Clear()
+void UWBP_WarningEvent_WaveFinish_C::Failure()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "Clear");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "Failure");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.AnmEvent_Success
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.PlayFailedSequence
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveFinish_C::AnmEvent_Success()
+void UWBP_WarningEvent_WaveFinish_C::PlayFailedSequence()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "AnmEvent_Success");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "PlayFailedSequence");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.PlaySuccessSequence
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveFinish_C::AnmEvent_Out()
+void UWBP_WarningEvent_WaveFinish_C::PlaySuccessSequence()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "AnmEvent_Out");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "PlaySuccessSequence");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.AnmEvent_Failed
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveFinish_C::AnmEvent_Failed()
+void UWBP_WarningEvent_WaveFinish_C::SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "AnmEvent_Failed");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveFinish.WBP_WarningEvent_WaveFinish_C.SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish_0
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveFinish_C::SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveFinish_C", "SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

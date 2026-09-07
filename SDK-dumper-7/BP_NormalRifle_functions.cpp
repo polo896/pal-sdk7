@@ -17,83 +17,77 @@
 namespace SDK
 {
 
-// Function BP_NormalRifle.BP_NormalRifle_C.カスタムイベント_0
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_NormalRifle.BP_NormalRifle_C.ExecuteUbergraph_BP_NormalRifle
+// (Final, UbergraphFunction)
 // Parameters:
-// EWeaponNotifyType                       NotifyType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NormalRifle_C::カスタムイベント_0(EWeaponNotifyType NotifyType)
+void ABP_NormalRifle_C::ExecuteUbergraph_BP_NormalRifle(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "カスタムイベント_0");
+		Func = Class->GetFunction("BP_NormalRifle_C", "ExecuteUbergraph_BP_NormalRifle");
 
-	Params::BP_NormalRifle_C_カスタムイベント_0 Parms{};
+	Params::BP_NormalRifle_C_ExecuteUbergraph_BP_NormalRifle Parms{};
 
-	Parms.NotifyType = NotifyType;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.StopFireSound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_NormalRifle_C::StopFireSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "StopFireSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_NormalRifle.BP_NormalRifle_C.GetAimingBlurAngle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NormalRifle_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_NormalRifle_C::GetAimingBlurAngle(double* Angle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "ReceiveEndPlay");
+		Func = Class->GetFunction("BP_NormalRifle_C", "GetAimingBlurAngle");
 
-	Params::BP_NormalRifle_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
+	Params::BP_NormalRifle_C_GetAimingBlurAngle Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Angle != nullptr)
+		*Angle = Parms.Angle;
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleEffectAttached
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UNiagaraSystem**                  Effect                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NormalRifle_C::ReceiveBeginPlay()
+void ABP_NormalRifle_C::GetMuzzleEffectAttached(class UNiagaraSystem** Effect)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_NormalRifle_C", "GetMuzzleEffectAttached");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_NormalRifle_C_GetMuzzleEffectAttached Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Effect != nullptr)
+		*Effect = Parms.Effect;
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.PlayFireSound
+// Function BP_NormalRifle.BP_NormalRifle_C.PlayEndFireSound
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_NormalRifle_C::PlayFireSound()
+void ABP_NormalRifle_C::PlayEndFireSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "PlayFireSound");
+		Func = Class->GetFunction("BP_NormalRifle_C", "PlayEndFireSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,278 +113,105 @@ void ABP_NormalRifle_C::PlayEndFireSound_Callback(bool IsPlaying)
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.PlayEndFireSound
+// Function BP_NormalRifle.BP_NormalRifle_C.PlayFireSound
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_NormalRifle_C::PlayEndFireSound()
+void ABP_NormalRifle_C::PlayFireSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "PlayEndFireSound");
+		Func = Class->GetFunction("BP_NormalRifle_C", "PlayFireSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleEffectAttached
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UNiagaraSystem**                  Effect                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_NormalRifle.BP_NormalRifle_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_NormalRifle_C::GetMuzzleEffectAttached(class UNiagaraSystem** Effect)
+void ABP_NormalRifle_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GetMuzzleEffectAttached");
-
-	Params::BP_NormalRifle_C_GetMuzzleEffectAttached Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Effect != nullptr)
-		*Effect = Parms.Effect;
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.ExecuteUbergraph_BP_NormalRifle
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NormalRifle_C::ExecuteUbergraph_BP_NormalRifle(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "ExecuteUbergraph_BP_NormalRifle");
-
-	Params::BP_NormalRifle_C_ExecuteUbergraph_BP_NormalRifle Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.PlayReloadAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_NormalRifle_C::PlayReloadAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "PlayReloadAnimation");
+		Func = Class->GetFunction("BP_NormalRifle_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.OnShoot
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_NormalRifle.BP_NormalRifle_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class APalBullet*                       BulletActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NormalRifle_C::OnShoot(class APalBullet* BulletActor)
+void ABP_NormalRifle_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "OnShoot");
+		Func = Class->GetFunction("BP_NormalRifle_C", "ReceiveEndPlay");
 
-	Params::BP_NormalRifle_C_OnShoot Parms{};
+	Params::BP_NormalRifle_C_ReceiveEndPlay Parms{};
 
-	Parms.BulletActor = BulletActor;
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.OnReleaseTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_NormalRifle.BP_NormalRifle_C.StopFireSound
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_NormalRifle_C::OnReleaseTrigger(bool bCanShootOnRelease)
+void ABP_NormalRifle_C::StopFireSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "OnReleaseTrigger");
-
-	Params::BP_NormalRifle_C_OnReleaseTrigger Parms{};
-
-	Parms.bCanShootOnRelease = bCanShootOnRelease;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.OnPullTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_NormalRifle_C::OnPullTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "OnPullTrigger");
+		Func = Class->GetFunction("BP_NormalRifle_C", "StopFireSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.OnFireStart
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_NormalRifle_C::OnFireStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "OnFireStart");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.OnDetachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_NormalRifle.BP_NormalRifle_C.カスタムイベント_0
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EWeaponNotifyType                       NotifyType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NormalRifle_C::OnDetachWeapon(class AActor* detachActor)
+void ABP_NormalRifle_C::カスタムイベント_0(EWeaponNotifyType NotifyType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "OnDetachWeapon");
+		Func = Class->GetFunction("BP_NormalRifle_C", "カスタムイベント_0");
 
-	Params::BP_NormalRifle_C_OnDetachWeapon Parms{};
+	Params::BP_NormalRifle_C_カスタムイベント_0 Parms{};
 
-	Parms.detachActor = detachActor;
+	Parms.NotifyType = NotifyType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.OnAttachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_NormalRifle.BP_NormalRifle_C.GetEquipSocketName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NormalRifle_C::OnAttachWeapon(class AActor* attachActor)
+class FName ABP_NormalRifle_C::GetEquipSocketName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "OnAttachWeapon");
+		Func = Class->GetFunction("BP_NormalRifle_C", "GetEquipSocketName");
 
-	Params::BP_NormalRifle_C_OnAttachWeapon Parms{};
-
-	Parms.attachActor = attachActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.Is UseEjectionPort
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   isUse                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NormalRifle_C::Is_UseEjectionPort(bool* isUse)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "Is UseEjectionPort");
-
-	Params::BP_NormalRifle_C_Is_UseEjectionPort Parms{};
+	Params::BP_NormalRifle_C_GetEquipSocketName Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (isUse != nullptr)
-		*isUse = Parms.isUse;
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GeyEjectionPortTransform
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FTransform*                      Transform                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NormalRifle_C::GeyEjectionPortTransform(struct FTransform* Transform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GeyEjectionPortTransform");
-
-	Params::BP_NormalRifle_C_GeyEjectionPortTransform Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Transform != nullptr)
-		*Transform = std::move(Parms.Transform);
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetShotAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_NormalRifle_C::GetShotAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GetShotAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetShootInterval
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 Time                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NormalRifle_C::GetShootInterval(double* Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GetShootInterval");
-
-	Params::BP_NormalRifle_C_GetShootInterval Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Time != nullptr)
-		*Time = Parms.Time;
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleRotator
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FRotator*                        Rotator                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_NormalRifle_C::GetMuzzleRotator(struct FRotator* Rotator)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GetMuzzleRotator");
-
-	Params::BP_NormalRifle_C_GetMuzzleRotator Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Rotator != nullptr)
-		*Rotator = std::move(Parms.Rotator);
+	return Parms.ReturnValue;
 }
 
 
@@ -415,64 +236,223 @@ void ABP_NormalRifle_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.GetEquipSocketName
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class FName ABP_NormalRifle_C::GetEquipSocketName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GetEquipSocketName");
-
-	Params::BP_NormalRifle_C_GetEquipSocketName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetAimingBlurAngle
+// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleRotator
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator*                        Rotator                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_NormalRifle_C::GetAimingBlurAngle(double* Angle)
+void ABP_NormalRifle_C::GetMuzzleRotator(struct FRotator* Rotator)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GetAimingBlurAngle");
+		Func = Class->GetFunction("BP_NormalRifle_C", "GetMuzzleRotator");
 
-	Params::BP_NormalRifle_C_GetAimingBlurAngle Parms{};
+	Params::BP_NormalRifle_C_GetMuzzleRotator Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Angle != nullptr)
-		*Angle = Parms.Angle;
+	if (Rotator != nullptr)
+		*Rotator = std::move(Parms.Rotator);
 }
 
 
-// Function BP_NormalRifle.BP_NormalRifle_C.GetLeftHandTransform
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_NormalRifle.BP_NormalRifle_C.GetShootInterval
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Time                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FTransform ABP_NormalRifle_C::GetLeftHandTransform() const
+void ABP_NormalRifle_C::GetShootInterval(double* Time)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NormalRifle_C", "GetLeftHandTransform");
+		Func = Class->GetFunction("BP_NormalRifle_C", "GetShootInterval");
 
-	Params::BP_NormalRifle_C_GetLeftHandTransform Parms{};
+	Params::BP_NormalRifle_C_GetShootInterval Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (Time != nullptr)
+		*Time = Parms.Time;
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetShotAnimation
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NormalRifle_C::GetShotAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "GetShotAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GeyEjectionPortTransform
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FTransform*                      Transform                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NormalRifle_C::GeyEjectionPortTransform(struct FTransform* Transform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "GeyEjectionPortTransform");
+
+	Params::BP_NormalRifle_C_GeyEjectionPortTransform Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Transform != nullptr)
+		*Transform = std::move(Parms.Transform);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.Is UseEjectionPort
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   isUse                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NormalRifle_C::Is_UseEjectionPort(bool* isUse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "Is UseEjectionPort");
+
+	Params::BP_NormalRifle_C_Is_UseEjectionPort Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (isUse != nullptr)
+		*isUse = Parms.isUse;
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnAttachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NormalRifle_C::OnAttachWeapon(class AActor* attachActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "OnAttachWeapon");
+
+	Params::BP_NormalRifle_C_OnAttachWeapon Parms{};
+
+	Parms.attachActor = attachActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnDetachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NormalRifle_C::OnDetachWeapon(class AActor* detachActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "OnDetachWeapon");
+
+	Params::BP_NormalRifle_C_OnDetachWeapon Parms{};
+
+	Parms.detachActor = detachActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnFireStart
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NormalRifle_C::OnFireStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "OnFireStart");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NormalRifle_C::OnPullTrigger()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "OnPullTrigger");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnReleaseTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NormalRifle_C::OnReleaseTrigger(bool bCanShootOnRelease)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "OnReleaseTrigger");
+
+	Params::BP_NormalRifle_C_OnReleaseTrigger Parms{};
+
+	Parms.bCanShootOnRelease = bCanShootOnRelease;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnShoot
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalBullet*                       BulletActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NormalRifle_C::OnShoot(class APalBullet* BulletActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "OnShoot");
+
+	Params::BP_NormalRifle_C_OnShoot Parms{};
+
+	Parms.BulletActor = BulletActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.PlayReloadAnimation
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NormalRifle_C::PlayReloadAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "PlayReloadAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -489,6 +469,26 @@ float ABP_NormalRifle_C::GetDefaultBlurAngle() const
 		Func = Class->GetFunction("BP_NormalRifle_C", "GetDefaultBlurAngle");
 
 	Params::BP_NormalRifle_C_GetDefaultBlurAngle Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetLeftHandTransform
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+struct FTransform ABP_NormalRifle_C::GetLeftHandTransform() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NormalRifle_C", "GetLeftHandTransform");
+
+	Params::BP_NormalRifle_C_GetLeftHandTransform Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

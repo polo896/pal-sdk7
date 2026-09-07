@@ -17,55 +17,49 @@
 namespace SDK
 {
 
-// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.SetVisibilityAll
+// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.DelayedRecaptureSkyLights
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalEnvironmentVisbleSwitcher_C::SetVisibilityAll(bool IsVisibility)
+void ABP_PalEnvironmentVisbleSwitcher_C::DelayedRecaptureSkyLights()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "SetVisibilityAll");
-
-	Params::BP_PalEnvironmentVisbleSwitcher_C_SetVisibilityAll Parms{};
-
-	Parms.IsVisibility = IsVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PalEnvironmentVisbleSwitcher_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "DelayedRecaptureSkyLights");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.ReceiveActorEndOverlap
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.DelayedSetVisibilityTrue
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_PalEnvironmentVisbleSwitcher_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+void ABP_PalEnvironmentVisbleSwitcher_C::DelayedSetVisibilityTrue()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "ReceiveActorEndOverlap");
+		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "DelayedSetVisibilityTrue");
 
-	Params::BP_PalEnvironmentVisbleSwitcher_C_ReceiveActorEndOverlap Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.OtherActor = OtherActor;
+
+// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalEnvironmentVisbleSwitcher_C::ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher");
+
+	Params::BP_PalEnvironmentVisbleSwitcher_C_ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -91,37 +85,57 @@ void ABP_PalEnvironmentVisbleSwitcher_C::ReceiveActorBeginOverlap(class AActor* 
 }
 
 
-// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.ReceiveActorEndOverlap
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalEnvironmentVisbleSwitcher_C::ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher(int32 EntryPoint)
+void ABP_PalEnvironmentVisbleSwitcher_C::ReceiveActorEndOverlap(class AActor* OtherActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher");
+		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "ReceiveActorEndOverlap");
 
-	Params::BP_PalEnvironmentVisbleSwitcher_C_ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher Parms{};
+	Params::BP_PalEnvironmentVisbleSwitcher_C_ReceiveActorEndOverlap Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.DelayedSetVisibilityTrue
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PalEnvironmentVisbleSwitcher_C::DelayedSetVisibilityTrue()
+void ABP_PalEnvironmentVisbleSwitcher_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "DelayedSetVisibilityTrue");
+		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C.SetVisibilityAll
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalEnvironmentVisbleSwitcher_C::SetVisibilityAll(bool IsVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalEnvironmentVisbleSwitcher_C", "SetVisibilityAll");
+
+	Params::BP_PalEnvironmentVisbleSwitcher_C_SetVisibilityAll Parms{};
+
+	Parms.IsVisibility = IsVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

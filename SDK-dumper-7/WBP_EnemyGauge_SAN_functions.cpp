@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_EnemyGauge_SAN.WBP_EnemyGauge_SAN_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_EnemyGauge_SAN_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_SAN_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_EnemyGauge_SAN.WBP_EnemyGauge_SAN_C.ExecuteUbergraph_WBP_EnemyGauge_SAN
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_EnemyGauge_SAN_C::ExecuteUbergraph_WBP_EnemyGauge_SAN(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge_SAN.WBP_EnemyGauge_SAN_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_EnemyGauge_SAN_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_SAN_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

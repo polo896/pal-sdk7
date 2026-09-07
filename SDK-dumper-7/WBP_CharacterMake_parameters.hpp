@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "Pal_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
+#include "InputCore_structs.hpp"
+#include "Pal_structs.hpp"
 #include "E_UICharacterMakeCategory_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -472,6 +472,18 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CharacterMake_C_OnAppliedHairMesh;
 
+// Function WBP_CharacterMake.WBP_CharacterMake_C.OnCancel_Tab
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CharacterMake_C_OnCancel_Tab final
+{
+public:
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CharacterMake_C_OnCancel_Tab;
+
 // Function WBP_CharacterMake.WBP_CharacterMake_C.OnChangeCategory_Internal
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_CharacterMake_C_OnChangeCategory_Internal final
@@ -786,21 +798,22 @@ public:
 DUMPER7_ASSERTS_WBP_CharacterMake_C_RandomizeMakeInfo;
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.RegisterStaticInputAction
-// 0x0074 (0x0074 - 0x0000)
+// 0x0084 (0x0084 - 0x0000)
 struct WBP_CharacterMake_C_RegisterStaticInputAction final
 {
 public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0020(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0030(0x0004)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0044(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x0048(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x004C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x005C(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_4;      // 0x0070(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0054(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x0058(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x006C(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_4;      // 0x0080(0x0004)(NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_CharacterMake_C_RegisterStaticInputAction;
 

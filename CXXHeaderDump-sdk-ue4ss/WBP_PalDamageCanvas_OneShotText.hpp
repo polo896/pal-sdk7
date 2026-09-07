@@ -13,14 +13,14 @@ class UWBP_PalDamageCanvas_OneShotText_C : public UPalDamageDisplayCanvas
     double DamageTextScale;                                                           // 0x0538 (size: 0x8)
     int32 MaxDisplayNum;                                                              // 0x0540 (size: 0x4)
     bool bPlayerHasMercyHit;                                                          // 0x0544 (size: 0x1)
-    TArray<UPalUIDamageTextBase*> CurrentDIsplayingDamageText;                        // 0x0548 (size: 0x10)
+    TArray<class UPalUIDamageTextBase*> CurrentDIsplayingDamageText;                  // 0x0548 (size: 0x10)
 
     void Get Additional Effect (FPalDamageInfo DamageInfo, TArray<EPalAdditionalEffectType>& AdditionalEffect);
     void RemoveDamageText(class UPalUIDamageTextBase* RemoveWidget);
     void OnEndDamageTextOutAnim(class UWBP_PalDamageText_C* Widget);
     void IsMuteki(class AActor* Defender, bool& bMuteki);
     void OnUpdatePlayerEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
-    void IsKillShot(class AActor* Defender, int32 DisplayDamage, bool& bKill);
+    void IsKillShot(int32 DIsplayDamage, FFixedPoint64 OldHP, bool& bKill);
     void HasMercyHit(class AActor* CheckCharacter, bool& bHasMercyHit);
     void OnEndPlayerPassiveSkillEffect(EPalPassiveSkillEffectType EffectType);
     void OnStartPlayerPassiveSkill(EPalPassiveSkillEffectType EffectType, float Value);
@@ -29,12 +29,12 @@ class UWBP_PalDamageCanvas_OneShotText_C : public UPalDamageDisplayCanvas
     void IsEquipAttacker(class AActor* Attacker, bool& IsEquip);
     void CalcLengthToPlayer(FVector HitLocation, double& Length);
     void CalcTargetLocation(FPalDamageInfo DamageInfo, class AActor* Defender, FVector& Location);
-    void Add New Damage Text(FPalDamageInfo DamageInfo, class AActor* Defender);
+    void Add New Damage Text(FPalDamageDisplayEntry EntryData);
     void CreateOrPopDamageWidget(class UPalUIDamageTextBase*& createdWdiget);
-    void CalcDamageTextType(FPalDamageInfo DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DisplayDamage, FPalCalculatedDamageInfo CalculatedDamageInfo, EPalDamageTextType& textType, bool& bMercyHit);
+    void CalcDamageTextType(FPalDamageInfo DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DIsplayDamage, FPalCalculatedDamageInfo CalculatedDamageInfo, EPalDamageTextType& textType, bool& bMercyHit);
     void OnSetup();
     void Destruct();
-    void AddDamageTextEvent(const FPalDamageInfo& DamageInfo, class AActor* Defender);
+    void AddDamageTextEvent(FPalDamageDisplayEntry EntryData);
     void OnInitialized();
     void OnSetup_AfterCreatedPlayer();
     void ReceiveDamageEntries(const TArray<FPalDamageDisplayEntry>& Entries);

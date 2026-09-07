@@ -20,39 +20,39 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_GameOver_ForDIsplay.WBP_GameOver_ForDIsplay_C
-// 0x0048 (0x04C0 - 0x0478)
+// 0x0048 (0x04C8 - 0x0480)
 class UWBP_GameOver_ForDIsplay_C final : public UPalUIGameOver
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCircularThrobber*                      CircularThrobber_107;                              // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_35;                                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_WaitingResetCharacter;                     // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_GameOver_Defeat_C*                 WBP_GameOver_Defeat;                               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           BlockRespawnTimerHandle;                           // 0x04A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanRespawn;                                        // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A9[0x7];                                      // 0x04A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    ResetCharacterDialogMsgID;                         // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCircularThrobber*                      CircularThrobber_107;                              // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_35;                                          // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_WaitingResetCharacter;                     // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_GameOver_Defeat_C*                 WBP_GameOver_Defeat;                               // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FTimerHandle                           BlockRespawnTimerHandle;                           // 0x04A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanRespawn;                                        // 0x04B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B1[0x7];                                      // 0x04B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    ResetCharacterDialogMsgID;                         // 0x04B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void ShowWaiting();
-	void OnSetup();
-	void OnReceivedConfirmSurrenderRaidBossArea(bool bResult);
-	void OnInitialized();
-	void OnFinishedOpen();
-	void OnFinishedClose();
-	void OnEndedRespawnBlockTime();
-	void OnClosedCheckResetChaarcetrDialog(bool bResult);
-	void OnClickedRespawnButton();
-	void OnCancelAction();
-	bool IsHardcoreView();
-	void HideWaiting();
-	void ExecuteUbergraph_WBP_GameOver_ForDIsplay(int32 EntryPoint);
-	void Destruct();
-	void ConfirmSurrenderRaidBossArea();
-	void ConfirmRespawn();
 	void BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature();
+	void ConfirmRespawn();
+	void ConfirmSurrenderRaidBossArea();
+	void Destruct();
+	void ExecuteUbergraph_WBP_GameOver_ForDIsplay(int32 EntryPoint);
+	void HideWaiting();
+	bool IsHardcoreView();
+	void OnCancelAction();
+	void OnClickedRespawnButton();
+	void OnClosedCheckResetChaarcetrDialog(bool bResult);
+	void OnEndedRespawnBlockTime();
+	void OnFinishedClose();
+	void OnFinishedOpen();
+	void OnInitialized();
+	void OnReceivedConfirmSurrenderRaidBossArea(bool bResult);
+	void OnSetup();
+	void ShowWaiting();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

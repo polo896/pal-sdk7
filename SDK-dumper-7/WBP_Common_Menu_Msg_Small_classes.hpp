@@ -26,9 +26,9 @@ public:
 	class UWidgetAnimation*                       Anm_InToOut;                                       // 0x0280(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PlayPopupAnimation();
-	void ExecuteUbergraph_WBP_Common_Menu_Msg_Small(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_Common_Menu_Msg_Small(int32 EntryPoint);
+	void PlayPopupAnimation();
 
 public:
 	static class UClass* StaticClass()

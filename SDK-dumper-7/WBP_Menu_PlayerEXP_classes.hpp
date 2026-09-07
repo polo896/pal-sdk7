@@ -25,8 +25,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_Menu_PlayerEXP_C;               // 0x0688(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_Menu_PlayerEXP(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_Menu_PlayerEXP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

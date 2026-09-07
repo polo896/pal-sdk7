@@ -17,151 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_SoloEntry_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_SoloEntry_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnSelectSoloEntry
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.CancelAction
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalArenaRank                           ArenaRank                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_SoloEntry_C::OnSelectSoloEntry(EPalArenaRank ArenaRank)
+void UWBP_Arena_SoloEntry_C::CancelAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnSelectSoloEntry");
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "CancelAction");
 
-	Params::WBP_Arena_SoloEntry_C_OnSelectSoloEntry Parms{};
-
-	Parms.ArenaRank = ArenaRank;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnInitialized
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Arena_SoloEntry_C::OnInitialized()
+void UWBP_Arena_SoloEntry_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnEntryUnhovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Arena_SoloEntryButton_C*     Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_SoloEntry_C::OnEntryUnhovered(class UWBP_Arena_SoloEntryButton_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnEntryUnhovered");
-
-	Params::WBP_Arena_SoloEntry_C_OnEntryUnhovered Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnEntryHovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Arena_SoloEntryButton_C*     Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_SoloEntry_C::OnEntryHovered(class UWBP_Arena_SoloEntryButton_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnEntryHovered");
-
-	Params::WBP_Arena_SoloEntry_C_OnEntryHovered Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnConfirmSolo
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsYes                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_SoloEntry_C::OnConfirmSolo(bool IsYes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnConfirmSolo");
-
-	Params::WBP_Arena_SoloEntry_C_OnConfirmSolo Parms{};
-
-	Parms.IsYes = IsYes;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Finished_A8F632BC4656B439BE29FC9AA565281B
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_SoloEntry_C::Finished_A8F632BC4656B439BE29FC9AA565281B()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Finished_A8F632BC4656B439BE29FC9AA565281B");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Finished_6E03AF144B8AC540362D31A1A74FC2B5
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_SoloEntry_C::Finished_6E03AF144B8AC540362D31A1A74FC2B5()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Finished_6E03AF144B8AC540362D31A1A74FC2B5");
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,29 +65,151 @@ void UWBP_Arena_SoloEntry_C::ExecuteUbergraph_WBP_Arena_SoloEntry(int32 EntryPoi
 }
 
 
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Finished_6E03AF144B8AC540362D31A1A74FC2B5
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_SoloEntry_C::Construct()
+void UWBP_Arena_SoloEntry_C::Finished_6E03AF144B8AC540362D31A1A74FC2B5()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Construct");
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Finished_6E03AF144B8AC540362D31A1A74FC2B5");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.CancelAction
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Finished_A8F632BC4656B439BE29FC9AA565281B
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_SoloEntry_C::CancelAction()
+void UWBP_Arena_SoloEntry_C::Finished_A8F632BC4656B439BE29FC9AA565281B()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "CancelAction");
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Finished_A8F632BC4656B439BE29FC9AA565281B");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnConfirmSolo
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsYes                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_SoloEntry_C::OnConfirmSolo(bool IsYes)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnConfirmSolo");
+
+	Params::WBP_Arena_SoloEntry_C_OnConfirmSolo Parms{};
+
+	Parms.IsYes = IsYes;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnEntryHovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Arena_SoloEntryButton_C*     Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_SoloEntry_C::OnEntryHovered(class UWBP_Arena_SoloEntryButton_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnEntryHovered");
+
+	Params::WBP_Arena_SoloEntry_C_OnEntryHovered Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnEntryUnhovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Arena_SoloEntryButton_C*     Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_SoloEntry_C::OnEntryUnhovered(class UWBP_Arena_SoloEntryButton_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnEntryUnhovered");
+
+	Params::WBP_Arena_SoloEntry_C_OnEntryUnhovered Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_SoloEntry_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnSelectSoloEntry
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalArenaRank                           ArenaRank                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_SoloEntry_C::OnSelectSoloEntry(EPalArenaRank ArenaRank)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnSelectSoloEntry");
+
+	Params::WBP_Arena_SoloEntry_C_OnSelectSoloEntry Parms{};
+
+	Parms.ArenaRank = ArenaRank;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_SoloEntry_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_SoloEntry.WBP_Arena_SoloEntry_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_SoloEntry_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_SoloEntry_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

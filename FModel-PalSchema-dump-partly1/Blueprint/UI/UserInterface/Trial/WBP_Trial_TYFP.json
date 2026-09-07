@@ -1,0 +1,235 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_29",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Trial_TYFP_C:WidgetTree.CanvasPanel_29.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.2"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Trial_TYFP_C:WidgetTree.CanvasPanel_29.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_29",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Trial_TYFP_C:WidgetTree.CanvasPanel_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.0"
+      },
+      "Content": {
+        "ObjectName": "ScaleBox'WBP_Trial_TYFP_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.5"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_29",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 0.0,
+          "Bottom": 0.0
+        },
+        "Anchors": {
+          "Maximum": {
+            "X": 1.0,
+            "Y": 1.0
+          }
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Trial_TYFP_C:WidgetTree.CanvasPanel_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Trial_TYFP_C:WidgetTree.Image_Black'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.3"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Black",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Trial_TYFP_C:WidgetTree.CanvasPanel_29.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.2"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Cover",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 3840.0,
+          "Y": 2160.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_Trial_CoverPic_0'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Trial/T_Trial_CoverPic_0.0"
+        }
+      },
+      "Slot": {
+        "ObjectName": "ScaleBoxSlot'WBP_Trial_TYFP_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.6"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBox",
+    "Name": "ScaleBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'ScaleBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ScaleBoxSlot'WBP_Trial_TYFP_C:WidgetTree.ScaleBox_0.ScaleBoxSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.6"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Trial_TYFP_C:WidgetTree.CanvasPanel_29.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.1"
+      }
+    }
+  },
+  {
+    "Type": "ScaleBoxSlot",
+    "Name": "ScaleBoxSlot_1",
+    "Outer": "ScaleBox_0",
+    "Class": "UScriptClass'ScaleBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "ScaleBox'WBP_Trial_TYFP_C:WidgetTree.ScaleBox_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.5"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Trial_TYFP_C:WidgetTree.Image_Cover'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.4"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Trial_TYFP_C",
+    "Name": "Default__WBP_Trial_TYFP_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.WBP_Trial_TYFP_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Trial_TYFP_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Trial_TYFP_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Black",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Cover",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Trial_TYFP_C'Default__WBP_Trial_TYFP_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.7"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Trial_TYFP_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Trial_TYFP_C:WidgetTree.CanvasPanel_29'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Trial/WBP_Trial_TYFP.0"
+      }
+    }
+  }
+]

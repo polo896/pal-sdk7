@@ -16,78 +16,14 @@
 namespace SDK::Params
 {
 
-// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck
-// 0x00B8 (0x00B8 - 0x0000)
-struct BP_Action_Unique_ChickenPal_ChickenPeck_C_ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck final
+// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.TickAction
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Action_Unique_ChickenPal_ChickenPeck_C_TickAction final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaTime;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_4;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_3;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_2;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_1;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_3;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalSkeletalMeshComponent*              CallFunc_GetMainMesh_ReturnValue;                  // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_RotateToTarget_DeltaTime_ImplicitCast;    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck;
-
-// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542;
-
-// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnCompleted_1E7C304942F556D76DE16F9CBBB0C542
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnCompleted_1E7C304942F556D76DE16F9CBBB0C542 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnCompleted_1E7C304942F556D76DE16F9CBBB0C542;
-
-// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542;
-
-// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542;
-
-// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542;
+DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_TickAction;
 
 // Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.RotateToTarget
 // 0x00F0 (0x00F0 - 0x0000)
@@ -122,14 +58,78 @@ public:
 };
 DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_RotateToTarget;
 
-// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.TickAction
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Action_Unique_ChickenPal_ChickenPeck_C_TickAction final
+// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542 final
 {
 public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_TickAction;
+DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyEnd_1E7C304942F556D76DE16F9CBBB0C542;
+
+// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnNotifyBegin_1E7C304942F556D76DE16F9CBBB0C542;
+
+// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnInterrupted_1E7C304942F556D76DE16F9CBBB0C542;
+
+// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnCompleted_1E7C304942F556D76DE16F9CBBB0C542
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnCompleted_1E7C304942F556D76DE16F9CBBB0C542 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnCompleted_1E7C304942F556D76DE16F9CBBB0C542;
+
+// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_ChickenPal_ChickenPeck_C_OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_OnBlendOut_1E7C304942F556D76DE16F9CBBB0C542;
+
+// Function BP_Action_Unique_ChickenPal_ChickenPeck.BP_Action_Unique_ChickenPal_ChickenPeck_C.ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck
+// 0x00B8 (0x00B8 - 0x0000)
+struct BP_Action_Unique_ChickenPal_ChickenPeck_C_ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaTime;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_4;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_3;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_2;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_1;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_3;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalSkeletalMeshComponent*              CallFunc_GetMainMesh_ReturnValue;                  // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_RotateToTarget_DeltaTime_ImplicitCast;    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_ChickenPal_ChickenPeck_C_ExecuteUbergraph_BP_Action_Unique_ChickenPal_ChickenPeck;
 
 }
 

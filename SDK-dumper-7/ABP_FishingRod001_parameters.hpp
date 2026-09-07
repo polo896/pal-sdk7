@@ -16,16 +16,15 @@
 namespace SDK::Params
 {
 
-// Function ABP_FishingRod001.ABP_FishingRod001_C.SetDisableRigidBodyBlend
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_FishingRod001_C_SetDisableRigidBodyBlend final
+// Function ABP_FishingRod001.ABP_FishingRod001_C.AnimGraph
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_FishingRod001_C_AnimGraph final
 {
 public:
-	bool                                          isDisable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_FishingRod001_C_SetDisableRigidBodyBlend;
+DUMPER7_ASSERTS_ABP_FishingRod001_C_AnimGraph;
 
 // Function ABP_FishingRod001.ABP_FishingRod001_C.ExecuteUbergraph_ABP_FishingRod001
 // 0x0004 (0x0004 - 0x0000)
@@ -36,15 +35,16 @@ public:
 };
 DUMPER7_ASSERTS_ABP_FishingRod001_C_ExecuteUbergraph_ABP_FishingRod001;
 
-// Function ABP_FishingRod001.ABP_FishingRod001_C.AnimGraph
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_FishingRod001_C_AnimGraph final
+// Function ABP_FishingRod001.ABP_FishingRod001_C.SetDisableRigidBodyBlend
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_FishingRod001_C_SetDisableRigidBodyBlend final
 {
 public:
-	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	bool                                          isDisable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_ABP_FishingRod001_C_AnimGraph;
+DUMPER7_ASSERTS_ABP_FishingRod001_C_SetDisableRigidBodyBlend;
 
 }
 

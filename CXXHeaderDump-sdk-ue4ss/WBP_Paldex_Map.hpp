@@ -43,7 +43,7 @@ class UWBP_Paldex_Map_C : public UUserWidget
     void IsZoomMax(bool& IsMax);
     void SetZoomRate(double Rate);
     void ResetZoom();
-    void addZoomRate(double addZoomRate);
+    void AddZoomRate(double AddZoomRate);
     void SetupCircleWidget(TSubclassOf<class UUserWidget> Class, FVector WorldLocation, double realSpawnSize, bool& bDisplayed);
     void ResetOffset();
     void AddOffset(FVector2D Offset);

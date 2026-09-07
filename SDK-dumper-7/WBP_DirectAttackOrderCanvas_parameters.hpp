@@ -17,15 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.OnMissingTarget
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_DirectAttackOrderCanvas_C_OnMissingTarget final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_DirectAttackOrderCanvas_C_OnMissingTarget;
-
 // Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.OnChangedDirectOrderTarget
 // 0x0070 (0x0070 - 0x0000)
 struct WBP_DirectAttackOrderCanvas_C_OnChangedDirectOrderTarget final
@@ -45,6 +36,24 @@ public:
 };
 DUMPER7_ASSERTS_WBP_DirectAttackOrderCanvas_C_OnChangedDirectOrderTarget;
 
+// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.OnMissingTarget
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_DirectAttackOrderCanvas_C_OnMissingTarget final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DirectAttackOrderCanvas_C_OnMissingTarget;
+
+// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.PlayTargetSound
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_DirectAttackOrderCanvas_C_PlayTargetSound final
+{
+public:
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DirectAttackOrderCanvas_C_PlayTargetSound;
+
 // Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.Setup
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_DirectAttackOrderCanvas_C_Setup final
@@ -55,15 +64,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_DirectAttackOrderCanvas_C_Setup;
-
-// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.PlayTargetSound
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_DirectAttackOrderCanvas_C_PlayTargetSound final
-{
-public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_DirectAttackOrderCanvas_C_PlayTargetSound;
 
 }
 

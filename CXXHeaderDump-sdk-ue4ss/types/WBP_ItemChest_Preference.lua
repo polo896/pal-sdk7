@@ -7,7 +7,7 @@
 ---@field PreferenceModel UPalUIItemChestFilterModel
 local UWBP_ItemChest_Preference_C = {}
 
-function UWBP_ItemChest_Preference_C:WBP_ItemChest_Preference_AutoGenFunc() end
+function UWBP_ItemChest_Preference_C:OnCancelAction_Override() end
 ---@param FilterId FName
 ---@param bChecked boolean
 function UWBP_ItemChest_Preference_C:OnClickedCheck(FilterId, bChecked) end

@@ -19,25 +19,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_WantedPolice_NPCSpawner.BP_WantedPolice_NPCSpawner_C
-// 0x0070 (0x0678 - 0x0608)
+// 0x0070 (0x0688 - 0x0618)
 class ABP_WantedPolice_NPCSpawner_C final : public ABP_MonoNPCSpawner_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_WantedPolice_NPCSpawner_C;       // 0x0608(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class FName                                   CharacterID;                                       // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PoliceLevel;                                       // 0x0618(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61C[0x4];                                      // 0x061C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        PoliceHate;                                        // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          DespawnHandle;                                     // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UBP_WorldSecurityPoliceSpawner_C*       PoliceSpawnerModel;                                // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        SpawnLocations;                                    // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         SpawnIndex;                                        // 0x0648(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64C[0x4];                                      // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPalIndividualCharacterHandle*>  OwnedHandles;                                      // 0x0650(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          bDeferredMode;                                     // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_661[0x3];                                      // 0x0661(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         DeferredSpawnCount;                                // 0x0664(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalIndividualCharacterHandle*>  NotAdjustToFloorHandles;                           // 0x0668(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_WantedPolice_NPCSpawner_C;       // 0x0618(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class FName                                   CharacterID;                                       // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         PoliceLevel;                                       // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        PoliceHate;                                        // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          DespawnHandle;                                     // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UBP_WorldSecurityPoliceSpawner_C*       PoliceSpawnerModel;                                // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FVector>                        SpawnLocations;                                    // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         SpawnIndex;                                        // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_65C[0x4];                                      // 0x065C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPalIndividualCharacterHandle*>  OwnedHandles;                                      // 0x0660(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bDeferredMode;                                     // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_671[0x3];                                      // 0x0671(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         DeferredSpawnCount;                                // 0x0674(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalIndividualCharacterHandle*>  NotAdjustToFloorHandles;                           // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void CreateGroup(TArray<class FName>& CharacterIDList);

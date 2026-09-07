@@ -17,6 +17,90 @@
 namespace SDK::Params
 {
 
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Bad_Loop
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop final
+{
+public:
+	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop;
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_GoodToBad
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad final
+{
+public:
+	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad;
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ApplyHandleSize
+// 0x0600 (0x0600 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_ApplyHandleSize final
+{
+public:
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x00D0)()
+	struct FSliderStyle                           K2Node_MakeStruct_SliderStyle;                     // 0x0100(0x0500)()
+};
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_ApplyHandleSize;
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ExecuteUbergraph_WBP_Fishing_PowerGauge
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_ExecuteUbergraph_WBP_Fishing_PowerGauge final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsStart_1;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsStart;                        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue_1;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_5;              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UPalFishingSystem*                      CallFunc_GetFishingSystem_ReturnValue;             // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_VariableSet_DefaultGaugeSize_ImplicitCast;  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_ExecuteUbergraph_WBP_Fishing_PowerGauge;
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarPosition
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_SetBarPosition final
+{
+public:
+	double                                        Position;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetValue_InValue_ImplicitCast;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarPosition;
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarSize
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_SetBarSize final
+{
+public:
+	double                                        BarSize_0;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarSize;
+
 // Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetFishPosition
 // 0x0070 (0x0070 - 0x0000)
 struct WBP_Fishing_PowerGauge_C_SetFishPosition final
@@ -40,89 +124,6 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetFishPosition;
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarSize
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_SetBarSize final
-{
-public:
-	double                                        BarSize_0;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarSize;
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarPosition
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_SetBarPosition final
-{
-public:
-	double                                        Position;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetValue_InValue_ImplicitCast;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarPosition;
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ExecuteUbergraph_WBP_Fishing_PowerGauge
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_ExecuteUbergraph_WBP_Fishing_PowerGauge final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsStart_1;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsStart;                        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue_1;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UPalFishingSystem*                      CallFunc_GetFishingSystem_ReturnValue;             // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_DefaultGaugeSize_ImplicitCast;  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_ExecuteUbergraph_WBP_Fishing_PowerGauge;
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ApplyHandleSize
-// 0x0600 (0x0600 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_ApplyHandleSize final
-{
-public:
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_X;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_Y;                          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x00D0)()
-	struct FSliderStyle                           K2Node_MakeStruct_SliderStyle;                     // 0x0100(0x0500)()
-};
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_ApplyHandleSize;
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_GoodToBad
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad final
-{
-public:
-	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad;
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Bad_Loop
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop final
-{
-public:
-	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop;
 
 }
 

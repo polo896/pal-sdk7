@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_PalUIStatusDIsplayParameter_structs.hpp"
@@ -20,6 +20,54 @@
 
 namespace SDK::Params
 {
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.ListToStatus
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_MainMenu_Pal_00_C_ListToStatus final
+{
+public:
+	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_ListToStatus;
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.IsShowingStatusWithList
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_Pal_00_C_IsShowingStatusWithList final
+{
+public:
+	bool                                          isShowing;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_IsShowingStatusWithList;
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.GetRestoreFocusSkillPanelTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_MainMenu_Pal_00_C_GetRestoreFocusSkillPanelTarget final
+{
+public:
+	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_GetRestoreFocusSkillPanelTarget;
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.Get Partner Skill Lock Item Name
+// 0x00D8 (0x00D8 - 0x0000)
+struct WBP_MainMenu_Pal_00_C_Get_Partner_Skill_Lock_Item_Name final
+{
+public:
+	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ReturnText;                                        // 0x0008(0x0018)(Parm, OutParm)
+	class FString                                 LockItemNameText;                                  // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetItemName_outName;                      // 0x0030(0x0018)()
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0048(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_Get_Partner_Skill_Lock_Item_Name;
 
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.FocusToSkillPanel
 // 0x0001 (0x0001 - 0x0000)
@@ -217,6 +265,21 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x064C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_ExecuteUbergraph_WBP_MainMenu_Pal_00;
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.DoCustomNavigation_ToTopWorkSuitability
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_MainMenu_Pal_00_C_DoCustomNavigation_ToTopWorkSuitability final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MainMenu_Pal_WorkIconText_C*       K2Node_DynamicCast_AsWBP_Main_Menu_Pal_Work_Icon_Text; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_DoCustomNavigation_ToTopWorkSuitability;
 
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.CustomNavi_ToHPGuide
 // 0x0010 (0x0010 - 0x0000)
@@ -535,54 +598,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_AnmEvent_ToStatus_WithSetup;
 
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.Get Partner Skill Lock Item Name
-// 0x00D8 (0x00D8 - 0x0000)
-struct WBP_MainMenu_Pal_00_C_Get_Partner_Skill_Lock_Item_Name final
-{
-public:
-	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   ReturnText;                                        // 0x0008(0x0018)(Parm, OutParm)
-	class FString                                 LockItemNameText;                                  // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetItemName_outName;                      // 0x0030(0x0018)()
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0048(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_Get_Partner_Skill_Lock_Item_Name;
-
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.GetRestoreFocusSkillPanelTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_MainMenu_Pal_00_C_GetRestoreFocusSkillPanelTarget final
-{
-public:
-	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_GetRestoreFocusSkillPanelTarget;
-
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.IsShowingStatusWithList
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Pal_00_C_IsShowingStatusWithList final
-{
-public:
-	bool                                          isShowing;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_IsShowingStatusWithList;
-
-// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.ListToStatus
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_MainMenu_Pal_00_C_ListToStatus final
-{
-public:
-	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_ListToStatus;
-
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.OnClickedPalButtonEvent
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_MainMenu_Pal_00_C_OnClickedPalButtonEvent final
@@ -663,6 +678,17 @@ public:
 	class FText                                   CallFunc_GetPassiveSkillName_outName;              // 0x0028(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_OnHoveredPassiveSkillButtonEvent;
+
+// Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.OnHoveredSuitabilityIcon
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_MainMenu_Pal_00_C_OnHoveredSuitabilityIcon final
+{
+public:
+	class UWBP_MainMenu_Pal_WorkIconText_C*       Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetSuitabilityDescription_DescriptionText; // 0x0008(0x0018)()
+	class FText                                   CallFunc_GetWorkSuitabilityName_outName;           // 0x0020(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_OnHoveredSuitabilityIcon;
 
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.OnSelectedSkill
 // 0x0002 (0x0002 - 0x0000)
@@ -838,22 +864,36 @@ public:
 DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_Set_Pal_Handles;
 
 // Function WBP_MainMenu_Pal_00.WBP_MainMenu_Pal_00_C.Set Work Suitability
-// 0x0128 (0x0128 - 0x0000)
+// 0x0188 (0x0188 - 0x0000)
 struct WBP_MainMenu_Pal_00_C_Set_Work_Suitability final
 {
 public:
 	TMap<EPalWorkSuitability, int32>              WorkSuitabilities;                                 // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 	TMap<EPalWorkSuitability, int32>              NewLocalVar;                                       // 0x0050(0x0050)(Edit, BlueprintVisible)
 	int32                                         CountIndex;                                        // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_GetBindedIndividualParameter_IndividualParameter; // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<EPalWorkSuitability, int32>              CallFunc_GetRankBasedWorkSuitabilityBonuses_ReturnValue; // 0x00B8(0x0050)()
-	TArray<struct FPalWorkSuitabilityInfo>        CallFunc_GetWorkSuitabilityPassiveAddRankList_ReturnValue; // 0x0108(0x0010)(ReferenceParm)
-	struct FPalWorkSuitabilityInfo                CallFunc_Array_Get_Item;                           // 0x0118(0x0008)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UWBP_MainMenu_Pal_WorkIconText_C* Widget)> K2Node_CreateDelegate_OutputDelegate_1; // 0x00C4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_GetBindedIndividualParameter_IndividualParameter; // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<EPalWorkSuitability, int32>              CallFunc_GetRankBasedWorkSuitabilityBonuses_ReturnValue; // 0x00E8(0x0050)()
+	TArray<struct FPalWorkSuitabilityInfo>        CallFunc_GetWorkSuitabilityPassiveAddRankList_ReturnValue; // 0x0138(0x0010)(ReferenceParm)
+	struct FPalWorkSuitabilityInfo                CallFunc_Array_Get_Item;                           // 0x0148(0x0008)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_155[0x3];                                      // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0158(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWidget*                                CallFunc_Array_Get_Item_1;                         // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MainMenu_Pal_WorkIconText_C*       K2Node_DynamicCast_AsWBP_Main_Menu_Pal_Work_Icon_Text; // 0x0178(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Pal_00_C_Set_Work_Suitability;
 

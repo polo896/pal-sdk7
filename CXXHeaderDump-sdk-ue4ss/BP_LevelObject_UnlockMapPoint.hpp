@@ -3,8 +3,8 @@
 
 class ABP_LevelObject_UnlockMapPoint_C : public ABP_LevelObject_TowerFastTravelPoint_C
 {
-    class UChildActorComponent* BP_pal_map_small_tower;                               // 0x03F8 (size: 0x8)
+    class UChildActorComponent* BP_pal_map_small_tower;                               // 0x0410 (size: 0x8)
 
-}; // Size: 0x400
+}; // Size: 0x418
 
 #endif

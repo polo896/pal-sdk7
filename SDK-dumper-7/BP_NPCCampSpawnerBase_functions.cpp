@@ -17,139 +17,251 @@
 namespace SDK
 {
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.TryCampSpawn
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.CheckWorldLoadComplete
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Loaded                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerBase_C::TryCampSpawn()
+void ABP_NPCCampSpawnerBase_C::CheckWorldLoadComplete(bool* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "TryCampSpawn");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "CheckWorldLoadComplete");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_NPCCampSpawnerBase_C_CheckWorldLoadComplete Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Loaded != nullptr)
+		*Loaded = Parms.Loaded;
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.StartRespawnTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.CREATEDELEGATE_PROXYFUNCTION_0
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  RespawnTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerBase_C::StartRespawnTimer(double RespawnTime)
+void ABP_NPCCampSpawnerBase_C::CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "StartRespawnTimer");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "CREATEDELEGATE_PROXYFUNCTION_0");
 
-	Params::BP_NPCCampSpawnerBase_C_StartRespawnTimer Parms{};
+	Params::BP_NPCCampSpawnerBase_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
 
-	Parms.RespawnTime = RespawnTime;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.StartDespawnTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DespawnTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCCampSpawnerBase_C::StartDespawnTimer(double DespawnTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "StartDespawnTimer");
-
-	Params::BP_NPCCampSpawnerBase_C_StartDespawnTimer Parms{};
-
-	Parms.DespawnTime = DespawnTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.SetupCampStatus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPCCampSpawnerBase_C::SetupCampStatus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "SetupCampStatus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.SetRespawnAble
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.DespawnCamp
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_NPCCampSpawnerBase_C::SetRespawnAble()
+void ABP_NPCCampSpawnerBase_C::DespawnCamp()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "SetRespawnAble");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "DespawnCamp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.EnemyCampClearSetting
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalEnemyCampStatus&       EnemyCampStatus                                        (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ABP_NPCCampSpawnerBase_C::ReceiveTick(float DeltaSeconds)
+void ABP_NPCCampSpawnerBase_C::EnemyCampClearSetting(const struct FPalEnemyCampStatus& EnemyCampStatus)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "EnemyCampClearSetting");
 
-	Params::BP_NPCCampSpawnerBase_C_ReceiveTick Parms{};
+	Params::BP_NPCCampSpawnerBase_C_EnemyCampClearSetting Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EnemyCampStatus = std::move(EnemyCampStatus);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ExecuteUbergraph_BP_NPCCampSpawnerBase
+// (Final, UbergraphFunction)
 // Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_NPCCampSpawnerBase_C::ExecuteUbergraph_BP_NPCCampSpawnerBase(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ReceiveEndPlay");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ExecuteUbergraph_BP_NPCCampSpawnerBase");
 
-	Params::BP_NPCCampSpawnerBase_C_ReceiveEndPlay Parms{};
+	Params::BP_NPCCampSpawnerBase_C_ExecuteUbergraph_BP_NPCCampSpawnerBase Parms{};
 
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.GetRewardName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerBase_C::ReceiveBeginPlay()
+class FName ABP_NPCCampSpawnerBase_C::GetRewardName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "GetRewardName");
+
+	Params::BP_NPCCampSpawnerBase_C_GetRewardName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.IsNearPlayerCamp
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   IsNear                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCCampSpawnerBase_C::IsNearPlayerCamp(bool* IsNear)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "IsNearPlayerCamp");
+
+	Params::BP_NPCCampSpawnerBase_C_IsNearPlayerCamp Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsNear != nullptr)
+		*IsNear = Parms.IsNear;
+}
+
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.IsProbabilitySuccess
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCCampSpawnerBase_C::IsProbabilitySuccess(bool* Success)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "IsProbabilitySuccess");
+
+	Params::BP_NPCCampSpawnerBase_C_IsProbabilitySuccess Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Success != nullptr)
+		*Success = Parms.Success;
+}
+
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnEnemyDead
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalDeadInfo&              DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void ABP_NPCCampSpawnerBase_C::OnEnemyDead(const struct FPalDeadInfo& DeadInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnEnemyDead");
+
+	Params::BP_NPCCampSpawnerBase_C_OnEnemyDead Parms{};
+
+	Parms.DeadInfo = std::move(DeadInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnEnemySpawned
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*&   SpawnHandle                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCCampSpawnerBase_C::OnEnemySpawned(class UPalIndividualCharacterHandle*& SpawnHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnEnemySpawned");
+
+	Params::BP_NPCCampSpawnerBase_C_OnEnemySpawned Parms{};
+
+	Parms.SpawnHandle = SpawnHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	SpawnHandle = Parms.SpawnHandle;
+}
+
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnOpenMainTreasureBox
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCCampSpawnerBase_C::OnOpenMainTreasureBox()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnOpenMainTreasureBox");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnReceivedReward
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCCampSpawnerBase_C::OnReceivedReward()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnReceivedReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.PlayerCheck
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   RespawnOK                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCCampSpawnerBase_C::PlayerCheck(bool* RespawnOK)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "PlayerCheck");
+
+	Params::BP_NPCCampSpawnerBase_C_PlayerCheck Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (RespawnOK != nullptr)
+		*RespawnOK = Parms.RespawnOK;
 }
 
 
@@ -178,251 +290,139 @@ void ABP_NPCCampSpawnerBase_C::RandomLottery(class UClass** ResultClass, int32* 
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.PlayerCheck
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   RespawnOK                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_NPCCampSpawnerBase_C::PlayerCheck(bool* RespawnOK)
+void ABP_NPCCampSpawnerBase_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "PlayerCheck");
-
-	Params::BP_NPCCampSpawnerBase_C_PlayerCheck Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (RespawnOK != nullptr)
-		*RespawnOK = Parms.RespawnOK;
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnReceivedReward
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPCCampSpawnerBase_C::OnReceivedReward()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnReceivedReward");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnOpenMainTreasureBox
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPCCampSpawnerBase_C::OnOpenMainTreasureBox()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnOpenMainTreasureBox");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnEnemySpawned
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterHandle*&   SpawnHandle                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerBase_C::OnEnemySpawned(class UPalIndividualCharacterHandle*& SpawnHandle)
+void ABP_NPCCampSpawnerBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnEnemySpawned");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ReceiveEndPlay");
 
-	Params::BP_NPCCampSpawnerBase_C_OnEnemySpawned Parms{};
+	Params::BP_NPCCampSpawnerBase_C_ReceiveEndPlay Parms{};
 
-	Parms.SpawnHandle = SpawnHandle;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	SpawnHandle = Parms.SpawnHandle;
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.OnEnemyDead
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalDeadInfo&              DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void ABP_NPCCampSpawnerBase_C::OnEnemyDead(const struct FPalDeadInfo& DeadInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "OnEnemyDead");
-
-	Params::BP_NPCCampSpawnerBase_C_OnEnemyDead Parms{};
-
-	Parms.DeadInfo = std::move(DeadInfo);
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.IsProbabilitySuccess
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerBase_C::IsProbabilitySuccess(bool* Success)
+void ABP_NPCCampSpawnerBase_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "IsProbabilitySuccess");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ReceiveTick");
 
-	Params::BP_NPCCampSpawnerBase_C_IsProbabilitySuccess Parms{};
+	Params::BP_NPCCampSpawnerBase_C_ReceiveTick Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Success != nullptr)
-		*Success = Parms.Success;
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.IsNearPlayerCamp
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   IsNear                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCCampSpawnerBase_C::IsNearPlayerCamp(bool* IsNear)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "IsNearPlayerCamp");
-
-	Params::BP_NPCCampSpawnerBase_C_IsNearPlayerCamp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsNear != nullptr)
-		*IsNear = Parms.IsNear;
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.GetRewardName
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class FName ABP_NPCCampSpawnerBase_C::GetRewardName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "GetRewardName");
-
-	Params::BP_NPCCampSpawnerBase_C_GetRewardName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.ExecuteUbergraph_BP_NPCCampSpawnerBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCCampSpawnerBase_C::ExecuteUbergraph_BP_NPCCampSpawnerBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "ExecuteUbergraph_BP_NPCCampSpawnerBase");
-
-	Params::BP_NPCCampSpawnerBase_C_ExecuteUbergraph_BP_NPCCampSpawnerBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.EnemyCampClearSetting
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalEnemyCampStatus&       EnemyCampStatus                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_NPCCampSpawnerBase_C::EnemyCampClearSetting(const struct FPalEnemyCampStatus& EnemyCampStatus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "EnemyCampClearSetting");
-
-	Params::BP_NPCCampSpawnerBase_C_EnemyCampClearSetting Parms{};
-
-	Parms.EnemyCampStatus = std::move(EnemyCampStatus);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.DespawnCamp
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.SetRespawnAble
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_NPCCampSpawnerBase_C::DespawnCamp()
+void ABP_NPCCampSpawnerBase_C::SetRespawnAble()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "DespawnCamp");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "SetRespawnAble");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.CREATEDELEGATE_PROXYFUNCTION_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.SetupCampStatus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_NPCCampSpawnerBase_C::CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam)
+void ABP_NPCCampSpawnerBase_C::SetupCampStatus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "CREATEDELEGATE_PROXYFUNCTION_0");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "SetupCampStatus");
 
-	Params::BP_NPCCampSpawnerBase_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewParam = NewParam;
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.StartDespawnTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DespawnTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCCampSpawnerBase_C::StartDespawnTimer(double DespawnTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "StartDespawnTimer");
+
+	Params::BP_NPCCampSpawnerBase_C_StartDespawnTimer Parms{};
+
+	Parms.DespawnTime = DespawnTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.CheckWorldLoadComplete
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.StartRespawnTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   Loaded                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  RespawnTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerBase_C::CheckWorldLoadComplete(bool* Loaded)
+void ABP_NPCCampSpawnerBase_C::StartRespawnTimer(double RespawnTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "CheckWorldLoadComplete");
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "StartRespawnTimer");
 
-	Params::BP_NPCCampSpawnerBase_C_CheckWorldLoadComplete Parms{};
+	Params::BP_NPCCampSpawnerBase_C_StartRespawnTimer Parms{};
+
+	Parms.RespawnTime = RespawnTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (Loaded != nullptr)
-		*Loaded = Parms.Loaded;
+
+// Function BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C.TryCampSpawn
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCCampSpawnerBase_C::TryCampSpawn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerBase_C", "TryCampSpawn");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

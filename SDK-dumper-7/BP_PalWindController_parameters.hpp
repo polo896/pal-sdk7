@@ -16,25 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_PalWindController.BP_PalWindController_C.UpdateNPC
-// 0x0028 (0x0028 - 0x0000)
-struct BP_PalWindController_C_UpdateNPC final
-{
-public:
-	struct FPalWindInfo                           WindInfo;                                          // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-	class UNiagaraParameterCollectionInstance*    CallFunc_GetNiagaraParameterCollection_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalWindController_C_UpdateNPC;
-
-// Function BP_PalWindController.BP_PalWindController_C.UpdateNiagaraParameterCollection
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalWindController_C_UpdateNiagaraParameterCollection final
-{
-public:
-	struct FPalWindInfo                           WindInfo;                                          // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_PalWindController_C_UpdateNiagaraParameterCollection;
-
 // Function BP_PalWindController.BP_PalWindController_C.ExecuteUbergraph_BP_PalWindController
 // 0x0028 (0x0028 - 0x0000)
 struct BP_PalWindController_C_ExecuteUbergraph_BP_PalWindController final
@@ -45,6 +26,25 @@ public:
 	struct FPalWindInfo                           K2Node_Event_WindInfo;                             // 0x0008(0x0020)(ConstParm, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PalWindController_C_ExecuteUbergraph_BP_PalWindController;
+
+// Function BP_PalWindController.BP_PalWindController_C.UpdateNiagaraParameterCollection
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalWindController_C_UpdateNiagaraParameterCollection final
+{
+public:
+	struct FPalWindInfo                           WindInfo;                                          // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_PalWindController_C_UpdateNiagaraParameterCollection;
+
+// Function BP_PalWindController.BP_PalWindController_C.UpdateNPC
+// 0x0028 (0x0028 - 0x0000)
+struct BP_PalWindController_C_UpdateNPC final
+{
+public:
+	struct FPalWindInfo                           WindInfo;                                          // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	class UNiagaraParameterCollectionInstance*    CallFunc_GetNiagaraParameterCollection_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalWindController_C_UpdateNPC;
 
 }
 

@@ -21225,6 +21225,31 @@ bool UPalCharacterMovementComponent::IsStepUpUpSweepShrinkEnabled() const
 }
 
 
+// Function Pal.PalCharacterMovementComponent.IsSubmergedBeyondFloatingDepth
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPalCharacterMovementComponent::IsSubmergedBeyondFloatingDepth() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalCharacterMovementComponent", "IsSubmergedBeyondFloatingDepth");
+
+	Params::PalCharacterMovementComponent_IsSubmergedBeyondFloatingDepth Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Pal.PalCharacterMovementComponent.IsTickOptimizationDisabled
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -21619,6 +21644,25 @@ void UPalWorkProgress::OnRep_InProgress()
 }
 
 
+// Function Pal.PalWorkProgress.OnRep_ReplicatedWorkAmountBySec
+// (Final, Native, Protected)
+
+void UPalWorkProgress::OnRep_ReplicatedWorkAmountBySec()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalWorkProgress", "OnRep_ReplicatedWorkAmountBySec");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalWorkProgress.GetCurrentWorkAmount
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -21695,7 +21739,7 @@ float UPalWorkProgress::GetRemainWorkAmount() const
 
 
 // Function Pal.PalWorkProgress.GetRemainWorkPredicateTime
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -45340,6 +45384,25 @@ void UPalNetworkItemComponent::NotifyCommonItemRewardUIData_ToClient(const struc
 }
 
 
+// Function Pal.PalNetworkItemComponent.NotifySphereConsumeAndRecoverCompleted_ToClient
+// (Final, Net, NetReliable, Native, Event, Private, NetClient)
+
+void UPalNetworkItemComponent::NotifySphereConsumeAndRecoverCompleted_ToClient()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalNetworkItemComponent", "NotifySphereConsumeAndRecoverCompleted_ToClient");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalNetworkItemComponent.RequestChangeAllFilterCheck_ToServer
 // (Final, Net, NetReliable, Native, Event, Private, NetServer)
 // Parameters:
@@ -45963,6 +46026,25 @@ void APalHUDInGame::OnApplicationActivationStateChanged(bool bIsFocused)
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalHUDInGame.OnEndTrialGame
+// (Final, Native, Private)
+
+void APalHUDInGame::OnEndTrialGame()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalHUDInGame", "OnEndTrialGame");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -46894,6 +46976,38 @@ void UPalIncidentNotifyListener::UnregisterFromIncidentSystem()
 	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalMasterDataTablesUtility.ExistLocalizedText
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPalLocalizeTextCategory                TextCategory                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             TextId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPalMasterDataTablesUtility::ExistLocalizedText(const class UObject* WorldContextObject, EPalLocalizeTextCategory TextCategory, class FName TextId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("PalMasterDataTablesUtility", "ExistLocalizedText");
+
+	Params::PalMasterDataTablesUtility_ExistLocalizedText Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.TextCategory = TextCategory;
+	Parms.TextId = TextId;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -61647,6 +61761,31 @@ void UPalArenaSequenceInBattle::OnEndSequence_Implementation()
 }
 
 
+// Function Pal.PalArenaSequenceInBattle.OnRevivedInBattle_ServerInternal
+// (Final, Native, Private)
+// Parameters:
+// class UPalIndividualCharacterParameter* IndividualParameter                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPalArenaSequenceInBattle::OnRevivedInBattle_ServerInternal(class UPalIndividualCharacterParameter* IndividualParameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalArenaSequenceInBattle", "OnRevivedInBattle_ServerInternal");
+
+	Params::PalArenaSequenceInBattle_OnRevivedInBattle_ServerInternal Parms{};
+
+	Parms.IndividualParameter = IndividualParameter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalArenaSequenceInBattle.ResetPalHate
 // (Final, Native, Protected, BlueprintCallable)
 
@@ -66688,6 +66827,56 @@ class FName UPalDefine::TextId_UICommon_LOG_ConsumeItem()
 		Func = StaticClass()->GetFunction("PalDefine", "TextId_UICommon_LOG_ConsumeItem");
 
 	Params::PalDefine_TextId_UICommon_LOG_ConsumeItem Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Pal.PalDefine.TextId_UICommon_LOG_Decay_WorldTreeOre
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FName UPalDefine::TextId_UICommon_LOG_Decay_WorldTreeOre()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("PalDefine", "TextId_UICommon_LOG_Decay_WorldTreeOre");
+
+	Params::PalDefine_TextId_UICommon_LOG_Decay_WorldTreeOre Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Pal.PalDefine.TextId_UICommon_LOG_Decay_WorldTreeWood
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FName UPalDefine::TextId_UICommon_LOG_Decay_WorldTreeWood()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("PalDefine", "TextId_UICommon_LOG_Decay_WorldTreeWood");
+
+	Params::PalDefine_TextId_UICommon_LOG_Decay_WorldTreeWood Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -72657,6 +72846,33 @@ void UPalAudioWorldSubsystem::PostTriggerByString(const class FString& Trigger)
 }
 
 
+// Function Pal.PalAudioWorldSubsystem.SetDisableBattleBGMFlag
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class FName                             flagName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIsDisable                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPalAudioWorldSubsystem::SetDisableBattleBGMFlag(class FName flagName, bool bIsDisable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalAudioWorldSubsystem", "SetDisableBattleBGMFlag");
+
+	Params::PalAudioWorldSubsystem_SetDisableBattleBGMFlag Parms{};
+
+	Parms.flagName = flagName;
+	Parms.bIsDisable = bIsDisable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalAudioWorldSubsystem.SetDsiableBattleBGM
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -72982,6 +73198,31 @@ void UPalAudioWorldSubsystem::GetSoundPlayerLocation(struct FVector* OutLocation
 
 	if (OutLocation != nullptr)
 		*OutLocation = std::move(Parms.OutLocation);
+}
+
+
+// Function Pal.PalAudioWorldSubsystem.IsBattleBGMDisabled
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPalAudioWorldSubsystem::IsBattleBGMDisabled() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalAudioWorldSubsystem", "IsBattleBGMDisabled");
+
+	Params::PalAudioWorldSubsystem_IsBattleBGMDisabled Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -76877,6 +77118,31 @@ void APalCharacter::BroadcastOnCompleteInitializeParameter()
 }
 
 
+// Function Pal.PalCharacter.CancelDeathActionOnRevive
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool APalCharacter::CancelDeathActionOnRevive()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalCharacter", "CancelDeathActionOnRevive");
+
+	Params::PalCharacter_CancelDeathActionOnRevive Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Pal.PalCharacter.ChangeBattleModeFlag
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -77764,6 +78030,25 @@ void APalCharacter::RequestPlayCosmeticMontage_ToServer(class UAnimMontage* Mont
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalCharacter.ResetFacialOnRevive_ToAll
+// (Net, NetReliable, Native, Event, NetMulticast, Public)
+
+void APalCharacter::ResetFacialOnRevive_ToAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalCharacter", "ResetFacialOnRevive_ToAll");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -104304,6 +104589,25 @@ void UPalGameInstance::SetAlreadyShowModDetectionDialog()
 }
 
 
+// Function Pal.PalGameInstance.SetAlreadyShowSaveWarningDialog
+// (Final, Native, Public, BlueprintCallable)
+
+void UPalGameInstance::SetAlreadyShowSaveWarningDialog()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalGameInstance", "SetAlreadyShowSaveWarningDialog");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalGameInstance.SetIsNewGame
 // (Final, Native, Public, BlueprintCallable)
 
@@ -104589,6 +104893,31 @@ bool UPalGameInstance::IsAlreadyShowModDetectionDialog() const
 		Func = Class->GetFunction("PalGameInstance", "IsAlreadyShowModDetectionDialog");
 
 	Params::PalGameInstance_IsAlreadyShowModDetectionDialog Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Pal.PalGameInstance.IsAlreadyShowSaveWarningDialog
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPalGameInstance::IsAlreadyShowSaveWarningDialog() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalGameInstance", "IsAlreadyShowSaveWarningDialog");
+
+	Params::PalGameInstance_IsAlreadyShowSaveWarningDialog Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -116794,6 +117123,31 @@ void UPalFlyMeshHeightCtrlComponent::OnChangeBattleMode(bool bIsBattleMode)
 	Params::PalFlyMeshHeightCtrlComponent_OnChangeBattleMode Parms{};
 
 	Parms.bIsBattleMode = bIsBattleMode;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalFlyMeshHeightCtrlComponent.OnDamage
+// (Final, Native, Private)
+// Parameters:
+// const struct FPalDamageRactionInfo&     ReactionInfo                                           (Parm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UPalFlyMeshHeightCtrlComponent::OnDamage(const struct FPalDamageRactionInfo& ReactionInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalFlyMeshHeightCtrlComponent", "OnDamage");
+
+	Params::PalFlyMeshHeightCtrlComponent_OnDamage Parms{};
+
+	Parms.ReactionInfo = std::move(ReactionInfo);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -132990,6 +133344,31 @@ void APalCutsceneHideVolume::Initialize(float InRadius, bool bEnableOverlapCaptu
 }
 
 
+// Function Pal.PalCutsceneHideVolume.OnGliderSpawned
+// (Final, Native, Private)
+// Parameters:
+// class APalGliderObject*                 NewGlider                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void APalCutsceneHideVolume::OnGliderSpawned(class APalGliderObject* NewGlider)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalCutsceneHideVolume", "OnGliderSpawned");
+
+	Params::PalCutsceneHideVolume_OnGliderSpawned Parms{};
+
+	Parms.NewGlider = NewGlider;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalCutsceneHideVolume.OnSphereBeginOverlap
 // (Final, Native, Private, HasOutParams)
 // Parameters:
@@ -138532,6 +138911,33 @@ void UPalDiscordClient::Mute(const class UDiscordRelationshipHandle* Friend)
 	Params::PalDiscordClient_Mute Parms{};
 
 	Parms.Friend = Friend;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalDiscordClient.OnChangeVoiceChatSettings
+// (Final, Native, Private, HasOutParams)
+// Parameters:
+// const struct FPalOptionVoiceChatSettings&PrevSettings                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FPalOptionVoiceChatSettings&NewSettings                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UPalDiscordClient::OnChangeVoiceChatSettings(const struct FPalOptionVoiceChatSettings& PrevSettings, const struct FPalOptionVoiceChatSettings& NewSettings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalDiscordClient", "OnChangeVoiceChatSettings");
+
+	Params::PalDiscordClient_OnChangeVoiceChatSettings Parms{};
+
+	Parms.PrevSettings = std::move(PrevSettings);
+	Parms.NewSettings = std::move(NewSettings);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -148199,6 +148605,31 @@ bool UPalFishingComponent::IsFishingButtonPressed() const
 }
 
 
+// Function Pal.PalFishingComponent.IsPalSkillAdviceTarget
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UPalFishingComponent::IsPalSkillAdviceTarget() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalFishingComponent", "IsPalSkillAdviceTarget");
+
+	Params::PalFishingComponent_IsPalSkillAdviceTarget Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Pal.PalFishingDefine.GetCutsceneInfo
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -152909,6 +153340,62 @@ int32 UPalGameSetting::GetCaptureLevelBySphereType(EPalCaptureSphereLevelType Sp
 }
 
 
+// Function Pal.PalGameSetting.GetFishingDifficultyRateByStepIndex
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const int32                             StepIndex                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UPalGameSetting::GetFishingDifficultyRateByStepIndex(const int32 StepIndex) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalGameSetting", "GetFishingDifficultyRateByStepIndex");
+
+	Params::PalGameSetting_GetFishingDifficultyRateByStepIndex Parms{};
+
+	Parms.StepIndex = StepIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Pal.PalGameSetting.GetFishingDifficultyStepIndexByRate
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const float                             Rate                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UPalGameSetting::GetFishingDifficultyStepIndexByRate(const float Rate) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalGameSetting", "GetFishingDifficultyStepIndexByRate");
+
+	Params::PalGameSetting_GetFishingDifficultyStepIndexByRate Parms{};
+
+	Parms.Rate = Rate;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Pal.PalGameSetting.GetOptionSubsystem
 // (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -153160,6 +153647,31 @@ void APalGameStateInGame::BroadcastServerNotice(const class FString& NoticeMessa
 }
 
 
+// Function Pal.PalGameStateInGame.GetRemainTrialTimeSecond
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 APalGameStateInGame::GetRemainTrialTimeSecond()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalGameStateInGame", "GetRemainTrialTimeSecond");
+
+	Params::PalGameStateInGame_GetRemainTrialTimeSecond Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Pal.PalGameStateInGame.OnCompleteSyncAllFromServer_InClient
 // (Final, Native, Private)
 // Parameters:
@@ -153180,6 +153692,25 @@ void APalGameStateInGame::OnCompleteSyncAllFromServer_InClient(class APalPlayerS
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalGameStateInGame.OnOverTrialTime
+// (Final, Native, Public)
+
+void APalGameStateInGame::OnOverTrialTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalGameStateInGame", "OnOverTrialTime");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -153450,6 +153981,31 @@ class FString APalGameStateInGame::GetWorldSaveDirectoryName() const
 		Func = Class->GetFunction("PalGameStateInGame", "GetWorldSaveDirectoryName");
 
 	Params::PalGameStateInGame_GetWorldSaveDirectoryName Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Pal.PalGameStateInGame.HasTrialEnded
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool APalGameStateInGame::HasTrialEnded() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalGameStateInGame", "HasTrialEnded");
+
+	Params::PalGameStateInGame_HasTrialEnded Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -164119,6 +164675,25 @@ void UPalIndividualCharacterParameter::AddPassiveSkill(class FName AddSkill, cla
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalIndividualCharacterParameter.CleanupOnRevive
+// (Final, Native, Public, BlueprintCallable)
+
+void UPalIndividualCharacterParameter::CleanupOnRevive()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalIndividualCharacterParameter", "CleanupOnRevive");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -178667,31 +179242,6 @@ void APalLevelObject_LockGimmickPalFight::Multicast_NotifyUI(class APalPlayerCha
 }
 
 
-// Function Pal.PalLevelObject_LockGimmickPalFight.OnCreatedIndividualParameter
-// (Final, Native, Private)
-// Parameters:
-// class UPalIndividualCharacterParameter* IndividualParameter                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void APalLevelObject_LockGimmickPalFight::OnCreatedIndividualParameter(class UPalIndividualCharacterParameter* IndividualParameter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PalLevelObject_LockGimmickPalFight", "OnCreatedIndividualParameter");
-
-	Params::PalLevelObject_LockGimmickPalFight_OnCreatedIndividualParameter Parms{};
-
-	Parms.IndividualParameter = IndividualParameter;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Pal.PalLevelObject_LockGimmickPalFight.OnGameStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -179970,6 +180520,25 @@ void UPalLoadoutSelectorComponent::OnRep_CurrentItemSlotIndex()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("PalLoadoutSelectorComponent", "OnRep_CurrentItemSlotIndex");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalLoadoutSelectorComponent.OnRep_NowEquipBallItemID
+// (Final, Native, Private)
+
+void UPalLoadoutSelectorComponent::OnRep_NowEquipBallItemID()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalLoadoutSelectorComponent", "OnRep_NowEquipBallItemID");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -188689,6 +189258,31 @@ void UPalUIPalBoxBase::TryMoveToBaseCamp(class UPalIndividualCharacterSlot* Move
 		Func = Class->GetFunction("PalUIPalBoxBase", "TryMoveToBaseCamp");
 
 	Params::PalUIPalBoxBase_TryMoveToBaseCamp Parms{};
+
+	Parms.MoveSlot = MoveSlot;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalUIPalBoxBase.TryMoveToBoxForCommonContainer
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UPalIndividualCharacterSlot*      MoveSlot                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPalUIPalBoxBase::TryMoveToBoxForCommonContainer(class UPalIndividualCharacterSlot* MoveSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalUIPalBoxBase", "TryMoveToBoxForCommonContainer");
+
+	Params::PalUIPalBoxBase_TryMoveToBoxForCommonContainer Parms{};
 
 	Parms.MoveSlot = MoveSlot;
 
@@ -210389,31 +210983,6 @@ void UPalNetworkPlayerComponent::RequestTriggerTutorial_ToClient(EPalTutorialTri
 }
 
 
-// Function Pal.PalNetworkPlayerComponent.RequestUnlockFastTravelPoint_ToServer
-// (Net, NetReliable, Native, Event, Public, NetServer)
-// Parameters:
-// const class FName                       UnlockFlagKey                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPalNetworkPlayerComponent::RequestUnlockFastTravelPoint_ToServer(const class FName UnlockFlagKey)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PalNetworkPlayerComponent", "RequestUnlockFastTravelPoint_ToServer");
-
-	Params::PalNetworkPlayerComponent_RequestUnlockFastTravelPoint_ToServer Parms{};
-
-	Parms.UnlockFlagKey = UnlockFlagKey;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Pal.PalNetworkPlayerComponent.RequestUnlockTechnology_ToServer
 // (Net, NetReliable, Native, Event, Public, NetServer)
 // Parameters:
@@ -212464,8 +213033,9 @@ void UPalNPCTalkFlowComponent::CancelTalkFlow()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class AActor*                           Other                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UPalNPCTalkFlowComponent::LaunchTalkIncident(class AActor* Other)
+bool UPalNPCTalkFlowComponent::LaunchTalkIncident(class AActor* Other)
 {
 	static class UFunction* Func = nullptr;
 
@@ -212482,6 +213052,8 @@ void UPalNPCTalkFlowComponent::LaunchTalkIncident(class AActor* Other)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -218319,6 +218891,25 @@ void UPalPartnerSkillPassiveSkill::AllResetPassiveSkill()
 }
 
 
+// Function Pal.PalPartnerSkillPassiveSkill.ApplyPendingLifeDrainGranterReset
+// (Final, Native, Private)
+
+void UPalPartnerSkillPassiveSkill::ApplyPendingLifeDrainGranterReset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalPartnerSkillPassiveSkill", "ApplyPendingLifeDrainGranterReset");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalPartnerSkillPassiveSkill.InactivateWorkingSkill
 // (Final, Native, Private)
 
@@ -218819,6 +219410,33 @@ void UPalPartnerSkillPassiveSkill::OnRideInactivated()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Pal.PalPartnerSkillPassiveSkill.OnSetPassiveSkillEffectWithOwner
+// (Final, Native, Private)
+// Parameters:
+// EPalPassiveSkillEffectType              EffectType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    EffectOwner                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPalPartnerSkillPassiveSkill::OnSetPassiveSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalPartnerSkillPassiveSkill", "OnSetPassiveSkillEffectWithOwner");
+
+	Params::PalPartnerSkillPassiveSkill_OnSetPassiveSkillEffectWithOwner Parms{};
+
+	Parms.EffectType = EffectType;
+	Parms.EffectOwner = EffectOwner;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219436,9 +220054,9 @@ void UPalPassiveSkillComponent::OnChangeSkillEffectValue(EPalPassiveSkillEffectT
 // (Final, Native, Private)
 // Parameters:
 // EPalPassiveSkillEffectType              EffectType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UObject*                    effectOwner                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    EffectOwner                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UPalPassiveSkillComponent::OnClearSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* effectOwner)
+void UPalPassiveSkillComponent::OnClearSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner)
 {
 	static class UFunction* Func = nullptr;
 
@@ -219448,7 +220066,7 @@ void UPalPassiveSkillComponent::OnClearSkillEffectWithOwner(EPalPassiveSkillEffe
 	Params::PalPassiveSkillComponent_OnClearSkillEffectWithOwner Parms{};
 
 	Parms.EffectType = EffectType;
-	Parms.effectOwner = effectOwner;
+	Parms.EffectOwner = EffectOwner;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -219551,9 +220169,9 @@ void UPalPassiveSkillComponent::OnRep_SkillInfos()
 // (Final, Native, Private)
 // Parameters:
 // EPalPassiveSkillEffectType              EffectType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UObject*                    effectOwner                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    EffectOwner                                            (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UPalPassiveSkillComponent::OnSetSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* effectOwner)
+void UPalPassiveSkillComponent::OnSetSkillEffectWithOwner(EPalPassiveSkillEffectType EffectType, const class UObject* EffectOwner)
 {
 	static class UFunction* Func = nullptr;
 
@@ -219563,7 +220181,7 @@ void UPalPassiveSkillComponent::OnSetSkillEffectWithOwner(EPalPassiveSkillEffect
 	Params::PalPassiveSkillComponent_OnSetSkillEffectWithOwner Parms{};
 
 	Parms.EffectType = EffectType;
-	Parms.effectOwner = effectOwner;
+	Parms.EffectOwner = EffectOwner;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -224039,6 +224657,31 @@ void APalPlayerController::LostOtomoByInstacneID_ToServer(const struct FPalInsta
 }
 
 
+// Function Pal.PalPlayerController.NotifyActivateLifeDrainPowerAttackUp_ToClient
+// (Final, Net, NetReliable, Native, Event, Private, NetClient)
+// Parameters:
+// const struct FPalInstanceID&            PalInstanceID                                          (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void APalPlayerController::NotifyActivateLifeDrainPowerAttackUp_ToClient(const struct FPalInstanceID& PalInstanceID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalPlayerController", "NotifyActivateLifeDrainPowerAttackUp_ToClient");
+
+	Params::PalPlayerController_NotifyActivateLifeDrainPowerAttackUp_ToClient Parms{};
+
+	Parms.PalInstanceID = std::move(PalInstanceID);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function Pal.PalPlayerController.NotifyConfirmRequestGuild_ToServer
 // (Final, Net, NetReliable, Native, Event, Private, NetServer, HasDefaults)
 // Parameters:
@@ -227800,8 +228443,9 @@ void APalPlayerController::ShooterComponent_ChangeIsJetpackShooting_ToServer(cla
 // int32                                   ID                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    IsShooting                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bCanShootOnRelease                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRequestedThrowObject                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void APalPlayerController::ShooterComponent_ChangeIsShooting_ToServer(class UPalShooterComponent* Shooter, int32 ID, bool IsShooting, bool bCanShootOnRelease)
+void APalPlayerController::ShooterComponent_ChangeIsShooting_ToServer(class UPalShooterComponent* Shooter, int32 ID, bool IsShooting, bool bCanShootOnRelease, bool bRequestedThrowObject)
 {
 	static class UFunction* Func = nullptr;
 
@@ -227814,6 +228458,7 @@ void APalPlayerController::ShooterComponent_ChangeIsShooting_ToServer(class UPal
 	Parms.ID = ID;
 	Parms.IsShooting = IsShooting;
 	Parms.bCanShootOnRelease = bCanShootOnRelease;
+	Parms.bRequestedThrowObject = bRequestedThrowObject;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -239230,8 +239875,9 @@ void UPalShooterComponent::ChangeIsShooting(bool IsShooting_0, bool bCanShootOnR
 // int32                                   ID                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    IsShooting_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bCanShootOnRelease                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRequestedThrowObject                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UPalShooterComponent::ChangeIsShooting_ToALL(int32 ID, bool IsShooting_0, bool bCanShootOnRelease)
+void UPalShooterComponent::ChangeIsShooting_ToALL(int32 ID, bool IsShooting_0, bool bCanShootOnRelease, bool bRequestedThrowObject)
 {
 	static class UFunction* Func = nullptr;
 
@@ -239243,6 +239889,7 @@ void UPalShooterComponent::ChangeIsShooting_ToALL(int32 ID, bool IsShooting_0, b
 	Parms.ID = ID;
 	Parms.IsShooting_0 = IsShooting_0;
 	Parms.bCanShootOnRelease = bCanShootOnRelease;
+	Parms.bRequestedThrowObject = bRequestedThrowObject;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -239259,8 +239906,9 @@ void UPalShooterComponent::ChangeIsShooting_ToALL(int32 ID, bool IsShooting_0, b
 // int32                                   ID                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    IsShooting_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bCanShootOnRelease                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRequestedThrowObject                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UPalShooterComponent::ChangeIsShooting_ToServer(int32 ID, bool IsShooting_0, bool bCanShootOnRelease)
+void UPalShooterComponent::ChangeIsShooting_ToServer(int32 ID, bool IsShooting_0, bool bCanShootOnRelease, bool bRequestedThrowObject)
 {
 	static class UFunction* Func = nullptr;
 
@@ -239272,6 +239920,7 @@ void UPalShooterComponent::ChangeIsShooting_ToServer(int32 ID, bool IsShooting_0
 	Parms.ID = ID;
 	Parms.IsShooting_0 = IsShooting_0;
 	Parms.bCanShootOnRelease = bCanShootOnRelease;
+	Parms.bRequestedThrowObject = bRequestedThrowObject;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -250184,6 +250833,34 @@ void UPalUIUtility::GetDisplayNickName(const class UObject* WorldContextObject, 
 
 	if (OutNickName != nullptr)
 		*OutNickName = std::move(Parms.OutNickName);
+}
+
+
+// Function Pal.PalUIUtility.GetFailedToLoadWorldDataText
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+class FText UPalUIUtility::GetFailedToLoadWorldDataText(const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("PalUIUtility", "GetFailedToLoadWorldDataText");
+
+	Params::PalUIUtility_GetFailedToLoadWorldDataText Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 

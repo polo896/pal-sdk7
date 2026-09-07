@@ -38,20 +38,20 @@ public:
 	class UPalGrapplingGunModule*                 GrapplingGunModule;                                // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateVisibleReticle();
-	void UpdateBulletLocation();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveBeginPlay();
-	void OnPullTrigger();
-	void OnGrapplingActionStart(const struct FVector& HitLocation, double CoolTimeRate);
-	void OnGrapplingActionEnd();
-	void OnDetachWeapon(class AActor* detachActor);
-	void OnAttachWeapon(class AActor* attachActor);
 	void ExecuteUbergraph_BP_GrapplingGun(int32 EntryPoint);
+	void OnAttachWeapon(class AActor* attachActor);
+	void OnDetachWeapon(class AActor* detachActor);
+	void OnGrapplingActionEnd();
+	void OnGrapplingActionStart(const struct FVector& HitLocation, double CoolTimeRate);
+	void OnPullTrigger();
+	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveTick(float DeltaSeconds);
+	void UpdateBulletLocation();
+	void UpdateVisibleReticle();
 
-	void IsShowReticle(bool* IsShow) const;
 	bool CanDealDamageWeapon() const;
+	void IsShowReticle(bool* IsShow) const;
 
 public:
 	static class UClass* StaticClass()

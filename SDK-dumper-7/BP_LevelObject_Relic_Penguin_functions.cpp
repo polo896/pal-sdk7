@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function BP_LevelObject_Relic_Penguin.BP_LevelObject_Relic_Penguin_C.SetActiveSelf
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_LevelObject_Relic_Penguin.BP_LevelObject_Relic_Penguin_C.ExecuteUbergraph_BP_LevelObject_Relic_Penguin
+// (Final, UbergraphFunction)
 // Parameters:
-// class APalLevelObjectObtainable*        LevelObject                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelObject_Relic_Penguin_C::SetActiveSelf(class APalLevelObjectObtainable* LevelObject)
+void ABP_LevelObject_Relic_Penguin_C::ExecuteUbergraph_BP_LevelObject_Relic_Penguin(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelObject_Relic_Penguin_C", "SetActiveSelf");
+		Func = Class->GetFunction("BP_LevelObject_Relic_Penguin_C", "ExecuteUbergraph_BP_LevelObject_Relic_Penguin");
 
-	Params::BP_LevelObject_Relic_Penguin_C_SetActiveSelf Parms{};
+	Params::BP_LevelObject_Relic_Penguin_C_ExecuteUbergraph_BP_LevelObject_Relic_Penguin Parms{};
 
-	Parms.LevelObject = LevelObject;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LevelObject_Relic_Penguin.BP_LevelObject_Relic_Penguin_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LevelObject_Relic_Penguin_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelObject_Relic_Penguin_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,21 +57,35 @@ void ABP_LevelObject_Relic_Penguin_C::OnUpdatePickupStatus(class APalLevelObject
 }
 
 
-// Function BP_LevelObject_Relic_Penguin.BP_LevelObject_Relic_Penguin_C.ExecuteUbergraph_BP_LevelObject_Relic_Penguin
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_LevelObject_Relic_Penguin.BP_LevelObject_Relic_Penguin_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_LevelObject_Relic_Penguin_C::ExecuteUbergraph_BP_LevelObject_Relic_Penguin(int32 EntryPoint)
+void ABP_LevelObject_Relic_Penguin_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelObject_Relic_Penguin_C", "ExecuteUbergraph_BP_LevelObject_Relic_Penguin");
+		Func = Class->GetFunction("BP_LevelObject_Relic_Penguin_C", "ReceiveBeginPlay");
 
-	Params::BP_LevelObject_Relic_Penguin_C_ExecuteUbergraph_BP_LevelObject_Relic_Penguin Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_LevelObject_Relic_Penguin.BP_LevelObject_Relic_Penguin_C.SetActiveSelf
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalLevelObjectObtainable*        LevelObject                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LevelObject_Relic_Penguin_C::SetActiveSelf(class APalLevelObjectObtainable* LevelObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelObject_Relic_Penguin_C", "SetActiveSelf");
+
+	Params::BP_LevelObject_Relic_Penguin_C_SetActiveSelf Parms{};
+
+	Parms.LevelObject = LevelObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

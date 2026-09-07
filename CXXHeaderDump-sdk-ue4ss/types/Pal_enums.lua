@@ -3287,20 +3287,21 @@ local EPalLogType = {
     PartnerSkillExecute_GiveElement_Leaf = 77,
     PartnerSkillExecute_GiveElement_Dragon = 78,
     PartnerSkillExecute_AdditionalEffect_Poiso = 79,
-    PartnerSkillExecute_SearchDungeonGoal_Failed = 80,
-    ObtainNote = 81,
-    OutdoorBedNortice = 82,
-    CannotSkipNightOnDay = 83,
-    FullPalBox = 84,
-    FireBaseCamp = 85,
-    SupplyDropStart = 86,
-    CompleteGuildLabResearch = 87,
-    FriendshipRankUp_First = 88,
-    FriendshipRankUp = 89,
-    PalDoping = 90,
-    SphereRecovery = 91,
-    AlphaEggConversion = 92,
-    EPalLogType_MAX = 93,
+    PartnerSkillExecute_LifeDrainPower_AttackUp = 80,
+    PartnerSkillExecute_SearchDungeonGoal_Failed = 81,
+    ObtainNote = 82,
+    OutdoorBedNortice = 83,
+    CannotSkipNightOnDay = 84,
+    FullPalBox = 85,
+    FireBaseCamp = 86,
+    SupplyDropStart = 87,
+    CompleteGuildLabResearch = 88,
+    FriendshipRankUp_First = 89,
+    FriendshipRankUp = 90,
+    PalDoping = 91,
+    SphereRecovery = 92,
+    AlphaEggConversion = 93,
+    EPalLogType_MAX = 94,
 }
 
 ---@enum EPalLogWidgetOverrideClassType
@@ -3689,8 +3690,10 @@ local EPalMapObjectOperationResult = {
     FailedNoGuildPermission = 57,
     FailedServerValidationFloating = 58,
     FailedNoBlueprintItem = 59,
-    Success = 60,
-    EPalMapObjectOperationResult_MAX = 61,
+    FailedMissingPlayerBuildingPendingReservation = 60,
+    FailedExceedMaxBuildingNumPerPlayer = 61,
+    Success = 62,
+    EPalMapObjectOperationResult_MAX = 63,
 }
 
 ---@enum EPalMapObjectPasswordLockState
@@ -6997,7 +7000,8 @@ local EPalWorldHUDWidgetBlueprintType = {
     GenerateEnergyWithOverHeat = 28,
     RelicRecycler = 29,
     Clinic = 30,
-    EPalWorldHUDWidgetBlueprintType_MAX = 31,
+    FishingRodRequired = 31,
+    EPalWorldHUDWidgetBlueprintType_MAX = 32,
 }
 
 ---@enum EPalWorldMapType

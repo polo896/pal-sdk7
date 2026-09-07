@@ -18,6 +18,27 @@
 namespace SDK::Params
 {
 
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.On Update Icon Texture Path
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_PalLiftItem_C_On_Update_Icon_Texture_Path final
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              IconTexture;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLiftItem_C_On_Update_Icon_Texture_Path;
+
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Dispose
+// 0x0024 (0x0024 - 0x0000)
+struct WBP_PalLiftItem_C_Dispose final
+{
+public:
+	TDelegate<void(TSoftObjectPtr<class UTexture2D> IconTexture)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 Count)>                  K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLiftItem_C_Dispose;
+
 // Function WBP_PalLiftItem.WBP_PalLiftItem_C.Setup
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_PalLiftItem_C_Setup final
@@ -85,27 +106,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x00E0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalLiftItem_C_OnDragOver;
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.On Update Icon Texture Path
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_PalLiftItem_C_On_Update_Icon_Texture_Path final
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              IconTexture;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLiftItem_C_On_Update_Icon_Texture_Path;
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Dispose
-// 0x0024 (0x0024 - 0x0000)
-struct WBP_PalLiftItem_C_Dispose final
-{
-public:
-	TDelegate<void(TSoftObjectPtr<class UTexture2D> IconTexture)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Count)>                  K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLiftItem_C_Dispose;
 
 }
 

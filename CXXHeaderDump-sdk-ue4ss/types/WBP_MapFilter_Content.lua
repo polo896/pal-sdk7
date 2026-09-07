@@ -22,6 +22,8 @@ function UWBP_MapFilter_Content_C:BndEvt__WBP_MapFilter_Content_WBP_PalInvisible
 function UWBP_MapFilter_Content_C:BndEvt__WBP_MapFilter_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(Button) end
 ---@param Set boolean
 function UWBP_MapFilter_Content_C:SetForceEnable(Set) end
+---@param IsEnable boolean
+function UWBP_MapFilter_Content_C:SetEnable(IsEnable) end
 ---@param EntryPoint int32
 function UWBP_MapFilter_Content_C:ExecuteUbergraph_WBP_MapFilter_Content(EntryPoint) end
 ---@param LocationType EPalLocationType

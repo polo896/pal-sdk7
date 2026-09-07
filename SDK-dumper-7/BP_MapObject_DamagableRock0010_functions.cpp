@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_MapObject_DamagableRock0010.BP_MapObject_DamagableRock0010_C.ReturnToPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_DamagableRock0010_C::ReturnToPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_DamagableRock0010_C", "ReturnToPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_DamagableRock0010.BP_MapObject_DamagableRock0010_C.InitializeFromPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_DamagableRock0010_C::InitializeFromPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_DamagableRock0010_C", "InitializeFromPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MapObject_DamagableRock0010.BP_MapObject_DamagableRock0010_C.ExecuteUbergraph_BP_MapObject_DamagableRock0010
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void ABP_MapObject_DamagableRock0010_C::ExecuteUbergraph_BP_MapObject_DamagableR
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MapObject_DamagableRock0010.BP_MapObject_DamagableRock0010_C.InitializeFromPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_DamagableRock0010_C::InitializeFromPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_DamagableRock0010_C", "InitializeFromPool");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_DamagableRock0010.BP_MapObject_DamagableRock0010_C.ReturnToPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_DamagableRock0010_C::ReturnToPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_DamagableRock0010_C", "ReturnToPool");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

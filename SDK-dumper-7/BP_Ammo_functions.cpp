@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_Ammo.BP_Ammo_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Ammo_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Ammo_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Ammo.BP_Ammo_C.ExecuteUbergraph_BP_Ammo
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_Ammo_C::ExecuteUbergraph_BP_Ammo(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Ammo.BP_Ammo_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Ammo_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Ammo_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

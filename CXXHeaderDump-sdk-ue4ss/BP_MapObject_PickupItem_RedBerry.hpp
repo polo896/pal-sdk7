@@ -3,15 +3,15 @@
 
 class ABP_MapObject_PickupItem_RedBerry_C : public ABP_MapObject_PickupItem_Base_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0430 (size: 0x8)
-    class UStaticMeshComponent* StaticMesh1;                                          // 0x0438 (size: 0x8)
-    class USceneComponent* IndicatorOrigin;                                           // 0x0440 (size: 0x8)
-    class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter; // 0x0448 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0448 (size: 0x8)
+    class UStaticMeshComponent* StaticMesh1;                                          // 0x0450 (size: 0x8)
+    class USceneComponent* IndicatorOrigin;                                           // 0x0458 (size: 0x8)
+    class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter; // 0x0460 (size: 0x8)
 
     FPalObjectPoolParameter GetObjectPoolParameter();
     void InitializeFromPool();
     void ReturnToPool();
     void ExecuteUbergraph_BP_MapObject_PickupItem_RedBerry(int32 EntryPoint);
-}; // Size: 0x450
+}; // Size: 0x468
 
 #endif

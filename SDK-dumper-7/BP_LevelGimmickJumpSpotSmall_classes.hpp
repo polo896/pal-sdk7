@@ -30,10 +30,10 @@ public:
 	class UPalSoundPlayerComponent*               PalSoundPlayerComponent;                           // 0x0300(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void OnLaunchCharacter();
-	void ExecuteUbergraph_BP_LevelGimmickJumpSpotSmall(int32 EntryPoint);
 	class USceneComponent* EventOnGetAkOwnerComponent();
+	void ExecuteUbergraph_BP_LevelGimmickJumpSpotSmall(int32 EntryPoint);
+	void OnLaunchCharacter();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

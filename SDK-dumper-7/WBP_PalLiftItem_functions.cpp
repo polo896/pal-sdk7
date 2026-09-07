@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.On Update Icon Texture Path
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        IconTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void UWBP_PalLiftItem_C::On_Update_Icon_Texture_Path(TSoftObjectPtr<class UTexture2D> IconTexture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "On Update Icon Texture Path");
+
+	Params::WBP_PalLiftItem_C_On_Update_Icon_Texture_Path Parms{};
+
+	Parms.IconTexture = IconTexture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Dispose
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalLiftItem_C::Dispose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLiftItem_C", "Dispose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PalLiftItem.WBP_PalLiftItem_C.ShowSetup
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -154,40 +188,6 @@ bool UWBP_PalLiftItem_C::OnDragOver(const struct FGeometry& MyGeometry, const st
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.On Update Icon Texture Path
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSoftObjectPtr<class UTexture2D>        IconTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void UWBP_PalLiftItem_C::On_Update_Icon_Texture_Path(TSoftObjectPtr<class UTexture2D> IconTexture)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "On Update Icon Texture Path");
-
-	Params::WBP_PalLiftItem_C_On_Update_Icon_Texture_Path Parms{};
-
-	Parms.IconTexture = IconTexture;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalLiftItem.WBP_PalLiftItem_C.Dispose
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalLiftItem_C::Dispose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLiftItem_C", "Dispose");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

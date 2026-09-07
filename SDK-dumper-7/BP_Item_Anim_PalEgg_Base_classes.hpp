@@ -28,10 +28,10 @@ public:
 	int32                                         HatchingTemperature;                               // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Item_Anim_PalEgg_Base(int32 EntryPoint);
-	void GetHatchingTemperature(int32* Temperature);
-	void ReceiveBeginPlay();
 	void SetAnimPlayState(bool IsPlay);
+	void ReceiveBeginPlay();
+	void GetHatchingTemperature(int32* Temperature);
+	void ExecuteUbergraph_BP_Item_Anim_PalEgg_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

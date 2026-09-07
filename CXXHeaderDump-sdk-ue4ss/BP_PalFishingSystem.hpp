@@ -3,6 +3,6 @@
 
 class UBP_PalFishingSystem_C : public UPalFishingSystem
 {
-}; // Size: 0x358
+}; // Size: 0x3A0
 
 #endif

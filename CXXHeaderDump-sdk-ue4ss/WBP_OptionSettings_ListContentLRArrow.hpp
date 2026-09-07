@@ -4,7 +4,7 @@
 class UWBP_OptionSettings_ListContentLRArrow_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0280 (size: 0x8)
+    class UWidgetAnimation* Anm_Push;                                                 // 0x0280 (size: 0x8)
     class UImage* ArrowHover;                                                         // 0x0288 (size: 0x8)
     class UButton* Button_Dummy;                                                      // 0x0290 (size: 0x8)
     class UWBP_PalCommonButton_C* WBP_PalCommonButton;                                // 0x0298 (size: 0x8)

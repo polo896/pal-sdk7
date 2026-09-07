@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.ExecuteUbergraph_WBP_InGame_Quest_StartClearSet
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InGame_Quest_StartClearSet_C::ExecuteUbergraph_WBP_InGame_Quest_StartClearSet(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "ExecuteUbergraph_WBP_InGame_Quest_StartClearSet");
-
-	Params::WBP_InGame_Quest_StartClearSet_C_ExecuteUbergraph_WBP_InGame_Quest_StartClearSet Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.CompleteQuest
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -57,37 +37,72 @@ void UWBP_InGame_Quest_StartClearSet_C::CompleteQuest(class FName QuestId)
 }
 
 
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.TryNextNotify
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.ExecuteUbergraph_WBP_InGame_Quest_StartClearSet
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGame_Quest_StartClearSet_C::TryNextNotify()
+void UWBP_InGame_Quest_StartClearSet_C::ExecuteUbergraph_WBP_InGame_Quest_StartClearSet(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "TryNextNotify");
+		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "ExecuteUbergraph_WBP_InGame_Quest_StartClearSet");
+
+	Params::WBP_InGame_Quest_StartClearSet_C_ExecuteUbergraph_WBP_InGame_Quest_StartClearSet Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.GetCurrentQuestNotifyTime
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 NotifyTime                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InGame_Quest_StartClearSet_C::GetCurrentQuestNotifyTime(double* NotifyTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "GetCurrentQuestNotifyTime");
+
+	Params::WBP_InGame_Quest_StartClearSet_C_GetCurrentQuestNotifyTime Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NotifyTime != nullptr)
+		*NotifyTime = Parms.NotifyTime;
+}
+
+
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.OnEndWidgetSequence
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Quest_StartClearSet_C::OnEndWidgetSequence()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "OnEndWidgetSequence");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.StartQuest
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_InGame_Quest_StartClearSet_C::StartQuest(class FName QuestId)
+void UWBP_InGame_Quest_StartClearSet_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "StartQuest");
+		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "OnInitialized");
 
-	Params::WBP_InGame_Quest_StartClearSet_C_StartQuest Parms{};
-
-	Parms.QuestId = QuestId;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -111,52 +126,37 @@ void UWBP_InGame_Quest_StartClearSet_C::SetActionBindData(const struct FPalUIAct
 }
 
 
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_InGame_Quest_StartClearSet_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.OnEndWidgetSequence
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.StartQuest
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Quest_StartClearSet_C::OnEndWidgetSequence()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "OnEndWidgetSequence");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.GetCurrentQuestNotifyTime
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// double*                                 NotifyTime                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGame_Quest_StartClearSet_C::GetCurrentQuestNotifyTime(double* NotifyTime)
+void UWBP_InGame_Quest_StartClearSet_C::StartQuest(class FName QuestId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "GetCurrentQuestNotifyTime");
+		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "StartQuest");
 
-	Params::WBP_InGame_Quest_StartClearSet_C_GetCurrentQuestNotifyTime Parms{};
+	Params::WBP_InGame_Quest_StartClearSet_C_StartQuest Parms{};
+
+	Parms.QuestId = QuestId;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (NotifyTime != nullptr)
-		*NotifyTime = Parms.NotifyTime;
+
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.TryNextNotify
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Quest_StartClearSet_C::TryNextNotify()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Quest_StartClearSet_C", "TryNextNotify");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

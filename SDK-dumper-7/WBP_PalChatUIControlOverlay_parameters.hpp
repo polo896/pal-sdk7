@@ -17,31 +17,17 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.SendChat
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalChatUIControlOverlay_C_SendChat final
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ChangeChatCategory
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalChatUIControlOverlay_C_ChangeChatCategory final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_SendChat;
-
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCancel_ForPad
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalChatUIControlOverlay_C_OnCancel_ForPad final
-{
-public:
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_OnCancel_ForPad;
+DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_ChangeChatCategory;
 
 // Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ExecuteUbergraph_WBP_PalChatUIControlOverlay
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct WBP_PalChatUIControlOverlay_C_ExecuteUbergraph_WBP_PalChatUIControlOverlay final
 {
 public:
@@ -56,28 +42,40 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x002C(0x0004)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0054(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0064(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0074(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0084(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x0088(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x009C(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_4;      // 0x00A0(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0074(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x0078(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x007C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x008C(0x0004)(NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_ExecuteUbergraph_WBP_PalChatUIControlOverlay;
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ChangeChatCategory
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalChatUIControlOverlay_C_ChangeChatCategory final
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCancel_ForPad
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalChatUIControlOverlay_C_OnCancel_ForPad final
+{
+public:
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_OnCancel_ForPad;
+
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.SendChat
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalChatUIControlOverlay_C_SendChat final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_ChangeChatCategory;
+DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_SendChat;
 
 // Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

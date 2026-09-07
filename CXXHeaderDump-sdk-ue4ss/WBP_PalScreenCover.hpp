@@ -3,8 +3,8 @@
 
 class UWBP_PalScreenCover_C : public UPalUserWidgetOverlayUI
 {
-    class UImage* Image_50;                                                           // 0x0478 (size: 0x8)
+    class UImage* Image_50;                                                           // 0x0480 (size: 0x8)
 
-}; // Size: 0x480
+}; // Size: 0x488
 
 #endif

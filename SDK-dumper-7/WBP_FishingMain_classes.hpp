@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 
@@ -19,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_FishingMain.WBP_FishingMain_C
-// 0x0078 (0x04C8 - 0x0450)
+// 0x00B0 (0x0500 - 0x0450)
 class UWBP_FishingMain_C final : public UPalUserWidget
 {
 public:
@@ -28,56 +29,66 @@ public:
 	class UWBP_Fishing_Hit_C*                     WBP_Fishing_Hit;                                   // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Fishing_PowerGauge_C*              WBP_Fishing_PowerGauge;                            // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Fishing_ProgressGauge_C*           WBP_Fishing_ProgressGauge;                         // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Fishing_SelectBait_C*              WBP_Fishing_SelectBait;                            // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Message_C*                  WBP_Ingame_Message;                                // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Reticle_KeyGuide_C*                WBP_Reticle_KeyGuide_Fishing;                      // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           FailedCheckTimerHandle;                            // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	double                                        BadAnimCheckTime;                                  // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsPreSuccess;                                      // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsStartFishing;                                    // 0x04A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsCatchBattle;                                     // 0x04A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          HasBait;                                           // 0x04A3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   TextIdNoFishingBait;                               // 0x04A4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   TextIdBrokenRod;                                   // 0x04AC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsPlayingFeedBack;                                 // 0x04B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsStartMinigame;                                   // 0x04B5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B6[0x2];                                      // 0x04B6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        InitProgress;                                      // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEquipFishingRod;                                 // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Fishing_Recommended_C*             WBP_Fishing_Recommended;                           // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Fishing_SelectBait_C*              WBP_Fishing_SelectBait;                            // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Message_C*                  WBP_Ingame_Message;                                // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Reticle_KeyGuide_C*                WBP_Reticle_KeyGuide_Fishing;                      // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FTimerHandle                           FailedCheckTimerHandle;                            // 0x0498(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	double                                        BadAnimCheckTime;                                  // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPreSuccess;                                      // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsStartFishing;                                    // 0x04A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsCatchBattle;                                     // 0x04AA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasBait;                                           // 0x04AB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   TextIdNoFishingBait;                               // 0x04AC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   TextIdBrokenRod;                                   // 0x04B4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   TextIdPalSkillAdviceFailed;                        // 0x04BC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPlayingFeedBack;                                 // 0x04C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsStartMinigame;                                   // 0x04C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C6[0x2];                                      // 0x04C6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        InitProgress;                                      // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEquipFishingRod;                                 // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           TimerHandle_HideAdviceMessage;                     // 0x04D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	double                                        FailedMessageTime;                                 // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HitFloatLocation;                                  // 0x04E8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateVisible();
-	void UpdateProgress();
-	void UpdatePosition(double FishPosX, double PlayerInput);
-	void UnEquipFishingRod();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void StopFeedback(bool ForceStop);
-	void SetupAfterCreatePlayer();
-	void SetFishingProgress_Rate(double Rate);
-	void SetBarSize(double BarSize);
-	void PlayFeedBack();
-	void OnSuccessFishing();
-	void OnSuccessFight();
-	void OnStartFishing();
-	void OnStartCatchBattle();
-	void OnStartAim(const TArray<struct FPalStaticItemIdAndNum>& BaitItemInfoList, int32 SelectedIndex);
-	void OnPickFish(const struct FVector& FloatLocation);
-	void OnInitialized();
-	void OnFirstFishing();
-	void OnFailedFishing();
-	void OnFailedFight();
-	void OnEndFishing();
-	void OnEndAim();
-	void OnContinueFailed();
-	void OnChangeWeapon(class APalWeaponBase* Weapon);
-	void OnChangeTargetSpot(EPalFishingSpotDifficultyType DifficultyType);
-	void OnChangeBait(int32 SelectIndex);
-	void GetHitIconLocation(struct FVector* Location);
-	void ExecuteUbergraph_WBP_FishingMain(int32 EntryPoint);
-	void EquipFishingRod();
-	void EndRequest(bool IsSuccess);
-	void EndFishing(bool IsSuccess);
 	void CheckRodBroken(bool* IsBroken);
+	void EndFishing(bool IsSuccess);
+	void EndRequest(bool IsSuccess);
+	void EquipFishingRod();
+	void ExecuteUbergraph_WBP_FishingMain(int32 EntryPoint);
+	void GetHitIconLocation(struct FVector* Location);
+	void OnChangeBait(int32 SelectIndex);
+	void OnChangeHitInput(bool IsAccept);
+	void OnChangeTargetSpot(EPalFishingSpotDifficultyType DifficultyType);
+	void OnChangeTargetSpotRecommend(const struct FPalFishingRecommendInfo& RecommendInfo);
+	void OnChangeWeapon(class APalWeaponBase* Weapon);
+	void OnContinueFailed();
+	void OnEndAim();
+	void OnEndFishing();
+	void OnFailedFight();
+	void OnFailedFishing();
+	void OnFirstFishing();
+	void OnFishingPalAdvice();
+	void OnInitialized();
+	void OnPickFish(const struct FVector& FloatLocation);
+	void OnStartAim(const TArray<struct FPalStaticItemIdAndNum>& BaitItemInfoList, int32 SelectedIndex);
+	void OnStartCatchBattle();
+	void OnStartFishing();
+	void OnSuccessFight();
+	void OnSuccessFishing();
+	void OnTimerEvent_HideAdviceMessage();
+	void PlayFeedBack();
+	void SetBarSize(double BarSize);
+	void SetFishingProgress_Rate(double Rate);
+	void SetupAfterCreatePlayer();
+	void StopFeedback(bool ForceStop);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void UnEquipFishingRod();
+	void UpdatePosition(double FishPosX, double PlayerInput);
+	void UpdateProgress();
+	void UpdateVisible();
 
 public:
 	static class UClass* StaticClass()

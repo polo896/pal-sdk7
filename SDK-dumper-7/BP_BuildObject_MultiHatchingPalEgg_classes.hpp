@@ -19,51 +19,51 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BuildObject_MultiHatchingPalEgg.BP_BuildObject_MultiHatchingPalEgg_C
-// 0x0170 (0x08C0 - 0x0750)
+// 0x0170 (0x08E0 - 0x0770)
 class ABP_BuildObject_MultiHatchingPalEgg_C final : public APalBuildObject
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0750(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_BuildObjectSimulateArrowComponent_C* BP_BuildObjectSimulateArrowComponent;             // 0x0758(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_HatchingEggFinishGlow2;                         // 0x0760(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_HatchingEggFinishGlow1;                         // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      NS_HatchingEggFinishGlow;                          // 0x0770(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   PalEggChildActor;                                  // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   PalEggChildActor1;                                 // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   PalEggChildActor2;                                 // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_EggHatchingMachineFuture;                       // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectHatchingEggParameterComponent* PalMapObjectHatchingEggParameter;              // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_InteractableBox_C*                  BP_InteractableBox;                                // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          BuildWorkableBounds;                               // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          CheckOverlapCollision;                             // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Root;                                              // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectMultiHatchingEggModel*     HatchingEggModel;                                  // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      PalGetEffect;                                      // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PalGetEffectOffset;                                // 0x07D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UChildActorComponent*>           PalEggActors;                                      // 0x07E8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, ContainsInstancedReference)
-	TMap<TSoftClassPtr<class UClass>, class UClass*> EggActorClassMap;                               // 0x07F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UChildActorComponent*, TSoftClassPtr<class UClass>> PalEggActorMap;                   // 0x0848(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UClass*>                         EggActorClasses;                                   // 0x0898(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
-	TArray<bool>                                  EggHatchedStates;                                  // 0x08A8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0770(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_BuildObjectSimulateArrowComponent_C* BP_BuildObjectSimulateArrowComponent;             // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_HatchingEggFinishGlow2;                         // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_HatchingEggFinishGlow1;                         // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      NS_HatchingEggFinishGlow;                          // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   PalEggChildActor;                                  // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   PalEggChildActor1;                                 // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   PalEggChildActor2;                                 // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_EggHatchingMachineFuture;                       // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectHatchingEggParameterComponent* PalMapObjectHatchingEggParameter;              // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_InteractableBox_C*                  BP_InteractableBox;                                // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          BuildWorkableBounds;                               // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          CheckOverlapCollision;                             // 0x07D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Root;                                              // 0x07D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectMultiHatchingEggModel*     HatchingEggModel;                                  // 0x07E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      PalGetEffect;                                      // 0x07E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PalGetEffectOffset;                                // 0x07F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UChildActorComponent*>           PalEggActors;                                      // 0x0808(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<TSoftClassPtr<class UClass>, class UClass*> EggActorClassMap;                               // 0x0818(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UChildActorComponent*, TSoftClassPtr<class UClass>> PalEggActorMap;                   // 0x0868(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UClass*>                         EggActorClasses;                                   // 0x08B8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
+	TArray<bool>                                  EggHatchedStates;                                  // 0x08C8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
 
 public:
-	void UpdateHatchingSpeed();
-	void SpawnGetPalEffect();
-	void SetupPalEggModel();
-	void SetupHatchedEffects(TArray<bool>& HatchedStates);
-	void ResetPalEggActorMap();
-	void ResetHatchingSpeed();
-	void OnUpdateWorkable(bool Workable);
-	void OnSetConcreteModelAvailableInternal(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void OnSetConcreteModelAvailable(class UPalMapObjectConcreteModelBase* Model);
-	void OnRep_EggHatchedStates();
-	void OnRep_EggActorClasses();
-	void OnLoaded_CD3DA1EB46D59E3CC662D7AE910EDD81(TSubclassOf<class UObject> Loaded);
-	void OnAvailable_BlueprintImpl();
-	void On_Update_Pal_Eggs();
-	void On_Hatched_Character(class UPalMapObjectHatchingEggModelBase* Model);
-	void LoadEggMeshModel();
 	void ExecuteUbergraph_BP_BuildObject_MultiHatchingPalEgg(int32 EntryPoint);
+	void LoadEggMeshModel();
+	void On_Hatched_Character(class UPalMapObjectHatchingEggModelBase* Model);
+	void On_Update_Pal_Eggs();
+	void OnAvailable_BlueprintImpl();
+	void OnLoaded_CD3DA1EB46D59E3CC662D7AE910EDD81(TSubclassOf<class UObject> Loaded);
+	void OnRep_EggActorClasses();
+	void OnRep_EggHatchedStates();
+	void OnSetConcreteModelAvailable(class UPalMapObjectConcreteModelBase* Model);
+	void OnSetConcreteModelAvailableInternal(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void OnUpdateWorkable(bool Workable);
+	void ResetHatchingSpeed();
+	void ResetPalEggActorMap();
+	void SetupHatchedEffects(TArray<bool>& HatchedStates);
+	void SetupPalEggModel();
+	void SpawnGetPalEffect();
+	void UpdateHatchingSpeed();
 
 public:
 	static class UClass* StaticClass()

@@ -3,24 +3,24 @@
 
 class UWBP_PalBuildObjectList_ForDisplay_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UImage* Image_ForCollision;                                                 // 0x0480 (size: 0x8)
-    class UWBP_IngameMenu_Construction_Menu_C* WBP_IngameMenu_Construction_Menu;      // 0x0488 (size: 0x8)
-    class UBP_InGameMenuBuildModel_C* UIBuildModel;                                   // 0x0490 (size: 0x8)
-    FPalDataTableRowName_UIInputAction FavoriteInputAction;                           // 0x0498 (size: 0x8)
-    FPalDataTableRowName_UIInputAction DismantleInputAction;                          // 0x04A0 (size: 0x8)
-    FPalDataTableRowName_UIInputAction NextTabInputAction;                            // 0x04A8 (size: 0x8)
-    FPalDataTableRowName_UIInputAction PrevTabInputAction;                            // 0x04B0 (size: 0x8)
-    FPalUIActionBindData FavoriteInoutActionHandle;                                   // 0x04B8 (size: 0x4)
-    TSoftObjectPtr<class UWBP_IngameMenu_Construction_Icon_C> LastHoveredBuildObjectWidget; // 0x04C0 (size: 0x30)
-    FPalDataTableRowName_UIInputAction PaintModeInputAction;                          // 0x04F0 (size: 0x8)
-    bool bLaunchBuilderMode;                                                          // 0x04F8 (size: 0x1)
-    bool bEnableMouseWheelCategoryChange;                                             // 0x04F9 (size: 0x1)
-    FPalDataTableRowName_UIInputAction CloseUIForMouseInputAction;                    // 0x04FC (size: 0x8)
-    FPalDataTableRowName_UIInputAction CloseUIGeneralInputAction;                     // 0x0504 (size: 0x8)
-    bool bFirstCategoryChange;                                                        // 0x050C (size: 0x1)
-    FPalDataTableRowName_UIInputAction TabInputAction;                                // 0x0510 (size: 0x8)
-    FPalUIActionBindData TabActionHandle;                                             // 0x0518 (size: 0x4)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UImage* Image_ForCollision;                                                 // 0x0488 (size: 0x8)
+    class UWBP_IngameMenu_Construction_Menu_C* WBP_IngameMenu_Construction_Menu;      // 0x0490 (size: 0x8)
+    class UBP_InGameMenuBuildModel_C* UIBuildModel;                                   // 0x0498 (size: 0x8)
+    FPalDataTableRowName_UIInputAction FavoriteInputAction;                           // 0x04A0 (size: 0x8)
+    FPalDataTableRowName_UIInputAction DismantleInputAction;                          // 0x04A8 (size: 0x8)
+    FPalDataTableRowName_UIInputAction NextTabInputAction;                            // 0x04B0 (size: 0x8)
+    FPalDataTableRowName_UIInputAction PrevTabInputAction;                            // 0x04B8 (size: 0x8)
+    FPalUIActionBindData FavoriteInoutActionHandle;                                   // 0x04C0 (size: 0x4)
+    TSoftObjectPtr<UWBP_IngameMenu_Construction_Icon_C> LastHoveredBuildObjectWidget; // 0x04C8 (size: 0x30)
+    FPalDataTableRowName_UIInputAction PaintModeInputAction;                          // 0x04F8 (size: 0x8)
+    bool bLaunchBuilderMode;                                                          // 0x0500 (size: 0x1)
+    bool bEnableMouseWheelCategoryChange;                                             // 0x0501 (size: 0x1)
+    FPalDataTableRowName_UIInputAction CloseUIForMouseInputAction;                    // 0x0504 (size: 0x8)
+    FPalDataTableRowName_UIInputAction CloseUIGeneralInputAction;                     // 0x050C (size: 0x8)
+    bool bFirstCategoryChange;                                                        // 0x0514 (size: 0x1)
+    FPalDataTableRowName_UIInputAction TabInputAction;                                // 0x0518 (size: 0x8)
+    FPalUIActionBindData TabActionHandle;                                             // 0x0520 (size: 0x4)
 
     void OnDummyAction();
     void OnInputMethodChanged(ECommonInputType bNewInputType);
@@ -62,6 +62,6 @@ class UWBP_PalBuildObjectList_ForDisplay_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_PalBuildObjectList_ForDisplay_WBP_IngameMenu_Construction_Menu_K2Node_ComponentBoundEvent_8_OnUnhoveredCategoryTab__DelegateSignature();
     void Construct();
     void ExecuteUbergraph_WBP_PalBuildObjectList_ForDisplay(int32 EntryPoint);
-}; // Size: 0x51C
+}; // Size: 0x524
 
 #endif

@@ -17,8 +17,26 @@
 namespace SDK::Params
 {
 
+// Function WBP_MainMenu_Pal_WorkIconText.WBP_MainMenu_Pal_WorkIconText_C.BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_Pal_WorkIconText_C_BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_WorkIconText_C_BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_MainMenu_Pal_WorkIconText.WBP_MainMenu_Pal_WorkIconText_C.BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_Pal_WorkIconText_C_BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Pal_WorkIconText_C_BndEvt__WBP_MainMenu_Pal_WorkIconText_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+
 // Function WBP_MainMenu_Pal_WorkIconText.WBP_MainMenu_Pal_WorkIconText_C.ExecuteUbergraph_WBP_MainMenu_Pal_WorkIconText
-// 0x0048 (0x0048 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_MainMenu_Pal_WorkIconText_C_ExecuteUbergraph_WBP_MainMenu_Pal_WorkIconText final
 {
 public:
@@ -35,7 +53,9 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Pal_WorkIconText_C_ExecuteUbergraph_WBP_MainMenu_Pal_WorkIconText;
 

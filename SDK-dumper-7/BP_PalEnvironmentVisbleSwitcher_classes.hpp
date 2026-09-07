@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalEnvironmentVisbleSwitcher.BP_PalEnvironmentVisbleSwitcher_C
-// 0x0038 (0x02C8 - 0x0290)
+// 0x0040 (0x02D0 - 0x0290)
 class ABP_PalEnvironmentVisbleSwitcher_C final : public AActor
 {
 public:
@@ -29,14 +29,16 @@ public:
 	int32                                         OverlapActorCount;                                 // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           DelayTimerHandle;                                  // 0x02C0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           DelayRecaptureHandle;                              // 0x02C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetVisibilityAll(bool IsVisibility);
-	void ReceiveBeginPlay();
-	void ReceiveActorEndOverlap(class AActor* OtherActor);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
-	void ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher(int32 EntryPoint);
+	void DelayedRecaptureSkyLights();
 	void DelayedSetVisibilityTrue();
+	void ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher(int32 EntryPoint);
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveBeginPlay();
+	void SetVisibilityAll(bool IsVisibility);
 
 public:
 	static class UClass* StaticClass()

@@ -3,14 +3,14 @@
 
 class UWBP_SalvageGame_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UImage* Image_216;                                                          // 0x0480 (size: 0x8)
-    class UWBP_Fishing_SalvageGame_C* WBP_Fishing_SalvageGame;                        // 0x0488 (size: 0x8)
-    double NeedleRotateAngularSpeed;                                                  // 0x0490 (size: 0x8)
-    double NeedleAngle;                                                               // 0x0498 (size: 0x8)
-    bool bStoppedNeedle;                                                              // 0x04A0 (size: 0x1)
-    FFloatInterval SuccessAngleRange;                                                 // 0x04A4 (size: 0x8)
-    bool bFinishedGame;                                                               // 0x04AC (size: 0x1)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UImage* Image_216;                                                          // 0x0488 (size: 0x8)
+    class UWBP_Fishing_SalvageGame_C* WBP_Fishing_SalvageGame;                        // 0x0490 (size: 0x8)
+    double NeedleRotateAngularSpeed;                                                  // 0x0498 (size: 0x8)
+    double NeedleAngle;                                                               // 0x04A0 (size: 0x8)
+    bool bStoppedNeedle;                                                              // 0x04A8 (size: 0x1)
+    FFloatInterval SuccessAngleRange;                                                 // 0x04AC (size: 0x8)
+    bool bFinishedGame;                                                               // 0x04B4 (size: 0x1)
 
     void RequestFinishSalvageGame();
     void OnActionInteract();
@@ -24,6 +24,6 @@ class UWBP_SalvageGame_C : public UPalUserWidgetOverlayUI
     void PlayResultAnimation(bool bSuccess);
     void OnClose();
     void ExecuteUbergraph_WBP_SalvageGame(int32 EntryPoint);
-}; // Size: 0x4AD
+}; // Size: 0x4B5
 
 #endif

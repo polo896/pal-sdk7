@@ -2,6 +2,7 @@
 
 ---@class UWBP_Map_Base_C : UPalUIWorldMap
 ---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Anm_SelectMap_Loop UWidgetAnimation
 ---@field Anm_Respawn_In UWidgetAnimation
 ---@field BackgroundBlur_1 UBackgroundBlur
 ---@field BG UCanvasPanel
@@ -14,6 +15,7 @@
 ---@field Image_1 UImage
 ---@field Image_QuestTrackingIcon_ChangeMapKeyGuide UImage
 ---@field Overlay_RespawnMsg UOverlay
+---@field Overlay_SelectMap UOverlay
 ---@field Text_CursorLocation UBP_PalTextBlock_C
 ---@field Text_NextMapName UBP_PalTextBlock_C
 ---@field Text_RemainTime_StartInvade UBP_PalTextBlock_C
@@ -39,7 +41,6 @@
 ---@field PlayerIcons TArray<UWBP_Map_IconPlayer_C>
 ---@field ['Can Fast Travel'] boolean
 ---@field bIsInitSelect boolean
----@field FilterIconTypes TSet<EPalLocationType>
 ---@field FTMsgID FDataTableRowHandle
 ---@field RespawnMsgID FDataTableRowHandle
 ---@field BossIcons TArray<UWBP_Map_IconBoss_C>
@@ -200,7 +201,7 @@ function UWBP_Map_Base_C:RemoveCustomIcon(Icon) end
 ---@param MarkerData FPalCustomMarkerSaveData
 function UWBP_Map_Base_C:AddCustomIcon(LocationId, MarkerData) end
 function UWBP_Map_Base_C:OnCloseAction() end
-UWBP_Map_Base_C['Enable Custom Mark'] = function(self, ) end
+function UWBP_Map_Base_C:ToggleCustomMarkMode() end
 ---@param LocationMap TMap<FGuid, UPalLocationBase>
 function UWBP_Map_Base_C:RefreshDeathMark(LocationMap) end
 ---@param Type EPalLocationType

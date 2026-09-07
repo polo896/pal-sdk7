@@ -57,19 +57,19 @@ public:
 	TMap<TSoftClassPtr<class UClass>, TSoftClassPtr<class UClass>> UniqueCaptureActorMap_FromSkin;   // 0x0478(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
+	void OnLoaded_47E3700548CBE24684940690F7B5FBD1(TSubclassOf<class UObject> Loaded);
 	void SetupSkeletalMesh(class USkeletalMesh* Mesh);
 	void SetupDelayHandle();
 	void ResetRotator();
 	void Reset();
 	void RequestCaptureFromPalID(class FName PalRowName);
 	void Request_Capture_from_PalSkin(class FName PalRowName, TSoftClassPtr<class UClass> SkinClass);
-	void ReceiveTick(float DeltaSeconds);
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void ReceiveBeginPlay();
 	void PlayAnimation(const TSubclassOf<class AActor>& TargetActorClass);
 	void OverrideMaterial(class USkeletalMeshComponent* TargetSkeletalMesh);
 	void OnRequestLoadPalClass(TSoftClassPtr<class UClass> NewParam);
-	void OnLoaded_47E3700548CBE24684940690F7B5FBD1(TSubclassOf<class UObject> Loaded);
+	void ReceiveTick(float DeltaSeconds);
 	void On_Loaded_Pal_Class(class UClass* NewParam);
 	void GetNowDisplayingPalID(class FName* PalId);
 	void GetCaptureCharacterID(class FName CharacterID, class FName* BPClassName);

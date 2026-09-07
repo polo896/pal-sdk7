@@ -5,8 +5,8 @@ class UWBP_MainMenu_Tab_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
     class UWidgetAnimation* Anm_Open_normal;                                          // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0290 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x0288 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0290 (size: 0x8)
     class UWidgetAnimation* Anm_Open_focus;                                           // 0x0298 (size: 0x8)
     class UBP_PalTextBlock_C* Text_Main;                                              // 0x02A0 (size: 0x8)
     class UWBP_MainMenu_NewDot_C* WBP_MainMenu_NewDot;                                // 0x02A8 (size: 0x8)

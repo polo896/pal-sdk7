@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Slate_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Slate_structs.hpp"
 #include "Pal_classes.hpp"
 #include "CommonInput_structs.hpp"
 #include "SlateCore_structs.hpp"

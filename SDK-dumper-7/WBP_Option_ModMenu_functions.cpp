@@ -351,26 +351,6 @@ void UWBP_Option_ModMenu_C::Construct()
 }
 
 
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
 // (BlueprintEvent)
 
@@ -430,6 +410,26 @@ void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search
 
 	Parms.Text = std::move(Text);
 	Parms.CommitMethod = CommitMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

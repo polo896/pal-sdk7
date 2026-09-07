@@ -3,6 +3,6 @@
 
 class ABP_SquadNPCSpawnerBossBase_C : public ABP_SquadNPCSpawner_ForCampBase_C
 {
-}; // Size: 0x679
+}; // Size: 0x689
 
 #endif

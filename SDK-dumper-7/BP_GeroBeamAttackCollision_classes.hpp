@@ -29,11 +29,11 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActivateCollision(bool Active);
-	void ExecuteUbergraph_BP_GeroBeamAttackCollision(int32 EntryPoint);
-	void GetCollision(class UCapsuleComponent** Capsule_0);
-	void ReceiveBeginPlay();
 	void SetLength(double Length);
+	void ReceiveBeginPlay();
+	void GetCollision(class UCapsuleComponent** Capsule_0);
+	void ExecuteUbergraph_BP_GeroBeamAttackCollision(int32 EntryPoint);
+	void ActivateCollision(bool Active);
 
 public:
 	static class UClass* StaticClass()

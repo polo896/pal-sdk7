@@ -78,11 +78,11 @@ public:
 	void DisplaySkillInfo(bool ShowChangeWazaKeyGuide, bool ShowRemoveWazaKeyGuide, EPalWazaID WazaID);
 	void DisplayCommonInfo(const class FText& Title, const class FText& Info, const class FText& SubInfo);
 	void ConvertUIDisplayParameterToPassiveEffectType(E_PalUIStatusDIsplayParameter DisplayParameter, EPalPassiveSkillEffectType* EffectType);
-	void ConvertUIDisplayParameterToFoodEffectType(E_PalUIStatusDIsplayParameter DisplayParameter, EPalFoodStatusEffectType* FoodEffect);
 	void ChooseFriendShipEffectValue(E_PalUIStatusDIsplayParameter DisplayParameter, class UPalIndividualCharacterParameter* IndividualParameter, int32* FriendshipValue);
 	void ChooseBuffedParameterValue(E_PalUIStatusDIsplayParameter DisplayParameter, class UPalIndividualCharacterParameter* IndividualParameter, int32* StatusValue);
 	void ChooseBaseParameterValue(E_PalUIStatusDIsplayParameter DisplayParameter, class UPalIndividualCharacterParameter* IndividualParameter, int32* StatusValue);
 	void ChooseAwakeningEffectValue(E_PalUIStatusDIsplayParameter DisplayParameter, class UPalIndividualCharacterParameter* IndividualParameter, int32* FriendshipValue);
+	void ConvertUIDisplayParameterToFoodEffectType(E_PalUIStatusDIsplayParameter DisplayParameter, EPalFoodStatusEffectType* FoodEffect);
 
 	void FormatParameterEffectRateText(const class FText& Name_0, double EffectRate, class FText* FormatText) const;
 	void FormatParameterAddiveEffectText(const class FText& Name_0, double Value, class FText* FormatText) const;

@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.OnUpdateLastModifiedUserName
-// (Event, Public, BlueprintEvent)
-
-void UWBP_Ingame_InteractMultiplayModifier_C::OnUpdateLastModifiedUserName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "OnUpdateLastModifiedUserName");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_InteractMultiplayModifier_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -62,6 +34,34 @@ void UWBP_Ingame_InteractMultiplayModifier_C::ExecuteUbergraph_WBP_Ingame_Intera
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_InteractMultiplayModifier_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.OnUpdateLastModifiedUserName
+// (Event, Public, BlueprintEvent)
+
+void UWBP_Ingame_InteractMultiplayModifier_C::OnUpdateLastModifiedUserName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "OnUpdateLastModifiedUserName");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

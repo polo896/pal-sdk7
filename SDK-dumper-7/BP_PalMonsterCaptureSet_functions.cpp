@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.OnLoaded_47E3700548CBE24684940690F7B5FBD1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+void ABP_PalMonsterCaptureSet_C::OnLoaded_47E3700548CBE24684940690F7B5FBD1(TSubclassOf<class UObject> Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalMonsterCaptureSet_C", "OnLoaded_47E3700548CBE24684940690F7B5FBD1");
+
+	Params::BP_PalMonsterCaptureSet_C_OnLoaded_47E3700548CBE24684940690F7B5FBD1 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.SetupSkeletalMesh
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -121,26 +141,6 @@ void ABP_PalMonsterCaptureSet_C::Request_Capture_from_PalSkin(class FName PalRow
 }
 
 
-// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalMonsterCaptureSet_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalMonsterCaptureSet_C", "ReceiveTick");
-
-	Params::BP_PalMonsterCaptureSet_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.ReceiveEndPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -235,21 +235,21 @@ void ABP_PalMonsterCaptureSet_C::OnRequestLoadPalClass(TSoftClassPtr<class UClas
 }
 
 
-// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.OnLoaded_47E3700548CBE24684940690F7B5FBD1
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_PalMonsterCaptureSet.BP_PalMonsterCaptureSet_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalMonsterCaptureSet_C::OnLoaded_47E3700548CBE24684940690F7B5FBD1(TSubclassOf<class UObject> Loaded)
+void ABP_PalMonsterCaptureSet_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalMonsterCaptureSet_C", "OnLoaded_47E3700548CBE24684940690F7B5FBD1");
+		Func = Class->GetFunction("BP_PalMonsterCaptureSet_C", "ReceiveTick");
 
-	Params::BP_PalMonsterCaptureSet_C_OnLoaded_47E3700548CBE24684940690F7B5FBD1 Parms{};
+	Params::BP_PalMonsterCaptureSet_C_ReceiveTick Parms{};
 
-	Parms.Loaded = Loaded;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

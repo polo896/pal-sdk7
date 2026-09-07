@@ -3,15 +3,15 @@
 
 class UWBP_BaseCampWorkFixedAssignManage_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UWidgetAnimation* Default_In;                                               // 0x0480 (size: 0x8)
-    class UWBP_AssignBoard_C* WBP_AssignBoard;                                        // 0x0488 (size: 0x8)
-    TSoftObjectPtr<class UWBP_AssignBoard_WorkListBase_C> LastSelectedWorkListContentWidget; // 0x0490 (size: 0x30)
-    TSoftObjectPtr<class UWBP_AssignBoard_WorkListBase_C> LastHoveredWorkListContentWidget; // 0x04C0 (size: 0x30)
-    EPalUIFixedAssignManageListSortType NowSortType;                                  // 0x04F0 (size: 0x1)
-    TArray<EPalUIFixedAssignManageListSortType> SortTypeOrder;                        // 0x04F8 (size: 0x10)
-    TMap<EPalUIFixedAssignManageListSortType, FDataTableRowHandle> SortTypeNameMap;   // 0x0508 (size: 0x50)
-    FPalDataTableRowName_UIInputAction SortInputAction;                               // 0x0558 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UWidgetAnimation* Default_In;                                               // 0x0488 (size: 0x8)
+    class UWBP_AssignBoard_C* WBP_AssignBoard;                                        // 0x0490 (size: 0x8)
+    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastSelectedWorkListContentWidget; // 0x0498 (size: 0x30)
+    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastHoveredWorkListContentWidget; // 0x04C8 (size: 0x30)
+    EPalUIFixedAssignManageListSortType NowSortType;                                  // 0x04F8 (size: 0x1)
+    TArray<EPalUIFixedAssignManageListSortType> SortTypeOrder;                        // 0x0500 (size: 0x10)
+    TMap<class EPalUIFixedAssignManageListSortType, class FDataTableRowHandle> SortTypeNameMap; // 0x0510 (size: 0x50)
+    FPalDataTableRowName_UIInputAction SortInputAction;                               // 0x0560 (size: 0x8)
 
     void UpdateWidgetList(bool ForceReferesh);
     void OnTriggerSort();
@@ -35,6 +35,6 @@ class UWBP_BaseCampWorkFixedAssignManage_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_6_OnClickedSortButton__DelegateSignature();
     void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_5_OnClickedCloseButton__DelegateSignature();
     void ExecuteUbergraph_WBP_BaseCampWorkFixedAssignManage(int32 EntryPoint);
-}; // Size: 0x560
+}; // Size: 0x568
 
 #endif

@@ -18,18 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_PickupItem_Log.BP_MapObject_PickupItem_Log_C
-// 0x0020 (0x0450 - 0x0430)
+// 0x0020 (0x0468 - 0x0448)
 class ABP_MapObject_PickupItem_Log_C final : public ABP_MapObject_PickupItem_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_PickupItem_Log_C;      // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        IndicatorOrigin;                                   // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter;                // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_PickupItem_Log_C;      // 0x0448(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        IndicatorOrigin;                                   // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter;                // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void InitializeFromPool();
 	void ExecuteUbergraph_BP_MapObject_PickupItem_Log(int32 EntryPoint);
+	void InitializeFromPool();
 	void ReturnToPool();
 
 	struct FPalObjectPoolParameter GetObjectPoolParameter() const;

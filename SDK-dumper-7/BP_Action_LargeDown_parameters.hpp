@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function BP_Action_LargeDown.BP_Action_LargeDown_C.ExecuteUbergraph_BP_Action_LargeDown
-// 0x0108 (0x0108 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct BP_Action_LargeDown_C_ExecuteUbergraph_BP_Action_LargeDown final
 {
 public:
@@ -49,9 +49,10 @@ public:
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           CallFunc_FindMontage_Montage_3;                    // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalCryComponent_C*                  CallFunc_GetComponentByClass_ReturnValue;          // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalLookAtComponent*                    CallFunc_GetComponentByClass_ReturnValue;          // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalCryComponent_C*                  CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Action_LargeDown_C_ExecuteUbergraph_BP_Action_LargeDown;
 

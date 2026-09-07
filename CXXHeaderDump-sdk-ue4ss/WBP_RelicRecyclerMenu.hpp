@@ -3,9 +3,9 @@
 
 class UWBP_RelicRecyclerMenu_C : public UPalUserWidgetOverlayUI
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
-    class UWBP_RecyclerMenu_C* WBP_RecyclerMenu;                                      // 0x0480 (size: 0x8)
-    class UPalUIMapObjectRecyclerModel* UIModel;                                      // 0x0488 (size: 0x8)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0480 (size: 0x8)
+    class UWBP_RecyclerMenu_C* WBP_RecyclerMenu;                                      // 0x0488 (size: 0x8)
+    class UPalUIMapObjectRecyclerModel* UIModel;                                      // 0x0490 (size: 0x8)
 
     void Cleanup UIModel();
     void CleanupRelicChestEventBind();
@@ -24,6 +24,6 @@ class UWBP_RelicRecyclerMenu_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature();
     void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature();
     void ExecuteUbergraph_WBP_RelicRecyclerMenu(int32 EntryPoint);
-}; // Size: 0x490
+}; // Size: 0x498
 
 #endif

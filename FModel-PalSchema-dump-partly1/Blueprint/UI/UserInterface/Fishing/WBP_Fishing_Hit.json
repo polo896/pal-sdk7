@@ -1,0 +1,4756 @@
+[
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_28",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'CanvasPanel'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.1"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_2'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.3"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_1'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.2"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_0",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 96.0,
+          "Bottom": 120.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_Hit_C:WidgetTree.Image_Mark'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.12"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 200.0,
+          "Bottom": 200.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_Hit_C:WidgetTree.Image_Bloom'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.11"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_2",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 96.0,
+          "Bottom": 120.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.0"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_Hit_C:WidgetTree.Image_Mark_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.13"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_28",
+    "Class": "UScriptClass'CanvasPanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Top": 70.0,
+          "Right": 150.0,
+          "Bottom": 150.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.0"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Fishing_Hit_C:WidgetTree.SizeBox_34'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.87"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_Hide",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AnmEvent_Hit",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_Fishing_Hit",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "PropertyFlags": "ConstParm",
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'WidgetAnimationResult__DelegateSignature'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_Result",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreatePlayAnimationProxyObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimationPlayCallbackProxy'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetLocalPalPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalPlayerController'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOptionSubsystem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PalOptionSubsystem'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPadSettings_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 28,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PalOptionPadSettings'",
+          "ObjectPath": "/Script/Pal"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "Finished_2E34FB9345682690EC9932908042E186",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Function'UserWidget:OnInitialized'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_115",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 72.0,
+          "Y": 72.0
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_BaseSphereMask_01'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_BaseSphereMask_01.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 0.000866,
+        "G": 0.038852,
+        "B": 0.12,
+        "A": 1.0,
+        "Hex": "023761"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_4'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.83"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Bloom",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 120.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.05,
+            "Hex": "0CFFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_EffFlare_00'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Menu/MI_UI_EffFlare_00.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.85,
+        "B": 0.1,
+        "A": 1.0,
+        "Hex": "FFEE59"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.2"
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Mark",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 120.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_Fishing_HitMark'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Fishing/T_Fishing_HitMark.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.85,
+        "B": 0.1,
+        "A": 1.0,
+        "Hex": "FFEE59"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.1"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Mark_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 96.0,
+          "Y": 120.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.6,
+            "Hex": "99FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_Fishing_HitMark'",
+          "ObjectPath": "Pal/Content/Pal/Texture/UI/Fishing/T_Fishing_HitMark.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.85,
+        "B": 0.1,
+        "A": 1.0,
+        "Hex": "FFEE59"
+      },
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.3"
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Ripple_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.2,
+            "Hex": "33FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_GaugeFlareAnime_12'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_GaugeFlareAnime_12.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.775,
+        "B": 0.1,
+        "A": 1.0,
+        "Hex": "FFE459"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_5'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.84"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Ripple_1",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.2,
+            "Hex": "33FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_GaugeFlareAnime_12'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_GaugeFlareAnime_12.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.775,
+        "B": 0.1,
+        "A": 1.0,
+        "Hex": "FFE459"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_6'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.85"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Image_Ripple_2",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Image'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 128.0,
+          "Y": 128.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.2,
+            "Hex": "33FFFFFF"
+          }
+        },
+        "ResourceObject": {
+          "ObjectName": "MaterialInstanceConstant'MI_UI_GaugeFlareAnime_12'",
+          "ObjectPath": "Pal/Content/Pal/Material/UI/Ingame/MI_UI_GaugeFlareAnime_12.0"
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 1.0,
+        "G": 0.775,
+        "B": 0.1,
+        "A": 1.0,
+        "Hex": "FFE459"
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_7'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.86"
+      },
+      "RenderTransform": {
+        "Scale": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_Guide_Loop",
+    "Outer": "Anm_Guide_Loop_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "9F75E7B7-4ECD31C6-DB55C2A5-76420144",
+          "Name": "Image_Ripple_0",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "D8774CD3-438FCC8F-541551A4-FB861D37",
+          "Name": "Image_Ripple_1",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "5A25FBA0-48AA3BBA-78F0DAA5-53968890",
+          "Name": "Image_Ripple_2",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "9F75E7B7-4ECD31C6-DB55C2A5-76420144",
+          "BindingName": "Image_Ripple_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.24"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.68"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "D8774CD3-438FCC8F-541551A4-FB861D37",
+          "BindingName": "Image_Ripple_1",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.25"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.69"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "5A25FBA0-48AA3BBA-78F0DAA5-53968890",
+          "BindingName": "Image_Ripple_2",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_2'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.26"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_2'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.70"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 149933
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "4347D650-42B52292-509DA284-4767A3D1"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "Anm_Hit",
+    "Outer": "Anm_Hit_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "B77A4F9A-48EAD879-7DBF66B2-DC058BD0",
+          "Name": "Image_Bloom",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "314205EC-418D3185-515E1E9B-67DB83B3",
+          "Name": "Image_Mark",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "F0AFDB6F-42E8B4C1-2C6056A4-54B9DED0",
+          "Name": "Image_Mark_1",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "AEE0DC73-47F8AEC5-DBC9A69B-918F5A6D",
+          "Name": "CanvasPanelSlot_1",
+          "ParentGuid": "B77A4F9A-48EAD879-7DBF66B2-DC058BD0",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "2239AEC2-4A7AAF6D-F1DCA093-E9B37D66",
+          "Name": "CanvasPanelSlot_0",
+          "ParentGuid": "314205EC-418D3185-515E1E9B-67DB83B3",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "951EF4BE-42597BE7-47141EB2-E4DAE2D5",
+          "Name": "CanvasPanelSlot_2",
+          "ParentGuid": "F0AFDB6F-42E8B4C1-2C6056A4-54B9DED0",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "Guid": "55F68514-47D5EEBC-A61EBEAA-C1E61B49",
+          "Name": "SizeBox_34",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "B77A4F9A-48EAD879-7DBF66B2-DC058BD0",
+          "BindingName": "Image_Bloom",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.71"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "314205EC-418D3185-515E1E9B-67DB83B3",
+          "BindingName": "Image_Mark",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.72"
+            },
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.27"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "F0AFDB6F-42E8B4C1-2C6056A4-54B9DED0",
+          "BindingName": "Image_Mark_1",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.28"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_2'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.73"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "AEE0DC73-47F8AEC5-DBC9A69B-918F5A6D",
+          "BindingName": "CanvasPanelSlot_1",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneIntegerTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.78"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "2239AEC2-4A7AAF6D-F1DCA093-E9B37D66",
+          "BindingName": "CanvasPanelSlot_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneIntegerTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_1'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.79"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "951EF4BE-42597BE7-47141EB2-E4DAE2D5",
+          "BindingName": "CanvasPanelSlot_2",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneIntegerTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_2'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.80"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "55F68514-47D5EEBC-A61EBEAA-C1E61B49",
+          "BindingName": "SizeBox_34",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_3'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.74"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 45001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 60
+      },
+      "Signature": "856BE1BF-4300ED5F-AF8397BF-9D0E8070"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "mask": 24
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 99954
+          },
+          {
+            "Value": 149931
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": 3.0800456E-05,
+              "LeaveTangent": 8.003682E-06,
+              "ArriveTangentWeight": 0.52825516,
+              "LeaveTangentWeight": 0.52825516,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 8.003682E-06,
+              "LeaveTangent": -4.1685803E-07,
+              "ArriveTangentWeight": 0.3967973,
+              "LeaveTangentWeight": 0.3967973,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.9791667,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 99954
+          },
+          {
+            "Value": 149931
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": 3.0800456E-05,
+              "LeaveTangent": 8.003682E-06,
+              "ArriveTangentWeight": 0.52825516,
+              "LeaveTangentWeight": 0.52825516,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 8.003682E-06,
+              "LeaveTangent": -4.1685803E-07,
+              "ArriveTangentWeight": 0.3967973,
+              "LeaveTangentWeight": 0.3967973,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.9791667,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.29"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.30"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 149931
+            }
+          }
+        }
+      },
+      "Signature": "02E3AAB3-42438006-71F2838A-1FBE6ABD"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_1",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "mask": 24
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 50000
+          },
+          {
+            "Value": 149932
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 8.005443E-06,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 8.005443E-06,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 50000
+          },
+          {
+            "Value": 149932
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 8.005443E-06,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 8.005443E-06,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.31"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.32"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 149932
+            }
+          }
+        }
+      },
+      "Signature": "CB870B6F-48018B4B-23CE84AD-85110AE4"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_2",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "mask": 24
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 49977
+          },
+          {
+            "Value": 100000
+          },
+          {
+            "Value": 149932
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.75,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 5.002301E-06,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 5.002301E-06,
+              "LeaveTangent": -1.5992642E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": -1.5992642E-05,
+              "LeaveTangent": 1.10149795E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.75,
+            "Tangent": {
+              "ArriveTangent": 1.10149795E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 49977
+          },
+          {
+            "Value": 100000
+          },
+          {
+            "Value": 149932
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.75,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 5.002301E-06,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 5.002301E-06,
+              "LeaveTangent": -1.5992642E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.20000002,
+            "Tangent": {
+              "ArriveTangent": -1.5992642E-05,
+              "LeaveTangent": 1.10149795E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.75,
+            "Tangent": {
+              "ArriveTangent": 1.10149795E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.33"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.34"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 149932
+            }
+          }
+        }
+      },
+      "Signature": "BD1F415E-4F725C49-A727E882-90F5E745"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "mask": 24
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 19000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 4.0,
+            "Tangent": {
+              "ArriveTangent": -0.0005608405,
+              "LeaveTangent": -0.0005608405,
+              "ArriveTangentWeight": 2.2117662,
+              "LeaveTangentWeight": 2.2117662,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.13333334,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 19000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 4.0,
+            "Tangent": {
+              "ArriveTangent": -0.0006314227,
+              "LeaveTangent": -0.0006314227,
+              "ArriveTangentWeight": 2.127168,
+              "LeaveTangentWeight": 2.127168,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.41"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.42"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "E0A98F7A-44308435-C132F7A7-A5ACE98C"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_1",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "mask": 24
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 6000
+          },
+          {
+            "Value": 25000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 4.0,
+            "Tangent": {
+              "ArriveTangent": -0.0006314227,
+              "LeaveTangent": -0.0006314227,
+              "ArriveTangentWeight": 2.127168,
+              "LeaveTangentWeight": 2.127168,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 6000
+          },
+          {
+            "Value": 25000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 4.0,
+            "Tangent": {
+              "ArriveTangent": -0.0006314227,
+              "LeaveTangent": -0.0006314227,
+              "ArriveTangentWeight": 2.127168,
+              "LeaveTangentWeight": 2.127168,
+              "TangentWeightMode": 3
+            },
+            "InterpMode": 2,
+            "TangentMode": 1
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.43"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.44"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 34000
+            }
+          }
+        }
+      },
+      "Signature": "4A55C923-4473A146-64B0FA86-A84348CF"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Anm_Guide_Loop",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.19"
+        }
+      ],
+      "EvaluationFieldGuid": "A7E67D9F-4AC12969-B7533B9E-98EEBD7D",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.19"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 149931
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "A7E67D9F-4AC12969-B7533B9E-98EEBD7D"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_1",
+    "Outer": "Anm_Guide_Loop",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.20"
+        }
+      ],
+      "EvaluationFieldGuid": "C4A82411-45C407DD-9F05F197-6E5AD7BB",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.20"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 149932
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "C4A82411-45C407DD-9F05F197-6E5AD7BB"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_2",
+    "Outer": "Anm_Guide_Loop",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.21"
+        }
+      ],
+      "EvaluationFieldGuid": "54958EED-41D9E35F-988F45A4-F7CF8193",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.21"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 149932
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "54958EED-41D9E35F-988F45A4-F7CF8193"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.22"
+        }
+      ],
+      "EvaluationFieldGuid": "DE2E99DE-4866F15D-43C87BB8-246D04EA",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.22"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "DE2E99DE-4866F15D-43C87BB8-246D04EA"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_1",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.23"
+        }
+      ],
+      "EvaluationFieldGuid": "FA76B117-48ABF721-85CAAD97-80AD27B7",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.23"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 34000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "FA76B117-48ABF721-85CAAD97-80AD27B7"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneIntegerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneIntegerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneIntegerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneIntegerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneIntegerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneIntegerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_Guide_Loop_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 6,
+                  "Capacity": 6
+                },
+                {
+                  "StartIndex": 6,
+                  "Size": 4,
+                  "Capacity": 4
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 4,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 5,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 4,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 5,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 149931
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 149931
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 149932
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.19"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.61"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.20"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.62"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieScene2DTransformTrack_2.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.21"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 4
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.63"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 5
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "9F75E7B7-4ECD31C6-DB55C2A5-76420144"
+          },
+          {
+            "ObjectBindingID": "9F75E7B7-4ECD31C6-DB55C2A5-76420144"
+          },
+          {
+            "ObjectBindingID": "D8774CD3-438FCC8F-541551A4-FB861D37"
+          },
+          {
+            "ObjectBindingID": "D8774CD3-438FCC8F-541551A4-FB861D37"
+          },
+          {
+            "ObjectBindingID": "5A25FBA0-48AA3BBA-78F0DAA5-53968890"
+          },
+          {
+            "ObjectBindingID": "5A25FBA0-48AA3BBA-78F0DAA5-53968890"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 149931
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 149932
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "89A63767-4EB90E71-3DF092B5-7F3A2D77",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "Anm_Hit_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 3,
+                  "Capacity": 3
+                },
+                {
+                  "StartIndex": 3,
+                  "Size": 6,
+                  "Capacity": 6
+                },
+                {
+                  "StartIndex": 9,
+                  "Size": 1,
+                  "Capacity": 1
+                },
+                {
+                  "StartIndex": 10,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 4,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 8,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 5,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 6,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 7,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 4,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 8,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                },
+                {
+                  "StartIndex": 2,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 45000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": 1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 45000
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 45000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 3
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 30000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": 0
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 30000
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 34000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": 0
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 2
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.64"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.65"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.22"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieScene2DTransformTrack_1.MovieScene2DTransformSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.23"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.66"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 4
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_0.MovieSceneIntegerSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.75"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 5
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_1.MovieSceneIntegerSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.76"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 6
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_2.MovieSceneIntegerSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.77"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 7
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+                "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.67"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 8
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "B77A4F9A-48EAD879-7DBF66B2-DC058BD0"
+          },
+          {
+            "ObjectBindingID": "314205EC-418D3185-515E1E9B-67DB83B3"
+          },
+          {
+            "ObjectBindingID": "314205EC-418D3185-515E1E9B-67DB83B3"
+          },
+          {
+            "ObjectBindingID": "F0AFDB6F-42E8B4C1-2C6056A4-54B9DED0"
+          },
+          {
+            "ObjectBindingID": "F0AFDB6F-42E8B4C1-2C6056A4-54B9DED0"
+          },
+          {
+            "ObjectBindingID": "AEE0DC73-47F8AEC5-DBC9A69B-918F5A6D"
+          },
+          {
+            "ObjectBindingID": "2239AEC2-4A7AAF6D-F1DCA093-E9B37D66"
+          },
+          {
+            "ObjectBindingID": "951EF4BE-42597BE7-47141EB2-E4DAE2D5"
+          },
+          {
+            "ObjectBindingID": "55F68514-47D5EEBC-A61EBEAA-C1E61B49"
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 30000
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 34000
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 45000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "615FB075-411282ED-3ADC49AE-1A3D6CB5",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 8329
+          },
+          {
+            "Value": 99954
+          },
+          {
+            "Value": 149931
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.00012006243,
+              "LeaveTangent": -1.0914052E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": -1.0914052E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.35"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.36"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 149931
+            }
+          }
+        }
+      },
+      "Signature": "F47CDED6-460B1B5D-3D67D3B1-672DC98C"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 49977
+          },
+          {
+            "Value": 58306
+          },
+          {
+            "Value": 149932
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.37"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.38"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 149932
+            }
+          }
+        }
+      },
+      "Signature": "2A41A747-4B4244E9-C64FAAB2-BAD240A4"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 49977
+          },
+          {
+            "Value": 99955
+          },
+          {
+            "Value": 108285
+          },
+          {
+            "Value": 149932
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.5454,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": -1.0913021E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": -1.0913021E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.00012004802,
+              "LeaveTangent": -1.0915552E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.5454,
+            "Tangent": {
+              "ArriveTangent": -1.0915552E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.39"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.40"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 149932
+            }
+          }
+        }
+      },
+      "Signature": "D289F5FD-413A96D3-6F87639F-3C02B478"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 6000
+          },
+          {
+            "Value": 19000
+          },
+          {
+            "Value": 45000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.45"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.46"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 45000
+            }
+          }
+        }
+      },
+      "Signature": "51DEC37C-445BC8FE-FEACC78B-455F0C03"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 19000
+          },
+          {
+            "Value": 24000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 5.2631578E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 5.2631578E-05,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.47"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.48"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "141855E1-4E0205A6-E802B58E-575AD4C8"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 6000
+          },
+          {
+            "Value": 25000
+          },
+          {
+            "Value": 34000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 5.2631578E-05,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 5.2631578E-05,
+              "LeaveTangent": -0.00011111111,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 0,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.49"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.50"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 45000
+            }
+          }
+        }
+      },
+      "Signature": "AEAD3E1D-4EAD2523-12BF4FBD-5D48EB58"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_3",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 9000
+          },
+          {
+            "Value": 45000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.51"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_3.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.52"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 45000
+            }
+          }
+        }
+      },
+      "Signature": "130BDEB0-4E1812CD-C14DFB8D-A140CE4A"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_Guide_Loop",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.61"
+        }
+      ],
+      "EvaluationFieldGuid": "BAD89090-423F2ADB-B16590BE-E57344F3",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.61"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 149931
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "BAD89090-423F2ADB-B16590BE-E57344F3"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Anm_Guide_Loop",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.62"
+        }
+      ],
+      "EvaluationFieldGuid": "861E2DDB-47FCEBB2-91ECD9A1-C54523C0",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.62"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 149932
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "861E2DDB-47FCEBB2-91ECD9A1-C54523C0"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "Anm_Guide_Loop",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.63"
+        }
+      ],
+      "EvaluationFieldGuid": "C365A591-44D89EF9-A7B15583-83B50D95",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.63"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 149932
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "C365A591-44D89EF9-A7B15583-83B50D95"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.64"
+        }
+      ],
+      "EvaluationFieldGuid": "B0A5452F-44A45615-A765D690-CF17007D",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.64"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 45000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "B0A5452F-44A45615-A765D690-CF17007D"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.65"
+        }
+      ],
+      "EvaluationFieldGuid": "B92C737F-455BCBDF-C197419B-0772CBD7",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.65"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "B92C737F-455BCBDF-C197419B-0772CBD7"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.66"
+        }
+      ],
+      "EvaluationFieldGuid": "181E12F1-4F738578-F7943483-03BE2118",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.66"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 45000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "181E12F1-4F738578-F7943483-03BE2118"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_3",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.67"
+        }
+      ],
+      "EvaluationFieldGuid": "6B510120-4182310A-19914FAE-10BD20F6",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneFloatTrack_3.MovieSceneFloatSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.67"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 45000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "6B510120-4182310A-19914FAE-10BD20F6"
+    }
+  },
+  {
+    "Type": "MovieSceneIntegerSection",
+    "Name": "MovieSceneIntegerSection_0",
+    "Outer": "MovieSceneIntegerTrack_0",
+    "Class": "UScriptClass'MovieSceneIntegerSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IntegerCurve": {
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          1,
+          0
+        ]
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_0.MovieSceneIntegerSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.53"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_0.MovieSceneIntegerSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.54"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "15C9B115-43198F76-C67319BB-0F015914"
+    }
+  },
+  {
+    "Type": "MovieSceneIntegerSection",
+    "Name": "MovieSceneIntegerSection_0",
+    "Outer": "MovieSceneIntegerTrack_1",
+    "Class": "UScriptClass'MovieSceneIntegerSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IntegerCurve": {
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          1,
+          0
+        ]
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_1.MovieSceneIntegerSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.55"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_1.MovieSceneIntegerSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.56"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "43A65EAD-4E9BDCB2-17F72B8E-6D9891D5"
+    }
+  },
+  {
+    "Type": "MovieSceneIntegerSection",
+    "Name": "MovieSceneIntegerSection_0",
+    "Outer": "MovieSceneIntegerTrack_2",
+    "Class": "UScriptClass'MovieSceneIntegerSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "IntegerCurve": {
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 30000
+          }
+        ],
+        "Values": [
+          1,
+          0
+        ]
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_2.MovieSceneIntegerSection_0.EaseInFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.57"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_2.MovieSceneIntegerSection_0.EaseOutFunction'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.58"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 30000
+            }
+          }
+        }
+      },
+      "Signature": "5A0F2F3D-4BF0AB22-9DDEF09D-AD21BD09"
+    }
+  },
+  {
+    "Type": "MovieSceneIntegerTrack",
+    "Name": "MovieSceneIntegerTrack_0",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieSceneIntegerTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "ZOrder",
+        "PropertyPath": "ZOrder",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_0.MovieSceneIntegerSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.75"
+        }
+      ],
+      "EvaluationFieldGuid": "892D7EC2-4A2E3F60-602118A6-44B87A8F",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_0.MovieSceneIntegerSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.75"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "892D7EC2-4A2E3F60-602118A6-44B87A8F"
+    }
+  },
+  {
+    "Type": "MovieSceneIntegerTrack",
+    "Name": "MovieSceneIntegerTrack_1",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieSceneIntegerTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "ZOrder",
+        "PropertyPath": "ZOrder",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_1.MovieSceneIntegerSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.76"
+        }
+      ],
+      "EvaluationFieldGuid": "8D9979CC-4B02C23E-529335BA-70D61AD2",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_1.MovieSceneIntegerSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.76"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "8D9979CC-4B02C23E-529335BA-70D61AD2"
+    }
+  },
+  {
+    "Type": "MovieSceneIntegerTrack",
+    "Name": "MovieSceneIntegerTrack_2",
+    "Outer": "Anm_Hit",
+    "Class": "UScriptClass'MovieSceneIntegerTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "ZOrder",
+        "PropertyPath": "ZOrder",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_2.MovieSceneIntegerSection_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.77"
+        }
+      ],
+      "EvaluationFieldGuid": "31E56EEA-4E04F763-C92D679C-9EC5E76A",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneIntegerSection'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit.MovieSceneIntegerTrack_2.MovieSceneIntegerSection_0'",
+              "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.77"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 30000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "31E56EEA-4E04F763-C92D679C-9EC5E76A"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_41",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_4'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.83"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_3'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.82"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_5'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.84"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_6'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.85"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_7'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.86"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_Fishing_Hit_C:WidgetTree.SizeBox_34.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.89"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_41",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_Hit_C:WidgetTree.Overlay_41'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.81"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_Fishing_Hit_C:WidgetTree.SizeBox_44'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.88"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_41",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_Hit_C:WidgetTree.Overlay_41'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.81"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_Hit_C:WidgetTree.Image_115'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.10"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_5",
+    "Outer": "Overlay_41",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_Hit_C:WidgetTree.Overlay_41'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.81"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_Hit_C:WidgetTree.Image_Ripple_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.14"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_6",
+    "Outer": "Overlay_41",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_Hit_C:WidgetTree.Overlay_41'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.81"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_Hit_C:WidgetTree.Image_Ripple_1'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.15"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_7",
+    "Outer": "Overlay_41",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_Fishing_Hit_C:WidgetTree.Overlay_41'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.81"
+      },
+      "Content": {
+        "ObjectName": "Image'WBP_Fishing_Hit_C:WidgetTree.Image_Ripple_2'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.16"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_34",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_Fishing_Hit_C:WidgetTree.SizeBox_34.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.89"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28.CanvasPanelSlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.4"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_44",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidthOverride": 40.0,
+      "HeightOverride": 40.0,
+      "bOverride_WidthOverride": true,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_Fishing_Hit_C:WidgetTree.SizeBox_44.SizeBoxSlot_0'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.90"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_Fishing_Hit_C:WidgetTree.Overlay_41.OverlaySlot_3'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.82"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_34",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_Fishing_Hit_C:WidgetTree.SizeBox_34'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.87"
+      },
+      "Content": {
+        "ObjectName": "Overlay'WBP_Fishing_Hit_C:WidgetTree.Overlay_41'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.81"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_44",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_Fishing_Hit_C:WidgetTree.SizeBox_44'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.88"
+      },
+      "Content": {
+        "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'WBP_Fishing_Hit_C:WidgetTree.WBP_PlayerInputKeyGuideIcon'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.92"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Fishing_Hit_C",
+    "Name": "Default__WBP_Fishing_Hit_C",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.WBP_Fishing_Hit_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_PlayerInputKeyGuideIcon_C",
+    "Name": "WBP_PlayerInputKeyGuideIcon",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.WBP_PlayerInputKeyGuideIcon_C'",
+    "Template": {
+      "ObjectName": "WBP_PlayerInputKeyGuideIcon_C'Default__WBP_PlayerInputKeyGuideIcon_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.10"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "BindInputActionName": "WeaponUse",
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_Fishing_Hit_C:WidgetTree.SizeBox_44.SizeBoxSlot_0'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.90"
+      }
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_Guide_Loop_INST",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.Anm_Guide_Loop'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.17"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Image_Ripple_0",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "9F75E7B7-4ECD31C6-DB55C2A5-76420144",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Ripple_1",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "D8774CD3-438FCC8F-541551A4-FB861D37",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Ripple_2",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "5A25FBA0-48AA3BBA-78F0DAA5-53968890",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_Guide_Loop",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.59"
+      },
+      "Signature": "89A63767-4EB90E71-3DF092B5-7F3A2D77"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "Anm_Hit_INST",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_Fishing_Hit_C:Anm_Hit_INST.Anm_Hit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.18"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Image_Bloom",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B77A4F9A-48EAD879-7DBF66B2-DC058BD0",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Mark",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "314205EC-418D3185-515E1E9B-67DB83B3",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Mark_1",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "F0AFDB6F-42E8B4C1-2C6056A4-54B9DED0",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Bloom",
+          "SlotWidgetName": "CanvasPanelSlot_1",
+          "AnimationGuid": "AEE0DC73-47F8AEC5-DBC9A69B-918F5A6D",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Mark",
+          "SlotWidgetName": "CanvasPanelSlot_0",
+          "AnimationGuid": "2239AEC2-4A7AAF6D-F1DCA093-E9B37D66",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Image_Mark_1",
+          "SlotWidgetName": "CanvasPanelSlot_2",
+          "AnimationGuid": "951EF4BE-42597BE7-47141EB2-E4DAE2D5",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "SizeBox_34",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "55F68514-47D5EEBC-A61EBEAA-C1E61B49",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "Anm_Hit",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_Fishing_Hit_C:Anm_Hit_INST.CompiledData'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.60"
+      },
+      "Signature": "615FB075-411282ED-3ADC49AE-1A3D6CB5"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_Fishing_Hit_C:WidgetTree'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.96"
+      },
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_Fishing_Hit_C:Anm_Hit_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.94"
+        },
+        {
+          "ObjectName": "WidgetAnimation'WBP_Fishing_Hit_C:Anm_Guide_Loop_INST'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.93"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:ExecuteUbergraph_WBP_Fishing_Hit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:Finished_2E34FB9345682690EC9932908042E186'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.8"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:AnmEvent_Hit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.6"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:AnmEvent_Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.5"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.9"
+      },
+      {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:ExecuteUbergraph_WBP_Fishing_Hit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_Guide_Loop",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Anm_Hit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_115",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Bloom",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Mark",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Mark_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Ripple_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Ripple_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Image_Ripple_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Image'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WBP_PlayerInputKeyGuideIcon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_PlayerInputKeyGuideIcon_C'",
+          "ObjectPath": "Pal/Content/Pal/Blueprint/UI/CommonWidget/ActionWidget/WBP_PlayerInputKeyGuideIcon.11"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_Fishing_Hit": {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:ExecuteUbergraph_WBP_Fishing_Hit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.7"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:OnInitialized'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.9"
+      },
+      "AnmEvent_Hide": {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:AnmEvent_Hide'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.5"
+      },
+      "AnmEvent_Hit": {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:AnmEvent_Hit'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.6"
+      },
+      "Finished_2E34FB9345682690EC9932908042E186": {
+        "ObjectName": "Function'WBP_Fishing_Hit_C:Finished_2E34FB9345682690EC9932908042E186'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.8"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_Fishing_Hit_C'Default__WBP_Fishing_Hit_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.91"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_Fishing_Hit_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel'WBP_Fishing_Hit_C:WidgetTree.CanvasPanel_28'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/UI/UserInterface/Fishing/WBP_Fishing_Hit.0"
+      }
+    }
+  }
+]

@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_MenuESC_Pause.WBP_MenuESC_Pause_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MenuESC_Pause_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESC_Pause_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MenuESC_Pause.WBP_MenuESC_Pause_C.ExecuteUbergraph_WBP_MenuESC_Pause
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_MenuESC_Pause_C::ExecuteUbergraph_WBP_MenuESC_Pause(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESC_Pause.WBP_MenuESC_Pause_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MenuESC_Pause_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESC_Pause_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

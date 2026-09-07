@@ -32,11 +32,13 @@ class UWBP_Sound_Settings_C : public UUserWidget
     bool SomethingChanged;                                                            // 0x0370 (size: 0x1)
     FPalOptionAudioSettings OriginalSettingCache;                                     // 0x0374 (size: 0x24)
     FPalOptionVoiceChatSettings VoiceChatSettingCache;                                // 0x0398 (size: 0x50)
-    class UWBP_Option_DiscordFriendList_C* OptionDiscordFriend;                       // 0x03E8 (size: 0x8)
-    TArray<FDataTableRowHandle> VoiceChatModeMsgIds;                                  // 0x03F0 (size: 0x10)
-    TArray<FString> VoiceChatDevices;                                                 // 0x0400 (size: 0x10)
-    int32 CurrentVoiceChatDeviceIndex;                                                // 0x0410 (size: 0x4)
-    int32 DefaultVoiceChatDeviceIndex;                                                // 0x0414 (size: 0x4)
+    FPalOptionVoiceChatSettings OriginalVoiceChatSettingCache;                        // 0x03E8 (size: 0x50)
+    FPalOptionVoiceChatSettings RollbackVoiceChatSettingCache;                        // 0x0438 (size: 0x50)
+    class UWBP_Option_DiscordFriendList_C* OptionDiscordFriend;                       // 0x0488 (size: 0x8)
+    TArray<FDataTableRowHandle> VoiceChatModeMsgIds;                                  // 0x0490 (size: 0x10)
+    TArray<FString> VoiceChatDevices;                                                 // 0x04A0 (size: 0x10)
+    int32 CurrentVoiceChatDeviceIndex;                                                // 0x04B0 (size: 0x4)
+    int32 DefaultVoiceChatDeviceIndex;                                                // 0x04B4 (size: 0x4)
 
     void Construct();
     void OnMasterChanged(double Value);
@@ -64,6 +66,6 @@ class UWBP_Sound_Settings_C : public UUserWidget
     void OnChangedSelection_VoiceChat_Input_Setting(int32 Selection);
     void OnChangeVoiceChatDevice(int32 Selection);
     void ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint);
-}; // Size: 0x418
+}; // Size: 0x4B8
 
 #endif

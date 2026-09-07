@@ -10,7 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -38,6 +40,21 @@ public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_PalCommonButtonBase_C_OnAddedToFocusPath;
+
+// Function WBP_PalCommonButtonBase.WBP_PalCommonButtonBase_C.OnPreviewKeyDown
+// 0x02C8 (0x02C8 - 0x0000)
+struct WBP_PalCommonButtonBase_C_OnPreviewKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0040(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0080(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_OnPreviewKeyDown_ReturnValue;             // 0x0138(0x00B8)()
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x01F0(0x0018)(HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0208(0x00B8)()
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonButtonBase_C_OnPreviewKeyDown;
 
 // Function WBP_PalCommonButtonBase.WBP_PalCommonButtonBase_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)

@@ -28,10 +28,10 @@ public:
 	bool                                          TechnologyPointUnused;                             // 0x0281(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateUnusedStatusPoint(int32 UnusedPoint);
-	void UpdatedTechnologyPoint(int32 TechnologyPoint);
-	void SetupStatusPointAttention();
 	void ExecuteUbergraph_WBP_IngameStatusPoint(int32 EntryPoint);
+	void SetupStatusPointAttention();
+	void UpdatedTechnologyPoint(int32 TechnologyPoint);
+	void UpdateUnusedStatusPoint(int32 UnusedPoint);
 
 public:
 	static class UClass* StaticClass()

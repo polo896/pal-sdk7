@@ -19,7 +19,7 @@ class UWBP_Buildup_Pal_StatusContent_C : public UUserWidget
     class UBP_PalTextBlock_C* Text_StatusNumBefore;                                   // 0x02E0 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus;                    // 0x02E8 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus;                     // 0x02F0 (size: 0x8)
-    TArray<UWBP_Buildup_Gauge_C*> BuildupGauges;                                      // 0x02F8 (size: 0x10)
+    TArray<class UWBP_Buildup_Gauge_C*> BuildupGauges;                                // 0x02F8 (size: 0x10)
     EPalCharacterStatusOperationName Status;                                          // 0x0308 (size: 0x1)
     bool Clickable;                                                                   // 0x0309 (size: 0x1)
     FWBP_Buildup_Pal_StatusContent_COnClicked OnClicked;                              // 0x0310 (size: 0x10)
@@ -49,6 +49,8 @@ class UWBP_Buildup_Pal_StatusContent_C : public UUserWidget
     void StatusMinus();
     void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_OnButtonPressed__DelegateSignature(class UCommonButtonBase* Button);
     void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
+    void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+    void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void ExecuteUbergraph_WBP_Buildup_Pal_StatusContent(int32 EntryPoint);
     void OnClicked__DelegateSignature(EPalCharacterStatusOperationName Status, int32 TargetRank);
 }; // Size: 0x359

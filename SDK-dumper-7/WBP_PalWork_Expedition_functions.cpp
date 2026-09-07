@@ -17,109 +17,43 @@
 namespace SDK
 {
 
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetTitle
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToCompleted
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      TitleText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_PalWork_Expedition_C::SetTitle(const class FText& TitleText)
+void UWBP_PalWork_Expedition_C::ChangeToCompleted()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "SetTitle");
-
-	Params::WBP_PalWork_Expedition_C_SetTitle Parms{};
-
-	Parms.TitleText = std::move(TitleText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetRemainSeconds
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int64                                   Seconds                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_Expedition_C::SetRemainSeconds(int64 Seconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "SetRemainSeconds");
-
-	Params::WBP_PalWork_Expedition_C_SetRemainSeconds Parms{};
-
-	Parms.Seconds = Seconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetGaugeRate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_Expedition_C::SetGaugeRate(double Rate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "SetGaugeRate");
-
-	Params::WBP_PalWork_Expedition_C_SetGaugeRate Parms{};
-
-	Parms.Rate = Rate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ExecuteUbergraph_WBP_PalWork_Expedition
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_Expedition_C::ExecuteUbergraph_WBP_PalWork_Expedition(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ExecuteUbergraph_WBP_PalWork_Expedition");
-
-	Params::WBP_PalWork_Expedition_C_ExecuteUbergraph_WBP_PalWork_Expedition Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWork_Expedition_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "Destruct");
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ChangeToCompleted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToExpandDetail
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWork_Expedition_C::Construct()
+void UWBP_PalWork_Expedition_C::ChangeToExpandDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "Construct");
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ChangeToExpandDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToInProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_Expedition_C::ChangeToInProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ChangeToInProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,45 +79,111 @@ void UWBP_PalWork_Expedition_C::ChangeToSimpleDetail(bool bSkipAnimation)
 }
 
 
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToInProgress
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalWork_Expedition_C::ChangeToInProgress()
+void UWBP_PalWork_Expedition_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ChangeToInProgress");
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToExpandDetail
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalWork_Expedition_C::ChangeToExpandDetail()
+void UWBP_PalWork_Expedition_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ChangeToExpandDetail");
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToCompleted
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ExecuteUbergraph_WBP_PalWork_Expedition
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_Expedition_C::ChangeToCompleted()
+void UWBP_PalWork_Expedition_C::ExecuteUbergraph_WBP_PalWork_Expedition(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ChangeToCompleted");
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "ExecuteUbergraph_WBP_PalWork_Expedition");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalWork_Expedition_C_ExecuteUbergraph_WBP_PalWork_Expedition Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetGaugeRate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_Expedition_C::SetGaugeRate(double Rate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "SetGaugeRate");
+
+	Params::WBP_PalWork_Expedition_C_SetGaugeRate Parms{};
+
+	Parms.Rate = Rate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetRemainSeconds
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int64                                   Seconds                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_Expedition_C::SetRemainSeconds(int64 Seconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "SetRemainSeconds");
+
+	Params::WBP_PalWork_Expedition_C_SetRemainSeconds Parms{};
+
+	Parms.Seconds = Seconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetTitle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      TitleText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_PalWork_Expedition_C::SetTitle(const class FText& TitleText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Expedition_C", "SetTitle");
+
+	Params::WBP_PalWork_Expedition_C_SetTitle Parms{};
+
+	Parms.TitleText = std::move(TitleText);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

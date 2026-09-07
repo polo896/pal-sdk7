@@ -36,13 +36,13 @@ public:
 	TMulticastInlineDelegate<void()>              OnSkinSlotUnhovered;                               // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Setup(class FName SkinId, bool IsEquip);
-	void SetSelect(bool IsSelected);
-	void ExecuteUbergraph_WBP_EquipSkin_ItemButton(int32 EntryPoint);
-	void Construct();
-	void BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void Construct();
+	void ExecuteUbergraph_WBP_EquipSkin_ItemButton(int32 EntryPoint);
+	void SetSelect(bool IsSelected);
+	void Setup(class FName SkinId, bool IsEquip);
 
 public:
 	static class UClass* StaticClass()

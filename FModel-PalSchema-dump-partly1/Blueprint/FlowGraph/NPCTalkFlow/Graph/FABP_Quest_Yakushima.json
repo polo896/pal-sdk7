@@ -1,0 +1,1277 @@
+[
+  {
+    "Type": "FlowNode_Finish",
+    "Name": "FlowNode_Finish_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "UScriptClass'FlowNode_Finish'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "E5E8168B-43CBF300-C26ECB90-A847F3BF"
+    }
+  },
+  {
+    "Type": "FlowNode_Start",
+    "Name": "FlowNode_Start_0",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "UScriptClass'FlowNode_Start'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "0F26B12B-4BA5AB8B-759CBEA1-C28DD142",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "10EE88E0-46088E84-EAB6CEBC-66531554",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 3.0,
+      "GraphNode": null,
+      "NodeGuid": "143840ED-4810D891-BACEE081-AC2D920F",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "F0C94FAA-435D0199-42A8339D-F9B9E00C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FlowNode_Timer",
+    "Name": "FlowNode_Timer_2",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "UScriptClass'FlowNode_Timer'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CompletionTime": 3.0,
+      "GraphNode": null,
+      "NodeGuid": "6A77A31F-43D34049-8B6EB1AF-174EFADE",
+      "Connections": [
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "78AE3E33-4C155813-2B6C5981-549D4B76",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_0",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_StrongOldMan01"
+      },
+      "NetworkInvokeName": "CompleteQuest_Zoe04",
+      "GraphNode": null,
+      "NodeGuid": "8B9B5497-41BAF2F1-8779E7B5-1CD7849A"
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_YakushimaDungeon"
+      },
+      "NetworkInvokeName": "CompleteQuest_YakushimaDungeon_CHOICE_NO",
+      "GraphNode": null,
+      "NodeGuid": "7166F57B-48C3B16A-25608D8F-D3B54A04"
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_2",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_YakushimaDungeon"
+      },
+      "NetworkInvokeName": "CompleteQuest_YakushimaDungeon_CHOICE_YES",
+      "GraphNode": null,
+      "NodeGuid": "9E5BC8E5-4AFBBF0D-4914C8B6-8ED60B69",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "287D9269-4FFDEA66-7FE03C92-FA0AA00F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_CompleteQuest_C",
+    "Name": "FNBP_CompleteQuest_C_3",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.FNBP_CompleteQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_CompleteQuest_C'Default__FNBP_CompleteQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_CompleteQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_YakushimaBoss002"
+      },
+      "NetworkInvokeName": "CompleteQuest_YakushimaBoss002",
+      "GraphNode": null,
+      "NodeGuid": "A45D94CE-4B01D4B1-B57A6992-42739378",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E5E8168B-43CBF300-C26ECB90-A847F3BF",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_0",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "78AE3E33-4C155813-2B6C5981-549D4B76",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "CDB899F3-400277F2-6B218FBE-02E10611",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeIn_C",
+    "Name": "FNBP_FadeIn_C_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.FNBP_FadeIn_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeIn_C'Default__FNBP_FadeIn_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeIn.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "F0C94FAA-435D0199-42A8339D-F9B9E00C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "918E7C79-4C35CA21-7CDBC7AB-A68A3312",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_2",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "510427DE-492ADBCF-084C3CB7-A34034F2",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A650215C-42B46BCF-888C188F-276AE7B6",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_FadeOut_C",
+    "Name": "FNBP_FadeOut_C_3",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.FNBP_FadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_FadeOut_C'Default__FNBP_FadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_FadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "C8177AEE-4F886EEC-200AB695-62EB6245",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "21CE0A52-45A9A55C-D868FCBF-7CB8D771",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_010_No"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "F5E54B16-4CE6DF3F-F9788183-82AF00DB"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_10",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaBoss002_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "CEB71726-47A46DF6-412258B4-0F9B36BC",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "C8177AEE-4F886EEC-200AB695-62EB6245",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_11",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaBoss002_Talk_030"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "CDB899F3-400277F2-6B218FBE-02E10611",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "A45D94CE-4B01D4B1-B57A6992-42739378",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_12",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaBoss002_Talk_030_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "36FE3BF0-45DE5DF3-73DCE1A2-C885A0A7"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_16",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_010"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "ACC2FA98-4291C70E-A432988B-C4D1F49E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "115B6991-4A088849-7B3E25B7-F12AC254",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_18",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_020"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "0590AC09-46671551-57BE3193-0B4E962E",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "510427DE-492ADBCF-084C3CB7-A34034F2",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_2",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_010_No_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "A89AEC3D-4DBE8C8B-90B235AE-C2AC6D0B",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "115B6991-4A088849-7B3E25B7-F12AC254",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_3",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_010_Yes"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "F7FB87F8-4B755ADE-6B33B995-1F11E53A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "E7E97E08-4140AC9A-29B5B38A-44C8158B",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_4",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_010_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "D06E23DE-42DBD267-938EC59A-74BFEEAC"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_5",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_040"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "918E7C79-4C35CA21-7CDBC7AB-A68A3312",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "4A32077B-47AD1C52-6C3D06B7-C9EEAF2D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_6",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_040_No"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "D3FB813D-404EB2D7-9BB7D994-149AE19A",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "7166F57B-48C3B16A-25608D8F-D3B54A04",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_7",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_040_Yes"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "D9CAABDE-4000E821-2D10918A-86492E1C",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "9E5BC8E5-4AFBBF0D-4914C8B6-8ED60B69",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_8",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_040_No_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "E9E95AA3-48838C75-83BC0790-56295434",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "4A32077B-47AD1C52-6C3D06B7-C9EEAF2D",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalk_FixedMsdId_C",
+    "Name": "FNBP_NPCTalk_FixedMsdId_C_9",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.FNBP_NPCTalk_FixedMsdId_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'Default__FNBP_NPCTalk_FixedMsdId_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalk_FixedMsdId.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MsgIdList": [
+        "QUEST_SUB_YakushimaDungeon_Talk_040_Ordered_Loop"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4E7C777A-4D8BCD68-6B34C38A-A3E43787"
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_0",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "QUEST_CHOICE_YES",
+        "QUEST_CHOICE_NO"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "115B6991-4A088849-7B3E25B7-F12AC254",
+      "OutputPins": [
+        {
+          "PinName": "QUEST_CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "QUEST_CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "QUEST_CHOICE_YES",
+          "Value": {
+            "NodeGuid": "F7FB87F8-4B755ADE-6B33B995-1F11E53A",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "QUEST_CHOICE_NO",
+          "Value": {
+            "NodeGuid": "F5E54B16-4CE6DF3F-F9788183-82AF00DB",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkBranch_Yes_No_C",
+    "Name": "FNBP_NPCTalkBranch_Yes_No_C_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.FNBP_NPCTalkBranch_Yes_No_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'Default__FNBP_NPCTalkBranch_Yes_No_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkBranch_Yes_No.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "ChoiceMsgIDList": [
+        "QUEST_CHOICE_NO",
+        "QUEST_CHOICE_YES"
+      ],
+      "GraphNode": null,
+      "NodeGuid": "4A32077B-47AD1C52-6C3D06B7-C9EEAF2D",
+      "OutputPins": [
+        {
+          "PinName": "QUEST_CHOICE_NO",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "QUEST_CHOICE_YES",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "QUEST_CHOICE_NO",
+          "Value": {
+            "NodeGuid": "D3FB813D-404EB2D7-9BB7D994-149AE19A",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "QUEST_CHOICE_YES",
+          "Value": {
+            "NodeGuid": "D9CAABDE-4000E821-2D10918A-86492E1C",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_NPCTalkCountBranch_C",
+    "Name": "FNBP_NPCTalkCountBranch_C_6",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.FNBP_NPCTalkCountBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_NPCTalkCountBranch_C'Default__FNBP_NPCTalkCountBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_NPCTalkCountBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GraphNode": null,
+      "NodeGuid": "33A7113E-4F5AA8A0-E2BB9FB1-326E6FC7",
+      "OutputPins": [
+        {
+          "PinName": "Loop",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        },
+        {
+          "PinName": "1",
+          "PinFriendlyName": {
+            "CultureInvariantString": null
+          },
+          "PinToolTip": ""
+        }
+      ],
+      "Connections": [
+        {
+          "Key": "Loop",
+          "Value": {
+            "NodeGuid": "A89AEC3D-4DBE8C8B-90B235AE-C2AC6D0B",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "1",
+          "Value": {
+            "NodeGuid": "ACC2FA98-4291C70E-A432988B-C4D1F49E",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_YakushimaDungeon"
+      },
+      "NetworkInvokeName": "Order_Sub_YakushimaDungeon",
+      "GraphNode": null,
+      "NodeGuid": "E7E97E08-4140AC9A-29B5B38A-44C8158B"
+    }
+  },
+  {
+    "Type": "FNBP_OrderQuest_C",
+    "Name": "FNBP_OrderQuest_C_2",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.FNBP_OrderQuest_C'",
+    "Template": {
+      "ObjectName": "FNBP_OrderQuest_C'Default__FNBP_OrderQuest_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_OrderQuest.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_YakushimaBoss002"
+      },
+      "NetworkInvokeName": "Order_Sub_YakushimaBoss002",
+      "GraphNode": null,
+      "NodeGuid": "287D9269-4FFDEA66-7FE03C92-FA0AA00F"
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_0",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_YakushimaBoss002_Return_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_YakushimaBoss002_Return.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_YakushimaBoss002"
+      },
+      "GraphNode": null,
+      "NodeGuid": "B2E0745C-48C22121-DB920FA4-B25A7092",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "CEB71726-47A46DF6-412258B4-0F9B36BC",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "4E7C777A-4D8BCD68-6B34C38A-A3E43787",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBlockBranch_C",
+    "Name": "FNBP_QuestBlockBranch_C_3",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.FNBP_QuestBlockBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBlockBranch_C'Default__FNBP_QuestBlockBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBlockBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MatchClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SubQuestBlock_YakushimaDungeon_Return_C'",
+        "ObjectPath": "Pal/Content/Pal/Blueprint/Quest/SubQuest/Block/BP_SubQuestBlock_YakushimaDungeon_Return.0"
+      },
+      "QuestId": {
+        "RowName": "Sub_YakushimaDungeon"
+      },
+      "GraphNode": null,
+      "NodeGuid": "90063762-443C0589-62BC8990-58A86944",
+      "Connections": [
+        {
+          "Key": "Match",
+          "Value": {
+            "NodeGuid": "0590AC09-46671551-57BE3193-0B4E962E",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "NotMatch",
+          "Value": {
+            "NodeGuid": "D06E23DE-42DBD267-938EC59A-74BFEEAC",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_0",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_YakushimaBoss002"
+      },
+      "GraphNode": null,
+      "NodeGuid": "CFD6C30B-4749C79E-0A7740AE-720FFFB4",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "E9E95AA3-48838C75-83BC0790-56295434",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "B2E0745C-48C22121-DB920FA4-B25A7092",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "36FE3BF0-45DE5DF3-73DCE1A2-C885A0A7",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_QuestBranch_C",
+    "Name": "FNBP_QuestBranch_C_4",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.FNBP_QuestBranch_C'",
+    "Template": {
+      "ObjectName": "FNBP_QuestBranch_C'Default__FNBP_QuestBranch_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CommonNode/FNBP_QuestBranch.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "QuestId": {
+        "RowName": "Sub_YakushimaDungeon"
+      },
+      "GraphNode": null,
+      "NodeGuid": "10EE88E0-46088E84-EAB6CEBC-66531554",
+      "Connections": [
+        {
+          "Key": "NotOrdered",
+          "Value": {
+            "NodeGuid": "33A7113E-4F5AA8A0-E2BB9FB1-326E6FC7",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Ordered",
+          "Value": {
+            "NodeGuid": "90063762-443C0589-62BC8990-58A86944",
+            "PinName": "In"
+          }
+        },
+        {
+          "Key": "Completed",
+          "Value": {
+            "NodeGuid": "CFD6C30B-4749C79E-0A7740AE-720FFFB4",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_TextInFadeOut_C",
+    "Name": "FNBP_TextInFadeOut_C_0",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.FNBP_TextInFadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_TextInFadeOut_C'Default__FNBP_TextInFadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId": {
+        "RowName": "QUEST_SUB_YakushimaDungeon_Talk_030"
+      },
+      "GraphNode": null,
+      "NodeGuid": "A650215C-42B46BCF-888C188F-276AE7B6",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "143840ED-4810D891-BACEE081-AC2D920F",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "FNBP_TextInFadeOut_C",
+    "Name": "FNBP_TextInFadeOut_C_1",
+    "Outer": "FABP_Quest_Yakushima",
+    "Class": "BlueprintGeneratedClass'Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.FNBP_TextInFadeOut_C'",
+    "Template": {
+      "ObjectName": "FNBP_TextInFadeOut_C'Default__FNBP_TextInFadeOut_C'",
+      "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/CustomNode/FNBP_TextInFadeOut.1"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TextId": {
+        "RowName": "QUEST_SUB_YakushimaBoss002_Talk_020"
+      },
+      "GraphNode": null,
+      "NodeGuid": "21CE0A52-45A9A55C-D868FCBF-7CB8D771",
+      "Connections": [
+        {
+          "Key": "Out",
+          "Value": {
+            "NodeGuid": "6A77A31F-43D34049-8B6EB1AF-174EFADE",
+            "PinName": "In"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PalNPCTalkFlowAssetBase",
+    "Name": "FABP_Quest_Yakushima",
+    "Class": "UScriptClass'PalNPCTalkFlowAssetBase'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MaxTalkCount": 1,
+      "AssetGuid": "6E805D9C-4E15E33A-C9FE9D82-EABD4F7B",
+      "Nodes": [
+        {
+          "Key": "F0C94FAA-435D0199-42A8339D-F9B9E00C",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_Quest_Yakushima:FNBP_FadeIn_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.9"
+          }
+        },
+        {
+          "Key": "143840ED-4810D891-BACEE081-AC2D920F",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_Quest_Yakushima:FlowNode_Timer_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.2"
+          }
+        },
+        {
+          "Key": "E5E8168B-43CBF300-C26ECB90-A847F3BF",
+          "Value": {
+            "ObjectName": "FlowNode_Finish'FABP_Quest_Yakushima:FlowNode_Finish_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.0"
+          }
+        },
+        {
+          "Key": "A650215C-42B46BCF-888C188F-276AE7B6",
+          "Value": {
+            "ObjectName": "FNBP_TextInFadeOut_C'FABP_Quest_Yakushima:FNBP_TextInFadeOut_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.35"
+          }
+        },
+        {
+          "Key": "E7E97E08-4140AC9A-29B5B38A-44C8158B",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Quest_Yakushima:FNBP_OrderQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.29"
+          }
+        },
+        {
+          "Key": "115B6991-4A088849-7B3E25B7-F12AC254",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_Quest_Yakushima:FNBP_NPCTalkBranch_Yes_No_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.26"
+          }
+        },
+        {
+          "Key": "F5E54B16-4CE6DF3F-F9788183-82AF00DB",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.12"
+          }
+        },
+        {
+          "Key": "A89AEC3D-4DBE8C8B-90B235AE-C2AC6D0B",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.18"
+          }
+        },
+        {
+          "Key": "33A7113E-4F5AA8A0-E2BB9FB1-326E6FC7",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkCountBranch_C'FABP_Quest_Yakushima:FNBP_NPCTalkCountBranch_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.28"
+          }
+        },
+        {
+          "Key": "10EE88E0-46088E84-EAB6CEBC-66531554",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_Yakushima:FNBP_QuestBranch_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.34"
+          }
+        },
+        {
+          "Key": "CFD6C30B-4749C79E-0A7740AE-720FFFB4",
+          "Value": {
+            "ObjectName": "FNBP_QuestBranch_C'FABP_Quest_Yakushima:FNBP_QuestBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.33"
+          }
+        },
+        {
+          "Key": "90063762-443C0589-62BC8990-58A86944",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_Yakushima:FNBP_QuestBlockBranch_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.32"
+          }
+        },
+        {
+          "Key": "D06E23DE-42DBD267-938EC59A-74BFEEAC",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_4'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.20"
+          }
+        },
+        {
+          "Key": "0590AC09-46671551-57BE3193-0B4E962E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_18'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.17"
+          }
+        },
+        {
+          "Key": "8B9B5497-41BAF2F1-8779E7B5-1CD7849A",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_Yakushima:FNBP_CompleteQuest_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.4"
+          }
+        },
+        {
+          "Key": "0F26B12B-4BA5AB8B-759CBEA1-C28DD142",
+          "Value": {
+            "ObjectName": "FlowNode_Start'FABP_Quest_Yakushima:FlowNode_Start_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.1"
+          }
+        },
+        {
+          "Key": "ACC2FA98-4291C70E-A432988B-C4D1F49E",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_16'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.16"
+          }
+        },
+        {
+          "Key": "F7FB87F8-4B755ADE-6B33B995-1F11E53A",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.19"
+          }
+        },
+        {
+          "Key": "510427DE-492ADBCF-084C3CB7-A34034F2",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_Quest_Yakushima:FNBP_FadeOut_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.10"
+          }
+        },
+        {
+          "Key": "918E7C79-4C35CA21-7CDBC7AB-A68A3312",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_5'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.21"
+          }
+        },
+        {
+          "Key": "4A32077B-47AD1C52-6C3D06B7-C9EEAF2D",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalkBranch_Yes_No_C'FABP_Quest_Yakushima:FNBP_NPCTalkBranch_Yes_No_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.27"
+          }
+        },
+        {
+          "Key": "D3FB813D-404EB2D7-9BB7D994-149AE19A",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_6'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.22"
+          }
+        },
+        {
+          "Key": "7166F57B-48C3B16A-25608D8F-D3B54A04",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_Yakushima:FNBP_CompleteQuest_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.5"
+          }
+        },
+        {
+          "Key": "D9CAABDE-4000E821-2D10918A-86492E1C",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_7'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.23"
+          }
+        },
+        {
+          "Key": "9E5BC8E5-4AFBBF0D-4914C8B6-8ED60B69",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_Yakushima:FNBP_CompleteQuest_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.6"
+          }
+        },
+        {
+          "Key": "287D9269-4FFDEA66-7FE03C92-FA0AA00F",
+          "Value": {
+            "ObjectName": "FNBP_OrderQuest_C'FABP_Quest_Yakushima:FNBP_OrderQuest_C_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.30"
+          }
+        },
+        {
+          "Key": "E9E95AA3-48838C75-83BC0790-56295434",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_8'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.24"
+          }
+        },
+        {
+          "Key": "4E7C777A-4D8BCD68-6B34C38A-A3E43787",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_9'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.25"
+          }
+        },
+        {
+          "Key": "B2E0745C-48C22121-DB920FA4-B25A7092",
+          "Value": {
+            "ObjectName": "FNBP_QuestBlockBranch_C'FABP_Quest_Yakushima:FNBP_QuestBlockBranch_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.31"
+          }
+        },
+        {
+          "Key": "CEB71726-47A46DF6-412258B4-0F9B36BC",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_10'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.13"
+          }
+        },
+        {
+          "Key": "C8177AEE-4F886EEC-200AB695-62EB6245",
+          "Value": {
+            "ObjectName": "FNBP_FadeOut_C'FABP_Quest_Yakushima:FNBP_FadeOut_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.11"
+          }
+        },
+        {
+          "Key": "21CE0A52-45A9A55C-D868FCBF-7CB8D771",
+          "Value": {
+            "ObjectName": "FNBP_TextInFadeOut_C'FABP_Quest_Yakushima:FNBP_TextInFadeOut_C_1'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.36"
+          }
+        },
+        {
+          "Key": "6A77A31F-43D34049-8B6EB1AF-174EFADE",
+          "Value": {
+            "ObjectName": "FlowNode_Timer'FABP_Quest_Yakushima:FlowNode_Timer_2'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.3"
+          }
+        },
+        {
+          "Key": "78AE3E33-4C155813-2B6C5981-549D4B76",
+          "Value": {
+            "ObjectName": "FNBP_FadeIn_C'FABP_Quest_Yakushima:FNBP_FadeIn_C_0'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.8"
+          }
+        },
+        {
+          "Key": "CDB899F3-400277F2-6B218FBE-02E10611",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_11'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.14"
+          }
+        },
+        {
+          "Key": "A45D94CE-4B01D4B1-B57A6992-42739378",
+          "Value": {
+            "ObjectName": "FNBP_CompleteQuest_C'FABP_Quest_Yakushima:FNBP_CompleteQuest_C_3'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.7"
+          }
+        },
+        {
+          "Key": "36FE3BF0-45DE5DF3-73DCE1A2-C885A0A7",
+          "Value": {
+            "ObjectName": "FNBP_NPCTalk_FixedMsdId_C'FABP_Quest_Yakushima:FNBP_NPCTalk_FixedMsdId_C_12'",
+            "ObjectPath": "Pal/Content/Pal/Blueprint/FlowGraph/NPCTalkFlow/Graph/FABP_Quest_Yakushima.15"
+          }
+        }
+      ]
+    }
+  }
+]

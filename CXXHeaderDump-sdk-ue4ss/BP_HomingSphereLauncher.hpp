@@ -4,8 +4,8 @@
 class ABP_HomingSphereLauncher_C : public ABP_RocketLauncher_C
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x06F0 (size: 0x8)
-    TArray<AActor*> targetList;                                                       // 0x06F8 (size: 0x10)
-    TMap<FName, EPalCaptureSphereLevelType> ItemName_LevelTypeMap;                    // 0x0708 (size: 0x50)
+    TArray<class AActor*> targetList;                                                 // 0x06F8 (size: 0x10)
+    TMap<class FName, class EPalCaptureSphereLevelType> ItemName_LevelTypeMap;        // 0x0708 (size: 0x50)
     FBP_HomingSphereLauncher_COnLaunchPalSphere OnLaunchPalSphere;                    // 0x0758 (size: 0x10)
     void OnLaunchPalSphere(class AActor* Bullet);
     FVector SphereScale;                                                              // 0x0768 (size: 0x18)

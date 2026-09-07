@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "PalFoliageType_InstancedStaticMesh",
+    "Name": "pal_b07_GrassA_LongGrass_wetland_FoliageType",
+    "Class": "UScriptClass'PalFoliageType_InstancedStaticMesh'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'pal_b07_GrassA_LongGrass_wetland'",
+        "ObjectPath": "Pal/Content/Pal/Model/Stage/b07/tree/mesh/pal_b07_GrassA_LongGrass_wetland.2"
+      },
+      "UpdateGuid": "BBA4022F-47D158FE-B75222A4-68DEC717",
+      "Density": 450.0,
+      "Radius": 1.0,
+      "ScaleX": {
+        "Min": 0.8
+      },
+      "AlignToNormal": false,
+      "MeshBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 37.26223
+        },
+        "BoxExtent": {
+          "X": 48.727295,
+          "Y": 47.186523,
+          "Z": 39.23381
+        },
+        "SphereRadius": 62.577640802584234
+      },
+      "LowBoundOriginRadius": {
+        "X": 3.3356934,
+        "Y": 0.71777344,
+        "Z": 53.85181
+      },
+      "CullDistance": {
+        "Max": 4500
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "DensityFalloff": {
+        "FalloffCurve": {
+          "EditorCurveData": {}
+        }
+      },
+      "bEnableDensityScaling": true
+    }
+  }
+]

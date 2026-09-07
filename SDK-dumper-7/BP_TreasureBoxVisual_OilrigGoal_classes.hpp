@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "BP_TreasureBoxVisual_Base_classes.hpp"
 
 
@@ -26,9 +27,10 @@ public:
 	class UPointLightComponent*                   PointLight;                                        // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnFinishOpenAnimation();
 	void ExecuteUbergraph_BP_TreasureBoxVisual_OilrigGoal(int32 EntryPoint);
+	void OnFinishOpenAnimation();
 	void ReceiveBeginPlay();
+	void StartOpenAnimation();
 
 public:
 	static class UClass* StaticClass()

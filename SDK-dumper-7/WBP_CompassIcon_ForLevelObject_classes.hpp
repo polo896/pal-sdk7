@@ -26,8 +26,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_CompassIcon_ForLevelObject_C;   // 0x04B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void OnInitialized();
 	void ExecuteUbergraph_WBP_CompassIcon_ForLevelObject(int32 EntryPoint);
+	void OnInitialized();
 	void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
 
 public:

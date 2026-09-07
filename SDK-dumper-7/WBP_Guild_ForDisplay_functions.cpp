@@ -17,401 +17,189 @@
 namespace SDK
 {
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.SetupGuildLogCategoryButton
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Guild_ForDisplay_C::SetupGuildLogCategoryButton()
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "SetupGuildLogCategoryButton");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OpenWaitingWindow
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OpenWaitingWindow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OpenWaitingWindow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OpenExitGuildDialog
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OpenExitGuildDialog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OpenExitGuildDialog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OpenBanPlayerDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OpenBanPlayerDialog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OpenBanPlayerDialog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Open Change Role Dialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPalGuildRole                           Role                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    NewName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_Guild_ForDisplay_C::Open_Change_Role_Dialog(EPalGuildRole Role)
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature(const class FString& NewName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Open Change Role Dialog");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature");
 
-	Params::WBP_Guild_ForDisplay_C_Open_Change_Role_Dialog Parms{};
+	Params::WBP_Guild_ForDisplay_C_BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature Parms{};
 
-	Parms.Role = Role;
+	Parms.NewName = std::move(NewName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnUpdateGroupId_WaitingExitGuild
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FGuid&                     NewGroupId                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Guild_MemberList_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_ForDisplay_C::OnUpdateGroupId_WaitingExitGuild(const struct FGuid& NewGroupId)
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature(class UWBP_Guild_MemberList_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnUpdateGroupId_WaitingExitGuild");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature");
 
-	Params::WBP_Guild_ForDisplay_C_OnUpdateGroupId_WaitingExitGuild Parms{};
+	Params::WBP_Guild_ForDisplay_C_BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature Parms{};
 
-	Parms.NewGroupId = std::move(NewGroupId);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnUpdatedMemberInfo
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     PlayerUId                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FPalUIGuildMemberDisplayInfo&PlayerInfo                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Guild_ForDisplay_C::OnUpdatedMemberInfo(const struct FGuid& PlayerUId, const struct FPalUIGuildMemberDisplayInfo& PlayerInfo)
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnUpdatedMemberInfo");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature");
 
-	Params::WBP_Guild_ForDisplay_C_OnUpdatedMemberInfo Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.PlayerUId = std::move(PlayerUId);
-	Parms.PlayerInfo = std::move(PlayerInfo);
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Guild_ForDisplay_C_BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnUpdatedGuildName
-// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    NewGuildName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_Guild_ForDisplay_C::OnUpdatedGuildName(const class FString& NewGuildName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnUpdatedGuildName");
-
-	Params::WBP_Guild_ForDisplay_C_OnUpdatedGuildName Parms{};
-
-	Parms.NewGuildName = std::move(NewGuildName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_TimeoutExitGuild
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OnTimer_TimeoutExitGuild()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_TimeoutExitGuild");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_TimeoutChangeRole
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OnTimer_TimeoutChangeRole()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_TimeoutChangeRole");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_TimeoutBanPlayer
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OnTimer_TimeoutBanPlayer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_TimeoutBanPlayer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_CheckNewGroup_WaitingExitGuild
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OnTimer_CheckNewGroup_WaitingExitGuild()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_CheckNewGroup_WaitingExitGuild");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_CheckChangeRole
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OnTimer_CheckChangeRole()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_CheckChangeRole");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_CheckBanPlayer
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::OnTimer_CheckBanPlayer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_CheckBanPlayer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnRemovedMemberInfo
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     PlayerUId                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guild_ForDisplay_C::OnRemovedMemberInfo(const struct FGuid& PlayerUId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnRemovedMemberInfo");
-
-	Params::WBP_Guild_ForDisplay_C_OnRemovedMemberInfo Parms{};
-
-	Parms.PlayerUId = std::move(PlayerUId);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnClosed_GuildExitFailedDialog_Admin
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guild_ForDisplay_C::OnClosed_GuildExitFailedDialog_Admin(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnClosed_GuildExitFailedDialog_Admin");
-
-	Params::WBP_Guild_ForDisplay_C_OnClosed_GuildExitFailedDialog_Admin Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnClosed_GuildExitDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guild_ForDisplay_C::OnClosed_GuildExitDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnClosed_GuildExitDialog");
-
-	Params::WBP_Guild_ForDisplay_C_OnClosed_GuildExitDialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnCloseBanPlayerDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guild_ForDisplay_C::OnCloseBanPlayerDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnCloseBanPlayerDialog");
-
-	Params::WBP_Guild_ForDisplay_C_OnCloseBanPlayerDialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.On Close Change Role Dialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guild_ForDisplay_C::On_Close_Change_Role_Dialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "On Close Change Role Dialog");
-
-	Params::WBP_Guild_ForDisplay_C_On_Close_Change_Role_Dialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.ExecuteUbergraph_WBP_Guild_ForDisplay
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guild_ForDisplay_C::ExecuteUbergraph_WBP_Guild_ForDisplay(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "ExecuteUbergraph_WBP_Guild_ForDisplay");
-
-	Params::WBP_Guild_ForDisplay_C_ExecuteUbergraph_WBP_Guild_ForDisplay Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.CloseWaitingWindow
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::CloseWaitingWindow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "CloseWaitingWindow");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -450,187 +238,399 @@ void UWBP_Guild_ForDisplay_C::CloseMemberSettingList()
 }
 
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.CloseWaitingWindow
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Guild_ForDisplay_C::CloseWaitingWindow()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "CloseWaitingWindow");
 
-	Params::WBP_Guild_ForDisplay_C_BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Button = Button;
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.ExecuteUbergraph_WBP_Guild_ForDisplay
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Guild_ForDisplay_C::ExecuteUbergraph_WBP_Guild_ForDisplay(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "ExecuteUbergraph_WBP_Guild_ForDisplay");
+
+	Params::WBP_Guild_ForDisplay_C_ExecuteUbergraph_WBP_Guild_ForDisplay Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.On Close Change Role Dialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_Guild_MemberList_C*          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature(class UWBP_Guild_MemberList_C* Widget)
+void UWBP_Guild_ForDisplay_C::On_Close_Change_Role_Dialog(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "On Close Change Role Dialog");
 
-	Params::WBP_Guild_ForDisplay_C_BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature Parms{};
+	Params::WBP_Guild_ForDisplay_C_On_Close_Change_Role_Dialog Parms{};
 
-	Parms.Widget = Widget;
+	Parms.bResult = bResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnCloseBanPlayerDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    NewName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature(const class FString& NewName)
+void UWBP_Guild_ForDisplay_C::OnCloseBanPlayerDialog(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnCloseBanPlayerDialog");
 
-	Params::WBP_Guild_ForDisplay_C_BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature Parms{};
+	Params::WBP_Guild_ForDisplay_C_OnCloseBanPlayerDialog Parms{};
 
-	Parms.NewName = std::move(NewName);
+	Parms.bResult = bResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnClosed_GuildExitDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_ForDisplay_C::BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature()
+void UWBP_Guild_ForDisplay_C::OnClosed_GuildExitDialog(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnClosed_GuildExitDialog");
+
+	Params::WBP_Guild_ForDisplay_C_OnClosed_GuildExitDialog Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnClosed_GuildExitFailedDialog_Admin
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Guild_ForDisplay_C::OnClosed_GuildExitFailedDialog_Admin(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnClosed_GuildExitFailedDialog_Admin");
+
+	Params::WBP_Guild_ForDisplay_C_OnClosed_GuildExitFailedDialog_Admin Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnRemovedMemberInfo
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     PlayerUId                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Guild_ForDisplay_C::OnRemovedMemberInfo(const struct FGuid& PlayerUId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnRemovedMemberInfo");
+
+	Params::WBP_Guild_ForDisplay_C_OnRemovedMemberInfo Parms{};
+
+	Parms.PlayerUId = std::move(PlayerUId);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_CheckBanPlayer
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OnTimer_CheckBanPlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_CheckBanPlayer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_CheckChangeRole
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OnTimer_CheckChangeRole()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_CheckChangeRole");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_CheckNewGroup_WaitingExitGuild
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OnTimer_CheckNewGroup_WaitingExitGuild()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_CheckNewGroup_WaitingExitGuild");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_TimeoutBanPlayer
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OnTimer_TimeoutBanPlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_TimeoutBanPlayer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_TimeoutChangeRole
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OnTimer_TimeoutChangeRole()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_TimeoutChangeRole");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnTimer_TimeoutExitGuild
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OnTimer_TimeoutExitGuild()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnTimer_TimeoutExitGuild");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnUpdatedGuildName
+// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    NewGuildName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_Guild_ForDisplay_C::OnUpdatedGuildName(const class FString& NewGuildName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnUpdatedGuildName");
+
+	Params::WBP_Guild_ForDisplay_C_OnUpdatedGuildName Parms{};
+
+	Parms.NewGuildName = std::move(NewGuildName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnUpdatedMemberInfo
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     PlayerUId                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalUIGuildMemberDisplayInfo&PlayerInfo                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Guild_ForDisplay_C::OnUpdatedMemberInfo(const struct FGuid& PlayerUId, const struct FPalUIGuildMemberDisplayInfo& PlayerInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnUpdatedMemberInfo");
+
+	Params::WBP_Guild_ForDisplay_C_OnUpdatedMemberInfo Parms{};
+
+	Parms.PlayerUId = std::move(PlayerUId);
+	Parms.PlayerInfo = std::move(PlayerInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OnUpdateGroupId_WaitingExitGuild
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     NewGroupId                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Guild_ForDisplay_C::OnUpdateGroupId_WaitingExitGuild(const struct FGuid& NewGroupId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OnUpdateGroupId_WaitingExitGuild");
+
+	Params::WBP_Guild_ForDisplay_C_OnUpdateGroupId_WaitingExitGuild Parms{};
+
+	Parms.NewGroupId = std::move(NewGroupId);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Open Change Role Dialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalGuildRole                           Role                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Guild_ForDisplay_C::Open_Change_Role_Dialog(EPalGuildRole Role)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Open Change Role Dialog");
+
+	Params::WBP_Guild_ForDisplay_C_Open_Change_Role_Dialog Parms{};
+
+	Parms.Role = Role;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OpenBanPlayerDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OpenBanPlayerDialog()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OpenBanPlayerDialog");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OpenExitGuildDialog
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OpenExitGuildDialog()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OpenExitGuildDialog");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.OpenWaitingWindow
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::OpenWaitingWindow()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "OpenWaitingWindow");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Guild_ForDisplay.WBP_Guild_ForDisplay_C.SetupGuildLogCategoryButton
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Guild_ForDisplay_C::SetupGuildLogCategoryButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_ForDisplay_C", "SetupGuildLogCategoryButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

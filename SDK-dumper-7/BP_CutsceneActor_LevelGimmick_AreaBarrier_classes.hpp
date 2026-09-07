@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CutsceneActor_LevelGimmick_AreaBarrier.BP_CutsceneActor_LevelGimmick_AreaBarrier_C
-// 0x0008 (0x03B8 - 0x03B0)
+// 0x0008 (0x0410 - 0x0408)
 class ABP_CutsceneActor_LevelGimmick_AreaBarrier_C final : public ABP_CutsceneActorBase_C
 {
 public:
-	class UWorldPartitionStreamingSourceComponent* WorldPartitionStreamingSource;                    // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWorldPartitionStreamingSourceComponent* WorldPartitionStreamingSource;                    // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

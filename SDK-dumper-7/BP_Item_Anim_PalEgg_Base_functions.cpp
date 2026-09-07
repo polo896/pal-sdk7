@@ -17,23 +17,37 @@
 namespace SDK
 {
 
-// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.ExecuteUbergraph_BP_Item_Anim_PalEgg_Base
-// (Final, UbergraphFunction)
+// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.SetAnimPlayState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsPlay                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Item_Anim_PalEgg_Base_C::ExecuteUbergraph_BP_Item_Anim_PalEgg_Base(int32 EntryPoint)
+void ABP_Item_Anim_PalEgg_Base_C::SetAnimPlayState(bool IsPlay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_Anim_PalEgg_Base_C", "ExecuteUbergraph_BP_Item_Anim_PalEgg_Base");
+		Func = Class->GetFunction("BP_Item_Anim_PalEgg_Base_C", "SetAnimPlayState");
 
-	Params::BP_Item_Anim_PalEgg_Base_C_ExecuteUbergraph_BP_Item_Anim_PalEgg_Base Parms{};
+	Params::BP_Item_Anim_PalEgg_Base_C_SetAnimPlayState Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsPlay = IsPlay;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Item_Anim_PalEgg_Base_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Item_Anim_PalEgg_Base_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,35 +72,21 @@ void ABP_Item_Anim_PalEgg_Base_C::GetHatchingTemperature(int32* Temperature)
 }
 
 
-// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Item_Anim_PalEgg_Base_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_Anim_PalEgg_Base_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.SetAnimPlayState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Item_Anim_PalEgg_Base.BP_Item_Anim_PalEgg_Base_C.ExecuteUbergraph_BP_Item_Anim_PalEgg_Base
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsPlay                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Item_Anim_PalEgg_Base_C::SetAnimPlayState(bool IsPlay)
+void ABP_Item_Anim_PalEgg_Base_C::ExecuteUbergraph_BP_Item_Anim_PalEgg_Base(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_Anim_PalEgg_Base_C", "SetAnimPlayState");
+		Func = Class->GetFunction("BP_Item_Anim_PalEgg_Base_C", "ExecuteUbergraph_BP_Item_Anim_PalEgg_Base");
 
-	Params::BP_Item_Anim_PalEgg_Base_C_SetAnimPlayState Parms{};
+	Params::BP_Item_Anim_PalEgg_Base_C_ExecuteUbergraph_BP_Item_Anim_PalEgg_Base Parms{};
 
-	Parms.IsPlay = IsPlay;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

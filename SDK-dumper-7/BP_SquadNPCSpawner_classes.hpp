@@ -10,50 +10,50 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "F_NPCOnePointSpawnInfo_structs.hpp"
-#include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "BP_MonoNPCSpawner_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SquadNPCSpawner.BP_SquadNPCSpawner_C
-// 0x0068 (0x0670 - 0x0608)
+// 0x0068 (0x0680 - 0x0618)
 class ABP_SquadNPCSpawner_C : public ABP_MonoNPCSpawner_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SquadNPCSpawner_C;               // 0x0608(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TArray<class UPalIndividualCharacterHandle*>  SpawnedHandleList;                                 // 0x0610(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
-	TArray<struct FF_NPCOnePointSpawnInfo>        SpawnInfoList;                                     // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsLoadingFlag;                                     // 0x0630(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_631[0x7];                                      // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPalIndividualCharacterHandle*>  SpawnedOtomoHandleList;                            // 0x0638(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
-	int32                                         SpawnedCount;                                      // 0x0648(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64C[0x4];                                      // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UPalIndividualCharacterHandle* NewParam)> OnSquadSpawnedCharacter; // 0x0650(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class UPalIndividualCharacterHandle*>  Handles;                                           // 0x0660(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SquadNPCSpawner_C;               // 0x0618(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<class UPalIndividualCharacterHandle*>  SpawnedHandleList;                                 // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
+	TArray<struct FF_NPCOnePointSpawnInfo>        SpawnInfoList;                                     // 0x0630(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsLoadingFlag;                                     // 0x0640(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_641[0x7];                                      // 0x0641(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPalIndividualCharacterHandle*>  SpawnedOtomoHandleList;                            // 0x0648(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
+	int32                                         SpawnedCount;                                      // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_65C[0x4];                                      // 0x065C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UPalIndividualCharacterHandle* NewParam)> OnSquadSpawnedCharacter; // 0x0660(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class UPalIndividualCharacterHandle*>  Handles;                                           // 0x0670(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void SpawnDelegate(const struct FPalInstanceID& ID);
-	void Spawn();
-	void SetupSpawnInfoList();
-	void SetNullHandleWhenDestoryOtomoSquad(class AActor* DestroyedActor);
-	void SetNullHandleWhenDestoryNPC(class AActor* DestroyedActor);
-	void SetCharaNames();
-	void SetAllNPCLocation();
-	void ReceiveBeginPlay();
-	void OnOtomoSpawnedSquad(class AController* HolderController, class APalCharacter* OtomoPal);
-	void GetWorldLoadWaitRadius(double* Radius);
-	float GetSpawnPointRadius_0();
-	void GetAllSpawnedNPCHandle(TArray<class UPalIndividualCharacterHandle*>* Handles_0);
-	void FindIndividualHandle(const struct FPalInstanceID& ID, class UPalIndividualCharacterHandle** Handle, int32* Index_0);
-	void ExecuteUbergraph_BP_SquadNPCSpawner(int32 EntryPoint);
-	void DespawnDelegate(const struct FPalInstanceID& ID);
-	void Despawn();
-	void DeleteOnePoint(class AActor* Point);
 	void Check_Spawn(double DeltaTime);
+	void DeleteOnePoint(class AActor* Point);
+	void Despawn();
+	void DespawnDelegate(const struct FPalInstanceID& ID);
+	void ExecuteUbergraph_BP_SquadNPCSpawner(int32 EntryPoint);
+	void FindIndividualHandle(const struct FPalInstanceID& ID, class UPalIndividualCharacterHandle** Handle, int32* Index_0);
+	void GetAllSpawnedNPCHandle(TArray<class UPalIndividualCharacterHandle*>* Handles_0);
+	float GetSpawnPointRadius_0();
+	void GetWorldLoadWaitRadius(double* Radius);
+	void OnOtomoSpawnedSquad(class AController* HolderController, class APalCharacter* OtomoPal);
+	void ReceiveBeginPlay();
+	void SetAllNPCLocation();
+	void SetCharaNames();
+	void SetNullHandleWhenDestoryNPC(class AActor* DestroyedActor);
+	void SetNullHandleWhenDestoryOtomoSquad(class AActor* DestroyedActor);
+	void SetupSpawnInfoList();
+	void Spawn();
+	void SpawnDelegate(const struct FPalInstanceID& ID);
 
 public:
 	static class UClass* StaticClass()

@@ -21,6 +21,7 @@
 ---@field HasAdditionalRidingSkill boolean
 local UWBP_PalSkill_KeyGuide_C = {}
 
+function UWBP_PalSkill_KeyGuide_C:Show() end
 function UWBP_PalSkill_KeyGuide_C:OnPlaySkillFail() end
 ---@param IndividualParameter UPalIndividualCharacterParameter
 function UWBP_PalSkill_KeyGuide_C:OnUpdateEquipWaza(IndividualParameter) end

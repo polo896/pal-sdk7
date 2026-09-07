@@ -3,8 +3,8 @@
 
 class ABP_PalGameStateInGame_C : public APalGameStateInGame
 {
-    class USceneComponent* DefaultSceneRoot;                                          // 0x0520 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;                                          // 0x0540 (size: 0x8)
 
-}; // Size: 0x528
+}; // Size: 0x548
 
 #endif

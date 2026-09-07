@@ -16,14 +16,23 @@
 namespace SDK::Params
 {
 
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.SetEnableAttentionDot
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_FirstOpen
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Tab_C_SetEnableAttentionDot final
+struct WBP_MainMenu_Tab_C_AnmEvent_FirstOpen final
 {
 public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          isFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Tab_C_SetEnableAttentionDot;
+DUMPER7_ASSERTS_WBP_MainMenu_Tab_C_AnmEvent_FirstOpen;
+
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_Tab_C_BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Tab_C_BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.ExecuteUbergraph_WBP_MainMenu_Tab
 // 0x0060 (0x0060 - 0x0000)
@@ -45,23 +54,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Tab_C_ExecuteUbergraph_WBP_MainMenu_Tab;
 
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_Tab_C_BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Tab_C_BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_FirstOpen
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.SetEnableAttentionDot
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Tab_C_AnmEvent_FirstOpen final
+struct WBP_MainMenu_Tab_C_SetEnableAttentionDot final
 {
 public:
-	bool                                          isFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Tab_C_AnmEvent_FirstOpen;
+DUMPER7_ASSERTS_WBP_MainMenu_Tab_C_SetEnableAttentionDot;
 
 }
 

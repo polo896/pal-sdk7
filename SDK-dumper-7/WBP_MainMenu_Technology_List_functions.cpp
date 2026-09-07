@@ -17,280 +17,154 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.UpdateAllButtonDetail
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.AnmEvent_Lock
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_MainMenu_Technology_List_C::UpdateAllButtonDetail()
+void UWBP_MainMenu_Technology_List_C::AnmEvent_Lock()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "UpdateAllButtonDetail");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "AnmEvent_Lock");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Update List Active
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.AnmEvent_Unlock
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_MainMenu_Technology_List_C::Update_List_Active()
+void UWBP_MainMenu_Technology_List_C::AnmEvent_Unlock()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Update List Active");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "AnmEvent_Unlock");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.UnregisterPlayerEvent
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_MainMenu_Technology_List_C::UnregisterPlayerEvent()
+void UWBP_MainMenu_Technology_List_C::BP_OnEntryReleased()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "UnregisterPlayerEvent");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.UnregisterAllButtonEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_List_C::UnregisterAllButtonEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "UnregisterAllButtonEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Set Technology Level
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_List_C::Set_Technology_Level(int32 Level)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Set Technology Level");
-
-	Params::WBP_MainMenu_Technology_List_C_Set_Technology_Level Parms{};
-
-	Parms.Level = Level;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Set Technology Data
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FF_PalUITechnologyDataMapContent&DisplayTechnologyData                                  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_List_C::Set_Technology_Data(const struct FF_PalUITechnologyDataMapContent& DisplayTechnologyData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Set Technology Data");
-
-	Params::WBP_MainMenu_Technology_List_C_Set_Technology_Data Parms{};
-
-	Parms.DisplayTechnologyData = std::move(DisplayTechnologyData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.RegisterPlayerEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_List_C::RegisterPlayerEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "RegisterPlayerEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.RegisterButtonEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_MainMenu_Technology_Content_C*TechnologyContentWidget                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_List_C::RegisterButtonEvent(class UWBP_MainMenu_Technology_Content_C* TechnologyContentWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "RegisterButtonEvent");
-
-	Params::WBP_MainMenu_Technology_List_C_RegisterButtonEvent Parms{};
-
-	Parms.TechnologyContentWidget = TechnologyContentWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnUpdatePlayerLevel
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   addLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   nowLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_List_C::OnUpdatePlayerLevel(int32 addLevel, int32 nowLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnUpdatePlayerLevel");
-
-	Params::WBP_MainMenu_Technology_List_C_OnUpdatePlayerLevel Parms{};
-
-	Parms.addLevel = addLevel;
-	Parms.nowLevel = nowLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnUnhoveredTechnology_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_MainMenu_Technology_Content_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_List_C::OnUnhoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnUnhoveredTechnology_Internal");
-
-	Params::WBP_MainMenu_Technology_List_C_OnUnhoveredTechnology_Internal Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnListItemObjectSet
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::OnListItemObjectSet(class UObject* ListItemObject)
+void UWBP_MainMenu_Technology_List_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnListItemObjectSet");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "BP_OnItemExpansionChanged");
 
-	Params::WBP_MainMenu_Technology_List_C_OnListItemObjectSet Parms{};
+	Params::WBP_MainMenu_Technology_List_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.ListItemObject = ListItemObject;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnHoveredTechnology_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UWBP_MainMenu_Technology_Content_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::OnHoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget)
+void UWBP_MainMenu_Technology_List_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnHoveredTechnology_Internal");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "BP_OnItemSelectionChanged");
 
-	Params::WBP_MainMenu_Technology_List_C_OnHoveredTechnology_Internal Parms{};
+	Params::WBP_MainMenu_Technology_List_C_BP_OnItemSelectionChanged Parms{};
 
-	Parms.Widget = Widget;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnClickedTechnology_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_List_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_List_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.ExecuteUbergraph_WBP_MainMenu_Technology_List
+// (Final, UbergraphFunction)
 // Parameters:
-// class UWBP_MainMenu_Technology_Content_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::OnClickedTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget)
+void UWBP_MainMenu_Technology_List_C::ExecuteUbergraph_WBP_MainMenu_Technology_List(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnClickedTechnology_Internal");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "ExecuteUbergraph_WBP_MainMenu_Technology_List");
 
-	Params::WBP_MainMenu_Technology_List_C_OnClickedTechnology_Internal Parms{};
+	Params::WBP_MainMenu_Technology_List_C_ExecuteUbergraph_WBP_MainMenu_Technology_List Parms{};
 
-	Parms.Widget = Widget;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.GetFocusTargetByIndex
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Get Top Focus Target
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   ButtonIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Target                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::GetFocusTargetByIndex(int32 ButtonIndex, class UWidget** Widget)
+void UWBP_MainMenu_Technology_List_C::Get_Top_Focus_Target(class UWidget** Target)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "GetFocusTargetByIndex");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Get Top Focus Target");
 
-	Params::WBP_MainMenu_Technology_List_C_GetFocusTargetByIndex Parms{};
-
-	Parms.ButtonIndex = ButtonIndex;
+	Params::WBP_MainMenu_Technology_List_C_Get_Top_Focus_Target Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.GetButtonNum
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32*                                  Num                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_List_C::GetButtonNum(int32* Num)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "GetButtonNum");
-
-	Params::WBP_MainMenu_Technology_List_C_GetButtonNum Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Num != nullptr)
-		*Num = Parms.Num;
+	if (Target != nullptr)
+		*Target = Parms.Target;
 }
 
 
@@ -318,152 +192,278 @@ void UWBP_MainMenu_Technology_List_C::GetButtonIndex(class UWBP_MainMenu_Technol
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Get Top Focus Target
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.GetButtonNum
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UWidget**                         Target                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Num                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::Get_Top_Focus_Target(class UWidget** Target)
+void UWBP_MainMenu_Technology_List_C::GetButtonNum(int32* Num)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Get Top Focus Target");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "GetButtonNum");
 
-	Params::WBP_MainMenu_Technology_List_C_Get_Top_Focus_Target Parms{};
+	Params::WBP_MainMenu_Technology_List_C_GetButtonNum Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Target != nullptr)
-		*Target = Parms.Target;
+	if (Num != nullptr)
+		*Num = Parms.Num;
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.ExecuteUbergraph_WBP_MainMenu_Technology_List
-// (Final, UbergraphFunction)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.GetFocusTargetByIndex
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ButtonIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::ExecuteUbergraph_WBP_MainMenu_Technology_List(int32 EntryPoint)
+void UWBP_MainMenu_Technology_List_C::GetFocusTargetByIndex(int32 ButtonIndex, class UWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "ExecuteUbergraph_WBP_MainMenu_Technology_List");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "GetFocusTargetByIndex");
 
-	Params::WBP_MainMenu_Technology_List_C_ExecuteUbergraph_WBP_MainMenu_Technology_List Parms{};
+	Params::WBP_MainMenu_Technology_List_C_GetFocusTargetByIndex Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ButtonIndex = ButtonIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnClickedTechnology_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_MainMenu_Technology_Content_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_List_C::OnClickedTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnClickedTechnology_Internal");
+
+	Params::WBP_MainMenu_Technology_List_C_OnClickedTechnology_Internal Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnHoveredTechnology_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_MainMenu_Technology_Content_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::Destruct()
+void UWBP_MainMenu_Technology_List_C::OnHoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Destruct");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnHoveredTechnology_Internal");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_MainMenu_Technology_List_C_OnHoveredTechnology_Internal Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_List_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.BP_OnItemSelectionChanged
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnListItemObjectSet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::BP_OnItemSelectionChanged(bool bIsSelected)
+void UWBP_MainMenu_Technology_List_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "BP_OnItemSelectionChanged");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnListItemObjectSet");
 
-	Params::WBP_MainMenu_Technology_List_C_BP_OnItemSelectionChanged Parms{};
+	Params::WBP_MainMenu_Technology_List_C_OnListItemObjectSet Parms{};
 
-	Parms.bIsSelected = bIsSelected;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnUnhoveredTechnology_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_MainMenu_Technology_Content_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_MainMenu_Technology_List_C::OnUnhoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "BP_OnItemExpansionChanged");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnUnhoveredTechnology_Internal");
 
-	Params::WBP_MainMenu_Technology_List_C_BP_OnItemExpansionChanged Parms{};
+	Params::WBP_MainMenu_Technology_List_C_OnUnhoveredTechnology_Internal Parms{};
 
-	Parms.bIsExpanded = bIsExpanded;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.OnUpdatePlayerLevel
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   addLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   nowLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::BP_OnEntryReleased()
+void UWBP_MainMenu_Technology_List_C::OnUpdatePlayerLevel(int32 addLevel, int32 nowLevel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "BP_OnEntryReleased");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "OnUpdatePlayerLevel");
+
+	Params::WBP_MainMenu_Technology_List_C_OnUpdatePlayerLevel Parms{};
+
+	Parms.addLevel = addLevel;
+	Parms.nowLevel = nowLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.RegisterButtonEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_MainMenu_Technology_Content_C*TechnologyContentWidget                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_List_C::RegisterButtonEvent(class UWBP_MainMenu_Technology_Content_C* TechnologyContentWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "RegisterButtonEvent");
+
+	Params::WBP_MainMenu_Technology_List_C_RegisterButtonEvent Parms{};
+
+	Parms.TechnologyContentWidget = TechnologyContentWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.RegisterPlayerEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_List_C::RegisterPlayerEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "RegisterPlayerEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.AnmEvent_Unlock
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Set Technology Data
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FF_PalUITechnologyDataMapContent&DisplayTechnologyData                                  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_List_C::AnmEvent_Unlock()
+void UWBP_MainMenu_Technology_List_C::Set_Technology_Data(const struct FF_PalUITechnologyDataMapContent& DisplayTechnologyData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "AnmEvent_Unlock");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Set Technology Data");
+
+	Params::WBP_MainMenu_Technology_List_C_Set_Technology_Data Parms{};
+
+	Parms.DisplayTechnologyData = std::move(DisplayTechnologyData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Set Technology Level
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_List_C::Set_Technology_Level(int32 Level)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Set Technology Level");
+
+	Params::WBP_MainMenu_Technology_List_C_Set_Technology_Level Parms{};
+
+	Parms.Level = Level;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.UnregisterAllButtonEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_List_C::UnregisterAllButtonEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "UnregisterAllButtonEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.AnmEvent_Lock
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.UnregisterPlayerEvent
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_MainMenu_Technology_List_C::AnmEvent_Lock()
+void UWBP_MainMenu_Technology_List_C::UnregisterPlayerEvent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "AnmEvent_Lock");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "UnregisterPlayerEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.Update List Active
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_List_C::Update_List_Active()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "Update List Active");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_List.WBP_MainMenu_Technology_List_C.UpdateAllButtonDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_List_C::UpdateAllButtonDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_List_C", "UpdateAllButtonDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

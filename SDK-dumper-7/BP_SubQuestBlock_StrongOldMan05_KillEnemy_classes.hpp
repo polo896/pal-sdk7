@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SubQuestBlock_StrongOldMan05_KillEnemy.BP_SubQuestBlock_StrongOldMan05_KillEnemy_C
-// 0x0000 (0x0168 - 0x0168)
+// 0x0000 (0x0170 - 0x0170)
 class UBP_SubQuestBlock_StrongOldMan05_KillEnemy_C final : public UPalQuestBlock_CountKillEnemy
 {
 public:
-	void GetProgressText(class FText* OutText);
 	void GetDescriptionText(class FText* OutText);
+	void GetProgressText(class FText* OutText);
 
 public:
 	static class UClass* StaticClass()

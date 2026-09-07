@@ -17,80 +17,75 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.RegisterPanelWidget
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_TabSet_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
+void UWBP_IngameMenu_WorkSpace_TabSet_C::BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "RegisterPanelWidget");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_WorkSpace_TabSet_C_RegisterPanelWidget Parms{};
+	Params::WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (PanelWidget != nullptr)
-		*PanelWidget = Parms.PanelWidget;
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_TabSet_C::OnInitialized()
+void UWBP_IngameMenu_WorkSpace_TabSet_C::BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_WorkSpace_TabSet_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnClickedCategoryButton
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UWBP_IngameMenu_WorkSpace_Category_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_TabSet_C::OnClickedCategoryButton(class UWBP_IngameMenu_WorkSpace_Category_C* Widget)
+void UWBP_IngameMenu_WorkSpace_TabSet_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "OnClickedCategoryButton");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet");
 
-	Params::WBP_IngameMenu_WorkSpace_TabSet_C_OnClickedCategoryButton Parms{};
+	Params::WBP_IngameMenu_WorkSpace_TabSet_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet Parms{};
 
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnChandeFocusIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          FocusTargetWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_TabSet_C::OnChandeFocusIndex(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "OnChandeFocusIndex");
-
-	Params::WBP_IngameMenu_WorkSpace_TabSet_C_OnChandeFocusIndex Parms{};
-
-	Parms.OldIndex = OldIndex;
-	Parms.NewIndex = NewIndex;
-	Parms.FocusTargetWidget = FocusTargetWidget;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -120,77 +115,82 @@ void UWBP_IngameMenu_WorkSpace_TabSet_C::GetTabWidgetByIndex(int32 Index_0, clas
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnChandeFocusIndex
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          FocusTargetWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_TabSet_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet(int32 EntryPoint)
+void UWBP_IngameMenu_WorkSpace_TabSet_C::OnChandeFocusIndex(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "OnChandeFocusIndex");
 
-	Params::WBP_IngameMenu_WorkSpace_TabSet_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet Parms{};
+	Params::WBP_IngameMenu_WorkSpace_TabSet_C_OnChandeFocusIndex Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldIndex = OldIndex;
+	Parms.NewIndex = NewIndex;
+	Parms.FocusTargetWidget = FocusTargetWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnClickedCategoryButton
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_IngameMenu_WorkSpace_Category_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_TabSet_C::Construct()
+void UWBP_IngameMenu_WorkSpace_TabSet_C::OnClickedCategoryButton(class UWBP_IngameMenu_WorkSpace_Category_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "Construct");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "OnClickedCategoryButton");
+
+	Params::WBP_IngameMenu_WorkSpace_TabSet_C_OnClickedCategoryButton Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_WorkSpace_TabSet_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.RegisterPanelWidget
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_TabSet_C::BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_WorkSpace_TabSet_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "RegisterPanelWidget");
 
-	Params::WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
+	Params::WBP_IngameMenu_WorkSpace_TabSet_C_RegisterPanelWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_TabSet_C::BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_TabSet_C", "BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (PanelWidget != nullptr)
+		*PanelWidget = Parms.PanelWidget;
 }
 
 }

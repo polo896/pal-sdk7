@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BuildObject_WeaponFactoryBase.BP_BuildObject_WeaponFactoryBase_C.WeaponLoop
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BuildObject_WeaponFactoryBase_C_WeaponLoop final
-{
-public:
-	class USceneComponent*                        Input;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObject_WeaponFactoryBase_C_WeaponLoop;
-
 // Function BP_BuildObject_WeaponFactoryBase.BP_BuildObject_WeaponFactoryBase_C.ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase
 // 0x0004 (0x0004 - 0x0000)
 struct BP_BuildObject_WeaponFactoryBase_C_ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase final
@@ -31,6 +22,15 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BuildObject_WeaponFactoryBase_C_ExecuteUbergraph_BP_BuildObject_WeaponFactoryBase;
+
+// Function BP_BuildObject_WeaponFactoryBase.BP_BuildObject_WeaponFactoryBase_C.WeaponLoop
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BuildObject_WeaponFactoryBase_C_WeaponLoop final
+{
+public:
+	class USceneComponent*                        Input;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObject_WeaponFactoryBase_C_WeaponLoop;
 
 }
 

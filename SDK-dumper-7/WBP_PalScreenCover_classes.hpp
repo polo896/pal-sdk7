@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PalScreenCover.WBP_PalScreenCover_C
-// 0x0008 (0x0480 - 0x0478)
+// 0x0008 (0x0488 - 0x0480)
 class UWBP_PalScreenCover_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	class UImage*                                 Image_50;                                          // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_50;                                          // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

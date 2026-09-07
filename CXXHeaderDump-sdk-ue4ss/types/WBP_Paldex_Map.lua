@@ -46,8 +46,8 @@ function UWBP_Paldex_Map_C:IsZoomMax(IsMax) end
 ---@param Rate double
 function UWBP_Paldex_Map_C:SetZoomRate(Rate) end
 function UWBP_Paldex_Map_C:ResetZoom() end
----@param addZoomRate double
-function UWBP_Paldex_Map_C:addZoomRate(addZoomRate) end
+---@param AddZoomRate double
+function UWBP_Paldex_Map_C:AddZoomRate(AddZoomRate) end
 ---@param Class TSubclassOf<UUserWidget>
 ---@param WorldLocation FVector
 ---@param realSpawnSize double

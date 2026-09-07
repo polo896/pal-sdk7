@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalHUDService.BP_PalHUDService_C
-// 0x0008 (0x0300 - 0x02F8)
+// 0x0008 (0x0368 - 0x0360)
 class UBP_PalHUDService_C final : public UPalHUDService
 {
 public:
-	class UBP_LoadingScreenRandomNumberSync_C*    LoadingScreenSync;                                 // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UBP_LoadingScreenRandomNumberSync_C*    LoadingScreenSync;                                 // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CreateLoadingScreenSync();

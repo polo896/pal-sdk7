@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonoNPCSpawner_MedalTrader.BP_MonoNPCSpawner_MedalTrader_C
-// 0x0000 (0x0608 - 0x0608)
+// 0x0000 (0x0618 - 0x0618)
 class ABP_MonoNPCSpawner_MedalTrader_C final : public ABP_MonoNPCSpawner_C
 {
 public:

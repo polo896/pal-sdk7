@@ -5,9 +5,9 @@ class UWBP_CharaCre_PartsSelect_sq_C : public UUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0278 (size: 0x8)
     class UWidgetAnimation* Anm_NormalToFocus;                                        // 0x0280 (size: 0x8)
-    class UWidgetAnimation* Anm_push;                                                 // 0x0288 (size: 0x8)
-    class UWidgetAnimation* Anm_focus;                                                // 0x0290 (size: 0x8)
-    class UWidgetAnimation* Anm_normal;                                               // 0x0298 (size: 0x8)
+    class UWidgetAnimation* Anm_Push;                                                 // 0x0288 (size: 0x8)
+    class UWidgetAnimation* Anm_Focus;                                                // 0x0290 (size: 0x8)
+    class UWidgetAnimation* Anm_Normal;                                               // 0x0298 (size: 0x8)
     class UCanvasPanel* Canvas_Select;                                                // 0x02A0 (size: 0x8)
     class UImage* MeshSelect_Square;                                                  // 0x02A8 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02B0 (size: 0x8)
@@ -15,7 +15,7 @@ class UWBP_CharaCre_PartsSelect_sq_C : public UUserWidget
     void OnClicked(class UWBP_CharaCre_PartsSelect_sq_C* Widget);
     FName Bind Name;                                                                  // 0x02C8 (size: 0x8)
 
-    void Setup(FName BindName, TSoftObjectPtr<class UTexture2D> SoftTexture);
+    void Setup(FName BindName, TSoftObjectPtr<UTexture2D> SoftTexture);
     void GetBindedPresetName(FName& PresetName);
     void SetupByMeshPresetData(FPalCharacterCreationMeshPresetDataRow MeshData, FName BindName);
     void AnmEvent_Normal();

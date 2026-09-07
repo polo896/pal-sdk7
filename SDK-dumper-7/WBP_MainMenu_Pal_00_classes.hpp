@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "E_PalUIStatusDIsplayParameter_structs.hpp"
 
 
@@ -186,12 +186,17 @@ public:
 	TMap<EPalWorkSuitability, class UWBP_MainMenu_Pal_WorkIconText_C*> SuitabilityWidgetMap;         // 0x0C30(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
+	void ListToStatus(class UPalIndividualCharacterHandle* Handle);
+	void IsShowingStatusWithList(bool* isShowing);
+	void GetRestoreFocusSkillPanelTarget(class UWidget** TargetWidget);
+	void Get_Partner_Skill_Lock_Item_Name(class FName ItemId, class FText* ReturnText);
 	void FocusToSkillPanel();
 	void FocusToParameterPanel();
 	void FocusToPalPanel(int32 Index_0);
 	void Finished_F11D370F4605F1875DFE3B9E5A74FBB3();
 	void Finished_3B3110DC440BFBD5CFED78B55117839E();
 	void ExecuteUbergraph_WBP_MainMenu_Pal_00(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_ToTopWorkSuitability(EUINavigation Navigation_0);
 	void Destruct();
 	class UWidget* CustomNavi_ToHPGuide(EUINavigation Navigation_0);
 	class UWidget* CustomNavi_ToFirstPassiveButton(EUINavigation Navigation_0);
@@ -236,10 +241,6 @@ public:
 	void AnmEvent_OpenList();
 	void AnmEvent_NoPal();
 	void AnmEvent_HideSideInfo();
-	void Get_Partner_Skill_Lock_Item_Name(class FName ItemId, class FText* ReturnText);
-	void GetRestoreFocusSkillPanelTarget(class UWidget** TargetWidget);
-	void IsShowingStatusWithList(bool* isShowing);
-	void ListToStatus(class UPalIndividualCharacterHandle* Handle);
 	void OnClickedPalButtonEvent(class UPalIndividualCharacterHandle* Handle);
 	void OnClosedCannotChangeActiveSkillDialog(bool bResult);
 	void OnCloseNameEditWindow(class UPalHUDDispatchParameterBase* Param_0);
@@ -247,6 +248,7 @@ public:
 	void OnHoveredConditionButtonEvent(class UWBP_MainMenu_Pal_State_C* StateWidget);
 	void OnHoveredPalButtonEvent(class UPalIndividualCharacterHandle* Handle);
 	void OnHoveredPassiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
+	void OnHoveredSuitabilityIcon(class UWBP_MainMenu_Pal_WorkIconText_C* Widget);
 	void OnInitialized();
 	void OnSelectedSkill(EPalWazaID WazaID);
 	void OnTriggeredRemoveWazaAction();
@@ -254,6 +256,7 @@ public:
 	void OnUnhoveredConditionButtonEvent(class UWBP_MainMenu_Pal_State_C* SelfWidget);
 	void OnUnhoveredPalButtonEvent();
 	void OnUnhoveredPassiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
+	void OnUnhoveredSuitabilityIcon();
 	void Open_Overlay_Info_Window(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Info, const class FText& SubInfo);
 	void OpenChangeActiveSkillList(class UWBP_MainMenu_Pal_Skill_Active_C* SkillPanelWidget);
 	void OpenNameEditWindow(const class FText& DefaultName);

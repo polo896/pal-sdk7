@@ -187,7 +187,7 @@ public:
 DUMPER7_ASSERTS_BP_OtomoPalHolderComponent_C_ActiveAndAttackCurrentPal;
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.Add Otomo Down Log
-// 0x0340 (0x0340 - 0x0000)
+// 0x0348 (0x0348 - 0x0000)
 struct BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log final
 {
 public:
@@ -205,14 +205,14 @@ public:
 	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetNickNameWithOnlineID_OutName;          // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x00A0(0x0208)(ConstParm)
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetNickNameWithOnlineID_OutName_1;        // 0x02B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetCharacterID_ReturnValue_1;             // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x02D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalKillLogDisplayData                 K2Node_MakeStruct_PalKillLogDisplayData;           // 0x02D8(0x0068)()
+	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x00A0(0x0210)(ConstParm)
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x02B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetNickNameWithOnlineID_OutName_1;        // 0x02C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetCharacterID_ReturnValue_1;             // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalKillLogDisplayData                 K2Node_MakeStruct_PalKillLogDisplayData;           // 0x02E0(0x0068)()
 };
 DUMPER7_ASSERTS_BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log;
 
@@ -386,12 +386,12 @@ public:
 	class UPalTutorialManager*                    CallFunc_GetTutorialManager_ReturnValue;           // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerCharacter*                    CallFunc_GetTrainerPlayer_ReturnValue;             // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0458(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0460(0x0208)(ConstParm)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_669[0x3];                                      // 0x0669(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate_1; // 0x066C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_67C[0x4];                                      // 0x067C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast; // 0x0680(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0460(0x0210)(ConstParm)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0670(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_671[0x3];                                      // 0x0671(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0674(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_684[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast; // 0x0688(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent;
 

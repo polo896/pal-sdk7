@@ -3,6 +3,6 @@
 
 class ABP_MonoNPCSpawnerBossBase_BOSS_Ninja_C : public ABP_MonoNPCSpawnerBossBase_C
 {
-}; // Size: 0x608
+}; // Size: 0x618
 
 #endif

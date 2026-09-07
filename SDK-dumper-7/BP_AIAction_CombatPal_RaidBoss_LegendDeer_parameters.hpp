@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ENum_Raid_LegendDeer_CombatPhase_structs.hpp"
 #include "Pal_structs.hpp"
+#include "ENum_Raid_LegendDeer_CombatPhase_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "Engine_structs.hpp"
 

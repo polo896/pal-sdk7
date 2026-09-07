@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_TreasureBox_VisibleContent_SkillFruits.BP_MapObject_TreasureBox_VisibleContent_SkillFruits_C
-// 0x0000 (0x0428 - 0x0428)
+// 0x0000 (0x0440 - 0x0440)
 class ABP_MapObject_TreasureBox_VisibleContent_SkillFruits_C final : public ABP_MapObject_TreasureBox_VisibleContent_C
 {
 public:

@@ -50,16 +50,6 @@ enum class ETransformConstraintType : uint8
 	ETransformConstraintType_MAX             = 5,
 };
 
-// ScriptStruct AnimationCore.ConstraintDescriptor
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FConstraintDescriptor final
-{
-public:
-	EConstraintType                               Type;                                              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FConstraintDescriptor;
-
 // ScriptStruct AnimationCore.FilterOptionPerAxis
 // 0x0003 (0x0003 - 0x0000)
 struct FFilterOptionPerAxis final
@@ -70,6 +60,27 @@ public:
 	bool                                          bZ;                                                // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FFilterOptionPerAxis;
+
+// ScriptStruct AnimationCore.ConstraintDescriptionEx
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FConstraintDescriptionEx
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFilterOptionPerAxis                   AxesFilterOption;                                  // 0x0008(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FConstraintDescriptionEx;
+
+// ScriptStruct AnimationCore.TransformConstraintDescription
+// 0x0008 (0x0018 - 0x0010)
+struct FTransformConstraintDescription final : public FConstraintDescriptionEx
+{
+public:
+	ETransformConstraintType                      TransformType;                                     // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FTransformConstraintDescription;
 
 // ScriptStruct AnimationCore.ConstraintDescription
 // 0x000D (0x000D - 0x0000)
@@ -100,6 +111,15 @@ public:
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FTransformConstraint;
+
+// ScriptStruct AnimationCore.FABRIKChainLink
+// 0x0050 (0x0050 - 0x0000)
+struct alignas(0x08) FFABRIKChainLink final
+{
+public:
+	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FFABRIKChainLink;
 
 // ScriptStruct AnimationCore.ConstraintOffset
 // 0x00C0 (0x00C0 - 0x0000)
@@ -146,6 +166,17 @@ public:
 };
 DUMPER7_ASSERTS_FNodeHierarchyWithUserData;
 
+// ScriptStruct AnimationCore.TransformFilter
+// 0x0009 (0x0009 - 0x0000)
+struct FTransformFilter final
+{
+public:
+	struct FFilterOptionPerAxis                   TranslationFilter;                                 // 0x0000(0x0003)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFilterOptionPerAxis                   RotationFilter;                                    // 0x0003(0x0003)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FFilterOptionPerAxis                   ScaleFilter;                                       // 0x0006(0x0003)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FTransformFilter;
+
 // ScriptStruct AnimationCore.TransformNoScale
 // 0x0040 (0x0040 - 0x0000)
 struct FTransformNoScale final
@@ -168,17 +199,6 @@ public:
 };
 DUMPER7_ASSERTS_FAxis;
 
-// ScriptStruct AnimationCore.ConstraintDescriptionEx
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FConstraintDescriptionEx
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFilterOptionPerAxis                   AxesFilterOption;                                  // 0x0008(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FConstraintDescriptionEx;
-
 // ScriptStruct AnimationCore.AimConstraintDescription
 // 0x0060 (0x0070 - 0x0010)
 struct FAimConstraintDescription final : public FConstraintDescriptionEx
@@ -192,17 +212,6 @@ public:
 };
 DUMPER7_ASSERTS_FAimConstraintDescription;
 
-// ScriptStruct AnimationCore.TransformFilter
-// 0x0009 (0x0009 - 0x0000)
-struct FTransformFilter final
-{
-public:
-	struct FFilterOptionPerAxis                   TranslationFilter;                                 // 0x0000(0x0003)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFilterOptionPerAxis                   RotationFilter;                                    // 0x0003(0x0003)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	struct FFilterOptionPerAxis                   ScaleFilter;                                       // 0x0006(0x0003)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FTransformFilter;
-
 // ScriptStruct AnimationCore.EulerTransform
 // 0x0048 (0x0048 - 0x0000)
 struct FEulerTransform final
@@ -213,6 +222,16 @@ public:
 	struct FVector                                Scale;                                             // 0x0030(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FEulerTransform;
+
+// ScriptStruct AnimationCore.ConstraintDescriptor
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FConstraintDescriptor final
+{
+public:
+	EConstraintType                               Type;                                              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FConstraintDescriptor;
 
 // ScriptStruct AnimationCore.ConstraintData
 // 0x00E0 (0x00E0 - 0x0000)
@@ -237,15 +256,6 @@ public:
 };
 DUMPER7_ASSERTS_FCCDIKChainLink;
 
-// ScriptStruct AnimationCore.FABRIKChainLink
-// 0x0050 (0x0050 - 0x0000)
-struct alignas(0x08) FFABRIKChainLink final
-{
-public:
-	uint8                                         Pad_0[0x50];                                       // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FFABRIKChainLink;
-
 // ScriptStruct AnimationCore.NodeChain
 // 0x0010 (0x0010 - 0x0000)
 struct FNodeChain final
@@ -254,16 +264,6 @@ public:
 	TArray<class FName>                           Nodes;                                             // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FNodeChain;
-
-// ScriptStruct AnimationCore.TransformConstraintDescription
-// 0x0008 (0x0018 - 0x0010)
-struct FTransformConstraintDescription final : public FConstraintDescriptionEx
-{
-public:
-	ETransformConstraintType                      TransformType;                                     // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FTransformConstraintDescription;
 
 }
 

@@ -31,10 +31,10 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetActiveSelf(class APalLevelObjectObtainable* LevelObject);
-	void ReceiveBeginPlay();
-	void OnUpdatePickupStatus(class APalLevelObjectObtainable* LevelObject);
 	void ExecuteUbergraph_BP_LevelObject_Note(int32 EntryPoint);
+	void OnUpdatePickupStatus(class APalLevelObjectObtainable* LevelObject);
+	void ReceiveBeginPlay();
+	void SetActiveSelf(class APalLevelObjectObtainable* LevelObject);
 
 	struct FVector GetObtainFXLocation() const;
 

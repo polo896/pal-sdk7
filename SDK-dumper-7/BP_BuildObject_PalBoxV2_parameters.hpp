@@ -18,14 +18,14 @@ namespace SDK::Params
 {
 
 // Function BP_BuildObject_PalBoxV2.BP_BuildObject_PalBoxV2_C.ExecuteUbergraph_BP_BuildObject_PalBoxV2
-// 0x0218 (0x0218 - 0x0000)
+// 0x0220 (0x0220 - 0x0000)
 struct BP_BuildObject_PalBoxV2_C_ExecuteUbergraph_BP_BuildObject_PalBoxV2 final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalOptionSubsystem*                    CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0010(0x0208)(ConstParm)
+	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0010(0x0210)(ConstParm)
 };
 DUMPER7_ASSERTS_BP_BuildObject_PalBoxV2_C_ExecuteUbergraph_BP_BuildObject_PalBoxV2;
 

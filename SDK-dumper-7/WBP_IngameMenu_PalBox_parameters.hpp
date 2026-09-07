@@ -334,11 +334,21 @@ public:
 	class UPalHUDDispatchParameter_PalBox*        Parameter;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_Guid_ReturnValue;                 // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPalIndividualCharacterSlot*>    CallFunc_GetNowDisplayWorkerList_OutSlots;         // 0x0010(0x0010)(ReferenceParm)
 	bool                                          CallFunc_GetNowDisplayWorkerList_ReturnValue;      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_PalBox_C_Setup;
+
+// Function WBP_IngameMenu_PalBox.WBP_IngameMenu_PalBox_C.Setup Pal Box Background
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_PalBox_C_Setup_Pal_Box_Background final
+{
+public:
+	bool                                          bIsWildPalBox;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_PalBox_C_Setup_Pal_Box_Background;
 
 // Function WBP_IngameMenu_PalBox.WBP_IngameMenu_PalBox_C.Setup Party Pal
 // 0x0040 (0x0040 - 0x0000)

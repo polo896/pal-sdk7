@@ -17,81 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_Paldex_Task.WBP_Paldex_Task_C.SetupForMenu
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_Task.WBP_Paldex_Task_C.AnmEvent_Activate
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   BonusCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    AlreadyCompletedBonus                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_Task_C::SetupForMenu(int32 BonusCount)
+void UWBP_Paldex_Task_C::AnmEvent_Activate(bool AlreadyCompletedBonus)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_Task_C", "SetupForMenu");
+		Func = Class->GetFunction("WBP_Paldex_Task_C", "AnmEvent_Activate");
 
-	Params::WBP_Paldex_Task_C_SetupForMenu Parms{};
+	Params::WBP_Paldex_Task_C_AnmEvent_Activate Parms{};
 
-	Parms.BonusCount = BonusCount;
+	Parms.AlreadyCompletedBonus = AlreadyCompletedBonus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_Task.WBP_Paldex_Task_C.SetupBonusCountText
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   BonusCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Paldex_Task.WBP_Paldex_Task_C.AnmEvent_Flash
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_Task_C::SetupBonusCountText(int32 BonusCount)
+void UWBP_Paldex_Task_C::AnmEvent_Flash()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_Task_C", "SetupBonusCountText");
-
-	Params::WBP_Paldex_Task_C_SetupBonusCountText Parms{};
-
-	Parms.BonusCount = BonusCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_Task.WBP_Paldex_Task_C.PreSetup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   BonusCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   DisplayExp                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_Task_C::PreSetup(class FName CharacterID, int32 BonusCount, int32 DisplayExp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_Task_C", "PreSetup");
-
-	Params::WBP_Paldex_Task_C_PreSetup Parms{};
-
-	Parms.CharacterID = CharacterID;
-	Parms.BonusCount = BonusCount;
-	Parms.DisplayExp = DisplayExp;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_Task.WBP_Paldex_Task_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Paldex_Task_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_Task_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Paldex_Task_C", "AnmEvent_Flash");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_Task.WBP_Paldex_Task_C.ExecuteUbergraph_WBP_Paldex_Task
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_Task_C::ExecuteUbergraph_WBP_Paldex_Task(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_Task_C", "ExecuteUbergraph_WBP_Paldex_Task");
+
+	Params::WBP_Paldex_Task_C_ExecuteUbergraph_WBP_Paldex_Task Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -119,55 +95,79 @@ void UWBP_Paldex_Task_C::GetBonusExpMsg(int32 CaptureCount, class FText* Text)
 }
 
 
-// Function WBP_Paldex_Task.WBP_Paldex_Task_C.ExecuteUbergraph_WBP_Paldex_Task
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Paldex_Task.WBP_Paldex_Task_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Paldex_Task_C::ExecuteUbergraph_WBP_Paldex_Task(int32 EntryPoint)
+void UWBP_Paldex_Task_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_Task_C", "ExecuteUbergraph_WBP_Paldex_Task");
-
-	Params::WBP_Paldex_Task_C_ExecuteUbergraph_WBP_Paldex_Task Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_Task.WBP_Paldex_Task_C.AnmEvent_Flash
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_Task_C::AnmEvent_Flash()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_Task_C", "AnmEvent_Flash");
+		Func = Class->GetFunction("WBP_Paldex_Task_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_Task.WBP_Paldex_Task_C.AnmEvent_Activate
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_Task.WBP_Paldex_Task_C.PreSetup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    AlreadyCompletedBonus                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   BonusCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DisplayExp                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_Task_C::AnmEvent_Activate(bool AlreadyCompletedBonus)
+void UWBP_Paldex_Task_C::PreSetup(class FName CharacterID, int32 BonusCount, int32 DisplayExp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_Task_C", "AnmEvent_Activate");
+		Func = Class->GetFunction("WBP_Paldex_Task_C", "PreSetup");
 
-	Params::WBP_Paldex_Task_C_AnmEvent_Activate Parms{};
+	Params::WBP_Paldex_Task_C_PreSetup Parms{};
 
-	Parms.AlreadyCompletedBonus = AlreadyCompletedBonus;
+	Parms.CharacterID = CharacterID;
+	Parms.BonusCount = BonusCount;
+	Parms.DisplayExp = DisplayExp;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_Task.WBP_Paldex_Task_C.SetupBonusCountText
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   BonusCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_Task_C::SetupBonusCountText(int32 BonusCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_Task_C", "SetupBonusCountText");
+
+	Params::WBP_Paldex_Task_C_SetupBonusCountText Parms{};
+
+	Parms.BonusCount = BonusCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_Task.WBP_Paldex_Task_C.SetupForMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   BonusCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_Task_C::SetupForMenu(int32 BonusCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_Task_C", "SetupForMenu");
+
+	Params::WBP_Paldex_Task_C_SetupForMenu Parms{};
+
+	Parms.BonusCount = BonusCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

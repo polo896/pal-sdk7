@@ -17,213 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.ApplySettings
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ApplyOriginal                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::ApplySettings(bool ApplyOriginal)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "ApplySettings");
-
-	Params::WBP_Sound_Settings_C_ApplySettings Parms{};
-
-	Parms.ApplyOriginal = ApplyOriginal;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Sound_Settings_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.ExecuteUbergraph_WBP_Sound_Settings
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "ExecuteUbergraph_WBP_Sound_Settings");
-
-	Params::WBP_Sound_Settings_C_ExecuteUbergraph_WBP_Sound_Settings Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnAmbientChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::OnAmbientChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnAmbientChanged");
-
-	Params::WBP_Sound_Settings_C_OnAmbientChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnBGMChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::OnBGMChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnBGMChanged");
-
-	Params::WBP_Sound_Settings_C_OnBGMChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSelection_VoiceChat_Input_Setting
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::OnChangedSelection_VoiceChat_Input_Setting(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSelection_VoiceChat_Input_Setting");
-
-	Params::WBP_Sound_Settings_C_OnChangedSelection_VoiceChat_Input_Setting Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Input_Volume
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::OnChangedSlider_VoiceChat_Input_Volume(double Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSlider_VoiceChat_Input_Volume");
-
-	Params::WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Input_Volume Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Output_Volume
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::OnChangedSlider_VoiceChat_Output_Volume(double Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSlider_VoiceChat_Output_Volume");
-
-	Params::WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Output_Volume Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_GameMachine
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_VoiceChat_Mute_MySelf
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Sound_Settings_C::OnChangedSwitch_GameMachine(bool IsOn)
+void UWBP_Sound_Settings_C::OnChangedSwitch_VoiceChat_Mute_MySelf(bool IsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_GameMachine");
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_VoiceChat_Mute_MySelf");
 
-	Params::WBP_Sound_Settings_C_OnChangedSwitch_GameMachine Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalEffect
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::OnChangedSwitch_PalEffect(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_PalEffect");
-
-	Params::WBP_Sound_Settings_C_OnChangedSwitch_PalEffect Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalWorking
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Sound_Settings_C::OnChangedSwitch_PalWorking(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_PalWorking");
-
-	Params::WBP_Sound_Settings_C_OnChangedSwitch_PalWorking Parms{};
+	Params::WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_MySelf Parms{};
 
 	Parms.IsOn = IsOn;
 
@@ -251,21 +57,215 @@ void UWBP_Sound_Settings_C::OnChangedSwitch_RarePalEffect(bool IsOn)
 }
 
 
-// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_VoiceChat_Mute_MySelf
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalWorking
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Sound_Settings_C::OnChangedSwitch_VoiceChat_Mute_MySelf(bool IsOn)
+void UWBP_Sound_Settings_C::OnChangedSwitch_PalWorking(bool IsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_VoiceChat_Mute_MySelf");
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_PalWorking");
 
-	Params::WBP_Sound_Settings_C_OnChangedSwitch_VoiceChat_Mute_MySelf Parms{};
+	Params::WBP_Sound_Settings_C_OnChangedSwitch_PalWorking Parms{};
 
 	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_PalEffect
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::OnChangedSwitch_PalEffect(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_PalEffect");
+
+	Params::WBP_Sound_Settings_C_OnChangedSwitch_PalEffect Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSwitch_GameMachine
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::OnChangedSwitch_GameMachine(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSwitch_GameMachine");
+
+	Params::WBP_Sound_Settings_C_OnChangedSwitch_GameMachine Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Output_Volume
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::OnChangedSlider_VoiceChat_Output_Volume(double Volume)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSlider_VoiceChat_Output_Volume");
+
+	Params::WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Output_Volume Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSlider_VoiceChat_Input_Volume
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::OnChangedSlider_VoiceChat_Input_Volume(double Volume)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSlider_VoiceChat_Input_Volume");
+
+	Params::WBP_Sound_Settings_C_OnChangedSlider_VoiceChat_Input_Volume Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnChangedSelection_VoiceChat_Input_Setting
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::OnChangedSelection_VoiceChat_Input_Setting(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnChangedSelection_VoiceChat_Input_Setting");
+
+	Params::WBP_Sound_Settings_C_OnChangedSelection_VoiceChat_Input_Setting Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnBGMChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::OnBGMChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnBGMChanged");
+
+	Params::WBP_Sound_Settings_C_OnBGMChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.OnAmbientChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::OnAmbientChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "OnAmbientChanged");
+
+	Params::WBP_Sound_Settings_C_OnAmbientChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.ExecuteUbergraph_WBP_Sound_Settings
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "ExecuteUbergraph_WBP_Sound_Settings");
+
+	Params::WBP_Sound_Settings_C_ExecuteUbergraph_WBP_Sound_Settings Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Sound_Settings_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Sound_Settings.WBP_Sound_Settings_C.ApplySettings
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ApplyOriginal                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Sound_Settings_C::ApplySettings(bool ApplyOriginal)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Sound_Settings_C", "ApplySettings");
+
+	Params::WBP_Sound_Settings_C_ApplySettings Parms{};
+
+	Parms.ApplyOriginal = ApplyOriginal;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

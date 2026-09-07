@@ -17,147 +17,125 @@
 namespace SDK
 {
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.TryCampSpawn
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.CheckWorldLoadComplete
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Loaded                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerAntiAirBase_C::TryCampSpawn()
+void ABP_NPCCampSpawnerAntiAirBase_C::CheckWorldLoadComplete(bool* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "TryCampSpawn");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "CheckWorldLoadComplete");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_NPCCampSpawnerAntiAirBase_C_CheckWorldLoadComplete Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Loaded != nullptr)
+		*Loaded = Parms.Loaded;
 }
 
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.Start Reset Timer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.CREATEDELEGATE_PROXYFUNCTION_0
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  RespawnTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerAntiAirBase_C::Start_Reset_Timer(double RespawnTime)
+void ABP_NPCCampSpawnerAntiAirBase_C::CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "Start Reset Timer");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "CREATEDELEGATE_PROXYFUNCTION_0");
 
-	Params::BP_NPCCampSpawnerAntiAirBase_C_Start_Reset_Timer Parms{};
+	Params::BP_NPCCampSpawnerAntiAirBase_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
 
-	Parms.RespawnTime = RespawnTime;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.SetupCampStatus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPCCampSpawnerAntiAirBase_C::SetupCampStatus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "SetupCampStatus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.SetSpawnAble
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPCCampSpawnerAntiAirBase_C::SetSpawnAble()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "SetSpawnAble");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ResetCamp
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_NPCCampSpawnerAntiAirBase_C::ResetCamp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ResetCamp");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase
+// (Final, UbergraphFunction)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerAntiAirBase_C::ReceiveTick(float DeltaSeconds)
+void ABP_NPCCampSpawnerAntiAirBase_C::ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase");
 
-	Params::BP_NPCCampSpawnerAntiAirBase_C_ReceiveTick Parms{};
+	Params::BP_NPCCampSpawnerAntiAirBase_C_ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.GetPresetClass
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass**                          PresetClass_0                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerAntiAirBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_NPCCampSpawnerAntiAirBase_C::GetPresetClass(class UClass** PresetClass_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ReceiveEndPlay");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "GetPresetClass");
 
-	Params::BP_NPCCampSpawnerAntiAirBase_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
+	Params::BP_NPCCampSpawnerAntiAirBase_C_GetPresetClass Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (PresetClass_0 != nullptr)
+		*PresetClass_0 = Parms.PresetClass_0;
 }
 
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.GetRewardName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerAntiAirBase_C::ReceiveBeginPlay()
+class FName ABP_NPCCampSpawnerAntiAirBase_C::GetRewardName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "GetRewardName");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_NPCCampSpawnerAntiAirBase_C_GetRewardName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.OnReceivedReward
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.OnEnemyDead
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalDeadInfo&              DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void ABP_NPCCampSpawnerAntiAirBase_C::OnReceivedReward()
+void ABP_NPCCampSpawnerAntiAirBase_C::OnEnemyDead(const struct FPalDeadInfo& DeadInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "OnReceivedReward");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "OnEnemyDead");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_NPCCampSpawnerAntiAirBase_C_OnEnemyDead Parms{};
+
+	Parms.DeadInfo = std::move(DeadInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -183,125 +161,147 @@ void ABP_NPCCampSpawnerAntiAirBase_C::OnEnemySpawned(class UPalIndividualCharact
 }
 
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.OnEnemyDead
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.OnReceivedReward
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCCampSpawnerAntiAirBase_C::OnReceivedReward()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "OnReceivedReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_NPCCampSpawnerAntiAirBase_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCCampSpawnerAntiAirBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ReceiveEndPlay");
+
+	Params::BP_NPCCampSpawnerAntiAirBase_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCCampSpawnerAntiAirBase_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ReceiveTick");
+
+	Params::BP_NPCCampSpawnerAntiAirBase_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ResetCamp
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCCampSpawnerAntiAirBase_C::ResetCamp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ResetCamp");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.SetSpawnAble
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCCampSpawnerAntiAirBase_C::SetSpawnAble()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "SetSpawnAble");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.SetupCampStatus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_NPCCampSpawnerAntiAirBase_C::SetupCampStatus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "SetupCampStatus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.Start Reset Timer
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalDeadInfo&              DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// double                                  RespawnTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCCampSpawnerAntiAirBase_C::OnEnemyDead(const struct FPalDeadInfo& DeadInfo)
+void ABP_NPCCampSpawnerAntiAirBase_C::Start_Reset_Timer(double RespawnTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "OnEnemyDead");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "Start Reset Timer");
 
-	Params::BP_NPCCampSpawnerAntiAirBase_C_OnEnemyDead Parms{};
+	Params::BP_NPCCampSpawnerAntiAirBase_C_Start_Reset_Timer Parms{};
 
-	Parms.DeadInfo = std::move(DeadInfo);
+	Parms.RespawnTime = RespawnTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.GetRewardName
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.TryCampSpawn
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-class FName ABP_NPCCampSpawnerAntiAirBase_C::GetRewardName()
+void ABP_NPCCampSpawnerAntiAirBase_C::TryCampSpawn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "GetRewardName");
+		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "TryCampSpawn");
 
-	Params::BP_NPCCampSpawnerAntiAirBase_C_GetRewardName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.GetPresetClass
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UClass**                          PresetClass_0                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCCampSpawnerAntiAirBase_C::GetPresetClass(class UClass** PresetClass_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "GetPresetClass");
-
-	Params::BP_NPCCampSpawnerAntiAirBase_C_GetPresetClass Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PresetClass_0 != nullptr)
-		*PresetClass_0 = Parms.PresetClass_0;
-}
-
-
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCCampSpawnerAntiAirBase_C::ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase");
-
-	Params::BP_NPCCampSpawnerAntiAirBase_C_ExecuteUbergraph_BP_NPCCampSpawnerAntiAirBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.CREATEDELEGATE_PROXYFUNCTION_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCCampSpawnerAntiAirBase_C::CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "CREATEDELEGATE_PROXYFUNCTION_0");
-
-	Params::BP_NPCCampSpawnerAntiAirBase_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCCampSpawnerAntiAirBase.BP_NPCCampSpawnerAntiAirBase_C.CheckWorldLoadComplete
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Loaded                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCCampSpawnerAntiAirBase_C::CheckWorldLoadComplete(bool* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCCampSpawnerAntiAirBase_C", "CheckWorldLoadComplete");
-
-	Params::BP_NPCCampSpawnerAntiAirBase_C_CheckWorldLoadComplete Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Loaded != nullptr)
-		*Loaded = Parms.Loaded;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

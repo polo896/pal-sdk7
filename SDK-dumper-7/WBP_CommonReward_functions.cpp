@@ -31,6 +31,20 @@ void UWBP_CommonReward_C::ShowInfo()
 }
 
 
+// Function WBP_CommonReward.WBP_CommonReward_C.SetupCurrentAdditionalText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonReward_C::SetupCurrentAdditionalText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonReward_C", "SetupCurrentAdditionalText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CommonReward.WBP_CommonReward_C.SetInfo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -68,6 +82,62 @@ void UWBP_CommonReward_C::QueueRewardInfo(const struct FPalUICommonRewardDisplay
 	Parms.Info = std::move(Info);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CommonReward.WBP_CommonReward_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CommonReward_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonReward_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CommonReward.WBP_CommonReward_C.IsCurrentAdditionalTitleTextEmpty
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bIsEmpty                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommonReward_C::IsCurrentAdditionalTitleTextEmpty(bool* bIsEmpty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonReward_C", "IsCurrentAdditionalTitleTextEmpty");
+
+	Params::WBP_CommonReward_C_IsCurrentAdditionalTitleTextEmpty Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsEmpty != nullptr)
+		*bIsEmpty = Parms.bIsEmpty;
+}
+
+
+// Function WBP_CommonReward.WBP_CommonReward_C.IsCurrentAdditionalTextEmpty
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bIsEmpty                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommonReward_C::IsCurrentAdditionalTextEmpty(bool* bIsEmpty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonReward_C", "IsCurrentAdditionalTextEmpty");
+
+	Params::WBP_CommonReward_C_IsCurrentAdditionalTextEmpty Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsEmpty != nullptr)
+		*bIsEmpty = Parms.bIsEmpty;
 }
 
 

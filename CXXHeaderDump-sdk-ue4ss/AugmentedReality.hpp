@@ -247,7 +247,7 @@ class UARBlueprintLibrary : public UBlueprintFunctionLibrary
     bool PinComponentToARPin(class USceneComponent* ComponentToPin, class UARPin* Pin);
     class UARPin* PinComponent(class USceneComponent* ComponentToPin, const FTransform& PinToWorldTransform, class UARTrackedGeometry* TrackedGeometry, const FName DebugName);
     void PauseARSession();
-    TMap<FName, UARPin*> LoadARPinsFromLocalStore();
+    TMap<class FName, class UARPin*> LoadARPinsFromLocalStore();
     TArray<FARTraceResult> LineTraceTrackedObjects3D(const FVector Start, const FVector End, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon);
     TArray<FARTraceResult> LineTraceTrackedObjects(const FVector2D ScreenCoord, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon);
     bool IsSessionTypeSupported(EARSessionType SessionType);
@@ -273,17 +273,17 @@ class UARBlueprintLibrary : public UBlueprintFunctionLibrary
     float GetARWorldScale();
     class UARTexture* GetARTexture(EARTextureType TextureType);
     FARSessionStatus GetARSessionStatus();
-    TArray<UARTrackedPose*> GetAllTrackedPoses();
-    TArray<UARTrackedPoint*> GetAllTrackedPoints();
-    TArray<UARPlaneGeometry*> GetAllTrackedPlanes();
-    TArray<UARTrackedImage*> GetAllTrackedImages();
-    TArray<UAREnvironmentCaptureProbe*> GetAllTrackedEnvironmentCaptureProbes();
+    TArray<class UARTrackedPose*> GetAllTrackedPoses();
+    TArray<class UARTrackedPoint*> GetAllTrackedPoints();
+    TArray<class UARPlaneGeometry*> GetAllTrackedPlanes();
+    TArray<class UARTrackedImage*> GetAllTrackedImages();
+    TArray<class UAREnvironmentCaptureProbe*> GetAllTrackedEnvironmentCaptureProbes();
     TArray<FARPose2D> GetAllTracked2DPoses();
-    TArray<UARPin*> GetAllPins();
-    TArray<UARTrackedGeometry*> GetAllGeometriesByClass(TSubclassOf<class UARTrackedGeometry> GeometryClass);
-    TArray<UARTrackedGeometry*> GetAllGeometries();
+    TArray<class UARPin*> GetAllPins();
+    TArray<class UARTrackedGeometry*> GetAllGeometriesByClass(TSubclassOf<class UARTrackedGeometry> GeometryClass);
+    TArray<class UARTrackedGeometry*> GetAllGeometries();
     FTransform GetAlignmentTransform();
-    TArray<UARTrackedPoint*> FindTrackedPointsByName(FString PointName);
+    TArray<class UARTrackedPoint*> FindTrackedPointsByName(FString PointName);
     void DebugDrawTrackedGeometry(class UARTrackedGeometry* TrackedGeometry, class UObject* WorldContextObject, FLinearColor Color, float OutlineThickness, float PersistForSeconds);
     void DebugDrawPin(class UARPin* ARPin, class UObject* WorldContextObject, FLinearColor Color, float Scale, float PersistForSeconds);
     void CalculateClosestIntersection(const TArray<FVector>& StartPoints, const TArray<FVector>& EndPoints, FVector& ClosestIntersection);
@@ -519,11 +519,11 @@ class UARPlaneComponent : public UARComponent
     FARPlaneUpdatePayload ReplicatedPayload;                                          // 0x0320 (size: 0xD0)
 
     void SetPlaneComponentDebugMode(EPlaneComponentDebugMode NewDebugMode);
-    void SetObjectClassificationDebugColors(const TMap<EARObjectClassification, FLinearColor>& InColors);
+    void SetObjectClassificationDebugColors(const TMap<class EARObjectClassification, class FLinearColor>& InColors);
     void ServerUpdatePayload(const FARPlaneUpdatePayload& NewPayload);
     void ReceiveUpdate(const FARPlaneUpdatePayload& Payload);
     void ReceiveAdd(const FARPlaneUpdatePayload& Payload);
-    TMap<EARObjectClassification, FLinearColor> GetObjectClassificationDebugColors();
+    TMap<class EARObjectClassification, class FLinearColor> GetObjectClassificationDebugColors();
 }; // Size: 0x3F0
 
 class UARPlaneGeometry : public UARTrackedGeometry
@@ -604,11 +604,11 @@ class UARSessionConfig : public UDataAsset
     bool bEnableAutomaticCameraTracking;                                              // 0x0043 (size: 0x1)
     bool bResetCameraTracking;                                                        // 0x0044 (size: 0x1)
     bool bResetTrackedObjects;                                                        // 0x0045 (size: 0x1)
-    TArray<UARCandidateImage*> CandidateImages;                                       // 0x0048 (size: 0x10)
+    TArray<class UARCandidateImage*> CandidateImages;                                 // 0x0048 (size: 0x10)
     int32 MaxNumSimultaneousImagesTracked;                                            // 0x0058 (size: 0x4)
     EAREnvironmentCaptureProbeType EnvironmentCaptureProbeType;                       // 0x005C (size: 0x1)
     TArray<uint8> WorldMapData;                                                       // 0x0060 (size: 0x10)
-    TArray<UARCandidateObject*> CandidateObjects;                                     // 0x0070 (size: 0x10)
+    TArray<class UARCandidateObject*> CandidateObjects;                               // 0x0070 (size: 0x10)
     FARVideoFormat DesiredVideoFormat;                                                // 0x0080 (size: 0xC)
     bool bUseOptimalVideoFormat;                                                      // 0x008C (size: 0x1)
     EARFaceTrackingDirection FaceTrackingDirection;                                   // 0x008D (size: 0x1)
@@ -644,7 +644,7 @@ class UARSessionConfig : public UDataAsset
     void SetFaceTrackingDirection(EARFaceTrackingDirection InDirection);
     void SetEnableAutoFocus(bool bNewValue);
     void SetDesiredVideoFormat(FARVideoFormat NewFormat);
-    void SetCandidateObjectList(const TArray<UARCandidateObject*>& InCandidateObjects);
+    void SetCandidateObjectList(const TArray<class UARCandidateObject*>& InCandidateObjects);
     TArray<uint8> GetWorldMapData();
     EARWorldAlignment GetWorldAlignment();
     EARSessionType GetSessionType();
@@ -658,8 +658,8 @@ class UARSessionConfig : public UDataAsset
     EAREnvironmentCaptureProbeType GetEnvironmentCaptureProbeType();
     EARSessionTrackingFeature GetEnabledSessionTrackingFeature();
     FARVideoFormat GetDesiredVideoFormat();
-    TArray<UARCandidateObject*> GetCandidateObjectList();
-    TArray<UARCandidateImage*> GetCandidateImageList();
+    TArray<class UARCandidateObject*> GetCandidateObjectList();
+    TArray<class UARCandidateImage*> GetCandidateImageList();
     void AddCandidateObject(class UARCandidateObject* CandidateObject);
     void AddCandidateImage(class UARCandidateImage* NewCandidateImage);
 }; // Size: 0x110

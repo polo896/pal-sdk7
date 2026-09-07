@@ -243,15 +243,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Option_ModMenu_C_DoCustomNavigation_ToTextBox;
 
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
 // Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature final
@@ -261,6 +252,15 @@ public:
 	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature;
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

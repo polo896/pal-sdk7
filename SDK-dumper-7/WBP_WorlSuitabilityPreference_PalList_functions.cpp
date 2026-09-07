@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.BindFromSlot
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterSlot*      TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::BindFromSlot(class UPalIndividualCharacterSlot* TargetSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "BindFromSlot");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_BindFromSlot Parms{};
-
-	Parms.TargetSlot = TargetSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.ArrangeHorizontalSlot_ForCheckBox
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -57,377 +37,71 @@ void UWBP_WorlSuitabilityPreference_PalList_C::ArrangeHorizontalSlot_ForCheckBox
 }
 
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.UpdateWorkDetail_Timer
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::UpdateWorkDetail_Timer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "UpdateWorkDetail_Timer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.UpdateOperationPermission
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::UpdateOperationPermission()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "UpdateOperationPermission");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Unbind
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::Unbind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Unbind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetupCheckBox
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::SetupCheckBox()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetupCheckBox");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetOperationPermission
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bEnableOperation_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::SetOperationPermission(bool bEnableOperation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetOperationPermission");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_SetOperationPermission Parms{};
-
-	Parms.bEnableOperation_0 = bEnableOperation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetFixedAssignMode
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsFixedAssign                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::SetFixedAssignMode(bool IsFixedAssign)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetFixedAssignMode");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_SetFixedAssignMode Parms{};
-
-	Parms.IsFixedAssign = IsFixedAssign;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetEnableTaskDetail
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::SetEnableTaskDetail(bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetEnableTaskDetail");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_SetEnableTaskDetail Parms{};
-
-	Parms.IsEnable = IsEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Set Work Suitability
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.BindFromSlot
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const TMap<EPalWorkSuitability, int32>& WorkSuitabilities                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UPalIndividualCharacterSlot*      TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorlSuitabilityPreference_PalList_C::Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities)
+void UWBP_WorlSuitabilityPreference_PalList_C::BindFromSlot(class UPalIndividualCharacterSlot* TargetSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Set Work Suitability");
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "BindFromSlot");
 
-	Params::WBP_WorlSuitabilityPreference_PalList_C_Set_Work_Suitability Parms{};
+	Params::WBP_WorlSuitabilityPreference_PalList_C_BindFromSlot Parms{};
 
-	Parms.WorkSuitabilities = std::move(WorkSuitabilities);
+	Parms.TargetSlot = TargetSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateWorkSuitabilityOption_Binded
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalWorkSuitabilityPreferenceInfo&Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateWorkSuitabilityOption_Binded(const struct FPalWorkSuitabilityPreferenceInfo& Info)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateWorkSuitabilityOption_Binded");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateWorkSuitabilityOption_Binded Parms{};
-
-	Parms.Info = std::move(Info);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateSlotHandle
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterHandle*    LastHandle                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateSlotHandle(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateSlotHandle");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateSlotHandle Parms{};
-
-	Parms.Slot_0 = Slot_0;
-	Parms.LastHandle = LastHandle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateSanity_Binded
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  nowSanity                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  nowMaxSanity                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateSanity_Binded(double nowSanity, double nowMaxSanity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateSanity_Binded");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateSanity_Binded Parms{};
-
-	Parms.nowSanity = nowSanity;
-	Parms.nowMaxSanity = nowMaxSanity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateNickName_Binded
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    NewNickName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateNickName_Binded(const class FString& NewNickName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateNickName_Binded");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateNickName_Binded Parms{};
-
-	Parms.NewNickName = std::move(NewNickName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateLevel_Binded
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateLevel_Binded(int32 NewLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateLevel_Binded");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateLevel_Binded Parms{};
-
-	Parms.NewLevel = NewLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateCondition_Binded
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateCondition_Binded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateCondition_Binded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnInitialized
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_WorlSuitabilityPreference_PalList_C::OnInitialized()
+void UWBP_WorlSuitabilityPreference_PalList_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnHoveredCheckBox_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_WorkSuitabilityPreference_CheckBox_0_C*CheckBox                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_WorlSuitabilityPreference_PalList_C::OnHoveredCheckBox_Internal(class UWBP_WorkSuitabilityPreference_CheckBox_0_C* CheckBox)
+void UWBP_WorlSuitabilityPreference_PalList_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnHoveredCheckBox_Internal");
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Destruct");
 
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnHoveredCheckBox_Internal Parms{};
-
-	Parms.CheckBox = CheckBox;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnChangedSuitabilityCheckState_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsChecked                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorlSuitabilityPreference_PalList_C::OnChangedSuitabilityCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability)
+void UWBP_WorlSuitabilityPreference_PalList_C::ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnChangedSuitabilityCheckState_Internal");
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList");
 
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnChangedSuitabilityCheckState_Internal Parms{};
+	Params::WBP_WorlSuitabilityPreference_PalList_C_ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList Parms{};
 
-	Parms.IsChecked = IsChecked;
-	Parms.Suitability = Suitability;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnChangedBattleModeCheckState_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsChecked                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::OnChangedBattleModeCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnChangedBattleModeCheckState_Internal");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_OnChangedBattleModeCheckState_Internal Parms{};
-
-	Parms.IsChecked = IsChecked;
-	Parms.Suitability = Suitability;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Target                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::GetTopFocusTarget(class UWidget** Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "GetTopFocusTarget");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Target != nullptr)
-		*Target = Parms.Target;
-}
-
-
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.GetLastHoveredCheckBoxIndex
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32*                                  Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorlSuitabilityPreference_PalList_C::GetLastHoveredCheckBoxIndex(int32* Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "GetLastHoveredCheckBoxIndex");
-
-	Params::WBP_WorlSuitabilityPreference_PalList_C_GetLastHoveredCheckBoxIndex Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Index_0 != nullptr)
-		*Index_0 = Parms.Index_0;
 }
 
 
@@ -455,49 +129,375 @@ void UWBP_WorlSuitabilityPreference_PalList_C::GetFocusTargetByCheckBoxIndex(int
 }
 
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.GetLastHoveredCheckBoxIndex
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorlSuitabilityPreference_PalList_C::ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList(int32 EntryPoint)
+void UWBP_WorlSuitabilityPreference_PalList_C::GetLastHoveredCheckBoxIndex(int32* Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList");
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "GetLastHoveredCheckBoxIndex");
 
-	Params::WBP_WorlSuitabilityPreference_PalList_C_ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList Parms{};
+	Params::WBP_WorlSuitabilityPreference_PalList_C_GetLastHoveredCheckBoxIndex Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Index_0 != nullptr)
+		*Index_0 = Parms.Index_0;
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Target                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::GetTopFocusTarget(class UWidget** Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "GetTopFocusTarget");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Target != nullptr)
+		*Target = Parms.Target;
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnChangedBattleModeCheckState_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsChecked                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnChangedBattleModeCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnChangedBattleModeCheckState_Internal");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnChangedBattleModeCheckState_Internal Parms{};
+
+	Parms.IsChecked = IsChecked;
+	Parms.Suitability = Suitability;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnChangedSuitabilityCheckState_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsChecked                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorlSuitabilityPreference_PalList_C::Destruct()
+void UWBP_WorlSuitabilityPreference_PalList_C::OnChangedSuitabilityCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Destruct");
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnChangedSuitabilityCheckState_Internal");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnChangedSuitabilityCheckState_Internal Parms{};
+
+	Parms.IsChecked = IsChecked;
+	Parms.Suitability = Suitability;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnHoveredCheckBox_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_WorkSuitabilityPreference_CheckBox_0_C*CheckBox                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnHoveredCheckBox_Internal(class UWBP_WorkSuitabilityPreference_CheckBox_0_C* CheckBox)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnHoveredCheckBox_Internal");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnHoveredCheckBox_Internal Parms{};
+
+	Parms.CheckBox = CheckBox;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateCondition_Binded
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WorlSuitabilityPreference_PalList_C::Construct()
+void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateCondition_Binded()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Construct");
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateCondition_Binded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateLevel_Binded
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateLevel_Binded(int32 NewLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateLevel_Binded");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateLevel_Binded Parms{};
+
+	Parms.NewLevel = NewLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateNickName_Binded
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    NewNickName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateNickName_Binded(const class FString& NewNickName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateNickName_Binded");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateNickName_Binded Parms{};
+
+	Parms.NewNickName = std::move(NewNickName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateSanity_Binded
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  nowSanity                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  nowMaxSanity                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateSanity_Binded(double nowSanity, double nowMaxSanity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateSanity_Binded");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateSanity_Binded Parms{};
+
+	Parms.nowSanity = nowSanity;
+	Parms.nowMaxSanity = nowMaxSanity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateSlotHandle
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    LastHandle                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateSlotHandle(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateSlotHandle");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateSlotHandle Parms{};
+
+	Parms.Slot_0 = Slot_0;
+	Parms.LastHandle = LastHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.OnUpdateWorkSuitabilityOption_Binded
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalWorkSuitabilityPreferenceInfo&Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::OnUpdateWorkSuitabilityOption_Binded(const struct FPalWorkSuitabilityPreferenceInfo& Info)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "OnUpdateWorkSuitabilityOption_Binded");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_OnUpdateWorkSuitabilityOption_Binded Parms{};
+
+	Parms.Info = std::move(Info);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Set Work Suitability
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TMap<EPalWorkSuitability, int32>& WorkSuitabilities                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Set Work Suitability");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_Set_Work_Suitability Parms{};
+
+	Parms.WorkSuitabilities = std::move(WorkSuitabilities);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetEnableTaskDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::SetEnableTaskDetail(bool IsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetEnableTaskDetail");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_SetEnableTaskDetail Parms{};
+
+	Parms.IsEnable = IsEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetFixedAssignMode
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsFixedAssign                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::SetFixedAssignMode(bool IsFixedAssign)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetFixedAssignMode");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_SetFixedAssignMode Parms{};
+
+	Parms.IsFixedAssign = IsFixedAssign;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetOperationPermission
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bEnableOperation_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::SetOperationPermission(bool bEnableOperation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetOperationPermission");
+
+	Params::WBP_WorlSuitabilityPreference_PalList_C_SetOperationPermission Parms{};
+
+	Parms.bEnableOperation_0 = bEnableOperation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.SetupCheckBox
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::SetupCheckBox()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "SetupCheckBox");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.Unbind
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::Unbind()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "Unbind");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.UpdateOperationPermission
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::UpdateOperationPermission()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "UpdateOperationPermission");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorlSuitabilityPreference_PalList.WBP_WorlSuitabilityPreference_PalList_C.UpdateWorkDetail_Timer
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorlSuitabilityPreference_PalList_C::UpdateWorkDetail_Timer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorlSuitabilityPreference_PalList_C", "UpdateWorkDetail_Timer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

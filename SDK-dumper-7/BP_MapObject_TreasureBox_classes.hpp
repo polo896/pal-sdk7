@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
-#include "Engine_structs.hpp"
 #include "EPalTreasureBoxVisualType_structs.hpp"
 
 
@@ -20,25 +20,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_TreasureBox.BP_MapObject_TreasureBox_C
-// 0x0078 (0x04C8 - 0x0450)
+// 0x0078 (0x04E0 - 0x0468)
 class ABP_MapObject_TreasureBox_C : public APalMapObjectTreasureBox
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalPickingGameDataComponent*           PalPickingGameData;                                // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   VisualActor;                                       // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0468(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        IndicatorOrigin;                                   // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMap<EPalMapObjectTreasureGradeType, class UClass*> VisualMap;                                   // 0x0478(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalPickingGameDataComponent*           PalPickingGameData;                                // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   VisualActor;                                       // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        IndicatorOrigin;                                   // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TMap<EPalMapObjectTreasureGradeType, class UClass*> VisualMap;                                   // 0x0490(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void TriggerOpen();
-	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void ReceiveBeginPlay();
-	void OnNotifiedStartOpen();
-	void OnFinishOpenVisual();
-	void ExecuteUbergraph_BP_MapObject_TreasureBox(int32 EntryPoint);
 	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void ExecuteUbergraph_BP_MapObject_TreasureBox(int32 EntryPoint);
+	void OnFinishOpenVisual();
+	void OnNotifiedStartOpen();
+	void ReceiveBeginPlay();
+	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void TriggerOpen();
 
 public:
 	static class UClass* StaticClass()

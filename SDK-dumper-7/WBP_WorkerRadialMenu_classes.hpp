@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "WBP_CommonRadialMenuBase_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
@@ -34,14 +34,14 @@ public:
 	bool                                          IsPalDead;                                         // 0x0660(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void OnInitialized();
 	void Construct();
-	void SetupContents();
-	void OnSelectedMenu_Internal(int32 Index_0);
-	void OnClosed();
-	void ExecuteUbergraph_WBP_WorkerRadialMenu(int32 EntryPoint);
 	void CreateContent(const class FText& Text, class UWBP_WorkerRadialMenuContent_C** createdWidget);
+	void ExecuteUbergraph_WBP_WorkerRadialMenu(int32 EntryPoint);
+	void OnClosed();
+	void OnInitialized();
+	void OnSelectedMenu_Internal(int32 Index_0);
+	void SetupContents();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 public:
 	static class UClass* StaticClass()

@@ -17,24 +17,65 @@
 namespace SDK
 {
 
-// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.RegisterItemIconWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.ExecuteUbergraph_WBP_PalCommonItemSlot
+// (Final, UbergraphFunction)
 // Parameters:
-// class UWBP_PalItemIconBase_C**          IconWidget                                             (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalCommonItemSlot_C::RegisterItemIconWidget(class UWBP_PalItemIconBase_C** IconWidget)
+void UWBP_PalCommonItemSlot_C::ExecuteUbergraph_WBP_PalCommonItemSlot(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "RegisterItemIconWidget");
+		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "ExecuteUbergraph_WBP_PalCommonItemSlot");
 
-	Params::WBP_PalCommonItemSlot_C_RegisterItemIconWidget Parms{};
+	Params::WBP_PalCommonItemSlot_C_ExecuteUbergraph_WBP_PalCommonItemSlot Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (IconWidget != nullptr)
-		*IconWidget = Parms.IconWidget;
+
+// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalCommonItemSlot_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.OnSetEmpty_Binded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCommonItemSlot_C::OnSetEmpty_Binded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "OnSetEmpty_Binded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.OnSetValidSlot_Binded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCommonItemSlot_C::OnSetValidSlot_Binded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "OnSetValidSlot_Binded");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,65 +99,24 @@ void UWBP_PalCommonItemSlot_C::OnUpdateSlot_Binded(class UPalItemSlot* TargetSlo
 }
 
 
-// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.OnSetValidSlot_Binded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCommonItemSlot_C::OnSetValidSlot_Binded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "OnSetValidSlot_Binded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.OnSetEmpty_Binded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCommonItemSlot_C::OnSetEmpty_Binded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "OnSetEmpty_Binded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalCommonItemSlot_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.ExecuteUbergraph_WBP_PalCommonItemSlot
-// (Final, UbergraphFunction)
+// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.RegisterItemIconWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemIconBase_C**          IconWidget                                             (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalCommonItemSlot_C::ExecuteUbergraph_WBP_PalCommonItemSlot(int32 EntryPoint)
+void UWBP_PalCommonItemSlot_C::RegisterItemIconWidget(class UWBP_PalItemIconBase_C** IconWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "ExecuteUbergraph_WBP_PalCommonItemSlot");
+		Func = Class->GetFunction("WBP_PalCommonItemSlot_C", "RegisterItemIconWidget");
 
-	Params::WBP_PalCommonItemSlot_C_ExecuteUbergraph_WBP_PalCommonItemSlot Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_PalCommonItemSlot_C_RegisterItemIconWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (IconWidget != nullptr)
+		*IconWidget = Parms.IconWidget;
 }
 
 }

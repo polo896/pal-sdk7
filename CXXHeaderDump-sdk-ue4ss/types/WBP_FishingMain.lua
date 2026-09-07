@@ -6,6 +6,7 @@
 ---@field WBP_Fishing_Hit UWBP_Fishing_Hit_C
 ---@field WBP_Fishing_PowerGauge UWBP_Fishing_PowerGauge_C
 ---@field WBP_Fishing_ProgressGauge UWBP_Fishing_ProgressGauge_C
+---@field WBP_Fishing_Recommended UWBP_Fishing_Recommended_C
 ---@field WBP_Fishing_SelectBait UWBP_Fishing_SelectBait_C
 ---@field WBP_Ingame_Message UWBP_Ingame_Message_C
 ---@field WBP_Reticle_KeyGuide_Fishing UWBP_Reticle_KeyGuide_C
@@ -17,10 +18,14 @@
 ---@field HasBait boolean
 ---@field TextIdNoFishingBait FName
 ---@field TextIdBrokenRod FName
+---@field TextIdPalSkillAdviceFailed FName
 ---@field IsPlayingFeedBack boolean
 ---@field IsStartMinigame boolean
 ---@field InitProgress double
 ---@field IsEquipFishingRod boolean
+---@field TimerHandle_HideAdviceMessage FTimerHandle
+---@field FailedMessageTime double
+---@field HitFloatLocation FVector
 local UWBP_FishingMain_C = {}
 
 function UWBP_FishingMain_C:UpdateVisible() end
@@ -71,6 +76,12 @@ function UWBP_FishingMain_C:OnStartAim(BaitItemInfoList, SelectedIndex) end
 ---@param DifficultyType EPalFishingSpotDifficultyType
 function UWBP_FishingMain_C:OnChangeTargetSpot(DifficultyType) end
 function UWBP_FishingMain_C:OnFirstFishing() end
+---@param RecommendInfo FPalFishingRecommendInfo
+function UWBP_FishingMain_C:OnChangeTargetSpotRecommend(RecommendInfo) end
+function UWBP_FishingMain_C:OnFishingPalAdvice() end
+function UWBP_FishingMain_C:OnTimerEvent_HideAdviceMessage() end
+---@param IsAccept boolean
+function UWBP_FishingMain_C:OnChangeHitInput(IsAccept) end
 ---@param EntryPoint int32
 function UWBP_FishingMain_C:ExecuteUbergraph_WBP_FishingMain(EntryPoint) end
 

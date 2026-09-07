@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_BuildObject_WeaponFactory_Dirty_02.BP_BuildObject_WeaponFactory_Dirty_02_C.OnSetConcreteModel
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BuildObject_WeaponFactory_Dirty_02.BP_BuildObject_WeaponFactory_Dirty_02_C.ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02
+// (Final, UbergraphFunction)
 // Parameters:
-// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_WeaponFactory_Dirty_02_C::OnSetConcreteModel(class UPalMapObjectConcreteModelBase* Model)
+void ABP_BuildObject_WeaponFactory_Dirty_02_C::ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_WeaponFactory_Dirty_02_C", "OnSetConcreteModel");
+		Func = Class->GetFunction("BP_BuildObject_WeaponFactory_Dirty_02_C", "ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02");
 
-	Params::BP_BuildObject_WeaponFactory_Dirty_02_C_OnSetConcreteModel Parms{};
+	Params::BP_BuildObject_WeaponFactory_Dirty_02_C_ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02 Parms{};
 
-	Parms.Model = Model;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void ABP_BuildObject_WeaponFactory_Dirty_02_C::OnAvailable_BlueprintImpl()
 }
 
 
-// Function BP_BuildObject_WeaponFactory_Dirty_02.BP_BuildObject_WeaponFactory_Dirty_02_C.ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02
-// (Final, UbergraphFunction)
+// Function BP_BuildObject_WeaponFactory_Dirty_02.BP_BuildObject_WeaponFactory_Dirty_02_C.OnSetConcreteModel
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_WeaponFactory_Dirty_02_C::ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02(int32 EntryPoint)
+void ABP_BuildObject_WeaponFactory_Dirty_02_C::OnSetConcreteModel(class UPalMapObjectConcreteModelBase* Model)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_WeaponFactory_Dirty_02_C", "ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02");
+		Func = Class->GetFunction("BP_BuildObject_WeaponFactory_Dirty_02_C", "OnSetConcreteModel");
 
-	Params::BP_BuildObject_WeaponFactory_Dirty_02_C_ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02 Parms{};
+	Params::BP_BuildObject_WeaponFactory_Dirty_02_C_OnSetConcreteModel Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Model = Model;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

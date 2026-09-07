@@ -28,10 +28,10 @@ public:
 	class UPalWorkSlotHUDInfoUIModel*             UIModel;                                           // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetupUI();
-	void ReadyUIModel();
-	void OnSetup();
 	void ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus(int32 EntryPoint);
+	void OnSetup();
+	void ReadyUIModel();
+	void SetupUI();
 
 public:
 	static class UClass* StaticClass()

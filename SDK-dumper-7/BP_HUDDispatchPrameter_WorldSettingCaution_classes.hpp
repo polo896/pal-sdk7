@@ -19,13 +19,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_HUDDispatchPrameter_WorldSettingCaution.BP_HUDDispatchPrameter_WorldSettingCaution_C
-// 0x0210 (0x0248 - 0x0038)
+// 0x0218 (0x0250 - 0x0038)
 class UBP_HUDDispatchPrameter_WorldSettingCaution_C final : public UPalHUDDispatchParameterBase
 {
 public:
-	struct FPalOptionWorldSettings                CheckWorldSettings;                                // 0x0038(0x0208)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          bOutCanceled;                                      // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	E_PalWOrldSettingThresoldCautionDialogOpenType OpenType;                                         // 0x0241(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionWorldSettings                CheckWorldSettings;                                // 0x0038(0x0210)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bOutCanceled;                                      // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_PalWOrldSettingThresoldCautionDialogOpenType OpenType;                                         // 0x0249(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

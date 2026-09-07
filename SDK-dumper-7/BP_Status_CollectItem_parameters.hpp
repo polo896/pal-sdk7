@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "FPassiveSkillCollectItemLotteryData_structs.hpp"
 #include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FPassiveSkillCollectItemLotteryData_structs.hpp"
 
 
 namespace SDK::Params
@@ -42,16 +42,16 @@ public:
 DUMPER7_ASSERTS_BP_Status_CollectItem_C_AddItem;
 
 // Function BP_Status_CollectItem.BP_Status_CollectItem_C.AddLog_UseSkill
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct BP_Status_CollectItem_C_AddLog_UseSkill final
 {
 public:
 	class FName                                   CallFunc_Get_Name_Text_Id_SkillNameTextId;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x0008(0x0070)()
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0078(0x0018)()
-	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_AddLog_ReturnValue;                       // 0x0098(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x0008(0x0078)()
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0080(0x0018)()
+	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_AddLog_ReturnValue;                       // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Status_CollectItem_C_AddLog_UseSkill;
 

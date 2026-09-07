@@ -17,99 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.SendChat
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalChatUIControlOverlay_C::SendChat()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "SendChat");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalChatUIControlOverlay_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnResetFocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalChatUIControlOverlay_C::OnResetFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnResetFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCompletedChatInput
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ChangeChatCategory
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalChatUIControlOverlay_C::OnCompletedChatInput()
+void UWBP_PalChatUIControlOverlay_C::ChangeChatCategory()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnCompletedChatInput");
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "ChangeChatCategory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnClose
-// (Event, Protected, BlueprintEvent)
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalChatUIControlOverlay_C::OnClose()
+void UWBP_PalChatUIControlOverlay_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnClose");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCancel_ForPad
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalChatUIControlOverlay_C::OnCancel_ForPad()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnCancel_ForPad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.On Cancel Force Close
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalChatUIControlOverlay_C::On_Cancel_Force_Close()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "On Cancel Force Close");
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,29 +65,99 @@ void UWBP_PalChatUIControlOverlay_C::ExecuteUbergraph_WBP_PalChatUIControlOverla
 }
 
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.On Cancel Force Close
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalChatUIControlOverlay_C::Destruct()
+void UWBP_PalChatUIControlOverlay_C::On_Cancel_Force_Close()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "Destruct");
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "On Cancel Force Close");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ChangeChatCategory
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCancel_ForPad
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalChatUIControlOverlay_C::ChangeChatCategory()
+void UWBP_PalChatUIControlOverlay_C::OnCancel_ForPad()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "ChangeChatCategory");
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnCancel_ForPad");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnClose
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_PalChatUIControlOverlay_C::OnClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCompletedChatInput
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalChatUIControlOverlay_C::OnCompletedChatInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnCompletedChatInput");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnResetFocus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalChatUIControlOverlay_C::OnResetFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnResetFocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalChatUIControlOverlay_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.SendChat
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalChatUIControlOverlay_C::SendChat()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalChatUIControlOverlay_C", "SendChat");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

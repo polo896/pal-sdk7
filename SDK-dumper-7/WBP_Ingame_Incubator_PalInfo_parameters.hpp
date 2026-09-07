@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.Setup
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Ingame_Incubator_PalInfo_C_Setup final
-{
-public:
-	TArray<class FName>                           passiveList;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Incubator_PalInfo_C_Setup;
-
 // Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_Ingame_Incubator_PalInfo_C_ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo final
@@ -34,6 +25,15 @@ public:
 	TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> K2Node_MakeArray_Array;                         // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_WBP_Ingame_Incubator_PalInfo_C_ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo;
+
+// Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.Setup
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Ingame_Incubator_PalInfo_C_Setup final
+{
+public:
+	TArray<class FName>                           passiveList;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Incubator_PalInfo_C_Setup;
 
 }
 

@@ -125,6 +125,8 @@ local UWBP_PlayerUI_C = {}
 ---@param CriminalIndividualId FPalInstanceID
 ---@param CrimeIds TArray<FName>
 function UWBP_PlayerUI_C:CREATEDELEGATE_PROXYFUNCTION_0(CriminalIndividualId, CrimeIds) end
+---@param bIsSpotAiming boolean
+function UWBP_PlayerUI_C:OnChangeAimFishingSpot(bIsSpotAiming) end
 function UWBP_PlayerUI_C:FinalizeDiscord() end
 ---@param bIsSpeaking boolean
 function UWBP_PlayerUI_C:OnLocalSpeakingStatusChanged(bIsSpeaking) end

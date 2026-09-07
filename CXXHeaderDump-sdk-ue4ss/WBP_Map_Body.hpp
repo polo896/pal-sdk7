@@ -37,7 +37,7 @@ class UWBP_Map_Body_C : public UPalUserWidget
     void OnUnhoveredAnyIcon(class UWBP_WorldMap_IconBase_NoDesign_C* IconWidget);
     FWBP_Map_Body_COnClickedAnyIcon OnClickedAnyIcon;                                 // 0x0560 (size: 0x10)
     void OnClickedAnyIcon(class UWBP_WorldMap_IconBase_NoDesign_C* IconWidget);
-    TMap<UWBP_Map_IconPlayer_C*, APalPlayerState*> PlayerIconMaps;                    // 0x0570 (size: 0x50)
+    TMap<class UWBP_Map_IconPlayer_C*, class APalPlayerState*> PlayerIconMaps;        // 0x0570 (size: 0x50)
     FTimerHandle PlayerIconUpdateTimer;                                               // 0x05C0 (size: 0x8)
     double CanvasMaskMult;                                                            // 0x05C8 (size: 0x8)
     bool CursorOnMap;                                                                 // 0x05D0 (size: 0x1)
@@ -60,10 +60,11 @@ class UWBP_Map_Body_C : public UPalUserWidget
     int32 AnalogStickZoomStepPerSecond;                                               // 0x0638 (size: 0x4)
     FName MapName;                                                                    // 0x063C (size: 0x8)
 
+    void SetupZoomCache(int32 CacheStep);
     void GetWIndowCenterWorldLocation(FVector& WorldLocation);
     void SetEnableSkyIslandCloud(bool bEnableCloud);
     void GetMapScale(double& CurrentScale);
-    void AdjustZoomDefault();
+    void Adjust Zoom Default();
     void GetMapCanvasScalingSize(FVector2D& ScalingSize);
     void GetMapCanvasPosition(FVector2D& ScalingPosition);
     void GetCursorWorldLocation(FVector& WorldLocation);
@@ -81,7 +82,7 @@ class UWBP_Map_Body_C : public UPalUserWidget
     void Update Map Icons();
     void AdjustScrollForRespawn();
     void Adjust Scroll Local Player Position();
-    void Setup Player Icon(TArray<UWBP_Map_IconPlayer_C*>& PlayerIcons);
+    void Setup Player Icon(TArray<class UWBP_Map_IconPlayer_C*>& PlayerIcons);
     void Setup();
     void Add Icon By Location(class UWBP_WorldMap_IconBase_NoDesign_C* Widget, FVector WorldLocation, bool IgnoreMask, bool ToPriority, bool& added);
     FEventReply OnMouseButtonDown(FGeometry MyGeometry, const FPointerEvent& MouseEvent);

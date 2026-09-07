@@ -19,39 +19,39 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C
-// 0x0090 (0x0508 - 0x0478)
+// 0x0090 (0x0510 - 0x0480)
 class UWBP_RelicMenu_ForDisplay_C final : public UPalUIRelicMenu
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Buildup_Player_1_C*                WBP_Buildup_Player_1;                              // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPalCharacterStatusOperation*           StatusOperation;                                   // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          bRequesting;                                       // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bReplicated_Relic;                                 // 0x0491(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bReplicated_Status;                                // 0x0492(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bLastOperationSuccessed;                           // 0x0493(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_494[0x4];                                      // 0x0494(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalRelicType>                         LastRequestedRelicType;                            // 0x0498(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<EPalRelicType>                         WaitingSynsRelicType;                              // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class FName, int32>                      PreRankupStatusMap;                                // 0x04B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Buildup_Player_1_C*                WBP_Buildup_Player_1;                              // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPalCharacterStatusOperation*           StatusOperation;                                   // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          bRequesting;                                       // 0x0498(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bReplicated_Relic;                                 // 0x0499(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bReplicated_Status;                                // 0x049A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bLastOperationSuccessed;                           // 0x049B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49C[0x4];                                      // 0x049C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalRelicType>                         LastRequestedRelicType;                            // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<EPalRelicType>                         WaitingSynsRelicType;                              // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class FName, int32>                      PreRankupStatusMap;                                // 0x04C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void TryRequestRankup();
-	void TeardownEventBind();
-	void SetupEventBind();
-	void SetupCollectedRelics();
-	void Reset();
-	void OnUpdatedRelicNum(EPalRelicType Type, int32 NewNum);
-	void OnSetup();
-	void OnReceiveResult(EPalCharacterStatusOperationResult Result);
-	void On_Got_Status();
-	void GetLastRequestedRelicType(TArray<EPalRelicType>* OutRelicType);
-	void ExecuteUbergraph_WBP_RelicMenu_ForDisplay(int32 EntryPoint);
-	void Destruct();
-	void Construct();
-	void CheckCompleteSynchronize();
-	void BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature();
 	void BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature();
+	void BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature();
+	void CheckCompleteSynchronize();
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_RelicMenu_ForDisplay(int32 EntryPoint);
+	void GetLastRequestedRelicType(TArray<EPalRelicType>* OutRelicType);
+	void On_Got_Status();
+	void OnReceiveResult(EPalCharacterStatusOperationResult Result);
+	void OnSetup();
+	void OnUpdatedRelicNum(EPalRelicType Type, int32 NewNum);
+	void Reset();
+	void SetupCollectedRelics();
+	void SetupEventBind();
+	void TeardownEventBind();
+	void TryRequestRankup();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

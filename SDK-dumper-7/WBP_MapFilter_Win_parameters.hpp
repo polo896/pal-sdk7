@@ -17,15 +17,35 @@
 namespace SDK::Params
 {
 
-// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ChangeFilter
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_MapFilter_Win_C_ChangeFilter final
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.Setup
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_MapFilter_Win_C_Setup final
 {
 public:
-	EPalLocationType                              LocationType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnable;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSet<EPalLocationType>                        Filter;                                            // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalLocationType>                      CallFunc_Map_Keys_Keys;                            // 0x0060(0x0010)(ReferenceParm)
+	class UWBP_MapFilter_Content_C*               CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalLocationType                              CallFunc_Array_Get_Item_1;                         // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ChangeFilter;
+DUMPER7_ASSERTS_WBP_MapFilter_Win_C_Setup;
+
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ForceFTEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MapFilter_Win_C_ForceFTEnable final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ForceFTEnable;
 
 // Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ExecuteUbergraph_WBP_MapFilter_Win
 // 0x00B0 (0x00B0 - 0x0000)
@@ -70,14 +90,15 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ExecuteUbergraph_WBP_MapFilter_Win;
 
-// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ForceFTEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MapFilter_Win_C_ForceFTEnable final
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ChangeFilter
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_MapFilter_Win_C_ChangeFilter final
 {
 public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalLocationType                              LocationType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnable;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ForceFTEnable;
+DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ChangeFilter;
 
 }
 

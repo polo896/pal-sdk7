@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BuildObject_WeaponFactory_Dirty_02.BP_BuildObject_WeaponFactory_Dirty_02_C.OnSetConcreteModel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BuildObject_WeaponFactory_Dirty_02_C_OnSetConcreteModel final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObject_WeaponFactory_Dirty_02_C_OnSetConcreteModel;
-
 // Function BP_BuildObject_WeaponFactory_Dirty_02.BP_BuildObject_WeaponFactory_Dirty_02_C.ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02
 // 0x0020 (0x0020 - 0x0000)
 struct BP_BuildObject_WeaponFactory_Dirty_02_C_ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02 final
@@ -34,6 +25,15 @@ public:
 	class UPalMapObjectConcreteModelBase*         K2Node_CustomEvent_Model;                          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BuildObject_WeaponFactory_Dirty_02_C_ExecuteUbergraph_BP_BuildObject_WeaponFactory_Dirty_02;
+
+// Function BP_BuildObject_WeaponFactory_Dirty_02.BP_BuildObject_WeaponFactory_Dirty_02_C.OnSetConcreteModel
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BuildObject_WeaponFactory_Dirty_02_C_OnSetConcreteModel final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObject_WeaponFactory_Dirty_02_C_OnSetConcreteModel;
 
 }
 

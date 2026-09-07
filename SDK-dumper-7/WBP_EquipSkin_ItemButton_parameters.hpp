@@ -16,28 +16,32 @@
 namespace SDK::Params
 {
 
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.Setup
-// 0x000C (0x000C - 0x0000)
-struct WBP_EquipSkin_ItemButton_C_Setup final
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FName                                   SkinId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEquip;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_Setup;
+DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.SetSelect
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_EquipSkin_ItemButton_C_SetSelect final
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          IsSelected;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_SetSelect;
+DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.ExecuteUbergraph_WBP_EquipSkin_ItemButton
 // 0x0020 (0x0020 - 0x0000)
@@ -52,32 +56,28 @@ public:
 };
 DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_ExecuteUbergraph_WBP_EquipSkin_ItemButton;
 
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.SetSelect
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_EquipSkin_ItemButton_C_SetSelect final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsSelected;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_SetSelect;
 
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.Setup
+// 0x000C (0x000C - 0x0000)
+struct WBP_EquipSkin_ItemButton_C_Setup final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SkinId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEquip;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_EquipSkin_ItemButton.WBP_EquipSkin_ItemButton_C.BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_BndEvt__WBP_EquipSkin_ItemButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_EquipSkin_ItemButton_C_Setup;
 
 }
 

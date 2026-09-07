@@ -17,26 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.CreateNewIcon
+// Function WBP_Research_Tree.WBP_Research_Tree_C.CalcNodeSpace
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalUIGuildLabResearchInfo&ResearchInfo                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-// class UWBP_Research_TreeIcon_C*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const TMap<class FName, struct FTreeNodeData>&TreeNodeMap                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FName                             CurrentNode                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  RequireSpace                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWBP_Research_TreeIcon_C* UWBP_Research_Tree_C::CreateNewIcon(const struct FPalUIGuildLabResearchInfo& ResearchInfo)
+void UWBP_Research_Tree_C::CalcNodeSpace(const TMap<class FName, struct FTreeNodeData>& TreeNodeMap, class FName CurrentNode, int32* RequireSpace)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "CreateNewIcon");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "CalcNodeSpace");
 
-	Params::WBP_Research_Tree_C_CreateNewIcon Parms{};
+	Params::WBP_Research_Tree_C_CalcNodeSpace Parms{};
 
-	Parms.ResearchInfo = std::move(ResearchInfo);
+	Parms.TreeNodeMap = std::move(TreeNodeMap);
+	Parms.CurrentNode = CurrentNode;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (RequireSpace != nullptr)
+		*RequireSpace = Parms.RequireSpace;
 }
 
 
@@ -68,133 +71,89 @@ void UWBP_Research_Tree_C::CalcParentNodeMaxRank(TMap<class FName, struct FTreeN
 }
 
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.CalcNodeSpace
+// Function WBP_Research_Tree.WBP_Research_Tree_C.CreateNewIcon
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const TMap<class FName, struct FTreeNodeData>&TreeNodeMap                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FName                             CurrentNode                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  RequireSpace                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalUIGuildLabResearchInfo&ResearchInfo                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UWBP_Research_TreeIcon_C*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_Tree_C::CalcNodeSpace(const TMap<class FName, struct FTreeNodeData>& TreeNodeMap, class FName CurrentNode, int32* RequireSpace)
+class UWBP_Research_TreeIcon_C* UWBP_Research_Tree_C::CreateNewIcon(const struct FPalUIGuildLabResearchInfo& ResearchInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "CalcNodeSpace");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "CreateNewIcon");
 
-	Params::WBP_Research_Tree_C_CalcNodeSpace Parms{};
+	Params::WBP_Research_Tree_C_CreateNewIcon Parms{};
 
-	Parms.TreeNodeMap = std::move(TreeNodeMap);
-	Parms.CurrentNode = CurrentNode;
+	Parms.ResearchInfo = std::move(ResearchInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (RequireSpace != nullptr)
-		*RequireSpace = Parms.RequireSpace;
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.TreeConstruct
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Research_Tree.WBP_Research_Tree_C.Draw Node Line
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const TArray<struct FPalUIGuildLabResearchInfo>&Researchs                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// EPalWorkSuitability                     Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NodeID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FTreeNodeData&             NodeData                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_Research_Tree_C::TreeConstruct(const TArray<struct FPalUIGuildLabResearchInfo>& Researchs, EPalWorkSuitability Type)
+void UWBP_Research_Tree_C::Draw_Node_Line(class FName NodeID, const struct FTreeNodeData& NodeData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "TreeConstruct");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "Draw Node Line");
 
-	Params::WBP_Research_Tree_C_TreeConstruct Parms{};
+	Params::WBP_Research_Tree_C_Draw_Node_Line Parms{};
 
-	Parms.Researchs = std::move(Researchs);
-	Parms.Type = Type;
+	Parms.NodeID = NodeID;
+	Parms.NodeData = std::move(NodeData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.ReleaseCurrentPin
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Research_Tree_C::ReleaseCurrentPin()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "ReleaseCurrentPin");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Research_Tree.WBP_Research_Tree_C.OnResearchUnhovered
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Research_Tree_C::OnResearchUnhovered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "OnResearchUnhovered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Research_Tree.WBP_Research_Tree_C.OnResearchSelect
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Research_Tree.WBP_Research_Tree_C.ExecuteUbergraph_WBP_Research_Tree
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_Tree_C::OnResearchSelect(class FName ResearchId)
+void UWBP_Research_Tree_C::ExecuteUbergraph_WBP_Research_Tree(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "OnResearchSelect");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "ExecuteUbergraph_WBP_Research_Tree");
 
-	Params::WBP_Research_Tree_C_OnResearchSelect Parms{};
+	Params::WBP_Research_Tree_C_ExecuteUbergraph_WBP_Research_Tree Parms{};
 
-	Parms.ResearchId = ResearchId;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.OnResearchHovered
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Research_Tree.WBP_Research_Tree_C.GetFocusTarget
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         FocusTarget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_Tree_C::OnResearchHovered(class FName ResearchId)
+void UWBP_Research_Tree_C::GetFocusTarget(class UWidget** FocusTarget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "OnResearchHovered");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "GetFocusTarget");
 
-	Params::WBP_Research_Tree_C_OnResearchHovered Parms{};
-
-	Parms.ResearchId = ResearchId;
+	Params::WBP_Research_Tree_C_GetFocusTarget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function WBP_Research_Tree.WBP_Research_Tree_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Research_Tree_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
+	if (FocusTarget != nullptr)
+		*FocusTarget = Parms.FocusTarget;
 }
 
 
@@ -223,64 +182,105 @@ struct FEventReply UWBP_Research_Tree_C::OnAnalogValueChanged(const struct FGeom
 }
 
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.GetFocusTarget
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         FocusTarget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Research_Tree.WBP_Research_Tree_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Research_Tree_C::GetFocusTarget(class UWidget** FocusTarget)
+void UWBP_Research_Tree_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "GetFocusTarget");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "OnInitialized");
 
-	Params::WBP_Research_Tree_C_GetFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FocusTarget != nullptr)
-		*FocusTarget = Parms.FocusTarget;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.ExecuteUbergraph_WBP_Research_Tree
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Research_Tree.WBP_Research_Tree_C.OnResearchHovered
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_Tree_C::ExecuteUbergraph_WBP_Research_Tree(int32 EntryPoint)
+void UWBP_Research_Tree_C::OnResearchHovered(class FName ResearchId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "ExecuteUbergraph_WBP_Research_Tree");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "OnResearchHovered");
 
-	Params::WBP_Research_Tree_C_ExecuteUbergraph_WBP_Research_Tree Parms{};
+	Params::WBP_Research_Tree_C_OnResearchHovered Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ResearchId = ResearchId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Research_Tree.WBP_Research_Tree_C.Draw Node Line
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Research_Tree.WBP_Research_Tree_C.OnResearchSelect
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             NodeID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FTreeNodeData&             NodeData                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_Tree_C::Draw_Node_Line(class FName NodeID, const struct FTreeNodeData& NodeData)
+void UWBP_Research_Tree_C::OnResearchSelect(class FName ResearchId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Tree_C", "Draw Node Line");
+		Func = Class->GetFunction("WBP_Research_Tree_C", "OnResearchSelect");
 
-	Params::WBP_Research_Tree_C_Draw_Node_Line Parms{};
+	Params::WBP_Research_Tree_C_OnResearchSelect Parms{};
 
-	Parms.NodeID = NodeID;
-	Parms.NodeData = std::move(NodeData);
+	Parms.ResearchId = ResearchId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Research_Tree.WBP_Research_Tree_C.OnResearchUnhovered
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Research_Tree_C::OnResearchUnhovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_Tree_C", "OnResearchUnhovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Research_Tree.WBP_Research_Tree_C.ReleaseCurrentPin
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Research_Tree_C::ReleaseCurrentPin()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_Tree_C", "ReleaseCurrentPin");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Research_Tree.WBP_Research_Tree_C.TreeConstruct
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<struct FPalUIGuildLabResearchInfo>&Researchs                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// EPalWorkSuitability                     Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Research_Tree_C::TreeConstruct(const TArray<struct FPalUIGuildLabResearchInfo>& Researchs, EPalWorkSuitability Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_Tree_C", "TreeConstruct");
+
+	Params::WBP_Research_Tree_C_TreeConstruct Parms{};
+
+	Parms.Researchs = std::move(Researchs);
+	Parms.Type = Type;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

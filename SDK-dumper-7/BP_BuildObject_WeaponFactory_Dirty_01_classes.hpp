@@ -17,11 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_BuildObject_WeaponFactory_Dirty_01.BP_BuildObject_WeaponFactory_Dirty_01_C
-// 0x0010 (0x07B0 - 0x07A0)
+// 0x0010 (0x07D0 - 0x07C0)
 class ABP_BuildObject_WeaponFactory_Dirty_01_C final : public ABP_BuildObject_WeaponFactoryBase_C
 {
 public:
-	class USceneComponent*                        Root_0;                                            // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectItemConverterSoundComponent* PalMapObjectItemConverterSound;                  // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Root_0;                                            // 0x07C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

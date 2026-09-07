@@ -28,14 +28,17 @@
 ---@field ChangeMapActionHandle FPalUIActionBindData
 ---@field bInitializedMap boolean
 ---@field FinteringAction FPalDataTableRowName_UIInputAction
+---@field OnRequestCloseForMaiMenu FWBP_Paldex_ForDisplay_COnRequestCloseForMaiMenu
 local UWBP_Paldex_ForDisplay_C = {}
 
+function UWBP_Paldex_ForDisplay_C:FocusLastDisplayedCharacterOrTop() end
+function UWBP_Paldex_ForDisplay_C:OnCancelAction_Override() end
 ---@param bIgnoreFocus boolean
 function UWBP_Paldex_ForDisplay_C:FilteringInternal(bIgnoreFocus) end
 ---@param Param UPalHUDDispatchParameterBase
 function UWBP_Paldex_ForDisplay_C:OnClosedFilteringSettings(Param) end
 function UWBP_Paldex_ForDisplay_C:OpenFilteringWindow() end
-function UWBP_Paldex_ForDisplay_C:OnInputAction_FIltering() end
+function UWBP_Paldex_ForDisplay_C:OnInputAction_ToggleFilteringMode() end
 function UWBP_Paldex_ForDisplay_C:OnInputAction_ChangeMap() end
 ---@param IsEnableFlag boolean
 function UWBP_Paldex_ForDisplay_C:SetEnableRandomCryAction(IsEnableFlag) end
@@ -73,8 +76,11 @@ function UWBP_Paldex_ForDisplay_C:BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Nod
 ---@param CharacterID FName
 function UWBP_Paldex_ForDisplay_C:DelayScrollToCharacterID(CharacterID) end
 function UWBP_Paldex_ForDisplay_C:BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature() end
+---@param SearchWord FText
+function UWBP_Paldex_ForDisplay_C:BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_4_OnCommittedSearchWord__DelegateSignature(SearchWord) end
 ---@param EntryPoint int32
 function UWBP_Paldex_ForDisplay_C:ExecuteUbergraph_WBP_Paldex_ForDisplay(EntryPoint) end
+function UWBP_Paldex_ForDisplay_C:OnRequestCloseForMaiMenu__DelegateSignature() end
 function UWBP_Paldex_ForDisplay_C:OnAllNewFlagCleared__DelegateSignature() end
 
 

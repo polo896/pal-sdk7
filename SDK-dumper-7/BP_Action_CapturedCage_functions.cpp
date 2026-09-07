@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.OnEndAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_Action_CapturedCage_C::OnEndAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_CapturedCage_C", "OnEndAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.OnBeginAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_Action_CapturedCage_C::OnBeginAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_CapturedCage_C", "OnBeginAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.ExecuteUbergraph_BP_Action_CapturedCage
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void UBP_Action_CapturedCage_C::ExecuteUbergraph_BP_Action_CapturedCage(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.OnBeginAction
+// (Event, Public, BlueprintEvent)
+
+void UBP_Action_CapturedCage_C::OnBeginAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_CapturedCage_C", "OnBeginAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.OnEndAction
+// (Event, Public, BlueprintEvent)
+
+void UBP_Action_CapturedCage_C::OnEndAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_CapturedCage_C", "OnEndAction");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

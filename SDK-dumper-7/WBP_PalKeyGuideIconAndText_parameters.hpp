@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CommonUI_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params

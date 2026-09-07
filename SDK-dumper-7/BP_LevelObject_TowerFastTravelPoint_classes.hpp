@@ -18,35 +18,35 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C
-// 0x0080 (0x03F8 - 0x0378)
+// 0x0080 (0x0410 - 0x0390)
 class ABP_LevelObject_TowerFastTravelPoint_C : public APalLevelObjectUnlockableFastTravelPoint
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalSoundPlayerComponent*               PalSoundPlayer;                                    // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalLimitVolumeBoxComponent*            PalLimitVolumeBox;                                 // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Glow;                                              // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        WarpPoint;                                         // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        IndicatorOrigin;                                   // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_InteractableBox_C*                  BP_InteractableBox;                                // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh;                                              // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          BuildWorkableBounds;                               // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          CheckOverlapCollision;                             // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Root;                                              // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                         UnlockedGlowEffect;                                // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                         UnlockedFlashEffect;                               // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                          UnlockedSound;                                     // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 EmissionMaterialIndexArray;                        // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0390(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalSoundPlayerComponent*               PalSoundPlayer;                                    // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalLimitVolumeBoxComponent*            PalLimitVolumeBox;                                 // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Glow;                                              // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        WarpPoint;                                         // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        IndicatorOrigin;                                   // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_InteractableBox_C*                  BP_InteractableBox;                                // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh;                                              // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          BuildWorkableBounds;                               // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          CheckOverlapCollision;                             // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Root;                                              // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                         UnlockedGlowEffect;                                // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                         UnlockedFlashEffect;                               // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          UnlockedSound;                                     // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<int32>                                 EmissionMaterialIndexArray;                        // 0x0400(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ReceiveBeginPlay();
-	void OnUpdateUnlockState_Internal(bool IsUnlocked_0, bool IsSpawnUnlockefFlashEffect);
-	void OnUpdateUnlockState(class APalLevelObjectUnlockableFastTravelPoint* Object);
-	class USceneComponent* OnGetAkComponent();
-	void OnChangeWorldSettings(const struct FPalOptionWorldSettings& PrevSettings, const struct FPalOptionWorldSettings& NewSettings);
-	class UAkAudioEvent* GetUnlockAkAudioEvent();
-	void ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint(int32 EntryPoint);
 	void CheckUnuseFastTravel();
+	void ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint(int32 EntryPoint);
+	class UAkAudioEvent* GetUnlockAkAudioEvent();
+	void OnChangeWorldSettings(const struct FPalOptionWorldSettings& PrevSettings, const struct FPalOptionWorldSettings& NewSettings);
+	class USceneComponent* OnGetAkComponent();
+	void OnUpdateUnlockState(class APalLevelObjectUnlockableFastTravelPoint* Object);
+	void OnUpdateUnlockState_Internal(bool IsUnlocked_0, bool IsSpawnUnlockefFlashEffect);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

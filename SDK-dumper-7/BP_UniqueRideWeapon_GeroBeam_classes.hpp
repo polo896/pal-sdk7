@@ -45,22 +45,22 @@ public:
 	TMap<class AActor*, class UNiagaraComponent*> HitActorMap;                                       // 0x0748(0x0050)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay)
 
 public:
-	void BeamControl();
-	void CharacterHitEffectPos(class AActor* TargetActor, struct FVector* EffectPos);
-	void DeleteAllEffect();
-	void ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam(int32 EntryPoint);
-	struct FVector GetMuzzleLocation();
-	struct FRotator GetMuzzleRotation();
-	void Hit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, const struct FVector& HitLocation, int32 HitCount);
-	void OnCancellShooting();
-	void OnEndHit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent);
-	void OnHit_Damage(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, const struct FVector& HitLocation, int32 HitCount);
-	void OnPullTrigger();
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
-	void ShootingEnter();
 	void ShootingExit();
+	void ShootingEnter();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void OnPullTrigger();
+	void OnHit_Damage(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, const struct FVector& HitLocation, int32 HitCount);
+	void OnEndHit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent);
+	void OnCancellShooting();
+	void Hit(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, const struct FVector& HitLocation, int32 HitCount);
+	struct FRotator GetMuzzleRotation();
+	struct FVector GetMuzzleLocation();
+	void ExecuteUbergraph_BP_UniqueRideWeapon_GeroBeam(int32 EntryPoint);
+	void DeleteAllEffect();
+	void CharacterHitEffectPos(class AActor* TargetActor, struct FVector* EffectPos);
+	void BeamControl();
 
 public:
 	static class UClass* StaticClass()

@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_SkillEffect_DarkLaser_Charge.BP_SkillEffect_DarkLaser_Charge_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SkillEffect_DarkLaser_Charge_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_Charge_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_SkillEffect_DarkLaser_Charge.BP_SkillEffect_DarkLaser_Charge_C.ExecuteUbergraph_BP_SkillEffect_DarkLaser_Charge
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_SkillEffect_DarkLaser_Charge_C::ExecuteUbergraph_BP_SkillEffect_DarkLas
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkillEffect_DarkLaser_Charge.BP_SkillEffect_DarkLaser_Charge_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SkillEffect_DarkLaser_Charge_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_DarkLaser_Charge_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

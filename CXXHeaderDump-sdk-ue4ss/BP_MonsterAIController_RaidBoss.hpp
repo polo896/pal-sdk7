@@ -15,7 +15,7 @@ class ABP_MonsterAIController_RaidBoss_C : public ABP_MonsterAIControllerBase_C
     FGuid GetTargetBaseCampIDForRaidBoss();
     void GetTargetCampID(FGuid& campID);
     void SetTargetCampID(FGuid campID);
-    void Force Battle Startto Target For Raid Boss(class APalPlayerCharacter* Player, TArray<APalPlayerCharacter*>& AllPlayer);
+    void Force Battle Startto Target For Raid Boss(class APalPlayerCharacter* Player, TArray<class APalPlayerCharacter*>& AllPlayer);
     void ReceivePossess(class APawn* PossessedPawn);
     void カスタムイベント_1(class APalCharacter* InCharacter);
     void DeleteDeadBody(FPalDeadInfo DeadInfo);

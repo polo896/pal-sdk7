@@ -17,19 +17,102 @@
 namespace SDK
 {
 
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント_0
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalKillLogDisplayData&    DeathLogDisplayData                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.AnmEvent_End_ByTimer
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Notice_DeathAnnounce_C::カスタムイベント_0(const struct FPalKillLogDisplayData& DeathLogDisplayData)
+void UWBP_Notice_DeathAnnounce_C::AnmEvent_End_ByTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "カスタムイベント_0");
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "AnmEvent_End_ByTimer");
 
-	Params::WBP_Notice_DeathAnnounce_C_カスタムイベント_0 Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.AnmEvent_In_WithEndTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Notice_DeathAnnounce_C::AnmEvent_In_WithEndTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "AnmEvent_In_WithEndTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Notice_DeathAnnounce_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Display
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   bSuccess                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Notice_DeathAnnounce_C::Display(bool* bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "Display");
+
+	Params::WBP_Notice_DeathAnnounce_C_Display Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bSuccess != nullptr)
+		*bSuccess = Parms.bSuccess;
+}
+
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.ExecuteUbergraph_WBP_Notice_DeathAnnounce
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Notice_DeathAnnounce_C::ExecuteUbergraph_WBP_Notice_DeathAnnounce(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "ExecuteUbergraph_WBP_Notice_DeathAnnounce");
+
+	Params::WBP_Notice_DeathAnnounce_C_ExecuteUbergraph_WBP_Notice_DeathAnnounce Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnAddedDeathLog
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalKillLogDisplayData&    DeathLogDisplayData                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Notice_DeathAnnounce_C::OnAddedDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "OnAddedDeathLog");
+
+	Params::WBP_Notice_DeathAnnounce_C_OnAddedDeathLog Parms{};
 
 	Parms.DeathLogDisplayData = std::move(DeathLogDisplayData);
 
@@ -37,23 +120,31 @@ void UWBP_Notice_DeathAnnounce_C::カスタムイベント_0(const struct FPalKi
 }
 
 
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalKillLogDisplayData&    DeathLogDisplayData                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnEndCloseAnim
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Notice_DeathAnnounce_C::カスタムイベント(const struct FPalKillLogDisplayData& DeathLogDisplayData)
+void UWBP_Notice_DeathAnnounce_C::OnEndCloseAnim()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "カスタムイベント");
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "OnEndCloseAnim");
 
-	Params::WBP_Notice_DeathAnnounce_C_カスタムイベント Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DeathLogDisplayData = std::move(DeathLogDisplayData);
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Notice_DeathAnnounce_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -79,47 +170,19 @@ void UWBP_Notice_DeathAnnounce_C::Tick(const struct FGeometry& MyGeometry, float
 }
 
 
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Notice_DeathAnnounce_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnEndCloseAnim
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Notice_DeathAnnounce_C::OnEndCloseAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "OnEndCloseAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnAddedDeathLog
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FPalKillLogDisplayData&    DeathLogDisplayData                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_Notice_DeathAnnounce_C::OnAddedDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData)
+void UWBP_Notice_DeathAnnounce_C::カスタムイベント(const struct FPalKillLogDisplayData& DeathLogDisplayData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "OnAddedDeathLog");
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "カスタムイベント");
 
-	Params::WBP_Notice_DeathAnnounce_C_OnAddedDeathLog Parms{};
+	Params::WBP_Notice_DeathAnnounce_C_カスタムイベント Parms{};
 
 	Parms.DeathLogDisplayData = std::move(DeathLogDisplayData);
 
@@ -127,86 +190,23 @@ void UWBP_Notice_DeathAnnounce_C::OnAddedDeathLog(const struct FPalKillLogDispla
 }
 
 
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.ExecuteUbergraph_WBP_Notice_DeathAnnounce
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント_0
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalKillLogDisplayData&    DeathLogDisplayData                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_Notice_DeathAnnounce_C::ExecuteUbergraph_WBP_Notice_DeathAnnounce(int32 EntryPoint)
+void UWBP_Notice_DeathAnnounce_C::カスタムイベント_0(const struct FPalKillLogDisplayData& DeathLogDisplayData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "ExecuteUbergraph_WBP_Notice_DeathAnnounce");
+		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "カスタムイベント_0");
 
-	Params::WBP_Notice_DeathAnnounce_C_ExecuteUbergraph_WBP_Notice_DeathAnnounce Parms{};
+	Params::WBP_Notice_DeathAnnounce_C_カスタムイベント_0 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeathLogDisplayData = std::move(DeathLogDisplayData);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Display
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   bSuccess                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Notice_DeathAnnounce_C::Display(bool* bSuccess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "Display");
-
-	Params::WBP_Notice_DeathAnnounce_C_Display Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bSuccess != nullptr)
-		*bSuccess = Parms.bSuccess;
-}
-
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Notice_DeathAnnounce_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.AnmEvent_In_WithEndTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Notice_DeathAnnounce_C::AnmEvent_In_WithEndTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "AnmEvent_In_WithEndTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.AnmEvent_End_ByTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Notice_DeathAnnounce_C::AnmEvent_End_ByTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_DeathAnnounce_C", "AnmEvent_End_ByTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

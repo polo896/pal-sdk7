@@ -21,66 +21,66 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C
-// 0x00A0 (0x0518 - 0x0478)
+// 0x00A0 (0x0520 - 0x0480)
 class UWBP_IngameMenu_ChestManage_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCanvasPanel*                           Canvas_TargetContainer;                            // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Common_Inventory_C*                WBP_Common_Inventory;                              // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_ChestManage_TakeOut_C*  WBP_IngameMenu_ChestManage_TakeOut;                // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_IngameMenu_ItemSearchList_C*       WBP_IngameMenu_ItemSearchList;                     // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalInventoryModel_C*                InventoryModel;                                    // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnClickedQuickMoveButton;                          // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnClickedPreferenceButton;                         // 0x04C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UPalUIBaseCampItemDispenserModel*       DispenserModel;                                    // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          TakeOutPanelEnabled;                               // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D9[0x7];                                      // 0x04D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalUIActionBindData>           TakeOutBindedActions;                              // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          LastFocusListSlot;                                 // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Updateable;                                        // 0x04F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4F2[0x6];                                      // 0x04F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           UpdateableTimer;                                   // 0x04F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	bool                                          CurrentInFocusPath;                                // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ForceReset;                                        // 0x0501(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_502[0x6];                                      // 0x0502(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalItemSlotId>                 FillableSlotIds;                                   // 0x0508(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCanvasPanel*                           Canvas_TargetContainer;                            // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Common_Inventory_C*                WBP_Common_Inventory;                              // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_ChestManage_TakeOut_C*  WBP_IngameMenu_ChestManage_TakeOut;                // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_IngameMenu_ItemSearchList_C*       WBP_IngameMenu_ItemSearchList;                     // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalInventoryModel_C*                InventoryModel;                                    // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnClickedQuickMoveButton;                          // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnClickedPreferenceButton;                         // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UPalUIBaseCampItemDispenserModel*       DispenserModel;                                    // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          TakeOutPanelEnabled;                               // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E1[0x7];                                      // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalUIActionBindData>           TakeOutBindedActions;                              // 0x04E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          LastFocusListSlot;                                 // 0x04F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Updateable;                                        // 0x04F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4FA[0x6];                                      // 0x04FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           UpdateableTimer;                                   // 0x0500(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          CurrentInFocusPath;                                // 0x0508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ForceReset;                                        // 0x0509(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_50A[0x6];                                      // 0x050A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalItemSlotId>                 FillableSlotIds;                                   // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void UpdateInventorySlot(class UWBP_PalItemSlotButtonBase_C* Slot_0, const TArray<class FName>& ItemList);
-	void UpdateInventoryGreyout(class UPalItemSlot* Slot_0);
-	void Unbind();
-	void Setup_Take_Out(const struct FPalItemAndNum& ItemAndNum);
-	void Setup(class UBP_PalInventoryModel_C* InventoryModel_0, class UPalUIBaseCampItemDispenserModel* DispenserModel_0);
-	void Reset_Focus(bool TryFocusItemList);
-	void Refill();
-	void OnTakeOutClose();
-	void OnSetup();
-	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnClose();
-	void OnCancelAction();
-	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
-	void On_Camp_Item_Stack_Info_Update(class UPalUIBaseCampItemDispenserModel* Model);
-	void InputMethodChanged(ECommonInputType InputType);
-	void GetItemCount64InBaseCamp(const struct FPalItemAndNum& ItemAndNum, int64* Num);
-	void GetInventoryTopFocustTarget(class UWidget** FocusTarget);
-	void GetInventoryLastHoveredFocusTarget(class UWidget** Widget);
-	void FocusToFilterButton();
-	void ExecuteUbergraph_WBP_IngameMenu_ChestManage(int32 EntryPoint);
-	void EnableUpdate();
-	void Destruct();
-	class UWidget* CustomNavi_ToInventorySlot(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToCloseButton(EUINavigation Navigation_0);
-	void Construct();
-	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_6_OnSlotHovered__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature(const struct FPalItemId& TakeOutId, int64 TakeOutCount);
-	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_2_OnTakeOutClosed__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* SlotButton);
-	void BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_12_OnClickedInventorySortButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
 	void BndEvt__WBP_IngameMenu_Chest_WBP_Menu_btn_K2Node_ComponentBoundEvent_7_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
+	void BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_12_OnClickedInventorySortButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* SlotButton);
+	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_2_OnTakeOutClosed__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature(const struct FPalItemId& TakeOutId, int64 TakeOutCount);
+	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
+	void BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_6_OnSlotHovered__DelegateSignature();
+	void Construct();
+	class UWidget* CustomNavi_ToCloseButton(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToInventorySlot(EUINavigation Navigation_0);
+	void Destruct();
+	void EnableUpdate();
+	void ExecuteUbergraph_WBP_IngameMenu_ChestManage(int32 EntryPoint);
+	void FocusToFilterButton();
+	void GetInventoryLastHoveredFocusTarget(class UWidget** Widget);
+	void GetInventoryTopFocustTarget(class UWidget** FocusTarget);
+	void GetItemCount64InBaseCamp(const struct FPalItemAndNum& ItemAndNum, int64* Num);
+	void InputMethodChanged(ECommonInputType InputType);
+	void On_Camp_Item_Stack_Info_Update(class UPalUIBaseCampItemDispenserModel* Model);
+	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnCancelAction();
+	void OnClose();
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnSetup();
+	void OnTakeOutClose();
+	void Refill();
+	void Reset_Focus(bool TryFocusItemList);
+	void Setup(class UBP_PalInventoryModel_C* InventoryModel_0, class UPalUIBaseCampItemDispenserModel* DispenserModel_0);
+	void Setup_Take_Out(const struct FPalItemAndNum& ItemAndNum);
+	void Unbind();
+	void UpdateInventoryGreyout(class UPalItemSlot* Slot_0);
+	void UpdateInventorySlot(class UWBP_PalItemSlotButtonBase_C* Slot_0, const TArray<class FName>& ItemList);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -17,37 +17,59 @@
 namespace SDK
 {
 
-// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.OnCloseTimerEnd
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.AnmEvent_End
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngamePlaceName_C::OnCloseTimerEnd()
+void UWBP_IngamePlaceName_C::AnmEvent_End()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngamePlaceName_C", "OnCloseTimerEnd");
+		Func = Class->GetFunction("WBP_IngamePlaceName_C", "AnmEvent_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.ExecuteUbergraph_WBP_IngamePlaceName
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.AnmEvent_Start
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngamePlaceName_C::ExecuteUbergraph_WBP_IngamePlaceName(int32 EntryPoint)
+void UWBP_IngamePlaceName_C::AnmEvent_Start()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngamePlaceName_C", "ExecuteUbergraph_WBP_IngamePlaceName");
+		Func = Class->GetFunction("WBP_IngamePlaceName_C", "AnmEvent_Start");
 
-	Params::WBP_IngamePlaceName_C_ExecuteUbergraph_WBP_IngamePlaceName Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngamePlaceName_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngamePlaceName_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.DelayClose_Exp
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngamePlaceName_C::DelayClose_Exp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngamePlaceName_C", "DelayClose_Exp");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,57 +93,35 @@ void UWBP_IngamePlaceName_C::Display_Region(class FName RegionNameID)
 }
 
 
-// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.DelayClose_Exp
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.ExecuteUbergraph_WBP_IngamePlaceName
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngamePlaceName_C::DelayClose_Exp()
+void UWBP_IngamePlaceName_C::ExecuteUbergraph_WBP_IngamePlaceName(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngamePlaceName_C", "DelayClose_Exp");
+		Func = Class->GetFunction("WBP_IngamePlaceName_C", "ExecuteUbergraph_WBP_IngamePlaceName");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_IngamePlaceName_C_ExecuteUbergraph_WBP_IngamePlaceName Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.OnCloseTimerEnd
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngamePlaceName_C::Construct()
+void UWBP_IngamePlaceName_C::OnCloseTimerEnd()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngamePlaceName_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.AnmEvent_Start
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngamePlaceName_C::AnmEvent_Start()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngamePlaceName_C", "AnmEvent_Start");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngamePlaceName.WBP_IngamePlaceName_C.AnmEvent_End
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngamePlaceName_C::AnmEvent_End()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngamePlaceName_C", "AnmEvent_End");
+		Func = Class->GetFunction("WBP_IngamePlaceName_C", "OnCloseTimerEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

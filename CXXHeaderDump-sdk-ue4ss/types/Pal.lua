@@ -1432,6 +1432,7 @@ function APalCharacter:SetActiveActor(Active) end
 function APalCharacter:RPCDummy() end
 function APalCharacter:RollingDelegate__DelegateSignature() end
 function APalCharacter:ResetTickInterval() end
+function APalCharacter:ResetFacialOnRevive_ToAll() end
 ---@param Montage UAnimMontage
 ---@param PlayRate float
 function APalCharacter:RequestPlayCosmeticMontage_ToServer(Montage, PlayRate) end
@@ -1565,6 +1566,8 @@ function APalCharacter:ChangeTalkModeFlag_ToAll(IsTalk) end
 function APalCharacter:ChangeBattleModeFlag_ToAll(IsBattle) end
 ---@param IsBattle boolean
 function APalCharacter:ChangeBattleModeFlag(IsBattle) end
+---@return boolean
+function APalCharacter:CancelDeathActionOnRevive() end
 function APalCharacter:BroadcastOnCompleteInitializeParameter() end
 ---@param Priority EPalCharacterCompleteDelegatePriority
 ---@param Event FBindOnCompleteInitializeParameterDelegateEvent
@@ -1626,12 +1629,16 @@ local APalCullVolume_VisibleOnlyInside = {}
 ---@field bCanSkip boolean
 ---@field bMuteSE boolean
 ---@field bMuteAllAudio boolean
+---@field bSuppressGameplayBGM boolean
+---@field bSuppressGameplayBGMOnFinish boolean
+---@field IgnoreMuteBusSet TSet<EPalAudioBus>
 ---@field bFadeOutAndHoldOnFinish boolean
 ---@field FinishFadeOutTime float
 ---@field bRestoreSkyCreatorOnFinish boolean
 ---@field bHoldMuteOnFinish boolean
 ---@field CustomUIClass TSubclassOf<UPalUserWidgetOverlayUI>
 ---@field bHideNearbyCharacters boolean
+---@field bHideNearbyMapObjects boolean
 ---@field HideActorRadius float
 ---@field bHideAllBuildObjects boolean
 ---@field CutsceneBaseLocation FVector
@@ -1692,6 +1699,8 @@ function APalCutsceneHideVolume:OnSphereEndOverlap(OverlappedComp, OtherActor, O
 ---@param bFromSweep boolean
 ---@param SweepResult FHitResult
 function APalCutsceneHideVolume:OnSphereBeginOverlap(OverlappedComp, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult) end
+---@param NewGlider APalGliderObject
+function APalCutsceneHideVolume:OnGliderSpawned(NewGlider) end
 ---@param InRadius float
 ---@param bEnableOverlapCapture boolean
 function APalCutsceneHideVolume:Initialize(InRadius, bEnableOverlapCapture) end
@@ -2581,6 +2590,8 @@ local APalGameState = {}
 ---@field OnRecievedChatMessageDelegate FPalGameStateInGameOnRecievedChatMessageDelegate
 ---@field OnRecievedServerNoticeDelegate FPalGameStateInGameOnRecievedServerNoticeDelegate
 ---@field SaveConfigCategoryName FString
+---@field FEndTrialDelegate FPalGameStateInGameFEndTrialDelegate
+---@field TrialTimerHandle FTimerHandle
 local APalGameStateInGame = {}
 
 ---@param InZ float
@@ -2597,8 +2608,11 @@ function APalGameStateInGame:OnRep_BaseCampReplicator() end
 function APalGameStateInGame:OnRecievedServerNoticeDelegate__DelegateSignature(NoticeMessage) end
 ---@param Message FPalChatMessage
 function APalGameStateInGame:OnRecievedChatMessageDelegate__DelegateSignature(Message) end
+function APalGameStateInGame:OnOverTrialTime() end
 ---@param PlayerState APalPlayerState
 function APalGameStateInGame:OnCompleteSyncAllFromServer_InClient(PlayerState) end
+---@return boolean
+function APalGameStateInGame:HasTrialEnded() end
 ---@return FString
 function APalGameStateInGame:GetWorldSaveDirectoryName() end
 ---@return FString
@@ -2606,7 +2620,10 @@ function APalGameStateInGame:GetWorldName() end
 ---@return float
 function APalGameStateInGame:GetServerFrameTime() end
 ---@return int32
+function APalGameStateInGame:GetRemainTrialTimeSecond() end
+---@return int32
 function APalGameStateInGame:GetMaxPlayerNum() end
+function APalGameStateInGame:EndTrial__DelegateSignature() end
 ---@param NoticeMessage FString
 function APalGameStateInGame:BroadcastServerNotice(NoticeMessage) end
 ---@param ChatMessage FPalChatMessage
@@ -2726,6 +2743,11 @@ function APalGuildInfo:OnRep_Guild(OldValue) end
 ---@field SoundPlayer UPalSoundPlayer
 ---@field GameMenuLayerTagOrder TArray<FGameplayTag>
 ---@field LayerHideFlagMap TMap<FGameplayTag, FFlagContainer>
+---@field TrialTimerWidgetClass TSubclassOf<UPalUserWidget>
+---@field TrialEndSplashWidgetClass TSubclassOf<UUserWidget>
+---@field TrialTimerWidget UPalUserWidget
+---@field TrialEndSplashWidget UUserWidget
+---@field BoundTrialGameState APalGameStateInGame
 local APalHUDInGame = {}
 
 function APalHUDInGame:TickWorldHUDs() end
@@ -2741,6 +2763,7 @@ function APalHUDInGame:RemoveHUD(ID) end
 ---@return FGuid
 function APalHUDInGame:PushWidgetStackableUI(WidgetClass, Parameter) end
 function APalHUDInGame:OnKeyConfigChanged() end
+function APalHUDInGame:OnEndTrialGame() end
 ---@param bIsFocused boolean
 function APalHUDInGame:OnApplicationActivationStateChanged(bIsFocused) end
 ---@param InputMode ECommonInputMode
@@ -3338,6 +3361,8 @@ function APalLevelObject_LockGimmickMiniGame:OnMiniGameComplete(Parameter) end
 ---@field GameStartServerTime float
 ---@field TimeLimitSeconds float
 ---@field TimeoutTeleportDelaySeconds float
+---@field CaptureWaitRecheckSeconds float
+---@field MaxCaptureHoldSeconds float
 ---@field OnGameStateChangedDelegate FPalLevelObject_LockGimmickPalFightOnGameStateChangedDelegate
 ---@field OnEnemyCountChangedDelegate FPalLevelObject_LockGimmickPalFightOnEnemyCountChangedDelegate
 ---@field RemainingEnemyCount int32
@@ -3385,8 +3410,6 @@ function APalLevelObject_LockGimmickPalFight:OnLightOrbArrived() end
 ---@param NewState EPalFightGameState
 ---@param OldState EPalFightGameState
 function APalLevelObject_LockGimmickPalFight:OnGameStateChanged(NewState, OldState) end
----@param IndividualParameter UPalIndividualCharacterParameter
-function APalLevelObject_LockGimmickPalFight:OnCreatedIndividualParameter(IndividualParameter) end
 ---@param Player APalPlayerCharacter
 ---@param Notify EPalFightUINotify
 function APalLevelObject_LockGimmickPalFight:Multicast_NotifyUI(Player, Notify) end
@@ -3930,6 +3953,7 @@ function APalNPCCampSpawnerBase:CalcRemainDespawnTime(CampStatus) end
 ---@field Ignore_DistanceLocationReset boolean
 ---@field Ignore_FarCheck boolean
 ---@field bDoSpawnedTick boolean
+---@field RequestedAdditionalCellWaitTimeoutSeconds float
 ---@field SpawnRadiusType EPalSpawnRadiusType
 ---@field bUseDirectionalSpawnCheck boolean
 ---@field MinMoveSpeedForDirectionalSpawn float
@@ -4768,7 +4792,8 @@ function APalPlayerController:ShooterComponent_NotifyBulletItemId_ToServer(Shoot
 ---@param ID int32
 ---@param IsShooting boolean
 ---@param bCanShootOnRelease boolean
-function APalPlayerController:ShooterComponent_ChangeIsShooting_ToServer(Shooter, ID, IsShooting, bCanShootOnRelease) end
+---@param bRequestedThrowObject boolean
+function APalPlayerController:ShooterComponent_ChangeIsShooting_ToServer(Shooter, ID, IsShooting, bCanShootOnRelease, bRequestedThrowObject) end
 ---@param Shooter UPalShooterComponent
 ---@param ID int32
 ---@param IsShooting boolean
@@ -5171,6 +5196,8 @@ function APalPlayerController:NotifyFailedStartRaidByOverConcurrentStageLimitati
 ---@param FlowUniqueId FGuid
 ---@param bResponse boolean
 function APalPlayerController:NotifyConfirmRequestGuild_ToServer(FlowUniqueId, bResponse) end
+---@param PalInstanceID FPalInstanceID
+function APalPlayerController:NotifyActivateLifeDrainPowerAttackUp_ToClient(PalInstanceID) end
 ---@param InstanceId FPalInstanceID
 function APalPlayerController:LostOtomoByInstacneID_ToServer(InstanceId) end
 ---@param MovementComponent UPalCharacterMovementComponent
@@ -8556,6 +8583,7 @@ local FPalCharacterMovementTickFunction = {}
 ---@field PassiveSkill3 FName
 ---@field PassiveSkill4 FName
 ---@field FirstDefeatRewardItemID FName
+---@field IsUncapturable boolean
 local FPalCharacterParameterDatabaseRow = {}
 
 
@@ -8953,6 +8981,7 @@ local FPalCutscenePalClassInfo = {}
 ---@class FPalDamageDisplayEntry
 ---@field DamageInfo FPalDamageInfo
 ---@field Defender AActor
+---@field DefenderHpAtDamage FFixedPoint64
 local FPalDamageDisplayEntry = {}
 
 
@@ -10118,6 +10147,29 @@ local FPalFishingCutsceneCharacterInfo = {}
 ---@field FishingCaughtMontage UAnimMontage
 ---@field CharacterInfo FPalFishingCutsceneCharacterInfo
 local FPalFishingCutsceneInfo = {}
+
+
+
+---@class FPalFishingDifficultyUIDataRow : FTableRowBase
+---@field RecommendRodItemId FPalDataTableRowName_ItemData
+---@field bShowRodOrAboveText boolean
+---@field RecommendBaitItemId FPalDataTableRowName_ItemData
+---@field bShowBaitOrAboveText boolean
+---@field SatisfyBaitItemIds TArray<FPalDataTableRowName_ItemData>
+---@field bShowPalSkillAdvice boolean
+local FPalFishingDifficultyUIDataRow = {}
+
+
+
+---@class FPalFishingRecommendInfo
+---@field bShowRecommend boolean
+---@field RecommendRodItemId FName
+---@field bRodSatisfied boolean
+---@field bShowRodOrAboveText boolean
+---@field RecommendBaitItemId FName
+---@field bBaitSatisfied boolean
+---@field bShowBaitOrAboveText boolean
+local FPalFishingRecommendInfo = {}
 
 
 
@@ -11684,6 +11736,7 @@ local FPalLocationUIData_TableRow = {}
 ---@field ItemIDAndNum FPalStaticItemIdAndNum
 ---@field IndividualId FPalInstanceID
 ---@field LogType EPalLogType
+---@field DuplicateDisplaySuppressKey FName
 local FPalLogAdditionalData = {}
 
 
@@ -13046,6 +13099,7 @@ local FPalOptionWorldModePresetRow = {}
 ---@field CollectionObjectHpRate float
 ---@field CollectionObjectRespawnSpeedRate float
 ---@field EnemyDropItemRate float
+---@field FishingDifficultyRate float
 ---@field DeathPenalty EPalOptionWorldDeathPenalty
 ---@field bActiveUNKO boolean
 ---@field DropItemMaxNum_UNKO int32
@@ -13173,6 +13227,7 @@ local FPalOptionWorldSettinThresholds = {}
 ---@field SupplyDropSpan int32
 ---@field EnablePredatorBossPal boolean
 ---@field MaxBuildingLimitNum int32
+---@field MaxBuildingLimitNumPerPlayer int32
 ---@field ServerReplicatePawnCullDistance float
 ---@field bAllowGlobalPalboxExport boolean
 ---@field bAllowGlobalPalboxImport boolean
@@ -13181,6 +13236,7 @@ local FPalOptionWorldSettinThresholds = {}
 ---@field PlayerDataPalStorageUpdateCheckTickInterval float
 ---@field ItemCorruptionMultiplier float
 ---@field MonsterFarmActionSpeedRate float
+---@field FishingDifficultyRate float
 ---@field DenyTechnologyList TArray<FName>
 ---@field GuildRejoinCooldownMinutes int32
 ---@field AutoTransferMasterCheckIntervalSeconds float
@@ -15198,6 +15254,8 @@ local FPalUICommonItemRewardData = {}
 
 ---@class FPalUICommonRewardDisplayData
 ---@field Message FText
+---@field AdditionalMessageTitle FText
+---@field AdditionalMessage TArray<FText>
 ---@field Texture UTexture2D
 ---@field SoftTexture TSoftObjectPtr<UTexture2D>
 ---@field DisplayType EPalUIRewardDisplayType
@@ -15364,6 +15422,7 @@ local FPalUIPaldexDistributionLocationStruct = {}
 ---@field bFilterCaptureBonusComplete boolean
 ---@field FilteringWorkSuitabilities TArray<EPalWorkSuitability>
 ---@field SortType EPalUIPaldexSortType
+---@field FilterWord FString
 local FPalUIPaldexFilterInfo = {}
 
 
@@ -16215,6 +16274,8 @@ local FTutorialDataStruct = {}
 ---@field DimensionalStorageSearchInfo FPalCharacterContainerSortInfo
 ---@field bIsTipsVisible boolean
 ---@field bShowGameClearDialog boolean
+---@field MapFilter TSet<EPalLocationType>
+---@field MapZoomStep int32
 local FUITransientData = {}
 
 
@@ -19474,6 +19535,8 @@ function UPalArenaSequenceInBattle:SetupPalHate() end
 ---@param bDisable boolean
 function UPalArenaSequenceInBattle:SetDisableRide(bDisable) end
 function UPalArenaSequenceInBattle:ResetPalHate() end
+---@param IndividualParameter UPalIndividualCharacterParameter
+function UPalArenaSequenceInBattle:OnRevivedInBattle_ServerInternal(IndividualParameter) end
 function UPalArenaSequenceInBattle:OnEndSequence_Implementation() end
 function UPalArenaSequenceInBattle:OnBeginSequence_Implementation() end
 ---@param PlayerIndex EPalArenaPlayerIndex
@@ -19873,6 +19936,7 @@ function UPalAudioUtility:GetCurrentAudioAreaType(WorldContextObject) end
 ---@class UPalAudioWorldSubsystem : UPalWorldSubsystem
 ---@field FadeDuration int32
 ---@field SoundPlayer UPalSoundPlayer
+---@field DisableBattleBGMFlagContainer FFlagContainer
 local UPalAudioWorldSubsystem = {}
 
 ---@param DeltaTime float
@@ -19907,6 +19971,9 @@ function UPalAudioWorldSubsystem:SetRTPCValueByEnum(rtpc, Value, interpolSec) en
 function UPalAudioWorldSubsystem:SetOutputBusVolume(Volume) end
 ---@param bIsDisable boolean
 function UPalAudioWorldSubsystem:SetDsiableBattleBGM(bIsDisable) end
+---@param flagName FName
+---@param bIsDisable boolean
+function UPalAudioWorldSubsystem:SetDisableBattleBGMFlag(flagName, bIsDisable) end
 ---@param Trigger FString
 function UPalAudioWorldSubsystem:PostTriggerByString(Trigger) end
 ---@param Trigger EPalAudioTrigger
@@ -19940,6 +20007,8 @@ function UPalAudioWorldSubsystem:OnEndOfEvent() end
 ---@param CallbackType EAkCallbackType
 ---@param CallbackInfo UAkCallbackInfo
 function UPalAudioWorldSubsystem:OnAkPostEventCallback(CallbackType, CallbackInfo) end
+---@return boolean
+function UPalAudioWorldSubsystem:IsBattleBGMDisabled() end
 ---@param AkOwnerActor AActor
 function UPalAudioWorldSubsystem:InitializeSystem(AkOwnerActor) end
 ---@param OutLocation FVector
@@ -21317,6 +21386,7 @@ function UPalBuildObjectCapabilityDataAsset:GetCapabilityData(BuildObjectId, Out
 
 ---@class UPalBuildObjectDataMap : UObject
 ---@field BuildObjectDataIdMap TMap<FName, FPalBuildObjectData>
+---@field BuildMapObjectIds TSet<FName>
 ---@field BlueprintItemIdToBuildObjectIdMap TMap<FName, FName>
 ---@field BuildObjectDataIdMapTypeA TMap<EPalBuildObjectTypeA, FPalBuildObjectIdSet>
 ---@field BuildObjectDataIdMapTypeB TMap<EPalBuildObjectTypeB, FPalBuildObjectIdSet>
@@ -22460,6 +22530,8 @@ function UPalCharacterMovementComponent:MergeLastLandingLocationCache(MovementCo
 function UPalCharacterMovementComponent:Jump() end
 ---@return boolean
 function UPalCharacterMovementComponent:IsTickOptimizationDisabled() end
+---@return boolean
+function UPalCharacterMovementComponent:IsSubmergedBeyondFloatingDepth() end
 ---@return boolean
 function UPalCharacterMovementComponent:IsStepUpUpSweepShrinkEnabled() end
 ---@return boolean
@@ -25498,6 +25570,7 @@ local UPalDebugInfoGameInstanceSubsystem = {}
 ---@field bShowMapObjectDebugDistanceInfinity boolean
 ---@field bShowMapObjectStatus boolean
 ---@field bShowMapObjectFoliageStatus boolean
+---@field bDrawDebugMapObjectFoliageAutoDecayCapsule boolean
 ---@field ShowMapObjectStatusRange float
 ---@field ShowMapObjectStatusByMapObjectId FName
 ---@field bDisablePalFoliageComponentBeginPlay boolean
@@ -25769,6 +25842,10 @@ function UPalDefine:TextId_UICommon_LOG_ElementalTreasureChestFailure_Water() en
 function UPalDefine:TextId_UICommon_LOG_ElementalTreasureChestFailure_Fire() end
 ---@return FName
 function UPalDefine:TextId_UICommon_LOG_ElementalTreasureChestFailure_Electricity() end
+---@return FName
+function UPalDefine:TextId_UICommon_LOG_Decay_WorldTreeWood() end
+---@return FName
+function UPalDefine:TextId_UICommon_LOG_Decay_WorldTreeOre() end
 ---@return FName
 function UPalDefine:TextId_UICommon_LOG_ConsumeItem() end
 ---@return FName
@@ -26129,6 +26206,9 @@ function UPalDiscordClient:OnStatusChanged(Status, Error, errorDetail) end
 ---@param joinSecret FString
 function UPalDiscordClient:OnJoin(joinSecret) end
 function UPalDiscordClient:OnEndedCall() end
+---@param PrevSettings FPalOptionVoiceChatSettings
+---@param NewSettings FPalOptionVoiceChatSettings
+function UPalDiscordClient:OnChangeVoiceChatSettings(PrevSettings, NewSettings) end
 ---@param Friend UDiscordRelationshipHandle
 function UPalDiscordClient:Mute(Friend) end
 function UPalDiscordClient:LinkAccount() end
@@ -26950,8 +27030,12 @@ function UPalFishingCatchBattleBehaviorBase:Initialize(Info) end
 ---@field OnStartShowCutsceneDelegate FPalFishingComponentOnStartShowCutsceneDelegate
 ---@field OnFinishedShowCutsceneDelegate FPalFishingComponentOnFinishedShowCutsceneDelegate
 ---@field OnPickFishDelegate FPalFishingComponentOnPickFishDelegate
+---@field OnChangeHitInputAcceptDelegate FPalFishingComponentOnChangeHitInputAcceptDelegate
 ---@field OnChangeBaitDelegate FPalFishingComponentOnChangeBaitDelegate
 ---@field OnChangeTargetSpotDelegate FPalFishingComponentOnChangeTargetSpotDelegate
+---@field OnChangeTargetSpotRecommendDelegate FPalFishingComponentOnChangeTargetSpotRecommendDelegate
+---@field OnChangeSpotAimingDelegate FPalFishingComponentOnChangeSpotAimingDelegate
+---@field OnFishingPalAdviceDelegate FPalFishingComponentOnFishingPalAdviceDelegate
 ---@field OnFirstFishingDelegate FPalFishingComponentOnFirstFishingDelegate
 ---@field OnSuccessFightDelegate FPalFishingComponentOnSuccessFightDelegate
 ---@field OnFailedFightDelegate FPalFishingComponentOnFailedFightDelegate
@@ -26972,6 +27056,9 @@ function UPalFishingCatchBattleBehaviorBase:Initialize(Info) end
 ---@field FishingFloatLocation FVector
 ---@field FishingRodState EPalFishingRodState
 ---@field GrantCharacterData FPalGrantCharacterRequestData
+---@field bIsPalSkillAdviceTarget boolean
+---@field bIsHitInputAccepting boolean
+---@field bIsSpotAiming boolean
 local UPalFishingComponent = {}
 
 ---@param InFishingRodModule UPalFishingRodModule
@@ -27003,6 +27090,7 @@ function UPalFishingComponent:OnPickFishDelegate__DelegateSignature(FloatLocatio
 function UPalFishingComponent:OnPickFish() end
 ---@param CutsceneInfo FPalFishingCutsceneInfo
 function UPalFishingComponent:OnLoadedCutsceneInfoDelegate__DelegateSignature(CutsceneInfo) end
+function UPalFishingComponent:OnFishingPalAdviceDelegate__DelegateSignature() end
 function UPalFishingComponent:OnFirstFishingDelegate__DelegateSignature() end
 function UPalFishingComponent:OnFinishedShowCutsceneDelegate__DelegateSignature() end
 function UPalFishingComponent:OnFailedFightDelegate__DelegateSignature() end
@@ -27015,12 +27103,18 @@ function UPalFishingComponent:OnEndAimDelegate__DelegateSignature() end
 function UPalFishingComponent:OnDead(DeadInfo) end
 ---@param DamageResult FPalDamageResult
 function UPalFishingComponent:OnDamaged(DamageResult) end
+---@param RecommendInfo FPalFishingRecommendInfo
+function UPalFishingComponent:OnChangeTargetSpotRecommendDelegate__DelegateSignature(RecommendInfo) end
 ---@param DifficultyType EPalFishingSpotDifficultyType
 function UPalFishingComponent:OnChangeTargetSpotDelegate__DelegateSignature(DifficultyType) end
 ---@param TargetSpot APalFishingSpotArea
 function UPalFishingComponent:OnChangeTargetSpot(TargetSpot) end
+---@param bIsSpotAiming boolean
+function UPalFishingComponent:OnChangeSpotAimingDelegate__DelegateSignature(bIsSpotAiming) end
 ---@param State EPalFishingRodState
 function UPalFishingComponent:OnChangeRodState(State) end
+---@param IsAccept boolean
+function UPalFishingComponent:OnChangeHitInputAcceptDelegate__DelegateSignature(IsAccept) end
 ---@param SelectIndex int32
 function UPalFishingComponent:OnChangeBaitDelegate__DelegateSignature(SelectIndex) end
 function UPalFishingComponent:OnCancelFishingDelegate__DelegateSignature() end
@@ -27033,6 +27127,8 @@ function UPalFishingComponent:NotifyObtainedCharacter_ToALL(PlayerUId, Character
 function UPalFishingComponent:NotifyFinishCutscene_ToALL() end
 function UPalFishingComponent:NotifyFailedCatchBattle_ToALL() end
 function UPalFishingComponent:NotifyEndFishing_ToALL() end
+---@return boolean
+function UPalFishingComponent:IsPalSkillAdviceTarget() end
 ---@return boolean
 function UPalFishingComponent:IsFishingButtonPressed() end
 ---@return boolean
@@ -27139,6 +27235,14 @@ function UPalFishingSpotAreaModel:OnDespawnFishShadow(RemainFishCount) end
 ---@field EnableTickRadius float
 ---@field DisableTickAddRadius float
 ---@field QueryInterval float
+---@field RodRequiredDisplayDistance float
+---@field RodRequiredWorldHUDDisplayRange float
+---@field DifficultyUIDataTable UDataTable
+---@field FishingDifficultyRateMin float
+---@field FishingDifficultyRateMax float
+---@field CatchBattleDifficultyMinValue float
+---@field PalSkillAdviceTime float
+---@field PalSkillAdviceCheckEffectTypes TArray<EPalPassiveSkillEffectType>
 ---@field CatchBattleMapByPlayerId TMap<FGuid, UPalFishingCatchBattle>
 ---@field FishingSpotArray TArray<APalFishingSpotArea>
 ---@field SpotModels TMap<FGuid, UPalFishingSpotAreaModel>
@@ -27318,6 +27422,8 @@ function UPalFlyMeshHeightCtrlComponent:OnMovementModeChanged(Component, prevMod
 function UPalFlyMeshHeightCtrlComponent:OnInitializedCharacter(OwnerCharacter) end
 ---@param Info FPalDeadInfo
 function UPalFlyMeshHeightCtrlComponent:OnDead(Info) end
+---@param ReactionInfo FPalDamageRactionInfo
+function UPalFlyMeshHeightCtrlComponent:OnDamage(ReactionInfo) end
 ---@param bIsBattleMode boolean
 function UPalFlyMeshHeightCtrlComponent:OnChangeBattleMode(bIsBattleMode) end
 ---@return boolean
@@ -27740,6 +27846,7 @@ function UPalGameInstance:SetupGameInit() end
 ---@param WorldName FString
 function UPalGameInstance:SetNewWorldName(WorldName) end
 function UPalGameInstance:SetIsNewGame() end
+function UPalGameInstance:SetAlreadyShowSaveWarningDialog() end
 function UPalGameInstance:SetAlreadyShowModDetectionDialog() end
 ---@param WorldSaveDirectoryName FString
 ---@return boolean
@@ -27778,6 +27885,8 @@ function UPalGameInstance:IsPlayFromTitle() end
 function UPalGameInstance:IsNewGame() end
 ---@return boolean
 function UPalGameInstance:IsLoggedin() end
+---@return boolean
+function UPalGameInstance:IsAlreadyShowSaveWarningDialog() end
 ---@return boolean
 function UPalGameInstance:IsAlreadyShowModDetectionDialog() end
 function UPalGameInstance:GoToDefaultMap() end
@@ -27869,6 +27978,7 @@ function UPalGameLocalSettings:GetGuildNotificationEnabled(Type) end
 ---@field OtomoAutoAssignCooldownSeconds float
 ---@field CommonAttackSkipTimeoutSeconds float
 ---@field WazaReselectTimeoutSeconds float
+---@field WazaSelectPowerOverrideMap TMap<EPalWazaID, int32>
 ---@field PlayerHPRateFromRespawn float
 ---@field PlayerStomachRateFromRespawn float
 ---@field RarePal_AppearanceProbability float
@@ -28246,6 +28356,8 @@ function UPalGameLocalSettings:GetGuildNotificationEnabled(Type) end
 ---@field InvadeReturnTime_Minutes int32
 ---@field InvadeStartPoint_BaseCampRadius_Min_cm int32
 ---@field InvadeStartPoint_BaseCampRadius_Max_cm int32
+---@field InvaderTargetBaseCampRangeMargin float
+---@field InvaderOutOfRangePlayerHateKeepThreshold float
 ---@field InvaderPathWaterContinuousDistanceThreshold float
 ---@field InvaderPathWaterTotalDistanceThreshold float
 ---@field VisitorNPCProbability float
@@ -28392,6 +28504,9 @@ function UPalGameLocalSettings:GetGuildNotificationEnabled(Type) end
 ---@field MapObjectOutlineByInteractable int32
 ---@field MapObjectRepairInfo FPalMapObjectRepairInfo
 ---@field FoliageExtentsXY float
+---@field WorldTreeWoodDecayLogNotifyDistance float
+---@field WorldTreeOreDecayLogNotifyDistance float
+---@field WorldTreeDecayLogNotifyDelaySeconds float
 ---@field FoliageChunkSeparateScale int32
 ---@field MapObjectHPDisplayDistance float
 ---@field OilrigCannonHPDisplayDistance float
@@ -28515,6 +28630,7 @@ function UPalGameLocalSettings:GetGuildNotificationEnabled(Type) end
 ---@field CutsceneSkipForceStopDelay float
 ---@field EndingExcludeCharacterIDs TArray<FPalDataTableRowName_PalMonsterData>
 ---@field SkippedAchievementIdsOnPS5 TArray<FString>
+---@field FishingDifficultyRateSteps TArray<float>
 ---@field SoundSourceDataTable UDataTable
 ---@field OptimizeParameterSettingClass TMap<EPalOptimizeType, TSubclassOf<UPalOptimizeParameterSetting>>
 ---@field ExpeditionStrengthSortFunctionsClass TSubclassOf<UPalMapObjectCharacterTeamMissionFunctionsBase>
@@ -28545,6 +28661,12 @@ function UPalGameSetting:GetMiningRankDefineData(MiningRank, outDefineData) end
 ---@param MiningRank int32
 ---@return float
 function UPalGameSetting:GetMiningDamageRate(MiningRank) end
+---@param Rate float
+---@return int32
+function UPalGameSetting:GetFishingDifficultyStepIndexByRate(Rate) end
+---@param StepIndex int32
+---@return float
+function UPalGameSetting:GetFishingDifficultyRateByStepIndex(StepIndex) end
 ---@param targetPosition FVector
 ---@param selfPosition FVector
 ---@return float
@@ -28784,6 +28906,8 @@ function UPalGliderComponent:OnRep_IsGliding() end
 function UPalGliderComponent:OnRep_CurrentGliderSoftClass() end
 function UPalGliderComponent:OnRep_CurrentGliderPalID() end
 function UPalGliderComponent:OnInitializeGlider() end
+---@param NewGlider APalGliderObject
+function UPalGliderComponent:OnGliderSpawnedDelegate__DelegateSignature(NewGlider) end
 function UPalGliderComponent:OnEndGliding__DelegateSignature() end
 function UPalGliderComponent:OnEndGliding() end
 ---@param InParameter UPalIndividualCharacterParameter
@@ -30994,6 +31118,7 @@ function UPalIndividualCharacterParameter:DeadParameterDelegate__DelegateSignatu
 function UPalIndividualCharacterParameter:DeadBodyDelegate__DelegateSignature(IndividualHandle) end
 function UPalIndividualCharacterParameter:ConditionChangedDelegate__DelegateSignature() end
 function UPalIndividualCharacterParameter:ClearEquipWaza() end
+function UPalIndividualCharacterParameter:CleanupOnRevive() end
 ---@param IndividualParameter UPalIndividualCharacterParameter
 ---@param WazaID EPalWazaID
 function UPalIndividualCharacterParameter:ChangeMasteredWazaDelegate__DelegateSignature(IndividualParameter, WazaID) end
@@ -32463,6 +32588,7 @@ function UPalLoadoutSelectorComponent:OnUpdateWeaponLoadoutSlot(itemSlot) end
 ---@param itemSlot UPalItemSlot
 function UPalLoadoutSelectorComponent:OnUpdateInventorySlot(itemSlot) end
 function UPalLoadoutSelectorComponent:OnRep_PrimaryTargetInventoryType() end
+function UPalLoadoutSelectorComponent:OnRep_NowEquipBallItemID() end
 function UPalLoadoutSelectorComponent:OnRep_CurrentItemSlotIndex() end
 ---@param inventoryType EPalPlayerInventoryType
 ---@param Index int32
@@ -33678,7 +33804,7 @@ local UPalMapObjectConvertCharacterToItemParameterComponent = {}
 ---@field bIsWorkable boolean
 ---@field RecipeIds TArray<FName>
 ---@field WorkSpeedAdditionalRate float
----@field CurrentRecipeRequestPlayerId int32
+---@field CurrentRecipeRequestPlayerUId FGuid
 ---@field TargetTypesA TArray<EPalItemTypeA>
 ---@field TargetTypesB TArray<EPalItemTypeB>
 ---@field TargetRankMax int32
@@ -34301,6 +34427,7 @@ local UPalMapObjectFishPondParameterComponent = {}
 ---@field LoadedPresetTypeSet TSet<EPalFoliagePresetType>
 ---@field GridSize int32
 ---@field GridModelMap TMap<FPalCellCoord, UPalFoliageGridModel>
+---@field PreallocatedGridModels TArray<UPalFoliageGridModel>
 local UPalMapObjectFoliage = {}
 
 
@@ -37483,6 +37610,11 @@ function UPalMasterDataTablesUtility:GetBaseCampLevelDataTable(WorldContextObjec
 ---@param WorldContextObject UObject
 ---@return UPalAchivementRewardDataAsset
 function UPalMasterDataTablesUtility:GetAchivementRewardDataAsset(WorldContextObject) end
+---@param WorldContextObject UObject
+---@param TextCategory EPalLocalizeTextCategory
+---@param TextId FName
+---@return boolean
+function UPalMasterDataTablesUtility:ExistLocalizedText(WorldContextObject, TextCategory, TextId) end
 
 
 ---@class UPalMathBlueprintFunction : UBlueprintFunctionLibrary
@@ -37595,6 +37727,7 @@ local UPalMonsterWeaponFilter = {}
 ---@field bIsReadOnly boolean
 ---@field AllowContextMenu boolean
 ---@field VirtualKeyboardOptions FVirtualKeyboardOptions
+---@field VirtualKeyboardTrigger EVirtualKeyboardTrigger
 ---@field VirtualKeyboardDismissAction EVirtualKeyboardDismissAction
 ---@field OnTextChanged FPalMultiLineEditableTextBoxOnTextChanged
 ---@field OnTextCommitted FPalMultiLineEditableTextBoxOnTextCommitted
@@ -37833,6 +37966,7 @@ function UPalNPCTalkFlowComponent:OnFinishTalkFlow() end
 ---@param SelfComponent UPalNPCTalkFlowComponent
 function UPalNPCTalkFlowComponent:OnEndTalkFlowDelegate__DelegateSignature(SelfComponent) end
 ---@param Other AActor
+---@return boolean
 function UPalNPCTalkFlowComponent:LaunchTalkIncident(Other) end
 ---@return FGuid
 function UPalNPCTalkFlowComponent:GetToken() end
@@ -38621,6 +38755,7 @@ function UPalNetworkItemComponent:RequestChangeFilter_ToServer(ContainerId, Filt
 function UPalNetworkItemComponent:RequestChangeAllFilterUncheck_ToServer(ContainerId) end
 ---@param ContainerId FPalContainerId
 function UPalNetworkItemComponent:RequestChangeAllFilterCheck_ToServer(ContainerId) end
+function UPalNetworkItemComponent:NotifySphereConsumeAndRecoverCompleted_ToClient() end
 ---@param RewardData FPalUICommonItemRewardData
 function UPalNetworkItemComponent:NotifyCommonItemRewardUIData_ToClient(RewardData) end
 ---@param RewardData FPalUICommonItemRewardData
@@ -38906,8 +39041,6 @@ function UPalNetworkPlayerComponent:SetCurrentSelectPalSphereIndex_ToServer(Next
 function UPalNetworkPlayerComponent:RequestUpdatePlayerSettingsForServer_ToServer(NewSettings) end
 ---@param UnlockTechnologyName FName
 function UPalNetworkPlayerComponent:RequestUnlockTechnology_ToServer(UnlockTechnologyName) end
----@param UnlockFlagKey FName
-function UPalNetworkPlayerComponent:RequestUnlockFastTravelPoint_ToServer(UnlockFlagKey) end
 ---@param TriggerConditionType EPalTutorialTriggerConditionType
 function UPalNetworkPlayerComponent:RequestTriggerTutorial_ToClient(TriggerConditionType) end
 function UPalNetworkPlayerComponent:RequestSortInventory_ToServer() end
@@ -39701,6 +39834,7 @@ local UPalOptionSaveGame = {}
 ---@field OnChangeOnlineUserSettingsDelegate FPalOptionSubsystemOnChangeOnlineUserSettingsDelegate
 ---@field OnChangeScreenRatioDelegate FPalOptionSubsystemOnChangeScreenRatioDelegate
 ---@field OnChangeCommonSettingDelegate FPalOptionSubsystemOnChangeCommonSettingDelegate
+---@field OnChangeVoiceChatDelegate FPalOptionSubsystemOnChangeVoiceChatDelegate
 ---@field OptionWorldStaticSettings FPalOptionWorldStaticSettings
 ---@field OptionLocalStaticSettings FPalOptionLocalStaticSettings
 ---@field OptionWorldSettings FPalOptionWorldSettings
@@ -39763,6 +39897,9 @@ function UPalOptionSubsystem:OnCompletedGetBanlist(ResponseBody, bResponseOK, Re
 ---@param PrevSettings FPalOptionWorldSettings
 ---@param NewSettings FPalOptionWorldSettings
 function UPalOptionSubsystem:OnChangeWorldSettingsDelegate__DelegateSignature(PrevSettings, NewSettings) end
+---@param PrevSettings FPalOptionVoiceChatSettings
+---@param NewSettings FPalOptionVoiceChatSettings
+function UPalOptionSubsystem:OnChangeVoiceChatDelegate__DelegateSignature(PrevSettings, NewSettings) end
 ---@param PrevSettings FPalOptionUISettings
 ---@param NewSettings FPalOptionUISettings
 function UPalOptionSubsystem:OnChangeUISettingDelegate__DelegateSignature(PrevSettings, NewSettings) end
@@ -40356,6 +40493,9 @@ function UPalPartnerSkillPassiveSkill:OnUpdateBaseCampId(BaseCampId) end
 ---@param EffectType EPalPassiveSkillEffectType
 ---@param Value float
 function UPalPartnerSkillPassiveSkill:OnStartPassiveSkillEffect(EffectType, Value) end
+---@param EffectType EPalPassiveSkillEffectType
+---@param EffectOwner UObject
+function UPalPartnerSkillPassiveSkill:OnSetPassiveSkillEffectWithOwner(EffectType, EffectOwner) end
 function UPalPartnerSkillPassiveSkill:OnRideInactivated() end
 function UPalPartnerSkillPassiveSkill:OnRideActivated() end
 function UPalPartnerSkillPassiveSkill:OnReserveInactivated() end
@@ -40404,6 +40544,7 @@ function UPalPartnerSkillPassiveSkill:GetPassiveSkillList() end
 function UPalPartnerSkillPassiveSkill:GetOwner() end
 ---@return int32
 function UPalPartnerSkillPassiveSkill:GetOtomoRank() end
+function UPalPartnerSkillPassiveSkill:ApplyPendingLifeDrainGranterReset() end
 function UPalPartnerSkillPassiveSkill:AllResetPassiveSkill() end
 
 
@@ -40528,8 +40669,8 @@ function UPalPassiveSkillComponent:ServerAddDebugPassiveSkillType(Type, Value) e
 ---@param inoutDamageInfo FPalDamageInfo
 function UPalPassiveSkillComponent:OverrideDamageInfoBySkill(inoutDamageInfo) end
 ---@param EffectType EPalPassiveSkillEffectType
----@param effectOwner UObject
-function UPalPassiveSkillComponent:OnUpdateSkillEffect__DelegateSignature(EffectType, effectOwner) end
+---@param EffectOwner UObject
+function UPalPassiveSkillComponent:OnUpdateSkillEffect__DelegateSignature(EffectType, EffectOwner) end
 ---@param NowRank int32
 ---@param OldRank int32
 function UPalPassiveSkillComponent:OnUpdateCharacterRank(NowRank, OldRank) end
@@ -40540,8 +40681,8 @@ function UPalPassiveSkillComponent:OnStartSkillEffect__DelegateSignature(EffectT
 ---@param Value float
 function UPalPassiveSkillComponent:OnStartSkillEffect(EffectType, Value) end
 ---@param EffectType EPalPassiveSkillEffectType
----@param effectOwner UObject
-function UPalPassiveSkillComponent:OnSetSkillEffectWithOwner(EffectType, effectOwner) end
+---@param EffectOwner UObject
+function UPalPassiveSkillComponent:OnSetSkillEffectWithOwner(EffectType, EffectOwner) end
 function UPalPassiveSkillComponent:OnRep_SkillInfos() end
 function UPalPassiveSkillComponent:OnRep_DebugSkillInfos() end
 ---@param OwnerCharacter APalCharacter
@@ -40551,8 +40692,8 @@ function UPalPassiveSkillComponent:OnEndSkillEffect__DelegateSignature(EffectTyp
 ---@param EffectType EPalPassiveSkillEffectType
 function UPalPassiveSkillComponent:OnEndSkillEffect(EffectType) end
 ---@param EffectType EPalPassiveSkillEffectType
----@param effectOwner UObject
-function UPalPassiveSkillComponent:OnClearSkillEffectWithOwner(EffectType, effectOwner) end
+---@param EffectOwner UObject
+function UPalPassiveSkillComponent:OnClearSkillEffectWithOwner(EffectType, EffectOwner) end
 ---@param EffectType EPalPassiveSkillEffectType
 ---@param Value float
 function UPalPassiveSkillComponent:OnChangeSkillEffectValue__DelegateSignature(EffectType, Value) end
@@ -40892,6 +41033,8 @@ function UPalPlayMontageCallbackProxy:OnMontageBlendingOut(Montage, bInterrupted
 
 
 ---@class UPalPlayerAccount : UObject
+---@field PlayerBuildingGroupIdByInstanceId TMap<FGuid, FGuid>
+---@field PlayerBuildingCountByGroupId TMap<FGuid, int32>
 ---@field PlayerUId FGuid
 ---@field InstanceId FPalInstanceID
 ---@field State EPalPlayerAccountState
@@ -41887,6 +42030,7 @@ function UPalProgressBar:SetFillImage(NewImage) end
 ---@field bIgnoreHomingAngleLimitUntilEnteringAngleReached boolean
 ---@field bEnablePredictHoming boolean
 ---@field HomingPredictStrength float
+---@field SphereHomingRelicEffectCurve UCurveFloat
 ---@field HomingRandomOffset FVector
 ---@field bEnteringAngleReached boolean
 ---@field HomingLocationSet boolean
@@ -42085,6 +42229,7 @@ function UPalQuestBlock_CountBuild:OnAddedMapObjectModel_Server(MapObjectModel, 
 ---@field CountPalId TArray<FPalDataTableRowName_PalMonsterData>
 ---@field CountHumanId TArray<FPalDataTableRowName_PalHumanData>
 ---@field CountUniqueNPCId TArray<FPalDataTableRowName_NPCUniqueData>
+---@field RequiredRange float
 local UPalQuestBlock_CountKillEnemy = {}
 
 function UPalQuestBlock_CountKillEnemy:OnRep_Count() end
@@ -43746,11 +43891,13 @@ function UPalShooterComponent:ChangeStateDelegate__DelegateSignature(IsAim, IsSh
 ---@param ID int32
 ---@param IsShooting boolean
 ---@param bCanShootOnRelease boolean
-function UPalShooterComponent:ChangeIsShooting_ToServer(ID, IsShooting, bCanShootOnRelease) end
+---@param bRequestedThrowObject boolean
+function UPalShooterComponent:ChangeIsShooting_ToServer(ID, IsShooting, bCanShootOnRelease, bRequestedThrowObject) end
 ---@param ID int32
 ---@param IsShooting boolean
 ---@param bCanShootOnRelease boolean
-function UPalShooterComponent:ChangeIsShooting_ToALL(ID, IsShooting, bCanShootOnRelease) end
+---@param bRequestedThrowObject boolean
+function UPalShooterComponent:ChangeIsShooting_ToALL(ID, IsShooting, bCanShootOnRelease, bRequestedThrowObject) end
 ---@param IsShooting boolean
 ---@param bCanShootOnRelease boolean
 function UPalShooterComponent:ChangeIsShooting(IsShooting, bCanShootOnRelease) end
@@ -48435,6 +48582,8 @@ function UPalUIPalBoxBase:TryMoveToBoxForWorker(MoveSlot) end
 ---@param MoveSlot UPalIndividualCharacterSlot
 function UPalUIPalBoxBase:TryMoveToBoxForOtomo(MoveSlot) end
 ---@param MoveSlot UPalIndividualCharacterSlot
+function UPalUIPalBoxBase:TryMoveToBoxForCommonContainer(MoveSlot) end
+---@param MoveSlot UPalIndividualCharacterSlot
 function UPalUIPalBoxBase:TryMoveToBaseCamp(MoveSlot) end
 ---@param TargetSlot UPalIndividualCharacterSlot
 function UPalUIPalBoxBase:TryLoosePal(TargetSlot) end
@@ -49241,6 +49390,9 @@ function UPalUIUtility:GetFormatedFirstActivatedInfoText(WorldContextObject, Ins
 ---@param OutMap TMap<EPalBuildObjectTypeForUIDisplay, FPalBuildObjectDataSetTypeUIDisplay>
 function UPalUIUtility:GetFilteredUIDisplayBuildObjectList(WorldContextObject, InMap, OutMap) end
 ---@param WorldContextObject UObject
+---@return FText
+function UPalUIUtility:GetFailedToLoadWorldDataText(WorldContextObject) end
+---@param WorldContextObject UObject
 ---@param CharacterID FName
 ---@param UniqueNPCID FName
 ---@param OutNickName FString
@@ -49700,6 +49852,7 @@ function UPalUserWidgetOverlayUI:ClearCancelAction() end
 ---@class UPalUserWidgetStackableUI : UPalUserWidgetHierarchical
 ---@field OpenAkEvent UAkAudioEvent
 ---@field CloseAkEvent UAkAudioEvent
+---@field bIgnoreOnPreGarbageCollect boolean
 local UPalUserWidgetStackableUI = {}
 
 function UPalUserWidgetStackableUI:OnPreClose() end
@@ -52830,8 +52983,10 @@ local UPalWorkOnlyJoinInvisible = {}
 ---@field ProgressTimeSinceLastTick float
 ---@field TickProcessMinInterval float
 ---@field bInProgress boolean
+---@field ReplicatedWorkAmountBySec float
 local UPalWorkProgress = {}
 
+function UPalWorkProgress:OnRep_ReplicatedWorkAmountBySec() end
 function UPalWorkProgress:OnRep_InProgress() end
 function UPalWorkProgress:OnRep_CurrentWorkAmount() end
 ---@param WorkProgress UPalWorkProgress
@@ -53268,6 +53423,7 @@ function UPalWorldSecurityLawTrigger_ItemMove:Condition(EventInfo) end
 ---@field DiscoveryTimeToMaxFar float
 ---@field DiscoveryDecayPerSec float
 ---@field DiscoveryCrouchMultiplier float
+---@field PoliceSightLostGraceTime float
 ---@field CombatHeliSpawnHeight float
 ---@field CombatHeliSpawnRadius float
 ---@field CombatHeliSpawnMinRadius float

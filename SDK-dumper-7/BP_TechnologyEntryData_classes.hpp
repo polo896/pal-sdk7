@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "F_PalUITechnologyDataMapContent_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "F_PalUITechnologyDataMapContent_structs.hpp"
 
 
 namespace SDK

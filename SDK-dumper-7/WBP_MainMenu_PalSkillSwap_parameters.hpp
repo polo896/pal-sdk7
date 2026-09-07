@@ -19,6 +19,48 @@
 namespace SDK::Params
 {
 
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.OnClicked_Internal
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_MainMenu_PalSkillSwap_C_OnClicked_Internal final
+{
+public:
+	class UWBP_MainMenu_Pal_Skill_Active_C*       SkillWidget;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalWazaID                                    CallFunc_GetBindedWazaID_wazaID;                   // 0x0008(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_PalSkillSwap_C_OnClicked_Internal;
+
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.On_BaseBlack_MouseButtonDown
+// 0x0248 (0x0248 - 0x0000)
+struct WBP_MainMenu_PalSkillSwap_C_On_BaseBlack_MouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_MainMenu_PalSkillSwap_C_On_BaseBlack_MouseButtonDown;
+
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.ExecuteUbergraph_WBP_MainMenu_PalSkillSwap
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_MainMenu_PalSkillSwap_C_ExecuteUbergraph_WBP_MainMenu_PalSkillSwap final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_MainMenuSkillSwapParameter_C*       K2Node_DynamicCast_AsBP_Main_Menu_Skill_Swap_Parameter; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EPalWazaID SelectedWazaId)>    K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalWazaID>                            CallFunc_GetEquipableWaza_ReturnValue;             // 0x0030(0x0010)(ReferenceParm)
+	TArray<EPalWazaID>                            CallFunc_GetEquipWaza_ReturnValue;                 // 0x0040(0x0010)(ReferenceParm)
+	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue_1;    // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_PalSkillSwap_C_ExecuteUbergraph_WBP_MainMenu_PalSkillSwap;
+
 // Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Setup
 // 0x0130 (0x0130 - 0x0000)
 struct WBP_MainMenu_PalSkillSwap_C_Setup final
@@ -87,48 +129,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_PalSkillSwap_C_OnHovered_Internal;
-
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.OnClicked_Internal
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_MainMenu_PalSkillSwap_C_OnClicked_Internal final
-{
-public:
-	class UWBP_MainMenu_Pal_Skill_Active_C*       SkillWidget;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalWazaID                                    CallFunc_GetBindedWazaID_wazaID;                   // 0x0008(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_PalSkillSwap_C_OnClicked_Internal;
-
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.On_BaseBlack_MouseButtonDown
-// 0x0248 (0x0248 - 0x0000)
-struct WBP_MainMenu_PalSkillSwap_C_On_BaseBlack_MouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
-};
-DUMPER7_ASSERTS_WBP_MainMenu_PalSkillSwap_C_On_BaseBlack_MouseButtonDown;
-
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.ExecuteUbergraph_WBP_MainMenu_PalSkillSwap
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_MainMenu_PalSkillSwap_C_ExecuteUbergraph_WBP_MainMenu_PalSkillSwap final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_MainMenuSkillSwapParameter_C*       K2Node_DynamicCast_AsBP_Main_Menu_Skill_Swap_Parameter; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPalWazaID SelectedWazaId)>    K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalWazaID>                            CallFunc_GetEquipableWaza_ReturnValue;             // 0x0030(0x0010)(ReferenceParm)
-	TArray<EPalWazaID>                            CallFunc_GetEquipWaza_ReturnValue;                 // 0x0040(0x0010)(ReferenceParm)
-	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue_1;    // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_PalSkillSwap_C_ExecuteUbergraph_WBP_MainMenu_PalSkillSwap;
 
 // Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.BP_GetDesiredFocusTarget
 // 0x0028 (0x0028 - 0x0000)

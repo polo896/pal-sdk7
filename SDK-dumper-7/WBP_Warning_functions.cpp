@@ -17,41 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_Warning.WBP_Warning_C.SetTitleText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_Warning.WBP_Warning_C.AnmEvent_Close
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Warning_C::SetTitleText(const class FText& Text)
+void UWBP_Warning_C::AnmEvent_Close()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Warning_C", "SetTitleText");
+		Func = Class->GetFunction("WBP_Warning_C", "AnmEvent_Close");
 
-	Params::WBP_Warning_C_SetTitleText Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Warning.WBP_Warning_C.SetInfoText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Warning.WBP_Warning_C.AnmEvent_Open
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// double                                  DisplayTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Warning_C::SetInfoText(const class FText& Text)
+void UWBP_Warning_C::AnmEvent_Open(double DisplayTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Warning_C", "SetInfoText");
+		Func = Class->GetFunction("WBP_Warning_C", "AnmEvent_Open");
 
-	Params::WBP_Warning_C_SetInfoText Parms{};
+	Params::WBP_Warning_C_AnmEvent_Open Parms{};
 
-	Parms.Text = std::move(Text);
+	Parms.DisplayTime = DisplayTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,37 +71,43 @@ void UWBP_Warning_C::ExecuteUbergraph_WBP_Warning(int32 EntryPoint)
 }
 
 
-// Function WBP_Warning.WBP_Warning_C.AnmEvent_Open
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Warning.WBP_Warning_C.SetInfoText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DisplayTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Warning_C::AnmEvent_Open(double DisplayTime)
+void UWBP_Warning_C::SetInfoText(const class FText& Text)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Warning_C", "AnmEvent_Open");
+		Func = Class->GetFunction("WBP_Warning_C", "SetInfoText");
 
-	Params::WBP_Warning_C_AnmEvent_Open Parms{};
+	Params::WBP_Warning_C_SetInfoText Parms{};
 
-	Parms.DisplayTime = DisplayTime;
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Warning.WBP_Warning_C.AnmEvent_Close
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Warning.WBP_Warning_C.SetTitleText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Warning_C::AnmEvent_Close()
+void UWBP_Warning_C::SetTitleText(const class FText& Text)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Warning_C", "AnmEvent_Close");
+		Func = Class->GetFunction("WBP_Warning_C", "SetTitleText");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Warning_C_SetTitleText Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

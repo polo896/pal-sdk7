@@ -10,40 +10,40 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ColorEditor.WBP_ColorEditor_C
-// 0x0030 (0x04A8 - 0x0478)
+// 0x0030 (0x04B0 - 0x0480)
 class UWBP_ColorEditor_C final : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_IngameConstruction_Paint_EditColor_C* WBP_IngameConstruction_Paint_EditColor;         // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_ColorEditor*   DispatchParam;                                     // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     CancelActionHandle_GamepadOnly;                    // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     CancelActionHandle_Escape;                         // 0x0498(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     CancelActionHandle_Tab;                            // 0x04A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_IngameConstruction_Paint_EditColor_C* WBP_IngameConstruction_Paint_EditColor;         // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_ColorEditor*   DispatchParam;                                     // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     CancelActionHandle_GamepadOnly;                    // 0x0498(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     CancelActionHandle_Escape;                         // 0x04A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     CancelActionHandle_Tab;                            // 0x04A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Setup();
-	void ResetColor();
-	void PasteClipboard();
-	void OnSetup();
-	void OnClickCopyButton();
-	void OnCancelAction();
-	void ExecuteUbergraph_WBP_ColorEditor(int32 EntryPoint);
-	void EmptyFunction();
-	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature();
-	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature();
-	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature();
-	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature(const struct FLinearColor& Color);
 	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature();
+	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature(const struct FLinearColor& Color);
+	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature();
+	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature();
+	void BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature();
+	void EmptyFunction();
+	void ExecuteUbergraph_WBP_ColorEditor(int32 EntryPoint);
+	void OnCancelAction();
+	void OnClickCopyButton();
+	void OnSetup();
+	void PasteClipboard();
+	void ResetColor();
+	void Setup();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

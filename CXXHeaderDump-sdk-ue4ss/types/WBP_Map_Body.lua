@@ -55,13 +55,15 @@
 ---@field MapName FName
 local UWBP_Map_Body_C = {}
 
+---@param CacheStep int32
+function UWBP_Map_Body_C:SetupZoomCache(CacheStep) end
 ---@param WorldLocation FVector
 function UWBP_Map_Body_C:GetWIndowCenterWorldLocation(WorldLocation) end
 ---@param bEnableCloud boolean
 function UWBP_Map_Body_C:SetEnableSkyIslandCloud(bEnableCloud) end
 ---@param CurrentScale double
 function UWBP_Map_Body_C:GetMapScale(CurrentScale) end
-function UWBP_Map_Body_C:AdjustZoomDefault() end
+UWBP_Map_Body_C['Adjust Zoom Default'] = function(self, ) end
 ---@param ScalingSize FVector2D
 function UWBP_Map_Body_C:GetMapCanvasScalingSize(ScalingSize) end
 ---@param ScalingPosition FVector2D

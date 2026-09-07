@@ -17,57 +17,183 @@
 namespace SDK
 {
 
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.UpdateArrowImageAngle
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  newAngle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.CalcScreenPosition
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_OtomoLoupe_C::UpdateArrowImageAngle(double newAngle)
+void UWBP_OtomoLoupe_C::CalcScreenPosition()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "UpdateArrowImageAngle");
-
-	Params::WBP_OtomoLoupe_C_UpdateArrowImageAngle Parms{};
-
-	Parms.newAngle = newAngle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OtomoLoupe_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "Setup");
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "CalcScreenPosition");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.SetFinalWidgetOpacity
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.ExecuteUbergraph_WBP_OtomoLoupe
+// (Final, UbergraphFunction)
 // Parameters:
-// double                                  calcedOpacity                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OtomoLoupe_C::SetFinalWidgetOpacity(double calcedOpacity)
+void UWBP_OtomoLoupe_C::ExecuteUbergraph_WBP_OtomoLoupe(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "SetFinalWidgetOpacity");
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "ExecuteUbergraph_WBP_OtomoLoupe");
 
-	Params::WBP_OtomoLoupe_C_SetFinalWidgetOpacity Parms{};
+	Params::WBP_OtomoLoupe_C_ExecuteUbergraph_WBP_OtomoLoupe Parms{};
 
-	Parms.calcedOpacity = calcedOpacity;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetLoupeWidgetSize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector2D*                       widgetSize_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OtomoLoupe_C::GetLoupeWidgetSize(struct FVector2D* widgetSize_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetLoupeWidgetSize");
+
+	Params::WBP_OtomoLoupe_C_GetLoupeWidgetSize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (widgetSize_0 != nullptr)
+		*widgetSize_0 = std::move(Parms.widgetSize_0);
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetTargetWidgetSize
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector2D*                       outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OtomoLoupe_C::GetTargetWidgetSize(struct FVector2D* outVector)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetTargetWidgetSize");
+
+	Params::WBP_OtomoLoupe_C_GetTargetWidgetSize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (outVector != nullptr)
+		*outVector = std::move(Parms.outVector);
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetTargetWorldLocation
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector*                         outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OtomoLoupe_C::GetTargetWorldLocation(struct FVector* outVector)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetTargetWorldLocation");
+
+	Params::WBP_OtomoLoupe_C_GetTargetWorldLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (outVector != nullptr)
+		*outVector = std::move(Parms.outVector);
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetTranslationTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OtomoLoupe_C::GetTranslationTarget(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetTranslationTarget");
+
+	Params::WBP_OtomoLoupe_C_GetTranslationTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.IsEnableLoupe
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_OtomoLoupe_C::IsEnableLoupe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "IsEnableLoupe");
+
+	Params::WBP_OtomoLoupe_C_IsEnableLoupe Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.OnActivateOtomo
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OtomoLoupe_C::OnActivateOtomo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "OnActivateOtomo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.OnInactiveOtomo
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OtomoLoupe_C::OnInactiveOtomo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "OnInactiveOtomo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_OtomoLoupe_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -95,183 +221,57 @@ void UWBP_OtomoLoupe_C::RoundScreenPosition(const struct FVector2D& ScreenPositi
 }
 
 
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.SetFinalWidgetOpacity
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  calcedOpacity                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OtomoLoupe_C::OnInitialized()
+void UWBP_OtomoLoupe_C::SetFinalWidgetOpacity(double calcedOpacity)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "SetFinalWidgetOpacity");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_OtomoLoupe_C_SetFinalWidgetOpacity Parms{};
+
+	Parms.calcedOpacity = calcedOpacity;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.OnInactiveOtomo
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_OtomoLoupe_C::OnInactiveOtomo()
+void UWBP_OtomoLoupe_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "OnInactiveOtomo");
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.OnActivateOtomo
+// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.UpdateArrowImageAngle
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OtomoLoupe_C::OnActivateOtomo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "OnActivateOtomo");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.IsEnableLoupe
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  newAngle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UWBP_OtomoLoupe_C::IsEnableLoupe()
+void UWBP_OtomoLoupe_C::UpdateArrowImageAngle(double newAngle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "IsEnableLoupe");
+		Func = Class->GetFunction("WBP_OtomoLoupe_C", "UpdateArrowImageAngle");
 
-	Params::WBP_OtomoLoupe_C_IsEnableLoupe Parms{};
+	Params::WBP_OtomoLoupe_C_UpdateArrowImageAngle Parms{};
+
+	Parms.newAngle = newAngle;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetTranslationTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OtomoLoupe_C::GetTranslationTarget(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetTranslationTarget");
-
-	Params::WBP_OtomoLoupe_C_GetTranslationTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetTargetWorldLocation
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector*                         outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OtomoLoupe_C::GetTargetWorldLocation(struct FVector* outVector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetTargetWorldLocation");
-
-	Params::WBP_OtomoLoupe_C_GetTargetWorldLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (outVector != nullptr)
-		*outVector = std::move(Parms.outVector);
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetTargetWidgetSize
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector2D*                       outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OtomoLoupe_C::GetTargetWidgetSize(struct FVector2D* outVector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetTargetWidgetSize");
-
-	Params::WBP_OtomoLoupe_C_GetTargetWidgetSize Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (outVector != nullptr)
-		*outVector = std::move(Parms.outVector);
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.GetLoupeWidgetSize
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector2D*                       widgetSize_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OtomoLoupe_C::GetLoupeWidgetSize(struct FVector2D* widgetSize_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "GetLoupeWidgetSize");
-
-	Params::WBP_OtomoLoupe_C_GetLoupeWidgetSize Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (widgetSize_0 != nullptr)
-		*widgetSize_0 = std::move(Parms.widgetSize_0);
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.ExecuteUbergraph_WBP_OtomoLoupe
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OtomoLoupe_C::ExecuteUbergraph_WBP_OtomoLoupe(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "ExecuteUbergraph_WBP_OtomoLoupe");
-
-	Params::WBP_OtomoLoupe_C_ExecuteUbergraph_WBP_OtomoLoupe Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OtomoLoupe.WBP_OtomoLoupe_C.CalcScreenPosition
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OtomoLoupe_C::CalcScreenPosition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OtomoLoupe_C", "CalcScreenPosition");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

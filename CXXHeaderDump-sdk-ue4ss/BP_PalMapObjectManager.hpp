@@ -3,6 +3,6 @@
 
 class UBP_PalMapObjectManager_C : public UPalMapObjectManager
 {
-}; // Size: 0xD70
+}; // Size: 0xDD8
 
 #endif

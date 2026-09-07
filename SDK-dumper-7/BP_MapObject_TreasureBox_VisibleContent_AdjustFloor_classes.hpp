@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "BP_MapObject_TreasureBox_VisibleContent_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_MapObject_TreasureBox_VisibleContent_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_TreasureBox_VisibleContent_AdjustFloor.BP_MapObject_TreasureBox_VisibleContent_AdjustFloor_C
-// 0x0008 (0x0430 - 0x0428)
+// 0x0008 (0x0448 - 0x0440)
 class ABP_MapObject_TreasureBox_VisibleContent_AdjustFloor_C final : public ABP_MapObject_TreasureBox_VisibleContent_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_TreasureBox_VisibleContent_AdjustFloor_C; // 0x0428(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MapObject_TreasureBox_VisibleContent_AdjustFloor_C; // 0x0440(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_MapObject_TreasureBox_VisibleContent_AdjustFloor(int32 EntryPoint);

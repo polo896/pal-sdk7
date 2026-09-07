@@ -6,6 +6,6 @@ class UBP_SubQuestBlock_StrongOldMan02_KillEnemy_C : public UPalQuestBlock_Count
 
     void GetProgressText(FText& OutText);
     void GetDescriptionText(FText& OutText);
-}; // Size: 0x168
+}; // Size: 0x170
 
 #endif

@@ -17,55 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.Setup
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterParameter* individualParam                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Incubator_AllOpen_List_C::Setup(class UPalIndividualCharacterParameter* individualParam)
+void UWBP_Ingame_Incubator_AllOpen_List_C::BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "Setup");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Ingame_Incubator_AllOpen_List_C_Setup Parms{};
+	Params::WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.individualParam = individualParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_AllOpen_List_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Incubator_AllOpen_List_C::ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List");
-
-	Params::WBP_Ingame_Incubator_AllOpen_List_C_ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -91,21 +57,55 @@ void UWBP_Ingame_Incubator_AllOpen_List_C::BndEvt__WBP_Ingame_Incubator_AllOpen_
 }
 
 
-// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Incubator_AllOpen_List_C::BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Ingame_Incubator_AllOpen_List_C::ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List");
 
-	Params::WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Ingame_Incubator_AllOpen_List_C_ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List Parms{};
 
-	Parms.Button = Button;
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_AllOpen_List_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.Setup
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterParameter* individualParam                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Incubator_AllOpen_List_C::Setup(class UPalIndividualCharacterParameter* individualParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_List_C", "Setup");
+
+	Params::WBP_Ingame_Incubator_AllOpen_List_C_Setup Parms{};
+
+	Parms.individualParam = individualParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -3,8 +3,8 @@
 
 class ABP_CutsceneActor_LevelGimmick_AreaBarrier_C : public ABP_CutsceneActorBase_C
 {
-    class UWorldPartitionStreamingSourceComponent* WorldPartitionStreamingSource;     // 0x03B0 (size: 0x8)
+    class UWorldPartitionStreamingSourceComponent* WorldPartitionStreamingSource;     // 0x0408 (size: 0x8)
 
-}; // Size: 0x3B8
+}; // Size: 0x410
 
 #endif

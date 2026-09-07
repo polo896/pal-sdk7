@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CutsceneActorBase.BP_CutsceneActorBase_C
-// 0x0000 (0x03B0 - 0x03B0)
+// 0x0000 (0x0408 - 0x0408)
 class ABP_CutsceneActorBase_C : public APalCutsceneActor
 {
 public:

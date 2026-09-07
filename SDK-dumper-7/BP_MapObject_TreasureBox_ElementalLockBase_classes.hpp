@@ -18,30 +18,30 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C
-// 0x0038 (0x0488 - 0x0450)
+// 0x0038 (0x04A0 - 0x0468)
 class ABP_MapObject_TreasureBox_ElementalLockBase_C : public APalMapObjectTreasureBox
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0450(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalMapObjectTreasureBoxLockComponent*  TreasureBoxLock;                                   // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   VisualActor;                                       // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0468(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        IndicatorOrigin;                                   // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsUnlockedElement;                                 // 0x0478(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_479[0x7];                                      // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        DestroyDelay;                                      // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0468(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalMapObjectTreasureBoxLockComponent*  TreasureBoxLock;                                   // 0x0470(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   VisualActor;                                       // 0x0478(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0480(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        IndicatorOrigin;                                   // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsUnlockedElement;                                 // 0x0490(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        DestroyDelay;                                      // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void TriggerUnlockElemental();
-	void TriggerOpen();
-	void ReceiveBeginPlay();
-	void OnStartUnlockPerformance();
-	void OnProceedUnlockPerformance();
-	void OnNotifiedStartOpen();
-	void OnFinishUnlockPerformance();
-	void OnFinishOpenVisual();
-	void ExecuteUbergraph_BP_MapObject_TreasureBox_ElementalLockBase(int32 EntryPoint);
 	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void ExecuteUbergraph_BP_MapObject_TreasureBox_ElementalLockBase(int32 EntryPoint);
+	void OnFinishOpenVisual();
+	void OnFinishUnlockPerformance();
+	void OnNotifiedStartOpen();
+	void OnProceedUnlockPerformance();
+	void OnStartUnlockPerformance();
+	void ReceiveBeginPlay();
+	void TriggerOpen();
+	void TriggerUnlockElemental();
 
 public:
 	static class UClass* StaticClass()

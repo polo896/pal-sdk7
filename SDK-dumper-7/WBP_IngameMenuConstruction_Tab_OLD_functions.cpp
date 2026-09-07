@@ -17,51 +17,109 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SwitchToTab
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenuConstruction_Tab_OLD_C::BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_IngameMenuConstruction_Tab_OLD_C_BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenuConstruction_Tab_OLD_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenuConstruction_Tab_OLD_C::ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD");
+
+	Params::WBP_IngameMenuConstruction_Tab_OLD_C_ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenuConstruction_Tab_OLD_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "PreConstruct");
+
+	Params::WBP_IngameMenuConstruction_Tab_OLD_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ResetActiveTab
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenuConstruction_Tab_OLD_C::SwitchToTab()
+void UWBP_IngameMenuConstruction_Tab_OLD_C::ResetActiveTab()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SwitchToTab");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "ResetActiveTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetupTabs
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_Tab_OLD_C::SetupTabs()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SetupTabs");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetTab
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetActiveNewMark
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Num                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalBuildObjectTypeA                    TypeA                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenuConstruction_Tab_OLD_C::SetTab(int32 Num, EPalBuildObjectTypeA TypeA)
+void UWBP_IngameMenuConstruction_Tab_OLD_C::SetActiveNewMark(bool Active)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SetTab");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SetActiveNewMark");
 
-	Params::WBP_IngameMenuConstruction_Tab_OLD_C_SetTab Parms{};
+	Params::WBP_IngameMenuConstruction_Tab_OLD_C_SetActiveNewMark Parms{};
 
-	Parms.Num = Num;
-	Parms.TypeA = TypeA;
+	Parms.Active = Active;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -87,111 +145,53 @@ void UWBP_IngameMenuConstruction_Tab_OLD_C::SetActiveTab(int32 Index_0)
 }
 
 
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetActiveNewMark
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetTab
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Num                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalBuildObjectTypeA                    TypeA                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenuConstruction_Tab_OLD_C::SetActiveNewMark(bool Active)
+void UWBP_IngameMenuConstruction_Tab_OLD_C::SetTab(int32 Num, EPalBuildObjectTypeA TypeA)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SetActiveNewMark");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SetTab");
 
-	Params::WBP_IngameMenuConstruction_Tab_OLD_C_SetActiveNewMark Parms{};
+	Params::WBP_IngameMenuConstruction_Tab_OLD_C_SetTab Parms{};
 
-	Parms.Active = Active;
+	Parms.Num = Num;
+	Parms.TypeA = TypeA;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ResetActiveTab
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetupTabs
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenuConstruction_Tab_OLD_C::ResetActiveTab()
+void UWBP_IngameMenuConstruction_Tab_OLD_C::SetupTabs()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "ResetActiveTab");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SetupTabs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SwitchToTab
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenuConstruction_Tab_OLD_C::PreConstruct(bool IsDesignTime)
+void UWBP_IngameMenuConstruction_Tab_OLD_C::SwitchToTab()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "PreConstruct");
-
-	Params::WBP_IngameMenuConstruction_Tab_OLD_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenuConstruction_Tab_OLD_C::ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD");
-
-	Params::WBP_IngameMenuConstruction_Tab_OLD_C_ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_Tab_OLD_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "Construct");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "SwitchToTab");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenuConstruction_Tab_OLD_C::BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_Tab_OLD_C", "BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_IngameMenuConstruction_Tab_OLD_C_BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

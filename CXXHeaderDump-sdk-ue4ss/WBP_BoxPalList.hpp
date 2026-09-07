@@ -3,32 +3,32 @@
 
 class UWBP_BoxPalList_C : public UPalUIPalBoxBase
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04A0 (size: 0x8)
-    class UWBP_BoxPalListBase_C* WBP_BoxPalListBase;                                  // 0x04A8 (size: 0x8)
-    FWBP_BoxPalList_COnLeftClickedSlot OnLeftClickedSlot;                             // 0x04B0 (size: 0x10)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04A8 (size: 0x8)
+    class UWBP_BoxPalListBase_C* WBP_BoxPalListBase;                                  // 0x04B0 (size: 0x8)
+    FWBP_BoxPalList_COnLeftClickedSlot OnLeftClickedSlot;                             // 0x04B8 (size: 0x10)
     void OnLeftClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-    FWBP_BoxPalList_COnRightClickedSlot OnRightClickedSlot;                           // 0x04C0 (size: 0x10)
+    FWBP_BoxPalList_COnRightClickedSlot OnRightClickedSlot;                           // 0x04C8 (size: 0x10)
     void OnRightClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_BoxPalList_COnHoveredSlot OnHoveredSlot;                                     // 0x04D0 (size: 0x10)
+    FWBP_BoxPalList_COnHoveredSlot OnHoveredSlot;                                     // 0x04D8 (size: 0x10)
     void OnHoveredSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_BoxPalList_COnUnhoveredSlot OnUnhoveredSlot;                                 // 0x04E0 (size: 0x10)
+    FWBP_BoxPalList_COnUnhoveredSlot OnUnhoveredSlot;                                 // 0x04E8 (size: 0x10)
     void OnUnhoveredSlot(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-    FWBP_BoxPalList_COnUpdatedPage OnUpdatedPage;                                     // 0x04F0 (size: 0x10)
+    FWBP_BoxPalList_COnUpdatedPage OnUpdatedPage;                                     // 0x04F8 (size: 0x10)
     void OnUpdatedPage(int32 NowPage);
-    bool CanDragDrop;                                                                 // 0x0500 (size: 0x1)
-    FPalDataTableRowName_UIInputAction NextPageInputAction;                           // 0x0504 (size: 0x8)
-    FPalDataTableRowName_UIInputAction PrevPageInputAction;                           // 0x050C (size: 0x8)
-    FWBP_BoxPalList_COnCreatedNewSlot OnCreatedNewSlot;                               // 0x0518 (size: 0x10)
+    bool CanDragDrop;                                                                 // 0x0508 (size: 0x1)
+    FPalDataTableRowName_UIInputAction NextPageInputAction;                           // 0x050C (size: 0x8)
+    FPalDataTableRowName_UIInputAction PrevPageInputAction;                           // 0x0514 (size: 0x8)
+    FWBP_BoxPalList_COnCreatedNewSlot OnCreatedNewSlot;                               // 0x0520 (size: 0x10)
     void OnCreatedNewSlot(class UWBP_PalCharacterSlotButtonBase_C* NewSlot);
-    FWBP_BoxPalList_COnSelectPalBoxPage OnSelectPalBoxPage;                           // 0x0528 (size: 0x10)
+    FWBP_BoxPalList_COnSelectPalBoxPage OnSelectPalBoxPage;                           // 0x0530 (size: 0x10)
     void OnSelectPalBoxPage(int32 Page);
-    FWBP_BoxPalList_COnSorted OnSorted;                                               // 0x0538 (size: 0x10)
+    FWBP_BoxPalList_COnSorted OnSorted;                                               // 0x0540 (size: 0x10)
     void OnSorted();
-    FWBP_BoxPalList_COnUpdateSlot OnUpdateSlot;                                       // 0x0548 (size: 0x10)
+    FWBP_BoxPalList_COnUpdateSlot OnUpdateSlot;                                       // 0x0550 (size: 0x10)
     void OnUpdateSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
-    TSoftObjectPtr<class UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;          // 0x0558 (size: 0x30)
-    bool bDisplayBanMarkInExpedition;                                                 // 0x0588 (size: 0x1)
-    FWBP_BoxPalList_COnSyncedSlot OnSyncedSlot;                                       // 0x0590 (size: 0x10)
+    TSoftObjectPtr<UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;                // 0x0560 (size: 0x30)
+    bool bDisplayBanMarkInExpedition;                                                 // 0x0590 (size: 0x1)
+    FWBP_BoxPalList_COnSyncedSlot OnSyncedSlot;                                       // 0x0598 (size: 0x10)
     void OnSyncedSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
 
     void DisplayBanMark_InExpedition();
@@ -39,11 +39,11 @@ class UWBP_BoxPalList_C : public UPalUIPalBoxBase
     void OnClosedSearchWindow(class UPalHUDDispatchParameterBase* Param);
     void OnClosedSortWindow(class UPalHUDDispatchParameterBase* Param);
     void Set Enable Page Control Action(bool bIsEnableAction);
-    void GetCurrentBoxSlots(TArray<UWBP_PalCommonCharacterSlotButton_C*>& Slots);
+    void GetCurrentBoxSlots(TArray<class UWBP_PalCommonCharacterSlotButton_C*>& Slots);
     void FindWidgetBySlot(class UPalIndividualCharacterSlot* Slot, class UWBP_PalCharacterSlotButtonBase_C*& Widget);
     void Setup();
     void Construct();
-    void OnUpdatePagePalBoxList(int32 NowPage, const TArray<UPalIndividualCharacterSlot*>& SlotList);
+    void OnUpdatePagePalBoxList(int32 NowPage, const TArray<class UPalIndividualCharacterSlot*>& SlotList);
     void BndEvt__WBP_BoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_2_OnUpdatedPage__DelegateSignature(int32 NowPage);
     void BndEvt__WBP_BoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_3_OnClickedSortButton__DelegateSignature();
     void BndEvt__WBP_BoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_4_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* NewSlot);
@@ -66,6 +66,6 @@ class UWBP_BoxPalList_C : public UPalUIPalBoxBase
     void OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-}; // Size: 0x5A0
+}; // Size: 0x5A8
 
 #endif

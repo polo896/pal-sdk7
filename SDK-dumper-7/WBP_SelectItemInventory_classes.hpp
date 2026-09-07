@@ -19,35 +19,35 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_SelectItemInventory.WBP_SelectItemInventory_C
-// 0x0040 (0x04B8 - 0x0478)
+// 0x0040 (0x04C0 - 0x0480)
 class UWBP_SelectItemInventory_C final : public UPalUISelectItemInventoryBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0478(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Common_Inventory_C*                WBP_Common_Inventory;                              // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          isRequireSelectNum;                                // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalItemSlotButtonBase_C*           selectedButton;                                    // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalInventoryModel_C*                InventoryModel;                                    // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    BgMsgID;                                           // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0480(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Common_Inventory_C*                WBP_Common_Inventory;                              // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Menu_btn_C*                        WBP_Menu_btn;                                      // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          isRequireSelectNum;                                // 0x0498(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_499[0x7];                                      // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalItemSlotButtonBase_C*           selectedButton;                                    // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalInventoryModel_C*                InventoryModel;                                    // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    BgMsgID;                                           // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void OnUpdatedSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
-	void OnSetup();
-	void OnLeftClicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnComplateSelectNum(EPalUISelectNumResult resultType, int64 selectedNum);
-	void GetTargetCharacter(class APalCharacter** TargetCharacter);
-	void ExecuteUbergraph_WBP_SelectItemInventory(int32 EntryPoint);
-	void DisplaySelectNumWidget();
-	void Destruct();
-	void ComplateSelect(const struct FPalItemSlotId& SlotId, int32 selectNum);
-	void BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void BindUsabilityGrayout(class APalCharacter* TargetCharacter);
-	void ApplyUsabilityGrayoutAll(class APalCharacter* TargetCharacter);
 	void ApplyUsabilityGrayout(class APalCharacter* TargetCharacter, class UWBP_PalItemSlotButtonBase_C* SlotButton);
+	void ApplyUsabilityGrayoutAll(class APalCharacter* TargetCharacter);
+	void BindUsabilityGrayout(class APalCharacter* TargetCharacter);
+	void BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
+	void BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void ComplateSelect(const struct FPalItemSlotId& SlotId, int32 selectNum);
+	void Destruct();
+	void DisplaySelectNumWidget();
+	void ExecuteUbergraph_WBP_SelectItemInventory(int32 EntryPoint);
+	void GetTargetCharacter(class APalCharacter** TargetCharacter);
+	void OnComplateSelectNum(EPalUISelectNumResult resultType, int64 selectedNum);
+	void OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnLeftClicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnSetup();
+	void OnUpdatedSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -17,37 +17,67 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetupTabs
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_IngameMenuConstruction_Tab_OLD_C_SetupTabs final
-{
-public:
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenuConstruction_TabSub_OLD_C* CallFunc_Create_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0028(0x0008)(NoDestructor)
-	class UPanelWidget*                           CallFunc_GetParent_ReturnValue;                    // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_SetupTabs;
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetTab
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenuConstruction_Tab_OLD_C_SetTab final
+struct WBP_IngameMenuConstruction_Tab_OLD_C_BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	int32                                         Num;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalBuildObjectTypeA                          TypeA;                                             // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanDisplayBlueprintCategoryInBuildRadialMenu_ReturnValue; // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_SetTab;
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_IngameMenuConstruction_Tab_OLD_C_ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetBuildObjectCategoryAName_outName;      // 0x0010(0x0018)()
+	TSoftObjectPtr<class UTexture2D>              CallFunc_Map_Find_Value;                           // 0x0028(0x0030)(HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD;
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenuConstruction_Tab_OLD_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_PreConstruct;
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ResetActiveTab
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameMenuConstruction_Tab_OLD_C_ResetActiveTab final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenuConstruction_TabSub_OLD_C* CallFunc_Array_Get_Item;                         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_ResetActiveTab;
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetActiveNewMark
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenuConstruction_Tab_OLD_C_SetActiveNewMark final
+{
+public:
+	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_SetActiveNewMark;
 
 // Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetActiveTab
 // 0x0030 (0x0030 - 0x0000)
@@ -67,67 +97,37 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_SetActiveTab;
 
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetActiveNewMark
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenuConstruction_Tab_OLD_C_SetActiveNewMark final
-{
-public:
-	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_SetActiveNewMark;
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ResetActiveTab
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenuConstruction_Tab_OLD_C_ResetActiveTab final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenuConstruction_TabSub_OLD_C* CallFunc_Array_Get_Item;                         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_ResetActiveTab;
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenuConstruction_Tab_OLD_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_PreConstruct;
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_IngameMenuConstruction_Tab_OLD_C_ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetBuildObjectCategoryAName_outName;      // 0x0010(0x0018)()
-	TSoftObjectPtr<class UTexture2D>              CallFunc_Map_Find_Value;                           // 0x0028(0x0030)(HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD;
-
-// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetTab
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenuConstruction_Tab_OLD_C_BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+struct WBP_IngameMenuConstruction_Tab_OLD_C_SetTab final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Num;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalBuildObjectTypeA                          TypeA;                                             // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanDisplayBlueprintCategoryInBuildRadialMenu_ReturnValue; // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_SetTab;
+
+// Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.SetupTabs
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_IngameMenuConstruction_Tab_OLD_C_SetupTabs final
+{
+public:
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenuConstruction_TabSub_OLD_C* CallFunc_Create_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize;                  // 0x0028(0x0008)(NoDestructor)
+	class UPanelWidget*                           CallFunc_GetParent_ReturnValue;                    // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_Tab_OLD_C_SetupTabs;
 
 // Function WBP_IngameMenuConstruction_Tab_OLD.WBP_IngameMenuConstruction_Tab_OLD_C.GetTabNum
 // 0x0008 (0x0008 - 0x0000)

@@ -17,79 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.Tick
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CommonCircularGauge_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_CommonCircularGauge_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "Tick");
-
-	Params::WBP_CommonCircularGauge_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.SetTargetValue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CommonCircularGauge_C::SetTargetValue(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "SetTargetValue");
-
-	Params::WBP_CommonCircularGauge_C_SetTargetValue Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.ReflectRateToImage
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonCircularGauge_C::ReflectRateToImage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "ReflectRateToImage");
+		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CommonCircularGauge_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "PreConstruct");
-
-	Params::WBP_CommonCircularGauge_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -113,17 +51,79 @@ void UWBP_CommonCircularGauge_C::ExecuteUbergraph_WBP_CommonCircularGauge(int32 
 }
 
 
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.Construct
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CommonCircularGauge_C::Construct()
+void UWBP_CommonCircularGauge_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "Construct");
+		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "PreConstruct");
+
+	Params::WBP_CommonCircularGauge_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.ReflectRateToImage
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonCircularGauge_C::ReflectRateToImage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "ReflectRateToImage");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.SetTargetValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommonCircularGauge_C::SetTargetValue(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "SetTargetValue");
+
+	Params::WBP_CommonCircularGauge_C_SetTargetValue Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommonCircularGauge_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonCircularGauge_C", "Tick");
+
+	Params::WBP_CommonCircularGauge_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -30,10 +30,10 @@ public:
 	double                                        EndCollisionTime;                                  // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_SkillEffect_DarkLaser(int32 EntryPoint);
-	void EndCollision();
 	void EnableCollision();
+	void EndCollision();
+	void ExecuteUbergraph_BP_SkillEffect_DarkLaser(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

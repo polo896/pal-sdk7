@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_PalUIThrowObjectNoneMessageType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_PalUIThrowObjectNoneMessageType_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -28,10 +28,10 @@ public:
 	struct FTimerHandle                           HideTimerHandle;                                   // 0x02D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetDisplayMode(E_PalUIThrowObjectNoneMessageType DisplayType);
-	void OnTimer_Hide();
-	void Hide();
 	void Display(double DisplayTime);
+	void Hide();
+	void OnTimer_Hide();
+	void SetDisplayMode(E_PalUIThrowObjectNoneMessageType DisplayType);
 
 public:
 	static class UClass* StaticClass()

@@ -533,17 +533,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_PalSkillInfo_C_ConvertUIDisplayParameterToPassiveEffectType;
 
-// Function WBP_MainMenu_PalSkillInfo.WBP_MainMenu_PalSkillInfo_C.ConvertUIDisplayParameterToFoodEffectType
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_MainMenu_PalSkillInfo_C_ConvertUIDisplayParameterToFoodEffectType final
-{
-public:
-	E_PalUIStatusDIsplayParameter                 DisplayParameter;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalFoodStatusEffectType                      FoodEffect;                                        // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_PalSkillInfo_C_ConvertUIDisplayParameterToFoodEffectType;
-
 // Function WBP_MainMenu_PalSkillInfo.WBP_MainMenu_PalSkillInfo_C.ChooseFriendShipEffectValue
 // 0x0080 (0x0080 - 0x0000)
 struct WBP_MainMenu_PalSkillInfo_C_ChooseFriendShipEffectValue final
@@ -677,6 +666,17 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_PalSkillInfo_C_ChooseAwakeningEffectValue;
+
+// Function WBP_MainMenu_PalSkillInfo.WBP_MainMenu_PalSkillInfo_C.ConvertUIDisplayParameterToFoodEffectType
+// 0x0003 (0x0003 - 0x0000)
+struct WBP_MainMenu_PalSkillInfo_C_ConvertUIDisplayParameterToFoodEffectType final
+{
+public:
+	E_PalUIStatusDIsplayParameter                 DisplayParameter;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalFoodStatusEffectType                      FoodEffect;                                        // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_PalSkillInfo_C_ConvertUIDisplayParameterToFoodEffectType;
 
 // Function WBP_MainMenu_PalSkillInfo.WBP_MainMenu_PalSkillInfo_C.FormatParameterEffectRateText
 // 0x0268 (0x0268 - 0x0000)

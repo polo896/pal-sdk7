@@ -19,6 +19,7 @@ class UWBP_PartnerSkillInfo_C : public UPalUserWidget
     FTimerHandle AnmEndTimer;                                                         // 0x04B0 (size: 0x8)
     float CacheRatio;                                                                 // 0x04B8 (size: 0x4)
     FDataTableRowHandle CancelMSGID;                                                  // 0x04C0 (size: 0x10)
+    bool IsShowBlocked;                                                               // 0x04D0 (size: 0x1)
 
     void TriggerSkillCallAnimation();
     void ToggleCoopText(bool ShowOriginal);
@@ -47,6 +48,6 @@ class UWBP_PartnerSkillInfo_C : public UPalUserWidget
     void Destruct();
     void AnmEvent_HideShow(bool Hide, bool Override);
     void ExecuteUbergraph_WBP_PartnerSkillInfo(int32 EntryPoint);
-}; // Size: 0x4D0
+}; // Size: 0x4D1
 
 #endif

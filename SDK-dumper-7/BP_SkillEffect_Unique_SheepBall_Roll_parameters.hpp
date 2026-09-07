@@ -102,7 +102,7 @@ public:
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_CustomEvent_Defencer;                       // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalDamageInfo                         K2Node_CustomEvent_DamageInfo;                     // 0x0160(0x0130)()
+	struct FPalDamageInfo                         K2Node_CustomEvent_damageInfo;                     // 0x0160(0x0130)()
 	int32                                         K2Node_CustomEvent_HitCount;                       // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    K2Node_CustomEvent_AttackerComponent;              // 0x0298(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)

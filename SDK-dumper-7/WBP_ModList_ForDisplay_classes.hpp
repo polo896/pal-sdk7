@@ -19,21 +19,21 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ModList_ForDisplay.WBP_ModList_ForDisplay_C
-// 0x0088 (0x0558 - 0x04D0)
+// 0x0088 (0x0560 - 0x04D8)
 class UWBP_ModList_ForDisplay_C final : public UPalUIModSettings
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Option_ModMenu_C*                  WBP_Option_ModMenu;                                // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FPalUIModUniqueId                      CurrentProcessingModId;                            // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     OpenSteamworkshopInputAction;                      // 0x04F0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CantChangeModSupportIngameMsgId;                   // 0x04F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    SaveMsgId;                                         // 0x0508(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    NotCompatibleMsgId;                                // 0x0518(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    CancelMSGID;                                       // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalDataTableRowName_UIInputAction     CancelInputAction;                                 // 0x0538(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     ConfirmInputAction;                                // 0x0540(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    ModSupportCautionMsgId;                            // 0x0548(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Option_ModMenu_C*                  WBP_Option_ModMenu;                                // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPalUIModUniqueId                      CurrentProcessingModId;                            // 0x04E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     OpenSteamworkshopInputAction;                      // 0x04F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CantChangeModSupportIngameMsgId;                   // 0x0500(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    SaveMsgId;                                         // 0x0510(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    NotCompatibleMsgId;                                // 0x0520(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    CancelMSGID;                                       // 0x0530(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPalDataTableRowName_UIInputAction     CancelInputAction;                                 // 0x0540(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     ConfirmInputAction;                                // 0x0548(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    ModSupportCautionMsgId;                            // 0x0550(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void BndEvt__WBP_ModList_ForDisplay_WBP_Option_ModMenu_K2Node_ComponentBoundEvent_0_OnClickedAnyMod__DelegateSignature(class UWBP_Option_ModMenu_ModList_C* Widget);
