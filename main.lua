@@ -1,429 +1,666 @@
--- =======================================================================
--- Relic Collector Mod By Wol4ara896
--- =======================================================================
+-- ================= By Wol4ara896 =================
+--          STATION SWITCH
+-- ===================================================
 
-local MOD_TAG = "[RelicCollector]"
-local relicUI = require("relic_ui")
+local UEHelpers = require("UEHelpers")
+local stationUI = require("station_ui")
 
-local CONFIG = {
-    CollectRadius   = 0,
-    ChatCommand     = "!collect",
-    ChatCommandNoExp= "!collectnoexp",
-    ChatCommandGUI  = "!scollect",
-    RestoreDelayMs  = 3000,
-    MaxPerType      = 0,
-
-    Relics = {
-        ["BP_LevelObject_Relic_C"]               = true,  -- Lifmunk
-        ["BP_LevelObject_Relic_FlameBambi_C"]    = true,  -- Rooby
-        ["BP_LevelObject_Relic_GuardianDog_C"]   = true,  -- Yakumo
-        ["BP_LevelObject_Relic_IceCrocodile_C"]  = true,  -- Munchill
-        ["BP_LevelObject_Relic_LazyDragon_C"]    = true,  -- Relaxaurus
-        ["BP_LevelObject_Relic_LeafMomonga_C"]   = true,  -- Bristla
-        ["BP_LevelObject_Relic_Monkey_C"]        = true,  -- Tanzee
-        ["BP_LevelObject_Relic_Mutant_C"]        = true,  -- Lunaris
-        ["BP_LevelObject_Relic_NegativeKoala_C"] = true,  -- Depresso
-        ["BP_LevelObject_Relic_Penguin_C"]       = true,  -- Pengullet
-        ["BP_LevelObject_Relic_PinkCat_C"]       = true,  -- Cattiva
-        ["BP_LevelObject_Relic_SheepBall_C"]     = true,  -- Lamball
-    },
-
-    RelicNames = {
-        ["BP_LevelObject_Relic_C"]               = "Lifmunk",
-        ["BP_LevelObject_Relic_FlameBambi_C"]    = "Rooby",
-        ["BP_LevelObject_Relic_GuardianDog_C"]   = "Yakumo",
-        ["BP_LevelObject_Relic_IceCrocodile_C"]  = "Munchill",
-        ["BP_LevelObject_Relic_LazyDragon_C"]    = "Relaxaurus",
-        ["BP_LevelObject_Relic_LeafMomonga_C"]   = "Bristla",
-        ["BP_LevelObject_Relic_Monkey_C"]        = "Tanzee",
-        ["BP_LevelObject_Relic_Mutant_C"]        = "Lunaris",
-        ["BP_LevelObject_Relic_NegativeKoala_C"] = "Depresso",
-        ["BP_LevelObject_Relic_Penguin_C"]       = "Pengullet",
-        ["BP_LevelObject_Relic_PinkCat_C"]       = "Cattiva",
-        ["BP_LevelObject_Relic_SheepBall_C"]     = "Lamball",
-    }
+local Config = {
+    HotkeyToggle = Key.F6,
+    HotkeyGUI    = Key.F7,
+    SaveFileName = "station_switch_data.txt",
+    EnableChatToast = true,
+    SenderName = "StationSwitch",
+    RaycastDistance = 5000.0,
+    Debug = false
 }
 
-local FriendlyToClass = {
-    ["lifmunk"]    = "BP_LevelObject_Relic_C",
-    ["rooby"]      = "BP_LevelObject_Relic_FlameBambi_C",
-    ["yakumo"]     = "BP_LevelObject_Relic_GuardianDog_C",
-    ["munchill"]   = "BP_LevelObject_Relic_IceCrocodile_C",
-    ["relaxaurus"] = "BP_LevelObject_Relic_LazyDragon_C",
-    ["bristla"]    = "BP_LevelObject_Relic_LeafMomonga_C",
-    ["tanzee"]     = "BP_LevelObject_Relic_Monkey_C",
-    ["lunaris"]    = "BP_LevelObject_Relic_Mutant_C",
-    ["depresso"]   = "BP_LevelObject_Relic_NegativeKoala_C",
-    ["pengullet"]  = "BP_LevelObject_Relic_Penguin_C",
-    ["cattiva"]    = "BP_LevelObject_Relic_PinkCat_C",
-    ["lamball"]    = "BP_LevelObject_Relic_SheepBall_C",
-}
+local PausedStations = {}
 
-local pendingRestoreRate = nil
-
-local function GetUtility()
-    return StaticFindObject("/Script/Pal.Default__PalUtility")
-end
-
-local function GetLocalPlayerController()
-    local controllers = FindAllOf("BP_PalPlayerController_C") or FindAllOf("PalPlayerController")
-    if controllers then
-        for _, c in ipairs(controllers) do
-            if c:IsValid() and c.IsLocalPlayerController and c:IsLocalPlayerController() then
-                return c
-            end
-        end
+local function DebugPrint(text)
+    if Config.Debug then
+        pcall(function() print("[StationSwitch][Debug] " .. tostring(text) .. "\n") end)
     end
-    return nil
 end
 
-local function GetWorldContext()
-    local localPC = GetLocalPlayerController()
-    if localPC and localPC:IsValid() then return localPC end
-    return nil
-end
-
-local function IsSameGuid(g1, g2)
-    if not g1 or not g2 then return false end
-    if g1.A and g2.A then
-        return g1.A == g2.A and g1.B == g2.B and g1.C == g2.C and g1.D == g2.D
+local function SafeIsValid(obj)
+    if not obj then return false end
+    if type(obj) == "userdata" or type(obj) == "table" then
+        if obj.IsValid and type(obj.IsValid) == "function" then
+            local ok, valid = pcall(function() return obj:IsValid() end)
+            return ok and valid
+        end
+        return true
     end
     return false
 end
 
-local function Notify(message)
-    print(string.format("%s %s", MOD_TAG, message))
-    local util = GetUtility()
-    local ctx  = GetWorldContext()
-    if util and ctx then
-        pcall(function() util:SendSystemAnnounce(ctx, message) end)
-    end
+local function GetLocalPlayerController()
+    return UEHelpers:GetPlayerController()
 end
 
-local function NotifySequence(lines)
-    local combined = table.concat(lines, "\n")
-    Notify(combined)
-end
-
-local function GetOptionSubsystem()
-    local instances = FindAllOf("PalOptionSubsystem")
-    if instances and #instances > 0 then
-        for _, inst in ipairs(instances) do
-            if inst and inst:IsValid() then return inst end
-        end
-    end
+local function GetLocalPlayerCharacter()
+    local pc = GetLocalPlayerController()
+    if SafeIsValid(pc) then return pc.Pawn or pc.Character end
     return nil
 end
 
-local function SetExpRate(rate)
-    local subsystem = GetOptionSubsystem()
-    if not subsystem then return false end
-    return pcall(function() subsystem.OptionWorldSettings.ExpRate = rate end)
-end
-
-local function GetExpRate()
-    local subsystem = GetOptionSubsystem()
-    if not subsystem then return nil end
-    local ok, value = pcall(function() return subsystem.OptionWorldSettings.ExpRate end)
-    if ok then return value end
-    return nil
-end
-
-local function CollectRelics()
-    local PlayerController = GetLocalPlayerController()
-    if not PlayerController or not PlayerController:IsValid() then
-        Notify("[RC] Error: Local Player Controller not found.")
-        return
-    end
-
-    local Transmitter = PlayerController.Transmitter
-    if not Transmitter or not Transmitter:IsValid() then
-        Notify("[RC] Error: Transmitter not found.")
-        return
-    end
-
-    local PlayerNetwork = Transmitter.Player
-    if not PlayerNetwork or not PlayerNetwork:IsValid() then
-        Notify("[RC] Error: PlayerNetwork component not found.")
-        return
-    end
-
-    local PlayerPawn = PlayerController.Character
-    if not PlayerPawn or not PlayerPawn:IsValid() then
-        Notify("[RC] Error: Player pawn not found.")
-        return
-    end
-
-    local PlayerLoc = PlayerPawn:K2_GetActorLocation()
-    local collectedCount = 0
-    local stats = {}
-
-    for k, _ in pairs(CONFIG.Relics) do stats[k] = 0 end
-
-    local relics = FindAllOf("PalLevelObjectRelic")
-    if not relics or #relics == 0 then
-        Notify("[RC] No relics found in world.")
-        return
-    end
-
-    for _, relic in ipairs(relics) do
-        if relic:IsValid() and relic.bPickedInClient == false then
-            local class = relic:GetClass()
-            local className = class and class:GetFName():ToString() or ""
-
-            local isEnabled = CONFIG.Relics[className]
-            if isEnabled == nil then isEnabled = true end
-
-            local currentCount = stats[className] or 0
-            local limit = CONFIG.MaxPerType or 0
-
-            if isEnabled and (limit == 0 or currentCount < limit) then
-                local shouldCollect = true
-                if CONFIG.CollectRadius > 0 then
-                    local RelicLoc = relic:K2_GetActorLocation()
-                    local dist = math.sqrt((PlayerLoc.X - RelicLoc.X)^2 + (PlayerLoc.Y - RelicLoc.Y)^2 + (PlayerLoc.Z - RelicLoc.Z)^2)
-                    if dist > CONFIG.CollectRadius then
-                        shouldCollect = false
-                    end
-                end
-
-                if shouldCollect then
-                    PlayerNetwork:RequestObtainLevelObject_ToServer(relic)
-                    collectedCount = collectedCount + 1
-                    stats[className] = currentCount + 1
-                end
+local function ShowToast(text)
+    if not Config.EnableChatToast then return end
+    pcall(function()
+        ExecuteInGameThread(function()
+            local util = StaticFindObject("/Script/Pal.Default__PalUtility")
+            local pc = GetLocalPlayerController()
+            local ctx = (pc and pc.Pawn) and pc.Pawn or pc
+            if util and SafeIsValid(util) and SafeIsValid(ctx) then
+                util:SendSystemAnnounce(ctx, text)
             end
-        end
-    end
-
-    if collectedCount > 0 then
-        local details = {}
-        for class, count in pairs(stats) do
-            if count > 0 then
-                local friendlyName = CONFIG.RelicNames[class] or class
-                table.insert(details, string.format("%s: %d", friendlyName, count))
-            end
-        end
-        Notify(string.format("[RC] Collected %d statues!\n(%s)", collectedCount, table.concat(details, ", ")))
-    else
-        Notify("[RC] Nothing collected! (Already gathered, disabled, or outside radius)")
-    end
-end
-
-local function CollectRelicsNoExp()
-    local originalRate = GetExpRate()
-    if originalRate == nil then
-        Notify("[RC] EXP read failed, collecting with normal EXP...")
-        CollectRelics()
-        return
-    end
-
-    local setOk = SetExpRate(0.0)
-    if not setOk then
-        Notify("[RC] Failed to disable EXP, collecting normally...")
-        CollectRelics()
-        return
-    end
-
-    Notify(string.format("[RC] Collecting without EXP (Rate: 0.0, was: %.1f)...", originalRate))
-    pendingRestoreRate = originalRate
-
-    CollectRelics()
-
-    ExecuteWithDelay(CONFIG.RestoreDelayMs, function()
-        if pendingRestoreRate ~= nil then
-            local restoreOk = SetExpRate(pendingRestoreRate)
-            if restoreOk then
-                Notify(string.format("[RC] EXP restored back to %.1f", pendingRestoreRate))
-            else
-                Notify("[RC] Failed to restore EXP! Type: !restore")
-            end
-            pendingRestoreRate = nil
-        end
+        end)
     end)
 end
 
-local function RestoreExpManually()
-    local rate = pendingRestoreRate or 1.0
-    SetExpRate(rate)
-    Notify(string.format("[RC] EXP manually restored to %.1f", rate))
-    pendingRestoreRate = nil
+local function GuidToKey(guid)
+    if not guid then return "" end
+    local a = guid.A or 0
+    local b = guid.B or 0
+    local c = guid.C or 0
+    local d = guid.D or 0
+    if a == 0 and b == 0 and c == 0 and d == 0 then return "" end
+    return string.format("%d,%d,%d,%d", a, b, c, d)
+end
+
+local function SavePausedStationsToDisk()
+    pcall(function()
+        local file = io.open(Config.SaveFileName, "w")
+        if not file then return end
+
+        for _, data in pairs(PausedStations) do
+            local name = data.Name or "Workstation"
+            local origId = data.OrigDefineId or "None"
+            file:write(string.format("%d,%d,%d,%d=%s|%s\n", data.A or 0, data.B or 0, data.C or 0, data.D or 0, name, origId))
+        end
+        file:close()
+        DebugPrint("Saved paused stations to file: " .. tostring(Config.SaveFileName))
+    end)
+end
+
+local function LoadPausedStationsFromDisk()
+    local file = io.open(Config.SaveFileName, "r")
+    if not file then return end
+
+    PausedStations = {}
+    local count = 0
+    for rawLine in file:lines() do
+        local line = rawLine:gsub("\r", ""):gsub("%s+", "")
+        local a, b, c, d, rest = line:match("^(%-?%d+),(%-?%d+),(%-?%d+),(%-?%d+)=(.*)$")
+        if a and b and c and d and rest then
+            local name, origId = rest:match("^(.-)|(.*)$")
+            if not name then name = rest; origId = "None" end
+            local key = string.format("%d,%d,%d,%d", tonumber(a), tonumber(b), tonumber(c), tonumber(d))
+            PausedStations[key] = {
+                A = tonumber(a),
+                B = tonumber(b),
+                C = tonumber(c),
+                D = tonumber(d),
+                Name = (name and name ~= "") and name or "Workstation",
+                OrigDefineId = (origId and origId ~= "") and origId or "None"
+            }
+            count = count + 1
+        end
+    end
+    file:close()
+    print("[StationSwitch] Loaded paused stations from disk: " .. tostring(count))
+end
+
+local function SetStationState(Workee, Work, Concrete, bPaused, StationKey)
+    if not SafeIsValid(Work) then return end
+
+    if bPaused then
+        pcall(function()
+            if Work.AssignDefineDataId then
+                local currentId = Work.AssignDefineDataId:ToString()
+                if currentId and currentId ~= "" and currentId ~= "None" then
+                    if StationKey and PausedStations[StationKey] then
+                        PausedStations[StationKey].OrigDefineId = currentId
+                    end
+                end
+                Work.AssignDefineDataId = FName("None")
+            end
+        end)
+
+        Work.AssignableFixedType = 3
+        Work.CurrentState = 2
+        Work.bAssignableOtomo = false
+        Work.bCanStealAssign = false
+        Work.bCanTriggerWorkerEvent = false
+        pcall(function() Work:OnRep_CurrentState() end)
+
+        if SafeIsValid(Workee) then
+            pcall(function()
+                Workee.bCannotApproachByWork = true
+                Workee:OnRep_CannotApproachByWork()
+            end)
+        end
+
+        if SafeIsValid(Concrete) then
+            pcall(function()
+                local switchMod = Concrete:GetSwitchModule()
+                if SafeIsValid(switchMod) then
+                    switchMod.SwitchState = 1
+                    switchMod:OnRep_SwitchState()
+                end
+            end)
+        end
+    else
+        pcall(function()
+            local origId = nil
+            if StationKey and PausedStations[StationKey] and PausedStations[StationKey].OrigDefineId then
+                origId = PausedStations[StationKey].OrigDefineId
+            end
+
+            if origId and origId ~= "" and origId ~= "None" then
+                Work.AssignDefineDataId = FName(origId)
+            end
+        end)
+
+        Work.AssignableFixedType = 0
+        Work.CurrentState = 1
+        Work.bAssignableOtomo = true
+        Work.bCanStealAssign = true
+        Work.bCanTriggerWorkerEvent = true
+        pcall(function() Work:OnRep_CurrentState() end)
+
+        if SafeIsValid(Workee) then
+            pcall(function()
+                Workee.bCannotApproachByWork = false
+                Workee:OnRep_CannotApproachByWork()
+            end)
+        end
+
+        if SafeIsValid(Concrete) then
+            pcall(function()
+                local switchMod = Concrete:GetSwitchModule()
+                if SafeIsValid(switchMod) then
+                    switchMod.SwitchState = 0
+                    switchMod:OnRep_SwitchState()
+                end
+            end)
+        end
+    end
+end
+
+local function CategorizeWorkstation(name, modelId)
+    local s = (tostring(name) .. " " .. tostring(modelId)):lower()
+    if s:find("stone") or s:find("rock") or s:find("ore") or s:find("mine") or s:find("mining") then return "mining" end
+    if s:find("wood") or s:find("log") or s:find("tree") or s:find("lumber") then return "logging" end
+    if s:find("farm") or s:find("plant") or s:find("berry") or s:find("wheat") or s:find("tomato") or s:find("lettuce") then return "farm" end
+    if s:find("craft") or s:find("bench") or s:find("forge") or s:find("furnace") or s:find("sphere") or s:find("assembly") or s:find("weapon") or s:find("medicine") or s:find("cook") or s:find("kitchen") then return "crafting" end
+    if s:find("ranch") or s:find("breed") or s:find("pasture") then return "ranch" end
+    return "other"
+end
+
+local function FormatCleanName(rawName)
+    local s = tostring(rawName or "Workstation"):gsub(".*::", ""):gsub("^PalMapObject_", ""):gsub("^MapObject_", ""):gsub("_C$", "")
+    s = s:gsub("(%a)([%w]*)", function(f, r) return f:upper() .. r:lower() end)
+    return s
+end
+
+local function ScanBaseWorkstations()
+    local results = {}
+    local seenKeys = {}
+    local seenModels = {}
+
+    local mapObjects = FindAllOf("PalMapObjectModel") or {}
+    for _, model in ipairs(mapObjects) do
+        if SafeIsValid(model) then
+            local modelGuid = model.InstanceId
+            local kModel = GuidToKey(modelGuid)
+            local modelAddr = tostring(model)
+
+            if kModel ~= "" and not seenModels[kModel] and not seenModels[modelAddr] then
+                seenModels[kModel] = true
+                seenModels[modelAddr] = true
+
+                local concrete = model:GetConcreteModel(false)
+                if SafeIsValid(concrete) then
+                    local workee = concrete:GetWorkeeModule()
+                    local work = SafeIsValid(workee) and workee:GetWork() or nil
+                    if SafeIsValid(work) then
+                        local k1 = kModel
+                        local k2 = GuidToKey(concrete.InstanceId or model.ConcreteModelInstanceId)
+                        local k3 = GuidToKey(work.ID)
+                        local primaryKey = (k1 ~= "") and k1 or ((k2 ~= "") and k2 or k3)
+
+                        if primaryKey ~= "" then
+                            if k1 ~= "" then seenKeys[k1] = true end
+                            if k2 ~= "" then seenKeys[k2] = true end
+                            if k3 ~= "" then seenKeys[k3] = true end
+                            seenKeys[primaryKey] = true
+
+                            local stName = "Workstation"
+                            local modelId = "Station"
+                            local defineId = "None"
+
+                            pcall(function()
+                                if work.GetWorkName then
+                                    local wn = work:GetWorkName():ToString()
+                                    if wn and wn ~= "" and wn ~= "None" then stName = wn end
+                                end
+                                if model.MapObjectMasterDataId then
+                                    modelId = model.MapObjectMasterDataId:ToString()
+                                    if stName == "Workstation" then stName = modelId end
+                                end
+                                if work.AssignDefineDataId then
+                                    local did = work.AssignDefineDataId:ToString()
+                                    if did and did ~= "" and did ~= "None" then
+                                        defineId = did
+                                    end
+                                end
+                            end)
+
+                            if defineId == "None" then
+                                local saved = PausedStations[k1] or PausedStations[k2] or PausedStations[k3] or PausedStations[primaryKey]
+                                if saved and saved.OrigDefineId and saved.OrigDefineId ~= "None" then
+                                    defineId = saved.OrigDefineId
+                                end
+                            end
+
+                            local isPaused = (PausedStations[k1] ~= nil) or (PausedStations[k2] ~= nil) or (PausedStations[k3] ~= nil) or (PausedStations[primaryKey] ~= nil)
+
+                            table.insert(results, {
+                                key         = primaryKey,
+                                key1        = k1,
+                                key2        = k2,
+                                key3        = k3,
+                                guid        = modelGuid,
+                                name        = FormatCleanName(stName),
+                                modelId     = modelId,
+                                origDefineId= defineId,
+                                category    = CategorizeWorkstation(stName, modelId),
+                                isPaused    = isPaused,
+                                model       = model,
+                                concrete    = concrete,
+                                workee      = workee,
+                                work        = work,
+                            })
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    local seenOfflineGuids = {}
+    for k, data in pairs(PausedStations) do
+        if not seenKeys[k] then
+            seenKeys[k] = true
+            local guidKey = string.format("%d,%d,%d,%d", data.A or 0, data.B or 0, data.C or 0, data.D or 0)
+            if guidKey == "0,0,0,0" or not seenOfflineGuids[guidKey] then
+                if guidKey ~= "0,0,0,0" then seenOfflineGuids[guidKey] = true end
+
+                table.insert(results, {
+                    key         = k,
+                    key1        = k,
+                    name        = FormatCleanName(data.Name or "Offline Workstation"),
+                    modelId     = "Saved",
+                    origDefineId= data.OrigDefineId or "None",
+                    category    = CategorizeWorkstation(data.Name, ""),
+                    isPaused    = true,
+                    model       = nil,
+                })
+            end
+        end
+    end
+
+    return results
+end
+
+local function ExtractActorFromHitResult(HitResult)
+    if not HitResult then return nil end
+    local Actor = nil
+    pcall(function()
+        if HitResult.Actor then
+            Actor = (type(HitResult.Actor.get) == "function" and HitResult.Actor:get()) or HitResult.Actor
+        end
+    end)
+    return SafeIsValid(Actor) and Actor or nil
+end
+
+local function GetTargetStationObjects()
+    local character = GetLocalPlayerCharacter()
+    if not SafeIsValid(character) then return nil, nil, nil, nil, nil end
+
+    local mapObj = nil
+    local interactComp = character.InteractComponent
+    if SafeIsValid(interactComp) then
+        local targetInteractive = interactComp.TargetInteractiveObject
+        if SafeIsValid(targetInteractive) then
+            local owner = targetInteractive:GetOwner()
+            if SafeIsValid(owner) and owner:IsA("/Script/Pal.PalMapObject") then mapObj = owner end
+        end
+    end
+
+    if not SafeIsValid(mapObj) then
+        local pc = GetLocalPlayerController()
+        if SafeIsValid(pc) and SafeIsValid(pc.PlayerCameraManager) then
+            local camLoc = pc.PlayerCameraManager:GetCameraLocation()
+            local camRot = pc.PlayerCameraManager:GetCameraRotation()
+            local mathLib = StaticFindObject("/Script/Engine.Default__KismetMathLibrary")
+            local sysLib = StaticFindObject("/Script/Engine.Default__KismetSystemLibrary")
+
+            if SafeIsValid(mathLib) and SafeIsValid(sysLib) then
+                local forward = mathLib:GetForwardVector(camRot)
+                local endLoc = {
+                    X = camLoc.X + (forward.X * Config.RaycastDistance),
+                    Y = camLoc.Y + (forward.Y * Config.RaycastDistance),
+                    Z = camLoc.Z + (forward.Z * Config.RaycastDistance)
+                }
+
+                local hitResult = {}
+                local ignoreActors = { character }
+                local bHit = sysLib:LineTraceSingle(pc, camLoc, endLoc, 0, false, ignoreActors, 0, hitResult, true, {R=1,G=0,B=0,A=1}, {R=0,G=1,B=0,A=1}, 0.0)
+                local hitActor = ExtractActorFromHitResult(hitResult)
+                if bHit and SafeIsValid(hitActor) then
+                    if hitActor:IsA("/Script/Pal.PalMapObject") then mapObj = hitActor
+                    else
+                        local owner = hitActor:GetOwner()
+                        if SafeIsValid(owner) and owner:IsA("/Script/Pal.PalMapObject") then mapObj = owner end
+                    end
+                end
+            end
+        end
+    end
+
+    if not SafeIsValid(mapObj) then return nil, nil, nil, nil, nil end
+    local model = mapObj:GetModel()
+    if not SafeIsValid(model) then return nil, nil, nil, nil, nil end
+    local concrete = model:GetConcreteModel(true)
+    if not SafeIsValid(concrete) then return nil, nil, nil, nil, nil end
+    local workee = concrete:GetWorkeeModule()
+    local work = SafeIsValid(workee) and workee:GetWork() or nil
+
+    return mapObj, model, concrete, workee, work
+end
+
+local function ToggleStation()
+    local mapObj, model, concrete, workee, work = GetTargetStationObjects()
+    if not SafeIsValid(mapObj) or not SafeIsValid(model) then ShowToast("Look directly at a workstation!"); return end
+    if not SafeIsValid(work) then ShowToast("This building is not a workstation."); return end
+
+    local g1 = model.InstanceId
+    local g2 = concrete.InstanceId or model.ConcreteModelInstanceId
+    local g3 = work.ID
+
+    local k1 = GuidToKey(g1)
+    local k2 = GuidToKey(g2)
+    local k3 = GuidToKey(g3)
+    if k1 == "" and k2 == "" and k3 == "" then ShowToast("Error: Failed to get GUID."); return end
+
+    local stationName = "Workstation"
+    local defineId = "None"
+    pcall(function()
+        local wName = work:GetWorkName():ToString()
+        if wName and wName ~= "" and wName ~= "None" then stationName = wName
+        elseif model.MapObjectMasterDataId then stationName = model.MapObjectMasterDataId:ToString() end
+        if work.AssignDefineDataId then defineId = work.AssignDefineDataId:ToString() end
+    end)
+
+    local isPaused = (PausedStations[k1] ~= nil) or (PausedStations[k2] ~= nil) or (PausedStations[k3] ~= nil)
+    local willPause = not isPaused
+    local primaryKey = (k1 ~= "") and k1 or ((k2 ~= "") and k2 or k3)
+
+    if willPause then
+        local entry = { A = g1.A or 0, B = g1.B or 0, C = g1.C or 0, D = g1.D or 0, Name = stationName, OrigDefineId = defineId }
+        if k1 ~= "" then PausedStations[k1] = entry end
+        if k2 ~= "" then PausedStations[k2] = entry end
+        if k3 ~= "" then PausedStations[k3] = entry end
+        SetStationState(workee, work, concrete, true, primaryKey)
+        SavePausedStationsToDisk()
+        ShowToast(string.format("%s: PAUSED [Offline]", stationName))
+    else
+        SetStationState(workee, work, concrete, false, primaryKey)
+        if k1 ~= "" then PausedStations[k1] = nil end
+        if k2 ~= "" then PausedStations[k2] = nil end
+        if k3 ~= "" then PausedStations[k3] = nil end
+        SavePausedStationsToDisk()
+        ShowToast(string.format("%s: ACTIVE [Online]", stationName))
+    end
+end
+
+local function ToggleItemFromUI(item, onDone)
+    if not item then return end
+    local willPause = not item.isPaused
+    local pk = item.key
+
+    local model = item.model
+    local concrete = item.concrete
+    local workee = item.workee
+    local work = item.work
+
+    if SafeIsValid(model) and (not SafeIsValid(concrete) or not SafeIsValid(work)) then
+        concrete = model:GetConcreteModel(true)
+        if SafeIsValid(concrete) then
+            workee = concrete:GetWorkeeModule()
+            work = SafeIsValid(workee) and workee:GetWork() or nil
+        end
+    end
+
+    local defId = "None"
+    if SafeIsValid(work) and work.AssignDefineDataId then
+        local cid = work.AssignDefineDataId:ToString()
+        if cid and cid ~= "" and cid ~= "None" then defId = cid end
+    end
+    if defId == "None" and item.origDefineId and item.origDefineId ~= "None" then
+        defId = item.origDefineId
+    end
+
+    if willPause then
+        local entry = {
+            A = (item.guid and item.guid.A) or 0,
+            B = (item.guid and item.guid.B) or 0,
+            C = (item.guid and item.guid.C) or 0,
+            D = (item.guid and item.guid.D) or 0,
+            Name = item.name,
+            OrigDefineId = defId
+        }
+        if pk ~= "" then PausedStations[pk] = entry end
+        if item.key1 and item.key1 ~= "" then PausedStations[item.key1] = entry end
+        if item.key2 and item.key2 ~= "" then PausedStations[item.key2] = entry end
+        if item.key3 and item.key3 ~= "" then PausedStations[item.key3] = entry end
+        item.isPaused = true
+    else
+        item.isPaused = false
+    end
+
+    ExecuteInGameThread(function()
+        if willPause then
+            if SafeIsValid(work) then
+                SetStationState(workee, work, concrete, true, pk)
+            end
+            SavePausedStationsToDisk()
+            ShowToast(string.format("%s: PAUSED [Offline]", item.name))
+        else
+            if SafeIsValid(work) then
+                SetStationState(workee, work, concrete, false, pk)
+            end
+
+            if item.key1 and item.key1 ~= "" then PausedStations[item.key1] = nil end
+            if item.key2 and item.key2 ~= "" then PausedStations[item.key2] = nil end
+            if item.key3 and item.key3 ~= "" then PausedStations[item.key3] = nil end
+            if pk ~= "" then PausedStations[pk] = nil end
+
+            if item.guid and (item.guid.A ~= 0 or item.guid.B ~= 0) then
+                for k, v in pairs(PausedStations) do
+                    if v.A == item.guid.A and v.B == item.guid.B and v.C == item.guid.C and v.D == item.guid.D then
+                        PausedStations[k] = nil
+                    end
+                end
+            end
+
+            SavePausedStationsToDisk()
+            ShowToast(string.format("%s: ACTIVE [Online]", item.name))
+        end
+
+        if onDone then pcall(onDone) end
+    end)
+end
+
+local function ResumeAllStations(onDone)
+    local all = ScanBaseWorkstations()
+    local count = 0
+
+    ExecuteInGameThread(function()
+        for _, s in ipairs(all) do
+            if s.isPaused then
+                local model = s.model
+                local concrete = s.concrete
+                local workee = s.workee
+                local work = s.work
+                if SafeIsValid(model) and (not SafeIsValid(concrete) or not SafeIsValid(work)) then
+                    concrete = model:GetConcreteModel(true)
+                    if SafeIsValid(concrete) then
+                        workee = concrete:GetWorkeeModule()
+                        work = SafeIsValid(workee) and workee:GetWork() or nil
+                    end
+                end
+                if SafeIsValid(work) then
+                    SetStationState(workee, work, concrete, false, s.key)
+                end
+                count = count + 1
+            end
+        end
+        PausedStations = {}
+        SavePausedStationsToDisk()
+        ShowToast(string.format("Resumed all %d workstations!", count))
+        if onDone then pcall(onDone) end
+    end)
+end
+
+local function PauseCategoryBatch(catList, onDone)
+    local all = ScanBaseWorkstations()
+    local count = 0
+
+    for _, s in ipairs(all) do
+        for _, cat in ipairs(catList) do
+            if s.category == cat and not s.isPaused then
+                local defId = s.origDefineId or "None"
+                local entry = { Name = s.name, OrigDefineId = defId }
+                if s.key ~= "" then PausedStations[s.key] = entry end
+                if s.key1 and s.key1 ~= "" then PausedStations[s.key1] = entry end
+                if s.key2 and s.key2 ~= "" then PausedStations[s.key2] = entry end
+                if s.key3 and s.key3 ~= "" then PausedStations[s.key3] = entry end
+                s.isPaused = true
+                count = count + 1
+                break
+            end
+        end
+    end
+
+    ExecuteInGameThread(function()
+        for _, s in ipairs(all) do
+            for _, cat in ipairs(catList) do
+                if s.category == cat and s.isPaused then
+                    local model = s.model
+                    local concrete = s.concrete
+                    local workee = s.workee
+                    local work = s.work
+                    if SafeIsValid(model) and (not SafeIsValid(concrete) or not SafeIsValid(work)) then
+                        concrete = model:GetConcreteModel(true)
+                        if SafeIsValid(concrete) then
+                            workee = concrete:GetWorkeeModule()
+                            work = SafeIsValid(workee) and workee:GetWork() or nil
+                        end
+                    end
+                    if SafeIsValid(work) then
+                        SetStationState(workee, work, concrete, true, s.key)
+                    end
+                    break
+                end
+            end
+        end
+        SavePausedStationsToDisk()
+        ShowToast(string.format("Paused %d station(s) in category!", count))
+        if onDone then pcall(onDone) end
+    end)
 end
 
 local function OpenControlGUI()
-    if relicUI.is_visible() then
-        relicUI.close()
+    if stationUI.is_visible() then
+        stationUI.close()
         return
     end
 
     local uiContext = {
-        config          = CONFIG,
-        onCollect       = function() CollectRelics() end,
-        onCollectNoExp  = function() CollectRelicsNoExp() end,
-        onRestoreExp    = function() RestoreExpManually() end,
-        onHelp          = function()
-            NotifySequence({
-                "=== [Relic Collector Quick Help] ===",
-                "• Click statue cards to toggle Pal collection ON/OFF",
-                "• Use radius buttons to set map distance",
-                "• Use limit buttons to restrict max statues per Pal"
-            })
-        end
+        config            = Config,
+        getStations       = ScanBaseWorkstations,
+        onToggleItem      = ToggleItemFromUI,
+        onResumeAll       = ResumeAllStations,
+        onPauseMiningWood = function(cb) PauseCategoryBatch({"mining", "logging"}, cb) end,
+        onPauseFarms      = function(cb) PauseCategoryBatch({"farm", "ranch"}, cb) end,
     }
-    relicUI.show(uiContext)
+    stationUI.show(uiContext)
 end
 
-local function SplitArgs(input)
-    local args = {}
-    for word in string.gmatch(input, "%S+") do table.insert(args, word) end
-    return args
-end
+local function CheckAndApplyStationPause(workee)
+    if not SafeIsValid(workee) then return end
+    local work = workee:GetWork()
+    if not SafeIsValid(work) then return end
 
-local function HandleChatMessage(rawText)
-    local colonIdx = string.find(rawText, ":%s*!")
-    if colonIdx then rawText = string.sub(rawText, colonIdx + 1) end
-    rawText = string.gsub(rawText, "^%s*(.-)%s*$", "%1")
+    local k1 = GuidToKey(work.OwnerMapObjectModelId)
+    local k2 = GuidToKey(work.OwnerMapObjectConcreteModelId)
+    local k3 = GuidToKey(work.ID)
 
-    if string.sub(rawText, 1, 1) ~= "!" then return end
-    local args = SplitArgs(rawText)
-    if #args == 0 then return end
-
-    local mainCmd = string.lower(args[1])
-
-    if mainCmd == "!scollect" or mainCmd == "!rcedit" or mainCmd == "!rcgui" then
-        OpenControlGUI()
-        return
+    local targetKey = nil
+    if k1 ~= "" and PausedStations[k1] then targetKey = k1
+    elseif k2 ~= "" and PausedStations[k2] then targetKey = k2
+    elseif k3 ~= "" and PausedStations[k3] then targetKey = k3
     end
 
-    if mainCmd == "!collect" then
-        CollectRelics()
-        return
-    elseif mainCmd == "!collectnoexp" then
-        CollectRelicsNoExp()
-        return
-    elseif mainCmd == "!restore" then
-        RestoreExpManually()
-        return
-    end
-
-    if mainCmd ~= "!rc" and mainCmd ~= "!relic" then return end
-
-    local subCmd = args[2] and string.lower(args[2]) or "gui"
-
-    if subCmd == "gui" or subCmd == "menu" or subCmd == "ui" then
-        OpenControlGUI()
-    elseif subCmd == "collect" then
-        CollectRelics()
-    elseif subCmd == "noexp" then
-        CollectRelicsNoExp()
-    elseif subCmd == "radius" then
-        local val = tonumber(args[3])
-        if val and val >= 0 then
-            CONFIG.CollectRadius = val
-            Notify(val == 0 and "[RC] Radius: Unlimited (Entire map)" or string.format("[RC] Radius set to: %d units (~%d meters)", val, math.floor(val / 100)))
-        else
-            Notify("[RC] Usage: !rc radius <number> (e.g. !rc radius 5000, 0 = all)")
-        end
-    elseif subCmd == "limit" or subCmd == "max" then
-        local val = tonumber(args[3])
-        if val and val >= 0 then
-            CONFIG.MaxPerType = val
-            Notify(val == 0 and "[RC] Statue limit: Unlimited" or string.format("[RC] Statue limit: %d per Pal type", val))
-        else
-            Notify("[RC] Usage: !rc limit <number> (e.g. !rc limit 5, 0 = all)")
-        end
-    elseif subCmd == "toggle" then
-        local name = args[3] and string.lower(args[3])
-        if name and FriendlyToClass[name] then
-            local class = FriendlyToClass[name]
-            local newState = not (CONFIG.Relics[class] == true)
-            CONFIG.Relics[class] = newState
-            Notify(string.format("[RC] %s %s is now %s", newState and "[+]" or "[-]", CONFIG.RelicNames[class], newState and "ENABLED" or "DISABLED"))
-        else
-            Notify("[RC] Unknown name! Use '!rc list' to view pals.")
-        end
-    elseif subCmd == "enable" then
-        local name = args[3] and string.lower(args[3])
-        if name == "all" then
-            for class in pairs(CONFIG.Relics) do CONFIG.Relics[class] = true end
-            Notify("[RC] [+] Enabled ALL 12 Pal statue types.")
-        elseif name and FriendlyToClass[name] then
-            local class = FriendlyToClass[name]
-            CONFIG.Relics[class] = true
-            Notify(string.format("[RC] [+] %s is now ENABLED", CONFIG.RelicNames[class]))
-        end
-    elseif subCmd == "disable" then
-        local name = args[3] and string.lower(args[3])
-        if name == "all" then
-            for class in pairs(CONFIG.Relics) do CONFIG.Relics[class] = false end
-            Notify("[RC] [-] Disabled ALL statue types.")
-        elseif name and FriendlyToClass[name] then
-            local class = FriendlyToClass[name]
-            CONFIG.Relics[class] = false
-            Notify(string.format("[RC] [-] %s is now DISABLED", CONFIG.RelicNames[class]))
-        end
-    elseif subCmd == "status" or subCmd == "cfg" then
-        OpenControlGUI()
-    elseif subCmd == "help" then
-        NotifySequence({
-            "=== [Relic Collector Help] ===",
-            "!scollect - Open Control GUI Window",
-            "!collect - Collect all statues (with EXP)",
-            "!collectnoexp - Collect WITHOUT player EXP",
-            "!rc gui - Open Control GUI Window",
-            "!rc radius <num> - Set distance (0 = all)",
-            "!rc limit <num> - Max statues per pal (0 = all)"
-        })
+    if targetKey then
+        local concrete = work.CachedOwnerMapObjectConcreteModel
+        SetStationState(workee, work, concrete, true, targetKey)
     end
 end
 
-local function RegisterChatHook()
-    pcall(function()
-        RegisterHook("/Script/Pal.PalUIChat:OnReceivedChat", function(context, message)
-            if not message then return end
-            local received = message:get()
-            if not received or not received.Message then return end
+RegisterHook("/Script/Pal.PalMapObjectWorkeeModule:OnRep_TargetWork", function(Context)
+    pcall(function() CheckAndApplyStationPause(Context:get()) end)
+end)
 
-            local senderName = received.Sender and received.Sender:ToString() or ""
-            if senderName == "SYSTEM" or senderName == "" then return end
+RegisterHook("/Script/Pal.PalMapObjectWorkeeModule:CallOrRegisterOnReadyWork", function(Context)
+    pcall(function() CheckAndApplyStationPause(Context:get()) end)
+end)
 
-            local localPC = GetLocalPlayerController()
-            if not localPC or not localPC:IsValid() or not localPC.PlayerState then return end
-
-            local localPS = localPC.PlayerState
-            local localGuid = localPS.PlayerUId
-            local senderGuid = received.SenderPlayerUId
-
-            local isAuthor = false
-            if senderGuid and localGuid and IsSameGuid(senderGuid, localGuid) then
-                isAuthor = true
-            elseif senderName ~= "" and localPS.PlayerNamePrivate then
-                if senderName == localPS.PlayerNamePrivate:ToString() then isAuthor = true end
-            end
-
-            if not isAuthor then return end
-            HandleChatMessage(received.Message:ToString())
-        end)
+pcall(function()
+    RegisterHook("/Script/Pal.PalUIChat:OnReceivedChat", function(context, message)
+        if not message then return end
+        local received = message:get()
+        if not received or not received.Message then return end
+        local text = received.Message:ToString():lower():gsub("^%s+", ""):gsub("%s+$", "")
+        if text == "!station" or text == "!ss" or text == "!stations" or text == "!switch" then
+            OpenControlGUI()
+        end
     end)
-end
-
-local function RegisterEscClose()
-    pcall(function()
-        RegisterKeyBind(Key.ESCAPE, function()
-            pcall(function()
-                if relicUI.is_visible() then
-                    relicUI.close()
-                end
-            end)
-        end)
-    end)
-end
+end)
 
 local function Init()
-    print("[RelicCollector] Initializing...")
-    RegisterChatHook()
-    RegisterEscClose()
-    print("[RelicCollector] Loaded. Type '!scollect' to open GUI.")
+    LoadPausedStationsFromDisk()
+
+    RegisterKeyBind(Config.HotkeyToggle, function()
+        ExecuteInGameThread(function() pcall(ToggleStation) end)
+    end)
+
+    RegisterKeyBind(Config.HotkeyGUI, function()
+        pcall(OpenControlGUI)
+    end)
+
+    RegisterKeyBind(Key.ESCAPE, function()
+        pcall(function()
+            if stationUI.is_visible() then stationUI.close() end
+        end)
+    end)
+
+    print("[StationSwitch] Loaded! Press F6 to toggle looked-at station, F7 for Control Hub GUI.")
 end
 
 Init()
+

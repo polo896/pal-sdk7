@@ -1,8 +1,8 @@
 -- ===========================================================================
---  Relic Collector :: Settings & Control UI
+--  Station Switch :: Workstation Control Panel UI
 -- ===========================================================================
 
-local RelicUI = {
+local StationUI = {
     Theme     = {},
     Assets    = {},
     Factory   = {},
@@ -23,7 +23,13 @@ local function isObjectValid(obj)
 end
 
 local function printLog(text)
-    print("[RelicCollector][UI] " .. tostring(text))
+    print("[StationSwitch][UI] " .. tostring(text))
+end
+
+local function ellipsize(str, maxLen)
+    str = tostring(str or "")
+    if #str <= maxLen then return str end
+    return str:sub(1, math.max(1, maxLen - 2)) .. ".."
 end
 
 local function hexToLinearColor(hexStr, alpha)
@@ -40,15 +46,20 @@ local function hexToLinearColor(hexStr, alpha)
     return { srgbToLinear(r), srgbToLinear(g), srgbToLinear(b), alpha or 1.0 }
 end
 
-RelicUI.Theme = {
+local function withAlpha(col, a)
+    return { col[1], col[2], col[3], a }
+end
+
+StationUI.Theme = {
     PanelBase     = hexToLinearColor("#131A1D", 0.95),
     PanelHeader   = hexToLinearColor("#26333A", 1.00),
     PanelSection  = hexToLinearColor("#192226", 0.90),
-    CardActive    = hexToLinearColor("#1D2D2A", 0.96),
-    CardInactive  = hexToLinearColor("#241D1E", 0.85),
+    PanelList     = hexToLinearColor("#0F1518", 0.75),
+    CardBase      = hexToLinearColor("#1D262B", 0.96),
+    CardActive    = hexToLinearColor("#1D2B24", 0.96),
+    CardPaused    = hexToLinearColor("#2D1D1E", 0.96),
     Divider       = hexToLinearColor("#314046", 1.00),
     BorderDefault = hexToLinearColor("#42555C", 1.00),
-    BarTrack      = hexToLinearColor("#293439", 1.00),
 
     TextPrimary   = hexToLinearColor("#EAF2F6", 1.00),
     TextSecond    = hexToLinearColor("#9DB0B9", 1.00),
@@ -56,14 +67,14 @@ RelicUI.Theme = {
 
     Gold          = hexToLinearColor("#FFC53D", 1.00),
     Green         = hexToLinearColor("#4ADE80", 1.00),
-    GreenSoft     = hexToLinearColor("#A3E635", 1.00),
     Red           = hexToLinearColor("#F87171", 1.00),
     Blue          = hexToLinearColor("#7DD3FC", 1.00),
     Cyan          = hexToLinearColor("#22D3EE", 1.00),
+    Orange        = hexToLinearColor("#FB923C", 1.00),
     Purple        = hexToLinearColor("#C084FC", 1.00),
 }
 
-RelicUI.Assets = {
+StationUI.Assets = {
     WindowBlueprint = "/Game/Pal/Blueprint/UI/UserInterface/Common/WBP_PalCommonWindow.WBP_PalCommonWindow_C",
     ButtonBlueprint = "/Game/Pal/Blueprint/UI/UserInterface/Common/WBP_CommonButton_Activation.WBP_CommonButton_Activation_C",
     DefaultFont     = "/Game/Pal/Font/Ft_PalDefaultFont.Ft_PalDefaultFont",
@@ -88,22 +99,7 @@ local function resolveStaticObject(path)
     return nil
 end
 
-local RELIC_CATALOG = {
-    { class = "BP_LevelObject_Relic_C",              name = "Lifmunk",    sub = "Effigy / Statue", color = RelicUI.Theme.Green },
-    { class = "BP_LevelObject_Relic_FlameBambi_C",   name = "Rooby",      sub = "Flame Bambi",     color = RelicUI.Theme.Red },
-    { class = "BP_LevelObject_Relic_GuardianDog_C",  name = "Yakumo",     sub = "Guardian Dog",    color = RelicUI.Theme.Gold },
-    { class = "BP_LevelObject_Relic_IceCrocodile_C", name = "Munchill",   sub = "Ice Crocodile",   color = RelicUI.Theme.Cyan },
-    { class = "BP_LevelObject_Relic_LazyDragon_C",   name = "Relaxaurus", sub = "Lazy Dragon",     color = RelicUI.Theme.Blue },
-    { class = "BP_LevelObject_Relic_LeafMomonga_C",  name = "Bristla",    sub = "Leaf Momonga",    color = RelicUI.Theme.GreenSoft },
-    { class = "BP_LevelObject_Relic_Monkey_C",       name = "Tanzee",     sub = "Monkey",          color = RelicUI.Theme.Green },
-    { class = "BP_LevelObject_Relic_Mutant_C",       name = "Lunaris",    sub = "Mutant",          color = RelicUI.Theme.Purple },
-    { class = "BP_LevelObject_Relic_NegativeKoala_C",name = "Depresso",   sub = "Negative Koala",  color = RelicUI.Theme.Blue },
-    { class = "BP_LevelObject_Relic_Penguin_C",      name = "Pengullet",  sub = "Penguin",         color = RelicUI.Theme.Cyan },
-    { class = "BP_LevelObject_Relic_PinkCat_C",      name = "Cattiva",    sub = "Pink Cat",        color = hexToLinearColor("#FF8AC4", 1.0) },
-    { class = "BP_LevelObject_Relic_SheepBall_C",    name = "Lamball",    sub = "Sheep Ball",      color = RelicUI.Theme.TextPrimary },
-}
-
-function RelicUI.Factory.CreateText(tree, message, fontSize, colorTuple, boldFont, justify)
+function StationUI.Factory.CreateText(tree, message, fontSize, colorTuple, boldFont, justify)
     local cls = resolveStaticObject("/Script/UMG.TextBlock")
     if not cls then return nil end
     local widget = StaticConstructObject(cls, tree)
@@ -115,7 +111,7 @@ function RelicUI.Factory.CreateText(tree, message, fontSize, colorTuple, boldFon
     pcall(function()
         local fontInfo = widget.Font
         fontInfo.Size = fontSize or 11
-        local fontAsset = resolveStaticObject(RelicUI.Assets.DefaultFont)
+        local fontAsset = resolveStaticObject(StationUI.Assets.DefaultFont)
         if fontAsset then
             fontInfo.FontObject = fontAsset
             fontInfo.TypefaceFontName = FName(boldFont and "Bold" or "Medium")
@@ -139,7 +135,7 @@ function RelicUI.Factory.CreateText(tree, message, fontSize, colorTuple, boldFon
     return widget
 end
 
-function RelicUI.Factory.CreateSolidBorder(tree, colorTuple)
+function StationUI.Factory.CreateSolidBorder(tree, colorTuple)
     local cls = resolveStaticObject("/Script/UMG.Border")
     if not cls then return nil end
     local border = StaticConstructObject(cls, tree)
@@ -157,7 +153,34 @@ function RelicUI.Factory.CreateSolidBorder(tree, colorTuple)
     return border
 end
 
-function RelicUI.Factory.AnchorWidget(parentCanvas, childWidget, x, y, w, h, zOrder)
+function StationUI.Factory.CreateScrollArea(tree)
+    local cls = resolveStaticObject("/Script/UMG.ScrollBox")
+    if not cls then return nil end
+    local scroll = StaticConstructObject(cls, tree)
+    if not isObjectValid(scroll) then return nil end
+
+    scroll:SetRenderOpacity(1.0)
+    pcall(function()
+        local thickness = scroll.ScrollbarThickness
+        thickness.X, thickness.Y = 6, 6
+        scroll.ScrollbarThickness = thickness
+    end)
+    return scroll
+end
+
+function StationUI.Factory.CreateContainerBox(tree, width, height, innerContent)
+    local cls = resolveStaticObject("/Script/UMG.SizeBox")
+    if not cls then return nil end
+    local box = StaticConstructObject(cls, tree)
+    if not isObjectValid(box) then return nil end
+
+    if width then box:SetWidthOverride(width) end
+    if height then box:SetHeightOverride(height) end
+    if innerContent then box:SetContent(innerContent) end
+    return box
+end
+
+function StationUI.Factory.AnchorWidget(parentCanvas, childWidget, x, y, w, h, zOrder)
     if not childWidget or not parentCanvas then return end
     local slot = parentCanvas:AddChildToCanvas(childWidget)
     if not isObjectValid(slot) then return end
@@ -173,7 +196,7 @@ function RelicUI.Factory.AnchorWidget(parentCanvas, childWidget, x, y, w, h, zOr
     slot:SetZOrder(zOrder or 0)
 end
 
-function RelicUI.Factory.AnchorCenter(parentCanvas, childWidget, w, h)
+function StationUI.Factory.AnchorCenter(parentCanvas, childWidget, w, h)
     if not childWidget or not parentCanvas then return end
     local slot = parentCanvas:AddChildToCanvas(childWidget)
     if not isObjectValid(slot) then return end
@@ -197,10 +220,10 @@ function RelicUI.Factory.AnchorCenter(parentCanvas, childWidget, w, h)
     slot:SetSize(size)
 end
 
-function RelicUI.Factory.DrawFrame(canvas, tree, x, y, w, h, color)
+function StationUI.Factory.DrawFrame(canvas, tree, x, y, w, h, color)
     local function line(lx, ly, lw, lh)
-        local b = RelicUI.Factory.CreateSolidBorder(tree, color)
-        if b then RelicUI.Factory.AnchorWidget(canvas, b, lx, ly, lw, lh, 1) end
+        local b = StationUI.Factory.CreateSolidBorder(tree, color)
+        if b then StationUI.Factory.AnchorWidget(canvas, b, lx, ly, lw, lh, 1) end
     end
     line(x, y, w, 1)
     line(x, y + h - 1, w, 1)
@@ -208,13 +231,13 @@ function RelicUI.Factory.DrawFrame(canvas, tree, x, y, w, h, color)
     line(x + w - 1, y, 1, h)
 end
 
-function RelicUI.Engine.LocateMainLayout()
-    local ok, instances = pcall(FindAllOf, RelicUI.Assets.OverallLayout)
+function StationUI.Engine.LocateMainLayout()
+    local ok, instances = pcall(FindAllOf, StationUI.Assets.OverallLayout)
     if ok and instances and #instances > 0 then return instances[1] end
     return nil
 end
 
-function RelicUI.Engine.FindHostCanvas(outerFullName, panelName)
+function StationUI.Engine.FindHostCanvas(outerFullName, panelName)
     local ok, canvasList = pcall(FindAllOf, "CanvasPanel")
     if not ok or not canvasList then return nil end
 
@@ -236,7 +259,7 @@ function RelicUI.Engine.FindHostCanvas(outerFullName, panelName)
     return nil
 end
 
-function RelicUI.Engine.DiscoverNamedSlot(windowObj)
+function StationUI.Engine.DiscoverNamedSlot(windowObj)
     local okTree, tree = pcall(function() return windowObj.WidgetTree end)
     if not okTree or not isObjectValid(tree) then return nil end
     local okRoot, root = pcall(function() return tree.RootWidget end)
@@ -257,8 +280,8 @@ function RelicUI.Engine.DiscoverNamedSlot(windowObj)
     return nil
 end
 
-function RelicUI.Engine.MuteUnusedChrome(windowObj)
-    local slot = RelicUI.Engine.DiscoverNamedSlot(windowObj)
+function StationUI.Engine.MuteUnusedChrome(windowObj)
+    local slot = StationUI.Engine.DiscoverNamedSlot(windowObj)
     if not slot then return end
     local okName, slotFullName = pcall(function() return slot:GetFullName() end)
     if not okName then return end
@@ -282,8 +305,8 @@ function RelicUI.Engine.MuteUnusedChrome(windowObj)
     end
 end
 
-function RelicUI.Engine.AcquireModalSurface()
-    local layout = RelicUI.Engine.LocateMainLayout()
+function StationUI.Engine.AcquireModalSurface()
+    local layout = StationUI.Engine.LocateMainLayout()
     if not isObjectValid(layout) then return nil end
     local ok, modalLayer = pcall(function() return layout.Modal end)
     if ok and isObjectValid(modalLayer) then return modalLayer end
@@ -324,11 +347,11 @@ function ClickDispatcher.Reset()
 end
 
 local function assembleModalFrame(panel, tree, frameWidth, frameHeight)
-    local winCls     = resolveStaticObject(RelicUI.Assets.WindowBlueprint)
+    local winCls     = resolveStaticObject(StationUI.Assets.WindowBlueprint)
     local canvasCls  = resolveStaticObject("/Script/UMG.CanvasPanel")
     local sizeBoxCls = resolveStaticObject("/Script/UMG.SizeBox")
     local widgetLib  = resolveStaticObject("/Script/UMG.Default__WidgetBlueprintLibrary")
-    local modalHost  = RelicUI.Engine.AcquireModalSurface()
+    local modalHost  = StationUI.Engine.AcquireModalSurface()
 
     if not winCls or not canvasCls or not sizeBoxCls or not widgetLib or not modalHost then
         printLog("Core UMG classes missing for modal")
@@ -341,14 +364,14 @@ local function assembleModalFrame(panel, tree, frameWidth, frameHeight)
         frameShell = modalHost:BP_AddWidget(winCls)
         if not isObjectValid(frameShell) then error("Modal host rejected widget") end
 
-        RelicUI.Engine.MuteUnusedChrome(frameShell)
-        local shellSlot = RelicUI.Engine.DiscoverNamedSlot(frameShell)
+        StationUI.Engine.MuteUnusedChrome(frameShell)
+        local shellSlot = StationUI.Engine.DiscoverNamedSlot(frameShell)
         if not shellSlot then error("Shell slot missing") end
 
         local innerWindow = widgetLib:Create(panel, winCls, player)
         if not isObjectValid(innerWindow) then error("Inner window failed") end
 
-        local innerSlot = RelicUI.Engine.DiscoverNamedSlot(innerWindow)
+        local innerSlot = StationUI.Engine.DiscoverNamedSlot(innerWindow)
         if not innerSlot then error("Inner slot missing") end
 
         contentSurface = StaticConstructObject(canvasCls, tree)
@@ -360,7 +383,7 @@ local function assembleModalFrame(panel, tree, frameWidth, frameHeight)
 
         local hostCanvas = StaticConstructObject(canvasCls, tree)
         shellSlot:SetContent(hostCanvas)
-        RelicUI.Factory.AnchorCenter(hostCanvas, innerWindow, frameWidth, frameHeight)
+        StationUI.Factory.AnchorCenter(hostCanvas, innerWindow, frameWidth, frameHeight)
     end)
 
     if not ok or not isObjectValid(frameShell) then
@@ -375,18 +398,18 @@ local function assembleModalFrame(panel, tree, frameWidth, frameHeight)
             if isObjectValid(blur) then
                 blur:SetRenderOpacity(1.0)
                 pcall(function() blur:SetBlurStrength(6.0) end)
-                RelicUI.Factory.AnchorWidget(contentSurface, blur, 0, 0, frameWidth, frameHeight, 0)
+                StationUI.Factory.AnchorWidget(contentSurface, blur, 0, 0, frameWidth, frameHeight, 0)
             end
         end
-        local base = RelicUI.Factory.CreateSolidBorder(tree, RelicUI.Theme.PanelBase)
-        if base then RelicUI.Factory.AnchorWidget(contentSurface, base, 0, 0, frameWidth, frameHeight, 1) end
+        local base = StationUI.Factory.CreateSolidBorder(tree, StationUI.Theme.PanelBase)
+        if base then StationUI.Factory.AnchorWidget(contentSurface, base, 0, 0, frameWidth, frameHeight, 1) end
     end)
 
     return { shell = frameShell, surface = contentSurface }
 end
 
 local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, onClick, z)
-    local btnCls    = resolveStaticObject(RelicUI.Assets.ButtonBlueprint)
+    local btnCls    = resolveStaticObject(StationUI.Assets.ButtonBlueprint)
     local widgetLib = resolveStaticObject("/Script/UMG.Default__WidgetBlueprintLibrary")
     if not btnCls or not widgetLib then return nil end
 
@@ -400,7 +423,7 @@ local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, on
     end)
     if not ok or not isObjectValid(btn) then return nil end
 
-    RelicUI.Factory.AnchorWidget(surface, btn, x, y, w, h, z or 60)
+    StationUI.Factory.AnchorWidget(surface, btn, x, y, w, h, z or 60)
 
     local target = btn
     local okIn, inner = pcall(function() return btn.WBP_PalInvisibleButton end)
@@ -411,7 +434,7 @@ local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, on
 end
 
 local UI_W = 960
-local UI_H = 760
+local UI_H = 780
 local PAD  = 16
 
 local State = {
@@ -421,14 +444,105 @@ local State = {
     hostCanvas    = nil,
     isDisplayed   = false,
     ctx           = nil,
+
+    filterMode    = "all",
+    scrollBox     = nil,
 }
 
-local function renderAllContent()
+local FILTERS = {
+    { key = "all",      label = "ALL" },
+    { key = "paused",   label = "PAUSED" },
+    { key = "active",   label = "ACTIVE" },
+    { key = "mining",   label = "MINING/WOOD" },
+    { key = "farm",     label = "FARMS" },
+    { key = "crafting", label = "CRAFTING" },
+}
+
+local renderAllContent
+
+local function drawStationCard(scrollBox, tree, hostCanvas, item, cardW, ctx)
+    local canvasCls = resolveStaticObject("/Script/UMG.CanvasPanel")
+    if not canvasCls then return end
+    local card = StaticConstructObject(canvasCls, tree)
+    if not isObjectValid(card) then return end
+    card:SetRenderOpacity(1.0)
+
+    local F, T = StationUI.Factory, StationUI.Theme
+    local cardH = 58
+    local isPaused = (item.isPaused == true)
+
+    local bgColor = isPaused and T.CardPaused or T.CardActive
+    local bg = F.CreateSolidBorder(tree, bgColor)
+    if bg then F.AnchorWidget(card, bg, 0, 0, cardW, cardH, 0) end
+
+    local barColor = isPaused and T.Red or T.Green
+    local bar = F.CreateSolidBorder(tree, barColor)
+    if bar then F.AnchorWidget(card, bar, 0, 0, 4, cardH, 1) end
+
+    F.DrawFrame(card, tree, 0, 0, cardW, cardH, isPaused and T.Red or T.BorderDefault)
+
+    local catIcon = "🔨"
+    if item.category == "mining" then catIcon = "⛏"
+    elseif item.category == "logging" then catIcon = "🪓"
+    elseif item.category == "farm" then catIcon = "🌾"
+    elseif item.category == "ranch" then catIcon = "🐑"
+    end
+
+    local iconTxt = F.CreateText(tree, catIcon, 14, isPaused and T.Red or T.Green, false, 1)
+    if iconTxt then F.AnchorWidget(card, iconTxt, 12, 18, 24, 20, 2) end
+
+    local nameTxt = F.CreateText(tree, ellipsize(item.name, 38), 13, T.TextPrimary, true, 0)
+    if nameTxt then F.AnchorWidget(card, nameTxt, 44, 10, 360, 18, 2) end
+
+    local catLabel = (item.category:upper()) .. "  |  " .. (item.modelId or "Station")
+    local subTxt = F.CreateText(tree, ellipsize(catLabel, 48), 9, T.TextDim, false, 0)
+    if subTxt then F.AnchorWidget(card, subTxt, 44, 32, 360, 14, 2) end
+
+    local statusText = isPaused and "⏸ PAUSED (OFFLINE)" or "▶ ACTIVE (WORKING)"
+    local statusCol  = isPaused and T.Red or T.Green
+    local pillBg = F.CreateSolidBorder(tree, withAlpha(statusCol, 0.15))
+    if pillBg then F.AnchorWidget(card, pillBg, cardW - 270, 15, 130, 26, 2) end
+
+    local pillTxt = F.CreateText(tree, statusText, 9, statusCol, true, 1)
+    if pillTxt then F.AnchorWidget(card, pillTxt, cardW - 270, 20, 130, 14, 3) end
+
+    local btnLabel = isPaused and "▶ RESUME" or "⏸ PAUSE"
+    createGameButton(hostCanvas, card, tree, btnLabel, cardW - 126, 11, 114, 34, function()
+        if ctx.onToggleItem then
+            ctx.onToggleItem(item, function()
+                renderAllContent()
+            end)
+            renderAllContent()
+        end
+    end, 60)
+
+    local wrap = F.CreateContainerBox(tree, cardW, cardH + 6, card)
+    if wrap then pcall(function() scrollBox:AddChild(wrap) end) end
+end
+
+local function drawNoticeCard(scrollBox, tree, cardW, message)
+    local canvasCls = resolveStaticObject("/Script/UMG.CanvasPanel")
+    if not canvasCls then return end
+    local canvas = StaticConstructObject(canvasCls, tree)
+    if not isObjectValid(canvas) then return end
+
+    local F, T = StationUI.Factory, StationUI.Theme
+    local h = 90
+    local bg = F.CreateSolidBorder(tree, T.CardBase)
+    if bg then F.AnchorWidget(canvas, bg, 0, 0, cardW, h, 0) end
+    local txt = F.CreateText(tree, message, 12, T.TextSecond, false, 1)
+    if txt then F.AnchorWidget(canvas, txt, 0, h / 2 - 10, cardW, 20, 2) end
+
+    local wrap = F.CreateContainerBox(tree, cardW, h + 6, canvas)
+    if wrap then pcall(function() scrollBox:AddChild(wrap) end) end
+end
+
+renderAllContent = function()
     if not isObjectValid(State.activeSurface) or not isObjectValid(State.widgetTree) then return end
 
     local S   = State
-    local F   = RelicUI.Factory
-    local T   = RelicUI.Theme
+    local F   = StationUI.Factory
+    local T   = StationUI.Theme
     local ctx = S.ctx
 
     local surface    = S.activeSurface
@@ -450,24 +564,26 @@ local function renderAllContent()
     local base = F.CreateSolidBorder(tree, T.PanelBase)
     if base then F.AnchorWidget(surface, base, 0, 0, UI_W, UI_H, 1) end
 
+    local allStations = (ctx.getStations and ctx.getStations()) or {}
+    local pausedCount = 0
+    for _, s in ipairs(allStations) do
+        if s.isPaused then pausedCount = pausedCount + 1 end
+    end
+
     local headerH = 46
     local headerBg = F.CreateSolidBorder(tree, T.PanelHeader)
     if headerBg then F.AnchorWidget(surface, headerBg, PAD, PAD, contentW, headerH, 5) end
     F.DrawFrame(surface, tree, PAD, PAD, contentW, headerH, T.BorderDefault)
 
-    local greenLine = F.CreateSolidBorder(tree, T.Green)
-    if greenLine then F.AnchorWidget(surface, greenLine, PAD, PAD + headerH - 2, contentW, 2, 6) end
+    local cyanLine = F.CreateSolidBorder(tree, T.Cyan)
+    if cyanLine then F.AnchorWidget(surface, cyanLine, PAD, PAD + headerH - 2, contentW, 2, 6) end
 
-    local title = F.CreateText(tree, "RELIC COLLECTOR CONTROL PANEL", 16, T.TextPrimary, true, 0)
-    if title then F.AnchorWidget(surface, title, PAD + 16, PAD + 12, 380, 24, 7) end
+    local title = F.CreateText(tree, "STATION SWITCH :: WORKSTATION MANAGER", 16, T.TextPrimary, true, 0)
+    if title then F.AnchorWidget(surface, title, PAD + 16, PAD + 12, 420, 24, 7) end
 
-    local countActive = 0
-    for _, def in ipairs(RELIC_CATALOG) do
-        if ctx.config.Relics[def.class] == true then countActive = countActive + 1 end
-    end
-    local subText = string.format("Active: %d/12 Types  |  World Scan Ready", countActive)
-    local sub = F.CreateText(tree, subText, 11, T.TextSecond, false, 2)
-    if sub then F.AnchorWidget(surface, sub, PAD + contentW - 350, PAD + 16, 334, 16, 7) end
+    local subText = string.format("Base Stations: %d  |  Paused: %d", #allStations, pausedCount)
+    local sub = F.CreateText(tree, subText, 11, pausedCount > 0 and T.Orange or T.Green, false, 2)
+    if sub then F.AnchorWidget(surface, sub, PAD + contentW - 320, PAD + 16, 304, 16, 7) end
 
     local actionsY = PAD + headerH + 10
     local actionsH = 50
@@ -476,190 +592,126 @@ local function renderAllContent()
     if actBg then F.AnchorWidget(surface, actBg, PAD, actionsY, contentW, actionsH, 5) end
     F.DrawFrame(surface, tree, PAD, actionsY, contentW, actionsH, T.Divider)
 
-    local actLabel = F.CreateText(tree, "EXECUTE:", 11, T.TextDim, true, 0)
-    if actLabel then F.AnchorWidget(surface, actLabel, PAD + 16, actionsY + 17, 74, 16, 7) end
+    local actLabel = F.CreateText(tree, "QUICK ACTIONS:", 11, T.TextDim, true, 0)
+    if actLabel then F.AnchorWidget(surface, actLabel, PAD + 14, actionsY + 17, 110, 16, 7) end
 
-    createGameButton(hostCanvas, surface, tree, "★ COLLECT ALL", PAD + 94, actionsY + 8, 230, 34, function()
-        if ctx.onCollect then ctx.onCollect() end
+    createGameButton(hostCanvas, surface, tree, "▶ RESUME ALL", PAD + 130, actionsY + 8, 160, 34, function()
+        if ctx.onResumeAll then
+            ctx.onResumeAll(function() renderAllContent() end)
+            renderAllContent()
+        end
     end, 60)
 
-    createGameButton(hostCanvas, surface, tree, "⚡ COLLECT (NO EXP)", PAD + 332, actionsY + 8, 240, 34, function()
-        if ctx.onCollectNoExp then ctx.onCollectNoExp() end
+    createGameButton(hostCanvas, surface, tree, "⛏ PAUSE MINING/WOOD", PAD + 300, actionsY + 8, 220, 34, function()
+        if ctx.onPauseMiningWood then
+            ctx.onPauseMiningWood(function() renderAllContent() end)
+            renderAllContent()
+        end
     end, 60)
 
-    createGameButton(hostCanvas, surface, tree, "RESTORE EXP", PAD + 580, actionsY + 8, 170, 34, function()
-        if ctx.onRestoreExp then ctx.onRestoreExp() end
+    createGameButton(hostCanvas, surface, tree, "🌾 PAUSE FARMS", PAD + 530, actionsY + 8, 170, 34, function()
+        if ctx.onPauseFarms then
+            ctx.onPauseFarms(function() renderAllContent() end)
+            renderAllContent()
+        end
     end, 60)
 
-    createGameButton(hostCanvas, surface, tree, "?", PAD + contentW - 46, actionsY + 8, 36, 34, function()
-        if ctx.onHelp then ctx.onHelp() end
+    createGameButton(hostCanvas, surface, tree, "⚡ SCAN BASE", PAD + contentW - 146, actionsY + 8, 132, 34, function()
+        renderAllContent()
     end, 60)
 
-    local confY = actionsY + actionsH + 10
-    local confH = 88
+    local filterY = actionsY + actionsH + 10
+    local filterH = 34
+    local fx = PAD
+    local fBtnW = 144
+    local fGap = 12
 
-    local confBg = F.CreateSolidBorder(tree, T.PanelSection)
-    if confBg then F.AnchorWidget(surface, confBg, PAD, confY, contentW, confH, 5) end
-    F.DrawFrame(surface, tree, PAD, confY, contentW, confH, T.Divider)
+    for _, def in ipairs(FILTERS) do
+        local key = def.key
+        local isSel = (S.filterMode == key)
+        local count = 0
+        for _, s in ipairs(allStations) do
+            if key == "all" then count = count + 1
+            elseif key == "paused" and s.isPaused then count = count + 1
+            elseif key == "active" and not s.isPaused then count = count + 1
+            elseif key == "mining" and (s.category == "mining" or s.category == "logging") then count = count + 1
+            elseif key == "farm" and (s.category == "farm" or s.category == "ranch") then count = count + 1
+            elseif key == "crafting" and s.category == "crafting" then count = count + 1
+            end
+        end
 
-    local radLabel = F.CreateText(tree, "RADIUS:", 11, T.TextSecond, true, 0)
-    if radLabel then F.AnchorWidget(surface, radLabel, PAD + 16, confY + 12, 60, 16, 7) end
-
-    local currentRad = ctx.config.CollectRadius or 0
-    local radValStr  = (currentRad == 0) and "Unlimited (All Map)" or string.format("%d u (~%d m)", currentRad, math.floor(currentRad / 100))
-    local radValText = F.CreateText(tree, radValStr, 11, (currentRad == 0) and T.Gold or T.Cyan, true, 0)
-    if radValText then F.AnchorWidget(surface, radValText, PAD + 80, confY + 12, 170, 16, 7) end
-
-    local radPresets = {
-        { label = "All Map", val = 0 },
-        { label = "50m",     val = 5000 },
-        { label = "100m",    val = 10000 },
-        { label = "250m",    val = 25000 },
-        { label = "500m",    val = 50000 },
-    }
-    local rx = PAD + 256
-    for _, rp in ipairs(radPresets) do
-        local isSel = (currentRad == rp.val)
-        local prefix = isSel and "• " or ""
-        createGameButton(hostCanvas, surface, tree, prefix .. rp.label, rx, confY + 6, 88, 28, function()
-            ctx.config.CollectRadius = rp.val
+        local btnText = def.label .. " (" .. count .. ")"
+        createGameButton(hostCanvas, surface, tree, btnText, fx, filterY, fBtnW, filterH, function()
+            S.filterMode = key
             renderAllContent()
         end, 60)
-        rx = rx + 94
+
+        if isSel then
+            local selMark = F.CreateSolidBorder(tree, T.Cyan)
+            if selMark then F.AnchorWidget(surface, selMark, fx + 8, filterY + filterH - 3, fBtnW - 16, 3, 70) end
+        end
+
+        fx = fx + fBtnW + fGap
     end
 
-    createGameButton(hostCanvas, surface, tree, "- 50m", rx + 8, confY + 6, 68, 28, function()
-        ctx.config.CollectRadius = math.max(0, currentRad - 5000)
-        renderAllContent()
-    end, 60)
+    local listY = filterY + filterH + 10
+    local listH = UI_H - listY - 56
 
-    createGameButton(hostCanvas, surface, tree, "+ 50m", rx + 80, confY + 6, 68, 28, function()
-        ctx.config.CollectRadius = currentRad + 5000
-        renderAllContent()
-    end, 60)
+    local listBg = F.CreateSolidBorder(tree, T.PanelList)
+    if listBg then F.AnchorWidget(surface, listBg, PAD, listY, contentW, listH, 5) end
+    F.DrawFrame(surface, tree, PAD, listY, contentW, listH, T.Divider)
 
-    local limLabel = F.CreateText(tree, "LIMIT:", 11, T.TextSecond, true, 0)
-    if limLabel then F.AnchorWidget(surface, limLabel, PAD + 16, confY + 48, 60, 16, 7) end
-
-    local currentLim = ctx.config.MaxPerType or 0
-    local limValStr  = (currentLim == 0) and "Unlimited" or (tostring(currentLim) .. " / Pal")
-    local limValText = F.CreateText(tree, limValStr, 11, (currentLim == 0) and T.Gold or T.Cyan, true, 0)
-    if limValText then F.AnchorWidget(surface, limValText, PAD + 80, confY + 48, 170, 16, 7) end
-
-    local limPresets = {
-        { label = "All",     val = 0 },
-        { label = "1 / Pal", val = 1 },
-        { label = "5 / Pal", val = 5 },
-        { label = "10 / Pal",val = 10 },
-        { label = "25 / Pal",val = 25 },
-    }
-    local lx = PAD + 256
-    for _, lp in ipairs(limPresets) do
-        local isSel = (currentLim == lp.val)
-        local prefix = isSel and "• " or ""
-        createGameButton(hostCanvas, surface, tree, prefix .. lp.label, lx, confY + 44, 88, 28, function()
-            ctx.config.MaxPerType = lp.val
-            renderAllContent()
-        end, 60)
-        lx = lx + 94
+    local scroll = F.CreateScrollArea(tree)
+    if scroll then
+        F.AnchorWidget(surface, scroll, PAD + 8, listY + 8, contentW - 16, listH - 16, 10)
     end
 
-    createGameButton(hostCanvas, surface, tree, "- 1", lx + 8, confY + 44, 68, 28, function()
-        ctx.config.MaxPerType = math.max(0, currentLim - 1)
-        renderAllContent()
-    end, 60)
-
-    createGameButton(hostCanvas, surface, tree, "+ 1", lx + 80, confY + 44, 68, 28, function()
-        ctx.config.MaxPerType = currentLim + 1
-        renderAllContent()
-    end, 60)
-
-    local gridY = confY + confH + 12
-    local gridH = 390
-
-    local gridBg = F.CreateSolidBorder(tree, T.PanelSection)
-    if gridBg then F.AnchorWidget(surface, gridBg, PAD, gridY, contentW, gridH, 5) end
-    F.DrawFrame(surface, tree, PAD, gridY, contentW, gridH, T.Divider)
-
-    local gTitle = F.CreateText(tree, "PAL STATUE FILTERS", 12, T.TextPrimary, true, 0)
-    if gTitle then F.AnchorWidget(surface, gTitle, PAD + 16, gridY + 10, 200, 16, 7) end
-
-    local bulkW = 126
-    local bulkH = 26
-    local bulkY = gridY + 6
-    local disX  = PAD + contentW - bulkW - 14
-    local enX   = disX - bulkW - 10
-
-    createGameButton(hostCanvas, surface, tree, "[+] ENABLE ALL", enX, bulkY, bulkW, bulkH, function()
-        for _, def in ipairs(RELIC_CATALOG) do ctx.config.Relics[def.class] = true end
-        renderAllContent()
-    end, 60)
-
-    createGameButton(hostCanvas, surface, tree, "[-] DISABLE ALL", disX, bulkY, bulkW, bulkH, function()
-        for _, def in ipairs(RELIC_CATALOG) do ctx.config.Relics[def.class] = false end
-        renderAllContent()
-    end, 60)
-
-    local cardPadX   = PAD + 14
-    local cardStartY = gridY + 38
-    local cols       = 3
-    local gapX       = 12
-    local gapY       = 10
-    local cardW      = math.floor((contentW - 28 - (cols - 1) * gapX) / cols)
-    local cardH      = 74
-
-    for i, def in ipairs(RELIC_CATALOG) do
-        local col = (i - 1) % cols
-        local row = math.floor((i - 1) / cols)
-        local cx  = cardPadX + col * (cardW + gapX)
-        local cy  = cardStartY + row * (cardH + gapY)
-
-        local isEnabled = (ctx.config.Relics[def.class] == true)
-        local cardColor = isEnabled and T.CardActive or T.CardInactive
-
-        local cBg = F.CreateSolidBorder(tree, cardColor)
-        if cBg then F.AnchorWidget(surface, cBg, cx, cy, cardW, cardH, 6) end
-
-        local barCol = isEnabled and def.color or T.TextDim
-        local cBar = F.CreateSolidBorder(tree, barCol)
-        if cBar then F.AnchorWidget(surface, cBar, cx, cy, 4, cardH, 7) end
-
-        F.DrawFrame(surface, tree, cx, cy, cardW, cardH, isEnabled and T.BorderDefault or T.Divider)
-
-        local pName = F.CreateText(tree, def.name, 13, isEnabled and T.TextPrimary or T.TextDim, true, 0)
-        if pName then F.AnchorWidget(surface, pName, cx + 14, cy + 10, 160, 18, 8) end
-
-        local pSub = F.CreateText(tree, def.sub, 9, T.TextDim, false, 0)
-        if pSub then F.AnchorWidget(surface, pSub, cx + 14, cy + 32, 160, 14, 8) end
-
-        local stateStr = isEnabled and "ENABLED" or "DISABLED"
-        local stateCol = isEnabled and T.Green or T.Red
-        local pState = F.CreateText(tree, stateStr, 10, stateCol, true, 0)
-        if pState then F.AnchorWidget(surface, pState, cx + 14, cy + 48, 100, 14, 8) end
-
-        local toggleLabel = isEnabled and "TURN OFF" or "TURN ON"
-        createGameButton(hostCanvas, surface, tree, toggleLabel, cx + cardW - 102, cy + 18, 94, 38, function()
-            ctx.config.Relics[def.class] = not isEnabled
-            renderAllContent()
-        end, 60)
+    local displayList = {}
+    for _, s in ipairs(allStations) do
+        local keep = true
+        if S.filterMode == "paused" then keep = s.isPaused
+        elseif S.filterMode == "active" then keep = not s.isPaused
+        elseif S.filterMode == "mining" then keep = (s.category == "mining" or s.category == "logging")
+        elseif S.filterMode == "farm" then keep = (s.category == "farm" or s.category == "ranch")
+        elseif S.filterMode == "crafting" then keep = (s.category == "crafting")
+        end
+        if keep then displayList[#displayList + 1] = s end
     end
 
-    local footerY = UI_H - PAD - 44
+    local cardW = contentW - 28
+    if #displayList == 0 then
+        local emptyMsg = (#allStations == 0)
+            and "No workstations detected. Make sure you are inside your Base Camp!"
+            or "No stations match the selected filter."
+        drawNoticeCard(scroll, tree, cardW, emptyMsg)
+    else
+        for _, item in ipairs(displayList) do
+            drawStationCard(scroll, tree, hostCanvas, item, cardW, ctx)
+        end
+    end
+
+    local footerY = UI_H - PAD - 38
     local footLine = F.CreateSolidBorder(tree, T.Divider)
     if footLine then F.AnchorWidget(surface, footLine, PAD, footerY - 4, contentW, 1, 6) end
 
-    local escHint = F.CreateText(tree, "Tip: Press ESC or Chat '!scollect' to toggle window", 10, T.TextDim, false, 0)
-    if escHint then F.AnchorWidget(surface, escHint, PAD + 10, footerY + 12, 400, 16, 7) end
+    local tipTxt = F.CreateText(tree, "Tip: Look at any station & press F6 to toggle instantly | ESC to close", 10, T.TextDim, false, 0)
+    if tipTxt then F.AnchorWidget(surface, tipTxt, PAD + 10, footerY + 8, 480, 16, 7) end
 
-    createGameButton(hostCanvas, surface, tree, "CLOSE [ESC]", PAD + contentW - 150, footerY + 2, 150, 36, function()
-        RelicUI.Presenter.Close()
+    local toastLabel = (ctx.config.EnableChatToast and "TOASTS: ON" or "TOASTS: OFF")
+    createGameButton(hostCanvas, surface, tree, toastLabel, PAD + contentW - 300, footerY - 2, 136, 32, function()
+        ctx.config.EnableChatToast = not ctx.config.EnableChatToast
+        renderAllContent()
+    end, 60)
+
+    createGameButton(hostCanvas, surface, tree, "CLOSE [ESC]", PAD + contentW - 150, footerY - 2, 150, 32, function()
+        StationUI.Presenter.Close()
     end, 60)
 end
 
-function RelicUI.Presenter.Show(context)
-    RelicUI.Presenter.Close()
+function StationUI.Presenter.Show(context)
+    StationUI.Presenter.Close()
 
-    local layout = RelicUI.Engine.LocateMainLayout()
+    local layout = StationUI.Engine.LocateMainLayout()
     if not isObjectValid(layout) then printLog("Layout instance not found"); return end
 
     local tree = layout.WidgetTree
@@ -668,7 +720,7 @@ function RelicUI.Presenter.Show(context)
     local layoutName = safeCall(function() return tree:GetFullName() end)
     if not layoutName then printLog("Unable to resolve layout name"); return end
 
-    local hostCanvas = RelicUI.Engine.FindHostCanvas(layoutName, RelicUI.Assets.HostPanelName)
+    local hostCanvas = StationUI.Engine.FindHostCanvas(layoutName, StationUI.Assets.HostPanelName)
     if not isObjectValid(hostCanvas) then printLog("Host canvas panel missing"); return end
 
     local frame = assembleModalFrame(hostCanvas, tree, UI_W, UI_H)
@@ -683,13 +735,13 @@ function RelicUI.Presenter.Show(context)
     S.isDisplayed   = true
 
     renderAllContent()
-    printLog("Control panel opened")
+    printLog("Workstation Manager opened")
 end
 
-function RelicUI.Presenter.Close()
+function StationUI.Presenter.Close()
     local S = State
     if isObjectValid(S.activeShell) then
-        local modalHost = RelicUI.Engine.AcquireModalSurface()
+        local modalHost = StationUI.Engine.AcquireModalSurface()
         if modalHost then
             pcall(function() modalHost:RemoveWidget(S.activeShell) end)
         end
@@ -702,15 +754,15 @@ function RelicUI.Presenter.Close()
     ClickDispatcher.Reset()
 end
 
-function RelicUI.Presenter.IsVisible()
+function StationUI.Presenter.IsVisible()
     return State.isDisplayed
 end
 
 return {
-    show       = RelicUI.Presenter.Show,
-    close      = RelicUI.Presenter.Close,
-    is_visible = RelicUI.Presenter.IsVisible,
-    Show       = RelicUI.Presenter.Show,
-    Close      = RelicUI.Presenter.Close,
-    IsVisible  = RelicUI.Presenter.IsVisible,
+    show       = StationUI.Presenter.Show,
+    close      = StationUI.Presenter.Close,
+    is_visible = StationUI.Presenter.IsVisible,
+    Show       = StationUI.Presenter.Show,
+    Close      = StationUI.Presenter.Close,
+    IsVisible  = StationUI.Presenter.IsVisible,
 }
