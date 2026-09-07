@@ -1,8 +1,0 @@
-#ifndef UE4SS_SDK_BP_AIAction_TurnAndEncount_YakushimaBoss001_Green_HPP
-#define UE4SS_SDK_BP_AIAction_TurnAndEncount_YakushimaBoss001_Green_HPP
-
-class UBP_AIAction_TurnAndEncount_YakushimaBoss001_Green_C : public UBP_AIAction_TurnAndEncount_C
-{
-}; // Size: 0x189
-
-#endif

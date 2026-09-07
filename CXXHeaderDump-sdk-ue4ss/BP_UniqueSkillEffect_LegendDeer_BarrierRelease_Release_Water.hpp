@@ -1,8 +1,0 @@
-#ifndef UE4SS_SDK_BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_HPP
-#define UE4SS_SDK_BP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_HPP
-
-class ABP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_Water_C : public ABP_UniqueSkillEffect_LegendDeer_BarrierRelease_Release_C
-{
-}; // Size: 0x450
-
-#endif

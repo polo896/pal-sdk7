@@ -1,8 +1,0 @@
-#ifndef UE4SS_SDK_BP_PalRandomIncidentPlacementEggDataComponent_HPP
-#define UE4SS_SDK_BP_PalRandomIncidentPlacementEggDataComponent_HPP
-
-class UBP_PalRandomIncidentPlacementEggDataComponent_C : public UPalRandomIncidentPlacementEggDataComponent
-{
-}; // Size: 0x600
-
-#endif

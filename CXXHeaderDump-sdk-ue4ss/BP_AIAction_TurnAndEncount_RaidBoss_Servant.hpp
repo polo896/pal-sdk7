@@ -1,8 +1,0 @@
-#ifndef UE4SS_SDK_BP_AIAction_TurnAndEncount_RaidBoss_Servant_HPP
-#define UE4SS_SDK_BP_AIAction_TurnAndEncount_RaidBoss_Servant_HPP
-
-class UBP_AIAction_TurnAndEncount_RaidBoss_Servant_C : public UBP_AIAction_TurnAndEncount_C
-{
-}; // Size: 0x189
-
-#endif
