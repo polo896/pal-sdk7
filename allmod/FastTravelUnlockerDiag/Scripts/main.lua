@@ -174,6 +174,19 @@ local function Stage1()
     if playerNet then
         CheckMethod("старый RPC RequestUnlockFastTravelPoint_ToServer", playerNet,
             "RequestUnlockFastTravelPoint_ToServer")
+        -- КОНТРОЛЬ: заведомо несуществующее имя. Если и оно "OK", значит UE4SS
+        -- возвращает что-то на любое имя и всем проверкам выше верить НЕЛЬЗЯ.
+        local fakeOk = CheckMethod("КОНТРОЛЬ (несуществующий метод)", playerNet,
+            "ThisMethodSurelyDoesNotExist12345")
+        if fakeOk then
+            Log("!!! ВНИМАНИЕ: контрольная проверка тоже вернула OK -> UE4SS отдаёт "
+                .. "что угодно на любое имя метода. Все строки 'OK' выше НЕ доказывают "
+                .. "существование функции. Ориентируйся только на реальные вызовы "
+                .. "(!eaglediag rpc / statue / brute).")
+        else
+            Log("Контроль честный: несуществующий метод = ОТСУТСТВУЕТ, значит строкам "
+                .. "'OK' выше можно верить.")
+        end
     end
 
     local statue = FindFirstOf("PalLevelObjectUnlockableFastTravelPoint")
@@ -370,6 +383,104 @@ local function TestMethod(target, flags, label, fn, readFlagAfter)
     return (after == true)
 end
 
+-- ШАГ 4a. Старый RPC (если он ещё жив в этой сборке - это лучший путь)
+local function StageRpc()
+    Sep("ШАГ 4. ТЕСТ СТАРОГО RPC")
+
+    local pc = GetLocalPlayerController()
+    local net = (IsValid(pc) and IsValid(pc.Transmitter) and IsValid(pc.Transmitter.Player))
+        and pc.Transmitter.Player or nil
+    if not net then
+        Log("PalNetworkPlayerComponent не найден.")
+        return
+    end
+    if net.RequestUnlockFastTravelPoint_ToServer == nil then
+        Log("RequestUnlockFastTravelPoint_ToServer отсутствует (nil) - это сборка 1.0.4.")
+        return
+    end
+
+    local target = FindTestTarget()
+    if not target then
+        Log("Нет закрытых точек для теста.")
+        return
+    end
+    local keys = KeysFor(target)
+    Log(string.format("Тестовая точка: FastTravelPointID=%s, GUID=%s", tostring(keys[1]), tostring(keys[2])))
+
+    local unlockedBefore = StatueIsUnlocked(target)
+    for _, key in ipairs(keys) do
+        local res = Risky("RequestUnlockFastTravelPoint_ToServer('" .. tostring(key) .. "')", function()
+            net:RequestUnlockFastTravelPoint_ToServer(FName(key))
+            return true
+        end)
+        if res == nil then break end
+        local ps = GetLocalPlayerState()
+        if IsValid(ps) then
+            Risky("OnCompleteSyncPlayer(PlayerState)", function() return target:OnCompleteSyncPlayer(ps) end)
+        end
+        Log(string.format("    ключ %-34s -> IsUnlocked=%s", tostring(key), tostring(StatueIsUnlocked(target))))
+        if StatueIsUnlocked(target) then break end
+    end
+    Log(string.format("ИТОГ RPC: было IsUnlocked=%s, стало %s",
+        tostring(unlockedBefore), tostring(StatueIsUnlocked(target))))
+end
+
+-- ШАГ 4b. Перебор индикаторов: вдруг в этой сборке UnlockFastTravel != 26
+local function StageBrute()
+    Sep("ШАГ 4. ПЕРЕБОР ИНДИКАТОРОВ OnTriggerInteract(Other, N)")
+
+    local target = FindTestTarget()
+    if not target then
+        Log("Нет закрытых точек для теста.")
+        return
+    end
+    Log(string.format("Тестовая точка: FastTravelPointID=%s", tostring(KeysFor(target)[1])))
+    Log("Эксперимент: перебираем N = 0..80, после каждого проверяем IsUnlocked().")
+
+    local character = GetLocalPlayerCharacter()
+    local pc = GetLocalPlayerController()
+    local ps = GetLocalPlayerState()
+
+    local function Pass(other, label)
+        for i = 0, 80 do
+            local ok, err = pcall(function() target:OnTriggerInteract(other, i) end)
+            if not ok then
+                Log(string.format("    N=%d -> ошибка: %s", i, tostring(err)))
+            end
+            if IsValid(ps) then
+                pcall(function() target:OnCompleteSyncPlayer(ps) end)
+            end
+            if StatueIsUnlocked(target) then
+                Log(string.format("!!! НАЙДЕНО: N=%d РАЗБЛОКИРОВАЛО точку (Other = %s)", i, label))
+                return true
+            end
+        end
+        return false
+    end
+
+    if not Pass(character, "PalPlayerCharacter") then
+        Log("С Character ничего не открылось, пробуем Other = PlayerController.")
+        if not Pass(pc, "PlayerController") then
+            Log("Ни один индикатор 0..80 не открыл точку.")
+        end
+    end
+end
+
+-- ШАГ 4c. SendSystemAnnounce (подозреваемый в краше основного мода)
+local function StageAnnounce()
+    Sep("ШАГ 4. ТЕСТ SendSystemAnnounce")
+    local util = StaticFindObject("/Script/Pal.Default__PalUtility")
+    local pc = GetLocalPlayerController()
+    if not util or not IsValid(pc) then
+        Log("PalUtility или PlayerController не найдены.")
+        return
+    end
+    Risky("PalUtility::SendSystemAnnounce(PC, 'eaglediag announce test')", function()
+        util:SendSystemAnnounce(pc, "eaglediag announce test")
+        return true
+    end)
+end
+
 local function Stage4(kind, readFlagAfter)
     Sep("ШАГ 4. ТЕСТ СПОСОБА РАЗБЛОКИРОВКИ (одна точка)")
 
@@ -423,7 +534,10 @@ end
 -- ---------------------------------------------------------------------------
 
 local HELP = {
-    "!eaglediag          - наличие функций + счётчики (безопасные вызовы)",
+    "!eaglediag          - наличие функций + счётчики + контрольная проверка",
+    "!eaglediag rpc      - старый RPC RequestUnlockFastTravelPoint_ToServer",
+    "!eaglediag brute    - перебор индикаторов OnTriggerInteract(Other, 0..80)",
+    "!eaglediag announce - тест SendSystemAnnounce (подозревается в краше)",
     "!eaglediag record   - + чтение RecordData через struct-параметры (ОПАСНО)",
     "!eaglediag statue   - + OnTriggerInteract(26) на одной точке",
     "!eaglediag cutscene - + OnEndCutscene на одной точке (ОПАСНО)",
@@ -444,11 +558,15 @@ local function Run(kind)
     local structCalls = (kind == "record") or (kind == "all") or (kind == "write")
     Stage3(structCalls)
 
-    if kind == "statue" then Stage4("statue", kind == "all")
+    if kind == "rpc" then StageRpc()
+    elseif kind == "brute" then StageBrute()
+    elseif kind == "announce" then StageAnnounce()
+    elseif kind == "statue" then Stage4("statue", kind == "all")
     elseif kind == "cutscene" then Stage4("cutscene", kind == "all")
     elseif kind == "write" then Stage4("write", true)
     elseif kind == "cosmetic" then Stage4("cosmetic", false)
     elseif kind == "all" then
+        StageRpc()
         Stage4("statue", true)
         Stage4("cutscene", true)
         Stage4("write", true)
@@ -466,6 +584,9 @@ local ok, err = pcall(function()
 
         local kind = nil
         if text == "!eaglediag" then kind = "safe"
+        elseif text == "!eaglediag rpc" then kind = "rpc"
+        elseif text == "!eaglediag brute" then kind = "brute"
+        elseif text == "!eaglediag announce" then kind = "announce"
         elseif text == "!eaglediag record" then kind = "record"
         elseif text == "!eaglediag statue" then kind = "statue"
         elseif text == "!eaglediag cutscene" then kind = "cutscene"

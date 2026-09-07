@@ -108,6 +108,7 @@ statue:OnCompleteSyncPlayer(playerState)
 | `!eagle method interact` | (по умолчанию) только `OnTriggerInteract(26)` |
 | `!eagle method cutscene` | `OnEndCutscene(<BindParameter>)` — эксперимент, может ронять игру |
 | `!eagle method record` | прямая запись `FastTravelPointUnlockFlag` + проверка по флагу — может ронять игру |
+| `!eagle method rpc` | старый RPC `RequestUnlockFastTravelPoint_ToServer` (в SDK 1.0.4 его нет, но в некоторых установленных сборках он ещё жив — см. `!eaglediag rpc`) |
 | `!eagle method cosmetic` | вообще без вызовов в игру: только `bUnlocked = true` — чтобы понять, падает игра на вызовах статуи или нет |
 | `!eagle method` | показать текущий режим |
 | `!eagle verifystruct` | разовая проба: поддерживает ли ваш UE4SS struct-параметры (и отключит проверку, если нет) |
@@ -135,6 +136,12 @@ statue:OnCompleteSyncPlayer(playerState)
 `IsUnlocked() = true` при невыставленном флаге = косметика, и мод автоматически
 пробует следующий способ. Итог по флагам печатается в лог:
 `Подтверждение: флаг в RecordData выставлен у N точек, не подтверждён у M ...`.
+
+`CONFIG.AnnounceInGame = false` — внутриигровые уведомления (`PalUtility::SendSystemAnnounce`)
+по умолчанию выключены: по логам именно этот вызов ронял UE4SS сразу после старта
+разблокировки. Включать только после проверки `!eaglediag announce`.
+
+Каждые 25 точек печатается прогресс: `[all] прогресс: N/174 (открыто X, не открылось Y)`.
 
 Разблокировка идёт пачками (`UnlockBatchSize = 3`, пауза `UnlockBatchDelayMs = 350`):
 если скормить игре ~174 разблокировки в один кадр, она падает (это же и есть

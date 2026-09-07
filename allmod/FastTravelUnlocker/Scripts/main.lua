@@ -85,6 +85,7 @@ local CONFIG = {
     -- вызовы, на части сборок UE4SS они роняют игру (EXCEPTION_ACCESS_VIOLATION).
     -- Включаются одной командой в чате: !eagle method cutscene / record
     EnableInteractPath     = true,
+    EnableRpcPath          = false,
     EnableCutsceneEndPath  = false,
     EnableRecordDataPath   = false,
 
@@ -94,8 +95,13 @@ local CONFIG = {
 
     EnableCosmeticFallback = true,
 
-    -- писать ли сообщения в игровой чат-панель (PalUtility::SendSystemAnnounce)
-    AnnounceInGame         = true,
+    -- писать ли сообщения в игровой чат-панель (PalUtility::SendSystemAnnounce).
+    -- ВЫКЛЮЧЕНО: по логам именно этот вызов ронял UE4SS (падение происходило
+    -- сразу после строки "начинаю разблокировку"). Включать осторожно.
+    AnnounceInGame         = false,
+
+    -- убирать облака над островами после разблокировки (старый код)
+    EnableCloudRemoval     = true,
 }
 
 local TAG = "[EagleCollector]"
@@ -398,6 +404,37 @@ local function TryUnlock_Interact(statue, character)
     return true, "ok"
 end
 
+-- Попытка №0: старый RPC (в SDK 1.0.4 его НЕТ, но в части сборок он ещё жив).
+-- Если он есть - это самый правильный и безопасный путь.
+local function GetPlayerNetworkComponent()
+    local pc = GetLocalPlayerController()
+    if not IsValid(pc) then return nil end
+    local transmitter = pc.Transmitter
+    if not IsValid(transmitter) then return nil end
+    local net = transmitter.Player
+    return IsValid(net) and net or nil
+end
+
+local function TryUnlock_Rpc(statue)
+    local net = GetPlayerNetworkComponent()
+    if not net then return false, "PalNetworkPlayerComponent не найден" end
+    if net.RequestUnlockFastTravelPoint_ToServer == nil then
+        return false, "RPC RequestUnlockFastTravelPoint_ToServer отсутствует в этой сборке"
+    end
+
+    local keys = CollectFlagKeys(statue)
+    local lastErr = nil
+    local called = 0
+    for _, key in ipairs(keys) do
+        local ok, err = pcall(function()
+            net:RequestUnlockFastTravelPoint_ToServer(FName(key))
+        end)
+        if ok then called = called + 1 else lastErr = tostring(err) end
+    end
+    if called == 0 then return false, "RPC не вызывался: " .. tostring(lastErr) end
+    return true, "ok (RPC, ключей: " .. called .. ")"
+end
+
 -- Попытка №3: записать флаг напрямую.
 local function TryUnlock_RecordData(statue)
     return WriteUnlockFlag(CollectFlagKeys(statue))
@@ -438,6 +475,9 @@ local function UnlockStatue(statue, ctx)
     end
 
     local all = {}
+    if CONFIG.EnableRpcPath then
+        all[#all + 1] = { name = "Rpc", fn = function() return TryUnlock_Rpc(statue) end }
+    end
     if CONFIG.EnableCutsceneEndPath then
         all[#all + 1] = { name = "OnEndCutscene", fn = function() return TryUnlock_CutsceneEnd(statue) end }
     end
@@ -793,13 +833,18 @@ local function RunUnlock(filterMode)
         end
         stats.done = last
 
+        if (stats.done % 25) < CONFIG.UnlockBatchSize or stats.done == #targets then
+            Log(string.format("[%s] прогресс: %d/%d (открыто %d, не открылось %d)",
+                filterMode, stats.done, #targets, stats.unlocked, stats.failed))
+        end
+
         if stats.done < #targets then
             ExecuteWithDelay(CONFIG.UnlockBatchDelayMs, Step)
             return
         end
 
         -- финал
-        if filterMode == "all" or filterMode == "statues" then
+        if CONFIG.EnableCloudRemoval and (filterMode == "all" or filterMode == "statues") then
             TriggerCloudRemoval()
         end
 
@@ -855,7 +900,12 @@ end
 
 -- Переключение способа разблокировки на ходу (без правки файла)
 local function SetPrimaryMethod(name)
-    if name == "interact" then
+    if name == "rpc" then
+        CONFIG.PrimaryMethod = "Rpc"
+        CONFIG.EnableRpcPath = true
+        return "Основной способ: старый RPC RequestUnlockFastTravelPoint_ToServer "
+            .. "(в SDK 1.0.4 его нет, но эта сборка, похоже, его ещё содержит)."
+    elseif name == "interact" then
         CONFIG.PrimaryMethod = "Interact"
         CONFIG.EnableInteractPath = true
         return "Основной способ: OnTriggerInteract(Character, 26) - симуляция нажатия F."
@@ -883,6 +933,7 @@ end
 
 local function CurrentMethodInfo()
     local flags = {}
+    if CONFIG.EnableRpcPath then flags[#flags + 1] = "Rpc" end
     if CONFIG.EnableInteractPath then flags[#flags + 1] = "Interact" end
     if CONFIG.EnableCutsceneEndPath then flags[#flags + 1] = "EndCutscene" end
     if CONFIG.EnableRecordDataPath then flags[#flags + 1] = "RecordData" end
@@ -956,7 +1007,8 @@ local function RegisterChatHook()
             elseif textLower == "!eagle method interact"
                 or textLower == "!eagle method cutscene"
                 or textLower == "!eagle method record"
-                or textLower == "!eagle method cosmetic" then
+                or textLower == "!eagle method cosmetic"
+                or textLower == "!eagle method rpc" then
                 local name = textLower:match("!eagle method (%a+)")
                 local info = SetPrimaryMethod(name)
                 if info then
