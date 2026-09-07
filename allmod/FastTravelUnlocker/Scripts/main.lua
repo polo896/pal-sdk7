@@ -60,15 +60,24 @@ local CONFIG = {
     ChatCommandVerify    = "!eagle verify",
     ChatCommandBypass    = "!eagle bypass",
 
-    RestoreDelayMs       = 3000,
+    -- Разблокировка асинхронна, поэтому EXP rate держим выключенным дольше:
+    -- пока идёт проход (174 точки x 750 мс) плюс запас на "доехавшие" катсцены.
+    RestoreDelayMs       = 25000,
 
     MapClearPaintSize    = 99999.0,
     MapClearDurationMs   = 10000,
     MapClearIntervalMs   = 250,
 
     -- разблокировка пачками: меньше шанс уронить игру
-    UnlockBatchSize      = 3,
-    UnlockBatchDelayMs   = 350,
+    UnlockBatchSize      = 1,
+    UnlockBatchDelayMs   = 750,
+
+    -- Разблокировка в Palworld АСИНХРОННА: OnTriggerInteract запускает катсцену,
+    -- и флаг выставляется через секунды. Проверять итог сразу бессмысленно (мы так
+    -- и прозевали настоящий успех в логах), поэтому при AsyncUnlock=true мод только
+    -- отправляет запросы, а итог считает отдельно, через FinalCheckDelays.
+    AsyncUnlock          = true,
+    FinalCheckDelays     = { 5000, 15000 },
 
     -- EPalInteractiveObjectIndicatorType::UnlockFastTravel (Pal_enums.hpp: 26)
     IndicatorUnlockFastTravel = 26,
@@ -551,6 +560,12 @@ local function UnlockStatue(statue, ctx)
         notes[#notes + 1] = attempt.name .. ": " .. tostring(detail)
         SyncStatue(statue, ctx.playerState)
 
+        -- Асинхронный режим: вызов ушёл - значит свою работу мы сделали, а
+        -- результат появится позже (см. повторные проверки в конце прохода).
+        if CONFIG.AsyncUnlock and ok then
+            return attempt.name, table.concat(notes, " | "), nil, false, true
+        end
+
         local openedNow, flagNow, _, travelNow, cosmeticNow = CheckUnlocked(statue, keys)
         if openedNow then
             -- реальный успех: флаг выставлен или телепорт у точки разрешён
@@ -866,6 +881,7 @@ local function RunUnlock(filterMode)
         done = 0,
         already = 0,
         unlocked = 0,
+        requested = 0,    -- запрос отправлен, итог будет известен позже (AsyncUnlock)
         cosmetic = 0,     -- IsUnlocked()=true, но IsEnableFastTravel()=false
         confirmed = 0,     -- флаг в RecordData выставлен - разблокировка настоящая
         unconfirmed = 0,   -- IsUnlocked() = true, но флаг не выставлен (косметика?)
@@ -896,8 +912,11 @@ local function RunUnlock(filterMode)
                     tostring(ToStr(statue.FastTravelPointID)),
                     tostring(GuidToHexStr(statue.LevelObjectInstanceId))))
             end
-            local method, note, flag, isCosmetic = UnlockStatue(statue, ctx)
-            if method == "already" then
+            local method, note, flag, isCosmetic, requested = UnlockStatue(statue, ctx)
+            if requested then
+                stats.requested = stats.requested + 1
+                if method then stats.methods[method] = (stats.methods[method] or 0) + 1 end
+            elseif method == "already" then
                 stats.already = stats.already + 1
                 Account(method, flag)
             elseif isCosmetic then
@@ -918,8 +937,9 @@ local function RunUnlock(filterMode)
         stats.done = last
 
         if (stats.done % 25) < CONFIG.UnlockBatchSize or stats.done == #targets then
-            Log(string.format("[%s] прогресс: %d/%d (открыто %d, косметика %d, не открылось %d)",
-                filterMode, stats.done, #targets, stats.unlocked, stats.cosmetic, stats.failed))
+            Log(string.format("[%s] прогресс: %d/%d (запросов %d, открыто %d, косметика %d, не открылось %d)",
+                filterMode, stats.done, #targets, stats.requested, stats.unlocked,
+                stats.cosmetic, stats.failed))
         end
 
         if stats.done < #targets then
@@ -935,20 +955,26 @@ local function RunUnlock(filterMode)
         -- Часть разблокировок в Palworld асинхронна (катсцена/стриминг), поэтому
         -- считаем итог ещё раз через 5 секунд - вдруг точки "доехали".
         local beforeTotal, beforeEnabled = CountTravelEnabled()
-        ExecuteWithDelay(5000, function()
-            local afterTotal, afterEnabled = CountTravelEnabled()
-            local stTotal, stUnlocked = 0, 0
-            for _, st in ipairs(FindAllOf("PalLevelObjectUnlockableFastTravelPoint") or {}) do
-                if IsValid(st) then
-                    stTotal = stTotal + 1
-                    if StatueIsUnlocked(st) then stUnlocked = stUnlocked + 1 end
+        for _, delay in ipairs(CONFIG.FinalCheckDelays or { 5000 }) do
+            ExecuteWithDelay(delay, function()
+                local afterTotal, afterEnabled = CountTravelEnabled()
+                local stTotal, stUnlocked = 0, 0
+                for _, st in ipairs(FindAllOf("PalLevelObjectUnlockableFastTravelPoint") or {}) do
+                    if IsValid(st) then
+                        stTotal = stTotal + 1
+                        if StatueIsUnlocked(st) then stUnlocked = stUnlocked + 1 end
+                    end
                 end
-            end
-            Log(string.format("[%s] ПОВТОРНАЯ ПРОВЕРКА через 5с: IsUnlocked()=%d/%d, "
-                .. "IsEnableFastTravel()=%d/%d (было %d/%d)",
-                filterMode, stUnlocked, stTotal, afterEnabled, afterTotal,
-                beforeEnabled, beforeTotal))
-        end)
+                Log(string.format("[%s] ПОВТОРНАЯ ПРОВЕРКА через %d мс: IsUnlocked()=%d/%d, "
+                    .. "IsEnableFastTravel()=%d/%d (до старта было %d/%d)",
+                    filterMode, delay, stUnlocked, stTotal, afterEnabled, afterTotal,
+                    beforeEnabled, beforeTotal))
+                if afterEnabled > beforeEnabled then
+                    Log(string.format("[%s] +++ Реально открылось %d точек (телепорт разрешён).",
+                        filterMode, afterEnabled - beforeEnabled))
+                end
+            end)
+        end
 
         local methods = {}
         for name, n in pairs(stats.methods) do
@@ -957,9 +983,10 @@ local function RunUnlock(filterMode)
         table.sort(methods)
 
         Log(string.format(
-            "Mode [%s]: обработано %d, уже было открыто %d, открыто сейчас %d, только косметика %d, "
-            .. "не открылось %d. Способы: %s",
-            filterMode, stats.total, stats.already, stats.unlocked, stats.cosmetic, stats.failed,
+            "Mode [%s]: обработано %d, уже было открыто %d, запросов отправлено %d, открыто сразу %d, "
+            .. "только косметика %d, не открылось %d. Способы: %s",
+            filterMode, stats.total, stats.already, stats.requested, stats.unlocked,
+            stats.cosmetic, stats.failed,
             (#methods > 0) and table.concat(methods, ", ") or "нет"))
 
         Log(string.format("Подтверждение: флаг в RecordData выставлен у %d точек, "

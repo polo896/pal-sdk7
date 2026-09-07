@@ -396,6 +396,62 @@ local function TestMethod(target, flags, label, fn, readFlagAfter)
 end
 
 -- ШАГ: симуляция настоящего нажатия F через UPalInteractComponent игрока
+-- ШАГ: обход блокировки через UPalDebugSetting::bIgnoreFastTravelLock
+local function StageBypass()
+    Sep("ШАГ 4. ТЕСТ bIgnoreFastTravelLock (обход блокировки)")
+
+    local util = StaticFindObject("/Script/Pal.Default__PalUtility")
+    local pc = GetLocalPlayerController()
+    if not util or not IsValid(pc) then
+        Log("PalUtility или PlayerController не найдены.")
+        return
+    end
+    local setting = Risky("PalUtility::GetPalDebugSetting()", function()
+        return util:GetPalDebugSetting(pc)
+    end)
+    if not setting then
+        Log("UPalDebugSetting не получен.")
+        return
+    end
+
+    local before = 0
+    local total = 0
+    for _, loc in ipairs(FindAllOf("PalLocationPointFastTravel") or {}) do
+        if IsValid(loc) then
+            total = total + 1
+            local ok, v = pcall(function() return loc:IsEnableFastTravel() end)
+            if ok and v == true then before = before + 1 end
+        end
+    end
+    Log(string.format("До: IsEnableFastTravel() = true у %d из %d точек", before, total))
+
+    local okCur, cur = pcall(function() return setting.bIgnoreFastTravelLock end)
+    Log("bIgnoreFastTravelLock сейчас: " .. tostring(cur))
+
+    pcall(function() setting.bIgnoreFastTravelLock = true end)
+    local okAfter, after = pcall(function() return setting.bIgnoreFastTravelLock end)
+    Log("bIgnoreFastTravelLock после записи: " .. tostring(okAfter) .. " / " .. tostring(after))
+
+    ExecuteWithDelay(1500, function()
+        local n = 0
+        for _, loc in ipairs(FindAllOf("PalLocationPointFastTravel") or {}) do
+            if IsValid(loc) then
+                local ok, v = pcall(function() return loc:IsEnableFastTravel() end)
+                if ok and v == true then n = n + 1 end
+            end
+        end
+        Log(string.format("Через 1.5 с: IsEnableFastTravel() = true у %d из %d точек (было %d)",
+            n, total, before))
+        if n > before then
+            Log(">>> ВЫВОД: bIgnoreFastTravelLock РАЗРЕШАЕТ телепорт на закрытые точки. "
+                .. "Это готовый обход для соло: команда !eagle bypass в основном моде.")
+        else
+            Log(">>> ВЫВОД: обход не сработал, IsEnableFastTravel() как был false - "
+                .. "значит он проверяет именно флаг в RecordData.")
+        end
+    end)
+end
+
 local function StageInteract()
     Sep("ШАГ 4. СИМУЛЯЦИЯ НАЖАТИЯ F (UPalInteractComponent)")
 
@@ -558,11 +614,25 @@ local function FlagCount()
     return okN and num or nil
 end
 
+local function LocationOf(target)
+    local id = tostring(ToStr(target.FastTravelPointID))
+    local locs = FindAllOf("PalLocationPointFastTravel")
+    for _, loc in ipairs(locs or {}) do
+        if IsValid(loc) and tostring(ToStr(loc.FastTravelPointID)) == id then return loc end
+    end
+    return nil
+end
+
 local function StatReport(target, tag)
     local flags = FlagCount()
-    local locEnabled = nil
-    Log(string.format("    [%s] IsUnlocked=%s | Items в RecordData=%s",
-        tag, tostring(StatueIsUnlocked(target)), tostring(flags)))
+    local loc = LocationOf(target)
+    local travel = nil
+    if IsValid(loc) then
+        local ok, v = pcall(function() return loc:IsEnableFastTravel() end)
+        if ok then travel = (v == true) end
+    end
+    Log(string.format("    [%s] IsUnlocked=%s | IsEnableFastTravel=%s | Items в RecordData=%s",
+        tag, tostring(StatueIsUnlocked(target)), tostring(travel), tostring(flags)))
 end
 
 local function DelayedVerify(target, label, delays, idx)
@@ -732,6 +802,7 @@ local HELP = {
     "!eaglediag keys     - РЕШАЮЩИЙ ТЕСТ: какие ключи в флаге и какому полю статуи они соответствуют",
     "!eaglediag flagmap  - OnUpdateFlagMapRecord(Key, true) (без struct-параметров)",
     "!eaglediag interact - симуляция нажатия F через UPalInteractComponent игрока",
+    "!eaglediag bypass   - тест UPalDebugSetting::bIgnoreFastTravelLock (обход для соло)",
     "!eaglediag brute    - перебор индикаторов OnTriggerInteract(Other, 0..80)",
     "!eaglediag announce - тест SendSystemAnnounce (подозревается в краше)",
     "!eaglediag record   - + чтение RecordData через struct-параметры (ОПАСНО)",
@@ -758,6 +829,7 @@ local function Run(kind)
     elseif kind == "keys" then StageKeys()
     elseif kind == "flagmap" then StageFlagMap()
     elseif kind == "interact" then StageInteract()
+    elseif kind == "bypass" then StageBypass()
     elseif kind == "brute" then StageBrute()
     elseif kind == "announce" then StageAnnounce()
     elseif kind == "statue" then Stage4("statue", kind == "all")
@@ -787,6 +859,7 @@ local ok, err = pcall(function()
         elseif text == "!eaglediag keys" then kind = "keys"
         elseif text == "!eaglediag flagmap" then kind = "flagmap"
         elseif text == "!eaglediag interact" then kind = "interact"
+        elseif text == "!eaglediag bypass" then kind = "bypass"
         elseif text == "!eaglediag brute" then kind = "brute"
         elseif text == "!eaglediag announce" then kind = "announce"
         elseif text == "!eaglediag record" then kind = "record"

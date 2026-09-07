@@ -17,21 +17,21 @@
 
 | Команда | Что делает |
 |---|---|
-| `!eaglediag` | безопасная часть: наличие функций + **контрольная проверка** (несуществующий метод — чтобы понять, можно ли верить строкам `OK`), счётчики, чтение свойств |
-| `!eaglediag rpc` | старый RPC `RequestUnlockFastTravelPoint_ToServer` на одной точке |
-| `!eaglediag keys` | **РЕШАЮЩИЙ ТЕСТ**: какие ключи лежат в `FastTravelPointUnlockFlag` и какому полю статуи они соответствуют (`FastTravelPointID` или GUID `LevelObjectInstanceId`) |
-| `!eaglediag flagmap` | `OnUpdateFlagMapRecord(FName Key, true)` — написан без struct-параметров |
-| `!eaglediag interact` | симуляция нажатия F через `UPalInteractComponent` игрока (`StartTriggerInteract`) |
-| `!eaglediag record` | struct-параметры на **чтение**: `GetRecordData_BoolCount` / `GetRecordData_Bool` — поддерживает ли ваш UE4SS структуры вообще |
-| `!eaglediag brute` | перебор индикаторов `OnTriggerInteract(Other, 0..80)` — ищет, какой `N` реально открывает точку в вашей сборке |
-| `!eaglediag announce` | тест `SendSystemAnnounce` (подозревался в краше основного мода) |
-| `!eaglediag statue` | + `OnTriggerInteract(Character, 26)` на одной закрытой точке |
-| `!eaglediag record` | + чтение RecordData через struct-параметры (**падает на части сборок UE4SS**) |
-| `!eaglediag cutscene` | + `OnEndCutscene(...)` на одной точке (**эксперимент, может падать**) |
-| `!eaglediag write` | + `SetRecordData_Bool_ForServer` (**может падать**) |
-| `!eaglediag cosmetic` | + `bUnlocked = true` |
+| `!eaglediag` | безопасная часть: наличие функций + **контрольная проверка**, счётчики, чтение свойств |
+| `!eaglediag statue` | `OnTriggerInteract(Character, 26)` на одной закрытой точке **с проверками +1 / +3 / +6 с** |
+| `!eaglediag brute` | перебор индикаторов `OnTriggerInteract(Other, 0..80)`, тоже с отложенными проверками |
+| `!eaglediag cutscene` | `OnEndCutscene(...)` на одной точке |
+| `!eaglediag interact` | симуляция нажатия F через `UPalInteractComponent::StartTriggerInteract` |
+| `!eaglediag flagmap` | `OnUpdateFlagMapRecord(FName Key, true)` — без struct-параметров |
+| `!eaglediag rpc` | старый RPC `RequestUnlockFastTravelPoint_ToServer` (выпилен в 1.0.4) |
+| `!eaglediag keys` | какие ключи лежат в `FastTravelPointUnlockFlag` и какому полю статуи они соответствуют |
+| `!eaglediag bypass` | тест `UPalDebugSetting::bIgnoreFastTravelLock` (обход блокировки для соло) |
+| `!eaglediag announce` | тест `SendSystemAnnounce` |
+| `!eaglediag record` | struct-параметры на чтение — **крашит RE-UE4SS 3.0.1 (AV 0x24)**, только для подтверждения |
+| `!eaglediag write` | `SetRecordData_Bool_ForServer` — **крашит RE-UE4SS 3.0.1 (AV 0x24)** |
+| `!eaglediag cosmetic` | `bUnlocked = true` |
 | `!eaglediag all` | всё подряд |
-| `!eaglediag help` | список команд |
+
 
 Что попадает в лог:
 
