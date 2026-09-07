@@ -157,11 +157,21 @@ local function CheckMethod(label, obj, name)
         Log(string.format("%-58s : ошибка чтения: %s", label, tostring(val)))
         return false
     end
-    if type(val) == "function" then
-        Log(string.format("%-58s : OK (function)", label))
+    local callable = (type(val) == "function")
+    local how = "function"
+    if not callable then
+        -- В этой сборке UE4SS настоящий UFUNCTION приходит как userdata с __call,
+        -- а несуществующий - как userdata без __call ("TrivialObject").
+        local okMt, mt = pcall(function() return debug.getmetatable(val) end)
+        if okMt and type(mt) == "table" and mt.__call ~= nil then
+            callable, how = true, "userdata c __call"
+        end
+    end
+    if callable then
+        Log(string.format("%-58s : ВЫЗЫВАЕМО (%s)", label, how))
         return true
     end
-    Log(string.format("%-58s : НЕ ФУНКЦИЯ (%s) -> вызывать нельзя", label, type(val)))
+    Log(string.format("%-58s : НЕ ВЫЗЫВАЕТСЯ (%s) -> метода нет", label, type(val)))
     return false
 end
 
@@ -381,7 +391,66 @@ local function TestMethod(target, flags, label, fn, readFlagAfter)
 
     Log(string.format("    итог %-24s | IsUnlocked=%-5s | флаг до=%-5s после=%s",
         label, tostring(unlocked), tostring(before), tostring(after)))
+    DelayedVerify(target, label, VERIFY_DELAYS)
     return (after == true)
+end
+
+-- ШАГ: симуляция настоящего нажатия F через UPalInteractComponent игрока
+local function StageInteract()
+    Sep("ШАГ 4. СИМУЛЯЦИЯ НАЖАТИЯ F (UPalInteractComponent)")
+
+    local character = GetLocalPlayerCharacter()
+    local comp = nil
+    if IsValid(character) then
+        local ok, c = pcall(function() return character.InteractComponent end)
+        if ok then comp = c end
+    end
+    if not IsValid(comp) then
+        local ok, c = pcall(function() return FindFirstOf("PalInteractComponent") end)
+        if ok then comp = c end
+    end
+    if not IsValid(comp) then
+        Log("UPalInteractComponent не найден.")
+        return
+    end
+    Log("InteractComponent игрока: " .. tostring(comp))
+
+    local target = FindTestTarget()
+    if not target then
+        Log("Нет закрытых точек для теста.")
+        return
+    end
+    Log(string.format("Тестовая точка: FastTravelPointID=%s | GUID=%s",
+        tostring(KeysFor(target)[1]), tostring(KeysFor(target)[2])))
+
+    local okIf, iobj = pcall(function() return target.InteractComp end)
+    Log("InteractComp статуи: " .. tostring(iobj) .. " (тип " .. type(iobj) .. ")")
+
+    if iobj ~= nil then
+        local okS, errS = pcall(function() comp.TargetInteractiveObject = iobj end)
+        Log("запись TargetInteractiveObject: " .. tostring(okS) .. " " .. tostring(errS))
+        local okR, now = pcall(function() return comp.TargetInteractiveObject end)
+        if okR then Log("TargetInteractiveObject сейчас: " .. tostring(now)) end
+        local okA, errA = pcall(function() comp.InteractiveObjects = { iobj } end)
+        Log("запись InteractiveObjects: " .. tostring(okA) .. " " .. tostring(errA))
+    end
+
+    local okEn, en = pcall(function() return comp:IsEnableInteract() end)
+    Log("IsEnableInteract(): " .. tostring(en))
+
+    StatReport(target, "до")
+    Risky("StartTriggerInteract(Interact1=1, false)", function()
+        comp:StartTriggerInteract(1, false)
+        return true
+    end)
+    DelayedVerify(target, "interact", VERIFY_DELAYS)
+
+    ExecuteWithDelay(7000, function()
+        Risky("EndTriggerInteract(Interact1=1)", function()
+            comp:EndTriggerInteract(1)
+            return true
+        end)
+    end)
 end
 
 -- ШАГ: сопоставление ключей флага со статуями (РЕШАЮЩИЙ ТЕСТ)
@@ -474,17 +543,40 @@ local function StageFlagMap()
         Log(string.format("    ключ %-34s -> IsUnlocked=%s", tostring(key), tostring(StatueIsUnlocked(target))))
         if StatueIsUnlocked(target) then break end
     end
-    local flags = GetFlagsTable()
-    if flags then
-        local ok, items = pcall(function() return flags.Items end)
-        if ok and items ~= nil then
-            local okN, num = pcall(function() return #items end)
-            if okN then Log(string.format("FastTravelPointUnlockFlag.Items после теста: %d шт.", num)) end
-        end
-    end
+    DelayedVerify(target, "flagmap", VERIFY_DELAYS)
 end
 
 -- ШАГ 4a. Старый RPC (если он ещё жив в этой сборке - это лучший путь)
+-- Ключевая вещь: часть разблокировок в Palworld АСИНХРОННА (катсцена, стриминг).
+-- Проверять итог нужно через секунды, а не сразу.
+local function FlagCount()
+    local flags = GetFlagsTable()
+    if not flags then return nil end
+    local ok, items = pcall(function() return flags.Items end)
+    if not ok or items == nil then return nil end
+    local okN, num = pcall(function() return #items end)
+    return okN and num or nil
+end
+
+local function StatReport(target, tag)
+    local flags = FlagCount()
+    local locEnabled = nil
+    Log(string.format("    [%s] IsUnlocked=%s | Items в RecordData=%s",
+        tag, tostring(StatueIsUnlocked(target)), tostring(flags)))
+end
+
+local function DelayedVerify(target, label, delays, idx)
+    idx = idx or 1
+    if idx > #delays then return end
+    local d = delays[idx]
+    ExecuteWithDelay(d, function()
+        StatReport(target, label .. " +" .. tostring(d) .. "мс")
+        DelayedVerify(target, label, delays, idx + 1)
+    end)
+end
+
+local VERIFY_DELAYS = { 1000, 3000, 6000 }
+
 local function StageRpc()
     Sep("ШАГ 4. ТЕСТ СТАРОГО RPC")
 
@@ -639,6 +731,7 @@ local HELP = {
     "!eaglediag rpc      - старый RPC RequestUnlockFastTravelPoint_ToServer",
     "!eaglediag keys     - РЕШАЮЩИЙ ТЕСТ: какие ключи в флаге и какому полю статуи они соответствуют",
     "!eaglediag flagmap  - OnUpdateFlagMapRecord(Key, true) (без struct-параметров)",
+    "!eaglediag interact - симуляция нажатия F через UPalInteractComponent игрока",
     "!eaglediag brute    - перебор индикаторов OnTriggerInteract(Other, 0..80)",
     "!eaglediag announce - тест SendSystemAnnounce (подозревается в краше)",
     "!eaglediag record   - + чтение RecordData через struct-параметры (ОПАСНО)",
@@ -664,6 +757,7 @@ local function Run(kind)
     if kind == "rpc" then StageRpc()
     elseif kind == "keys" then StageKeys()
     elseif kind == "flagmap" then StageFlagMap()
+    elseif kind == "interact" then StageInteract()
     elseif kind == "brute" then StageBrute()
     elseif kind == "announce" then StageAnnounce()
     elseif kind == "statue" then Stage4("statue", kind == "all")
@@ -692,6 +786,7 @@ local ok, err = pcall(function()
         elseif text == "!eaglediag rpc" then kind = "rpc"
         elseif text == "!eaglediag keys" then kind = "keys"
         elseif text == "!eaglediag flagmap" then kind = "flagmap"
+        elseif text == "!eaglediag interact" then kind = "interact"
         elseif text == "!eaglediag brute" then kind = "brute"
         elseif text == "!eaglediag announce" then kind = "announce"
         elseif text == "!eaglediag record" then kind = "record"

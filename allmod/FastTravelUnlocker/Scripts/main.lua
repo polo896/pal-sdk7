@@ -479,11 +479,28 @@ end
 -- Успех пытаемся подтвердить по-настоящему: флаг в RecordData выставлен.
 -- IsUnlocked() может отставать (репликация/делегаты), поэтому флаг - главный.
 -- Возвращает: успех (bool), подтверждено (bool - флаг реально выставлен)|nil (не удалось проверить)
+-- Возвращает: realUnlock, flagSet, isUnlocked, travelEnabled, cosmetic
+--   realUnlock    - точка действительно открыта (флаг выставлен или телепорт разрешён)
+--   cosmetic      - IsUnlocked()=true, но телепорт по-прежнему запрещён
+-- FastTravelPointID -> UPalLocationPointFastTravel.
+-- IsUnlocked() у статуи бывает косметикой, а IsEnableFastTravel() у точки телепорта
+-- поднимается только когда флаг реально записан, - поэтому проверяем и его.
+local LOC_BY_ID = {}
+
 local function CheckUnlocked(statue, keys)
     local flag = RecordFlagIsSet(keys)
-    if flag == true then return true, true end
-    if StatueIsUnlocked(statue) then return true, flag end
-    return false, flag
+    local unlocked = StatueIsUnlocked(statue)
+
+    local travel = nil
+    local loc = LOC_BY_ID[tostring(ToStr(statue.FastTravelPointID))]
+    if IsValid(loc) then
+        local ok, v = pcall(function() return loc:IsEnableFastTravel() end)
+        if ok then travel = (v == true) end
+    end
+
+    local cosmetic = (unlocked == true) and (travel == false)
+    local real = (flag == true) or ((unlocked == true) and (travel == true))
+    return real, flag, unlocked, travel, cosmetic
 end
 
 -- Возвращает: имя способа (или nil), подробности, состояние флага (true/false/nil)
@@ -534,18 +551,17 @@ local function UnlockStatue(statue, ctx)
         notes[#notes + 1] = attempt.name .. ": " .. tostring(detail)
         SyncStatue(statue, ctx.playerState)
 
-        local openedNow, flagNow = CheckUnlocked(statue, keys)
+        local openedNow, flagNow, _, travelNow, cosmeticNow = CheckUnlocked(statue, keys)
         if openedNow then
-            -- flagNow == false означает: IsUnlocked() = true, но флаг в RecordData
-            -- не выставлен -> это косметика, пробуем следующий способ
-            if flagNow ~= false then
-                return attempt.name, table.concat(notes, " | "), flagNow
-            end
-            if not fallbackMethod then
-                fallbackMethod = attempt.name
-                fallbackNote = table.concat(notes, " | ")
-                fallbackFlag = flagNow
-            end
+            -- реальный успех: флаг выставлен или телепорт у точки разрешён
+            return attempt.name, table.concat(notes, " | "), flagNow
+        end
+        if cosmeticNow and not fallbackMethod then
+            -- IsUnlocked()=true, но IsEnableFastTravel()=false -> это косметика.
+            -- Запоминаем как фолбэк и пробуем следующий способ.
+            fallbackMethod = attempt.name
+            fallbackNote = table.concat(notes, " | ") .. " (только косметика, IsEnableFastTravel=false)"
+            fallbackFlag = flagNow
         end
     end
 
@@ -553,12 +569,12 @@ local function UnlockStatue(statue, ctx)
     notes[#notes + 1] = "cosmetic: " .. tostring(detail)
     SyncStatue(statue, ctx.playerState)
 
-    local openedCosmetic, flagCosmetic = CheckUnlocked(statue, keys)
-    if openedCosmetic and flagCosmetic ~= false then
-        return "cosmetic", table.concat(notes, " | "), flagCosmetic
+    local openedCosmetic, flagCosmetic, _, _, cosmeticOnly = CheckUnlocked(statue, keys)
+    if openedCosmetic then
+        return "cosmetic", table.concat(notes, " | "), flagCosmetic, cosmeticOnly == true
     end
     if fallbackMethod then
-        return fallbackMethod, fallbackNote, fallbackFlag
+        return "cosmetic:" .. fallbackMethod, fallbackNote, fallbackFlag, true
     end
     if openedCosmetic then
         return "cosmetic", table.concat(notes, " | "), flagCosmetic
@@ -622,8 +638,22 @@ local function BuildIdFilter(filterMode)
     return ids, total, statues, pillars
 end
 
+-- FastTravelPointID -> UPalLocationPointFastTravel (см. RebuildLocMap ниже)
+local function RebuildLocMap()
+    LOC_BY_ID = {}
+    local locs = FindAllOf("PalLocationPointFastTravel")
+    for _, loc in ipairs(locs or {}) do
+        if IsValid(loc) then
+            local idStr = ToStr(loc.FastTravelPointID)
+            if idStr then LOC_BY_ID[tostring(idStr)] = loc end
+        end
+    end
+    return #(locs or {})
+end
+
 local function CollectTargets(filterMode)
     local ids, locTotal, locStatues, locPillars = BuildIdFilter(filterMode)
+    RebuildLocMap()
 
     local targets = {}
     local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
@@ -770,6 +800,19 @@ local unlockState = {
     busy = false
 }
 
+local function CountTravelEnabled()
+    local total, enabled = 0, 0
+    local locs = FindAllOf("PalLocationPointFastTravel")
+    for _, loc in ipairs(locs or {}) do
+        if IsValid(loc) then
+            total = total + 1
+            local ok, v = pcall(function() return loc:IsEnableFastTravel() end)
+            if ok and v == true then enabled = enabled + 1 end
+        end
+    end
+    return total, enabled
+end
+
 local function ReportUnlocked(filterMode)
     local total, unlocked = 0, 0
     local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
@@ -779,9 +822,10 @@ local function ReportUnlocked(filterMode)
             if StatueIsUnlocked(statue) then unlocked = unlocked + 1 end
         end
     end
-    local msg = string.format("[%s] Проверка: статуй всего %d, из них IsUnlocked() = true: %d",
-        tostring(filterMode or "all"), total, unlocked)
-    Log(msg)
+    local locTotal, locEnabled = CountTravelEnabled()
+    Log(string.format("[%s] Проверка: статуй всего %d, IsUnlocked()=true: %d; "
+        .. "точек телепорта %d, IsEnableFastTravel()=true: %d (это и есть настоящий признак)",
+        tostring(filterMode or "all"), total, unlocked, locTotal, locEnabled))
     Announce(string.format("FastTravel: unlocked %d / %d", unlocked, total))
     return total, unlocked
 end
@@ -822,6 +866,7 @@ local function RunUnlock(filterMode)
         done = 0,
         already = 0,
         unlocked = 0,
+        cosmetic = 0,     -- IsUnlocked()=true, но IsEnableFastTravel()=false
         confirmed = 0,     -- флаг в RecordData выставлен - разблокировка настоящая
         unconfirmed = 0,   -- IsUnlocked() = true, но флаг не выставлен (косметика?)
         unknown = 0,       -- проверить флаг не удалось (нет struct-параметров в UE4SS)
@@ -851,10 +896,15 @@ local function RunUnlock(filterMode)
                     tostring(ToStr(statue.FastTravelPointID)),
                     tostring(GuidToHexStr(statue.LevelObjectInstanceId))))
             end
-            local method, note, flag = UnlockStatue(statue, ctx)
+            local method, note, flag, isCosmetic = UnlockStatue(statue, ctx)
             if method == "already" then
                 stats.already = stats.already + 1
                 Account(method, flag)
+            elseif isCosmetic then
+                stats.cosmetic = stats.cosmetic + 1
+                if stats.cosmetic <= 3 then
+                    Log(string.format("Только косметика (%s): %s", ToStr(statue.FastTravelPointID), tostring(note)))
+                end
             elseif method then
                 stats.unlocked = stats.unlocked + 1
                 Account(method, flag)
@@ -868,8 +918,8 @@ local function RunUnlock(filterMode)
         stats.done = last
 
         if (stats.done % 25) < CONFIG.UnlockBatchSize or stats.done == #targets then
-            Log(string.format("[%s] прогресс: %d/%d (открыто %d, не открылось %d)",
-                filterMode, stats.done, #targets, stats.unlocked, stats.failed))
+            Log(string.format("[%s] прогресс: %d/%d (открыто %d, косметика %d, не открылось %d)",
+                filterMode, stats.done, #targets, stats.unlocked, stats.cosmetic, stats.failed))
         end
 
         if stats.done < #targets then
@@ -882,6 +932,24 @@ local function RunUnlock(filterMode)
             TriggerCloudRemoval()
         end
 
+        -- Часть разблокировок в Palworld асинхронна (катсцена/стриминг), поэтому
+        -- считаем итог ещё раз через 5 секунд - вдруг точки "доехали".
+        local beforeTotal, beforeEnabled = CountTravelEnabled()
+        ExecuteWithDelay(5000, function()
+            local afterTotal, afterEnabled = CountTravelEnabled()
+            local stTotal, stUnlocked = 0, 0
+            for _, st in ipairs(FindAllOf("PalLevelObjectUnlockableFastTravelPoint") or {}) do
+                if IsValid(st) then
+                    stTotal = stTotal + 1
+                    if StatueIsUnlocked(st) then stUnlocked = stUnlocked + 1 end
+                end
+            end
+            Log(string.format("[%s] ПОВТОРНАЯ ПРОВЕРКА через 5с: IsUnlocked()=%d/%d, "
+                .. "IsEnableFastTravel()=%d/%d (было %d/%d)",
+                filterMode, stUnlocked, stTotal, afterEnabled, afterTotal,
+                beforeEnabled, beforeTotal))
+        end)
+
         local methods = {}
         for name, n in pairs(stats.methods) do
             methods[#methods + 1] = string.format("%s=%d", name, n)
@@ -889,8 +957,9 @@ local function RunUnlock(filterMode)
         table.sort(methods)
 
         Log(string.format(
-            "Mode [%s]: обработано %d, уже было открыто %d, открыто сейчас %d, не открылось %d. Способы: %s",
-            filterMode, stats.total, stats.already, stats.unlocked, stats.failed,
+            "Mode [%s]: обработано %d, уже было открыто %d, открыто сейчас %d, только косметика %d, "
+            .. "не открылось %d. Способы: %s",
+            filterMode, stats.total, stats.already, stats.unlocked, stats.cosmetic, stats.failed,
             (#methods > 0) and table.concat(methods, ", ") or "нет"))
 
         Log(string.format("Подтверждение: флаг в RecordData выставлен у %d точек, "
