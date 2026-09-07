@@ -1,5 +1,54 @@
 -- ============================================================================
--- FAST TRAVEL UNLOCKER By Wol4ara896
+-- FAST TRAVEL UNLOCKER  (Palworld 1.0.4+ / SDK7)   By Wol4ara896
+-- ============================================================================
+--
+--  ПОЧЕМУ СТАРАЯ ВЕРСИЯ ПЕРЕСТАЛА РАБОТАТЬ
+--  ----------------------------------------
+--  В патче 1.0.4 из UPalNetworkPlayerComponent выпилили RPC
+--      RequestUnlockFastTravelPoint_ToServer()
+--  Его больше нет в SDK (проверено: в Pal.hpp / Pal_classes.hpp / FunctionsInfo.json
+--  нет ни одного упоминания). В Lua вызов несуществующего метода просто
+--  падает, ошибка гасилась pcall(), а счётчик totalUnlocked увеличивался
+--  в любом случае -> в логе красовалось "Unlocked 174 fast travel points"
+--  при нулевом реальном эффекте. Вот и всё "молчаливое ничего".
+--
+--  ЧТО ИЗМЕНИЛОСЬ В ИГРЕ
+--  ---------------------
+--  1. Состояние "точка быстрого перемещения открыта" живёт в UPalPlayerRecordData:
+--         FastTravelPointUnlockFlag : FPalPlayerRecordDataRepInfoArrayThreadSafe_BoolVal
+--     (FFastArraySerializer, ключ = FName FastTravelPointID). Оно же пишется в сейв
+--     (FPalLoggedinPlayerSaveDataRecordData::FastTravelPointUnlockFlag).
+--  2. Пишется оно теперь из серверного кода через
+--         UPalPlayerRecordDataUtility::SetRecordData_Bool_ForServer(...)
+--     и раскатывается по сети через FastArraySerializer.
+--  3. Вся разблокировка конкретной статуи живёт в самом акторе
+--     APalLevelObjectUnlockableFastTravelPoint:
+--         OnTriggerInteract(AActor* Other, EPalInteractiveObjectIndicatorType)
+--             -- IndicatorType = 26 = UnlockFastTravel  (см. Pal_enums.hpp)
+--         OnEndCutscene(UPalCutsceneBindParameter_FasttravelPoint*)
+--             -- хендлер, который реально и открывает точку
+--         OnCompleteSyncPlayer(APalPlayerState*)
+--             -- перечитывает флаг из RecordData, обновляет визуал/делегаты
+--         IsUnlocked()  -- проверка состояния
+--
+--  НОВАЯ ЛОГИКА МОДА
+--  -----------------
+--  Гоняем саму статую, как если бы игрок нажал F рядом с ней. Порядок попыток
+--  на каждую точку (каждая проверяется через IsUnlocked()):
+--      1) OnEndCutscene(<свой BindParameter>)  -- сразу хендлер разблокировки,
+--                                                  без катсцены и без звука
+--      2) OnTriggerInteract(PlayerCharacter, 26) -- "нажать F" (тут игра может
+--                                                  сама включить катсцену)
+--      3) прямая запись флага в FastTravelPointUnlockFlag
+--         через UPalPlayerRecordDataUtility::SetRecordData_Bool_ForServer
+--         (работает не во всех сборках UE4SS - зависит от поддержки struct-ref
+--          параметров; ошибка не фатальная, просто попадает в лог)
+--      4) косметика: bUnlocked = true (визуал, без записи в сейв)
+--  После каждой попытки зовём OnCompleteSyncPlayer(PlayerState), чтобы статуя
+--  перечитала флаг из RecordData.
+--
+--  Разблокировка идёт пачками (CONFIG.UnlockBatchSize за тик) - игра падает,
+--  если скормить ей 174 катсцены/разблокировки в один кадр.
 -- ============================================================================
 
 local CONFIG = {
@@ -8,28 +57,88 @@ local CONFIG = {
     ChatCommandMap       = "!collecteaglemapclear",
     ChatCommandStatues   = "!eagle statues",
     ChatCommandPillars   = "!eagle pillars",
+    ChatCommandVerify    = "!eagle verify",
+    ChatCommandBypass    = "!eagle bypass",
 
     RestoreDelayMs       = 3000,
+
     MapClearPaintSize    = 99999.0,
     MapClearDurationMs   = 10000,
     MapClearIntervalMs   = 250,
+
+    -- разблокировка пачками: меньше шанс уронить игру
+    UnlockBatchSize      = 5,
+    UnlockBatchDelayMs   = 250,
+
+    -- EPalInteractiveObjectIndicatorType::UnlockFastTravel (Pal_enums.hpp: 26)
+    IndicatorUnlockFastTravel = 26,
+
+    -- с какого способа начинать: "EndCutscene" (тихий, без катсцены) или
+    -- "Interact" (сымитировать нажатие F - игра может включить катсцену)
+    PrimaryMethod = "EndCutscene",
+
+    -- какие способы разблокировки использовать
+    EnableCutsceneEndPath  = true,
+    EnableInteractPath     = true,
+    EnableRecordDataPath   = true,
+    EnableCosmeticFallback = true,
+
+    -- писать ли сообщения в игровой чат-панель (PalUtility::SendSystemAnnounce)
+    AnnounceInGame         = true,
 }
 
-local pendingRestoreRate = nil
-local mapClearState = {
-    active = false,
-    originalPaintSize = nil
-}
+local TAG = "[EagleCollector]"
+
+-- ---------------------------------------------------------------------------
+-- Мелкие утилиты
+-- ---------------------------------------------------------------------------
+
+local function Log(msg)
+    print(TAG .. " " .. tostring(msg) .. "\n")
+end
 
 local function IsValid(obj)
-    return obj and pcall(function() return obj:IsValid() end) and obj:IsValid()
+    if obj == nil then return false end
+    local ok, res = pcall(function() return obj:IsValid() end)
+    return ok and res == true
+end
+
+local function ToStr(value)
+    if value == nil then return nil end
+    local ok, s = pcall(function() return value:ToString() end)
+    if ok and type(s) == "string" then return s end
+    return tostring(value)
 end
 
 local function GuidToHexStr(guid)
     if not guid then return nil end
     local function u32(val) return (val < 0) and (val + 4294967296) or val end
-    return string.format("%08X%08X%08X%08X", u32(guid.A), u32(guid.B), u32(guid.C), u32(guid.D))
+    local ok, res = pcall(function()
+        return string.format("%08X%08X%08X%08X", u32(guid.A), u32(guid.B), u32(guid.C), u32(guid.D))
+    end)
+    if ok then return res end
+    return nil
 end
+
+-- pcall, который НЕ глотает ошибку молча (иначе и получаются те самые
+-- "Unlocked 174" при полном отсутствии эффекта)
+local function SafeRun(label, fn)
+    local ok, err = pcall(fn)
+    if not ok then
+        Log(string.format("ОШИБКА в [%s]: %s", tostring(label), tostring(err)))
+    end
+    return ok, err
+end
+
+local function Count(t)
+    local n = 0
+    for _ in pairs(t or {}) do n = n + 1 end
+    return n
+end
+
+-- ---------------------------------------------------------------------------
+-- Доступ к игроку / подсистемам
+-- ---------------------------------------------------------------------------
 
 local function GetOptionSubsystem()
     local instances = FindAllOf("PalOptionSubsystem")
@@ -58,30 +167,34 @@ local function GetLocalPlayerController()
     local controllers = FindAllOf("BP_PalPlayerController_C")
     if controllers then
         for _, c in ipairs(controllers) do
-            if IsValid(c) and c.IsLocalPlayerController and c:IsLocalPlayerController() then
-                return c
+            if IsValid(c) then
+                local ok, res = pcall(function() return c:IsLocalPlayerController() end)
+                if ok and res == true then return c end
             end
         end
-        if #controllers > 0 and IsValid(controllers[1]) then
-            return controllers[1]
+        for _, c in ipairs(controllers) do
+            if IsValid(c) then return c end
         end
     end
-    return nil
+    local fallback = FindFirstOf("PalPlayerController")
+    return IsValid(fallback) and fallback or nil
 end
 
 local function GetLocalPlayerCharacter()
     local pc = GetLocalPlayerController()
-    if not IsValid(pc) then return nil end
-    if IsValid(pc.Pawn) then return pc.Pawn end
-    if IsValid(pc.Character) then return pc.Character end
-
-    local players = FindAllOf("BP_PalPlayerCharacter_C")
-    if players then
-        for _, p in ipairs(players) do
-            if IsValid(p) then return p end
-        end
+    if IsValid(pc) then
+        if IsValid(pc.Pawn) then return pc.Pawn end
+        if IsValid(pc.Character) then return pc.Character end
     end
-    return nil
+    local fallback = FindFirstOf("PalPlayerCharacter")
+    return IsValid(fallback) and fallback or nil
+end
+
+local function GetLocalPlayerState()
+    local pc = GetLocalPlayerController()
+    if IsValid(pc) and IsValid(pc.PlayerState) then return pc.PlayerState end
+    local fallback = FindFirstOf("PalPlayerState")
+    return IsValid(fallback) and fallback or nil
 end
 
 local function GetBPWorldMapUIData()
@@ -94,131 +207,384 @@ local function GetBPWorldMapUIData()
     return nil
 end
 
+local function Announce(message)
+    if not CONFIG.AnnounceInGame then return end
+    local okPC, pc = pcall(GetLocalPlayerController)
+    local util = StaticFindObject("/Script/Pal.Default__PalUtility")
+    if (not okPC or not pc) or not util then return end
+    pcall(function() util:SendSystemAnnounce(pc, tostring(message)) end)
+end
+
+-- ---------------------------------------------------------------------------
+-- RecordData: прямая запись флага разблокировки
+-- ---------------------------------------------------------------------------
+
+local function GetRecordDataUtility()
+    local util = StaticFindObject("/Script/Pal.Default__PalPlayerRecordDataUtility")
+    if util then return util end
+    return nil
+end
+
+local function GetRecordData(worldContext)
+    -- 1) UPalUtility::GetLocalRecordData(WorldContextObject) - статик
+    local util = StaticFindObject("/Script/Pal.Default__PalUtility")
+    if util and worldContext then
+        local ok, res = pcall(function() return util:GetLocalRecordData(worldContext) end)
+        if ok and IsValid(res) then return res, "PalUtility::GetLocalRecordData" end
+    end
+    -- 2) APalPlayerState::GetRecordData()
+    local ps = GetLocalPlayerState()
+    if IsValid(ps) then
+        local ok, res = pcall(function() return ps:GetRecordData() end)
+        if ok and IsValid(res) then return res, "PalPlayerState::GetRecordData" end
+    end
+    return nil, nil
+end
+
+-- Ключи, которыми игра может помечать разблокированную точку.
+-- Основной - FastTravelPointID (именно его сравнивает
+-- APalLevelObjectUnlockableFastTravelPoint::OnUpdateFlagMapRecord).
+local function CollectFlagKeys(statue)
+    local keys = {}
+    local seen = {}
+
+    local function add(k)
+        if k == nil then return end
+        k = tostring(k)
+        if k == "" or k == "None" or seen[k] then return end
+        seen[k] = true
+        keys[#keys + 1] = k
+    end
+
+    add(ToStr(statue.FastTravelPointID))
+    add(GuidToHexStr(statue.LevelObjectInstanceId))
+    return keys
+end
+
+-- Чтение флага - единственный способ убедиться, что разблокировка НАСТОЯЩАЯ
+-- (попадёт в сейв), а не только косметическая (bUnlocked = true).
+-- Требует поддержки struct-параметров в UE4SS; если её нет - вернёт nil.
+local structAccess = {
+    checked = false,
+    works = false,
+    lastError = nil
+}
+
+local function GetFlagsTable()
+    local worldContext = GetLocalPlayerController()
+    if not IsValid(worldContext) then return nil, nil end
+    local recordData = GetRecordData(worldContext)
+    if not recordData then return nil, nil end
+    local ok, flags = pcall(function() return recordData.FastTravelPointUnlockFlag end)
+    if not ok or flags == nil then return nil, nil end
+    return flags, worldContext
+end
+
+local function ProbeStructAccess()
+    if structAccess.checked then return structAccess.works end
+    structAccess.checked = true
+
+    local util = GetRecordDataUtility()
+    local flags = GetFlagsTable()
+    if not util or not flags then
+        structAccess.works = false
+        structAccess.lastError = "RecordData/FastTravelPointUnlockFlag недоступен"
+        return false
+    end
+
+    local ok, err = pcall(function() return util:GetRecordData_Bool(flags, FName("None")) end)
+    structAccess.works = ok
+    structAccess.lastError = ok and nil or tostring(err)
+    return structAccess.works
+end
+
+-- true / false / nil (nil = проверить не удалось)
+local function RecordFlagIsSet(keys)
+    if not ProbeStructAccess() then return nil end
+    local util = GetRecordDataUtility()
+    local flags = GetFlagsTable()
+    if not util or not flags then return nil end
+
+    for _, key in ipairs(keys) do
+        local ok, res = pcall(function() return util:GetRecordData_Bool(flags, FName(key)) end)
+        if ok and res == true then return true end
+    end
+    return false
+end
+
+-- Прямая запись в UPalPlayerRecordData::FastTravelPointUnlockFlag.
+-- ВНИМАНИЕ: параметр RecordData - это struct& (ReferenceParm). UE4SS не во всех
+-- версиях умеет передавать struct по ссылке, поэтому всё в pcall и с отчётом.
+local function WriteUnlockFlag(keys)
+    if not CONFIG.EnableRecordDataPath then return false, "disabled" end
+
+    local util = GetRecordDataUtility()
+    if not util then return false, "PalPlayerRecordDataUtility CDO not found" end
+
+    local worldContext = GetLocalPlayerController()
+    if not IsValid(worldContext) then return false, "no world context" end
+
+    local _, src = GetRecordData(worldContext)
+
+    local flags = GetFlagsTable()
+    if flags == nil then
+        return false, "FastTravelPointUnlockFlag is nil/unreadable"
+    end
+
+    local lastErr = nil
+    for _, key in ipairs(keys) do
+        local ok, err = pcall(function()
+            util:SetRecordData_Bool_ForServer(worldContext, flags, FName(key), true)
+        end)
+        if not ok then lastErr = tostring(err) end
+    end
+
+    if lastErr then
+        return false, "SetRecordData_Bool_ForServer failed: " .. lastErr
+    end
+    return true, "ok (RecordData via " .. tostring(src) .. ", keys: " .. table.concat(keys, ", ") .. ")"
+end
+
+-- ---------------------------------------------------------------------------
+-- Разблокировка одной статуи
+-- ---------------------------------------------------------------------------
+
+local function MakeCutsceneBindParameter(statue)
+    local cls = StaticFindObject("/Script/Pal.PalCutsceneBindParameter_FasttravelPoint")
+    if cls == nil then return nil end
+    local ok, obj = pcall(function() return StaticConstructObject(cls, statue) end)
+    if ok and obj ~= nil then return obj end
+    return nil
+end
+
+local function StatueIsUnlocked(statue)
+    local ok, res = pcall(function() return statue:IsUnlocked() end)
+    return ok and res == true
+end
+
+local function SyncStatue(statue, playerState)
+    if not IsValid(playerState) then return end
+    pcall(function() statue:OnCompleteSyncPlayer(playerState) end)
+end
+
+-- Попытка №1: сразу дёрнуть хендлер завершения катсцены (без катсцены).
+local function TryUnlock_CutsceneEnd(statue)
+    local param = MakeCutsceneBindParameter(statue)
+    if param == nil then return false, "PalCutsceneBindParameter_FasttravelPoint not constructable" end
+    local ok, err = pcall(function() statue:OnEndCutscene(param) end)
+    if not ok then return false, "OnEndCutscene error: " .. tostring(err) end
+    return true, "ok"
+end
+
+-- Попытка №2: сымитировать нажатие F (индикатор UnlockFastTravel = 26).
+local function TryUnlock_Interact(statue, character)
+    if not IsValid(character) then return false, "no player character" end
+    local ok, err = pcall(function()
+        statue:OnTriggerInteract(character, CONFIG.IndicatorUnlockFastTravel)
+    end)
+    if not ok then return false, "OnTriggerInteract error: " .. tostring(err) end
+    return true, "ok"
+end
+
+-- Попытка №3: записать флаг напрямую.
+local function TryUnlock_RecordData(statue)
+    return WriteUnlockFlag(CollectFlagKeys(statue))
+end
+
+-- Попытка №4: только визуал (в сейв не попадёт).
+local function TryUnlock_Cosmetic(statue)
+    if not CONFIG.EnableCosmeticFallback then return false, "disabled" end
+    pcall(function()
+        statue.bUnlocked = true
+        statue.EnableRequestUnlock = true
+    end)
+    return false, "cosmetic only (flag was NOT written)"
+end
+
+-- Успех пытаемся подтвердить по-настоящему: флаг в RecordData выставлен.
+-- IsUnlocked() может отставать (репликация/делегаты), поэтому флаг - главный.
+-- Возвращает: успех (bool), подтверждено (bool - флаг реально выставлен)|nil (не удалось проверить)
+local function CheckUnlocked(statue, keys)
+    local flag = RecordFlagIsSet(keys)
+    if flag == true then return true, true end
+    if StatueIsUnlocked(statue) then return true, flag end
+    return false, flag
+end
+
+-- Возвращает: имя способа (или nil), подробности, состояние флага (true/false/nil)
+local function UnlockStatue(statue, ctx)
+    if not IsValid(statue) then return nil, "invalid statue", nil end
+
+    -- разрешить запрос на разблокировку (как это делает игра при подключении)
+    pcall(function() statue.EnableRequestUnlock = true end)
+
+    local keys = CollectFlagKeys(statue)
+
+    local opened, flag = CheckUnlocked(statue, keys)
+    if opened then
+        return "already", nil, flag
+    end
+
+    local all = {}
+    if CONFIG.EnableCutsceneEndPath then
+        all[#all + 1] = { name = "OnEndCutscene", fn = function() return TryUnlock_CutsceneEnd(statue) end }
+    end
+    if CONFIG.EnableInteractPath then
+        all[#all + 1] = { name = "OnTriggerInteract", fn = function() return TryUnlock_Interact(statue, ctx.character) end }
+    end
+    if CONFIG.EnableRecordDataPath then
+        all[#all + 1] = { name = "RecordData", fn = function() return TryUnlock_RecordData(statue) end }
+    end
+
+    -- выбранный способ идёт первым
+    local attempts = {}
+    for _, a in ipairs(all) do
+        if a.name == CONFIG.PrimaryMethod then attempts[#attempts + 1] = a end
+    end
+    for _, a in ipairs(all) do
+        if a.name ~= CONFIG.PrimaryMethod then attempts[#attempts + 1] = a end
+    end
+
+    local notes = {}
+    local fallbackMethod, fallbackNote, fallbackFlag = nil, nil, nil
+
+    for _, attempt in ipairs(attempts) do
+        local ok, detail = attempt.fn()
+        notes[#notes + 1] = attempt.name .. ": " .. tostring(detail)
+        SyncStatue(statue, ctx.playerState)
+
+        local openedNow, flagNow = CheckUnlocked(statue, keys)
+        if openedNow then
+            -- flagNow == false означает: IsUnlocked() = true, но флаг в RecordData
+            -- не выставлен -> это косметика, пробуем следующий способ
+            if flagNow ~= false then
+                return attempt.name, table.concat(notes, " | "), flagNow
+            end
+            if not fallbackMethod then
+                fallbackMethod = attempt.name
+                fallbackNote = table.concat(notes, " | ")
+                fallbackFlag = flagNow
+            end
+        end
+    end
+
+    local ok, detail = TryUnlock_Cosmetic(statue)
+    notes[#notes + 1] = "cosmetic: " .. tostring(detail)
+    SyncStatue(statue, ctx.playerState)
+
+    local openedCosmetic, flagCosmetic = CheckUnlocked(statue, keys)
+    if openedCosmetic and flagCosmetic ~= false then
+        return "cosmetic", table.concat(notes, " | "), flagCosmetic
+    end
+    if fallbackMethod then
+        return fallbackMethod, fallbackNote, fallbackFlag
+    end
+    if openedCosmetic then
+        return "cosmetic", table.concat(notes, " | "), flagCosmetic
+    end
+    return nil, table.concat(notes, " | "), flagCosmetic
+end
+
+-- Последний рубеж для соло: отладочный флаг UPalDebugSetting::bIgnoreFastTravelLock.
+-- Если он читается игрой, можно пользоваться быстрым перемещением даже без записи
+-- флагов (но в сейв это не попадёт).
+local function SetIgnoreFastTravelLock(value)
+    local util = StaticFindObject("/Script/Pal.Default__PalUtility")
+    if not util then return false, "PalUtility CDO не найден" end
+
+    local ok, setting = pcall(function() return util:GetPalDebugSetting() end)
+    if not ok or setting == nil then return false, "GetPalDebugSetting не найден" end
+
+    local okRead, before = pcall(function() return setting.bIgnoreFastTravelLock end)
+    local okWrite, err = pcall(function() setting.bIgnoreFastTravelLock = value end)
+    if not okWrite then return false, "запись не удалась: " .. tostring(err) end
+
+    local okAfter, after = pcall(function() return setting.bIgnoreFastTravelLock end)
+    return true, string.format("bIgnoreFastTravelLock: %s -> %s",
+        tostring(okRead and before), tostring(okAfter and after))
+end
+
+-- ---------------------------------------------------------------------------
+-- Сбор целей + фильтры (statues / pillars)
+-- ---------------------------------------------------------------------------
+
+local function BuildIdFilter(filterMode)
+    local ids = {}
+    local total, pillars, statues = 0, 0, 0
+
+    local locationPoints = FindAllOf("PalLocationPointFastTravel")
+    for _, loc in ipairs(locationPoints or {}) do
+        if IsValid(loc) then
+            total = total + 1
+            local isPillar
+            local ok, res = pcall(function() return loc:IsUnlockMapPoint() end)
+            if ok then
+                isPillar = (res == true)
+            else
+                isPillar = (loc.bUnlockMapPoint == true)
+            end
+            if isPillar then pillars = pillars + 1 else statues = statues + 1 end
+
+            local want = (filterMode == "all")
+                or (filterMode == "statues" and not isPillar)
+                or (filterMode == "pillars" and isPillar)
+
+            if want then
+                local idStr = ToStr(loc.FastTravelPointID)
+                if idStr and idStr ~= "" and idStr ~= "None" then
+                    ids[idStr] = true
+                end
+            end
+        end
+    end
+
+    return ids, total, statues, pillars
+end
+
+local function CollectTargets(filterMode)
+    local ids, locTotal, locStatues, locPillars = BuildIdFilter(filterMode)
+
+    local targets = {}
+    local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
+    for _, statue in ipairs(statues or {}) do
+        if IsValid(statue) then
+            if filterMode == "all" then
+                targets[#targets + 1] = statue
+            else
+                local idStr = ToStr(statue.FastTravelPointID)
+                if idStr and ids[idStr] then
+                    targets[#targets + 1] = statue
+                end
+            end
+        end
+    end
+
+    if filterMode ~= "all" and Count(ids) == 0 and #targets == 0 then
+        Log(string.format(
+            "[%s] Не нашёл ни одной PalLocationPointFastTravel для фильтра - "
+            .. "различить статуи/колонны не могу. Используй %s, чтобы открыть всё.",
+            filterMode, CONFIG.ChatCommand))
+    end
+
+    Log(string.format("[%s] Location points: %d (statues: %d, pillars: %d). Кандидатов-статуй: %d",
+        filterMode, locTotal, locStatues, locPillars, #targets))
+
+    return targets
+end
+
+-- ---------------------------------------------------------------------------
+-- Fog of war / облака (без изменений - в 1.0.4 API на месте)
+-- ---------------------------------------------------------------------------
+
 local function TriggerCloudRemoval()
     local triggerClass = StaticFindObject("/Script/Pal.PalUnlockFastTravelTriggerEvent_RemoveSkyIslandCloud")
     local outer = GetOptionSubsystem()
-    if not IsValid(triggerClass) or not IsValid(outer) then return end
+    if triggerClass == nil or not IsValid(outer) then return end
 
     local ok, triggerObj = pcall(function() return StaticConstructObject(triggerClass, outer) end)
     if ok and IsValid(triggerObj) then
         pcall(function() triggerObj:TriggerEvent() end)
     end
-end
-
-local function CollectEagles(filterMode)
-    filterMode = filterMode or "all"
-
-    local pc = GetLocalPlayerController()
-    if not IsValid(pc) then
-        print("[EagleCollector] Error: Local player controller not found.")
-        return
-    end
-
-    local transmitter = pc.Transmitter
-    local playerNetwork = IsValid(transmitter) and transmitter.Player or nil
-    if not IsValid(playerNetwork) then
-        print("[EagleCollector] Error: Player network component not found.")
-        return
-    end
-
-    local totalUnlocked = 0
-    local idToGuidStr = {}
-
-    local locationPoints = FindAllOf("PalLocationPointFastTravel")
-    if locationPoints then
-        for _, loc in ipairs(locationPoints) do
-            if IsValid(loc) then
-                local isPillar = false
-                if loc.IsUnlockMapPoint then
-                    local ok, res = pcall(function() return loc:IsUnlockMapPoint() end)
-                    isPillar = ok and (res == true) or (loc.bUnlockMapPoint == true)
-                else
-                    isPillar = (loc.bUnlockMapPoint == true)
-                end
-
-                local shouldProcess = false
-                if filterMode == "all" then
-                    shouldProcess = true
-                elseif filterMode == "statues" and not isPillar then
-                    shouldProcess = true
-                elseif filterMode == "pillars" and isPillar then
-                    shouldProcess = true
-                end
-
-                if shouldProcess then
-                    local guidStr = GuidToHexStr(loc.LocationId)
-                    local pointID = loc.FastTravelPointID
-
-                    if guidStr and guidStr ~= "" then
-                        if pointID then
-                            local idStr = tostring(pointID:ToString())
-                            if idStr ~= "" and idStr ~= "None" then
-                                idToGuidStr[idStr] = guidStr
-                            end
-                        end
-
-                        local okName, nameObj = pcall(function() return FName(guidStr) end)
-                        local keyParam = okName and nameObj or guidStr
-
-                        pcall(function() playerNetwork:RequestUnlockFastTravelPoint_ToServer(keyParam) end)
-                        pcall(function()
-                            loc.ShouldUnlockFlag = true
-                        end)
-
-                        totalUnlocked = totalUnlocked + 1
-                    end
-                end
-            end
-        end
-    end
-
-    local levelObjects = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
-    if levelObjects then
-        for _, statue in ipairs(levelObjects) do
-            if IsValid(statue) then
-                local pointID = statue.FastTravelPointID
-                if pointID then
-                    local idStr = tostring(pointID:ToString())
-                    if idToGuidStr[idStr] then
-                        pcall(function()
-                            statue.bUnlocked = true
-                            statue.EnableRequestUnlock = true
-                        end)
-                    end
-                end
-            end
-        end
-    end
-
-    if filterMode == "all" or filterMode == "statues" then
-        TriggerCloudRemoval()
-    end
-
-    print(string.format("[EagleCollector] Mode [%s]: Unlocked %d fast travel points.", filterMode, totalUnlocked))
-end
-
-local function CollectEaglesNoExp(filterMode)
-    filterMode = filterMode or "all"
-
-    local originalRate = GetExpRate()
-    if originalRate == nil or not SetExpRate(0.0) then
-        print("[EagleCollector] Warning: Could not zero EXP rate, collecting normally.")
-        CollectEagles(filterMode)
-        return
-    end
-
-    pendingRestoreRate = originalRate
-    print(string.format("[EagleCollector] EXP rate set to 0.0 (Was: %.2f)", originalRate))
-
-    CollectEagles(filterMode)
-
-    ExecuteWithDelay(CONFIG.RestoreDelayMs, function()
-        if pendingRestoreRate ~= nil then
-            SetExpRate(pendingRestoreRate)
-            print(string.format("[EagleCollector] EXP rate restored to %.2f", pendingRestoreRate))
-            pendingRestoreRate = nil
-        end
-    end)
 end
 
 local function RemoveMaskAtPlayerPosition()
@@ -232,6 +598,11 @@ local function RemoveMaskAtPlayerPosition()
     return pcall(function() mapUIData:RemoveMaskByLocation(player, location) end)
 end
 
+local mapClearState = {
+    active = false,
+    originalPaintSize = nil
+}
+
 local function RestoreMapPaintSize()
     if not mapClearState.active and mapClearState.originalPaintSize == nil then return end
 
@@ -243,7 +614,7 @@ local function RestoreMapPaintSize()
         local mapUIData = GetBPWorldMapUIData()
         if mapUIData then
             pcall(function() mapUIData.MapMaskPaintSize = original end)
-            print(string.format("[EagleCollector][MAP] Restored paint size to %.2f", original or 0))
+            Log(string.format("[MAP] Размер ластика восстановлен: %.2f", original or 0))
         end
     end)
 end
@@ -269,7 +640,7 @@ end
 
 local function CollectEaglesMapClear()
     if mapClearState.active then
-        print("[EagleCollector][MAP] Map clear is already active.")
+        Log("[MAP] Очистка карты уже идёт.")
         return
     end
 
@@ -279,14 +650,14 @@ local function CollectEaglesMapClear()
         local mapUIData = GetBPWorldMapUIData()
         if not mapUIData then
             mapClearState.active = false
-            print("[EagleCollector][MAP] Error: BP_PalWorldMapUIData_C not found.")
+            Log("[MAP] Ошибка: BP_PalWorldMapUIData_C не найден.")
             return
         end
 
         local okRead, oldVal = pcall(function() return mapUIData.MapMaskPaintSize end)
         if not okRead then
             mapClearState.active = false
-            print("[EagleCollector][MAP] Error: Unable to read MapMaskPaintSize.")
+            Log("[MAP] Ошибка: не читается MapMaskPaintSize.")
             return
         end
 
@@ -295,17 +666,203 @@ local function CollectEaglesMapClear()
         local okWrite = pcall(function() mapUIData.MapMaskPaintSize = CONFIG.MapClearPaintSize end)
         if not okWrite then
             mapClearState.active = false
-            print("[EagleCollector][MAP] Error: Failed to set MapMaskPaintSize.")
+            Log("[MAP] Ошибка: не записался MapMaskPaintSize.")
             return
         end
 
         RemoveMaskAtPlayerPosition()
-        print(string.format("[EagleCollector][MAP] Eraser active for %d ms.", CONFIG.MapClearDurationMs))
+        Log(string.format("[MAP] Ластик активен %d мс.", CONFIG.MapClearDurationMs))
 
         local endTime = os.clock() + (CONFIG.MapClearDurationMs / 1000.0)
         ExecuteWithDelay(CONFIG.MapClearIntervalMs, function()
             RunMapClearPulse(endTime)
         end)
+    end)
+end
+
+-- ---------------------------------------------------------------------------
+-- Пакетная разблокировка
+-- ---------------------------------------------------------------------------
+
+local pendingRestoreRate = nil
+local unlockState = {
+    busy = false
+}
+
+local function ReportUnlocked(filterMode)
+    local total, unlocked = 0, 0
+    local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
+    for _, statue in ipairs(statues or {}) do
+        if IsValid(statue) then
+            total = total + 1
+            if StatueIsUnlocked(statue) then unlocked = unlocked + 1 end
+        end
+    end
+    local msg = string.format("[%s] Проверка: статуй всего %d, из них IsUnlocked() = true: %d",
+        tostring(filterMode or "all"), total, unlocked)
+    Log(msg)
+    Announce(string.format("FastTravel: unlocked %d / %d", unlocked, total))
+    return total, unlocked
+end
+
+local function RunUnlock(filterMode)
+    if unlockState.busy then
+        Log("Предыдущая разблокировка ещё не закончилась - подожди.")
+        Announce("FastTravel: предыдущая разблокировка ещё идёт")
+        return
+    end
+
+    filterMode = filterMode or "all"
+
+    local pc = GetLocalPlayerController()
+    if not IsValid(pc) then
+        Log("Ошибка: локальный PlayerController не найден.")
+        return
+    end
+
+    local targets = CollectTargets(filterMode)
+    if #targets == 0 then
+        Log("Ошибка: не нашёл ни одной PalLevelObjectUnlockableFastTravelPoint "
+            .. "(возможно, точки просто не загружены стримингом - подойди ближе).")
+        Announce("FastTravel: статуи не найдены (стриминг?)")
+        return
+    end
+
+    unlockState.busy = true
+
+    local ctx = {
+        character   = GetLocalPlayerCharacter(),
+        playerState = GetLocalPlayerState(),
+        worldContext = pc
+    }
+
+    local stats = {
+        total = #targets,
+        done = 0,
+        already = 0,
+        unlocked = 0,
+        confirmed = 0,     -- флаг в RecordData выставлен - разблокировка настоящая
+        unconfirmed = 0,   -- IsUnlocked() = true, но флаг не выставлен (косметика?)
+        unknown = 0,       -- проверить флаг не удалось (нет struct-параметров в UE4SS)
+        failed = 0,
+        methods = {}
+    }
+
+    local function Account(method, flag)
+        if flag == true then
+            stats.confirmed = stats.confirmed + 1
+        elseif flag == false then
+            stats.unconfirmed = stats.unconfirmed + 1
+        else
+            stats.unknown = stats.unknown + 1
+        end
+        if method and method ~= "already" then
+            stats.methods[method] = (stats.methods[method] or 0) + 1
+        end
+    end
+
+    local function Step()
+        local last = math.min(stats.done + CONFIG.UnlockBatchSize, #targets)
+        for i = stats.done + 1, last do
+            local statue = targets[i]
+            local method, note, flag = UnlockStatue(statue, ctx)
+            if method == "already" then
+                stats.already = stats.already + 1
+                Account(method, flag)
+            elseif method then
+                stats.unlocked = stats.unlocked + 1
+                Account(method, flag)
+            else
+                stats.failed = stats.failed + 1
+                if stats.failed <= 3 then
+                    Log(string.format("Не открылось (%s): %s", ToStr(statue.FastTravelPointID), tostring(note)))
+                end
+            end
+        end
+        stats.done = last
+
+        if stats.done < #targets then
+            ExecuteWithDelay(CONFIG.UnlockBatchDelayMs, Step)
+            return
+        end
+
+        -- финал
+        if filterMode == "all" or filterMode == "statues" then
+            TriggerCloudRemoval()
+        end
+
+        local methods = {}
+        for name, n in pairs(stats.methods) do
+            methods[#methods + 1] = string.format("%s=%d", name, n)
+        end
+        table.sort(methods)
+
+        Log(string.format(
+            "Mode [%s]: обработано %d, уже было открыто %d, открыто сейчас %d, не открылось %d. Способы: %s",
+            filterMode, stats.total, stats.already, stats.unlocked, stats.failed,
+            (#methods > 0) and table.concat(methods, ", ") or "нет"))
+
+        Log(string.format("Подтверждение: флаг в RecordData выставлен у %d точек, "
+            .. "не подтверждён у %d, проверить не удалось у %d.",
+            stats.confirmed, stats.unconfirmed, stats.unknown))
+
+        if ProbeStructAccess() then
+            if stats.unconfirmed > 0 then
+                Log(string.format(
+                    "ВНИМАНИЕ: у %d точек IsUnlocked() = true, но флаг в RecordData не выставлен. "
+                    .. "Значит сработал косметический путь (bUnlocked) - после перезапуска игры точки "
+                    .. "снова закроются. Поставь CONFIG.PrimaryMethod = \"Interact\" (или \"RecordData\") "
+                    .. "и повтори; подробности по одной точке даёт мод-диагностика (!eaglediag).",
+                    stats.unconfirmed))
+            elseif stats.confirmed > 0 then
+                Log("Флаг FastTravelPointUnlockFlag подтверждён - разблокировка настоящая, уезжает в сейв.")
+            end
+        else
+            Log("Прямое чтение RecordData недоступно в этой сборке UE4SS (struct-параметры): "
+                .. tostring(structAccess.lastError)
+                .. ". Проверка шла только через IsUnlocked().")
+        end
+
+        ReportUnlocked(filterMode)
+        unlockState.busy = false
+    end
+
+    Log(string.format("Mode [%s]: начинаю разблокировку %d точек пачками по %d.",
+        filterMode, #targets, CONFIG.UnlockBatchSize))
+    Announce(string.format("FastTravel: unlocking %d points...", #targets))
+
+    ExecuteInGameThread(Step)
+end
+
+-- ---------------------------------------------------------------------------
+-- Команды
+-- ---------------------------------------------------------------------------
+
+local function CollectEagles(filterMode)
+    RunUnlock(filterMode)
+end
+
+local function CollectEaglesNoExp(filterMode)
+    filterMode = filterMode or "all"
+
+    local originalRate = GetExpRate()
+    if originalRate == nil or not SetExpRate(0.0) then
+        Log("Предупреждение: не смог обнулить EXP rate - разблокирую как есть (EXP будет начислен).")
+        RunUnlock(filterMode)
+        return
+    end
+
+    pendingRestoreRate = originalRate
+    Log(string.format("EXP rate = 0.0 (было: %.2f)", originalRate))
+
+    RunUnlock(filterMode)
+
+    ExecuteWithDelay(CONFIG.RestoreDelayMs, function()
+        if pendingRestoreRate ~= nil then
+            SetExpRate(pendingRestoreRate)
+            Log(string.format("EXP rate восстановлен: %.2f", pendingRestoreRate))
+            pendingRestoreRate = nil
+        end
     end)
 end
 
@@ -319,30 +876,45 @@ local function RegisterChatHook()
             local textLower = string.lower(text)
 
             if textLower == CONFIG.ChatCommand or textLower == "!eagle all" then
-                pcall(function() CollectEagles("all") end)
+                SafeRun("collecteagle", function() CollectEagles("all") end)
 
             elseif textLower == CONFIG.ChatCommandStatues then
-                pcall(function() CollectEagles("statues") end)
+                SafeRun("statues", function() CollectEagles("statues") end)
 
             elseif textLower == CONFIG.ChatCommandPillars then
-                pcall(function() CollectEagles("pillars") end)
+                SafeRun("pillars", function() CollectEagles("pillars") end)
 
             elseif textLower == CONFIG.ChatCommandNoExp or textLower == "!eagle all noexp" then
-                pcall(function() CollectEaglesNoExp("all") end)
+                SafeRun("noexp", function() CollectEaglesNoExp("all") end)
 
             elseif textLower == "!eagle statues noexp" then
-                pcall(function() CollectEaglesNoExp("statues") end)
+                SafeRun("statues noexp", function() CollectEaglesNoExp("statues") end)
 
             elseif textLower == "!eagle pillars noexp" then
-                pcall(function() CollectEaglesNoExp("pillars") end)
+                SafeRun("pillars noexp", function() CollectEaglesNoExp("pillars") end)
+
+            elseif textLower == CONFIG.ChatCommandVerify then
+                SafeRun("verify", function() ReportUnlocked("all") end)
+
+            elseif textLower == CONFIG.ChatCommandBypass or textLower == CONFIG.ChatCommandBypass .. " on" then
+                SafeRun("bypass", function()
+                    local ok, info = SetIgnoreFastTravelLock(true)
+                    Log(string.format("bypass: %s", tostring(info)))
+                end)
+
+            elseif textLower == CONFIG.ChatCommandBypass .. " off" then
+                SafeRun("bypass", function()
+                    local ok, info = SetIgnoreFastTravelLock(false)
+                    Log(string.format("bypass: %s", tostring(info)))
+                end)
 
             elseif textLower == CONFIG.ChatCommandMap then
-                pcall(CollectEaglesMapClear)
+                SafeRun("mapclear", CollectEaglesMapClear)
 
             elseif textLower == "!restore" then
                 local rateToRestore = pendingRestoreRate or 1.0
                 if SetExpRate(rateToRestore) then
-                    print(string.format("[EagleCollector] EXP rate manually restored to %.2f", rateToRestore))
+                    Log(string.format("EXP rate восстановлен вручную: %.2f", rateToRestore))
                 end
                 pendingRestoreRate = nil
             end
@@ -350,10 +922,12 @@ local function RegisterChatHook()
     end)
 
     if success then
-        print(string.format("[EagleCollector] Mod initialized. Commands: %s, %s, %s, %s, %s",
-            CONFIG.ChatCommand, CONFIG.ChatCommandStatues, CONFIG.ChatCommandPillars, CONFIG.ChatCommandNoExp, CONFIG.ChatCommandMap))
+        Log(string.format("Мод загружен. Команды: %s, %s, %s, %s, %s, %s, %s",
+            CONFIG.ChatCommand, CONFIG.ChatCommandStatues, CONFIG.ChatCommandPillars,
+            CONFIG.ChatCommandNoExp, CONFIG.ChatCommandMap, CONFIG.ChatCommandVerify,
+            CONFIG.ChatCommandBypass))
     else
-        print("[EagleCollector] Failed to register chat hook: " .. tostring(err))
+        Log("Не удалось зарегистрировать чат-хук: " .. tostring(err))
     end
 end
 
