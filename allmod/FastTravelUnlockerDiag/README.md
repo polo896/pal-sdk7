@@ -19,6 +19,8 @@
 |---|---|
 | `!eaglediag` | безопасная часть: наличие функций + **контрольная проверка** (несуществующий метод — чтобы понять, можно ли верить строкам `OK`), счётчики, чтение свойств |
 | `!eaglediag rpc` | старый RPC `RequestUnlockFastTravelPoint_ToServer` на одной точке |
+| `!eaglediag keys` | **РЕШАЮЩИЙ ТЕСТ**: какие ключи лежат в `FastTravelPointUnlockFlag` и какому полю статуи они соответствуют (`FastTravelPointID` или GUID `LevelObjectInstanceId`) |
+| `!eaglediag flagmap` | `OnUpdateFlagMapRecord(FName Key, true)` — единственный найденный путь записи **без struct-параметров** |
 | `!eaglediag brute` | перебор индикаторов `OnTriggerInteract(Other, 0..80)` — ищет, какой `N` реально открывает точку в вашей сборке |
 | `!eaglediag announce` | тест `SendSystemAnnounce` (подозревался в краше основного мода) |
 | `!eaglediag statue` | + `OnTriggerInteract(Character, 26)` на одной закрытой точке |
@@ -61,6 +63,17 @@
    `bUnlocked = true`; по каждому печатается:
    `вызов ok/ошибка | IsUnlocked | флаг до | флаг после`.
    Итоговая строка говорит, какой способ выставил настоящий флаг (а не косметику).
+
+## Что уже выяснено по логам
+
+| Факт | Вывод |
+|---|---|
+| `obj[name]` возвращает `TrivialObject` даже для несуществующих имён | проверять наличие надо через `type(v) == "function"`; вызов несуществующего метода падает с `attempt to call a TrivialObject value` |
+| `RequestUnlockFastTravelPoint_ToServer` → `attempt to call a TrivialObject value` | RPC выпилен, SDK прав |
+| `OnTriggerInteract(Other, 0..80)` не открыл точку ни с `Character`, ни с `PlayerController` | путь сообщества в этой сборке мёртв |
+| `SendSystemAnnounce` выжил | он не виновник краша |
+| В `FastTravelPointUnlockFlag.Items` ключ вида `DDBBFFAF43D9219AE68DF98744DF0831` | ключ флага — это GUID в верхнем регистре (32 hex) |
+| `APalLevelObjectUnlockableFastTravelPoint::OnUpdateFlagMapRecord(FName Key, bool bFlag)` | найден в SDK: запись без struct-параметров |
 
 ## Порядок, если ничего не открывается
 

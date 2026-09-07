@@ -144,15 +144,25 @@ local function CheckStaticObject(label, path)
     return obj
 end
 
+-- ВАЖНО: в этой сборке UE4SS obj[name] возвращает "TrivialObject" даже для
+-- несуществующих имён, поэтому проверять надо type(): настоящий UFUNCTION
+-- приходит как function (иначе вызов падает с "attempt to call a TrivialObject").
 local function CheckMethod(label, obj, name)
     if obj == nil then
         Log(string.format("%-58s : нет объекта", label))
         return false
     end
     local ok, val = pcall(function() return obj[name] end)
-    local present = ok and (val ~= nil)
-    Log(string.format("%-58s : %s", label, present and "OK" or "ОТСУТСТВУЕТ"))
-    return present
+    if not ok then
+        Log(string.format("%-58s : ошибка чтения: %s", label, tostring(val)))
+        return false
+    end
+    if type(val) == "function" then
+        Log(string.format("%-58s : OK (function)", label))
+        return true
+    end
+    Log(string.format("%-58s : НЕ ФУНКЦИЯ (%s) -> вызывать нельзя", label, type(val)))
+    return false
 end
 
 local function Stage1()
@@ -176,17 +186,8 @@ local function Stage1()
             "RequestUnlockFastTravelPoint_ToServer")
         -- КОНТРОЛЬ: заведомо несуществующее имя. Если и оно "OK", значит UE4SS
         -- возвращает что-то на любое имя и всем проверкам выше верить НЕЛЬЗЯ.
-        local fakeOk = CheckMethod("КОНТРОЛЬ (несуществующий метод)", playerNet,
+        CheckMethod("КОНТРОЛЬ (несуществующий метод)", playerNet,
             "ThisMethodSurelyDoesNotExist12345")
-        if fakeOk then
-            Log("!!! ВНИМАНИЕ: контрольная проверка тоже вернула OK -> UE4SS отдаёт "
-                .. "что угодно на любое имя метода. Все строки 'OK' выше НЕ доказывают "
-                .. "существование функции. Ориентируйся только на реальные вызовы "
-                .. "(!eaglediag rpc / statue / brute).")
-        else
-            Log("Контроль честный: несуществующий метод = ОТСУТСТВУЕТ, значит строкам "
-                .. "'OK' выше можно верить.")
-        end
     end
 
     local statue = FindFirstOf("PalLevelObjectUnlockableFastTravelPoint")
@@ -383,6 +384,106 @@ local function TestMethod(target, flags, label, fn, readFlagAfter)
     return (after == true)
 end
 
+-- ШАГ: сопоставление ключей флага со статуями (РЕШАЮЩИЙ ТЕСТ)
+local function StageKeys()
+    Sep("ШАГ 4. КЛЮЧИ ФЛАГА vs СТАТУИ")
+
+    local flagKeys = {}
+    local flags = GetFlagsTable()
+    if flags then
+        local ok, items = pcall(function() return flags.Items end)
+        if ok and items ~= nil then
+            local okN, num = pcall(function() return #items end)
+            if okN then
+                Log(string.format("FastTravelPointUnlockFlag.Items: %d шт.", num))
+                for i = 1, num do
+                    local okI, item = pcall(function() return items[i] end)
+                    if okI and item then
+                        local k
+                        pcall(function() k = ToStr(item.Key) end)
+                        local v
+                        pcall(function() v = item.Value end)
+                        k = tostring(k)
+                        flagKeys[k:upper()] = true
+                        Log(string.format("   ключ[%02d] = %s (Value=%s)", i, k, tostring(v)))
+                    end
+                end
+            end
+        end
+    else
+        Log("RecordData не получен, ключи читать неоткуда.")
+        return
+    end
+
+    local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
+    local foundAny = false
+    local samples = 0
+    for _, s in ipairs(statues or {}) do
+        if IsValid(s) then
+            local id = tostring(ToStr(s.FastTravelPointID))
+            local gid = tostring(GuidToHexStr(s.LevelObjectInstanceId))
+            local unlocked = StatueIsUnlocked(s)
+            local hitId = flagKeys[id:upper()] == true
+            local hitGuid = flagKeys[gid:upper()] == true
+            if unlocked or hitId or hitGuid then
+                foundAny = true
+                Log(string.format("   СОВПАДЕНИЕ: FastTravelPointID=%s | GUID=%s | IsUnlocked=%s "
+                    .. "| id есть в ключах: %s | GUID есть в ключах: %s",
+                    id, gid, tostring(unlocked), tostring(hitId), tostring(hitGuid)))
+            elseif samples < 5 then
+                samples = samples + 1
+                Log(string.format("   пример: FastTravelPointID=%s | GUID=%s | IsUnlocked=%s",
+                    id, gid, tostring(unlocked)))
+            end
+        end
+    end
+    if not foundAny then
+        Log("Совпадений не найдено: ни у одной статуи ни FastTravelPointID, ни GUID "
+            .. "LevelObjectInstanceId не совпали с ключами флага.")
+    else
+        Log("Смотри строку СОВПАДЕНИЕ выше: какое из полей отмечено 'есть в ключах' - "
+            .. "то и есть настоящий ключ флага.")
+    end
+end
+
+-- ШАГ: OnUpdateFlagMapRecord(Key, bFlag) - БЕЗ struct-параметров
+local function StageFlagMap()
+    Sep("ШАГ 4. ТЕСТ OnUpdateFlagMapRecord(FName Key, bool bFlag)")
+    local target = FindTestTarget()
+    if not target then
+        Log("Нет закрытых точек для теста.")
+        return
+    end
+    local keys = KeysFor(target)
+    Log(string.format("Тестовая точка: FastTravelPointID=%s | GUID=%s", tostring(keys[1]), tostring(keys[2])))
+    Log("До: IsUnlocked=" .. tostring(StatueIsUnlocked(target)))
+
+    for _, key in ipairs(keys) do
+        local res = Risky("OnUpdateFlagMapRecord('" .. tostring(key) .. "', true)", function()
+            target:OnUpdateFlagMapRecord(FName(key), true)
+            return true
+        end)
+        if res == nil then
+            Log("    вызов не прошёл: функция отсутствует или не вызывается.")
+            break
+        end
+        local ps = GetLocalPlayerState()
+        if IsValid(ps) then
+            Risky("OnCompleteSyncPlayer(PlayerState)", function() return target:OnCompleteSyncPlayer(ps) end)
+        end
+        Log(string.format("    ключ %-34s -> IsUnlocked=%s", tostring(key), tostring(StatueIsUnlocked(target))))
+        if StatueIsUnlocked(target) then break end
+    end
+    local flags = GetFlagsTable()
+    if flags then
+        local ok, items = pcall(function() return flags.Items end)
+        if ok and items ~= nil then
+            local okN, num = pcall(function() return #items end)
+            if okN then Log(string.format("FastTravelPointUnlockFlag.Items после теста: %d шт.", num)) end
+        end
+    end
+end
+
 -- ШАГ 4a. Старый RPC (если он ещё жив в этой сборке - это лучший путь)
 local function StageRpc()
     Sep("ШАГ 4. ТЕСТ СТАРОГО RPC")
@@ -536,6 +637,8 @@ end
 local HELP = {
     "!eaglediag          - наличие функций + счётчики + контрольная проверка",
     "!eaglediag rpc      - старый RPC RequestUnlockFastTravelPoint_ToServer",
+    "!eaglediag keys     - РЕШАЮЩИЙ ТЕСТ: какие ключи в флаге и какому полю статуи они соответствуют",
+    "!eaglediag flagmap  - OnUpdateFlagMapRecord(Key, true) (без struct-параметров)",
     "!eaglediag brute    - перебор индикаторов OnTriggerInteract(Other, 0..80)",
     "!eaglediag announce - тест SendSystemAnnounce (подозревается в краше)",
     "!eaglediag record   - + чтение RecordData через struct-параметры (ОПАСНО)",
@@ -559,6 +662,8 @@ local function Run(kind)
     Stage3(structCalls)
 
     if kind == "rpc" then StageRpc()
+    elseif kind == "keys" then StageKeys()
+    elseif kind == "flagmap" then StageFlagMap()
     elseif kind == "brute" then StageBrute()
     elseif kind == "announce" then StageAnnounce()
     elseif kind == "statue" then Stage4("statue", kind == "all")
@@ -585,6 +690,8 @@ local ok, err = pcall(function()
         local kind = nil
         if text == "!eaglediag" then kind = "safe"
         elseif text == "!eaglediag rpc" then kind = "rpc"
+        elseif text == "!eaglediag keys" then kind = "keys"
+        elseif text == "!eaglediag flagmap" then kind = "flagmap"
         elseif text == "!eaglediag brute" then kind = "brute"
         elseif text == "!eaglediag announce" then kind = "announce"
         elseif text == "!eaglediag record" then kind = "record"

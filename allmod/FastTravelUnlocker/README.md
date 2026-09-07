@@ -109,6 +109,7 @@ statue:OnCompleteSyncPlayer(playerState)
 | `!eagle method cutscene` | `OnEndCutscene(<BindParameter>)` — эксперимент, может ронять игру |
 | `!eagle method record` | прямая запись `FastTravelPointUnlockFlag` + проверка по флагу — может ронять игру |
 | `!eagle method rpc` | старый RPC `RequestUnlockFastTravelPoint_ToServer` (в SDK 1.0.4 его нет, но в некоторых установленных сборках он ещё жив — см. `!eaglediag rpc`) |
+| `!eagle method flagmap` | `OnUpdateFlagMapRecord(FName Key, true)` — путь без struct-параметров |
 | `!eagle method cosmetic` | вообще без вызовов в игру: только `bUnlocked = true` — чтобы понять, падает игра на вызовах статуи или нет |
 | `!eagle method` | показать текущий режим |
 | `!eagle verifystruct` | разовая проба: поддерживает ли ваш UE4SS struct-параметры (и отключит проверку, если нет) |
@@ -142,6 +143,13 @@ statue:OnCompleteSyncPlayer(playerState)
 разблокировки. Включать только после проверки `!eaglediag announce`.
 
 Каждые 25 точек печатается прогресс: `[all] прогресс: N/174 (открыто X, не открылось Y)`.
+
+`CONFIG.EnableCosmeticFallback = false` — косметический фолбэк (`bUnlocked = true`) выключен.
+Он создаёт видимость успеха без записи в RecordData — ровно тот самообман, из-за которого
+старый мод печатал «Unlocked 174» при нулевом результате.
+
+`CONFIG.LogEveryPoint = true` — перед обработкой каждой точки печатается
+`[all] точка #N/174: id=... guid=...`; по последней такой строке видно, на какой статуе упала игра.
 
 Разблокировка идёт пачками (`UnlockBatchSize = 3`, пауза `UnlockBatchDelayMs = 350`):
 если скормить игре ~174 разблокировки в один кадр, она падает (это же и есть

@@ -93,7 +93,18 @@ local CONFIG = {
     -- Выключено по той же причине: чтение идёт через UPalPlayerRecordDataUtility.
     EnableStructVerification = false,
 
-    EnableCosmeticFallback = true,
+    -- косметический фолбэк (bUnlocked = true) ВЫКЛЮЧЕН: он делает вид, что точка
+    -- открыта, хотя в RecordData ничего не записано - то есть воспроизводит ровно
+    -- тот же самообман, что и старый мод ("Unlocked 174", а по факту ноль).
+    EnableCosmeticFallback = false,
+
+    -- APalLevelObjectUnlockableFastTravelPoint::OnUpdateFlagMapRecord(FName, bool)
+    -- единственный найденный путь записи без struct-параметров
+    EnableFlagMapPath      = false,
+
+    -- печатать в лог каждую обрабатываемую точку (нужно, чтобы видеть, на какой
+    -- именно статуе падает игра)
+    LogEveryPoint          = true,
 
     -- писать ли сообщения в игровой чат-панель (PalUtility::SendSystemAnnounce).
     -- ВЫКЛЮЧЕНО: по логам именно этот вызов ронял UE4SS (падение происходило
@@ -435,6 +446,21 @@ local function TryUnlock_Rpc(statue)
     return true, "ok (RPC, ключей: " .. called .. ")"
 end
 
+-- Попытка №2.5: OnUpdateFlagMapRecord(FName Key, bool bFlag) - без struct-параметров,
+-- значит не зависит от кривой передачи структур в UE4SS.
+local function TryUnlock_FlagMap(statue)
+    local keys = CollectFlagKeys(statue)
+    if #keys == 0 then return false, "ключи точки не читаются" end
+    local lastErr = nil
+    local called = 0
+    for _, key in ipairs(keys) do
+        local ok, err = pcall(function() statue:OnUpdateFlagMapRecord(FName(key), true) end)
+        if ok then called = called + 1 else lastErr = tostring(err) end
+    end
+    if called == 0 then return false, "OnUpdateFlagMapRecord не вызвался: " .. tostring(lastErr) end
+    return true, "ok (FlagMap)"
+end
+
 -- Попытка №3: записать флаг напрямую.
 local function TryUnlock_RecordData(statue)
     return WriteUnlockFlag(CollectFlagKeys(statue))
@@ -477,6 +503,9 @@ local function UnlockStatue(statue, ctx)
     local all = {}
     if CONFIG.EnableRpcPath then
         all[#all + 1] = { name = "Rpc", fn = function() return TryUnlock_Rpc(statue) end }
+    end
+    if CONFIG.EnableFlagMapPath then
+        all[#all + 1] = { name = "FlagMap", fn = function() return TryUnlock_FlagMap(statue) end }
     end
     if CONFIG.EnableCutsceneEndPath then
         all[#all + 1] = { name = "OnEndCutscene", fn = function() return TryUnlock_CutsceneEnd(statue) end }
@@ -817,6 +846,11 @@ local function RunUnlock(filterMode)
         local last = math.min(stats.done + CONFIG.UnlockBatchSize, #targets)
         for i = stats.done + 1, last do
             local statue = targets[i]
+            if CONFIG.LogEveryPoint then
+                Log(string.format("[%s] точка #%d/%d: id=%s guid=%s", filterMode, i, #targets,
+                    tostring(ToStr(statue.FastTravelPointID)),
+                    tostring(GuidToHexStr(statue.LevelObjectInstanceId))))
+            end
             local method, note, flag = UnlockStatue(statue, ctx)
             if method == "already" then
                 stats.already = stats.already + 1
@@ -913,6 +947,11 @@ local function SetPrimaryMethod(name)
         CONFIG.PrimaryMethod = "EndCutscene"
         CONFIG.EnableCutsceneEndPath = true
         return "Основной способ: OnEndCutscene(<BindParameter>). ЭКСПЕРИМЕНТ - может ронять игру."
+    elseif name == "flagmap" then
+        CONFIG.PrimaryMethod = "FlagMap"
+        CONFIG.EnableFlagMapPath = true
+        return "Основной способ: OnUpdateFlagMapRecord(FName Key, true) - путь БЕЗ "
+            .. "struct-параметров."
     elseif name == "record" then
         CONFIG.PrimaryMethod = "RecordData"
         CONFIG.EnableRecordDataPath = true
@@ -935,6 +974,7 @@ local function CurrentMethodInfo()
     local flags = {}
     if CONFIG.EnableRpcPath then flags[#flags + 1] = "Rpc" end
     if CONFIG.EnableInteractPath then flags[#flags + 1] = "Interact" end
+    if CONFIG.EnableFlagMapPath then flags[#flags + 1] = "FlagMap" end
     if CONFIG.EnableCutsceneEndPath then flags[#flags + 1] = "EndCutscene" end
     if CONFIG.EnableRecordDataPath then flags[#flags + 1] = "RecordData" end
     return string.format("способ=%s, разрешено: %s, проверка по флагу=%s",
@@ -1008,7 +1048,8 @@ local function RegisterChatHook()
                 or textLower == "!eagle method cutscene"
                 or textLower == "!eagle method record"
                 or textLower == "!eagle method cosmetic"
-                or textLower == "!eagle method rpc" then
+                or textLower == "!eagle method rpc"
+                or textLower == "!eagle method flagmap" then
                 local name = textLower:match("!eagle method (%a+)")
                 local info = SetPrimaryMethod(name)
                 if info then
