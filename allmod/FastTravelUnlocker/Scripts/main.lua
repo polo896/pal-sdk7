@@ -79,6 +79,12 @@ local CONFIG = {
     AsyncUnlock          = true,
     FinalCheckDelays     = { 5000, 15000 },
 
+    -- Каждый OnTriggerInteract запускает катсцену, и они копятся: на 150+ запросов
+    -- подряд игра стабильно падала. Каждые CooldownEveryN точек делаем паузу,
+    -- чтобы дать катсценам завершиться выгрузкой.
+    CooldownEveryN       = 25,
+    CooldownMs           = 5000,
+
     -- EPalInteractiveObjectIndicatorType::UnlockFastTravel (Pal_enums.hpp: 26)
     IndicatorUnlockFastTravel = 26,
 
@@ -943,7 +949,13 @@ local function RunUnlock(filterMode)
         end
 
         if stats.done < #targets then
-            ExecuteWithDelay(CONFIG.UnlockBatchDelayMs, Step)
+            local cooling = CONFIG.CooldownEveryN > 0
+                and (stats.done % CONFIG.CooldownEveryN == 0)
+            if cooling then
+                Log(string.format("[%s] пауза %d мс, чтобы катсцены успели завершиться "
+                    .. "(обработано %d из %d)", filterMode, CONFIG.CooldownMs, stats.done, #targets))
+            end
+            ExecuteWithDelay(cooling and CONFIG.CooldownMs or CONFIG.UnlockBatchDelayMs, Step)
             return
         end
 

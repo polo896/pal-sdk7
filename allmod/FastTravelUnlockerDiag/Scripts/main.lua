@@ -602,6 +602,81 @@ local function StageFlagMap()
     DelayedVerify(target, "flagmap", VERIFY_DELAYS)
 end
 
+-- ШАГ 4x. Катсцена: два разных вызова + принудительный SkipCutscene
+local function GetCheatManager()
+    local pc = GetLocalPlayerController()
+    if IsValid(pc) then
+        local ok, cm = pcall(function() return pc.CheatManager end)
+        if ok and cm ~= nil then return cm, "PlayerController.CheatManager" end
+    end
+    local ok, cm = pcall(function() return FindFirstOf("PalCheatManager") end)
+    if ok and cm ~= nil then return cm, "FindFirstOf(PalCheatManager)" end
+    local ok2, cm2 = pcall(function() return FindFirstOf("BP_PalCheatManager_C") end)
+    if ok2 and cm2 ~= nil then return cm2, "FindFirstOf(BP_PalCheatManager_C)" end
+    return nil, nil
+end
+
+local function StageCutsceneDeep()
+    Sep("ШАГ 4. КАТСЦЕНА: param:OnEndCutscene() и SkipCutscene")
+
+    local target = FindTestTarget()
+    if not target then
+        Log("Нет закрытых точек для теста.")
+        return
+    end
+    Log(string.format("Тестовая точка: FastTravelPointID=%s | GUID=%s",
+        tostring(KeysFor(target)[1]), tostring(KeysFor(target)[2])))
+
+    local cm, cmSrc = GetCheatManager()
+    Log("CheatManager: " .. tostring(cmSrc))
+
+    StatReport(target, "до")
+    pcall(function() target.EnableRequestUnlock = true end)
+
+    -- ТЕСТ 1: сам параметр катсцены. Раньше мы вызывали statue:OnEndCutscene(param),
+    -- но публичный метод есть и у параметра - это другой вызываемый.
+    local cls = StaticFindObject("/Script/Pal.PalCutsceneBindParameter_FasttravelPoint")
+    local param = cls and StaticConstructObject(cls, target) or nil
+    Log("BindParameter создан: " .. tostring(param))
+    if param then
+        Risky("<BindParameter>:OnEndCutscene()", function()
+            param:OnEndCutscene()
+            return true
+        end)
+    end
+    DelayedVerify(target, "param:OnEndCutscene", VERIFY_DELAYS)
+
+    -- ТЕСТ 2 (через 8 с, если первый не помог): взаимодействие + принудительный пропуск катсцены
+    ExecuteWithDelay(8000, function()
+        local loc = LocationOf(target)
+        local travel = nil
+        if IsValid(loc) then
+            local ok, v = pcall(function() return loc:IsEnableFastTravel() end)
+            if ok then travel = (v == true) end
+        end
+        if travel == true then
+            Log("Первый тест сработал (IsEnableFastTravel=true), второй не нужен.")
+            return
+        end
+
+        Log("--- тест 2: OnTriggerInteract(Character, 26) + CheatManager:SkipCutscene()")
+        local character = GetLocalPlayerCharacter()
+        Risky("OnTriggerInteract(Character, 26)", function()
+            target:OnTriggerInteract(character, 26)
+            return true
+        end)
+        if cm then
+            ExecuteWithDelay(600, function()
+                Risky("CheatManager:SkipCutscene()", function()
+                    cm:SkipCutscene()
+                    return true
+                end)
+            end)
+        end
+        DelayedVerify(target, "interact+skip", VERIFY_DELAYS)
+    end)
+end
+
 -- ШАГ 4a. Старый RPC (если он ещё жив в этой сборке - это лучший путь)
 -- Ключевая вещь: часть разблокировок в Palworld АСИНХРОННА (катсцена, стриминг).
 -- Проверять итог нужно через секунды, а не сразу.
@@ -833,7 +908,7 @@ local function Run(kind)
     elseif kind == "brute" then StageBrute()
     elseif kind == "announce" then StageAnnounce()
     elseif kind == "statue" then Stage4("statue", kind == "all")
-    elseif kind == "cutscene" then Stage4("cutscene", kind == "all")
+    elseif kind == "cutscene" then StageCutsceneDeep()
     elseif kind == "write" then Stage4("write", true)
     elseif kind == "cosmetic" then Stage4("cosmetic", false)
     elseif kind == "all" then
