@@ -108,6 +108,7 @@ statue:OnCompleteSyncPlayer(playerState)
 | `!eagle method interact` | (по умолчанию) только `OnTriggerInteract(26)` |
 | `!eagle method cutscene` | `OnEndCutscene(<BindParameter>)` — эксперимент, может ронять игру |
 | `!eagle method record` | прямая запись `FastTravelPointUnlockFlag` + проверка по флагу — может ронять игру |
+| `!eagle method cosmetic` | вообще без вызовов в игру: только `bUnlocked = true` — чтобы понять, падает игра на вызовах статуи или нет |
 | `!eagle method` | показать текущий режим |
 | `!eagle verifystruct` | разовая проба: поддерживает ли ваш UE4SS struct-параметры (и отключит проверку, если нет) |
 

@@ -869,6 +869,14 @@ local function SetPrimaryMethod(name)
         CONFIG.EnableStructVerification = true
         return "Основной способ: прямая запись FastTravelPointUnlockFlag. "
             .. "Требует struct-параметры в UE4SS - может ронять игру."
+    elseif name == "cosmetic" then
+        CONFIG.PrimaryMethod = "cosmetic"
+        CONFIG.EnableInteractPath = false
+        CONFIG.EnableCutsceneEndPath = false
+        CONFIG.EnableRecordDataPath = false
+        CONFIG.EnableStructVerification = false
+        return "Все вызовы в игру ОТКЛЮЧЕНЫ: только bUnlocked = true (визуал, в сейв не идёт). "
+            .. "Нужно лишь понять, падает игра на вызовах статуи или нет."
     end
     return nil
 end
@@ -947,7 +955,8 @@ local function RegisterChatHook()
 
             elseif textLower == "!eagle method interact"
                 or textLower == "!eagle method cutscene"
-                or textLower == "!eagle method record" then
+                or textLower == "!eagle method record"
+                or textLower == "!eagle method cosmetic" then
                 local name = textLower:match("!eagle method (%a+)")
                 local info = SetPrimaryMethod(name)
                 if info then
