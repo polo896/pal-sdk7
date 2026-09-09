@@ -1,69 +1,54 @@
 -- ============================================================================
--- JumpDashTest — ТЕСТОВЫЙ МОД (UE4SS Lua / Palworld)
+-- JumpDashTest v2 — ТЕСТОВЫЙ МОД (UE4SS Lua / Palworld)
 --
--- Цель: проверить работоспособность точек внедрения ПЕРЕД интеграцией
--- в основной мод. Тестируем три пассивки:
+-- Что проверяем (перед интеграцией в основной мод):
+--   AirDash (эффект 104)            -> ДИСТАНЦИЯ воздушного рывка (ваниль 400 см/0.5 c)
+--   JumpCount_Increase (эффект 81)  -> ЧИСЛО доп. прыжков (ваниль +1/+2/+3)
+--   JumpPower_Increase (эффект 80)  -> СИЛА (высота) прыжка — Anti-Gravity Belt
 --
---   1) Air Dash Boots    (пассивка AirDash, Accessory_AirDash1..3 и др.)
---      -> настраиваемая ДИСТАНЦИЯ воздушного рывка (Ctrl в воздухе).
---         Ваниль: 400 см (4 м) за 0.5 с. Кривая рывка НЕ меняется, поэтому
---         при увеличении дистанции скорость растёт пропорционально —
---         рывок остаётся резким «выстрелом-пружиной», просто длиннее.
---   2) Jump Boots        (пассивка JumpCount_Increase, Accessory_JumpCount_Increase1..3)
---      -> настраиваемое ЧИСЛО доп. прыжков (ваниль даёт только счёт: 1/2/3,
---         высоту доп. прыжка отдельно менять нельзя — он прыгает как обычный).
---   3) Anti-Gravity Belt (пассивка JumpPower_Increase, Accessory_JumpPower_Increase)
---      -> настраиваемая СИЛА (высота) прыжка. Именно пояс меняет высоту.
---
--- ГЛАВНОЕ УСЛОВИЕ (по ТЗ): мод меняет параметры ТОЛЬКО когда у игрока
--- АКТИВНА соответствующая пассивка (предмет надет). Снял предмет —
--- ванильное поведение. Без пассивок мод ничего не трогает.
---
--- Точки внедрения (минимум, без дублирующих хуков):
---   ХУК 1  BP_ActionAirDashBase_C:OnBeginAction (BP)       — рывок: дистанция/время
---   ХУК 2  PalPassiveSkillComponent:OnStartSkillEffect      — мгновенная реакция на надевание
---   ХУК 3  PalPassiveSkillComponent:OnEndSkillEffect        — мгновенная реакция на снятие
---   ХУК 4  PalCharacterMovementComponent:SetJumpZVelocityMultiplier — только ЛОГ
---          (показывает, как ваниль применяет пояс; для интеграции удаляется)
---   ХУК 5  PalUIChat:OnReceivedChat — тест-команды «!jd ...»
---   + ОПРОС раз в ReconcileMs — страховка: ловит вход в мир с уже надетыми
---     предметами и случаи, когда натив зовёт свои функции мимо ProcessEvent
---     (тогда хуки 2/3 могут молчать — это нормально, опрос всё применит).
---
--- Данные из дампов (sdk-dumper-7 / FModel-PalSchema / CXXHeaderDump):
---   EPalPassiveSkillEffectType: JumpPower_Increase=80, JumpCount_Increase=81, AirDash=104
---   BP_ActionAirDashBase (CDO): Const_MoveDistance=400, StepTime=0.5
---   UCharacterMovementComponent.JumpMaxCount (engine, 0x0424) — счётчик прыжков
---   UPalCharacterMovementComponent.SetJumpZVelocityMultiplier(FName, float)
+-- ПРИНЦИПЫ v2 (по итогам теста v1):
+--   - НИКАКИХ циклов/опросов/периодических попыток хука. В простое мод не
+--     выполняет НИ ОДНОЙ инструкции. Всё событийное:
+--       ClientRestart (вход/респавн) -> привязка к игроку + однократный Reconcile
+--       OnStart/OnEndSkillEffect     -> надел/снял предмет с пассивкой
+--       Jump (перед прыжком)         -> мгновенная сверка/откат (страховка от
+--                                       «прыгаю в космос» если событие снятия
+--                                       пролетело мимо хуков)
+--       OnBeginAction (BP рывка)     -> параметры рывка (хук ставится ОДИН раз)
+--   - Объекты сравниваются по АДРЕСУ (GetAddress), а не по идентичности
+--     обёрток — обёртки UE4SS каждый раз новые.
+--   - Эффект существует ТОЛЬКО пока у игрока есть пассивка (предмет в слоте,
+--     с выданной хоть каким модом пассивкой — проверка по компоненту пассивок,
+--     а не по ID предмета). Снял предмет -> ваниль немедленно.
 -- ============================================================================
 
 local MOD_NAME = "JumpDashTest"
 local MOD_TAG  = "[JumpDashTest]"
 
 -- ---------------------------------------------------------------------------
--- КОНФИГ (значения по умолчанию; переопределяются файлом config.txt)
+-- КОНФИГ (по умолчанию; переопределяется config.txt рядом с main.lua)
 -- ---------------------------------------------------------------------------
 local Config = {
-    Enabled = true,   -- false = мод выключен, всё возвращается к ванили
-    Debug   = true,   -- подробный лог (для теста оставь true)
+    Enabled = true,
+    Debug   = false,   -- подробный лог (для теста можно включить: !jd debug)
 
-    -- 1) Air Dash Boots
-    AirDashDistanceMult = 5.0, -- 1.0 = ваниль (4 м). 10.0 = 40 м за те же 0.5 с
-    AirDashTimeMult     = 1.0, -- 1.0 = ваниль (0.5 с). 0.5 = вдвое резче. >1.25 не ставить
+    -- 1) Air Dash Boots: дистанция рывка. 1.0 = ваниль (4 м за 0.5 с).
+    --    Скорость растёт пропорционально: x10 = 40 м за те же полсекунды.
+    AirDashDistanceMult = 5.0,
+    -- Время рывка. 1.0 = ваниль (0.5 с). 0.5 = вдвое резче. >1.25 не ставить
+    -- (срежется внутренним Const_MaxAirborneTime = 0.4 с).
+    AirDashTimeMult     = 1.0,
 
-    -- 2) Jump Boots: число ДОПОЛНИТЕЛЬНЫХ прыжков (ваниль: 1/2/3)
+    -- 2) Jump Boots: число ДОПОЛНИТЕЛЬНЫХ прыжков (ваниль 1/2/3).
     ExtraJumpCount = 5,
 
-    -- 3) Anti-Gravity Belt: множитель СИЛЫ прыжка (1.0 = ваниль).
+    -- 3) Anti-Gravity Belt: множитель силы прыжка (1.0 = ваниль).
     --    Высота ~ квадрат: x2.0 силы = ~x4 высоты.
     JumpPowerMult = 2.0,
-
-    ReconcileMs = 1000, -- период страховочной синхронизации (мс)
-    HookRetryMs = 2000, -- как часто пробовать повесить хук рывка (мс)
 }
 
 -- ---------------------------------------------------------------------------
--- Константы из дампов
+-- Константы из дампов (sdk-dumper-7 / FModel-PalSchema / CXXHeaderDump)
 -- ---------------------------------------------------------------------------
 local EFFECT_JUMPPOWER = 80   -- EPalPassiveSkillEffectType::JumpPower_Increase
 local EFFECT_JUMPCOUNT = 81   -- EPalPassiveSkillEffectType::JumpCount_Increase
@@ -73,30 +58,33 @@ local VANILLA_DASH_DISTANCE = 400.0 -- BP_ActionAirDashBase.Const_MoveDistance (
 local VANILLA_DASH_TIME     = 0.5   -- BP_ActionAirDashBase.StepTime (CDO)
 
 local CLASS_AIRDASH_ACTION = "/Game/Pal/Blueprint/Action/Common/BP_ActionAirDashBase.BP_ActionAirDashBase_C"
+local CLASS_AIRDASH_SHORT  = "BP_ActionAirDashBase_C"
 local OUR_MULT_FLAG        = "JumpDashTest" -- имя нашего множителя в JumpZVelocityMultiplierMap
 
 -- ---------------------------------------------------------------------------
 -- Состояние
 -- ---------------------------------------------------------------------------
 local State = {
-    controller = nil, -- локальный BP_PalPlayerController_C
-    char       = nil, -- пешка игрока (BP_Player_Female/Male_C -> PalPlayerCharacter)
-    movement   = nil, -- UPalCharacterMovementComponent
-    passive    = nil, -- UPalPassiveSkillComponent
+    controller = nil, -- локальный контроллер
+    char       = nil, -- пешка игрока
+    movement   = nil, -- её UPalCharacterMovementComponent
+    passive    = nil, -- её UPalPassiveSkillComponent
+    charAddr   = nil, -- адрес пешки (идентичность проверяем по нему!)
 
-    overrideMaxJumps = nil,   -- что МЫ записали в JumpMaxCount (nil = не трогали)
-    ourMultApplied   = false, -- наш множитель прыжка сейчас != 1.0
-    lastWantRate     = 1.0,
-    dashHooked       = false,
-    configPath       = nil,
+    overrideMaxJumps = nil,  -- что МЫ записали в JumpMaxCount (nil = не трогали)
+    appliedMult      = 1.0,  -- множитель прыжка, который МЫ сейчас держим в карте
 
-    -- счётчики для теста
-    statDash = 0, statPassiveStart = 0, statPassiveEnd = 0, statSetJump = 0,
-    lastDash = "—",
+    dashHooked  = false,     -- хук рывка зарегистрирован (ставится ОДИН раз)
+    dashVia     = "",        -- каким путём встал хук (для !jd status)
+    scanGate    = 0,         -- троттлинг аварийного перепоиска (только по событиям!)
+
+    -- счётчики для !jd status
+    statDash = 0, statJump = 0, statPassiveStart = 0, statPassiveEnd = 0,
+    statRestarts = 0, lastDash = "—", configPath = nil,
 }
 
 -- ---------------------------------------------------------------------------
--- Мелкие помощники
+-- Помощники
 -- ---------------------------------------------------------------------------
 local function Log(msg)  pcall(function() print(MOD_TAG .. " " .. tostring(msg) .. "\n") end) end
 local function DLog(msg) if Config.Debug then Log(msg) end end
@@ -107,14 +95,13 @@ local function IsValidObj(o)
     return ok and res == true
 end
 
--- безопасный вызов: возвращает результат или nil
 local function call(fn)
     local ok, res = pcall(fn)
     if ok then return res end
     return nil
 end
 
--- Достаём значение/UObject из RemoteUnrealParam (паттерн из bbbChatsave)
+-- Достаём UObject из RemoteUnrealParam (обёртки UE4SS)
 local function UnwrapParam(p)
     if p == nil then return nil end
     local t = type(p)
@@ -135,14 +122,17 @@ local function FNameToStr(v)
     return tostring(v)
 end
 
--- Сравнение двух UObject по адресу (надёжнее, чем == на обёртках)
+-- АДРЕС объекта — единственная надёжная «идентичность» в UE4SS Lua
+local function AddrOf(o)
+    if o == nil then return nil end
+    return tonumber(call(function() return o:GetAddress() end))
+end
+
 local function SameUObject(a, b)
     if a == nil or b == nil then return false end
     if a == b then return true end
-    local aa, bb = -1, -2
-    pcall(function() aa = a:GetAddress() end)
-    pcall(function() bb = b:GetAddress() end)
-    return aa == bb
+    local aa, bb = AddrOf(a), AddrOf(b)
+    return aa ~= nil and bb ~= nil and aa == bb
 end
 
 local function EffectName(t)
@@ -152,9 +142,7 @@ local function EffectName(t)
     return "EffectType_" .. tostring(t)
 end
 
--- ---------------------------------------------------------------------------
--- Чтение TArray (несколько вариантов доступа, как в других модах репозитория)
--- ---------------------------------------------------------------------------
+-- TArray (несколько вариантов доступа, как в других модах репозитория)
 local function ArrCount(arr)
     if arr == nil then return 0 end
     return tonumber(call(function() return #arr end))
@@ -168,11 +156,13 @@ local function ArrAt(arr, i)
         or call(function() return arr:Get(i - 1) end)
 end
 
--- Сумма EffectValue всех эффектов данного типа в SkillInfos (= ваниль-значение)
-local function SumSkillValue(passive, effectType)
-    local infos = call(function() return passive.SkillInfos end)
+-- Сумма EffectValue эффектов данного типа в SkillInfos (= ваниль-значение)
+local function SumSkillValue(effectType)
+    local pas = State.passive
+    if not IsValidObj(pas) then return 0.0 end
+    local infos = call(function() return pas.SkillInfos end)
     local n = ArrCount(infos)
-    local sum, cnt = 0.0, 0
+    local sum = 0.0
     for i = 1, n do
         local info = ArrAt(infos, i)
         local effs = call(function() return info.SkillEffectArray end)
@@ -181,23 +171,20 @@ local function SumSkillValue(passive, effectType)
             local e = ArrAt(effs, j)
             local t = tonumber(UnwrapParam(call(function() return e.Type end)))
             if t == effectType then
-                local v = tonumber(UnwrapParam(call(function() return e.Value end)))
-                sum = sum + (v or 0.0)
-                cnt = cnt + 1
+                sum = sum + (tonumber(UnwrapParam(call(function() return e.Value end))) or 0.0)
             end
         end
     end
-    return sum, cnt
+    return sum
 end
 
 -- ---------------------------------------------------------------------------
--- Конфиг-файл (key = value)
+-- Конфиг-файл (key = value, комментарии после ';')
 -- ---------------------------------------------------------------------------
 local CONFIG_CANDIDATES = {
-    "Mods/" .. MOD_NAME .. "/config.txt",          -- стандартный UE4SS
-    "../../Mods/" .. MOD_NAME .. "/config.txt",    -- если CWD = Pal/
-    "../../../Mods/" .. MOD_NAME .. "/config.txt", -- если CWD = Pal/Binaries/
-    MOD_NAME .. "_config.txt",                     -- запасной: рядом с игрой
+    "Mods/" .. MOD_NAME .. "/config.txt",
+    "../../Mods/" .. MOD_NAME .. "/config.txt",
+    "../../../Mods/" .. MOD_NAME .. "/config.txt",
 }
 
 local function ParseValue(raw)
@@ -227,11 +214,11 @@ local function LoadConfig()
                 end
             end
             file:close()
-            Log("конфиг загружен: " .. path .. " (параметров: " .. applied .. ")")
+            Log("конфиг загружен: " .. path)
             return true
         end
     end
-    Log("config.txt не найден (искал: " .. table.concat(CONFIG_CANDIDATES, "; ") .. ") — работаю на встроенных значениях")
+    Log("config.txt не найден — работаю на встроенных значениях")
     return false
 end
 
@@ -244,10 +231,7 @@ local function SaveConfig()
             if file then path = p; State.configPath = p; break end
         end
     end
-    if not file then
-        Log("НЕ УДАЛОСЬ сохранить конфиг (нет доступа ни по одному пути)")
-        return
-    end
+    if not file then Log("НЕ УДАЛОСЬ сохранить конфиг"); return end
     file:write("; " .. MOD_NAME .. " config (комментарии после ';')\n")
     file:write("Enabled = " .. tostring(Config.Enabled) .. "\n")
     file:write("Debug = " .. tostring(Config.Debug) .. "\n")
@@ -255,105 +239,131 @@ local function SaveConfig()
     file:write("AirDashTimeMult = " .. tostring(Config.AirDashTimeMult) .. "\n")
     file:write("ExtraJumpCount = " .. tostring(Config.ExtraJumpCount) .. "\n")
     file:write("JumpPowerMult = " .. tostring(Config.JumpPowerMult) .. "\n")
-    file:write("ReconcileMs = " .. tostring(Config.ReconcileMs) .. "\n")
     file:close()
     Log("конфиг сохранён: " .. path)
 end
 
 -- ---------------------------------------------------------------------------
--- Поиск локального игрока (кэшируется, переживает респавн/перезаход)
+-- Проверка пассивок: ТОЛЬКО по компоненту пассивок игрока.
+-- Работает для ЛЮБЫХ предметов с этой пассивкой (ванильных или выданных
+-- другим модом) — пассивка предмета в слое попадает именно туда.
 -- ---------------------------------------------------------------------------
-local function GetContext()
-    if not IsValidObj(State.controller) then
-        State.controller = nil
-        local controllers = call(function() return FindAllOf("BP_PalPlayerController_C") end)
-        if controllers then
-            for _, c in ipairs(controllers) do
-                if IsValidObj(c) then
-                    local isLocal = call(function() return c:IsLocalPlayerController() end)
-                    if isLocal then State.controller = c; break end
-                end
-            end
-            if not State.controller and #controllers > 0 and IsValidObj(controllers[1]) then
-                State.controller = controllers[1] -- одиночная игра: контроллер один
-            end
-        end
-    end
-    if not IsValidObj(State.controller) then return nil end
-
-    local pawn = call(function() return State.controller.Pawn end)
-    if not IsValidObj(pawn) then pawn = call(function() return State.controller.Character end) end
-
-    if pawn ~= State.char or not IsValidObj(State.movement) or not IsValidObj(State.passive) then
-        State.char, State.movement, State.passive = nil, nil, nil
-        State.overrideMaxJumps = nil
-        State.ourMultApplied = false
-        State.lastWantRate = 1.0
-        if IsValidObj(pawn) then
-            local isPlayer = call(function() return pawn:IsA("/Script/Pal.PalPlayerCharacter") end)
-            if isPlayer then
-                State.char = pawn
-                State.movement = call(function() return pawn.CharacterMovement end)
-                State.passive = call(function() return pawn.PassiveSkillComponent end)
-                if not (IsValidObj(State.movement) and IsValidObj(State.passive)) then
-                    State.char = nil
-                else
-                    local cls = call(function() return pawn:GetClass():GetName() end)
-                    Log("игрок найден: " .. tostring(cls) .. " @ 0x" .. string.format("%X", pawn:GetAddress() or 0))
-                end
-            end
-        end
-    end
-
-    if not State.char then return nil end
-    return State
-end
-
 local function HasPassive(effectType)
-    if not IsValidObj(State.passive) then return false end
-    return call(function() return State.passive:HasSkill(effectType, true) end) == true
+    local pas = State.passive
+    if not IsValidObj(pas) then return false end
+    return call(function() return pas:HasSkill(effectType, true) end) == true
 end
 
 local function IsRidingNow()
-    if not IsValidObj(State.controller) then return false end
-    return call(function() return State.controller:IsRiding() end) == true
+    local ctrl = State.controller
+    if not IsValidObj(ctrl) then return false end
+    return call(function() return ctrl:IsRiding() end) == true
 end
 
 local function SetOurJumpMult(rate)
-    if not IsValidObj(State.movement) then return false end
-    local ok = pcall(function() State.movement:SetJumpZVelocityMultiplier(FName(OUR_MULT_FLAG), rate) end)
+    local mv = State.movement
+    if not IsValidObj(mv) then return false end
+    local ok = pcall(function() mv:SetJumpZVelocityMultiplier(FName(OUR_MULT_FLAG), rate) end)
     if not ok then
-        ok = pcall(function() State.movement:SetJumpZVelocityMultiplier(OUR_MULT_FLAG, rate) end)
+        ok = pcall(function() mv:SetJumpZVelocityMultiplier(OUR_MULT_FLAG, rate) end)
     end
     return ok
 end
 
 -- ---------------------------------------------------------------------------
--- ЯДРО: синхронизация модификаторов с текущими пассивками.
--- Вызывается по событию пассивки (отложенно, ПОСЛЕ натива) и страховочным
--- опросом. Идемпотентна: повторный вызов ничего не ломает и не спамит.
+-- Привязка к игроку. Вызывается ТОЛЬКО по событию ClientRestart
+-- (вход в мир / респавн / смена пешки) — не из циклов!
+-- ---------------------------------------------------------------------------
+local function BindContext(controller, pawn)
+    -- best-effort: снять наш множитель со СТАРОГО компонента движения
+    if State.movement ~= nil and State.appliedMult ~= 1.0 then
+        pcall(function() State.movement:SetJumpZVelocityMultiplier(FName(OUR_MULT_FLAG), 1.0) end)
+    end
+
+    State.controller = controller
+    State.char, State.charAddr = nil, nil
+    State.movement, State.passive = nil, nil
+    State.overrideMaxJumps = nil
+    State.appliedMult = 1.0
+
+    if not (IsValidObj(controller) and IsValidObj(pawn)) then return end
+    if call(function() return pawn:IsA("/Script/Pal.PalPlayerCharacter") end) ~= true then return end
+
+    local mv = call(function() return pawn.CharacterMovement end)
+    local ps = call(function() return pawn.PassiveSkillComponent end)
+    if not (IsValidObj(mv) and IsValidObj(ps)) then return end
+
+    State.char = pawn
+    State.charAddr = AddrOf(pawn)
+    State.movement = mv
+    State.passive = ps
+    local cls = call(function() return pawn:GetClass():GetName() end)
+    Log("привязка к игроку: " .. tostring(cls) .. " @ 0x" ..
+        string.format("%X", State.charAddr or 0))
+end
+
+local function ValidateContext()
+    return State.char ~= nil
+        and IsValidObj(State.controller)
+        and IsValidObj(State.char)
+        and IsValidObj(State.movement)
+        and IsValidObj(State.passive)
+end
+
+-- Аварийный перепоиск: ТОЛЬКО когда контекст потерян (смерть/респавн мимо
+-- ClientRestart) и ТОЛЬКО по факту события (прыжок/дэш/пассивка).
+-- Каждая 10-я незакреплённая попытка максимум, никаких таймеров.
+local function EnsureContext()
+    if ValidateContext() then return true end
+    State.scanGate = State.scanGate + 1
+    if State.scanGate % 10 ~= 1 then return false end
+
+    local controllers = call(function() return FindAllOf("BP_PalPlayerController_C") end)
+    if not controllers then return false end
+    local localCtrl, firstCtrl = nil, nil
+    for _, c in ipairs(controllers) do
+        if IsValidObj(c) then
+            firstCtrl = firstCtrl or c
+            if call(function() return c:IsLocalPlayerController() end) == true then
+                localCtrl = c
+                break
+            end
+        end
+    end
+    local ctrl = localCtrl or firstCtrl
+    if not IsValidObj(ctrl) then return false end
+    local pawn = call(function() return ctrl.Pawn end) or call(function() return ctrl.Character end)
+    BindContext(ctrl, pawn)
+    return ValidateContext()
+end
+
+-- ---------------------------------------------------------------------------
+-- ЯДРО: сверка желаемого состояния с текущими пассивками.
+-- Вызывается ТОЛЬКО по событиям. Идемпотентна, логирует только реальные
+-- изменения состояния (никакого спама).
 -- ---------------------------------------------------------------------------
 local function Reconcile(reason)
-    if not GetContext() then return end
-    local mv, pas = State.movement, State.passive
-    local riding = IsRidingNow()
+    if not ValidateContext() then return end
+    local mv = State.movement
 
-    -- === 2) Jump Boots: количество доп. прыжков (JumpMaxCount) ===
-    local hasJC = HasPassive(EFFECT_JUMPCOUNT)
-    if Config.Enabled and hasJC and not riding then
-        local want = 1 + Config.ExtraJumpCount
+    -- === Jump Boots: количество доп. прыжков (JumpMaxCount) ===
+    local wantJumps = (Config.Enabled and HasPassive(EFFECT_JUMPCOUNT) and not IsRidingNow())
+        and (1 + Config.ExtraJumpCount)
+        or nil
+
+    if wantJumps ~= nil then
         local cur = tonumber(call(function() return mv.JumpMaxCount end))
-        if cur ~= want then
-            local ok = pcall(function() mv.JumpMaxCount = want end)
+        if cur ~= wantJumps then
+            local ok = pcall(function() mv.JumpMaxCount = wantJumps end)
             if ok then
-                State.overrideMaxJumps = want
+                State.overrideMaxJumps = wantJumps
                 Log(string.format("ПРЫЖКИ: JumpMaxCount %s -> %d (JumpCount_Increase активна; %s)",
-                    tostring(cur), want, reason))
+                    tostring(cur), wantJumps, reason))
             end
         end
     elseif State.overrideMaxJumps ~= nil then
-        -- пассивку сняли / мод выключили: вернуть ваниль = 1 + остаток эффектов
-        local vanilla = math.floor(1 + SumSkillValue(pas, EFFECT_JUMPCOUNT) + 0.5)
+        -- пассивки нет (или мод выключен): вернуть ваниль = 1 + сумма оставшихся эффектов
+        local vanilla = math.floor(1 + SumSkillValue(EFFECT_JUMPCOUNT) + 0.5)
         local ok = pcall(function() mv.JumpMaxCount = vanilla end)
         if ok then
             State.overrideMaxJumps = nil
@@ -361,147 +371,156 @@ local function Reconcile(reason)
         end
     end
 
-    -- === 3) Anti-Gravity Belt: сила прыжка (свой множитель в карте) ===
-    local hasJP = HasPassive(EFFECT_JUMPPOWER)
-    local wantRate = (Config.Enabled and hasJP) and Config.JumpPowerMult or 1.0
-    if wantRate ~= State.lastWantRate then
+    -- === Anti-Gravity Belt: сила прыжка (наш множитель в карте) ===
+    local wantRate = (Config.Enabled and HasPassive(EFFECT_JUMPPOWER))
+        and Config.JumpPowerMult
+        or 1.0
+    if wantRate ~= State.appliedMult then
         if SetOurJumpMult(wantRate) then
+            State.appliedMult = wantRate
             if wantRate ~= 1.0 then
-                State.ourMultApplied = true
-                Log(string.format("ПОЯС: наш множитель силы прыжка x%.2f применён (%s)", wantRate, reason))
+                Log(string.format("ПОЯС: множитель силы прыжка x%.2f применён (%s)", wantRate, reason))
             else
-                State.ourMultApplied = false
-                Log(string.format("ПОЯС: наш множитель сброшен до x1.00 (%s)", reason))
+                Log(string.format("ПОЯС: множитель сброшен до x1.00 (%s)", reason))
             end
-            State.lastWantRate = wantRate
         end
-    elseif wantRate ~= 1.0 then
-        -- переподтверждаем (на случай, если натив почистил нашу запись в карте)
-        SetOurJumpMult(wantRate)
     end
 end
 
 -- ---------------------------------------------------------------------------
--- ХУК 1: начало воздушного рывка -> дистанция/время
--- (дэш начинается только если пассивка AirDash активна — натив сам гейтит)
+-- РЫВОК: параметры пишутся в объект действия в момент его старта.
+-- Рывок в принципе невозможен без активной пассивки AirDash — натив сам
+-- гейтит ввод, но мы всё равно перепроверяем пассивку (твой мод-выдаватель
+-- пассивок тоже попадает под проверку: пассивка есть -> дэш усилен).
 -- ---------------------------------------------------------------------------
-local function OnAirDashBegin(self)
-    local action = UnwrapParam(self)
+local function ApplyDashParams(action)
     if not IsValidObj(action) then return end
     State.statDash = State.statDash + 1
 
     local isLocal = false
-    if GetContext() then
+    if ValidateContext() then
         local owner = call(function() return action:GetActionCharacter() end)
         isLocal = SameUObject(owner, State.char)
     end
 
-    -- если мод выключен / это не наш игрок / пассивки нет — пишем ВАНИЛЬ
-    -- (заодно сбрасываем свои значения, оставшиеся на переиспользуемом объекте)
-    local dist, dashTime, tag = VANILLA_DASH_DISTANCE, VANILLA_DASH_TIME, "ваниль"
+    local dist, dashTime = VANILLA_DASH_DISTANCE, VANILLA_DASH_TIME
     if Config.Enabled and isLocal and HasPassive(EFFECT_AIRDASH) then
         dist = VANILLA_DASH_DISTANCE * Config.AirDashDistanceMult
         dashTime = VANILLA_DASH_TIME * Config.AirDashTimeMult
-        tag = string.format("x%.2f", Config.AirDashDistanceMult)
     end
 
     local ok = pcall(function()
         action.Const_MoveDistance = dist
         action.StepTime = dashTime
     end)
-
     State.lastDash = string.format("дистанция %.0f см, время %.2f с", dist, dashTime)
     if ok then
-        Log(string.format("РЫВОК #%d: %s (%s)", State.statDash, State.lastDash, tag))
-        if Config.Debug then
-            ExecuteInGameThread(function()
-                local v = call(function() return State.movement.Velocity end)
-                if v then
-                    local speed = math.sqrt((v.X or 0) ^ 2 + (v.Y or 0) ^ 2 + (v.Z or 0) ^ 2)
-                    DLog(string.format("  скорость игрока после рывка: %.0f см/с", speed))
-                end
-            end)
-        end
+        DLog(string.format("РЫВОК #%d: %s", State.statDash, State.lastDash))
     else
-        Log("РЫВОК: ОШИБКА записи в BP_ActionAirDashBase (Const_MoveDistance/StepTime)")
+        Log("РЫВОК: ошибка записи Const_MoveDistance/StepTime")
     end
 end
 
--- Регистрация хука рывка отложенно: класс BP грузится вместе с миром
-local function TryRegisterDashHook()
-    if State.dashHooked then return end
+-- Регистрация хука рывка — РОВНО ОДИН РАЗ (флаг dashHooked).
+-- Путь: при загрузке мода -> при ClientRestart -> (страховка) при создании
+-- первого объекта действия через NotifyOnNewObject. Ни одного таймера.
+local function TryRegisterDashHook(via)
+    if State.dashHooked then return true end
     local cls = call(function() return StaticFindObject(CLASS_AIRDASH_ACTION) end)
-    if not IsValidObj(cls) then return end -- мир ещё не загрузил класс
+    if not IsValidObj(cls) then return false end
     local ok = pcall(function()
         RegisterHook(CLASS_AIRDASH_ACTION .. ":OnBeginAction", function(self)
-            pcall(function() OnAirDashBegin(self) end)
+            pcall(function() ApplyDashParams(UnwrapParam(self)) end)
         end)
     end)
     if ok then
         State.dashHooked = true
-        Log("хук рывка зарегистрирован: " .. CLASS_AIRDASH_ACTION .. ":OnBeginAction")
-    else
-        DLog("не удалось зарегистрировать хук рывка, повторю через " .. Config.HookRetryMs .. " мс")
+        State.dashVia = via
+        Log("хук рывка зарегистрирован (" .. via .. "): " .. CLASS_AIRDASH_ACTION .. ":OnBeginAction")
     end
+    return ok
 end
 
--- ---------------------------------------------------------------------------
--- ХУК 2/3: старт/конец пассивки у игрока -> мгновенная синхронизация.
--- ВАЖНО: натив может звать эти функции напрямую (мимо ProcessEvent) — тогда
--- хук молчит и всё ловит страховочный опрос. Счётчики в «!jd» покажут.
--- ---------------------------------------------------------------------------
-local function ScheduleReconcile(reason)
-    ExecuteInGameThread(function()
-        pcall(function() Reconcile(reason) end)
+-- Страховка: если класс ещё не искался при загрузке/ClientRestart — хук
+-- встанет в момент создания первого объекта рывка (класс уже точно загружен).
+-- После установки колбэк мгновенно выходит (стоимость ~один if).
+pcall(function()
+    NotifyOnNewObject(CLASS_AIRDASH_SHORT, function(obj)
+        if State.dashHooked then return end
+        TryRegisterDashHook("создание объекта")
+        pcall(function() ApplyDashParams(UnwrapParam(obj)) end)
     end)
-end
+end)
 
+-- ---------------------------------------------------------------------------
+-- ХУК: вход в мир / респавн / смена пешки — единственная точка привязки
+-- ---------------------------------------------------------------------------
+pcall(function()
+    RegisterHook("/Script/Engine.PlayerController:ClientRestart", function(self, NewPawn)
+        pcall(function()
+            State.statRestarts = State.statRestarts + 1
+            local controller = UnwrapParam(self)
+            if not IsValidObj(controller) then return end
+            -- только локальный игрок (на хосте/co-op чужие контроллеры игнорируем)
+            if call(function() return controller:IsLocalPlayerController() end) == false then return end
+
+            local pawn = UnwrapParam(NewPawn)
+            -- та же самая пешка (по адресу!) — ничего не делаем, никакого спама
+            if State.charAddr ~= nil and AddrOf(pawn) == State.charAddr then return end
+
+            BindContext(controller, pawn)
+            TryRegisterDashHook("ClientRestart")
+            Reconcile("вход/респавн")
+        end)
+    end)
+end)
+
+-- ---------------------------------------------------------------------------
+-- ХУКИ: надел / снял предмет с пассивкой
+-- ---------------------------------------------------------------------------
 pcall(function()
     RegisterHook("/Script/Pal.PalPassiveSkillComponent:OnStartSkillEffect", function(self, effectType, value)
-        local comp = UnwrapParam(self)
-        if not GetContext() then return end
-        if not SameUObject(comp, State.passive) then return end -- не наш игрок
-        State.statPassiveStart = State.statPassiveStart + 1
-        local t = tonumber(UnwrapParam(effectType))
-        local v = tonumber(UnwrapParam(value))
-        if t == EFFECT_JUMPCOUNT or t == EFFECT_JUMPPOWER or t == EFFECT_AIRDASH then
-            Log(string.format("пассивка СТАРТ: %s = %s", EffectName(t), tostring(v)))
-            ScheduleReconcile("passive start")
-        else
-            DLog("пассивка СТАРТ: " .. EffectName(t) .. " = " .. tostring(v))
-        end
+        pcall(function()
+            if not EnsureContext() then return end
+            if not SameUObject(UnwrapParam(self), State.passive) then return end
+            State.statPassiveStart = State.statPassiveStart + 1
+            local t = tonumber(UnwrapParam(effectType))
+            if t == EFFECT_JUMPCOUNT or t == EFFECT_JUMPPOWER or t == EFFECT_AIRDASH then
+                Log("пассивка СТАРТ: " .. EffectName(t) .. " = " .. tostring(tonumber(UnwrapParam(value))))
+                Reconcile("пассивка start")
+            end
+        end)
     end)
 end)
 
 pcall(function()
     RegisterHook("/Script/Pal.PalPassiveSkillComponent:OnEndSkillEffect", function(self, effectType)
-        local comp = UnwrapParam(self)
-        if not GetContext() then return end
-        if not SameUObject(comp, State.passive) then return end
-        State.statPassiveEnd = State.statPassiveEnd + 1
-        local t = tonumber(UnwrapParam(effectType))
-        if t == EFFECT_JUMPCOUNT or t == EFFECT_JUMPPOWER or t == EFFECT_AIRDASH then
-            Log("пассивка КОНЕЦ: " .. EffectName(t))
-            ScheduleReconcile("passive end")
-        else
-            DLog("пассивка КОНЕЦ: " .. EffectName(t))
-        end
+        pcall(function()
+            if not EnsureContext() then return end
+            if not SameUObject(UnwrapParam(self), State.passive) then return end
+            State.statPassiveEnd = State.statPassiveEnd + 1
+            local t = tonumber(UnwrapParam(effectType))
+            if t == EFFECT_JUMPCOUNT or t == EFFECT_JUMPPOWER or t == EFFECT_AIRDASH then
+                Log("пассивка КОНЕЦ: " .. EffectName(t))
+                Reconcile("пассивка end")
+            end
+        end)
     end)
 end)
 
 -- ---------------------------------------------------------------------------
--- ХУК 4 (ТОЛЬКО ДЛЯ ТЕСТА): логируем, как ваниль применяет множитель прыжка.
--- По этим строкам станет ясно, через что работает пояс (+25%).
--- При интеграции в основной мод этот хук удаляется.
+-- ХУК-СТРАХОВКА: срабатывает в момент прыжка (ДО его выполнения).
+-- Если снятие предмета пролетело мимо хуков пассивок — именно здесь
+-- гарантированно откатим «прыжок в космос». В простое не вызывается вообще.
 -- ---------------------------------------------------------------------------
 pcall(function()
-    RegisterHook("/Script/Pal.PalCharacterMovementComponent:SetJumpZVelocityMultiplier", function(self, flagName, rate)
-        local mv = UnwrapParam(self)
-        if not GetContext() then return end
-        if not SameUObject(mv, State.movement) then return end
-        State.statSetJump = State.statSetJump + 1
-        Log(string.format("ваниль: SetJumpZVelocityMultiplier('%s', %s)",
-            FNameToStr(UnwrapParam(flagName)), tostring(tonumber(UnwrapParam(rate)))))
+    RegisterHook("/Script/Pal.PalCharacterMovementComponent:Jump", function(self)
+        pcall(function()
+            if not EnsureContext() then return end
+            if not SameUObject(UnwrapParam(self), State.movement) then return end
+            State.statJump = State.statJump + 1
+            Reconcile("прыжок")
+        end)
     end)
 end)
 
@@ -514,34 +533,31 @@ local function PrintStatus()
         Config.Enabled and "ВКЛ" or "ВЫКЛ",
         Config.AirDashDistanceMult, Config.AirDashTimeMult,
         Config.ExtraJumpCount, Config.JumpPowerMult))
-    if not GetContext() then
-        Log("игрок ещё не найден — зайди в мир")
-        Log("=====================================================")
-        return
+    if not ValidateContext() then
+        Log("игрок не привязан (жду ClientRestart — вход в мир/респавн)")
+    else
+        Log(string.format("пассивки: AirDash=%s, JumpCount_Increase=%s, JumpPower_Increase=%s",
+            tostring(HasPassive(EFFECT_AIRDASH)),
+            tostring(HasPassive(EFFECT_JUMPCOUNT)),
+            tostring(HasPassive(EFFECT_JUMPPOWER))))
+        local jmc = call(function() return State.movement.JumpMaxCount end)
+        local jzv = call(function() return State.movement.JumpZVelocity end)
+        Log(string.format("движение: JumpMaxCount=%s, JumpZVelocity=%s, наш множитель=%s, верхом=%s",
+            tostring(jmc), tostring(jzv), tostring(State.appliedMult), tostring(IsRidingNow())))
     end
-    Log(string.format("пассивки: AirDash=%s, JumpCount_Increase=%s, JumpPower_Increase=%s",
-        tostring(HasPassive(EFFECT_AIRDASH)),
-        tostring(HasPassive(EFFECT_JUMPCOUNT)),
-        tostring(HasPassive(EFFECT_JUMPPOWER))))
-    local jmc = call(function() return State.movement.JumpMaxCount end)
-    local jzv = call(function() return State.movement.JumpZVelocity end)
-    local mult = call(function() return State.movement:GetJumpZVelocityMultiplier() end)
-    local riding = IsRidingNow()
-    Log(string.format("движение: JumpMaxCount=%s, JumpZVelocity=%s, множитель прыжка (итог)=%s, верхом=%s",
-        tostring(jmc), tostring(jzv), tostring(mult), tostring(riding)))
-    Log(string.format("счётчики: рывков %d | passive start %d | passive end %d | SetJumpZVelocityMultiplier %d",
-        State.statDash, State.statPassiveStart, State.statPassiveEnd, State.statSetJump))
+    Log(string.format("хук рывка: %s%s | ClientRestart: %d",
+        State.dashHooked and "зарегистрирован" or "НЕ установлен",
+        State.dashHooked and (" (" .. State.dashVia .. ")") or "",
+        State.statRestarts))
+    Log(string.format("счётчики событий: рывков %d | прыжков %d | пассивка start %d | пассивка end %d",
+        State.statDash, State.statJump, State.statPassiveStart, State.statPassiveEnd))
     Log("последний рывок: " .. State.lastDash)
-    Log("хук рывка: " .. (State.dashHooked and "зарегистрирован" or "ЕЩЁ НЕТ (класс не загружен?)"))
     Log("конфиг: " .. (State.configPath or "встроенные значения"))
     Log("=====================================================")
 end
 
 local function PrintSkills()
-    if not GetContext() then
-        Log("игрок не найден")
-        return
-    end
+    if not EnsureContext() then Log("игрок не привязан"); return end
     local infos = call(function() return State.passive.SkillInfos end)
     local n = ArrCount(infos)
     Log("---- активные пассивки игрока (SkillInfos, групп: " .. n .. ") ----")
@@ -566,7 +582,7 @@ local function PrintHelp()
 end
 
 -- ---------------------------------------------------------------------------
--- ХУК 5: тест-команды в игровом чате
+-- ХУК: тест-команды в чате
 -- ---------------------------------------------------------------------------
 local function HandleChat(rawMsg)
     local msg = tostring(rawMsg or "")
@@ -585,7 +601,7 @@ local function HandleChat(rawMsg)
     elseif cmd == "on" or cmd == "off" then
         Config.Enabled = (cmd == "on")
         Log("мод " .. (Config.Enabled and "ВКЛЮЧЁН" or "ВЫКЛЮЧЕН (возврат к ванили)"))
-        pcall(function() Reconcile("chat " .. cmd) end)
+        if EnsureContext() then Reconcile("chat " .. cmd) end
     elseif cmd == "dash" then
         if arg then Config.AirDashDistanceMult = math.max(arg, 0.1) end
         Log(string.format("дистанция рывка: x%.2f = %.0f см (ваниль 400)",
@@ -597,16 +613,16 @@ local function HandleChat(rawMsg)
     elseif cmd == "jumps" then
         if arg then Config.ExtraJumpCount = math.max(math.floor(arg), 0) end
         Log("доп. прыжков (Jump Boots): " .. Config.ExtraJumpCount)
-        pcall(function() Reconcile("chat jumps") end)
+        if EnsureContext() then Reconcile("chat jumps") end
     elseif cmd == "power" then
         if arg then Config.JumpPowerMult = math.max(arg, 0.1) end
         Log(string.format("сила прыжка (пояс): x%.2f (1.0 = ваниль)", Config.JumpPowerMult))
-        pcall(function() Reconcile("chat power") end)
+        if EnsureContext() then Reconcile("chat power") end
     elseif cmd == "save" then
         SaveConfig()
     elseif cmd == "reload" then
         LoadConfig()
-        pcall(function() Reconcile("chat reload") end)
+        if EnsureContext() then Reconcile("chat reload") end
     elseif cmd == "debug" then
         Config.Debug = not Config.Debug
         Log("Debug = " .. tostring(Config.Debug))
@@ -626,33 +642,9 @@ pcall(function()
 end)
 
 -- ---------------------------------------------------------------------------
--- Старт
+-- Старт: конфиг + одна попытка хука (класс может быть уже загружен).
+-- Никаких циклов: дальше мод спит до первого события.
 -- ---------------------------------------------------------------------------
 LoadConfig()
-Log("тестовый мод загружен. Команды в чате: !jd (статус), !jd help")
-Log("жду входа в мир — дальше смотри консоль UE4SS")
-
-local function Tick()
-    pcall(function()
-        Reconcile("poll")
-        if not State.dashHooked then TryRegisterDashHook() end
-    end)
-end
-
-if type(LoopInGameThreadWithDelay) == "function" then
-    -- основной вариант: цикл прямо в игровом потоке
-    local ok = pcall(function()
-        LoopInGameThreadWithDelay(Config.ReconcileMs, Tick)
-    end)
-    if not ok and type(LoopAsync) == "function" then
-        pcall(LoopAsync, Config.ReconcileMs, function()
-            ExecuteInGameThread(Tick)
-        end)
-    end
-elseif type(LoopAsync) == "function" then
-    pcall(LoopAsync, Config.ReconcileMs, function()
-        ExecuteInGameThread(Tick)
-    end)
-else
-    Log("ОШИБКА: нет ни LoopInGameThreadWithDelay, ни LoopAsync — опрос недоступен")
-end
+TryRegisterDashHook("загрузка")
+Log("v2 загружен: событийный режим, опросов нет. Команды: !jd (статус), !jd help")
