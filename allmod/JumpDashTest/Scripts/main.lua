@@ -1,50 +1,51 @@
 -- ============================================================================
--- JumpDashTest v2 — ТЕСТОВЫЙ МОД (UE4SS Lua / Palworld)
+-- JumpDashTest v3 — ТЕСТОВЫЙ МОД (UE4SS Lua / Palworld)
 --
--- Что проверяем (перед интеграцией в основной мод):
---   AirDash (эффект 104)            -> ДИСТАНЦИЯ воздушного рывка (ваниль 400 см/0.5 c)
---   JumpCount_Increase (эффект 81)  -> ЧИСЛО доп. прыжков (ваниль +1/+2/+3)
---   JumpPower_Increase (эффект 80)  -> СИЛА (высота) прыжка — Anti-Gravity Belt
+--   AirDash (эффект 104)           -> ДИСТАНЦИЯ воздушного рывка (ваниль 400 см/0.5 c)
+--   JumpCount_Increase (81)        -> ЧИСЛО доп. прыжков (ваниль +1/+2/+3)
+--   JumpPower_Increase (80)        -> СИЛА (высота) прыжка — Anti-Gravity Belt
 --
--- ПРИНЦИПЫ v2 (по итогам теста v1):
---   - НИКАКИХ циклов/опросов/периодических попыток хука. В простое мод не
---     выполняет НИ ОДНОЙ инструкции. Всё событийное:
---       ClientRestart (вход/респавн) -> привязка к игроку + однократный Reconcile
---       OnStart/OnEndSkillEffect     -> надел/снял предмет с пассивкой
---       Jump (перед прыжком)         -> мгновенная сверка/откат (страховка от
---                                       «прыгаю в космос» если событие снятия
---                                       пролетело мимо хуков)
---       OnBeginAction (BP рывка)     -> параметры рывка (хук ставится ОДИН раз)
---   - Объекты сравниваются по АДРЕСУ (GetAddress), а не по идентичности
---     обёрток — обёртки UE4SS каждый раз новые.
---   - Эффект существует ТОЛЬКО пока у игрока есть пассивка (предмет в слоте,
---     с выданной хоть каким модом пассивкой — проверка по компоненту пассивок,
---     а не по ID предмета). Снял предмет -> ваниль немедленно.
+-- Эффект существует ТОЛЬКО пока у игрока есть пассивка (любой предмет в слоте
+-- с этой пассивкой, включая выданную другим модом — проверка по компоненту
+-- пассивок, не по ID предмета). Снял предмет -> ваниль.
+--
+-- v3 (по итогам полевого теста v2):
+--   - УБРАН нативный хук PalCharacterMovementComponent:Jump — после хот-
+--     релоада мода UnregisterHook оставлял нативную функцию прыжка мёртвой
+--     («прыжок перестал работать»). Нативных хуков на движение больше НЕТ.
+--   - Нативные хуки пассивок заменены на BP-хуки HUD-виджета игрока
+--     WBP_PlayerSideInfo_Separated (OnStartPassiveSkill / OnEndPassiveSkill /
+--     OnUpdatePlayerEquipment) — это script-хуки, тот же механизм, что хук
+--     чата и хук рывка, которые работают у тебя стабильно.
+--   - Конфиг: config.lua (Lua) в Scripts/ через require — конвенция UE4SS,
+--     как в PalWarpUltimateTeleport и других твоих модах.
+--   - Опросов/циклов нет: мод в простое не выполняет ни одной инструкции.
+--     Отложенные перепроверки после смены экипировки — два одиночных
+--     ExecuteWithDelay, привязанных к событию (ловят позднюю репликацию).
+--
+-- Все точки (каждая — одна задача):
+--   ClientRestart                     — привязка к игроку (вход/респавн)
+--   WBP_PlayerSideInfo:OnUpdatePlayerEquipment — надел/снял предмет
+--   WBP_PlayerSideInfo:OnStartPassiveSkill     — пассивка появилась
+--   WBP_PlayerSideInfo:OnEndPassiveSkill       — пассивка исчезла
+--   BP_ActionAirDashBase:OnBeginAction         — параметры рывка (1 регистрация)
+--   PalUIChat:OnReceivedChat                   — тест-команды «!jd ...»
 -- ============================================================================
 
 local MOD_NAME = "JumpDashTest"
 local MOD_TAG  = "[JumpDashTest]"
 
 -- ---------------------------------------------------------------------------
--- КОНФИГ (по умолчанию; переопределяется config.txt рядом с main.lua)
+-- Конфиг: дефолты + config.lua (require, конвенция UE4SS)
 -- ---------------------------------------------------------------------------
 local Config = {
     Enabled = true,
-    Debug   = false,   -- подробный лог (для теста можно включить: !jd debug)
+    Debug   = false,
 
-    -- 1) Air Dash Boots: дистанция рывка. 1.0 = ваниль (4 м за 0.5 с).
-    --    Скорость растёт пропорционально: x10 = 40 м за те же полсекунды.
-    AirDashDistanceMult = 5.0,
-    -- Время рывка. 1.0 = ваниль (0.5 с). 0.5 = вдвое резче. >1.25 не ставить
-    -- (срежется внутренним Const_MaxAirborneTime = 0.4 с).
-    AirDashTimeMult     = 1.0,
-
-    -- 2) Jump Boots: число ДОПОЛНИТЕЛЬНЫХ прыжков (ваниль 1/2/3).
-    ExtraJumpCount = 5,
-
-    -- 3) Anti-Gravity Belt: множитель силы прыжка (1.0 = ваниль).
-    --    Высота ~ квадрат: x2.0 силы = ~x4 высоты.
-    JumpPowerMult = 2.0,
+    AirDashDistanceMult = 5.0, -- 1.0 = ваниль (4 м). 10.0 = 40 м за те же 0.5 с
+    AirDashTimeMult     = 1.0, -- 1.0 = ваниль (0.5 с). 0.5 = вдвое резче
+    ExtraJumpCount      = 5,   -- доп. прыжки (Jump Boots), ваниль 1/2/3
+    JumpPowerMult       = 2.0, -- сила прыжка (пояс), высота ~ x^2
 }
 
 -- ---------------------------------------------------------------------------
@@ -58,7 +59,8 @@ local VANILLA_DASH_DISTANCE = 400.0 -- BP_ActionAirDashBase.Const_MoveDistance (
 local VANILLA_DASH_TIME     = 0.5   -- BP_ActionAirDashBase.StepTime (CDO)
 
 local CLASS_AIRDASH_ACTION = "/Game/Pal/Blueprint/Action/Common/BP_ActionAirDashBase.BP_ActionAirDashBase_C"
-local CLASS_AIRDASH_SHORT  = "BP_ActionAirDashBase_C"
+local CLASS_AIRDASH_NOTIFY = "BP_ActionAirDashBase.BP_ActionAirDashBase_C" -- Пакет.Класс для NotifyOnNewObject
+local CLASS_SIDEINFO       = "/Game/Pal/Blueprint/UI/PlayerSIdeUI/WBP_PlayerSideInfo_Separated.WBP_PlayerSideInfo_Separated_C"
 local OUR_MULT_FLAG        = "JumpDashTest" -- имя нашего множителя в JumpZVelocityMultiplierMap
 
 -- ---------------------------------------------------------------------------
@@ -69,18 +71,18 @@ local State = {
     char       = nil, -- пешка игрока
     movement   = nil, -- её UPalCharacterMovementComponent
     passive    = nil, -- её UPalPassiveSkillComponent
-    charAddr   = nil, -- адрес пешки (идентичность проверяем по нему!)
+    charAddr   = nil, -- адрес пешки (идентичность ТОЛЬКО по нему)
 
-    overrideMaxJumps = nil,  -- что МЫ записали в JumpMaxCount (nil = не трогали)
-    appliedMult      = 1.0,  -- множитель прыжка, который МЫ сейчас держим в карте
+    overrideMaxJumps = nil, -- что МЫ записали в JumpMaxCount (nil = не трогали)
+    appliedMult      = 1.0, -- множитель прыжка, который МЫ держим в карте
 
-    dashHooked  = false,     -- хук рывка зарегистрирован (ставится ОДИН раз)
-    dashVia     = "",        -- каким путём встал хук (для !jd status)
-    scanGate    = 0,         -- троттлинг аварийного перепоиска (только по событиям!)
+    dashHooked = false,     -- хук рывка зарегистрирован (ставится ОДИН раз)
+    dashVia   = "",         -- каким путём встал хук (для !jd)
+    scanGate  = 0,          -- троттлинг перепоиска (только по событиям)
 
-    -- счётчики для !jd status
-    statDash = 0, statJump = 0, statPassiveStart = 0, statPassiveEnd = 0,
-    statRestarts = 0, lastDash = "—", configPath = nil,
+    -- счётчики для !jd
+    statDash = 0, statEquip = 0, statPassiveStart = 0, statPassiveEnd = 0,
+    statRestarts = 0, lastDash = "—", configLoaded = false,
 }
 
 -- ---------------------------------------------------------------------------
@@ -101,7 +103,6 @@ local function call(fn)
     return nil
 end
 
--- Достаём UObject из RemoteUnrealParam (обёртки UE4SS)
 local function UnwrapParam(p)
     if p == nil then return nil end
     local t = type(p)
@@ -122,7 +123,7 @@ local function FNameToStr(v)
     return tostring(v)
 end
 
--- АДРЕС объекта — единственная надёжная «идентичность» в UE4SS Lua
+-- Идентичность UObject — только по адресу (обёртки UE4SS каждый раз новые)
 local function AddrOf(o)
     if o == nil then return nil end
     return tonumber(call(function() return o:GetAddress() end))
@@ -142,7 +143,6 @@ local function EffectName(t)
     return "EffectType_" .. tostring(t)
 end
 
--- TArray (несколько вариантов доступа, как в других модах репозитория)
 local function ArrCount(arr)
     if arr == nil then return 0 end
     return tonumber(call(function() return #arr end))
@@ -156,7 +156,7 @@ local function ArrAt(arr, i)
         or call(function() return arr:Get(i - 1) end)
 end
 
--- Сумма EffectValue эффектов данного типа в SkillInfos (= ваниль-значение)
+-- Сумма EffectValue эффектов типа в SkillInfos (= ваниль-значение пассивки)
 local function SumSkillValue(effectType)
     local pas = State.passive
     if not IsValidObj(pas) then return 0.0 end
@@ -179,74 +179,62 @@ local function SumSkillValue(effectType)
 end
 
 -- ---------------------------------------------------------------------------
--- Конфиг-файл (key = value, комментарии после ';')
+-- Загрузка/сохранение config.lua (require — конвенция UE4SS)
 -- ---------------------------------------------------------------------------
-local CONFIG_CANDIDATES = {
-    "Mods/" .. MOD_NAME .. "/config.txt",
-    "../../Mods/" .. MOD_NAME .. "/config.txt",
-    "../../../Mods/" .. MOD_NAME .. "/config.txt",
-}
-
-local function ParseValue(raw)
-    raw = raw:gsub("^[;%s]+", ""):gsub("%s+$", "")
-    if raw == "true" then return true end
-    if raw == "false" then return false end
-    return tonumber(raw)
-end
-
-local function LoadConfig()
-    for _, path in ipairs(CONFIG_CANDIDATES) do
-        local file = call(function() return io.open(path, "r") end)
-        if file then
-            State.configPath = path
-            local applied = 0
-            for line in file:lines() do
-                local k, v = line:match("^%s*([%w_]+)%s*=%s*(.-)%s*$")
-                if k and v and Config[k] ~= nil and type(Config[k]) ~= "table" then
-                    local parsed = ParseValue(v)
-                    if parsed ~= nil then
-                        if type(Config[k]) == "boolean" then
-                            if type(parsed) == "boolean" then Config[k] = parsed; applied = applied + 1 end
-                        elseif type(parsed) == "number" then
-                            Config[k] = parsed; applied = applied + 1
-                        end
-                    end
-                end
+local function LoadUserConfig()
+    -- сброс кэша require, чтобы !jd reload перечитал файл
+    if package and package.loaded then package.loaded["config"] = nil end
+    local ok, userCfg = pcall(require, "config")
+    if ok and type(userCfg) == "table" then
+        local n = 0
+        for k, v in pairs(userCfg) do
+            if Config[k] ~= nil and type(Config[k]) == type(v) then
+                Config[k] = v
+                n = n + 1
             end
-            file:close()
-            Log("конфиг загружен: " .. path)
-            return true
         end
+        State.configLoaded = true
+        Log("config.lua загружен (значений: " .. n .. ")")
+        return true
     end
-    Log("config.txt не найден — работаю на встроенных значениях")
+    State.configLoaded = false
+    Log("config.lua не найден или содержит ошибку — работаю на встроенных значениях")
     return false
 end
 
-local function SaveConfig()
-    local path = State.configPath or CONFIG_CANDIDATES[1]
-    local file = call(function() return io.open(path, "w") end)
-    if not file then
-        for _, p in ipairs(CONFIG_CANDIDATES) do
-            file = call(function() return io.open(p, "w") end)
-            if file then path = p; State.configPath = p; break end
-        end
+-- Папка со скриптами мода (для записи config.lua) из debug.getinfo
+local function GetScriptDir()
+    local ok, info = pcall(function() return debug.getinfo(1, "S") end)
+    if ok and info and info.source then
+        local src = tostring(info.source):gsub("^@", "")
+        local dir = src:match("^(.*)[/\\][^/\\]+$")
+        if dir and #dir > 0 then return dir end
     end
-    if not file then Log("НЕ УДАЛОСЬ сохранить конфиг"); return end
-    file:write("; " .. MOD_NAME .. " config (комментарии после ';')\n")
-    file:write("Enabled = " .. tostring(Config.Enabled) .. "\n")
-    file:write("Debug = " .. tostring(Config.Debug) .. "\n")
-    file:write("AirDashDistanceMult = " .. tostring(Config.AirDashDistanceMult) .. "\n")
-    file:write("AirDashTimeMult = " .. tostring(Config.AirDashTimeMult) .. "\n")
-    file:write("ExtraJumpCount = " .. tostring(Config.ExtraJumpCount) .. "\n")
-    file:write("JumpPowerMult = " .. tostring(Config.JumpPowerMult) .. "\n")
+    return nil
+end
+
+local function SaveUserConfig()
+    local dir = GetScriptDir()
+    if not dir then Log("НЕ УДАЛОСЬ определить папку мода — конфиг не сохранён"); return end
+    local path = dir .. "/config.lua"
+    local file = call(function() return io.open(path, "w") end)
+    if not file then Log("НЕ УДАЛОСЬ записать " .. path); return end
+    file:write("-- " .. MOD_NAME .. " config (создан командой !jd save)\n")
+    file:write("local config = {\n")
+    file:write("    Enabled = " .. tostring(Config.Enabled) .. ",\n")
+    file:write("    Debug = " .. tostring(Config.Debug) .. ",\n")
+    file:write("    AirDashDistanceMult = " .. tostring(Config.AirDashDistanceMult) .. ",\n")
+    file:write("    AirDashTimeMult = " .. tostring(Config.AirDashTimeMult) .. ",\n")
+    file:write("    ExtraJumpCount = " .. tostring(Config.ExtraJumpCount) .. ",\n")
+    file:write("    JumpPowerMult = " .. tostring(Config.JumpPowerMult) .. ",\n")
+    file:write("}\nreturn config\n")
     file:close()
-    Log("конфиг сохранён: " .. path)
+    Log("config.lua сохранён: " .. path)
 end
 
 -- ---------------------------------------------------------------------------
--- Проверка пассивок: ТОЛЬКО по компоненту пассивок игрока.
--- Работает для ЛЮБЫХ предметов с этой пассивкой (ванильных или выданных
--- другим модом) — пассивка предмета в слое попадает именно туда.
+-- Пассивки: ТОЛЬКО по компоненту пассивок игрока (работает с предметами,
+-- которым пассивку выдал другой мод)
 -- ---------------------------------------------------------------------------
 local function HasPassive(effectType)
     local pas = State.passive
@@ -271,11 +259,10 @@ local function SetOurJumpMult(rate)
 end
 
 -- ---------------------------------------------------------------------------
--- Привязка к игроку. Вызывается ТОЛЬКО по событию ClientRestart
--- (вход в мир / респавн / смена пешки) — не из циклов!
+-- Привязка к игроку — ТОЛЬКО по событию ClientRestart (вход/респавн)
 -- ---------------------------------------------------------------------------
 local function BindContext(controller, pawn)
-    -- best-effort: снять наш множитель со СТАРОГО компонента движения
+    -- откатить наш множитель со старого компонента движения
     if State.movement ~= nil and State.appliedMult ~= 1.0 then
         pcall(function() State.movement:SetJumpZVelocityMultiplier(FName(OUR_MULT_FLAG), 1.0) end)
     end
@@ -298,7 +285,7 @@ local function BindContext(controller, pawn)
     State.movement = mv
     State.passive = ps
     local cls = call(function() return pawn:GetClass():GetName() end)
-    Log("привязка к игроку: " .. tostring(cls) .. " @ 0x" ..
+    Log("привязка к игроку: " .. tostring(cls or "пешка игрока") .. " @ 0x" ..
         string.format("%X", State.charAddr or 0))
 end
 
@@ -310,9 +297,8 @@ local function ValidateContext()
         and IsValidObj(State.passive)
 end
 
--- Аварийный перепоиск: ТОЛЬКО когда контекст потерян (смерть/респавн мимо
--- ClientRestart) и ТОЛЬКО по факту события (прыжок/дэш/пассивка).
--- Каждая 10-я незакреплённая попытка максимум, никаких таймеров.
+-- Перепоиск контекста: ТОЛЬКО по событию и ТОЛЬКО пока контекст потерян
+-- (каждая 10-я попытка), никаких таймеров
 local function EnsureContext()
     if ValidateContext() then return true end
     State.scanGate = State.scanGate + 1
@@ -338,15 +324,16 @@ local function EnsureContext()
 end
 
 -- ---------------------------------------------------------------------------
--- ЯДРО: сверка желаемого состояния с текущими пассивками.
--- Вызывается ТОЛЬКО по событиям. Идемпотентна, логирует только реальные
--- изменения состояния (никакого спама).
+-- ЯДРО: сверка желаемого с текущими пассивками. Идемпотентна, пишет в лог
+-- только реальные изменения. Вызывается ТОЛЬКО по событиям.
+-- forceJumpReset: принудительно вернуть JumpMaxCount к ванили (событие
+-- «пассивка JumpCount закончилась», в т.ч. после хот-релоада мода).
 -- ---------------------------------------------------------------------------
-local function Reconcile(reason)
+local function Reconcile(reason, forceJumpReset)
     if not ValidateContext() then return end
     local mv = State.movement
 
-    -- === Jump Boots: количество доп. прыжков (JumpMaxCount) ===
+    -- Jump Boots: количество доп. прыжков (JumpMaxCount)
     local wantJumps = (Config.Enabled and HasPassive(EFFECT_JUMPCOUNT) and not IsRidingNow())
         and (1 + Config.ExtraJumpCount)
         or nil
@@ -361,22 +348,29 @@ local function Reconcile(reason)
                     tostring(cur), wantJumps, reason))
             end
         end
-    elseif State.overrideMaxJumps ~= nil then
-        -- пассивки нет (или мод выключен): вернуть ваниль = 1 + сумма оставшихся эффектов
+    elseif State.overrideMaxJumps ~= nil or forceJumpReset then
+        -- пассивки нет: вернуть ваниль = 1 + сумма оставшихся эффектов
         local vanilla = math.floor(1 + SumSkillValue(EFFECT_JUMPCOUNT) + 0.5)
-        local ok = pcall(function() mv.JumpMaxCount = vanilla end)
-        if ok then
-            State.overrideMaxJumps = nil
-            Log(string.format("ПРЫЖКИ: возврат к ванили, JumpMaxCount = %d (%s)", vanilla, reason))
+        local cur = tonumber(call(function() return mv.JumpMaxCount end))
+        if cur ~= vanilla then
+            local ok = pcall(function() mv.JumpMaxCount = vanilla end)
+            if ok then
+                Log(string.format("ПРЫЖКИ: возврат к ванили, JumpMaxCount %s -> %d (%s)",
+                    tostring(cur), vanilla, reason))
+            end
         end
+        State.overrideMaxJumps = nil
     end
 
-    -- === Anti-Gravity Belt: сила прыжка (наш множитель в карте) ===
+    -- Anti-Gravity Belt: сила прыжка. Слот в карте движка именован нашим
+    -- флагом, поэтому перезапись ВСЕГДА безопасна и самолечит случай
+    -- «хот-релоад мода при надетом поясе» (множитель в карте пережил релоад,
+    -- а состояние Lua обнулилось).
     local wantRate = (Config.Enabled and HasPassive(EFFECT_JUMPPOWER))
         and Config.JumpPowerMult
         or 1.0
-    if wantRate ~= State.appliedMult then
-        if SetOurJumpMult(wantRate) then
+    if SetOurJumpMult(wantRate) then
+        if wantRate ~= State.appliedMult then
             State.appliedMult = wantRate
             if wantRate ~= 1.0 then
                 Log(string.format("ПОЯС: множитель силы прыжка x%.2f применён (%s)", wantRate, reason))
@@ -387,11 +381,23 @@ local function Reconcile(reason)
     end
 end
 
+-- Отложенные перепроверки после смены экипировки: пассивки могут доехать
+-- репликацией позже события UI. Два ОДИНОЧНЫХ таймера на событие, не цикл.
+local function ScheduleLateChecks(reason)
+    if type(ExecuteWithDelay) ~= "function" then return end
+    pcall(ExecuteWithDelay, 400, function()
+        pcall(function() Reconcile(reason .. " late0.4s") end)
+    end)
+    pcall(ExecuteWithDelay, 1500, function()
+        pcall(function() Reconcile(reason .. " late1.5s") end)
+    end)
+end
+
 -- ---------------------------------------------------------------------------
--- РЫВОК: параметры пишутся в объект действия в момент его старта.
--- Рывок в принципе невозможен без активной пассивки AirDash — натив сам
--- гейтит ввод, но мы всё равно перепроверяем пассивку (твой мод-выдаватель
--- пассивок тоже попадает под проверку: пассивка есть -> дэш усилен).
+-- РЫВОК: параметры пишутся в объект действия в момент старта.
+-- Рывок невозможен без активной пассивки AirDash (натив сам гейтит ввод),
+-- мы всё равно перепроверяем пассивку — предметы из твоего мода-выдавателя
+-- попадают под ту же проверку.
 -- ---------------------------------------------------------------------------
 local function ApplyDashParams(action)
     if not IsValidObj(action) then return end
@@ -421,9 +427,8 @@ local function ApplyDashParams(action)
     end
 end
 
--- Регистрация хука рывка — РОВНО ОДИН РАЗ (флаг dashHooked).
--- Путь: при загрузке мода -> при ClientRestart -> (страховка) при создании
--- первого объекта действия через NotifyOnNewObject. Ни одного таймера.
+-- Регистрация хука рывка — РОВНО ОДИН РАЗ: загрузка -> ClientRestart ->
+-- NotifyOnNewObject (полное имя Пакет.Класс). Ни одного таймера.
 local function TryRegisterDashHook(via)
     if State.dashHooked then return true end
     local cls = call(function() return StaticFindObject(CLASS_AIRDASH_ACTION) end)
@@ -441,11 +446,8 @@ local function TryRegisterDashHook(via)
     return ok
 end
 
--- Страховка: если класс ещё не искался при загрузке/ClientRestart — хук
--- встанет в момент создания первого объекта рывка (класс уже точно загружен).
--- После установки колбэк мгновенно выходит (стоимость ~один if).
 pcall(function()
-    NotifyOnNewObject(CLASS_AIRDASH_SHORT, function(obj)
+    NotifyOnNewObject(CLASS_AIRDASH_NOTIFY, function(obj)
         if State.dashHooked then return end
         TryRegisterDashHook("создание объекта")
         pcall(function() ApplyDashParams(UnwrapParam(obj)) end)
@@ -453,7 +455,7 @@ pcall(function()
 end)
 
 -- ---------------------------------------------------------------------------
--- ХУК: вход в мир / респавн / смена пешки — единственная точка привязки
+-- ХУК: вход в мир / респавн — единственная точка привязки к игроку
 -- ---------------------------------------------------------------------------
 pcall(function()
     RegisterHook("/Script/Engine.PlayerController:ClientRestart", function(self, NewPawn)
@@ -461,11 +463,9 @@ pcall(function()
             State.statRestarts = State.statRestarts + 1
             local controller = UnwrapParam(self)
             if not IsValidObj(controller) then return end
-            -- только локальный игрок (на хосте/co-op чужие контроллеры игнорируем)
             if call(function() return controller:IsLocalPlayerController() end) == false then return end
 
             local pawn = UnwrapParam(NewPawn)
-            -- та же самая пешка (по адресу!) — ничего не делаем, никакого спама
             if State.charAddr ~= nil and AddrOf(pawn) == State.charAddr then return end
 
             BindContext(controller, pawn)
@@ -476,50 +476,48 @@ pcall(function()
 end)
 
 -- ---------------------------------------------------------------------------
--- ХУКИ: надел / снял предмет с пассивкой
+-- ХУКИ BP-виджета игрока (script-хуки, безопасны при хот-релоаде):
+-- WBP_PlayerSideInfo_Separated — HUD игрока; сам биндится к делегатам
+-- PalPassiveSkillComponent (OnStartSkillEffect/OnEndSkillEffect) и обновляет
+-- слоты экипировки, значит эти функции зовутся при надевании/снятии.
 -- ---------------------------------------------------------------------------
 pcall(function()
-    RegisterHook("/Script/Pal.PalPassiveSkillComponent:OnStartSkillEffect", function(self, effectType, value)
+    RegisterHook(CLASS_SIDEINFO .. ":OnUpdatePlayerEquipment", function(self, itemSlot, slotType)
         pcall(function()
-            if not EnsureContext() then return end
-            if not SameUObject(UnwrapParam(self), State.passive) then return end
+            State.statEquip = State.statEquip + 1
+            DLog("экипировка изменилась (OnUpdatePlayerEquipment)")
+            if EnsureContext() then
+                Reconcile("экипировка")
+                ScheduleLateChecks("экипировка")
+            end
+        end)
+    end)
+end)
+
+pcall(function()
+    RegisterHook(CLASS_SIDEINFO .. ":OnStartPassiveSkill", function(self, effectType, value)
+        pcall(function()
             State.statPassiveStart = State.statPassiveStart + 1
             local t = tonumber(UnwrapParam(effectType))
             if t == EFFECT_JUMPCOUNT or t == EFFECT_JUMPPOWER or t == EFFECT_AIRDASH then
                 Log("пассивка СТАРТ: " .. EffectName(t) .. " = " .. tostring(tonumber(UnwrapParam(value))))
-                Reconcile("пассивка start")
             end
+            if EnsureContext() then Reconcile("пассивка start") end
         end)
     end)
 end)
 
 pcall(function()
-    RegisterHook("/Script/Pal.PalPassiveSkillComponent:OnEndSkillEffect", function(self, effectType)
+    RegisterHook(CLASS_SIDEINFO .. ":OnEndPassiveSkill", function(self, effectType)
         pcall(function()
-            if not EnsureContext() then return end
-            if not SameUObject(UnwrapParam(self), State.passive) then return end
             State.statPassiveEnd = State.statPassiveEnd + 1
             local t = tonumber(UnwrapParam(effectType))
             if t == EFFECT_JUMPCOUNT or t == EFFECT_JUMPPOWER or t == EFFECT_AIRDASH then
                 Log("пассивка КОНЕЦ: " .. EffectName(t))
-                Reconcile("пассивка end")
             end
-        end)
-    end)
-end)
-
--- ---------------------------------------------------------------------------
--- ХУК-СТРАХОВКА: срабатывает в момент прыжка (ДО его выполнения).
--- Если снятие предмета пролетело мимо хуков пассивок — именно здесь
--- гарантированно откатим «прыжок в космос». В простое не вызывается вообще.
--- ---------------------------------------------------------------------------
-pcall(function()
-    RegisterHook("/Script/Pal.PalCharacterMovementComponent:Jump", function(self)
-        pcall(function()
-            if not EnsureContext() then return end
-            if not SameUObject(UnwrapParam(self), State.movement) then return end
-            State.statJump = State.statJump + 1
-            Reconcile("прыжок")
+            if EnsureContext() then
+                Reconcile("пассивка end", t == EFFECT_JUMPCOUNT)
+            end
         end)
     end)
 end)
@@ -533,6 +531,7 @@ local function PrintStatus()
         Config.Enabled and "ВКЛ" or "ВЫКЛ",
         Config.AirDashDistanceMult, Config.AirDashTimeMult,
         Config.ExtraJumpCount, Config.JumpPowerMult))
+    Log("конфиг: " .. (State.configLoaded and "config.lua (Scripts/)" or "встроенные значения (config.lua не найден)"))
     if not ValidateContext() then
         Log("игрок не привязан (жду ClientRestart — вход в мир/респавн)")
     else
@@ -549,10 +548,9 @@ local function PrintStatus()
         State.dashHooked and "зарегистрирован" or "НЕ установлен",
         State.dashHooked and (" (" .. State.dashVia .. ")") or "",
         State.statRestarts))
-    Log(string.format("счётчики событий: рывков %d | прыжков %d | пассивка start %d | пассивка end %d",
-        State.statDash, State.statJump, State.statPassiveStart, State.statPassiveEnd))
+    Log(string.format("счётчики событий: рывков %d | экипировка %d | пассивка start %d | пассивка end %d",
+        State.statDash, State.statEquip, State.statPassiveStart, State.statPassiveEnd))
     Log("последний рывок: " .. State.lastDash)
-    Log("конфиг: " .. (State.configPath or "встроенные значения"))
     Log("=====================================================")
 end
 
@@ -582,7 +580,7 @@ local function PrintHelp()
 end
 
 -- ---------------------------------------------------------------------------
--- ХУК: тест-команды в чате
+-- Тест-команды в чате
 -- ---------------------------------------------------------------------------
 local function HandleChat(rawMsg)
     local msg = tostring(rawMsg or "")
@@ -619,9 +617,9 @@ local function HandleChat(rawMsg)
         Log(string.format("сила прыжка (пояс): x%.2f (1.0 = ваниль)", Config.JumpPowerMult))
         if EnsureContext() then Reconcile("chat power") end
     elseif cmd == "save" then
-        SaveConfig()
+        SaveUserConfig()
     elseif cmd == "reload" then
-        LoadConfig()
+        LoadUserConfig()
         if EnsureContext() then Reconcile("chat reload") end
     elseif cmd == "debug" then
         Config.Debug = not Config.Debug
@@ -642,9 +640,8 @@ pcall(function()
 end)
 
 -- ---------------------------------------------------------------------------
--- Старт: конфиг + одна попытка хука (класс может быть уже загружен).
--- Никаких циклов: дальше мод спит до первого события.
+-- Старт: конфиг + одна попытка хука рывка. Дальше мод спит до события.
 -- ---------------------------------------------------------------------------
-LoadConfig()
+LoadUserConfig()
 TryRegisterDashHook("загрузка")
-Log("v2 загружен: событийный режим, опросов нет. Команды: !jd (статус), !jd help")
+Log("v3 загружен: событийный режим (BP-хуки виджета), нативных хуков движения нет. Команды: !jd, !jd help")
