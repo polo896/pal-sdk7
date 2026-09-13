@@ -719,3 +719,420 @@ if CONFIG.EnableUI then
     registerEscClose()
 end
 
+-- ============================================================================
+-- !autobreed - background auto-collect from Breeding Farm (additive block)
+-- ----------------------------------------------------------------------------
+-- Deliberately NOT built on the !eggin/!eggout call paths. Hard rules here:
+--   1. The background tick NEVER runs global scans (no FindAllOf/FindFirstOf),
+--      NEVER iterates the base object list and NEVER touches chests.
+--      Steady-state tick = a few direct TMap lookups by GUID
+--      (PalMapObjectManager:FindConcreteModel, ItemContainerManager:GetContainer).
+--   2. UObject handles are NEVER cached across calls (UE4SS GC invalidates
+--      them -> crash after 10-30 min). Only plain GUID tables {A,B,C,D} are
+--      stored; every object is resolved live at the moment it is needed.
+--   3. The only expensive step (base discovery scan) runs once per enable and,
+--      as a rate-limited fallback, at most once per RescanBackoffSeconds.
+--   4. Flow: Breeding Farm -> player inventory (eggs stay there between
+--      phases), then player inventory -> incubators. Chests are never a source.
+-- ============================================================================
+local AUTOBREED = {
+    Version = "1.0.0",
+    Command = "!autobreed",
+    IntervalSeconds = 5.0,        -- background check period; tick body costs microseconds
+    FillDelayMs = 1200,           -- wait for the server to commit picked eggs before moving them
+                                  -- (raise this to keep eggs longer in the inventory)
+    RescanBackoffSeconds = 60.0,  -- minimum gap between fallback discovery scans
+    MaxMovesPerRun = 50,          -- eggs moved to incubators per fill phase
+    CommandDedupSeconds = 0.35,
+    BaseDetectMargin = 3000.0,
+}
+
+local ab = {
+    enabled = false,
+    running = false,        -- background delay-chain alive
+    busy = false,
+    baseId = nil,           -- plain {A,B,C,D}
+    farms = {},             -- [guidString] = { id = {A,B,C,D} }
+    incubators = {},        -- [guidString] = { id = {A,B,C,D}, containerId = {ID={A,B,C,D}}|nil }
+    nextRescanAt = 0,
+    forceRescan = false,
+    fillScheduled = false,
+    leftoverEggs = false,
+    lastCommandAt = -1,
+    lastFullNoticeAt = -1,
+}
+
+local function abNow() return os.clock() end
+
+-- Utility CDO resolved live every time - never cached.
+local function abUtility()
+    return call(function() return StaticFindObject(CLASS.Utility) end)
+end
+
+-- Notification without FindFirstOf: direct utility call, then EnterChat fallback.
+local function abNotice(text, ctx)
+    print(CONFIG.LogPrefix .. text)
+    if ctx.playerUId and isUObject(ctx.utility) and isUObject(ctx.world) then
+        if call(function() ctx.utility:SendSystemToPlayerChat(ctx.world, text, {ctx.playerUId}); return true end) then return end
+    end
+    if isUObject(ctx.playerState) then
+        call(function() ctx.playerState:EnterChat(FText(text), 1) end)
+    end
+end
+
+-- Fresh player/world context per call. UEHelpers only - zero object scans.
+local function abContext()
+    local UEHelpers = call(function() return require("UEHelpers") end)
+    if type(UEHelpers) ~= "table" then return nil end
+    local controller = call(function() return UEHelpers.GetPlayerController() end)
+        or call(function() return UEHelpers:GetPlayerController() end)
+    if not isUObject(controller) then return nil end
+    local world = call(function() return UEHelpers.GetWorld() end)
+        or call(function() return UEHelpers:GetWorld() end)
+    local playerState = call(function() return controller:GetPalPlayerState() end)
+    if not isUObject(world) or not isUObject(playerState) then return nil end
+    return {
+        controller = controller,
+        world = world,
+        playerState = playerState,
+        playerUId = guidToTable(call(function() return controller:GetPlayerUId() end)),
+        utility = abUtility(),
+    }
+end
+
+-- ONE-SHOT discovery of the current base: collects ONLY breeding farm and
+-- incubator instance ids as plain GUIDs. Never classifies or opens chests.
+local function abDiscover(ctx)
+    local utility, world = ctx.utility, ctx.world
+    local pawn = call(function() return ctx.controller:GetPawn() end)
+    local loc = isUObject(pawn) and call(function() return pawn:K2_GetActorLocation() end)
+    if not loc then return false, "no player position" end
+
+    local campMgr = isUObject(utility) and call(function() return utility:GetBaseCampManager(world) end)
+    local baseModel = isUObject(campMgr) and call(function() return campMgr:GetInRangedBaseCamp(loc, AUTOBREED.BaseDetectMargin) end)
+    if not isUObject(baseModel) then return false, "no base camp in range" end
+
+    local baseId = guidToTable(call(function() return baseModel:GetId() end))
+    if not baseId then return false, "base id unreadable" end
+
+    local mapMgr = call(function() return utility:GetMapObjectManager(world) end)
+    if not isUObject(mapMgr) then return false, "no map object manager" end
+
+    local collection = call(function() return baseModel.MapObjectCollection end)
+    local repArray = isUObject(collection) and call(function() return collection.MapObjectInstanceIdRepInfoArray end)
+    local items = repArray and call(function() return repArray.Items end)
+    local count = getArrayCount(items)
+
+    local farms, incubators = {}, {}
+    for i = 1, count do
+        local item = getArrayElement(items, i)
+        local instId = item and call(function() return item.InstanceId end)
+        if instId then
+            local c = call(function() return mapMgr:FindConcreteModel(instId) end)
+            if isUObject(c) then
+                local cn = asString(call(function() return c:GetClass():GetFName() end)) or ""
+                local g = guidToTable(instId)
+                if g then
+                    if cn:find("BreedFarm", 1, true) then
+                        farms[guidString(g)] = { id = g }
+                    elseif cn:find("HatchingEgg", 1, true) then
+                        incubators[guidString(g)] = { id = g, containerId = getModelContainerId(c) }
+                    end
+                end
+            end
+        end
+    end
+
+    ab.baseId = baseId
+    ab.farms = farms
+    ab.incubators = incubators
+
+    local nf, ni = 0, 0
+    for _ in pairs(farms) do nf = nf + 1 end
+    for _ in pairs(incubators) do ni = ni + 1 end
+    return true, string.format("farms: %d, incubators: %d", nf, ni)
+end
+
+-- One-shot delayed action (fork API). Callback re-checks state when it fires.
+local function abDelay(ms, fn)
+    if type(ExecuteWithDelay) ~= "function" then return false end
+    return call(function() ExecuteWithDelay(ms, fn); return true end) == true
+end
+
+-- Inventory -> incubators. Runs only after a farm pickup, an incubator-empty
+-- event or a new-incubator registration. Never polled.
+local function abFillPhase()
+    if not ab.enabled then return end
+    local ctx = abContext()
+    if not ctx then return end
+    local utility, world = ctx.utility, ctx.world
+
+    local invCont = getInventoryContainer(ctx.playerState, utility, world)
+    if not isUObject(invCont) then return end
+    local invId = getModelContainerId(nil, invCont, nil)
+    if not invId then return end
+
+    local eggSlots = {}
+    collectEggSlotsFromContainer(invCont, invId, eggSlots)
+    if #eggSlots == 0 then
+        ab.leftoverEggs = false
+        return
+    end
+
+    local contMgr = call(function() return utility:GetItemContainerManager(world) end)
+    if not isUObject(contMgr) then return end
+    local mapMgr = call(function() return utility:GetMapObjectManager(world) end)
+
+    local targets, totalFree = {}, 0
+    for _, inc in pairs(ab.incubators) do
+        local container = inc.containerId and call(function() return contMgr:GetContainer(inc.containerId) end)
+        if not isUObject(container) and isUObject(mapMgr) then
+            -- container id stale or unknown: repair live via direct lookup
+            local c = call(function() return mapMgr:FindConcreteModel(inc.id) end)
+            if isUObject(c) then
+                inc.containerId = getModelContainerId(c)
+                container = inc.containerId and call(function() return contMgr:GetContainer(inc.containerId) end)
+            end
+        end
+        if isUObject(container) then
+            local free = 0
+            forEachSlot(container, function(s) if slotIsEmpty(s) then free = free + 1 end end)
+            if free > 0 then
+                targets[#targets + 1] = { containerId = inc.containerId, free = free }
+                totalFree = totalFree + free
+            end
+        end
+    end
+
+    if totalFree == 0 then
+        ab.leftoverEggs = true
+        ab.forceRescan = true  -- maybe an incubator was built after enable; backoff-limited
+        if abNow() - ab.lastFullNoticeAt > AUTOBREED.RescanBackoffSeconds then
+            ab.lastFullNoticeAt = abNow()
+            abNotice("[AutoBreed] Incubators are full - eggs kept in inventory.", ctx)
+        end
+        return
+    end
+
+    local transmitter = call(function() return utility:GetNetworkTransmitter(world) end)
+    local networkItem = isUObject(transmitter) and call(function() return transmitter:GetItem() end)
+    if not isUObject(networkItem) then return end
+
+    local cap = math.min(#eggSlots, AUTOBREED.MaxMovesPerRun)
+    local planned, loaded = 0, 0
+    local reqId = ctx.playerUId or { A = 0, B = 0, C = 0, D = 0 }
+    for t = 1, #targets do
+        local take = math.min(cap - planned, targets[t].free)
+        if take > 0 then
+            local froms = {}
+            for k = 1, take do
+                local egg = eggSlots[planned + k]
+                froms[#froms + 1] = { SlotId = { ContainerId = egg.containerId, SlotIndex = egg.slotIndex }, Num = 1 }
+            end
+            if call(function() networkItem:RequestMoveToContainer_ToServer(reqId, targets[t].containerId, froms); return true end) then
+                loaded = loaded + #froms
+            end
+            planned = planned + #froms
+        end
+        if planned >= cap then break end
+    end
+
+    ab.leftoverEggs = (planned < #eggSlots)
+    if loaded > 0 then
+        abNotice(string.format("[AutoBreed] Loaded %d egg(s) into incubator(s).", loaded), ctx)
+    end
+end
+
+-- Schedule the inventory->incubator phase shortly after a pickup.
+local function abScheduleFill()
+    if ab.fillScheduled then return end
+    ab.fillScheduled = true
+    if not abDelay(AUTOBREED.FillDelayMs, function()
+        ab.fillScheduled = false
+        if ab.enabled then
+            call(function() ExecuteInGameThread(function() pcall(abFillPhase) end); return true end)
+        end
+    end) then
+        ab.fillScheduled = false
+    end
+end
+
+-- Steady-state background job: direct per-farm lookups only.
+-- Cost when no eggs are ready: 2 bridge calls per farm.
+local function abFarmTick(ctx)
+    local mapMgr = isUObject(ctx.utility) and call(function() return ctx.utility:GetMapObjectManager(ctx.world) end)
+    if not isUObject(mapMgr) then return end
+
+    local picked, pawn = 0, nil
+    for _, farm in pairs(ab.farms) do
+        local c = call(function() return mapMgr:FindConcreteModel(farm.id) end)
+        if isUObject(c) then
+            local eggIds = call(function() return c.SpawnedEggInstanceIds end)
+            local n = getArrayCount(eggIds)
+            if n > 0 then
+                for i = 1, n do
+                    local eggGuid = getArrayElement(eggIds, i)
+                    local ec = eggGuid and call(function() return mapMgr:FindConcreteModel(eggGuid) end)
+                    if isUObject(ec) then
+                        local ok = call(function() ec:RequestPickup(false); return true end)
+                        if not ok then
+                            if not isUObject(pawn) then pawn = call(function() return ctx.controller:GetPawn() end) end
+                            if isUObject(pawn) then
+                                call(function() ec:OnTriggerInteract(pawn, INDICATOR_PICKUP) end)
+                            end
+                        end
+                        picked = picked + 1
+                    end
+                end
+            end
+        end
+    end
+
+    if picked > 0 then abScheduleFill() end
+end
+
+local function abTick()
+    if not ab.enabled or ab.busy then return end
+    ab.busy = true
+    local ok, err = pcall(function()
+        local ctx = abContext()
+        if not ctx then return end  -- loading screen / no player yet: skip silently
+
+        if (next(ab.farms) == nil or ab.forceRescan) and abNow() >= ab.nextRescanAt then
+            ab.forceRescan = false
+            abDiscover(ctx)  -- the only bounded scan; safe to fail, retried later
+            ab.nextRescanAt = abNow() + AUTOBREED.RescanBackoffSeconds
+            if ab.leftoverEggs then abScheduleFill() end
+        end
+
+        abFarmTick(ctx)
+    end)
+    ab.busy = false
+    if not ok then print(CONFIG.LogPrefix .. "AutoBreed tick error: " .. tostring(err)) end
+end
+
+local abScheduleTick
+abScheduleTick = function()
+    if not abDelay(math.floor(AUTOBREED.IntervalSeconds * 1000), function()
+        if not ab.enabled then ab.running = false return end
+        call(function() ExecuteInGameThread(function() pcall(abTick) end); return true end)
+        abScheduleTick()
+    end) then
+        ab.running = false
+        print(CONFIG.LogPrefix .. "AutoBreed: ExecuteWithDelay unavailable - scheduler stopped.")
+    end
+end
+
+local function abStartChain()
+    if ab.running then return end
+    if type(ExecuteWithDelay) ~= "function" then
+        print(CONFIG.LogPrefix .. "AutoBreed: fork API 'ExecuteWithDelay' missing - cannot start.")
+        return
+    end
+    ab.running = true
+    abScheduleTick()
+end
+
+local function abEnable(ctx)
+    if ab.enabled then abNotice("[AutoBreed] Already ON.", ctx) return end
+    ab.enabled = true
+    local ok, info = abDiscover(ctx)
+    ab.nextRescanAt = abNow() + AUTOBREED.RescanBackoffSeconds
+    if ok then
+        abNotice(string.format("[AutoBreed] ON (%s). Check every %ds.", info, AUTOBREED.IntervalSeconds), ctx)
+    else
+        abNotice(string.format("[AutoBreed] ON, but discovery failed (%s). Stand inside your base - it retries automatically.", tostring(info)), ctx)
+    end
+    abStartChain()
+end
+
+local function abDisable(ctx)
+    if not ab.enabled then abNotice("[AutoBreed] Already OFF.", ctx) return end
+    ab.enabled = false
+    ab.leftoverEggs = false
+    ab.forceRescan = false
+    abNotice("[AutoBreed] OFF.", ctx)
+end
+
+-- Live registration of structures built after enable: fires only when a new
+-- object of the class is created, never periodically.
+local function abOnNewModel(o, kind)
+    if not ab.enabled or not ab.baseId or not isUObject(o) then return end
+    pcall(function()
+        local belongs = guidToTable(call(function() return o:GetBaseCampIdBelongTo() end))
+        if not guidEquals(belongs, ab.baseId) then return end
+        local g = guidToTable(call(function() return o:GetInstanceId() end))
+        if not g then return end
+        local key = guidString(g)
+        if kind == "farm" then
+            ab.farms[key] = ab.farms[key] or { id = g }
+        elseif not ab.incubators[key] then
+            ab.incubators[key] = { id = g, containerId = getModelContainerId(o) }
+            if ab.leftoverEggs then abScheduleFill() end
+        end
+    end)
+end
+
+-- Hatched-pal obtain = incubator slot freed. Body is a flag check only.
+local function abOnIncubatorObtained()
+    if ab.enabled and ab.leftoverEggs then abScheduleFill() end
+end
+
+local function abOnChat(context, message)
+    local r = unwrap(message)
+    local text = r and call(function() return r.Message:ToString() end)
+    if not text then return end
+    local line = text:gsub("^%s+", ""):gsub("%s+$", ""):lower()
+    local cmd = AUTOBREED.Command
+    if line ~= cmd and line:sub(1, #cmd + 1) ~= cmd .. " " then return end
+
+    local now = abNow()
+    if now - ab.lastCommandAt < AUTOBREED.CommandDedupSeconds then return end
+    ab.lastCommandAt = now
+
+    local arg = line:match("^%S+%s+(%S+)")
+    call(function() ExecuteInGameThread(function()
+        pcall(function()
+            local ctx = abContext()
+            if not ctx then print(CONFIG.LogPrefix .. "AutoBreed: player context unavailable.") return end
+            if arg == "on" or (arg == nil and not ab.enabled) then
+                abEnable(ctx)
+            elseif arg == "off" or (arg == nil and ab.enabled) then
+                abDisable(ctx)
+            elseif arg == "scan" then
+                local ok, info = abDiscover(ctx)
+                ab.nextRescanAt = abNow() + AUTOBREED.RescanBackoffSeconds
+                abNotice("[AutoBreed] Scan: " .. tostring(info), ctx)
+            elseif arg == "status" then
+                local nf, ni = 0, 0
+                for _ in pairs(ab.farms) do nf = nf + 1 end
+                for _ in pairs(ab.incubators) do ni = ni + 1 end
+                abNotice(string.format("[AutoBreed] %s | farms: %d, incubators: %d, eggs waiting: %s",
+                    ab.enabled and "ON" or "OFF", nf, ni, ab.leftoverEggs and "yes" or "no"), ctx)
+            else
+                abNotice(string.format("[AutoBreed] Usage: %s (toggle) | %s on | %s off | %s scan | %s status", cmd, cmd, cmd, cmd, cmd), ctx)
+            end
+        end)
+    end); return true end)
+end
+
+pcall(function()
+    RegisterHook("/Script/Pal.PalUIChat:OnReceivedChat", abOnChat)
+    print(CONFIG.LogPrefix .. "AutoBreed v" .. AUTOBREED.Version .. " ready. Command: '" .. AUTOBREED.Command .. "'")
+end)
+
+-- Incubator slot-free events (used only to re-trigger a pending fill).
+pcall(function() RegisterHook("/Script/Pal.PalMapObjectHatchingEggModelBase:RequestObtainAllHatchedCharacter", abOnIncubatorObtained) end)
+pcall(function() RegisterHook("/Script/Pal.PalMapObjectHatchingEggModelBase:RequestObtainSingleHatchedCharacter", abOnIncubatorObtained) end)
+pcall(function() RegisterHook("/Script/Pal.PalMapObjectHatchingEggModel:ObtainHatchedCharacter_ServerInternal", abOnIncubatorObtained) end)
+
+-- Live registration of freshly built farms/incubators (optional fork API).
+pcall(function()
+    if type(NotifyOnNewObject) == "function" then
+        NotifyOnNewObject("/Script/Pal.PalMapObjectBreedFarmModel", function(o) abOnNewModel(o, "farm") end)
+        NotifyOnNewObject("/Script/Pal.PalMapObjectHatchingEggModel", function(o) abOnNewModel(o, "inc") end)
+        NotifyOnNewObject("/Script/Pal.PalMapObjectHatchingEggModelBase", function(o) abOnNewModel(o, "inc") end)
+        NotifyOnNewObject("/Script/Pal.PalMapObjectMultiHatchingEggModel", function(o) abOnNewModel(o, "inc") end)
+        NotifyOnNewObject("/Script/Pal.PalMapObjectMultiHatchingEggWithBreedModel", function(o) abOnNewModel(o, "inc") end)
+    end
+end)
