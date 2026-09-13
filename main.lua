@@ -1,12 +1,15 @@
 -- ============================================================================
 -- AutoIncubatorManager + Hatch Report UI - By Wol4ara896
 -- ============================================================================
-local VERSION = "2.2.3"
+local VERSION = "2.3.0-autobreed"
 
 local CONFIG = {
     CommandIn  = "!eggin",
     CommandOut = "!eggout",
+    CommandAuto = "!autobreed",
     MaxMovesPerRun = 200,
+    AutoBreedMaxMoves = 100,
+    AutoBreedInterval = 5.0,
     CommandDedupSeconds = 0.35,
     LogPrefix = "[PalEggAutoFiller] ",
     EnableUI  = true,  -- true = GUI on, false = GUI off
@@ -185,6 +188,17 @@ local function getInventoryContainer(playerState, utility, world)
     if not commonId or not isUObject(utility) or not isUObject(world) then return nil end
     local manager = call(function() return utility:GetItemContainerManager(world) end)
     return isUObject(manager) and call(function() return manager:GetContainer(commonId) end) or nil
+end
+
+local function getInventoryContainerAndId(playerState, utility, world)
+    local inv = isUObject(playerState) and call(function() return playerState:GetInventoryData() end)
+    local commonId = isUObject(inv) and call(function() return inv.MyInventoryInfo.CommonContainerId end)
+    if not commonId or not isUObject(utility) or not isUObject(world) then return nil, nil end
+    local manager = call(function() return utility:GetItemContainerManager(world) end)
+    local container = isUObject(manager) and call(function() return manager:GetContainer(commonId) end) or nil
+    local g = guidToTable(commonId.ID)
+    local cId = g and { ID = g } or nil
+    return container, cId
 end
 
 local function isIncubatorModel(o)
@@ -493,6 +507,230 @@ local function harvestBreedFarms(breedFarms, mapObjectManager, pawn)
     return interactedCount
 end
 
+-- ============================================================================
+-- !autobreed : ultra-light farm-only auto collector (no chest scan, no base full scan)
+-- ============================================================================
+local autoBreedEnabled = false
+local autoBreedBusy = false
+local autoBreedLastRun = -100
+local autoBreedLoopStarted = false
+
+local function getBaseModelLight(pawn, utility, world)
+    if not isUObject(pawn) or not isUObject(utility) or not isUObject(world) then return nil end
+    local loc = call(function() return pawn:K2_GetActorLocation() end) or call(function() return pawn:GetActorLocation() end)
+    if not loc then return nil end
+    local locTbl = { X = loc.X, Y = loc.Y, Z = loc.Z }
+    local manager = call(function() return utility:GetBaseCampManager(world) end)
+    if not isUObject(manager) then return nil end
+    local model = call(function() return manager:GetInRangedBaseCamp(locTbl, 3000.0) end)
+    return model
+end
+
+local function getBreedFarmsForBase(baseId)
+    local farms = {}
+    local list = call(function() return FindAllOf("PalMapObjectBreedFarmModel") end) or {}
+    for i = 1, #list do
+        local m = list[i]
+        if isUObject(m) then
+            local bid = guidToTable(call(function() return m:GetBaseCampIdBelongTo() end))
+            if guidEquals(bid, baseId) then farms[#farms + 1] = m end
+        end
+    end
+    return farms
+end
+
+local function getIncubatorsForBase(baseId)
+    local incubators = {}
+    local seen = {}
+    local function addFrom(list)
+        if not list then return end
+        for i = 1, #list do
+            local m = list[i]
+            if isUObject(m) then
+                local bid = guidToTable(call(function() return m:GetBaseCampIdBelongTo() end))
+                if guidEquals(bid, baseId) then
+                    local addr = call(function() return m:GetAddress() end) or tostring(m)
+                    if not seen[addr] then
+                        seen[addr] = true
+                        incubators[#incubators + 1] = m
+                    end
+                end
+            end
+        end
+    end
+    -- PalMapObjectHatchingEggModelBase is parent for all incubators, single FindAllOf is cheapest
+    local baseList = call(function() return FindAllOf("PalMapObjectHatchingEggModelBase") end)
+    if baseList and #baseList > 0 then
+        addFrom(baseList)
+    else
+        addFrom(call(function() return FindAllOf("PalMapObjectHatchingEggModel") end))
+        addFrom(call(function() return FindAllOf("PalMapObjectMultiHatchingEggModel") end))
+        addFrom(call(function() return FindAllOf("PalMapObjectMultiHatchingEggWithBreedModel") end))
+    end
+    return incubators
+end
+
+local function runAutoBreedInternal(controller, world, playerState, playerUId, ctx, silent)
+    -- 1) light base detection via location + BaseCampManager (no FindAllOf)
+    local pawn = isUObject(controller) and (call(function() return controller:GetPawn() end) or call(function() return controller.Pawn end))
+    if not isUObject(pawn) then return 0, 0 end
+    local baseModel = getBaseModelLight(pawn, ctx.utility, world)
+    if not isUObject(baseModel) then return 0, 0 end
+    local baseId = guidToTable(call(function() return baseModel:GetId() end))
+    if not baseId then return 0, 0 end
+
+    local mapObjectManager = getMapObjectManager(world, ctx.utility)
+    local transmitter = isUObject(ctx.utility) and call(function() return ctx.utility:GetNetworkTransmitter(world) end)
+    local networkItem = isUObject(transmitter) and call(function() return transmitter:GetItem() end)
+    if not isUObject(networkItem) then return 0, 0 end
+
+    -- 2) breed farms only for this base (single FindAllOf)
+    local farms = getBreedFarmsForBase(baseId)
+    if #farms == 0 then return 0, 0 end
+
+    local hasFarmEggs = false
+    for i = 1, #farms do
+        if getArrayCount(call(function() return farms[i].SpawnedEggInstanceIds end)) > 0 then hasFarmEggs = true; break end
+    end
+
+    -- 3) inventory eggs only (no chests) - cheap slot scan
+    local invCont, invContId = getInventoryContainerAndId(playerState, ctx.utility, world)
+    local invEggSlots = {}
+    if isUObject(invCont) and invContId then
+        collectEggSlotsFromContainer(invCont, invContId, invEggSlots)
+    end
+
+    if not hasFarmEggs and #invEggSlots == 0 then return 0, 0 end
+
+    local picked = 0
+    if hasFarmEggs then
+        picked = harvestBreedFarms(farms, mapObjectManager, pawn)
+        if picked > 0 then
+            -- re-fetch inventory after pickup (new eggs arrived)
+            invCont, invContId = getInventoryContainerAndId(playerState, ctx.utility, world)
+            invEggSlots = {}
+            if isUObject(invCont) and invContId then
+                collectEggSlotsFromContainer(invCont, invContId, invEggSlots)
+            end
+        end
+    end
+
+    if #invEggSlots == 0 then
+        if not silent and picked > 0 then
+            sendNotice(string.format("AutoBreed: picked %d egg(s) from farm (incubators full).", picked), ctx)
+        end
+        return picked, 0
+    end
+
+    -- 4) incubators only for this base (single FindAllOf, only when we have eggs)
+    local incubators = getIncubatorsForBase(baseId)
+    if #incubators == 0 then return picked, 0 end
+
+    local targets, totalFree = {}, 0
+    for i = 1, #incubators do
+        local container, module_ = getModelContainer(incubators[i])
+        local cId = getModelContainerId(incubators[i], container, module_)
+        if cId and isUObject(container) then
+            local free = 0
+            forEachSlot(container, function(s) if slotIsEmpty(s) then free = free + 1 end end)
+            if free > 0 then
+                targets[#targets + 1] = { containerId = cId, free = free }
+                totalFree = totalFree + free
+            end
+        end
+    end
+    if #targets == 0 then
+        if not silent and picked > 0 then
+            sendNotice(string.format("AutoBreed: picked %d egg(s), incubators full.", picked), ctx)
+        end
+        return picked, 0
+    end
+
+    local planned, loaded = 0, 0
+    local cap = math.min(#invEggSlots, CONFIG.AutoBreedMaxMoves)
+    local reqId = playerUId or { A = os.time(), B = 0, C = 0, D = 0 }
+    for t = 1, #targets do
+        local take = math.min(cap - planned, targets[t].free)
+        if take > 0 then
+            local froms = {}
+            for k = 1, take do
+                local egg = invEggSlots[planned + k]
+                if egg then froms[#froms + 1] = { SlotId = { ContainerId = egg.containerId, SlotIndex = egg.slotIndex }, Num = 1 } end
+            end
+            if #froms > 0 then
+                if call(function() networkItem:RequestMoveToContainer_ToServer(reqId, targets[t].containerId, froms); return true end) then
+                    loaded = loaded + #froms
+                end
+                planned = planned + #froms
+            end
+        end
+        if planned >= cap then break end
+    end
+
+    if not silent and (picked > 0 or loaded > 0) then
+        sendNotice(string.format("AutoBreed: farm +%d, to incubator %d", picked, loaded), ctx)
+    end
+    return picked, loaded
+end
+
+local function runAutoBreedTick()
+    if autoBreedBusy then return end
+    local now = os.clock()
+    if now - autoBreedLastRun < (CONFIG.AutoBreedInterval or 5.0) then return end
+    autoBreedLastRun = now
+    autoBreedBusy = true
+    local ok, err = pcall(function()
+        local UEHelpers = call(function() return require("UEHelpers") end)
+        local controller = (type(UEHelpers) == "table" and call(function() return UEHelpers.GetPlayerController() end)) or call(function() return FindFirstOf("PalPlayerController") end)
+        local world = isUObject(controller) and (type(UEHelpers) == "table" and call(function() return UEHelpers.GetWorld() end) or call(function() return controller:GetWorld() end))
+        local playerState = isUObject(controller) and call(function() return controller:GetPalPlayerState() end)
+        local playerUId = isUObject(controller) and guidToTable(call(function() return controller:GetPlayerUId() end))
+        local utility = getUtility()
+        if not isUObject(controller) or not isUObject(world) or not isUObject(playerState) or not isUObject(utility) then return end
+        local ctx = { world = world, playerState = playerState, playerUId = playerUId, utility = utility }
+        runAutoBreedInternal(controller, world, playerState, playerUId, ctx, true)
+    end)
+    if not ok then print(CONFIG.LogPrefix .. "AutoBreed tick error: " .. tostring(err)) end
+    autoBreedBusy = false
+end
+
+local function ensureAutoBreedLoop()
+    if autoBreedLoopStarted then return end
+    autoBreedLoopStarted = true
+    local loopMs = 1000 -- fixed 1s loop, real interval checked inside runAutoBreedTick via os.clock
+    local intervalMs = math.floor((CONFIG.AutoBreedInterval or 5.0) * 1000)
+    if type(LoopAsync) == "function" then
+        pcall(function()
+            LoopAsync(loopMs, function()
+                if not autoBreedEnabled then return end
+                if autoBreedBusy then return end
+                pcall(function()
+                    if type(ExecuteInGameThread) == "function" then
+                        ExecuteInGameThread(function() pcall(function() runAutoBreedTick() end) end)
+                    else
+                        runAutoBreedTick()
+                    end
+                end)
+            end)
+        end)
+    elseif type(ExecuteWithDelay) == "function" then
+        local function chain()
+            pcall(function()
+                if autoBreedEnabled and not autoBreedBusy then
+                    if type(ExecuteInGameThread) == "function" then
+                        ExecuteInGameThread(function() pcall(function() runAutoBreedTick() end) end)
+                    else
+                        runAutoBreedTick()
+                    end
+                end
+            end)
+            local nextMs = math.floor((CONFIG.AutoBreedInterval or 5.0) * 1000)
+            pcall(function() ExecuteWithDelay(nextMs, chain) end)
+        end
+        pcall(function() ExecuteWithDelay(intervalMs, chain) end)
+    end
+end
+
 local function runEggFillerInternal(controller, world, playerState, playerUId, ctx)
     local baseModel = getInsideBaseCampModel(controller, world)
     local baseId = isUObject(baseModel) and guidToTable(call(function() return baseModel:GetId() end))
@@ -660,36 +898,76 @@ local function onReceivedChat(context, message)
     local line = text:gsub("^%s+", ""):gsub("%s+$", ""):lower()
     local cmdIn  = CONFIG.CommandIn:lower()
     local cmdOut = CONFIG.CommandOut:lower()
+    local cmdAuto = CONFIG.CommandAuto:lower()
 
     local isEggIn  = (line == cmdIn or line:sub(1, #cmdIn + 1) == cmdIn .. " ")
     local isEggOut = (line == cmdOut or line:sub(1, #cmdOut + 1) == cmdOut .. " ")
+    local isAuto   = (line == cmdAuto or line:sub(1, #cmdAuto + 1) == cmdAuto .. " ")
 
-    if not isEggIn and not isEggOut then return end
+    if not isEggIn and not isEggOut and not isAuto then return end
 
     local now = os.clock()
     if now - lastCommandAt < CONFIG.CommandDedupSeconds then return end
     lastCommandAt = now
 
+    local UEHelpers = call(function() return require("UEHelpers") end)
+    local controller = (type(UEHelpers) == "table" and call(function() return UEHelpers.GetPlayerController() end)) or call(function() return FindFirstOf("PalPlayerController") end)
+    local world = isUObject(controller) and (type(UEHelpers) == "table" and call(function() return UEHelpers.GetWorld() end) or call(function() return controller:GetWorld() end))
+    local playerState = isUObject(controller) and call(function() return controller:GetPalPlayerState() end)
+    local playerUId = isUObject(controller) and guidToTable(call(function() return controller:GetPlayerUId() end))
+
+    if not isUObject(controller) or not isUObject(world) or not isUObject(playerState) then return end
+    local ctx = { world = world, playerState = playerState, playerUId = playerUId, utility = getUtility() }
+
+    if isAuto then
+        local args = line:sub(#cmdAuto + 1):gsub("^%s+", "")
+        if args == "" or args == "toggle" then
+            autoBreedEnabled = not autoBreedEnabled
+            if autoBreedEnabled then ensureAutoBreedLoop() end
+            sendNotice(string.format("AutoBreed %s (interval %.1fs) | Commands: on/off/status/run/interval <sec>", autoBreedEnabled and "ENABLED" or "DISABLED", CONFIG.AutoBreedInterval), ctx)
+        elseif args == "on" or args == "enable" or args == "1" then
+            autoBreedEnabled = true
+            ensureAutoBreedLoop()
+            sendNotice(string.format("AutoBreed ENABLED (interval %.1fs)", CONFIG.AutoBreedInterval), ctx)
+        elseif args == "off" or args == "disable" or args == "0" then
+            autoBreedEnabled = false
+            sendNotice("AutoBreed DISABLED", ctx)
+        elseif args == "status" then
+            sendNotice(string.format("AutoBreed %s | interval %.1fs | lastRun %.1fs ago | busy %s", autoBreedEnabled and "ON" or "OFF", CONFIG.AutoBreedInterval, os.clock() - autoBreedLastRun, autoBreedBusy and "yes" or "no"), ctx)
+        elseif args == "run" or args == "now" or args == "once" then
+            if not autoBreedBusy then
+                autoBreedBusy = true
+                local ok, err = pcall(function() runAutoBreedInternal(controller, world, playerState, playerUId, ctx, false) end)
+                autoBreedBusy = false
+                if not ok then sendNotice("AutoBreed error: " .. tostring(err), ctx) end
+            else
+                sendNotice("AutoBreed busy, try again", ctx)
+            end
+        elseif args:sub(1, 8) == "interval" then
+            local numStr = args:sub(9):gsub("^%s+", "")
+            local num = tonumber(numStr)
+            if num and num >= 1 and num <= 120 then
+                CONFIG.AutoBreedInterval = num
+                sendNotice(string.format("AutoBreed interval set to %.1fs (restart with !autobreed on to apply loop)", num), ctx)
+            else
+                sendNotice("Usage: !autobreed interval <1-120> (seconds)", ctx)
+            end
+        else
+            sendNotice("AutoBreed usage: !autobreed [on/off/status/run/interval <sec>]", ctx)
+        end
+        return
+    end
+
     if not busy then
         busy = true
-        local UEHelpers = call(function() return require("UEHelpers") end)
-        local controller = (type(UEHelpers) == "table" and call(function() return UEHelpers.GetPlayerController() end)) or call(function() return FindFirstOf("PalPlayerController") end)
-        local world = isUObject(controller) and (type(UEHelpers) == "table" and call(function() return UEHelpers.GetWorld() end) or call(function() return controller:GetWorld() end))
-        local playerState = isUObject(controller) and call(function() return controller:GetPalPlayerState() end)
-        local playerUId = isUObject(controller) and guidToTable(call(function() return controller:GetPlayerUId() end))
-
-        if isUObject(controller) and isUObject(world) and isUObject(playerState) then
-            local ctx = { world = world, playerState = playerState, playerUId = playerUId, utility = getUtility() }
-            local ok, err
-            if isEggIn then
-                ok, err = pcall(function() runEggFillerInternal(controller, world, playerState, playerUId, ctx) end)
-            elseif isEggOut then
-                ok, err = pcall(function() runEggHarvestInternal(controller, world, playerState, playerUId, ctx) end)
-            end
-
-            if not ok then
-                call(function() playerState:EnterChat(FText("Error: " .. tostring(err)), 1) end)
-            end
+        local ok, err
+        if isEggIn then
+            ok, err = pcall(function() runEggFillerInternal(controller, world, playerState, playerUId, ctx) end)
+        elseif isEggOut then
+            ok, err = pcall(function() runEggHarvestInternal(controller, world, playerState, playerUId, ctx) end)
+        end
+        if not ok then
+            call(function() playerState:EnterChat(FText("Error: " .. tostring(err)), 1) end)
         end
         busy = false
     end
@@ -712,10 +990,20 @@ local function registerEscClose()
 end
 
 if call(function() RegisterHook("/Script/Pal.PalUIChat:OnReceivedChat", onReceivedChat); return true end) then
-    print(CONFIG.LogPrefix .. "v" .. VERSION .. " loaded. Commands: '" .. CONFIG.CommandIn .. "' and '" .. CONFIG.CommandOut .. "'")
+    print(CONFIG.LogPrefix .. "v" .. VERSION .. " loaded. Commands: '" .. CONFIG.CommandIn .. "' , '" .. CONFIG.CommandOut .. "' , '" .. CONFIG.CommandAuto .. " [on/off/status/run/interval]'")
 end
 
 if CONFIG.EnableUI then
     registerEscClose()
 end
+
+-- pre-warm autobreed loop structure (does not run until enabled)
+-- ensureAutoBreedLoop will be called on !autobreed on, but we can init LoopAsync early to avoid hitch on first enable
+pcall(function()
+    if type(ExecuteWithDelay) == "function" then
+        ExecuteWithDelay(3000, function()
+            if autoBreedEnabled then ensureAutoBreedLoop() end
+        end)
+    end
+end)
 
